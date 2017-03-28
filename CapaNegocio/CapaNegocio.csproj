@@ -40,17 +40,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NacfACFp_Activo_Fijo.cs" />
+    <Compile Include="NacfCRSt_Caracteristicas.cs" />
     <Compile Include="NacfCSTt_Costo.cs" />
     <Compile Include="NacfAMBt_Ambiente.cs" />
     <Compile Include="NacfDDFt_detalledediferido.cs" />
     <Compile Include="NacfEDIt_edificaciondetalle.cs" />
     <Compile Include="NacfESTt_Estado.cs" />
+    <Compile Include="NacfICRt_Inventariocaracteristicas.cs" />
     <Compile Include="NACFLOCT_LOCAL.cs" />
     <Compile Include="NacfMATt_Material.cs" />
     <Compile Include="NacfMVMt_MotivoMovimiento.cs" />
     <Compile Include="NacfPDFt_procesodiferido.cs" />
     <Compile Include="NacfRVAt_registrovaluacion.cs" />
     <Compile Include="NacfSPNt_Supranumero.cs" />
+    <Compile Include="NacfUBEt_UbicacionElectrica.cs" />
     <Compile Include="NacfUNMt_Unimed.cs" />
     <Compile Include="NbdiCAFpClaseDeActivoFijo.cs" />
     <Compile Include="NbdiPRVpProveedor.cs" />

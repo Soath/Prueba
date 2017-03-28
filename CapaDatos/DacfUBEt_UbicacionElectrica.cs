@@ -11,207 +11,167 @@ namespace CapaDatos
 {
     public class DacfUBEt_UbicacionElectrica{
 
-        private string sACFcuenta;
-        private string sINVZU;
-        private string sTXT50;
-        private string decACFvalorniif;
-        private string decACFdepniif;
-        private string decACFPPENiif;
-        private string decACFvalortrib;
-        private string decACFDepTrib;
-        private string decACFpplir;
-        private string decACFdeducible;
-        private string decACFimponible;
-        private string decACFirda;
-        private string decACFirdp;
-        private string decACFculdep;
-        private string decACFrecper1;
-        private string decACFrecper2;
-        private string decACFrecper3;
-        private string decACFrecper4;
-        private string decACFtotales;
-        private string decACFirdaA;
-        private string decACFirdpA;
-        private string decACFirdaF;
-        private string decACFirdpF;
-        private string iPDFcodigo;
+        private string iUBEcodigogis;
+        private string sUBEobra;
+        private string sKOSTL;
+        private string sVNRid;
+        private string sSELid;
+        private string iUBEset;
+        private string sUBEsetetq;
+        private string iUBEalimentador;
+        private string sUBEalimentadoretq;
+        private string iUBEsed;
+        private string sUBEsedetq;
+        private string iUBEcircuito;
+        private string sUBEcircuitoetq;
+        private string iUBEpuntoi;
+        private string sUBEpuntoietq;
+        private string iUBEpuntof;
+        private string sUBEpuntofetq;
+        private string iUBEid;
+        private string iACFid;
 
-        public string ACFcuenta
+        public string UBEcodigogis
         {
-            get { return sACFcuenta; }
-            set { sACFcuenta = value; }
+            get { return iUBEcodigogis; }
+            set { iUBEcodigogis = value; }
         }
-        public string INVZU
+        public string UBEobra
         {
-            get { return sINVZU; }
-            set { sINVZU = value; }
+            get { return sUBEobra; }
+            set { sUBEobra = value; }
         }
-        public string TXT50
+        public string KOSTL
         {
-            get { return sTXT50; }
-            set { sTXT50 = value; }
+            get { return sKOSTL; }
+            set { sKOSTL = value; }
         }
-        public string ACFvalorniif
+        public string VNRid
         {
-            get { return decACFvalorniif; }
-            set { decACFvalorniif = value; }
+            get { return sVNRid; }
+            set { sVNRid = value; }
         }
-        public string ACFdepniif
+        public string SELid
         {
-            get { return decACFdepniif; }
-            set { decACFdepniif = value; }
+            get { return sSELid; }
+            set { sSELid = value; }
         }
-        public string ACFPPENiif
+        public string UBEset
         {
-            get { return decACFPPENiif; }
-            set { decACFPPENiif = value; }
+            get { return iUBEset; }
+            set { iUBEset = value; }
         }
-        public string ACFvalortrib
+        public string UBEsetetq
         {
-            get { return decACFvalortrib; }
-            set { decACFvalortrib = value; }
+            get { return sUBEsetetq; }
+            set { sUBEsetetq = value; }
         }
-        public string ACFDepTrib
+        public string UBEalimentador
         {
-            get { return decACFDepTrib; }
-            set { decACFDepTrib = value; }
+            get { return iUBEalimentador; }
+            set { iUBEalimentador = value; }
         }
-        public string ACFpplir
+        public string UBEalimentadoretq
         {
-            get { return decACFpplir; }
-            set { decACFpplir = value; }
+            get { return sUBEalimentadoretq; }
+            set { sUBEalimentadoretq = value; }
         }
-        public string ACFdeducible
+        public string UBEsed
         {
-            get { return decACFdeducible; }
-            set { decACFdeducible = value; }
+            get { return iUBEsed; }
+            set { iUBEsed = value; }
         }
-        public string ACFimponible
+        public string UBEsedetq
         {
-            get { return decACFimponible; }
-            set { decACFimponible = value; }
+            get { return sUBEsedetq; }
+            set { sUBEsedetq = value; }
         }
-        public string ACFirda
+        public string UBEcircuito
         {
-            get { return decACFirda; }
-            set { decACFirda = value; }
+            get { return iUBEcircuito; }
+            set { iUBEcircuito = value; }
         }
-        public string ACFirdp
+        public string UBEcircuitoetq
         {
-            get { return decACFirdp; }
-            set { decACFirdp = value; }
+            get { return sUBEcircuitoetq; }
+            set { sUBEcircuitoetq = value; }
         }
-        public string ACFculdep
+        public string UBEpuntoi
         {
-            get { return decACFculdep; }
-            set { decACFculdep = value; }
+            get { return iUBEpuntoi; }
+            set { iUBEpuntoi = value; }
         }
-        public string ACFrecper1
+        public string UBEpuntoietq
         {
-            get { return decACFrecper1; }
-            set { decACFrecper1 = value; }
+            get { return sUBEpuntoietq; }
+            set { sUBEpuntoietq = value; }
         }
-        public string ACFrecper2
+        public string UBEpuntof
         {
-            get { return decACFrecper2; }
-            set { decACFrecper2 = value; }
+            get { return iUBEpuntof; }
+            set { iUBEpuntof = value; }
         }
-        public string ACFrecper3
+        public string UBEpuntofetq
         {
-            get { return decACFrecper3; }
-            set { decACFrecper3 = value; }
+            get { return sUBEpuntofetq; }
+            set { sUBEpuntofetq = value; }
         }
-        public string ACFrecper4
+        public string UBEid
         {
-            get { return decACFrecper4; }
-            set { decACFrecper4 = value; }
+            get { return iUBEid; }
+            set { iUBEid = value; }
         }
-        public string ACFtotales
+        public string ACFid
         {
-            get { return decACFtotales; }
-            set { decACFtotales = value; }
-        }
-        public string ACFirdaA
-        {
-            get { return decACFirdaA; }
-            set { decACFirdaA = value; }
-        }
-        public string ACFirdpA
-        {
-            get { return decACFirdpA; }
-            set { decACFirdpA = value; }
-        }
-        public string ACFirdaF
-        {
-            get { return decACFirdaF; }
-            set { decACFirdaF = value; }
-        }
-        public string ACFirdpF
-        {
-            get { return decACFirdpF; }
-            set { decACFirdpF = value; }
-        }
-        public string PDFcodigo
-        {
-            get { return iPDFcodigo; }
-            set { iPDFcodigo = value; }
-        }      
+            get { return iACFid; }
+            set { iACFid = value; }
+        } 
        
         //Constructor vacío
 	public DacfUBEt_UbicacionElectrica(){
 	}
         //Constructor con parámetros
     public DacfUBEt_UbicacionElectrica(
-         string ACFcuenta,
-         string INVZU,               
-         string TXT50,                 
-         string ACFvalorniif,                   
-         string ACFdepniif,                   
-         string ACFPPENiif,
-         string ACFvalortrib,            
-         string ACFDepTrib,         
-         string ACFpplir,                   
-         string ACFdeducible,          
-         string ACFimponible,      
-         string ACFirda,     
-         string ACFirdp,        
-         string ACFculdep,         
-         string ACFrecper1,               
-         string ACFrecper2,             
-         string ACFrecper3,           
-         string ACFrecper4,         
-         string ACFtotales,                 
-         string ACFirdaA,                
-         string ACFirdpA,                
-         string ACFirdaF,                
-         string ACFirdpF,                
-         string PDFcodigo)         
+         string UBEcodigogis,
+         string UBEobra,               
+         string KOSTL,                 
+         string VNRid,                   
+         string SELid,                   
+         string UBEset,
+         string UBEsetetq,            
+         string UBEalimentador,         
+         string UBEalimentadoretq,                   
+         string UBEsed,          
+         string UBEsedetq,      
+         string UBEcircuito,     
+         string UBEcircuitoetq,        
+         string UBEpuntoi,         
+         string UBEpuntoietq,               
+         string UBEpuntof,             
+         string UBEpuntofetq,           
+         string UBEid,         
+         string ACFid)         
     {
 
-        this.ACFcuenta = sACFcuenta;
-        this.INVZU = sINVZU;
-        this.TXT50 = sTXT50;
-        this.ACFvalorniif = decACFvalorniif;
-        this.ACFdepniif = decACFdepniif;
-        this.ACFPPENiif = decACFPPENiif;
-        this.ACFvalortrib = decACFvalortrib;
-        this.ACFDepTrib = decACFDepTrib;
-        this.ACFpplir = decACFpplir;
-        this.ACFdeducible = decACFdeducible;
-        this.ACFimponible = decACFimponible;
-        this.ACFirda = decACFirda;
-        this.ACFirdp = decACFirdp;
-        this.ACFculdep = decACFculdep;
-        this.ACFrecper1 = decACFrecper1;
-        this.ACFrecper2 = decACFrecper2;
-        this.ACFrecper3 = decACFrecper3;
-        this.ACFrecper4 = decACFrecper4;
-        this.ACFtotales = decACFtotales;
-        this.ACFirdaA = decACFirdaA;
-        this.ACFirdpA = decACFirdpA;
-        this.ACFirdaF = decACFirdaF;
-        this.ACFirdpF = decACFirdpF;
-        this.PDFcodigo = iPDFcodigo;       
+        this.UBEcodigogis = iUBEcodigogis;
+        this.UBEobra = sUBEobra;
+        this.KOSTL = sKOSTL;
+        this.VNRid = sVNRid;
+        this.SELid = sSELid;
+        this.UBEset = iUBEset;
+        this.UBEsetetq = sUBEsetetq;
+        this.UBEalimentador = iUBEalimentador;
+        this.UBEalimentadoretq = sUBEalimentadoretq;
+        this.UBEsed = iUBEsed;
+        this.UBEsedetq = sUBEsedetq;
+        this.UBEcircuito = iUBEcircuito;
+        this.UBEcircuitoetq = sUBEcircuitoetq;
+        this.UBEpuntoi = iUBEpuntoi;
+        this.UBEpuntoietq = sUBEpuntoietq;
+        this.UBEpuntof = iUBEpuntof;
+        this.UBEpuntofetq = sUBEpuntofetq;
+        this.UBEid = iUBEid;
+        this.ACFid = iACFid;      
 	}
 
 /*	public object Clone() {
@@ -221,7 +181,7 @@ namespace CapaDatos
 
     //METODO MOSTRAR
         public DataTable Mostrar() {
-           DataTable DtResultado = new DataTable("acfDDFt_detalledediferido");
+           DataTable DtResultado = new DataTable("acfUBEt_UbicacionElectrica");
             SqlConnection SqlCon = new SqlConnection();
 
 		try {
@@ -229,7 +189,7 @@ namespace CapaDatos
              SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "usp_S_acfDDFt_detalledediferido";
+                SqlCmd.CommandText = "usp_S_acfUBEt_UbicacionElectrica";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
 
@@ -246,7 +206,7 @@ namespace CapaDatos
 	}
 
         //METODO INSERTAR 
-	public string Insertar(DacfUBEt_UbicacionElectrica acfDDFt_detalledediferido)
+	public string Insertar(DacfUBEt_UbicacionElectrica acfUBEt_UbicacionElectrica)
     {
         string rpta = "";
         SqlConnection SqlCon = new SqlConnection();
@@ -257,152 +217,122 @@ namespace CapaDatos
                 //Establecer el Comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "usp_I_acfDDFt_detalledediferido";
+                SqlCmd.CommandText = "usp_I_acfUBEt_UbicacionElectrica";
                 SqlCmd.CommandType = CommandType.StoredProcedure;                            
                 //
-                SqlParameter ParACFcuenta = new SqlParameter();
-                ParACFcuenta.ParameterName = "@sACFcuenta";
-                ParACFcuenta.SqlDbType = SqlDbType.Char;
-                ParACFcuenta.Value = acfDDFt_detalledediferido.ACFcuenta;
-                SqlCmd.Parameters.Add(ParACFcuenta);
+                SqlParameter ParUBEcodigogis = new SqlParameter();
+                ParUBEcodigogis.ParameterName = "@iUBEcodigogis";
+                ParUBEcodigogis.SqlDbType = SqlDbType.BigInt;
+                ParUBEcodigogis.Value = acfUBEt_UbicacionElectrica.UBEcodigogis;
+                SqlCmd.Parameters.Add(ParUBEcodigogis);
                 //
-                SqlParameter ParINVZU = new SqlParameter();
-                ParINVZU.ParameterName = "@sINVZU";
-                ParINVZU.SqlDbType = SqlDbType.Char;
-                ParINVZU.Value = acfDDFt_detalledediferido.INVZU;
-                SqlCmd.Parameters.Add(ParINVZU);
+                SqlParameter ParUBEobra = new SqlParameter();
+                ParUBEobra.ParameterName = "@sUBEobra";
+                ParUBEobra.SqlDbType = SqlDbType.Char;
+                ParUBEobra.Value = acfUBEt_UbicacionElectrica.UBEobra;
+                SqlCmd.Parameters.Add(ParUBEobra);
                 //
-                SqlParameter ParTXT50 = new SqlParameter();
-                ParTXT50.ParameterName = "@sTXT50";
-                ParTXT50.SqlDbType = SqlDbType.Char;
-                ParTXT50.Value = acfDDFt_detalledediferido.TXT50;
-                SqlCmd.Parameters.Add(ParTXT50);
+                SqlParameter ParKOSTL = new SqlParameter();
+                ParKOSTL.ParameterName = "@sKOSTL";
+                ParKOSTL.SqlDbType = SqlDbType.Char;
+                ParKOSTL.Value = acfUBEt_UbicacionElectrica.KOSTL;
+                SqlCmd.Parameters.Add(ParKOSTL);
                 //
-                SqlParameter ParACFvalorniif = new SqlParameter();
-                ParACFvalorniif.ParameterName = "@decACFvalorniif";
-                ParACFvalorniif.SqlDbType = SqlDbType.Decimal;
-                ParACFvalorniif.Value = acfDDFt_detalledediferido.ACFvalorniif;
-                SqlCmd.Parameters.Add(ParACFvalorniif);
+                SqlParameter ParVNRid = new SqlParameter();
+                ParVNRid.ParameterName = "@sVNRid";
+                ParVNRid.SqlDbType = SqlDbType.Char;
+                ParVNRid.Value = acfUBEt_UbicacionElectrica.VNRid;
+                SqlCmd.Parameters.Add(ParVNRid);
                 //
-                SqlParameter ParACFdepniif = new SqlParameter();
-                ParACFdepniif.ParameterName = "@decACFdepniif";
-                ParACFdepniif.SqlDbType = SqlDbType.Decimal;
-                ParACFdepniif.Value = acfDDFt_detalledediferido.ACFdepniif;
-                SqlCmd.Parameters.Add(ParACFdepniif);
+                SqlParameter ParSELid = new SqlParameter();
+                ParSELid.ParameterName = "@sSELid";
+                ParSELid.SqlDbType = SqlDbType.Char;
+                ParSELid.Value = acfUBEt_UbicacionElectrica.SELid;
+                SqlCmd.Parameters.Add(ParSELid);
                 //
-                SqlParameter ParACFPPENiif = new SqlParameter();
-                ParACFPPENiif.ParameterName = "@decACFPPENiif";
-                ParACFPPENiif.SqlDbType = SqlDbType.Decimal;
-                ParACFPPENiif.Value = acfDDFt_detalledediferido.ACFPPENiif;
-                SqlCmd.Parameters.Add(ParACFPPENiif);
+                SqlParameter ParUBEset = new SqlParameter();
+                ParUBEset.ParameterName = "@iUBEset";
+                ParUBEset.SqlDbType = SqlDbType.BigInt;
+                ParUBEset.Value = acfUBEt_UbicacionElectrica.UBEset;
+                SqlCmd.Parameters.Add(ParUBEset);
                 //
-                SqlParameter ACFvalortrib = new SqlParameter();
-                ACFvalortrib.ParameterName = "@desACFvalortrib";
-                ACFvalortrib.SqlDbType = SqlDbType.Decimal;
-                ACFvalortrib.Value = acfDDFt_detalledediferido.ACFvalortrib;
-                SqlCmd.Parameters.Add(ACFvalortrib);
+                SqlParameter UBEsetetq = new SqlParameter();
+                UBEsetetq.ParameterName = "@desUBEsetetq";
+                UBEsetetq.SqlDbType = SqlDbType.VarChar;
+                UBEsetetq.Value = acfUBEt_UbicacionElectrica.UBEsetetq;
+                SqlCmd.Parameters.Add(UBEsetetq);
                 //
-                SqlParameter ParACFDepTrib = new SqlParameter();
-                ParACFDepTrib.ParameterName = "@decACFDepTrib";
-                ParACFDepTrib.SqlDbType = SqlDbType.Decimal;
-                ParACFDepTrib.Value = acfDDFt_detalledediferido.ACFDepTrib;
-                SqlCmd.Parameters.Add(ParACFDepTrib);
+                SqlParameter ParUBEalimentador = new SqlParameter();
+                ParUBEalimentador.ParameterName = "@iUBEalimentador";
+                ParUBEalimentador.SqlDbType = SqlDbType.BigInt;
+                ParUBEalimentador.Value = acfUBEt_UbicacionElectrica.UBEalimentador;
+                SqlCmd.Parameters.Add(ParUBEalimentador);
                 //
-                SqlParameter ParACFpplir = new SqlParameter();
-                ParACFpplir.ParameterName = "@decACFpplir";
-                ParACFpplir.SqlDbType = SqlDbType.Decimal;
-                ParACFpplir.Value = acfDDFt_detalledediferido.ACFpplir;
-                SqlCmd.Parameters.Add(ParACFpplir);
+                SqlParameter ParUBEalimentadoretq = new SqlParameter();
+                ParUBEalimentadoretq.ParameterName = "@sUBEalimentadoretq";
+                ParUBEalimentadoretq.SqlDbType = SqlDbType.VarChar;
+                ParUBEalimentadoretq.Value = acfUBEt_UbicacionElectrica.UBEalimentadoretq;
+                SqlCmd.Parameters.Add(ParUBEalimentadoretq);
                 //
-                SqlParameter ParACFdeducible = new SqlParameter();
-                ParACFdeducible.ParameterName = "@decACFdeducible";
-                ParACFdeducible.SqlDbType = SqlDbType.Decimal;
-                ParACFdeducible.Value = acfDDFt_detalledediferido.ACFdeducible;
-                SqlCmd.Parameters.Add(ParACFdeducible);
+                SqlParameter ParUBEsed = new SqlParameter();
+                ParUBEsed.ParameterName = "@iUBEsed";
+                ParUBEsed.SqlDbType = SqlDbType.BigInt;
+                ParUBEsed.Value = acfUBEt_UbicacionElectrica.UBEsed;
+                SqlCmd.Parameters.Add(ParUBEsed);
                 //
-                SqlParameter ParACFimponible = new SqlParameter();
-                ParACFimponible.ParameterName = "@decACFimponible";
-                ParACFimponible.SqlDbType = SqlDbType.Decimal;
-                ParACFimponible.Value = acfDDFt_detalledediferido.ACFimponible;
-                SqlCmd.Parameters.Add(ParACFimponible);
+                SqlParameter ParUBEsedetq = new SqlParameter();
+                ParUBEsedetq.ParameterName = "@sUBEsedetq";
+                ParUBEsedetq.SqlDbType = SqlDbType.VarChar;
+                ParUBEsedetq.Value = acfUBEt_UbicacionElectrica.UBEsedetq;
+                SqlCmd.Parameters.Add(ParUBEsedetq);
                 //
-                SqlParameter ParACFirda = new SqlParameter();
-                ParACFirda.ParameterName = "@decACFirda";
-                ParACFirda.SqlDbType = SqlDbType.Decimal;
-                ParACFirda.Value = acfDDFt_detalledediferido.ACFirda;
-                SqlCmd.Parameters.Add(ParACFirda);
+                SqlParameter ParUBEcircuito = new SqlParameter();
+                ParUBEcircuito.ParameterName = "@iUBEcircuito";
+                ParUBEcircuito.SqlDbType = SqlDbType.BigInt;
+                ParUBEcircuito.Value = acfUBEt_UbicacionElectrica.UBEcircuito;
+                SqlCmd.Parameters.Add(ParUBEcircuito);
                 //
-                SqlParameter ParACFirdp = new SqlParameter();
-                ParACFirdp.ParameterName = "@decACFirdp";
-                ParACFirdp.SqlDbType = SqlDbType.Decimal;
-                ParACFirdp.Value = acfDDFt_detalledediferido.ACFirdp;
-                SqlCmd.Parameters.Add(ParACFirdp);
+                SqlParameter ParUBEcircuitoetq = new SqlParameter();
+                ParUBEcircuitoetq.ParameterName = "@sUBEcircuitoetq";
+                ParUBEcircuitoetq.SqlDbType = SqlDbType.VarChar;
+                ParUBEcircuitoetq.Value = acfUBEt_UbicacionElectrica.UBEcircuitoetq;
+                SqlCmd.Parameters.Add(ParUBEcircuitoetq);
                 //
-                SqlParameter ParACFculdep = new SqlParameter();
-                ParACFculdep.ParameterName = "@decACFculdep";
-                ParACFculdep.SqlDbType = SqlDbType.Decimal;
-                ParACFculdep.Value = acfDDFt_detalledediferido.ACFculdep;
-                SqlCmd.Parameters.Add(ParACFculdep);
+                SqlParameter ParUBEpuntoi = new SqlParameter();
+                ParUBEpuntoi.ParameterName = "@iUBEpuntoi";
+                ParUBEpuntoi.SqlDbType = SqlDbType.BigInt;
+                ParUBEpuntoi.Value = acfUBEt_UbicacionElectrica.UBEpuntoi;
+                SqlCmd.Parameters.Add(ParUBEpuntoi);
                 //
-                SqlParameter ParACFrecper1 = new SqlParameter();
-                ParACFrecper1.ParameterName = "@decACFrecper1";
-                ParACFrecper1.SqlDbType = SqlDbType.Decimal;
-                ParACFrecper1.Value = acfDDFt_detalledediferido.ACFrecper1;
-                SqlCmd.Parameters.Add(ParACFrecper1);
+                SqlParameter ParUBEpuntoietq = new SqlParameter();
+                ParUBEpuntoietq.ParameterName = "@sUBEpuntoietq";
+                ParUBEpuntoietq.SqlDbType = SqlDbType.VarChar;
+                ParUBEpuntoietq.Value = acfUBEt_UbicacionElectrica.UBEpuntoietq;
+                SqlCmd.Parameters.Add(ParUBEpuntoietq);
                 //
-                SqlParameter ParACFrecper2 = new SqlParameter();
-                ParACFrecper2.ParameterName = "@decACFrecper2";
-                ParACFrecper2.SqlDbType = SqlDbType.Decimal;
-                ParACFrecper2.Value = acfDDFt_detalledediferido.ACFrecper2;
-                SqlCmd.Parameters.Add(ParACFrecper2);
+                SqlParameter ParUBEpuntof = new SqlParameter();
+                ParUBEpuntof.ParameterName = "@iUBEpuntof";
+                ParUBEpuntof.SqlDbType = SqlDbType.BigInt;
+                ParUBEpuntof.Value = acfUBEt_UbicacionElectrica.UBEpuntof;
+                SqlCmd.Parameters.Add(ParUBEpuntof);
                 //
-                SqlParameter ParACFrecper3 = new SqlParameter();
-                ParACFrecper3.ParameterName = "@decACFrecper3";
-                ParACFrecper3.SqlDbType = SqlDbType.Decimal;
-                ParACFrecper3.Value = acfDDFt_detalledediferido.ACFrecper3;
-                SqlCmd.Parameters.Add(ParACFrecper3);
+                SqlParameter ParUBEpuntofetq = new SqlParameter();
+                ParUBEpuntofetq.ParameterName = "@sUBEpuntofetq";
+                ParUBEpuntofetq.SqlDbType = SqlDbType.VarChar;
+                ParUBEpuntofetq.Value = acfUBEt_UbicacionElectrica.UBEpuntofetq;
+                SqlCmd.Parameters.Add(ParUBEpuntofetq);
                 //
-                SqlParameter ParACFrecper4 = new SqlParameter();
-                ParACFrecper4.ParameterName = "@decACFrecper4";
-                ParACFrecper4.SqlDbType = SqlDbType.Decimal;
-                ParACFrecper4.Value = acfDDFt_detalledediferido.ACFrecper4;
-                SqlCmd.Parameters.Add(ParACFrecper4);
+                SqlParameter ParUBEid = new SqlParameter();
+                ParUBEid.ParameterName = "@iUBEid";
+                ParUBEid.SqlDbType = SqlDbType.Int;
+                ParUBEid.Value = acfUBEt_UbicacionElectrica.UBEid;
+                SqlCmd.Parameters.Add(ParUBEid);
                 //
-                SqlParameter ParACFtotales = new SqlParameter();
-                ParACFtotales.ParameterName = "@decACFtotales";
-                ParACFtotales.SqlDbType = SqlDbType.Decimal;
-                ParACFtotales.Value = acfDDFt_detalledediferido.ACFtotales;
-                SqlCmd.Parameters.Add(ParACFtotales);
-                //
-                SqlParameter ParACFirdaA = new SqlParameter();
-                ParACFirdaA.ParameterName = "@decACFirdaA";
-                ParACFirdaA.SqlDbType = SqlDbType.Decimal;
-                ParACFirdaA.Value = acfDDFt_detalledediferido.ACFirdaA;
-                SqlCmd.Parameters.Add(ParACFirdaA);
-                //
-                SqlParameter ParACFirdpA = new SqlParameter();
-                ParACFirdpA.ParameterName = "@decACFirdpA";
-                ParACFirdpA.SqlDbType = SqlDbType.Decimal;
-                ParACFirdpA.Value = acfDDFt_detalledediferido.ACFirdpA;
-                SqlCmd.Parameters.Add(ParACFirdpA);
-                //
-                SqlParameter ParACFirdaF = new SqlParameter();
-                ParACFirdaF.ParameterName = "@decACFirdaF";
-                ParACFirdaF.SqlDbType = SqlDbType.Decimal;
-                ParACFirdaF.Value = acfDDFt_detalledediferido.ACFirdaF;
-                SqlCmd.Parameters.Add(ParACFirdaF);
-                //
-                SqlParameter ParACFirdpF = new SqlParameter();
-                ParACFirdpF.ParameterName = "@decACFirdpF";
-                ParACFirdpF.SqlDbType = SqlDbType.Decimal;
-                ParACFirdpF.Value = acfDDFt_detalledediferido.ACFirdpF;
-                SqlCmd.Parameters.Add(ParACFirdpF);
-                //
-                SqlParameter ParPDFcodigo = new SqlParameter();
-                ParPDFcodigo.ParameterName = "@iPDFcodigo";
-                ParPDFcodigo.SqlDbType = SqlDbType.Int;
-                ParPDFcodigo.Value = acfDDFt_detalledediferido.PDFcodigo;
-                SqlCmd.Parameters.Add(ParPDFcodigo);
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = acfUBEt_UbicacionElectrica.ACFid;
+                SqlCmd.Parameters.Add(ParACFid);
                 //
 
                 //Ejecutamos nuestro comando
@@ -425,7 +355,7 @@ namespace CapaDatos
 
 
         //METODO EDITAR
-	public string Editar(DacfUBEt_UbicacionElectrica acfDDFt_detalledediferido) {
+	public string Editar(DacfUBEt_UbicacionElectrica acfUBEt_UbicacionElectrica) {
 		string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
             try
@@ -436,152 +366,122 @@ namespace CapaDatos
                 //Establecer el Comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "usp_U_acfDDFt_detalledediferido";
+                SqlCmd.CommandText = "usp_U_acfUBEt_UbicacionElectrica";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
                 //
-                SqlParameter ParACFcuenta = new SqlParameter();
-                ParACFcuenta.ParameterName = "@sACFcuenta";
-                ParACFcuenta.SqlDbType = SqlDbType.Char;
-                ParACFcuenta.Value = acfDDFt_detalledediferido.ACFcuenta;
-                SqlCmd.Parameters.Add(ParACFcuenta);
+                SqlParameter ParUBEcodigogis = new SqlParameter();
+                ParUBEcodigogis.ParameterName = "@iUBEcodigogis";
+                ParUBEcodigogis.SqlDbType = SqlDbType.BigInt;
+                ParUBEcodigogis.Value = acfUBEt_UbicacionElectrica.UBEcodigogis;
+                SqlCmd.Parameters.Add(ParUBEcodigogis);
                 //
-                SqlParameter ParINVZU = new SqlParameter();
-                ParINVZU.ParameterName = "@sINVZU";
-                ParINVZU.SqlDbType = SqlDbType.Char;
-                ParINVZU.Value = acfDDFt_detalledediferido.INVZU;
-                SqlCmd.Parameters.Add(ParINVZU);
+                SqlParameter ParUBEobra = new SqlParameter();
+                ParUBEobra.ParameterName = "@sUBEobra";
+                ParUBEobra.SqlDbType = SqlDbType.Char;
+                ParUBEobra.Value = acfUBEt_UbicacionElectrica.UBEobra;
+                SqlCmd.Parameters.Add(ParUBEobra);
                 //
-                SqlParameter ParTXT50 = new SqlParameter();
-                ParTXT50.ParameterName = "@sTXT50";
-                ParTXT50.SqlDbType = SqlDbType.Char;
-                ParTXT50.Value = acfDDFt_detalledediferido.TXT50;
-                SqlCmd.Parameters.Add(ParTXT50);
+                SqlParameter ParKOSTL = new SqlParameter();
+                ParKOSTL.ParameterName = "@sKOSTL";
+                ParKOSTL.SqlDbType = SqlDbType.Char;
+                ParKOSTL.Value = acfUBEt_UbicacionElectrica.KOSTL;
+                SqlCmd.Parameters.Add(ParKOSTL);
                 //
-                SqlParameter ParACFvalorniif = new SqlParameter();
-                ParACFvalorniif.ParameterName = "@decACFvalorniif";
-                ParACFvalorniif.SqlDbType = SqlDbType.Decimal;
-                ParACFvalorniif.Value = acfDDFt_detalledediferido.ACFvalorniif;
-                SqlCmd.Parameters.Add(ParACFvalorniif);
+                SqlParameter ParVNRid = new SqlParameter();
+                ParVNRid.ParameterName = "@sVNRid";
+                ParVNRid.SqlDbType = SqlDbType.Char;
+                ParVNRid.Value = acfUBEt_UbicacionElectrica.VNRid;
+                SqlCmd.Parameters.Add(ParVNRid);
                 //
-                SqlParameter ParACFdepniif = new SqlParameter();
-                ParACFdepniif.ParameterName = "@decACFdepniif";
-                ParACFdepniif.SqlDbType = SqlDbType.Decimal;
-                ParACFdepniif.Value = acfDDFt_detalledediferido.ACFdepniif;
-                SqlCmd.Parameters.Add(ParACFdepniif);
+                SqlParameter ParSELid = new SqlParameter();
+                ParSELid.ParameterName = "@sSELid";
+                ParSELid.SqlDbType = SqlDbType.Char;
+                ParSELid.Value = acfUBEt_UbicacionElectrica.SELid;
+                SqlCmd.Parameters.Add(ParSELid);
                 //
-                SqlParameter ParACFPPENiif = new SqlParameter();
-                ParACFPPENiif.ParameterName = "@decACFPPENiif";
-                ParACFPPENiif.SqlDbType = SqlDbType.Decimal;
-                ParACFPPENiif.Value = acfDDFt_detalledediferido.ACFPPENiif;
-                SqlCmd.Parameters.Add(ParACFPPENiif);
+                SqlParameter ParUBEset = new SqlParameter();
+                ParUBEset.ParameterName = "@iUBEset";
+                ParUBEset.SqlDbType = SqlDbType.BigInt;
+                ParUBEset.Value = acfUBEt_UbicacionElectrica.UBEset;
+                SqlCmd.Parameters.Add(ParUBEset);
                 //
-                SqlParameter ACFvalortrib = new SqlParameter();
-                ACFvalortrib.ParameterName = "@desACFvalortrib";
-                ACFvalortrib.SqlDbType = SqlDbType.Decimal;
-                ACFvalortrib.Value = acfDDFt_detalledediferido.ACFvalortrib;
-                SqlCmd.Parameters.Add(ACFvalortrib);
+                SqlParameter UBEsetetq = new SqlParameter();
+                UBEsetetq.ParameterName = "@desUBEsetetq";
+                UBEsetetq.SqlDbType = SqlDbType.VarChar;
+                UBEsetetq.Value = acfUBEt_UbicacionElectrica.UBEsetetq;
+                SqlCmd.Parameters.Add(UBEsetetq);
                 //
-                SqlParameter ParACFDepTrib = new SqlParameter();
-                ParACFDepTrib.ParameterName = "@decACFDepTrib";
-                ParACFDepTrib.SqlDbType = SqlDbType.Decimal;
-                ParACFDepTrib.Value = acfDDFt_detalledediferido.ACFDepTrib;
-                SqlCmd.Parameters.Add(ParACFDepTrib);
+                SqlParameter ParUBEalimentador = new SqlParameter();
+                ParUBEalimentador.ParameterName = "@iUBEalimentador";
+                ParUBEalimentador.SqlDbType = SqlDbType.BigInt;
+                ParUBEalimentador.Value = acfUBEt_UbicacionElectrica.UBEalimentador;
+                SqlCmd.Parameters.Add(ParUBEalimentador);
                 //
-                SqlParameter ParACFpplir = new SqlParameter();
-                ParACFpplir.ParameterName = "@decACFpplir";
-                ParACFpplir.SqlDbType = SqlDbType.Decimal;
-                ParACFpplir.Value = acfDDFt_detalledediferido.ACFpplir;
-                SqlCmd.Parameters.Add(ParACFpplir);
+                SqlParameter ParUBEalimentadoretq = new SqlParameter();
+                ParUBEalimentadoretq.ParameterName = "@sUBEalimentadoretq";
+                ParUBEalimentadoretq.SqlDbType = SqlDbType.VarChar;
+                ParUBEalimentadoretq.Value = acfUBEt_UbicacionElectrica.UBEalimentadoretq;
+                SqlCmd.Parameters.Add(ParUBEalimentadoretq);
                 //
-                SqlParameter ParACFdeducible = new SqlParameter();
-                ParACFdeducible.ParameterName = "@decACFdeducible";
-                ParACFdeducible.SqlDbType = SqlDbType.Decimal;
-                ParACFdeducible.Value = acfDDFt_detalledediferido.ACFdeducible;
-                SqlCmd.Parameters.Add(ParACFdeducible);
+                SqlParameter ParUBEsed = new SqlParameter();
+                ParUBEsed.ParameterName = "@iUBEsed";
+                ParUBEsed.SqlDbType = SqlDbType.BigInt;
+                ParUBEsed.Value = acfUBEt_UbicacionElectrica.UBEsed;
+                SqlCmd.Parameters.Add(ParUBEsed);
                 //
-                SqlParameter ParACFimponible = new SqlParameter();
-                ParACFimponible.ParameterName = "@decACFimponible";
-                ParACFimponible.SqlDbType = SqlDbType.Decimal;
-                ParACFimponible.Value = acfDDFt_detalledediferido.ACFimponible;
-                SqlCmd.Parameters.Add(ParACFimponible);
+                SqlParameter ParUBEsedetq = new SqlParameter();
+                ParUBEsedetq.ParameterName = "@sUBEsedetq";
+                ParUBEsedetq.SqlDbType = SqlDbType.VarChar;
+                ParUBEsedetq.Value = acfUBEt_UbicacionElectrica.UBEsedetq;
+                SqlCmd.Parameters.Add(ParUBEsedetq);
                 //
-                SqlParameter ParACFirda = new SqlParameter();
-                ParACFirda.ParameterName = "@decACFirda";
-                ParACFirda.SqlDbType = SqlDbType.Decimal;
-                ParACFirda.Value = acfDDFt_detalledediferido.ACFirda;
-                SqlCmd.Parameters.Add(ParACFirda);
+                SqlParameter ParUBEcircuito = new SqlParameter();
+                ParUBEcircuito.ParameterName = "@iUBEcircuito";
+                ParUBEcircuito.SqlDbType = SqlDbType.BigInt;
+                ParUBEcircuito.Value = acfUBEt_UbicacionElectrica.UBEcircuito;
+                SqlCmd.Parameters.Add(ParUBEcircuito);
                 //
-                SqlParameter ParACFirdp = new SqlParameter();
-                ParACFirdp.ParameterName = "@decACFirdp";
-                ParACFirdp.SqlDbType = SqlDbType.Decimal;
-                ParACFirdp.Value = acfDDFt_detalledediferido.ACFirdp;
-                SqlCmd.Parameters.Add(ParACFirdp);
+                SqlParameter ParUBEcircuitoetq = new SqlParameter();
+                ParUBEcircuitoetq.ParameterName = "@sUBEcircuitoetq";
+                ParUBEcircuitoetq.SqlDbType = SqlDbType.VarChar;
+                ParUBEcircuitoetq.Value = acfUBEt_UbicacionElectrica.UBEcircuitoetq;
+                SqlCmd.Parameters.Add(ParUBEcircuitoetq);
                 //
-                SqlParameter ParACFculdep = new SqlParameter();
-                ParACFculdep.ParameterName = "@decACFculdep";
-                ParACFculdep.SqlDbType = SqlDbType.Decimal;
-                ParACFculdep.Value = acfDDFt_detalledediferido.ACFculdep;
-                SqlCmd.Parameters.Add(ParACFculdep);
+                SqlParameter ParUBEpuntoi = new SqlParameter();
+                ParUBEpuntoi.ParameterName = "@iUBEpuntoi";
+                ParUBEpuntoi.SqlDbType = SqlDbType.BigInt;
+                ParUBEpuntoi.Value = acfUBEt_UbicacionElectrica.UBEpuntoi;
+                SqlCmd.Parameters.Add(ParUBEpuntoi);
                 //
-                SqlParameter ParACFrecper1 = new SqlParameter();
-                ParACFrecper1.ParameterName = "@decACFrecper1";
-                ParACFrecper1.SqlDbType = SqlDbType.Decimal;
-                ParACFrecper1.Value = acfDDFt_detalledediferido.ACFrecper1;
-                SqlCmd.Parameters.Add(ParACFrecper1);
+                SqlParameter ParUBEpuntoietq = new SqlParameter();
+                ParUBEpuntoietq.ParameterName = "@sUBEpuntoietq";
+                ParUBEpuntoietq.SqlDbType = SqlDbType.VarChar;
+                ParUBEpuntoietq.Value = acfUBEt_UbicacionElectrica.UBEpuntoietq;
+                SqlCmd.Parameters.Add(ParUBEpuntoietq);
                 //
-                SqlParameter ParACFrecper2 = new SqlParameter();
-                ParACFrecper2.ParameterName = "@decACFrecper2";
-                ParACFrecper2.SqlDbType = SqlDbType.Decimal;
-                ParACFrecper2.Value = acfDDFt_detalledediferido.ACFrecper2;
-                SqlCmd.Parameters.Add(ParACFrecper2);
+                SqlParameter ParUBEpuntof = new SqlParameter();
+                ParUBEpuntof.ParameterName = "@iUBEpuntof";
+                ParUBEpuntof.SqlDbType = SqlDbType.BigInt;
+                ParUBEpuntof.Value = acfUBEt_UbicacionElectrica.UBEpuntof;
+                SqlCmd.Parameters.Add(ParUBEpuntof);
                 //
-                SqlParameter ParACFrecper3 = new SqlParameter();
-                ParACFrecper3.ParameterName = "@decACFrecper3";
-                ParACFrecper3.SqlDbType = SqlDbType.Decimal;
-                ParACFrecper3.Value = acfDDFt_detalledediferido.ACFrecper3;
-                SqlCmd.Parameters.Add(ParACFrecper3);
+                SqlParameter ParUBEpuntofetq = new SqlParameter();
+                ParUBEpuntofetq.ParameterName = "@sUBEpuntofetq";
+                ParUBEpuntofetq.SqlDbType = SqlDbType.VarChar;
+                ParUBEpuntofetq.Value = acfUBEt_UbicacionElectrica.UBEpuntofetq;
+                SqlCmd.Parameters.Add(ParUBEpuntofetq);
                 //
-                SqlParameter ParACFrecper4 = new SqlParameter();
-                ParACFrecper4.ParameterName = "@decACFrecper4";
-                ParACFrecper4.SqlDbType = SqlDbType.Decimal;
-                ParACFrecper4.Value = acfDDFt_detalledediferido.ACFrecper4;
-                SqlCmd.Parameters.Add(ParACFrecper4);
+                SqlParameter ParUBEid = new SqlParameter();
+                ParUBEid.ParameterName = "@iUBEid";
+                ParUBEid.SqlDbType = SqlDbType.Int;
+                ParUBEid.Value = acfUBEt_UbicacionElectrica.UBEid;
+                SqlCmd.Parameters.Add(ParUBEid);
                 //
-                SqlParameter ParACFtotales = new SqlParameter();
-                ParACFtotales.ParameterName = "@decACFtotales";
-                ParACFtotales.SqlDbType = SqlDbType.Decimal;
-                ParACFtotales.Value = acfDDFt_detalledediferido.ACFtotales;
-                SqlCmd.Parameters.Add(ParACFtotales);
-                //
-                SqlParameter ParACFirdaA = new SqlParameter();
-                ParACFirdaA.ParameterName = "@decACFirdaA";
-                ParACFirdaA.SqlDbType = SqlDbType.Decimal;
-                ParACFirdaA.Value = acfDDFt_detalledediferido.ACFirdaA;
-                SqlCmd.Parameters.Add(ParACFirdaA);
-                //
-                SqlParameter ParACFirdpA = new SqlParameter();
-                ParACFirdpA.ParameterName = "@decACFirdpA";
-                ParACFirdpA.SqlDbType = SqlDbType.Decimal;
-                ParACFirdpA.Value = acfDDFt_detalledediferido.ACFirdpA;
-                SqlCmd.Parameters.Add(ParACFirdpA);
-                //
-                SqlParameter ParACFirdaF = new SqlParameter();
-                ParACFirdaF.ParameterName = "@decACFirdaF";
-                ParACFirdaF.SqlDbType = SqlDbType.Decimal;
-                ParACFirdaF.Value = acfDDFt_detalledediferido.ACFirdaF;
-                SqlCmd.Parameters.Add(ParACFirdaF);
-                //
-                SqlParameter ParACFirdpF = new SqlParameter();
-                ParACFirdpF.ParameterName = "@decACFirdpF";
-                ParACFirdpF.SqlDbType = SqlDbType.Decimal;
-                ParACFirdpF.Value = acfDDFt_detalledediferido.ACFirdpF;
-                SqlCmd.Parameters.Add(ParACFirdpF);
-                //
-                SqlParameter ParPDFcodigo = new SqlParameter();
-                ParPDFcodigo.ParameterName = "@iPDFcodigo";
-                ParPDFcodigo.SqlDbType = SqlDbType.Int;
-                ParPDFcodigo.Value = acfDDFt_detalledediferido.PDFcodigo;
-                SqlCmd.Parameters.Add(ParPDFcodigo);
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = acfUBEt_UbicacionElectrica.ACFid;
+                SqlCmd.Parameters.Add(ParACFid);
                 //
                 //Ejecutamos nuestro comando
 
@@ -602,7 +502,7 @@ namespace CapaDatos
 
 
         //METODO ELIMINAR
-	public string Eliminar(DacfUBEt_UbicacionElectrica acfDDFt_detalledediferido) {
+	public string Eliminar(DacfUBEt_UbicacionElectrica acfUBEt_UbicacionElectrica) {
 		
 			string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
@@ -614,14 +514,14 @@ namespace CapaDatos
                 //Establecer el Comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "usp_D_acfDDFt_detalledediferido";
+                SqlCmd.CommandText = "usp_D_acfUBEt_UbicacionElectrica";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
                 //
-                SqlParameter ParACFcuenta = new SqlParameter();
-                ParACFcuenta.ParameterName = "@sACFcuenta";
-                ParACFcuenta.SqlDbType = SqlDbType.Char;
-                ParACFcuenta.Value = acfDDFt_detalledediferido.ACFcuenta;
-                SqlCmd.Parameters.Add(ParACFcuenta);
+                SqlParameter ParUBEcodigogis = new SqlParameter();
+                ParUBEcodigogis.ParameterName = "@iUBEcodigogis";
+                ParUBEcodigogis.SqlDbType = SqlDbType.BigInt;
+                ParUBEcodigogis.Value = acfUBEt_UbicacionElectrica.UBEcodigogis;
+                SqlCmd.Parameters.Add(ParUBEcodigogis);
                 //
 
                  //Ejecutamos nuestro comando
@@ -644,9 +544,9 @@ namespace CapaDatos
 
     //METODO BUSCAR
 
-	public DataTable Buscar(DacfUBEt_UbicacionElectrica acfDDFt_detalledediferido) {
+	public DataTable Buscar(DacfUBEt_UbicacionElectrica acfUBEt_UbicacionElectrica) {
 
-        DataTable DtResultado = new DataTable("acfDDFt_detalledediferido");
+        DataTable DtResultado = new DataTable("acfUBEt_UbicacionElectrica");
             SqlConnection SqlCon = new SqlConnection();
 
 
@@ -655,17 +555,17 @@ namespace CapaDatos
             SqlCon.ConnectionString = DConexion.CnBDActivo;
             SqlCommand SqlCmd = new SqlCommand();
             SqlCmd.Connection = SqlCon;
-            SqlCmd.CommandText = "usp_B_acfDDFt_detalledediferido";
+            SqlCmd.CommandText = "usp_B_acfUBEt_UbicacionElectrica";
             SqlCmd.CommandType = CommandType.StoredProcedure;
 
 
 
-            SqlParameter ParINVZU = new SqlParameter();
-            ParINVZU.ParameterName = "@sINVZU";
-            ParINVZU.SqlDbType = SqlDbType.Char;
-            ParINVZU.Size = 50;
-            ParINVZU.Value = acfDDFt_detalledediferido.INVZU;
-            SqlCmd.Parameters.Add(ParINVZU);
+            SqlParameter ParUBEobra = new SqlParameter();
+            ParUBEobra.ParameterName = "@sUBEobra";
+            ParUBEobra.SqlDbType = SqlDbType.Char;
+            ParUBEobra.Size = 50;
+            ParUBEobra.Value = acfUBEt_UbicacionElectrica.UBEobra;
+            SqlCmd.Parameters.Add(ParUBEobra);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
             SqlDat.Fill(DtResultado);

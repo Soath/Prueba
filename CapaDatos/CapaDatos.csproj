@@ -62,7 +62,6 @@
     <Compile Include="DACFLOCT_LOCAL.cs" />
     <Compile Include="DDacfLOCt_Local.cs" />
     <Compile Include="DPostres.cs" />
-    <Compile Include="NacfCRSt_Caracteristicas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Prueba.cs" />
   </ItemGroup>

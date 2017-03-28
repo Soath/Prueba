@@ -124,3 +124,6 @@ C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmp
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+C:\Users\Samael\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
+C:\Users\Samael\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+C:\Users\Samael\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
