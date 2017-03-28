@@ -1,0 +1,243 @@
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\obj\Debug\CapaPresentacion.Empleados.resources
+C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaPresentacion\obj\Debug\CapaPresentacion.FrmInicio.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\CapaNegocio.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\System.Windows.Forms.Ribbon35.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\CapaDatos.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\CapaDatos.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.ACFLOCT_LOCAL.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarNuevLocal.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEditarLocal.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarLocales.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\View1.g.cs
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\ViewModel1.g.cs
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.lref
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\View1.baml
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\ViewModel1.baml
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.g.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl1.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Design.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Docking.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl2.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.Form1.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl3.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaNegocio.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Design.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Docking.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaDatos.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaDatos.pdb
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\View1.g.cs
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\ViewModel1.g.cs
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.lref
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\View1.baml
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\ViewModel1.baml
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.g.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.ACFLOCT_LOCAL.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.Form1.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfAMBt_Ambiente.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarLocales.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarNuevLocal.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEditarLocal.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmPostres.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl1.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl2.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl3.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaNegocio.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Design.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Docking.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaDatos.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaDatos.pdb
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\View1.g.cs
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\ViewModel1.g.cs
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.lref
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\View1.baml
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\ViewModel1.baml
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.g.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.ACFLOCT_LOCAL.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.Form1.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarLocales.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarNuevLocal.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEditarLocal.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmPostres.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl1.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl2.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl3.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfAMBt_Ambiente.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfMVMt_MotivoMovimiento.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\View1.g.cs
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\ViewModel1.g.cs
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.lref
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\View1.baml
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\ViewModel1.baml
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.g.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.ACFLOCT_LOCAL.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.Form1.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfAMBt_Ambiente.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfMVMt_MotivoMovimiento.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarLocales.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarNuevLocal.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEditarLocal.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmPostres.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl1.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl2.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl3.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfCSTt_Costo.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfESTt_Estado.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfLOCt_Local.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfMATt_Material.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfPDFt_procesodiferido.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfRVAt_registrovaluacion.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfSPNt_Supranumero.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfUNMt_Unimed.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiCAFpClaseDeActivoFijo.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiPRVpProveedor.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiSOCpSociedades.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiXPEpExtraccionSAP_Personal.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+G:\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+G:\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaNegocio.dll
+G:\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaDatos.dll
+G:\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+G:\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaDatos.pdb
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\View1.g.cs
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\ViewModel1.g.cs
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.lref
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\View1.baml
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\ViewModel1.baml
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.g.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.ACFLOCT_LOCAL.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.Form1.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfAMBt_Ambiente.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfCSTt_Costo.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfESTt_Estado.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfLOCt_Local.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfMATt_Material.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfMVMt_MotivoMovimiento.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfPDFt_procesodiferido.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfRVAt_registrovaluacion.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfSPNt_Supranumero.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfUNMt_Unimed.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarLocales.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarNuevLocal.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiCAFpClaseDeActivoFijo.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiPRVpProveedor.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiSOCpSociedades.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiXPEpExtraccionSAP_Personal.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEditarLocal.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmPostres.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl1.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl2.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl3.resources
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+G:\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaNegocio.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\System.Windows.Forms.Ribbon35.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaDatos.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\bin\Debug\CapaDatos.pdb
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\View1.g.cs
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\ViewModel1.g.cs
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.lref
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\View1.baml
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\ViewModel1.baml
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.g.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.ACFLOCT_LOCAL.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.Form1.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfAMBt_Ambiente.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfCSTt_Costo.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfESTt_Estado.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfLOCt_Local.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfMATt_Material.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfMVMt_MotivoMovimiento.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfPDFt_procesodiferido.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfRVAt_registrovaluacion.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfSPNt_Supranumero.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfUNMt_Unimed.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarLocales.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAgregarNuevLocal.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiCAFpClaseDeActivoFijo.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiPRVpProveedor.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiSOCpSociedades.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiXPEpExtraccionSAP_Personal.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEditarLocal.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.FrmPostres.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl1.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl2.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl3.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

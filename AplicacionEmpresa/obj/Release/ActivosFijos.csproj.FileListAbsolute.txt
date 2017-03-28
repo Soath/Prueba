@@ -1,0 +1,15 @@
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Release\AplicacionEmpresa.exe.config
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Release\AplicacionEmpresa.exe
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Release\AplicacionEmpresa.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Release\CapaPresentacion.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Release\System.Windows.Forms.Ribbon35.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Release\CapaNegocio.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Release\CapaDatos.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Release\CapaPresentacion.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Release\CapaNegocio.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Release\CapaDatos.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Release\ActivosFijos.csprojResolveAssemblyReference.cache
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Release\AplicacionEmpresa.Properties.Resources.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Release\ActivosFijos.csproj.GenerateResource.Cache
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Release\AplicacionEmpresa.exe
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Release\AplicacionEmpresa.pdb

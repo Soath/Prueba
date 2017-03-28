@@ -1,0 +1,120 @@
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\CapaPresentacion.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\System.Windows.Forms.Ribbon35.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\CapaNegocio.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\CapaDatos.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\CapaPresentacion.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\CapaNegocio.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\CapaDatos.pdb
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Debug\ActivosFijos.csprojResolveAssemblyReference.cache
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.Properties.Resources.resources
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Docking.dll
+E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+G:\ACTIVOS\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
+G:\ACTIVOS\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+G:\ACTIVOS\Activos Fijos V1.0\ActivosFijos\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.pdb
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaPresentacion.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\System.Windows.Forms.Ribbon35.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Docking.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaNegocio.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaDatos.dll
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaPresentacion.pdb
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaNegocio.pdb
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaDatos.pdb
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\ActivosFijos.csprojResolveAssemblyReference.cache
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.Properties.Resources.resources
+H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.pdb
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaPresentacion.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\System.Windows.Forms.Ribbon35.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Docking.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaNegocio.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaDatos.dll
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaPresentacion.pdb
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaNegocio.pdb
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaDatos.pdb
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\ActivosFijos.csprojResolveAssemblyReference.cache
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.Properties.Resources.resources
+G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.pdb
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaPresentacion.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\System.Windows.Forms.Ribbon35.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Docking.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaNegocio.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaDatos.dll
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaPresentacion.pdb
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaNegocio.pdb
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaDatos.pdb
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\ActivosFijos.csprojResolveAssemblyReference.cache
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.Properties.Resources.resources
+C:\Users\Samael\Desktop\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
+G:\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+G:\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.pdb
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaPresentacion.dll
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\System.Windows.Forms.Ribbon35.dll
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Docking.dll
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaNegocio.dll
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaDatos.dll
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaPresentacion.pdb
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaNegocio.pdb
+G:\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaDatos.pdb
+G:\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\ActivosFijos.csprojResolveAssemblyReference.cache
+G:\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.Properties.Resources.resources
+G:\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.pdb
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaPresentacion.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\System.Windows.Forms.Ribbon35.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Docking.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaNegocio.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaDatos.dll
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaPresentacion.pdb
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaNegocio.pdb
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\bin\Debug\CapaDatos.pdb
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\ActivosFijos.csprojResolveAssemblyReference.cache
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.Properties.Resources.resources
+E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
