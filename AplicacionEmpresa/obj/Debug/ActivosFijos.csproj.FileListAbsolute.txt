@@ -121,3 +121,6 @@ E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\AplicacionEmpresa\obj\Debug\Ac
 C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
 C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
 C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
+C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
