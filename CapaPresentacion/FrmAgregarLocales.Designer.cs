@@ -166,6 +166,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "FrmAgregarLocales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAgregarLocales";
             this.Load += new System.EventHandler(this.FrmAgregarLocales_Load);
             this.tabControl1.ResumeLayout(false);

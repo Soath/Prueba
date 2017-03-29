@@ -192,7 +192,7 @@
             this.MinimumSize = new System.Drawing.Size(800, 400);
             this.Name = "FrmEditarLocal";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar Locales";
             this.UseWaitCursor = true;
             this.tableLayoutPanel2.ResumeLayout(false);

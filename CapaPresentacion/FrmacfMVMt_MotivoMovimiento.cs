@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ComponentFactory.Krypton.Toolkit;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -12,7 +13,7 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class FrmacfMVMt_MotivoMovimiento : Form
+    public partial class FrmacfMVMt_MotivoMovimiento : KryptonForm
 {
         int Activo = 1;
         int Graba = 0;

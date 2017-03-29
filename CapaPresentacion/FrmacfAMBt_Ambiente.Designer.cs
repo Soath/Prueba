@@ -376,6 +376,7 @@
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmacfAMBt_Ambiente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfAMBt_Ambiente";
             this.Load += new System.EventHandler(this.FrmacfAMBt_Ambiente_Load);
             this.toolStrip1.ResumeLayout(false);

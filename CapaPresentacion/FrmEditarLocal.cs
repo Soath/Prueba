@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ComponentFactory.Krypton.Toolkit;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -11,7 +12,7 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class FrmEditarLocal : Form
+    public partial class FrmEditarLocal : KryptonForm
     {
         ACFLOCT_LOCAL _owner;
         int LOCID;
