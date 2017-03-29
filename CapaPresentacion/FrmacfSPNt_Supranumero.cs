@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ComponentFactory.Krypton.Toolkit;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -12,7 +13,7 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class FrmacfSPNt_Supranumero : Form
+    public partial class FrmacfSPNt_Supranumero : KryptonForm
 {
 
         int Activo = 1;

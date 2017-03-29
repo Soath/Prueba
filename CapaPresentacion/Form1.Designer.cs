@@ -137,7 +137,6 @@
             // 
             // kryptonHeader1
             // 
-            this.kryptonHeader1.HeaderStyle = ComponentFactory.Krypton.Toolkit.HeaderStyle.Primary;
             this.kryptonHeader1.Location = new System.Drawing.Point(619, 292);
             this.kryptonHeader1.Name = "kryptonHeader1";
             this.kryptonHeader1.Size = new System.Drawing.Size(307, 37);
@@ -227,6 +226,7 @@
             this.Controls.Add(this.kryptonTextBox1);
             this.HelpButton = true;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario de Mantenimiento de Tablas";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

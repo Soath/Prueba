@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ComponentFactory.Krypton.Toolkit;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class FrmAgregarLocales : Form
+    public partial class FrmAgregarLocales : KryptonForm
     {
         public FrmAgregarLocales()
         {

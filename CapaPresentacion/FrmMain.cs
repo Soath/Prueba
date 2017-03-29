@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ComponentFactory.Krypton.Toolkit;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class FrmMain : Form
+    public partial class FrmMain : KryptonForm
     {
         ACFLOCT_LOCAL aCFLOCT_LOCAL;
         UserControl1 User1;
@@ -47,7 +48,7 @@ namespace CapaPresentacion
         private void ribbon2_Click(object sender, EventArgs e)
         {
             Form FrmbdiXPEpExtraccionSAP_Personal = new FrmbdiXPEpExtraccionSAP_Personal();
-            FrmbdiXPEpExtraccionSAP_Personal.Show();
+            FrmbdiXPEpExtraccionSAP_Personal.ShowDialog();
 
             //MessageBox.Show("Prueba 2", "Prueba 2xxx",
             //MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
@@ -55,7 +56,7 @@ namespace CapaPresentacion
         private void ribbon3_Click(object sender, EventArgs e)
         {
             Form FrmacfMVMt_MotivoMovimiento = new FrmacfMVMt_MotivoMovimiento();
-            FrmacfMVMt_MotivoMovimiento.Show();
+            FrmacfMVMt_MotivoMovimiento.ShowDialog();
 
             //MessageBox.Show("Prueba 2", "Prueba 2xxx",
             //MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
