@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using ComponentFactory.Krypton.Toolkit;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -42,24 +41,14 @@ namespace CapaPresentacion
 
         private void ribbon1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void ribbon2_Click(object sender, EventArgs e)
         {
-            Form FrmbdiXPEpExtraccionSAP_Personal = new FrmbdiXPEpExtraccionSAP_Personal();
-            FrmbdiXPEpExtraccionSAP_Personal.ShowDialog();
-
-            //MessageBox.Show("Prueba 2", "Prueba 2xxx",
-            //MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
         }
         private void ribbon3_Click(object sender, EventArgs e)
-        {
-            Form FrmacfMVMt_MotivoMovimiento = new FrmacfMVMt_MotivoMovimiento();
-            FrmacfMVMt_MotivoMovimiento.ShowDialog();
-
-            //MessageBox.Show("Prueba 2", "Prueba 2xxx",
-            //MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+        {            
         }
 
 
@@ -71,16 +60,43 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
 
         private void ribbonButton1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Form FrmPostres = new FrmacfACFp_Activo_Fijo();
             FrmPostres.ShowDialog();
 
+=======
+            Form FrmacfMARt_Marca = new FrmacfMARt_Marca();
+            FrmacfMARt_Marca.ShowDialog();
+>>>>>>> origin/master
         }
-
-        
+        private void ribbonButton2_Click(object sender, EventArgs e)
+        {
+            Form FrmacfUNMt_Unimed = new FrmacfUNMt_Unimed();
+            FrmacfUNMt_Unimed.ShowDialog();
+        }
+        private void ribbonButton3_Click(object sender, EventArgs e)
+        {
+            Form FrmacfINVp_Inventario = new FrmacfINVp_Inventario();
+            FrmacfINVp_Inventario.ShowDialog();
+        }
+        private void ribbonButton5_Click(object sender, EventArgs e)
+        {
+            Form FrmbdiXPEpExtraccionSAP_Personal = new FrmbdiXPEpExtraccionSAP_Personal();
+            FrmbdiXPEpExtraccionSAP_Personal.ShowDialog();
+        }
+        private void ribbonButton6_Click(object sender, EventArgs e)
+        {
+            Form FrmbdiPRVpProveedor = new FrmbdiPRVpProveedor();
+            FrmbdiPRVpProveedor.ShowDialog();
+        }
+        private void ribbonButton35_Click(object sender, EventArgs e)
+        {
+            Form FrmacfESTt_Estado = new FrmacfESTt_Estado();
+            FrmacfESTt_Estado.ShowDialog();
+        }  
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-
         }
 
         private void ribbonOrbMenuItem2_Click(object sender, EventArgs e)
