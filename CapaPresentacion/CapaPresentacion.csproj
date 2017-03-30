@@ -194,11 +194,11 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPostres.cs">
+    <Compile Include="FrmacfACFp_Activo_Fijo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPostres.Designer.cs">
-      <DependentUpon>FrmPostres.cs</DependentUpon>
+    <Compile Include="FrmacfACFp_Activo_Fijo.Designer.cs">
+      <DependentUpon>FrmacfACFp_Activo_Fijo.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -297,8 +297,8 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPostres.resx">
-      <DependentUpon>FrmPostres.cs</DependentUpon>
+    <EmbeddedResource Include="FrmacfACFp_Activo_Fijo.resx">
+      <DependentUpon>FrmacfACFp_Activo_Fijo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

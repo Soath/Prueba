@@ -12,7 +12,7 @@ namespace CapaDatos
         //public static String CnBDActivo = "Data Source=TOSHIBA-PC; Initial Catalog=BDActivos; Integrated Security=SSPI;";
         //public static String CnBDActivo = "Data Source=TOSHIBA-PC; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
         //public static String CnMaster = "Data Source=TOSHIBA-PC; Initial Catalog=master; Integrated Security=SSPI;";
-        public static String CnBDActivo = "Data Source=TOSHIBA-PC; Initial Catalog=BDActivos; Integrated Security=SSPI;";
+        public static String CnBDActivo = "Data Source=TOSHIBA-PC; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
         
         public String ChequearConexion()
         {

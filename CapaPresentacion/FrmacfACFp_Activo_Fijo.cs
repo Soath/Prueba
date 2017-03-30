@@ -13,24 +13,24 @@ using CapaNegocio;
 namespace CapaPresentacion
 {
     //
-    public partial class FrmPostres : KryptonForm
+    public partial class FrmacfACFp_Activo_Fijo : KryptonForm
     {
 
         int Activo = 1;
         int Graba = 0;
         public int idEditar = 0;
         public string MensError;
-        private static FrmPostres _Instancia;
+        private static FrmacfACFp_Activo_Fijo _Instancia;
 
-        public static FrmPostres GetInstancia()
+        public static FrmacfACFp_Activo_Fijo GetInstancia()
         {
             if (_Instancia == null)
             {
-                _Instancia = new FrmPostres();
+                _Instancia = new FrmacfACFp_Activo_Fijo();
             }
             return _Instancia;
         }
-        public FrmPostres()
+        public FrmacfACFp_Activo_Fijo()
         {
             InitializeComponent();
 
@@ -41,10 +41,16 @@ namespace CapaPresentacion
             this.toolStripImprimir.Click += new System.EventHandler(this.Control_Click_Imprimir);
             this.toolStripGuardar.Click += new System.EventHandler(this.Control_Click_Guardar);
             this.toolStripCancelar.Click += new System.EventHandler(this.Control_Click_Cancelar);
+            this.toolStripAnterior.Click += new System.EventHandler(this.Control_Click_Prev);
+            this.toolStripSiguiente.Click += new System.EventHandler(this.Control_Click_Next);
+            this.toolStripPrimero.Click += new System.EventHandler(this.Control_Click_Top);
+            this.toolStripUltimo.Click += new System.EventHandler(this.Control_Click_Last);
+            this.toolStripBuscar.Click += new System.EventHandler(this.Control_Click_Serch);
 
             EstadoText(this.Controls, true, false);
-
-                        
+            mostrar();
+            MostrarRegistro();
+            MostrarCombos();            
           
             CheckAll(this,true);
         }
@@ -56,7 +62,7 @@ namespace CapaPresentacion
 
         private void CheckAll(Control parent, bool value)
         {
-            TextBox box;
+           
             foreach (Control currentControl in parent.Controls)
             {
                 if (currentControl is TextBox)
@@ -99,6 +105,28 @@ namespace CapaPresentacion
             }
         }
 
+
+        private void Control_Click_Prev(object sender, EventArgs e)
+            {
+                Prev(ACFid.Text);
+            }
+        private void Control_Click_Next(object sender, EventArgs e)
+            {
+                Next(ACFid.Text);
+            }
+        private void Control_Click_Top(object sender, EventArgs e)
+            {
+                Top();
+            }
+        private void Control_Click_Last(object sender, EventArgs e)
+            {
+                Last();
+            }
+
+        private void Control_Click_Serch(object sender, EventArgs e)
+        {
+            Serch();
+        }
         private void Control_Click_Refrescar(object sender, EventArgs e)
         {
             this.BotonRefrescar();
@@ -164,6 +192,9 @@ namespace CapaPresentacion
             this.toolStripAnterior.Visible = edo;
             this.toolStripSiguiente.Visible = edo;
             this.toolStripUltimo.Visible = edo;
+            this.toolStripBuscar.Visible = edo;
+            this.toolStripComboBox1.Visible = edo;
+            this.toolStripTextBox1.Visible = edo;
 
         }
 
@@ -179,6 +210,9 @@ namespace CapaPresentacion
             this.toolStripAnterior.Enabled = edo;
             this.toolStripSiguiente.Enabled = edo;
             this.toolStripUltimo.Enabled = edo;
+            this.toolStripBuscar.Enabled = edo;
+            this.toolStripComboBox1.Enabled = edo;
+            this.toolStripTextBox1.Enabled = edo;
 
 
         }
@@ -193,8 +227,125 @@ namespace CapaPresentacion
             this.Activo = 1;
             this.tomaTab();
             this.Botones(true);
+            this.Configura();
+            this.Activo = 1;
+            this.tomaTab();
+            this.Botones(true);
+            this.comboBox1Estado.DataSource = NacfESTt_Estado.Mostrar();
+            this.comboBox1Estado.ValueMember = "ESTestado";
+            this.comboBox1Estado.SelectedIndex = 0;
 
         }
+        private void Top()
+        {
+            try
+            {
+                DataTable dat = NacfACFp_Activo_Fijo.Top();
+
+                //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
+
+                if (dat.Rows.Count > 0)
+                {
+                    DataRow row = dat.Rows[0];
+                    //guardo datos en variables
+                    ACFid.Text = Convert.ToString(row["ACFid"]);
+                    ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
+
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void Next(String iACFid)
+        {
+            try
+            {
+                DataTable dat = NacfACFp_Activo_Fijo.Next(iACFid);
+
+                //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
+
+                if (dat.Rows.Count > 0)
+                {
+                    DataRow row = dat.Rows[0];
+                    //guardo datos en variables
+                    ACFid.Text = Convert.ToString(row["ACFid"]);
+                    ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
+
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void Prev(String iACFid)
+        {
+            try
+            {
+                DataTable dat = NacfACFp_Activo_Fijo.Prev(iACFid);
+
+                //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
+
+                if (dat.Rows.Count > 0)
+                {
+                    DataRow row = dat.Rows[0];
+                    //guardo datos en variables
+                    ACFid.Text = Convert.ToString(row["ACFid"]);
+                    ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
+
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void Last()
+        {
+            try
+            {
+                DataTable dat = NacfACFp_Activo_Fijo.Last();
+
+                //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
+
+                if (dat.Rows.Count > 0)
+                {
+                    DataRow row = dat.Rows[0];
+                    //guardo datos en variables
+                    ACFid.Text = Convert.ToString(row["ACFid"]);
+                    ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
+
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void Serch()
+        {
+            this.toolStripComboBox1.Enabled = true;
+            this.toolStripTextBox1.Enabled = true;
+        }
+
         private void BotonRefrescar()
         {
             EstadoText(this.Controls, false, false);
@@ -216,14 +367,14 @@ namespace CapaPresentacion
             Activo = 2;
             Graba = 2;
             this.Botones(false);
-            EstadoText(this.Controls, true, true);
+            EstadoText(this.Controls, false, true);
            // tabControl1.SelectedTab = tabPage2;
             this.CargaDatos();
            
         }
         private void BotonEliminar()
         {
-                this.borrauno();
+            this.borrauno();
             this.mostrar();
         }
         private void BotonImprimir()
@@ -267,6 +418,7 @@ namespace CapaPresentacion
         private void CargaDatos()
         {
             idEditar = 0;
+
         }
         private bool validaCampos()
         {
@@ -278,9 +430,10 @@ namespace CapaPresentacion
         private void InsertaRegistro()
         {
             string Rta = string.Empty;
+            MessageBox.Show("insertar");
             try
             {
-                Rta = NPostres.Insertar(this.textBox1.Text, this.textBox1.Text, this.textBox1.Text, this.textBox1.Text);
+                Rta = NacfACFp_Activo_Fijo.Insertar(this.ACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.ACFdescripcion2.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
 
                 if (Rta.Equals("OK"))
                 {
@@ -288,7 +441,7 @@ namespace CapaPresentacion
                 }
                 else
                 {
-                    this.MensajeError("Error al Insertar Registro ");
+                    this.MensajeError("Error al Insertar Registro :" + Rta);
                 }
 
             }
@@ -305,14 +458,15 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NPostres.Editar(this.textBox1.Text, this.textBox2.Text, this.textBox3.Text, this.textBox4.Text);
+                
+                Rta = NacfACFp_Activo_Fijo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.ACFdescripcion2.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
                 if (Rta.Equals("OK"))
                 {
                     this.MensajeOk("Regsitro Actualizado Correctamente");
                 }
                 else
                 {
-                    this.MensajeError("Error al Actualizar Registro ");
+                    this.MensajeError("Error al Actualizar Registro " + Rta);
                 }
 
             }
@@ -352,8 +506,41 @@ namespace CapaPresentacion
         
         private void buscarNombre()
         {
-   
+            NacfACFp_Activo_Fijo.Buscar("1");
         }
+
+        private void MostrarCombos()
+        {
+            NacfACFp_Activo_Fijo.Buscar("1");
+        }
+        private void MostrarRegistro()
+        {
+
+            try
+            {
+                DataTable dat = NacfACFp_Activo_Fijo.Mostrar();
+
+                  //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
+
+                if (dat.Rows.Count > 0)
+                {
+                    DataRow row = dat.Rows[0];
+                    //guardo datos en variables
+                    ACFid.Text = Convert.ToString(row["ACFid"]);
+                    ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
+
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+
         private void tomaTab()
         {
             if (Activo == 2) tabControl1.SelectedTab = tabPage2;

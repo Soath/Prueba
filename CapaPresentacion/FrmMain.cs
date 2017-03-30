@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class FrmMain : KryptonForm
+    public partial class FrmMain : Form
     {
         ACFLOCT_LOCAL aCFLOCT_LOCAL;
         UserControl1 User1;
@@ -71,7 +71,7 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
 
         private void ribbonButton1_Click(object sender, EventArgs e)
         {
-            Form FrmPostres = new FrmPostres();
+            Form FrmPostres = new FrmacfACFp_Activo_Fijo();
             FrmPostres.ShowDialog();
 
         }

@@ -212,16 +212,34 @@ namespace CapaNegocio
             Obj.ACFid = iACFid;
             return Obj.Eliminar(Obj);
         }
+        public static DataTable Top()
+        {
+            return new DacfACFp_Activo_Fijo().Top();
+        }
+        public static DataTable Last()
+        {
+            return new DacfACFp_Activo_Fijo().Last();
+        }
+        public static DataTable Next(String iACFid)
+        {
+            return new DacfACFp_Activo_Fijo().Next(iACFid);
+        }
+
+        public static DataTable Prev(String iACFid)
+        {
+            return new DacfACFp_Activo_Fijo().Prev(iACFid);
+        }
+
 
         //------------------------------------------------------------------
         //M�todo Mostrar que llama al m�todo Mostrar de la clase DPostres
         //de la CapaDatos
         public static DataTable Mostrar()
         {
-            return new DacfACFp_Activo_Fijo().Mostrar();
+            return new DacfACFp_Activo_Fijo().MostrarRegistro("1");
         }
 
-
+       
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos

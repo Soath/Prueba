@@ -4,11 +4,7 @@
 library
 C#
 .cs
-<<<<<<< HEAD
-C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\
-=======
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\
->>>>>>> origin/master
 CapaPresentacion
 none
 false
@@ -16,14 +12,9 @@ DEBUG;TRACE
 
 2-201385651
 
-<<<<<<< HEAD
-552065088608
-29425756742
-=======
-551298345675
+55194390316
 291050413063
->>>>>>> origin/master
 View1.xaml;ViewModel1.xaml;
 
-False
+True
 
