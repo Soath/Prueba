@@ -98,11 +98,23 @@
     <Compile Include="FrmacfESTt_Estado.Designer.cs">
       <DependentUpon>FrmacfESTt_Estado.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfINVp_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfINVp_Inventario.Designer.cs">
+      <DependentUpon>FrmacfINVp_Inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfLOCt_Local.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmacfLOCt_Local.Designer.cs">
       <DependentUpon>FrmacfLOCt_Local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfMARt_Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfMARt_Marca.Designer.cs">
+      <DependentUpon>FrmacfMARt_Marca.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmacfMATt_Material.cs">
       <SubType>Form</SubType>
@@ -252,8 +264,14 @@
     <EmbeddedResource Include="FrmacfESTt_Estado.resx">
       <DependentUpon>FrmacfESTt_Estado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfINVp_Inventario.resx">
+      <DependentUpon>FrmacfINVp_Inventario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfLOCt_Local.resx">
       <DependentUpon>FrmacfLOCt_Local.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfMARt_Marca.resx">
+      <DependentUpon>FrmacfMARt_Marca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfMATt_Material.resx">
       <DependentUpon>FrmacfMATt_Material.cs</DependentUpon>

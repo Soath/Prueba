@@ -47,6 +47,9 @@
     <Compile Include="DacfEDIt_edificaciondetalle.cs" />
     <Compile Include="DacfESTt_Estado.cs" />
     <Compile Include="DacfICRt_Inventariocaracteristicas.cs" />
+    <Compile Include="DAcfINBt_Inventariobienes.cs" />
+    <Compile Include="DAcfINVp_Inventario.cs" />
+    <Compile Include="DAcfMARt_Marca.cs" />
     <Compile Include="DacfMATt_Material.cs" />
     <Compile Include="DAcfMVMt_MotivoMovimiento.cs" />
     <Compile Include="DacfPDFt_procesodiferido.cs" />

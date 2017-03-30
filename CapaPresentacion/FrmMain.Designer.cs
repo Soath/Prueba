@@ -196,14 +196,14 @@
             this.ribbonButton2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.Image")));
             this.ribbonButton2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.SmallImage")));
             this.ribbonButton2.Text = "Unidades de Medida";
-            this.ribbonButton2.Click += new System.EventHandler(this.ribbon2_Click);
+            this.ribbonButton2.Click += new System.EventHandler(this.ribbonButton2_Click);
             // 
             // ribbonButton3
             // 
             this.ribbonButton3.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.Image")));
             this.ribbonButton3.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.SmallImage")));
             this.ribbonButton3.Text = "Catalogo de Bienes";
-            this.ribbonButton3.Click += new System.EventHandler(this.ribbon3_Click);
+            this.ribbonButton3.Click += new System.EventHandler(this.ribbonButton3_Click);
             // 
             // ribbonButton4
             // 
@@ -231,12 +231,14 @@
             this.ribbonButton5.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton5.Image")));
             this.ribbonButton5.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton5.SmallImage")));
             this.ribbonButton5.Text = "Personal";
+            this.ribbonButton5.Click += new System.EventHandler(this.ribbonButton5_Click);            
             // 
             // ribbonButton6
             // 
             this.ribbonButton6.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton6.Image")));
             this.ribbonButton6.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton6.SmallImage")));
             this.ribbonButton6.Text = "Proveedores";
+            this.ribbonButton6.Click += new System.EventHandler(this.ribbonButton6_Click);            
             // 
             // ribbonButton7
             // 

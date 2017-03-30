@@ -47,7 +47,10 @@
     <Compile Include="NacfEDIt_edificaciondetalle.cs" />
     <Compile Include="NacfESTt_Estado.cs" />
     <Compile Include="NacfICRt_Inventariocaracteristicas.cs" />
+    <Compile Include="NacfINBt_Inventariobienes.cs" />
+    <Compile Include="NacfINVp_Inventario.cs" />
     <Compile Include="NACFLOCT_LOCAL.cs" />
+    <Compile Include="NacfMARt_Marca.cs" />
     <Compile Include="NacfMATt_Material.cs" />
     <Compile Include="NacfMVMt_MotivoMovimiento.cs" />
     <Compile Include="NacfPDFt_procesodiferido.cs" />
