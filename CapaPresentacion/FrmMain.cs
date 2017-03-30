@@ -82,6 +82,11 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
         {
             Form FrmbdiPRVpProveedor = new FrmbdiPRVpProveedor();
             FrmbdiPRVpProveedor.ShowDialog();
+        }
+        private void ribbonButton35_Click(object sender, EventArgs e)
+        {
+            Form FrmacfESTt_Estado = new FrmacfESTt_Estado();
+            FrmacfESTt_Estado.ShowDialog();
         }  
 
         private void FrmMain_Load(object sender, EventArgs e)
