@@ -104,19 +104,16 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
             Form FrmacfESTt_Estado = new FrmacfESTt_Estado();
             FrmacfESTt_Estado.ShowDialog();
         }
-<<<<<<< HEAD
         private void ribbonButton36_Click(object sender, EventArgs e)
         {
             Form FrmbdiCDDpClasesDeDocumento = new FrmbdiCDDpClasesDeDocumento();
             FrmbdiCDDpClasesDeDocumento.ShowDialog();
         }
-=======
         private void ribbonButton12_Click(object sender, EventArgs e)
         {
             Form FrmacfMVMt_MotivoMovimiento = new FrmacfMVMt_MotivoMovimiento();
             FrmacfMVMt_MotivoMovimiento.ShowDialog();
         }  
->>>>>>> origin/master
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
