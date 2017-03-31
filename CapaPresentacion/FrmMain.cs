@@ -60,14 +60,9 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
 
         private void ribbonButton1_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            Form FrmPostres = new FrmacfACFp_Activo_Fijo();
-            FrmPostres.ShowDialog();
 
-=======
             Form FrmacfMARt_Marca = new FrmacfMARt_Marca();
             FrmacfMARt_Marca.ShowDialog();
->>>>>>> origin/master
         }
         private void ribbonButton2_Click(object sender, EventArgs e)
         {

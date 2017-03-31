@@ -330,3 +330,5 @@ C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacio
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfINVp_Inventario.resources
 >>>>>>> origin/master
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfINVp_Inventario.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfMARt_Marca.resources
