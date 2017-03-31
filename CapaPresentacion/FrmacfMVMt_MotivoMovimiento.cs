@@ -217,6 +217,8 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
+            Form FrmReporteMVM = new FrmReporteMVM();
+            FrmReporteMVM.Show();
         }
 
         private void BotonGuardar()
