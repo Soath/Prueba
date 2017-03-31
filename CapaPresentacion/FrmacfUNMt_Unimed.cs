@@ -456,7 +456,7 @@ namespace CapaPresentacion
             this.txtUNMdetalle.TextAlign = HorizontalAlignment.Right;
             this.labelX1.Text = "ID";
             this.labelX2.Text = "Unidad";
-            this.labelX3.Text = "Detalle";
+            this.labelX3.Text = "Descripcion";
             this.groupBox2.Text = "Unidad de Medida";
         }
         //-------------------------------------------------------------------

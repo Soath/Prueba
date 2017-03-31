@@ -155,10 +155,6 @@ namespace CapaPresentacion
             this.dataListado.Columns[1].DefaultCellStyle.Format = "#,0";
             this.dataListado.Columns[1].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataListado.Columns[2].Width = 250;
-            //this.dataListado.Columns[3].Width = 100;
-            //this.dataListado.Columns[3].DefaultCellStyle.Format = "#,0.00";
-            //this.dataListado.Columns[3].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            //this.dataListado.Columns[4].Width = 100;
             this.dataListado.Columns[1].HeaderText = "BUKRS";
             this.dataListado.Columns[2].HeaderText = "BUTXT";
             
@@ -448,8 +444,8 @@ namespace CapaPresentacion
             this.txtBUKRS.TabIndex = 1;
             this.txtBUKRS.TextAlign = HorizontalAlignment.Right;
             this.txtBUTXT.TabIndex = 2;
-            this.labelX1.Text = "BUKRS";
-            this.labelX2.Text = "BUTXT";
+            this.labelX1.Text = "Codigo de Empresas";
+            this.labelX2.Text = "Descripcion de Empresa";
             this.groupBox2.Text = "Sociedades";
         }
         //-------------------------------------------------------------------

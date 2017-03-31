@@ -467,8 +467,8 @@ namespace CapaPresentacion
             this.labelX2.Text = "Descripcion";
             this.labelX3.Text = "Detalle";
             this.labelX4.Text = "Abreviado";
-            this.labelX5.Text = "Id ACT";
-            this.labelX6.Text = "Id Costo";
+            this.labelX5.Text = "Codigo de Actividad";
+            this.labelX6.Text = "Codigo de costo (base de datos antigua)";
             this.groupBox2.Text = "Costo";
         }
         //-------------------------------------------------------------------

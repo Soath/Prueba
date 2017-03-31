@@ -74,6 +74,11 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
             Form FrmacfINVp_Inventario = new FrmacfINVp_Inventario();
             FrmacfINVp_Inventario.ShowDialog();
         }
+        private void ribbonButton4_Click(object sender, EventArgs e)
+        {
+            Form FrmacfACFp_Activo_Fijo = new FrmacfACFp_Activo_Fijo();
+            FrmacfACFp_Activo_Fijo.ShowDialog();
+        }
         private void ribbonButton5_Click(object sender, EventArgs e)
         {
             Form FrmbdiXPEpExtraccionSAP_Personal = new FrmbdiXPEpExtraccionSAP_Personal();
@@ -84,11 +89,26 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
             Form FrmbdiPRVpProveedor = new FrmbdiPRVpProveedor();
             FrmbdiPRVpProveedor.ShowDialog();
         }
+        private void ribbonButton8_Click(object sender, EventArgs e)
+        {
+            Form FrmacfCSTt_Costo = new FrmacfCSTt_Costo();
+            FrmacfCSTt_Costo.ShowDialog();
+        }
+        private void ribbonButton9_Click(object sender, EventArgs e)
+        {
+            Form FrmacfVNRt_VNR = new FrmacfVNRt_VNR();
+            FrmacfVNRt_VNR.ShowDialog();
+        }
         private void ribbonButton35_Click(object sender, EventArgs e)
         {
             Form FrmacfESTt_Estado = new FrmacfESTt_Estado();
             FrmacfESTt_Estado.ShowDialog();
-        }  
+        }
+        private void ribbonButton36_Click(object sender, EventArgs e)
+        {
+            Form FrmbdiCDDpClasesDeDocumento = new FrmbdiCDDpClasesDeDocumento();
+            FrmbdiCDDpClasesDeDocumento.ShowDialog();
+        }
 
         private void FrmMain_Load(object sender, EventArgs e)
         {

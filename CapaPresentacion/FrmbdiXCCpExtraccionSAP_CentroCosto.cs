@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ComponentFactory.Krypton.Toolkit;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -11,7 +12,7 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class FrmbdiXCCpExtraccionSAP_CentroCosto : Form
+    public partial class FrmbdiXCCpExtraccionSAP_CentroCosto : KryptonForm
     {
 
         int Activo = 1;
@@ -521,8 +522,6 @@ namespace CapaPresentacion
             this.txtKTEXT.TabIndex = 2;
             this.txtKLTXT.TabIndex = 3;
             this.txtKLTXT.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
             this.labelX1.Text = "Codigo o ID de Centro de Costo";
             this.labelX2.Text = "Descripción abreviada de Centro de Costo";
             this.labelX3.Text = "Descripcion de Centro de Costo";

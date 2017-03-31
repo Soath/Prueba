@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ComponentFactory.Krypton.Toolkit;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -11,7 +12,7 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class FrmacfTMVt_TipoMovimiento : Form
+    public partial class FrmacfTMVt_TipoMovimiento : KryptonForm
     {
 
         int Activo = 1;
@@ -213,7 +214,6 @@ namespace CapaPresentacion
             this.dataListado.Columns[1].HeaderText = "Idpostre";
             this.dataListado.Columns[2].HeaderText = "Nombre";
             this.dataListado.Columns[3].HeaderText = "Precio";
-            //this.dataListado.Columns[4].HeaderText = "Stock";
         }
 
         private void mostrar()
@@ -321,7 +321,6 @@ namespace CapaPresentacion
         {
             this.txtTVMid.Text = "0";
             this.txtTVMtipomovimiento.Text = string.Empty;
-            // this.txtStock.Text = string.Empty;
         }
         public DataGridViewRow ObtenerSeleccion()
         {
@@ -331,11 +330,9 @@ namespace CapaPresentacion
         private void CargaDatos()
         {
             idEditar = 0;
-           // idEditar = Convert.ToInt32(this.ObtenerSeleccion().Cells[1].Value);
             this.txtTVMid.Text = Convert.ToString(this.ObtenerSeleccion().Cells[1].Value);
             this.txtTVMtipomovimiento.Text = Convert.ToString(this.ObtenerSeleccion().Cells[2].Value);
             this.txtTVMtipomovimiento.Text = this.txtTVMtipomovimiento.Text.Trim();
-            //this.txtStock.Text = Convert.ToString(this.ObtenerSeleccion().Cells[4].Value);
         }
         private bool validaCampos()
         {
@@ -353,14 +350,6 @@ namespace CapaPresentacion
                 this.txtTVMtipomovimiento.Focus();
                 return false;
             }
-
-            //if (this.txtStock.Text == string.Empty)
-            //{
-            //    errorIcono.SetError(txtStock, "Ingrese el dato por Favor..");
-            //    this.MensError = "Falta ingresar el valor de Stock";
-            //    this.txtStock.Focus();
-            //    return false;
-            //}
             return true;
         }
         //-----------------------------------------------------------------------------------	
@@ -503,14 +492,8 @@ namespace CapaPresentacion
             this.txtTVMid.TabIndex = 1;
             this.txtTVMid.TextAlign = HorizontalAlignment.Right;
             this.txtTVMtipomovimiento.TabIndex = 2;
-            //this.txtAMBambiente.TabIndex = 3;
-            //this.txtAMBambiente.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
             this.labelX1.Text = "Código de Movimiento";
             this.labelX2.Text = "Descripción de Movimiento";
-            //this.labelX3.Text = "Precio";
-            //this.labelX4.Text = "Stock";
             this.groupBox2.Text = "Tipo Movimiento";
         }
         //-------------------------------------------------------------------

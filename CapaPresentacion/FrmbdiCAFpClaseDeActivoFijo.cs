@@ -155,10 +155,6 @@ namespace CapaPresentacion
             this.dataListado.Columns[1].DefaultCellStyle.Format = "#,0";
             this.dataListado.Columns[1].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataListado.Columns[2].Width = 250;
-            //this.dataListado.Columns[3].Width = 100;
-            //this.dataListado.Columns[3].DefaultCellStyle.Format = "#,0.00";
-            //this.dataListado.Columns[3].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            //this.dataListado.Columns[4].Width = 100;
             this.dataListado.Columns[1].HeaderText = "ESTid";
             this.dataListado.Columns[2].HeaderText = "ESTestado";
             
@@ -447,8 +443,8 @@ namespace CapaPresentacion
             this.txtANLKL.TabIndex = 1;
             this.txtANLKL.TextAlign = HorizontalAlignment.Right;
             this.txtTXK50.TabIndex = 2;
-            this.labelX1.Text = "ANLKL";
-            this.labelX2.Text = "TXK50";
+            this.labelX1.Text = "Codigo de Clase";
+            this.labelX2.Text = "Descripcion ";
             this.groupBox2.Text = "Clase de Activo Fijo";
         }
         //-------------------------------------------------------------------

@@ -291,7 +291,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(9, 284);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(729, 249);
@@ -302,9 +302,9 @@
             this.tabPage1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.tabPage1.Controls.Add(this.kryptonGroupBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(721, 223);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
@@ -313,7 +313,7 @@
             // kryptonGroupBox2
             // 
             this.kryptonGroupBox2.Location = new System.Drawing.Point(25, 23);
-            this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
             // kryptonGroupBox2.Panel
@@ -329,7 +329,7 @@
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(144, 105);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(195, 20);
             this.textBox10.TabIndex = 4;
@@ -337,7 +337,7 @@
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(144, 82);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(195, 20);
             this.textBox11.TabIndex = 3;
@@ -345,7 +345,7 @@
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(144, 59);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(195, 20);
             this.textBox12.TabIndex = 2;
@@ -353,7 +353,7 @@
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(144, 37);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(195, 20);
             this.textBox13.TabIndex = 1;
@@ -361,7 +361,7 @@
             // textBox14
             // 
             this.textBox14.Location = new System.Drawing.Point(144, 13);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(195, 20);
             this.textBox14.TabIndex = 0;
@@ -370,9 +370,9 @@
             // 
             this.tabPage2.Controls.Add(this.kryptonGroupBox3);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(721, 223);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
@@ -381,7 +381,7 @@
             // kryptonGroupBox3
             // 
             this.kryptonGroupBox3.Location = new System.Drawing.Point(24, 20);
-            this.kryptonGroupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox3.Name = "kryptonGroupBox3";
             // 
             // kryptonGroupBox3.Panel
@@ -397,7 +397,7 @@
             // textBox15
             // 
             this.textBox15.Location = new System.Drawing.Point(144, 105);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(195, 20);
             this.textBox15.TabIndex = 4;
@@ -405,7 +405,7 @@
             // textBox16
             // 
             this.textBox16.Location = new System.Drawing.Point(144, 82);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(195, 20);
             this.textBox16.TabIndex = 3;
@@ -413,7 +413,7 @@
             // textBox17
             // 
             this.textBox17.Location = new System.Drawing.Point(144, 59);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(195, 20);
             this.textBox17.TabIndex = 2;
@@ -421,7 +421,7 @@
             // textBox18
             // 
             this.textBox18.Location = new System.Drawing.Point(144, 37);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox18.Margin = new System.Windows.Forms.Padding(2);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(195, 20);
             this.textBox18.TabIndex = 1;
@@ -429,7 +429,7 @@
             // textBox19
             // 
             this.textBox19.Location = new System.Drawing.Point(144, 13);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(195, 20);
             this.textBox19.TabIndex = 0;
@@ -445,7 +445,7 @@
             // kryptonGroupBox1
             // 
             this.kryptonGroupBox1.Location = new System.Drawing.Point(27, 98);
-            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
             // kryptonGroupBox1.Panel
@@ -461,7 +461,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(144, 105);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(195, 20);
             this.textBox5.TabIndex = 4;
@@ -469,7 +469,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(144, 82);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(195, 20);
             this.textBox4.TabIndex = 3;
@@ -477,7 +477,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(144, 59);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(195, 20);
             this.textBox3.TabIndex = 2;
@@ -485,7 +485,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(144, 37);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(195, 20);
             this.textBox2.TabIndex = 1;
@@ -493,7 +493,7 @@
             // ACFdescripcion2
             // 
             this.ACFdescripcion2.Location = new System.Drawing.Point(144, 13);
-            this.ACFdescripcion2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ACFdescripcion2.Margin = new System.Windows.Forms.Padding(2);
             this.ACFdescripcion2.Name = "ACFdescripcion2";
             this.ACFdescripcion2.Size = new System.Drawing.Size(195, 20);
             this.ACFdescripcion2.TabIndex = 0;
@@ -501,7 +501,7 @@
             // ACFid
             // 
             this.ACFid.Location = new System.Drawing.Point(415, 119);
-            this.ACFid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ACFid.Margin = new System.Windows.Forms.Padding(2);
             this.ACFid.Name = "ACFid";
             this.ACFid.Size = new System.Drawing.Size(286, 20);
             this.ACFid.TabIndex = 134;
@@ -509,7 +509,7 @@
             // ACFdescripcion
             // 
             this.ACFdescripcion.Location = new System.Drawing.Point(415, 142);
-            this.ACFdescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ACFdescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.ACFdescripcion.Name = "ACFdescripcion";
             this.ACFdescripcion.Size = new System.Drawing.Size(286, 20);
             this.ACFdescripcion.TabIndex = 135;
@@ -518,7 +518,7 @@
             // 
             this.comboBox1Estado.FormattingEnabled = true;
             this.comboBox1Estado.Location = new System.Drawing.Point(415, 177);
-            this.comboBox1Estado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1Estado.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1Estado.Name = "comboBox1Estado";
             this.comboBox1Estado.Size = new System.Drawing.Size(286, 21);
             this.comboBox1Estado.TabIndex = 136;

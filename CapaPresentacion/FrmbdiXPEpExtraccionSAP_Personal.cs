@@ -517,14 +517,14 @@ namespace CapaPresentacion
             this.txtNachn.TabIndex = 2;
             this.txtName2.TabIndex = 3;
             this.txtName2.TextAlign = HorizontalAlignment.Right;
-            this.labelX1.Text = "PERNR";
-            this.labelX2.Text = "Nachn";
-            this.labelX3.Text = "Name2";
-            this.labelX4.Text = "Vorna";
+            this.labelX1.Text = "Codigo";
+            this.labelX2.Text = "Primer apellido";
+            this.labelX3.Text = "Segundo apellido";
+            this.labelX4.Text = "Nombre de trabajador";
             this.labelX5.Text = "DNI";
-            this.labelX6.Text = "WERKS";
-            this.labelX7.Text = "Persg";
-            this.labelX8.Text = "KOSTL";
+            this.labelX6.Text = "Zona o ubicacion de trabajo";
+            this.labelX7.Text = "Categoria de Trabajador";
+            this.labelX8.Text = "Centro de Costo";
             this.groupBox2.Text = "Extración SAP Personal";
         }
         //-------------------------------------------------------------------

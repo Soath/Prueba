@@ -80,11 +80,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfACTt_Actividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfACTt_Actividad.Designer.cs">
+      <DependentUpon>FrmacfACTt_Actividad.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfAMBt_Ambiente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmacfAMBt_Ambiente.Designer.cs">
       <DependentUpon>FrmacfAMBt_Ambiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfCMPt_Componente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfCMPt_Componente.Designer.cs">
+      <DependentUpon>FrmacfCMPt_Componente.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmacfCSTt_Costo.cs">
       <SubType>Form</SubType>
@@ -134,11 +146,23 @@
     <Compile Include="FrmacfPDFt_procesodiferido.Designer.cs">
       <DependentUpon>FrmacfPDFt_procesodiferido.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfRTRt_Reparotributario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfRTRt_Reparotributario.Designer.cs">
+      <DependentUpon>FrmacfRTRt_Reparotributario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfRVAt_registrovaluacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmacfRVAt_registrovaluacion.Designer.cs">
       <DependentUpon>FrmacfRVAt_registrovaluacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfSELt_SistemaElectrico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfSELt_SistemaElectrico.Designer.cs">
+      <DependentUpon>FrmacfSELt_SistemaElectrico.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmacfSPNt_Supranumero.cs">
       <SubType>Form</SubType>
@@ -146,11 +170,23 @@
     <Compile Include="FrmacfSPNt_Supranumero.Designer.cs">
       <DependentUpon>FrmacfSPNt_Supranumero.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfTMVt_TipoMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfTMVt_TipoMovimiento.Designer.cs">
+      <DependentUpon>FrmacfTMVt_TipoMovimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfUNMt_Unimed.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmacfUNMt_Unimed.Designer.cs">
       <DependentUpon>FrmacfUNMt_Unimed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfVNRt_VNR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfVNRt_VNR.Designer.cs">
+      <DependentUpon>FrmacfVNRt_VNR.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAgregarLocales.cs">
       <SubType>Form</SubType>
@@ -176,6 +212,12 @@
     <Compile Include="FrmbdiCAFpClaseDeActivoFijo.Designer.cs">
       <DependentUpon>FrmbdiCAFpClaseDeActivoFijo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmbdiCDDpClasesDeDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmbdiCDDpClasesDeDocumento.Designer.cs">
+      <DependentUpon>FrmbdiCDDpClasesDeDocumento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmbdiPRVpProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +229,12 @@
     </Compile>
     <Compile Include="FrmbdiSOCpSociedades.Designer.cs">
       <DependentUpon>FrmbdiSOCpSociedades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmbdiXCCpExtraccionSAP_CentroCosto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmbdiXCCpExtraccionSAP_CentroCosto.Designer.cs">
+      <DependentUpon>FrmbdiXCCpExtraccionSAP_CentroCosto.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmbdiXPEpExtraccionSAP_Personal.cs">
       <SubType>Form</SubType>
@@ -255,8 +303,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfACTt_Actividad.resx">
+      <DependentUpon>FrmacfACTt_Actividad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfAMBt_Ambiente.resx">
       <DependentUpon>FrmacfAMBt_Ambiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfCMPt_Componente.resx">
+      <DependentUpon>FrmacfCMPt_Componente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfCSTt_Costo.resx">
       <DependentUpon>FrmacfCSTt_Costo.cs</DependentUpon>
@@ -282,14 +336,26 @@
     <EmbeddedResource Include="FrmacfPDFt_procesodiferido.resx">
       <DependentUpon>FrmacfPDFt_procesodiferido.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfRTRt_Reparotributario.resx">
+      <DependentUpon>FrmacfRTRt_Reparotributario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfRVAt_registrovaluacion.resx">
       <DependentUpon>FrmacfRVAt_registrovaluacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfSELt_SistemaElectrico.resx">
+      <DependentUpon>FrmacfSELt_SistemaElectrico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfSPNt_Supranumero.resx">
       <DependentUpon>FrmacfSPNt_Supranumero.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfTMVt_TipoMovimiento.resx">
+      <DependentUpon>FrmacfTMVt_TipoMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfUNMt_Unimed.resx">
       <DependentUpon>FrmacfUNMt_Unimed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfVNRt_VNR.resx">
+      <DependentUpon>FrmacfVNRt_VNR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarLocales.resx">
       <DependentUpon>FrmAgregarLocales.cs</DependentUpon>
@@ -300,11 +366,17 @@
     <EmbeddedResource Include="FrmbdiCAFpClaseDeActivoFijo.resx">
       <DependentUpon>FrmbdiCAFpClaseDeActivoFijo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmbdiCDDpClasesDeDocumento.resx">
+      <DependentUpon>FrmbdiCDDpClasesDeDocumento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmbdiPRVpProveedor.resx">
       <DependentUpon>FrmbdiPRVpProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmbdiSOCpSociedades.resx">
       <DependentUpon>FrmbdiSOCpSociedades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmbdiXCCpExtraccionSAP_CentroCosto.resx">
+      <DependentUpon>FrmbdiXCCpExtraccionSAP_CentroCosto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmbdiXPEpExtraccionSAP_Personal.resx">
       <DependentUpon>FrmbdiXPEpExtraccionSAP_Personal.cs</DependentUpon>

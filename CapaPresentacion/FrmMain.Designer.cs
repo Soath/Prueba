@@ -42,6 +42,8 @@
             this.ribbonButton3 = new System.Windows.Forms.RibbonButton();
             this.ribbonSeparator3 = new System.Windows.Forms.RibbonSeparator();
             this.ribbonButton4 = new System.Windows.Forms.RibbonButton();
+            this.ribbonSeparator20 = new System.Windows.Forms.RibbonSeparator();
+            this.ribbonButton35 = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButton5 = new System.Windows.Forms.RibbonButton();
             this.ribbonSeparator4 = new System.Windows.Forms.RibbonSeparator();
@@ -106,8 +108,10 @@
             this.ribbonPanel14 = new System.Windows.Forms.RibbonPanel();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.kryptonBorderEdge1 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
-            this.ribbonButton35 = new System.Windows.Forms.RibbonButton();
-            this.ribbonSeparator20 = new System.Windows.Forms.RibbonSeparator();
+            this.ribbonSeparator21 = new System.Windows.Forms.RibbonSeparator();
+            this.ribbonButton36 = new System.Windows.Forms.RibbonButton();
+            this.ribbonSeparator22 = new System.Windows.Forms.RibbonSeparator();
+            this.ribbonButton37 = new System.Windows.Forms.RibbonButton();
             this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -216,7 +220,15 @@
             // 
             this.ribbonButton4.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton4.Image")));
             this.ribbonButton4.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton4.SmallImage")));
-            this.ribbonButton4.Text = "Competizacion";
+            this.ribbonButton4.Text = "Activo Fijo";
+            this.ribbonButton4.Click += new System.EventHandler(this.ribbonButton4_Click);
+            // 
+            // ribbonButton35
+            // 
+            this.ribbonButton35.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton35.Image")));
+            this.ribbonButton35.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton35.SmallImage")));
+            this.ribbonButton35.Text = "Estado";
+            this.ribbonButton35.Click += new System.EventHandler(this.ribbonButton35_Click);
             // 
             // ribbonPanel2
             // 
@@ -231,6 +243,10 @@
             this.ribbonPanel2.Items.Add(this.ribbonButton9);
             this.ribbonPanel2.Items.Add(this.ribbonSeparator8);
             this.ribbonPanel2.Items.Add(this.ribbonButton10);
+            this.ribbonPanel2.Items.Add(this.ribbonSeparator21);
+            this.ribbonPanel2.Items.Add(this.ribbonButton36);
+            this.ribbonPanel2.Items.Add(this.ribbonSeparator22);
+            this.ribbonPanel2.Items.Add(this.ribbonButton37);
             this.ribbonPanel2.Text = "Tablas Complementarias";
             // 
             // ribbonButton5
@@ -258,19 +274,22 @@
             // 
             this.ribbonButton8.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton8.Image")));
             this.ribbonButton8.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton8.SmallImage")));
-            this.ribbonButton8.Text = "Centro de Responsabilidad";
+            this.ribbonButton8.Text = "Centro de Costo";
+            this.ribbonButton8.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
+            this.ribbonButton8.Click += new System.EventHandler(this.ribbonButton8_Click);
             // 
             // ribbonButton9
             // 
             this.ribbonButton9.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton9.Image")));
             this.ribbonButton9.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton9.SmallImage")));
-            this.ribbonButton9.Text = "Tabla VNR";
+            this.ribbonButton9.Text = "VNR";
+            this.ribbonButton9.Click += new System.EventHandler(this.ribbonButton9_Click);
             // 
             // ribbonButton10
             // 
             this.ribbonButton10.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton10.Image")));
             this.ribbonButton10.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton10.SmallImage")));
-            this.ribbonButton10.Text = "Parametros";
+            this.ribbonButton10.Text = "Sociedades";
             // 
             // ribbonTab2
             // 
@@ -552,12 +571,18 @@
             this.kryptonBorderEdge1.Size = new System.Drawing.Size(38, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
-            // ribbonButton35
+            // ribbonButton36
             // 
-            this.ribbonButton35.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton35.Image")));
-            this.ribbonButton35.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton35.SmallImage")));
-            this.ribbonButton35.Text = "Estado";
-            this.ribbonButton35.Click += new System.EventHandler(this.ribbonButton35_Click);
+            this.ribbonButton36.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton36.Image")));
+            this.ribbonButton36.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton36.SmallImage")));
+            this.ribbonButton36.Text = "Clases de Documento";
+            this.ribbonButton36.Click += new System.EventHandler(this.ribbonButton36_Click);
+            // 
+            // ribbonButton37
+            // 
+            this.ribbonButton37.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton37.Image")));
+            this.ribbonButton37.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton37.SmallImage")));
+            this.ribbonButton37.Text = "Clases de Activo Fijo";
             // 
             // FrmMain
             // 
@@ -659,5 +684,9 @@
         private ComponentFactory.Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge1;
         private System.Windows.Forms.RibbonSeparator ribbonSeparator20;
         private System.Windows.Forms.RibbonButton ribbonButton35;
+        private System.Windows.Forms.RibbonSeparator ribbonSeparator21;
+        private System.Windows.Forms.RibbonButton ribbonButton36;
+        private System.Windows.Forms.RibbonSeparator ribbonSeparator22;
+        private System.Windows.Forms.RibbonButton ribbonButton37;
     }
 }

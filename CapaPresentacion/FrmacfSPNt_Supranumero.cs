@@ -448,8 +448,8 @@ namespace CapaPresentacion
             this.txtT087U_ANLUE.TabIndex = 1;
             this.txtT087U_ANLUE.TextAlign = HorizontalAlignment.Right;
             this.txtT087U_ANLUE_TXT.TabIndex = 2;
-            this.labelX1.Text = "T087U_ANLUE";
-            this.labelX2.Text = "T087U_ANLUE_TXT";
+            this.labelX1.Text = "Codigo de Supranumero o Numero de Componentizacion";
+            this.labelX2.Text = "Descripcion de supranumero";
             this.groupBox2.Text = "Supranumero";
         }
         //-------------------------------------------------------------------

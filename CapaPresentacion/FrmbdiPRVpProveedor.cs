@@ -455,10 +455,10 @@ namespace CapaPresentacion
             this.txtName1.TabIndex = 2;
             this.txtStras.TabIndex = 3;
             this.txtStras.TextAlign = HorizontalAlignment.Right;
-            this.labelX1.Text = "LIFNR";
-            this.labelX2.Text = "Name1";
-            this.labelX3.Text = "Stras";
-            this.labelX4.Text = "STCD1";
+            this.labelX1.Text = "Codigo de Proveedor (RUC)";
+            this.labelX2.Text = "Nombre de Proveedor";
+            this.labelX3.Text = "Direccion de Proveedor";
+            this.labelX4.Text = "RUC , DNI ,Documento de Identificacion";
             this.groupBox2.Text = "Proveedor";
         }
         //-------------------------------------------------------------------

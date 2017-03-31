@@ -444,7 +444,7 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Postres";
+            this.label1.Text = "Ambiente";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -453,10 +453,10 @@ namespace CapaPresentacion
             this.txtLOCid.TabIndex = 2;
             this.txtAMBambiente.TabIndex = 3;
             this.txtAMBambiente.TextAlign = HorizontalAlignment.Right;
-            this.labelX1.Text = "Idpostre";
-            this.labelX2.Text = "Nombre";
-            this.labelX3.Text = "Precio";
-            this.groupBox2.Text = "Postres";
+            this.labelX1.Text = "Codigo de Ambiente";
+            this.labelX2.Text = "Codigo de local";
+            this.labelX3.Text = "Descripcion de ambiente";
+            this.groupBox2.Text = "Ambiente";
         }
         //-------------------------------------------------------------------
         private void FrmacfAMBt_Ambiente_miLoad(object sender, EventArgs e)

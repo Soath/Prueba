@@ -469,10 +469,10 @@ namespace CapaPresentacion
             this.txtLOCdireccion.TextAlign = HorizontalAlignment.Right;
             //this.txtStock.TextAlign = HorizontalAlignment.Right;
             //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "ID Local";
-            this.labelX2.Text = "Local";
-            this.labelX3.Text = "Dirección";
-            this.labelX4.Text = "SEGMENT";
+            this.labelX1.Text = "Codigo de local";
+            this.labelX2.Text = "Descripcion de Local";
+            this.labelX3.Text = "Direccion de Local";
+            this.labelX4.Text = "Codigo de Segmento";
             this.groupBox2.Text = "LOCAL";
         }
         //-------------------------------------------------------------------

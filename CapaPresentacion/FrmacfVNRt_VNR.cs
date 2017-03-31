@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ComponentFactory.Krypton.Toolkit;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -11,7 +12,7 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class FrmacfVNRt_VNR : Form
+    public partial class FrmacfVNRt_VNR : KryptonForm
     {
 
         int Activo = 1;
@@ -52,11 +53,6 @@ namespace CapaPresentacion
             this.ttMensaje.SetToolTip(txtVNRvnr, "Ingrese el Valor");
             this.ttMensaje.SetToolTip(txtVNRcuenta, "Ingrese el Valor");
             this.ttMensaje.SetToolTip(txtVNRcuentadep, "Ingrese el Valor");
-            //this.ttMensaje.SetToolTip(txtStock, "Ingrese el Valor de Stock");
-            //this.txtAMBid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Control_KeyPress_Idpostre);
-            //this.txtLOCid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Control_KeyPress_Nombre);
-            //this.txtAMBambiente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Control_KeyPress_Precio);
-
         }
         //--------------------------------------------------------------------------------------------------	
         // insertar aqui todos los procedimientos para ABC	
@@ -110,51 +106,6 @@ namespace CapaPresentacion
             this.buscarNombre();
         }
         //  --------------------------------------------------------------------
-        //private void Control_KeyPress_Idpostre(object sender, KeyPressEventArgs e)
-        //{
-        //    if (e.KeyChar == 13) this.GetNextControl(ActiveControl, true).Focus();
-        //    if (e.KeyChar == 27) this.BotonRefrescar();
-        //    if (((e.KeyChar) < 48 && e.KeyChar != 8 && e.KeyChar != 44) || e.KeyChar > 57) e.Handled = true;
-        //}
-        //private void Control_KeyPress_Nombre(object sender, KeyPressEventArgs e)
-        //{
-        //    if (e.KeyChar == 13) this.GetNextControl(ActiveControl, true).Focus();
-        //    if (e.KeyChar == 27) this.GetNextControl(ActiveControl, false).Focus();
-        //    string cadena = e.KeyChar.ToString().ToUpper();
-        //    e.KeyChar = Convert.ToChar(cadena);
-        //}
-        //private void Control_KeyPress_Precio(object sender, KeyPressEventArgs e)
-        //{
-        //    if (e.KeyChar == 13) this.GetNextControl(ActiveControl, true).Focus();
-        //    if (e.KeyChar == 27) this.GetNextControl(ActiveControl, false).Focus();
-        //    if (((e.KeyChar) < 48 && e.KeyChar != 8 && e.KeyChar != 46) || e.KeyChar > 57) e.Handled = true;
-        //    string cadena = this.txtAMBambiente.Text;
-        //    if (e.KeyChar == 46 && cadena.Contains(".")) e.Handled = true;
-        //    int i = 0;
-        //    int p = 0;
-        //    while (i < cadena.Length)
-        //    {
-        //        if (cadena[i] == '.') p = i;
-        //        i++;
-        //    }
-        //    if (cadena.Contains(".") && e.KeyChar != 8 && (cadena.Length - p) > 2) e.Handled = true;
-        //}
-        // private void Control_KeyPress_Stock(object sender, KeyPressEventArgs e)
-        // {
-        //     if (e.KeyChar == 13) this.GetNextControl(ActiveControl, true).Focus();
-        //     if (e.KeyChar == 27) this.GetNextControl(ActiveControl, false).Focus();
-        //     if (((e.KeyChar) < 48 && e.KeyChar != 8 && e.KeyChar != 46) || e.KeyChar > 57) e.Handled = true;
-        //     //string cadena = this.txtStock.Text;
-        //     if (e.KeyChar == 46 && cadena.Contains(".")) e.Handled = true;
-        //     int i = 0;
-        //     int p = 0;
-        //     while (i < cadena.Length)
-        //     {
-        //         if (cadena[i] == '.') p = i;
-        //         i++;
-        //     }
-        //     if (cadena.Contains(".") && e.KeyChar != 8 && (cadena.Length - p) > 2) e.Handled = true;
-        // }
         private void Control_KeyPress(object sender, KeyPressEventArgs e)
         {
             //            if (e.KeyChar == (char)Keys.Return)
@@ -333,7 +284,6 @@ namespace CapaPresentacion
         private void CargaDatos()
         {
             idEditar = 0;
-            //idEditar = Convert.ToInt32(this.ObtenerSeleccion().Cells[1].Value);
             this.txtVNRid.Text = Convert.ToString(this.ObtenerSeleccion().Cells[1].Value);
             this.txtVNRvnr.Text = Convert.ToString(this.ObtenerSeleccion().Cells[2].Value);
             this.txtVNRvnr.Text = this.txtVNRvnr.Text.Trim(); 
@@ -371,13 +321,6 @@ namespace CapaPresentacion
                 this.txtVNRcuenta.Focus();
                 return false;
             }
-            //if (this.txtStock.Text == string.Empty)
-            //{
-            //    errorIcono.SetError(txtStock, "Ingrese el dato por Favor..");
-            //    this.MensError = "Falta ingresar el valor de Stock";
-            //    this.txtStock.Focus();
-            //    return false;
-            //}
             return true;
         }
         //-----------------------------------------------------------------------------------	
@@ -523,8 +466,6 @@ namespace CapaPresentacion
             this.txtVNRvnr.TabIndex = 2;
             this.txtVNRcuenta.TabIndex = 3;
             this.txtVNRcuenta.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
             this.labelX1.Text = "Código VNR";
             this.labelX2.Text = "Descripción VNR";
             this.labelX3.Text = "Código de Cuenta";

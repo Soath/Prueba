@@ -464,9 +464,9 @@ namespace CapaPresentacion
             this.txtMATabreviado.TextAlign = HorizontalAlignment.Right;
             //this.txtStock.TextAlign = HorizontalAlignment.Right;
             //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "ID Material";
-            this.labelX2.Text = "Material";
-            this.labelX3.Text = "Abreviado";
+            this.labelX1.Text = "Codigo de Material";
+            this.labelX2.Text = "Descripcion de Material";
+            this.labelX3.Text = "Abreviatura de Material";
             this.groupBox2.Text = "MATERIAL";
         }
         //-------------------------------------------------------------------

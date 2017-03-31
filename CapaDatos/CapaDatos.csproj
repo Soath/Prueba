@@ -40,10 +40,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DacfACFp_Activo_Fijo.cs" />
+    <Compile Include="DAcfACTt_Actividad.cs" />
     <Compile Include="DAcfAMBt_Ambiente.cs" />
+    <Compile Include="DAcfCMPt_Componente.cs" />
     <Compile Include="DacfCRSt_Caracteristicas.cs" />
     <Compile Include="DacfCSTt_Costo.cs" />
     <Compile Include="DacfDDFt_detalledediferido.cs" />
+    <Compile Include="DAcfDRTt_detallereparotributario.cs" />
     <Compile Include="DacfEDIt_edificaciondetalle.cs" />
     <Compile Include="DacfESTt_Estado.cs" />
     <Compile Include="DacfICRt_Inventariocaracteristicas.cs" />
@@ -51,15 +54,25 @@
     <Compile Include="DAcfINVp_Inventario.cs" />
     <Compile Include="DAcfMARt_Marca.cs" />
     <Compile Include="DacfMATt_Material.cs" />
+    <Compile Include="DAcfMEQt_maquinariaequipo.cs" />
+    <Compile Include="DAcfMVAt_MovimientoActivo.cs" />
     <Compile Include="DAcfMVMt_MotivoMovimiento.cs" />
     <Compile Include="DacfPDFt_procesodiferido.cs" />
+    <Compile Include="DAcfRTRt_Reparotributario.cs" />
     <Compile Include="DacfRVAt_registrovaluacion.cs" />
+    <Compile Include="DAcfSELt_SistemaElectrico.cs" />
     <Compile Include="DacfSPNt_Supranumero.cs" />
+    <Compile Include="DAcfTMVt_TipoMovimiento.cs" />
+    <Compile Include="DAcfTRNt_terrenodetalle.cs" />
     <Compile Include="DacfUBEt_UbicacionElectrica.cs" />
     <Compile Include="DacfUNMt_Unimed.cs" />
+    <Compile Include="DAcfVNRt_VNR.cs" />
     <Compile Include="DbdiCAFpClaseDeActivoFijo.cs" />
+    <Compile Include="DBdiCDDpClasesDeDocumento.cs" />
     <Compile Include="DbdiPRVpProveedor.cs" />
+    <Compile Include="DBdiSEGpSegmento.cs" />
     <Compile Include="DbdiSOCpSociedades.cs" />
+    <Compile Include="DBdiXCCpExtraccionSAP_CentroCosto.cs" />
     <Compile Include="DbdiXPEpExtraccionSAP_Personal.cs" />
     <Compile Include="DConexion.cs" />
     <Compile Include="DACFLOCT_LOCAL.cs" />
