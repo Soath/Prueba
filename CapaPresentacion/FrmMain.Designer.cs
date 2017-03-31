@@ -312,6 +312,7 @@
             this.ribbonButton12.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton12.Image")));
             this.ribbonButton12.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton12.SmallImage")));
             this.ribbonButton12.Text = "Altas";
+            this.ribbonButton12.Click += new System.EventHandler(this.ribbonButton12_Click);
             // 
             // ribbonButton13
             // 
