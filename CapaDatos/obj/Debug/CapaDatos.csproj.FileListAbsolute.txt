@@ -1,45 +1,4 @@
-C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaDatos\bin\Debug\CapaDatos.dll
-C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaDatos\bin\Debug\CapaDatos.pdb
-C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
-C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaDatos\obj\Debug\CapaDatos.dll
-C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaDatos\obj\Debug\CapaDatos.pdb
-E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaDatos\bin\Debug\CapaDatos.dll
-E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaDatos\bin\Debug\CapaDatos.pdb
-E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
-E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaDatos\obj\Debug\CapaDatos.dll
-E:\ELECTROSUR\Activos Fijos V1.0\ActivosFijos\CapaDatos\obj\Debug\CapaDatos.pdb
-H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaDatos\bin\Debug\CapaDatos.dll
-H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaDatos\bin\Debug\CapaDatos.pdb
-H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
-H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.dll
-H:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.pdb
-G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaDatos\bin\Debug\CapaDatos.dll
-G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaDatos\bin\Debug\CapaDatos.pdb
-G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
-G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.dll
-G:\ACTIVOS\Activos Fijos V1\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.pdb
-C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaDatos\bin\Debug\CapaDatos.dll
-C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaDatos\bin\Debug\CapaDatos.pdb
-C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
-C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.dll
-C:\Users\Samael\Desktop\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.pdb
-G:\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
-G:\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.dll
-G:\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.pdb
-E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaDatos\bin\Debug\CapaDatos.dll
-E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaDatos\bin\Debug\CapaDatos.pdb
-E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
-E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.dll
-E:\ELECTROSUR\ActivosFijos_v1.2\ActivosFijos_v1.1\CapaDatos\obj\Debug\CapaDatos.pdb
-C:\Users\jacho\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.dll
-C:\Users\jacho\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.pdb
-C:\Users\jacho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.dll
-C:\Users\jacho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.pdb
-<<<<<<< HEAD
-C:\Users\jacho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
-=======
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.dll
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.pdb
->>>>>>> origin/master

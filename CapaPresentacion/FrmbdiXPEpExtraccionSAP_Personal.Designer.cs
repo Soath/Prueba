@@ -92,7 +92,7 @@
             this.toolStripCancelar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(783, 67);
+            this.toolStrip1.Size = new System.Drawing.Size(672, 67);
             this.toolStrip1.TabIndex = 133;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -193,10 +193,10 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(2, 125);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(734, 394);
+            this.tabControl1.Size = new System.Drawing.Size(655, 276);
             this.tabControl1.TabIndex = 132;
             // 
             // tabPage1
@@ -208,10 +208,10 @@
             this.tabPage1.Controls.Add(this.chkEliminar);
             this.tabPage1.Controls.Add(this.txtBuscar);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(726, 368);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(647, 274);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -226,7 +226,7 @@
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.dataListado.Location = new System.Drawing.Point(10, 85);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
@@ -265,7 +265,7 @@
             // 
             this.chkEliminar.AutoSize = true;
             this.chkEliminar.Location = new System.Drawing.Point(10, 64);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.chkEliminar.Name = "chkEliminar";
             this.chkEliminar.Size = new System.Drawing.Size(62, 17);
             this.chkEliminar.TabIndex = 5;
@@ -275,7 +275,7 @@
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(80, 28);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(246, 20);
             this.txtBuscar.TabIndex = 2;
@@ -284,10 +284,10 @@
             // 
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Size = new System.Drawing.Size(726, 368);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(647, 250);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -311,9 +311,9 @@
             this.groupBox2.Controls.Add(this.txtNachn);
             this.groupBox2.Controls.Add(this.txtPERNR);
             this.groupBox2.Location = new System.Drawing.Point(10, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(614, 312);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -322,7 +322,7 @@
             // labelX8
             // 
             this.labelX8.AutoSize = true;
-            this.labelX8.Location = new System.Drawing.Point(36, 265);
+            this.labelX8.Location = new System.Drawing.Point(322, 159);
             this.labelX8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(35, 13);
@@ -333,8 +333,8 @@
             // 
             this.txtKOSTL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtKOSTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKOSTL.Location = new System.Drawing.Point(88, 257);
-            this.txtKOSTL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtKOSTL.Location = new System.Drawing.Point(374, 151);
+            this.txtKOSTL.Margin = new System.Windows.Forms.Padding(2);
             this.txtKOSTL.MaxLength = 30;
             this.txtKOSTL.Name = "txtKOSTL";
             this.txtKOSTL.Size = new System.Drawing.Size(250, 26);
@@ -343,7 +343,7 @@
             // labelX7
             // 
             this.labelX7.AutoSize = true;
-            this.labelX7.Location = new System.Drawing.Point(36, 231);
+            this.labelX7.Location = new System.Drawing.Point(322, 125);
             this.labelX7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX7.Name = "labelX7";
             this.labelX7.Size = new System.Drawing.Size(35, 13);
@@ -354,8 +354,8 @@
             // 
             this.txtPersg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtPersg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPersg.Location = new System.Drawing.Point(88, 223);
-            this.txtPersg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPersg.Location = new System.Drawing.Point(374, 117);
+            this.txtPersg.Margin = new System.Windows.Forms.Padding(2);
             this.txtPersg.MaxLength = 30;
             this.txtPersg.Name = "txtPersg";
             this.txtPersg.Size = new System.Drawing.Size(250, 26);
@@ -364,7 +364,7 @@
             // labelX6
             // 
             this.labelX6.AutoSize = true;
-            this.labelX6.Location = new System.Drawing.Point(36, 197);
+            this.labelX6.Location = new System.Drawing.Point(322, 91);
             this.labelX6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(35, 13);
@@ -375,8 +375,8 @@
             // 
             this.txtWERKS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtWERKS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWERKS.Location = new System.Drawing.Point(88, 189);
-            this.txtWERKS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtWERKS.Location = new System.Drawing.Point(374, 83);
+            this.txtWERKS.Margin = new System.Windows.Forms.Padding(2);
             this.txtWERKS.MaxLength = 30;
             this.txtWERKS.Name = "txtWERKS";
             this.txtWERKS.Size = new System.Drawing.Size(250, 26);
@@ -385,7 +385,7 @@
             // labelX5
             // 
             this.labelX5.AutoSize = true;
-            this.labelX5.Location = new System.Drawing.Point(36, 163);
+            this.labelX5.Location = new System.Drawing.Point(322, 57);
             this.labelX5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(35, 13);
@@ -396,8 +396,8 @@
             // 
             this.txtDNI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDNI.Location = new System.Drawing.Point(88, 155);
-            this.txtDNI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDNI.Location = new System.Drawing.Point(374, 49);
+            this.txtDNI.Margin = new System.Windows.Forms.Padding(2);
             this.txtDNI.MaxLength = 30;
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(250, 26);
@@ -406,7 +406,7 @@
             // labelX4
             // 
             this.labelX4.AutoSize = true;
-            this.labelX4.Location = new System.Drawing.Point(36, 129);
+            this.labelX4.Location = new System.Drawing.Point(10, 161);
             this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(35, 13);
@@ -417,8 +417,8 @@
             // 
             this.txtVorna.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtVorna.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVorna.Location = new System.Drawing.Point(88, 121);
-            this.txtVorna.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtVorna.Location = new System.Drawing.Point(62, 153);
+            this.txtVorna.Margin = new System.Windows.Forms.Padding(2);
             this.txtVorna.MaxLength = 30;
             this.txtVorna.Name = "txtVorna";
             this.txtVorna.Size = new System.Drawing.Size(250, 26);
@@ -427,7 +427,7 @@
             // labelX1
             // 
             this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(36, 17);
+            this.labelX1.Location = new System.Drawing.Point(10, 49);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(40, 13);
@@ -437,7 +437,7 @@
             // labelX3
             // 
             this.labelX3.AutoSize = true;
-            this.labelX3.Location = new System.Drawing.Point(36, 90);
+            this.labelX3.Location = new System.Drawing.Point(10, 122);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(35, 13);
@@ -447,7 +447,7 @@
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(36, 47);
+            this.labelX2.Location = new System.Drawing.Point(10, 79);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(35, 13);
@@ -458,8 +458,8 @@
             // 
             this.txtName2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName2.Location = new System.Drawing.Point(88, 82);
-            this.txtName2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName2.Location = new System.Drawing.Point(62, 114);
+            this.txtName2.Margin = new System.Windows.Forms.Padding(2);
             this.txtName2.MaxLength = 30;
             this.txtName2.Name = "txtName2";
             this.txtName2.Size = new System.Drawing.Size(250, 26);
@@ -469,8 +469,8 @@
             // 
             this.txtNachn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtNachn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNachn.Location = new System.Drawing.Point(88, 47);
-            this.txtNachn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNachn.Location = new System.Drawing.Point(62, 79);
+            this.txtNachn.Margin = new System.Windows.Forms.Padding(2);
             this.txtNachn.MaxLength = 30;
             this.txtNachn.Name = "txtNachn";
             this.txtNachn.Size = new System.Drawing.Size(250, 26);
@@ -480,8 +480,8 @@
             // 
             this.txtPERNR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtPERNR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPERNR.Location = new System.Drawing.Point(88, 17);
-            this.txtPERNR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPERNR.Location = new System.Drawing.Point(62, 49);
+            this.txtPERNR.Margin = new System.Windows.Forms.Padding(2);
             this.txtPERNR.MaxLength = 50;
             this.txtPERNR.Name = "txtPERNR";
             this.txtPERNR.Size = new System.Drawing.Size(74, 26);
@@ -499,7 +499,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 572);
+            this.ClientSize = new System.Drawing.Size(672, 426);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);

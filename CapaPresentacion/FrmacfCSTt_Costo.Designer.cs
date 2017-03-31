@@ -88,7 +88,7 @@
             this.toolStripCancelar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(774, 67);
+            this.toolStrip1.Size = new System.Drawing.Size(677, 67);
             this.toolStrip1.TabIndex = 130;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -189,10 +189,10 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(0, 137);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(734, 315);
+            this.tabControl1.Size = new System.Drawing.Size(654, 301);
             this.tabControl1.TabIndex = 129;
             // 
             // tabPage1
@@ -204,10 +204,10 @@
             this.tabPage1.Controls.Add(this.chkEliminar);
             this.tabPage1.Controls.Add(this.txtBuscar);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(726, 289);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(646, 275);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -222,7 +222,7 @@
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.dataListado.Location = new System.Drawing.Point(10, 85);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
@@ -261,7 +261,7 @@
             // 
             this.chkEliminar.AutoSize = true;
             this.chkEliminar.Location = new System.Drawing.Point(10, 64);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.chkEliminar.Name = "chkEliminar";
             this.chkEliminar.Size = new System.Drawing.Size(62, 17);
             this.chkEliminar.TabIndex = 5;
@@ -271,7 +271,7 @@
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(80, 28);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(246, 20);
             this.txtBuscar.TabIndex = 2;
@@ -280,9 +280,9 @@
             // 
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(726, 289);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
@@ -303,9 +303,9 @@
             this.groupBox2.Controls.Add(this.txtCSTdescripcion);
             this.groupBox2.Controls.Add(this.txtCSTid);
             this.groupBox2.Location = new System.Drawing.Point(10, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(614, 259);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -314,7 +314,7 @@
             // labelX6
             // 
             this.labelX6.AutoSize = true;
-            this.labelX6.Location = new System.Drawing.Point(36, 197);
+            this.labelX6.Location = new System.Drawing.Point(88, 207);
             this.labelX6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(35, 13);
@@ -325,8 +325,8 @@
             // 
             this.txtCSTid_costo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtCSTid_costo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTid_costo.Location = new System.Drawing.Point(88, 189);
-            this.txtCSTid_costo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCSTid_costo.Location = new System.Drawing.Point(140, 199);
+            this.txtCSTid_costo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCSTid_costo.MaxLength = 30;
             this.txtCSTid_costo.Name = "txtCSTid_costo";
             this.txtCSTid_costo.Size = new System.Drawing.Size(250, 26);
@@ -335,7 +335,7 @@
             // labelX5
             // 
             this.labelX5.AutoSize = true;
-            this.labelX5.Location = new System.Drawing.Point(36, 163);
+            this.labelX5.Location = new System.Drawing.Point(88, 173);
             this.labelX5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(35, 13);
@@ -346,8 +346,8 @@
             // 
             this.txtACTid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtACTid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtACTid.Location = new System.Drawing.Point(88, 155);
-            this.txtACTid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACTid.Location = new System.Drawing.Point(140, 165);
+            this.txtACTid.Margin = new System.Windows.Forms.Padding(2);
             this.txtACTid.MaxLength = 30;
             this.txtACTid.Name = "txtACTid";
             this.txtACTid.Size = new System.Drawing.Size(250, 26);
@@ -356,7 +356,7 @@
             // labelX4
             // 
             this.labelX4.AutoSize = true;
-            this.labelX4.Location = new System.Drawing.Point(36, 129);
+            this.labelX4.Location = new System.Drawing.Point(88, 139);
             this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(35, 13);
@@ -367,8 +367,8 @@
             // 
             this.txtCSTabreviado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtCSTabreviado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTabreviado.Location = new System.Drawing.Point(88, 121);
-            this.txtCSTabreviado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCSTabreviado.Location = new System.Drawing.Point(140, 131);
+            this.txtCSTabreviado.Margin = new System.Windows.Forms.Padding(2);
             this.txtCSTabreviado.MaxLength = 30;
             this.txtCSTabreviado.Name = "txtCSTabreviado";
             this.txtCSTabreviado.Size = new System.Drawing.Size(250, 26);
@@ -377,7 +377,7 @@
             // labelX1
             // 
             this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(36, 17);
+            this.labelX1.Location = new System.Drawing.Point(88, 27);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(40, 13);
@@ -387,7 +387,7 @@
             // labelX3
             // 
             this.labelX3.AutoSize = true;
-            this.labelX3.Location = new System.Drawing.Point(36, 90);
+            this.labelX3.Location = new System.Drawing.Point(88, 100);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(35, 13);
@@ -397,7 +397,7 @@
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(36, 47);
+            this.labelX2.Location = new System.Drawing.Point(88, 57);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(35, 13);
@@ -408,8 +408,8 @@
             // 
             this.txtCSTdetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtCSTdetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTdetalle.Location = new System.Drawing.Point(88, 82);
-            this.txtCSTdetalle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCSTdetalle.Location = new System.Drawing.Point(140, 92);
+            this.txtCSTdetalle.Margin = new System.Windows.Forms.Padding(2);
             this.txtCSTdetalle.MaxLength = 30;
             this.txtCSTdetalle.Name = "txtCSTdetalle";
             this.txtCSTdetalle.Size = new System.Drawing.Size(250, 26);
@@ -419,8 +419,8 @@
             // 
             this.txtCSTdescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtCSTdescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTdescripcion.Location = new System.Drawing.Point(88, 47);
-            this.txtCSTdescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCSTdescripcion.Location = new System.Drawing.Point(140, 57);
+            this.txtCSTdescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtCSTdescripcion.MaxLength = 30;
             this.txtCSTdescripcion.Name = "txtCSTdescripcion";
             this.txtCSTdescripcion.Size = new System.Drawing.Size(250, 26);
@@ -430,8 +430,8 @@
             // 
             this.txtCSTid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtCSTid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTid.Location = new System.Drawing.Point(88, 17);
-            this.txtCSTid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCSTid.Location = new System.Drawing.Point(140, 27);
+            this.txtCSTid.Margin = new System.Windows.Forms.Padding(2);
             this.txtCSTid.MaxLength = 50;
             this.txtCSTid.Name = "txtCSTid";
             this.txtCSTid.Size = new System.Drawing.Size(74, 26);
@@ -449,7 +449,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 467);
+            this.ClientSize = new System.Drawing.Size(677, 458);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
