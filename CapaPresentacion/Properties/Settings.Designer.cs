@@ -43,5 +43,25 @@ namespace CapaPresentacion.Properties {
                 return ((string)(this["ActivosFijosConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TOSHIBA-PC;Initial Catalog=ActivosFijos;Integrated Security=True")]
+        public string ActivosFijosConnectionString1 {
+            get {
+                return ((string)(this["ActivosFijosConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TOSHIBA-PC;Initial Catalog=ActivosFijos;User ID=sa;Password=eg909090")]
+        public string ActivosFijosConnectionString2 {
+            get {
+                return ((string)(this["ActivosFijosConnectionString2"]));
+            }
+        }
     }
 }
