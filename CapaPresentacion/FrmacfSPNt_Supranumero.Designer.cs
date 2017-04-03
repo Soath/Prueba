@@ -171,9 +171,9 @@
             this.label1.Location = new System.Drawing.Point(20, 98);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(170, 29);
             this.label1.TabIndex = 134;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Supranumero";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -297,29 +297,28 @@
             // 
             // labelX1
             // 
-            this.labelX1.AutoSize = true;
             this.labelX1.Location = new System.Drawing.Point(40, 54);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(152, 34);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo de Supranumero o Numero de Componentizacion";
             // 
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(40, 107);
+            this.labelX2.Location = new System.Drawing.Point(40, 115);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(142, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Descripcion de supranumero";
             // 
             // txtT087U_ANLUE_TXT
             // 
             this.txtT087U_ANLUE_TXT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtT087U_ANLUE_TXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtT087U_ANLUE_TXT.Location = new System.Drawing.Point(182, 107);
+            this.txtT087U_ANLUE_TXT.Location = new System.Drawing.Point(216, 107);
             this.txtT087U_ANLUE_TXT.Margin = new System.Windows.Forms.Padding(2);
             this.txtT087U_ANLUE_TXT.MaxLength = 30;
             this.txtT087U_ANLUE_TXT.Name = "txtT087U_ANLUE_TXT";
@@ -330,7 +329,7 @@
             // 
             this.txtT087U_ANLUE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtT087U_ANLUE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtT087U_ANLUE.Location = new System.Drawing.Point(182, 54);
+            this.txtT087U_ANLUE.Location = new System.Drawing.Point(216, 54);
             this.txtT087U_ANLUE.Margin = new System.Windows.Forms.Padding(2);
             this.txtT087U_ANLUE.MaxLength = 50;
             this.txtT087U_ANLUE.Name = "txtT087U_ANLUE";

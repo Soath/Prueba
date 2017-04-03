@@ -477,7 +477,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Proceso Diferido";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -485,14 +484,6 @@ namespace CapaPresentacion
             this.txtPDFcodigo.TextAlign = HorizontalAlignment.Right;
             this.txtPDFperiodo.TabIndex = 2;
             this.dtpPDFfecha.TabIndex = 3;
-            //this.dtpPDFfecha.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Codigo de Proceso Diferido";
-            this.labelX2.Text = "Periodo del Proceso Diferido";
-            this.labelX3.Text = "Fecha del Proceso";
-            this.labelX4.Text = "Reponsable del Proceso Diferido";
-            this.labelX5.Text = "Estado";
             this.groupBox2.Text = "Proceso Diferido";
         }
         //-------------------------------------------------------------------
@@ -502,6 +493,11 @@ namespace CapaPresentacion
         }
 
         private void FrmacfPDFt_procesodiferido_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }

@@ -177,9 +177,9 @@
             this.label1.Location = new System.Drawing.Point(11, 79);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(127, 29);
             this.label1.TabIndex = 131;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Inventario";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -310,32 +310,32 @@
             // labelX5
             // 
             this.labelX5.AutoSize = true;
-            this.labelX5.Location = new System.Drawing.Point(71, 176);
+            this.labelX5.Location = new System.Drawing.Point(52, 176);
             this.labelX5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(35, 13);
+            this.labelX5.Size = new System.Drawing.Size(179, 13);
             this.labelX5.TabIndex = 121;
-            this.labelX5.Text = "label4";
+            this.labelX5.Text = "Control activo/inactivo de Inventario";
             // 
             // labelX4
             // 
             this.labelX4.AutoSize = true;
-            this.labelX4.Location = new System.Drawing.Point(71, 146);
+            this.labelX4.Location = new System.Drawing.Point(52, 146);
             this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(35, 13);
+            this.labelX4.Size = new System.Drawing.Size(147, 13);
             this.labelX4.TabIndex = 120;
-            this.labelX4.Text = "label3";
+            this.labelX4.Text = "Fecha de Cierre de Inventario";
             // 
             // labelX3
             // 
             this.labelX3.AutoSize = true;
-            this.labelX3.Location = new System.Drawing.Point(71, 116);
+            this.labelX3.Location = new System.Drawing.Point(52, 116);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(145, 13);
             this.labelX3.TabIndex = 119;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Fecha de Inicio de Inventario";
             // 
             // txtINVactivo
             // 
@@ -373,22 +373,22 @@
             // labelX1
             // 
             this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(66, 54);
+            this.labelX1.Location = new System.Drawing.Point(51, 54);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(104, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo de inventario";
             // 
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(71, 86);
+            this.labelX2.Location = new System.Drawing.Point(52, 86);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(128, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Descripción de Inventario";
             // 
             // txtINVdetalle
             // 

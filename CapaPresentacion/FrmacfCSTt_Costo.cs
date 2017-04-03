@@ -454,7 +454,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Costo";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -463,12 +462,6 @@ namespace CapaPresentacion
             this.txtCSTdescripcion.TabIndex = 2;
             this.txtCSTdetalle.TabIndex = 3;
             this.txtCSTdetalle.TextAlign = HorizontalAlignment.Right;
-            this.labelX1.Text = "IdCosto";
-            this.labelX2.Text = "Descripcion";
-            this.labelX3.Text = "Detalle";
-            this.labelX4.Text = "Abreviado";
-            this.labelX5.Text = "Codigo de Actividad";
-            this.labelX6.Text = "Codigo de costo (base de datos antigua)";
             this.groupBox2.Text = "Costo";
         }
         //-------------------------------------------------------------------

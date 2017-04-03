@@ -504,8 +504,7 @@ namespace CapaPresentacion
             if (Activo == 1) tabControl1.SelectedTab = tabPage1;
         }
         private void Configura()
-        {
-            this.label1.Text = "Clases De Documento";
+        {           
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -514,12 +513,6 @@ namespace CapaPresentacion
             this.txtLTEXT.TabIndex = 2;
             this.txtDETdoctipo.TabIndex = 3;
             this.txtDETdoctipo.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Código de Documento";
-            this.labelX2.Text = "Descripcion de Documento";
-            this.labelX3.Text = "Tipo de Documento";
-            //this.labelX4.Text = "Stock";
             this.groupBox2.Text = "Clases de Documento";
         }
         //-------------------------------------------------------------------

@@ -508,7 +508,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Extración SAP Personal";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -517,14 +516,7 @@ namespace CapaPresentacion
             this.txtNachn.TabIndex = 2;
             this.txtName2.TabIndex = 3;
             this.txtName2.TextAlign = HorizontalAlignment.Right;
-            this.labelX1.Text = "Codigo";
-            this.labelX2.Text = "Primer apellido";
-            this.labelX3.Text = "Segundo apellido";
-            this.labelX4.Text = "Nombre de trabajador";
-            this.labelX5.Text = "DNI";
-            this.labelX6.Text = "Zona o ubicacion de trabajo";
-            this.labelX7.Text = "Categoria de Trabajador";
-            this.labelX8.Text = "Centro de Costo";
+           
             this.groupBox2.Text = "Extración SAP Personal";
         }
         //-------------------------------------------------------------------
@@ -534,6 +526,26 @@ namespace CapaPresentacion
         }
 
         private void FrmbdiXPEpExtraccionSAP_Personal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtVorna_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtName2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNachn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPERNR_TextChanged(object sender, EventArgs e)
         {
 
         }

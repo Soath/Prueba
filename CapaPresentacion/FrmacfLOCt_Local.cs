@@ -458,7 +458,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "LOCAL";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -467,12 +466,7 @@ namespace CapaPresentacion
             this.txtLOClocal.TabIndex = 2;
             this.txtLOCdireccion.TabIndex = 3;
             this.txtLOCdireccion.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Codigo de local";
-            this.labelX2.Text = "Descripcion de Local";
-            this.labelX3.Text = "Direccion de Local";
-            this.labelX4.Text = "Codigo de Segmento";
+            
             this.groupBox2.Text = "LOCAL";
         }
         //-------------------------------------------------------------------
@@ -482,6 +476,11 @@ namespace CapaPresentacion
         }
 
         private void FrmacfLOCt_Local_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }

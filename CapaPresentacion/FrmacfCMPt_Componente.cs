@@ -566,7 +566,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Componentes";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -575,19 +574,8 @@ namespace CapaPresentacion
             this.txtCMPcomponente.TabIndex = 2;
             this.txtCMPusoestimado.TabIndex = 3;
             this.txtCMPusoestimado.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Código de componentes";
-            this.labelX2.Text = "Descripción de componente";
-            this.labelX3.Text = "Uso estimado";
-            this.labelX4.Text = "Conservacion";
-            this.labelX5.Text = "obsolecencia";
-            this.labelX6.Text = "Limite Legal";
-            this.labelX7.Text = "Total Factores";
-            this.labelX8.Text = "Factor de uso estimado";
-            this.labelX9.Text = "Vida util por año";
-            this.labelX10.Text = "Vida util por dia";
-            this.groupBox2.Text = "Postres";
+            
+            this.groupBox2.Text = "Componentes";
         }
         //-------------------------------------------------------------------
         private void FrmacfCMPt_Componente_miLoad(object sender, EventArgs e)
@@ -601,6 +589,11 @@ namespace CapaPresentacion
         }
 
         private void FrmacfCMPt_Componente_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }

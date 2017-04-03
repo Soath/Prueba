@@ -477,7 +477,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Registro de Evaluación";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -485,14 +484,6 @@ namespace CapaPresentacion
             this.txtRVAcodigo.TextAlign = HorizontalAlignment.Right;
             this.txtRVAperiodo.TabIndex = 2;
             this.txtRVAfecha.TabIndex = 3;
-            //this.dtpPDFfecha.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Codigo";
-            this.labelX2.Text = "Periodo";
-            this.labelX3.Text = "Fecha";
-            this.labelX4.Text = "Responsable";
-            this.labelX5.Text = "Estado";
             this.groupBox2.Text = "Registro de Evaluación";
         }
         //-------------------------------------------------------------------
@@ -502,6 +493,11 @@ namespace CapaPresentacion
         }
 
         private void FrmacfRVAt_registrovaluacion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }

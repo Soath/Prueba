@@ -179,9 +179,9 @@
             this.label1.Location = new System.Drawing.Point(9, 106);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(81, 29);
             this.label1.TabIndex = 128;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Costo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -283,7 +283,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(726, 289);
+            this.tabPage2.Size = new System.Drawing.Size(646, 275);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -314,18 +314,18 @@
             // labelX6
             // 
             this.labelX6.AutoSize = true;
-            this.labelX6.Location = new System.Drawing.Point(88, 207);
+            this.labelX6.Location = new System.Drawing.Point(54, 207);
             this.labelX6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(35, 13);
+            this.labelX6.Size = new System.Drawing.Size(198, 13);
             this.labelX6.TabIndex = 121;
-            this.labelX6.Text = "label2";
+            this.labelX6.Text = "Codigo de costo (base de datos antigua)";
             // 
             // txtCSTid_costo
             // 
             this.txtCSTid_costo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtCSTid_costo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTid_costo.Location = new System.Drawing.Point(140, 199);
+            this.txtCSTid_costo.Location = new System.Drawing.Point(255, 191);
             this.txtCSTid_costo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCSTid_costo.MaxLength = 30;
             this.txtCSTid_costo.Name = "txtCSTid_costo";
@@ -335,18 +335,18 @@
             // labelX5
             // 
             this.labelX5.AutoSize = true;
-            this.labelX5.Location = new System.Drawing.Point(88, 173);
+            this.labelX5.Location = new System.Drawing.Point(54, 173);
             this.labelX5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(35, 13);
+            this.labelX5.Size = new System.Drawing.Size(102, 13);
             this.labelX5.TabIndex = 119;
-            this.labelX5.Text = "label2";
+            this.labelX5.Text = "Codigo de Actividad";
             // 
             // txtACTid
             // 
             this.txtACTid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtACTid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtACTid.Location = new System.Drawing.Point(140, 165);
+            this.txtACTid.Location = new System.Drawing.Point(255, 157);
             this.txtACTid.Margin = new System.Windows.Forms.Padding(2);
             this.txtACTid.MaxLength = 30;
             this.txtACTid.Name = "txtACTid";
@@ -356,18 +356,18 @@
             // labelX4
             // 
             this.labelX4.AutoSize = true;
-            this.labelX4.Location = new System.Drawing.Point(88, 139);
+            this.labelX4.Location = new System.Drawing.Point(54, 139);
             this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(35, 13);
+            this.labelX4.Size = new System.Drawing.Size(55, 13);
             this.labelX4.TabIndex = 117;
-            this.labelX4.Text = "label2";
+            this.labelX4.Text = "Abreviado";
             // 
             // txtCSTabreviado
             // 
             this.txtCSTabreviado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtCSTabreviado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTabreviado.Location = new System.Drawing.Point(140, 131);
+            this.txtCSTabreviado.Location = new System.Drawing.Point(255, 123);
             this.txtCSTabreviado.Margin = new System.Windows.Forms.Padding(2);
             this.txtCSTabreviado.MaxLength = 30;
             this.txtCSTabreviado.Name = "txtCSTabreviado";
@@ -377,38 +377,38 @@
             // labelX1
             // 
             this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(88, 27);
+            this.labelX1.Location = new System.Drawing.Point(54, 27);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(102, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo de Actividad";
             // 
             // labelX3
             // 
             this.labelX3.AutoSize = true;
-            this.labelX3.Location = new System.Drawing.Point(88, 100);
+            this.labelX3.Location = new System.Drawing.Point(54, 100);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(40, 13);
             this.labelX3.TabIndex = 113;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Detalle";
             // 
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(88, 57);
+            this.labelX2.Location = new System.Drawing.Point(54, 57);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(63, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Descripcion";
             // 
             // txtCSTdetalle
             // 
             this.txtCSTdetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtCSTdetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTdetalle.Location = new System.Drawing.Point(140, 92);
+            this.txtCSTdetalle.Location = new System.Drawing.Point(255, 84);
             this.txtCSTdetalle.Margin = new System.Windows.Forms.Padding(2);
             this.txtCSTdetalle.MaxLength = 30;
             this.txtCSTdetalle.Name = "txtCSTdetalle";
@@ -419,7 +419,7 @@
             // 
             this.txtCSTdescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtCSTdescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTdescripcion.Location = new System.Drawing.Point(140, 57);
+            this.txtCSTdescripcion.Location = new System.Drawing.Point(255, 49);
             this.txtCSTdescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtCSTdescripcion.MaxLength = 30;
             this.txtCSTdescripcion.Name = "txtCSTdescripcion";
@@ -430,7 +430,7 @@
             // 
             this.txtCSTid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtCSTid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCSTid.Location = new System.Drawing.Point(140, 27);
+            this.txtCSTid.Location = new System.Drawing.Point(255, 19);
             this.txtCSTid.Margin = new System.Windows.Forms.Padding(2);
             this.txtCSTid.MaxLength = 50;
             this.txtCSTid.Name = "txtCSTid";

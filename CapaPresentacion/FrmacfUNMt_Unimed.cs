@@ -445,7 +445,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Unidad de Medida";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -454,9 +453,7 @@ namespace CapaPresentacion
             this.txtUNMunidad.TabIndex = 2;
             this.txtUNMdetalle.TabIndex = 3;
             this.txtUNMdetalle.TextAlign = HorizontalAlignment.Right;
-            this.labelX1.Text = "ID";
-            this.labelX2.Text = "Unidad";
-            this.labelX3.Text = "Descripcion";
+            
             this.groupBox2.Text = "Unidad de Medida";
         }
         //-------------------------------------------------------------------

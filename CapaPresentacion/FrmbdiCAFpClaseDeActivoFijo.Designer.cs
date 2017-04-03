@@ -171,9 +171,9 @@
             this.label1.Location = new System.Drawing.Point(9, 94);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(246, 29);
             this.label1.TabIndex = 134;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Clase de Activo Fijo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -301,9 +301,9 @@
             this.labelX1.Location = new System.Drawing.Point(47, 43);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(84, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo de Clase";
             // 
             // labelX2
             // 
@@ -311,15 +311,15 @@
             this.labelX2.Location = new System.Drawing.Point(47, 93);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(63, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Descripcion";
             // 
             // txtTXK50
             // 
             this.txtTXK50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtTXK50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTXK50.Location = new System.Drawing.Point(142, 93);
+            this.txtTXK50.Location = new System.Drawing.Point(142, 85);
             this.txtTXK50.Margin = new System.Windows.Forms.Padding(2);
             this.txtTXK50.MaxLength = 30;
             this.txtTXK50.Name = "txtTXK50";
@@ -330,7 +330,7 @@
             // 
             this.txtANLKL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtANLKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtANLKL.Location = new System.Drawing.Point(142, 43);
+            this.txtANLKL.Location = new System.Drawing.Point(142, 35);
             this.txtANLKL.Margin = new System.Windows.Forms.Padding(2);
             this.txtANLKL.MaxLength = 50;
             this.txtANLKL.Name = "txtANLKL";

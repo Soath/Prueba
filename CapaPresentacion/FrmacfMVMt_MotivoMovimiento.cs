@@ -440,7 +440,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "MotivoMovimiento";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -449,12 +448,7 @@ namespace CapaPresentacion
             this.txtMVMid.TabIndex = 2;
             this.txtMVMmotivomovimiento.TabIndex = 3;
             this.txtMVMmotivomovimiento.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Codigo de movimiento";
-            this.labelX2.Text = "Codigo de Motivo de Movimiento";
-            this.labelX3.Text = "Descripcion de motivo de movimiento";
-            this.labelX4.Text = "Justificacion de movimiento";
+            
             this.groupBox2.Text = "MotivoMovimiento";
         }
         //-------------------------------------------------------------------

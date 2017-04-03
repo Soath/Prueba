@@ -519,22 +519,12 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Inventario ";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
             this.txtINVid.TabIndex = 1;
             this.txtINVid.TextAlign = HorizontalAlignment.Right;
             this.txtINVdetalle.TabIndex = 2;
-            //this.txtAMBambiente.TabIndex = 3;
-            //this.txtAMBambiente.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Id de inventario";
-            this.labelX2.Text = "Descripción de Inventario";
-            this.labelX3.Text = "Fecha de Inicio de Inventario";
-            this.labelX4.Text = "Fecha de Cierre de Inventario";
-            this.labelX5.Text = "Control activo/inactivo de Inventario";
             this.groupBox2.Text = "Inventario";
         }
         //-------------------------------------------------------------------

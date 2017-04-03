@@ -503,15 +503,6 @@ namespace CapaPresentacion
             this.txtACTid.TabIndex = 1;
             this.txtACTid.TextAlign = HorizontalAlignment.Right;
             this.txtACTactividad.TabIndex = 2;
-            //this.txtAMBambiente.TabIndex = 3;
-            //this.txtAMBambiente.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Código de Actividad";
-            this.labelX2.Text = "Descripción de Actividad";
-            //this.labelX3.Text = "Precio";
-            //this.labelX4.Text = "Stock";
-            this.groupBox2.Text = "Actividad";
         }
         //-------------------------------------------------------------------
         private void FramcfACTt_Actividad_miLoad(object sender, EventArgs e)

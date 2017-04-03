@@ -498,19 +498,12 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Marca ";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
             this.txtMARid.TabIndex = 1;
             this.txtMARid.TextAlign = HorizontalAlignment.Right;
             this.txtMARmarca.TabIndex = 2;
-            //this.txtAMBambiente.TabIndex = 3;
-            //this.txtAMBambiente.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Código de Marca";
-            this.labelX2.Text = "Descripción de Marca";
             this.groupBox2.Text = "Marca";
         }
         //-------------------------------------------------------------------

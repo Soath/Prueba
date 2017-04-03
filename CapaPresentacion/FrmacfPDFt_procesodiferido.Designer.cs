@@ -177,9 +177,9 @@
             this.label1.Location = new System.Drawing.Point(11, 90);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(210, 29);
             this.label1.TabIndex = 131;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Proceso Diferido";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -305,13 +305,13 @@
             this.groupBox2.Size = new System.Drawing.Size(614, 259);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Usuarios";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // dtpPDFfecha
             // 
             this.dtpPDFfecha.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpPDFfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPDFfecha.Location = new System.Drawing.Point(133, 107);
+            this.dtpPDFfecha.Location = new System.Drawing.Point(254, 114);
             this.dtpPDFfecha.Name = "dtpPDFfecha";
             this.dtpPDFfecha.Size = new System.Drawing.Size(250, 20);
             this.dtpPDFfecha.TabIndex = 120;
@@ -319,18 +319,18 @@
             // labelX5
             // 
             this.labelX5.AutoSize = true;
-            this.labelX5.Location = new System.Drawing.Point(81, 186);
+            this.labelX5.Location = new System.Drawing.Point(76, 193);
             this.labelX5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(35, 13);
+            this.labelX5.Size = new System.Drawing.Size(40, 13);
             this.labelX5.TabIndex = 119;
-            this.labelX5.Text = "label2";
+            this.labelX5.Text = "Estado";
             // 
             // txtPDFestado
             // 
             this.txtPDFestado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtPDFestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPDFestado.Location = new System.Drawing.Point(133, 178);
+            this.txtPDFestado.Location = new System.Drawing.Point(254, 185);
             this.txtPDFestado.Margin = new System.Windows.Forms.Padding(2);
             this.txtPDFestado.MaxLength = 30;
             this.txtPDFestado.Name = "txtPDFestado";
@@ -340,18 +340,18 @@
             // labelX4
             // 
             this.labelX4.AutoSize = true;
-            this.labelX4.Location = new System.Drawing.Point(81, 152);
+            this.labelX4.Location = new System.Drawing.Point(76, 159);
             this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(35, 13);
+            this.labelX4.Size = new System.Drawing.Size(162, 13);
             this.labelX4.TabIndex = 117;
-            this.labelX4.Text = "label2";
+            this.labelX4.Text = "Reponsable del Proceso Diferido";
             // 
             // txtPDFresponsable
             // 
             this.txtPDFresponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtPDFresponsable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPDFresponsable.Location = new System.Drawing.Point(133, 144);
+            this.txtPDFresponsable.Location = new System.Drawing.Point(254, 151);
             this.txtPDFresponsable.Margin = new System.Windows.Forms.Padding(2);
             this.txtPDFresponsable.MaxLength = 30;
             this.txtPDFresponsable.Name = "txtPDFresponsable";
@@ -361,38 +361,38 @@
             // labelX1
             // 
             this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(81, 34);
+            this.labelX1.Location = new System.Drawing.Point(76, 41);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(136, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo de Proceso Diferido";
             // 
             // labelX3
             // 
             this.labelX3.AutoSize = true;
-            this.labelX3.Location = new System.Drawing.Point(81, 113);
+            this.labelX3.Location = new System.Drawing.Point(76, 120);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(96, 13);
             this.labelX3.TabIndex = 113;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Fecha del Proceso";
             // 
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(81, 70);
+            this.labelX2.Location = new System.Drawing.Point(76, 77);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(141, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Periodo del Proceso Diferido";
             // 
             // txtPDFperiodo
             // 
             this.txtPDFperiodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtPDFperiodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPDFperiodo.Location = new System.Drawing.Point(133, 70);
+            this.txtPDFperiodo.Location = new System.Drawing.Point(254, 71);
             this.txtPDFperiodo.Margin = new System.Windows.Forms.Padding(2);
             this.txtPDFperiodo.MaxLength = 30;
             this.txtPDFperiodo.Name = "txtPDFperiodo";
@@ -403,7 +403,7 @@
             // 
             this.txtPDFcodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtPDFcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPDFcodigo.Location = new System.Drawing.Point(133, 34);
+            this.txtPDFcodigo.Location = new System.Drawing.Point(254, 33);
             this.txtPDFcodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtPDFcodigo.MaxLength = 50;
             this.txtPDFcodigo.Name = "txtPDFcodigo";

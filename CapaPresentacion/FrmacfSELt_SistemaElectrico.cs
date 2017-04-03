@@ -503,21 +503,13 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Sistema Electrico ";
+            
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
             this.txtSELid.TabIndex = 1;
             this.txtSELid.TextAlign = HorizontalAlignment.Right;
             this.txtSELsistemaelectrico.TabIndex = 2;
-            //this.txtAMBambiente.TabIndex = 3;
-            //this.txtAMBambiente.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Código de Sistema Electrico";
-            this.labelX2.Text = "Descripción de Sistema Electrico";
-            this.labelX3.Text = "Código de Segmento";
-            //this.labelX4.Text = "Stock";
             this.groupBox2.Text = "Sistema Electrico";
         }
         //-------------------------------------------------------------------
@@ -537,6 +529,11 @@ namespace CapaPresentacion
         }
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void FrmacfSELt_SistemaElectrico_Load_1(object sender, EventArgs e)
         {
 
         }

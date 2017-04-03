@@ -457,7 +457,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "VNR";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -466,10 +465,6 @@ namespace CapaPresentacion
             this.txtVNRvnr.TabIndex = 2;
             this.txtVNRcuenta.TabIndex = 3;
             this.txtVNRcuenta.TextAlign = HorizontalAlignment.Right;
-            this.labelX1.Text = "Código VNR";
-            this.labelX2.Text = "Descripción VNR";
-            this.labelX3.Text = "Código de Cuenta";
-            this.labelX4.Text = "Codigo de Cuenta";
             this.groupBox2.Text = "VNR";
         }
         //-------------------------------------------------------------------

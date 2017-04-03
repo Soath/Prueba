@@ -441,15 +441,12 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Estado";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
             this.txtESTid.TabIndex = 1;
             this.txtESTid.TextAlign = HorizontalAlignment.Right;
             this.txtESTestado.TabIndex = 2;
-            this.labelX1.Text = "Codigo de estado de bien";
-            this.labelX2.Text = "Descripcion de bien";
             this.groupBox2.Text = "Estado";
         }
         //-------------------------------------------------------------------

@@ -513,7 +513,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "MotivoMovimiento";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -522,11 +521,7 @@ namespace CapaPresentacion
             this.txtKTEXT.TabIndex = 2;
             this.txtKLTXT.TabIndex = 3;
             this.txtKLTXT.TextAlign = HorizontalAlignment.Right;
-            this.labelX1.Text = "Codigo o ID de Centro de Costo";
-            this.labelX2.Text = "Descripción abreviada de Centro de Costo";
-            this.labelX3.Text = "Descripcion de Centro de Costo";
-            this.labelX4.Text = "Descripción abreviada de centro de Costos-Mayusculas   ";
-            this.groupBox2.Text = "MotivoMovimiento";
+            this.groupBox2.Text = "Centro de Costo";
         }
         //-------------------------------------------------------------------
         private void FrmbdiXCCpExtraccionSAP_CentroCosto_miLoad(object sender, EventArgs e)

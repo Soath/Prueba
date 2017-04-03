@@ -173,9 +173,9 @@
             this.label1.Location = new System.Drawing.Point(11, 97);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(227, 29);
             this.label1.TabIndex = 128;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Unidad de Medida";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -183,7 +183,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(2, 128);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(647, 293);
@@ -198,9 +198,9 @@
             this.tabPage1.Controls.Add(this.chkEliminar);
             this.tabPage1.Controls.Add(this.txtBuscar);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(639, 267);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
@@ -216,7 +216,7 @@
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.dataListado.Location = new System.Drawing.Point(10, 85);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
@@ -255,7 +255,7 @@
             // 
             this.chkEliminar.AutoSize = true;
             this.chkEliminar.Location = new System.Drawing.Point(10, 64);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.chkEliminar.Name = "chkEliminar";
             this.chkEliminar.Size = new System.Drawing.Size(62, 17);
             this.chkEliminar.TabIndex = 5;
@@ -265,7 +265,7 @@
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(80, 28);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(246, 20);
             this.txtBuscar.TabIndex = 2;
@@ -274,9 +274,9 @@
             // 
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(639, 267);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
@@ -291,9 +291,9 @@
             this.groupBox2.Controls.Add(this.txtUNMunidad);
             this.groupBox2.Controls.Add(this.txtUNMid);
             this.groupBox2.Location = new System.Drawing.Point(10, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(614, 259);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -305,9 +305,9 @@
             this.labelX1.Location = new System.Drawing.Point(72, 42);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(142, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo de unidad de medida";
             // 
             // labelX3
             // 
@@ -315,9 +315,9 @@
             this.labelX3.Location = new System.Drawing.Point(72, 124);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(165, 13);
             this.labelX3.TabIndex = 113;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Descripcion de unidad de medida";
             // 
             // labelX2
             // 
@@ -325,16 +325,16 @@
             this.labelX2.Location = new System.Drawing.Point(72, 81);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(155, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Unidad de medida - abreviatura";
             // 
             // txtUNMdetalle
             // 
             this.txtUNMdetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtUNMdetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUNMdetalle.Location = new System.Drawing.Point(124, 116);
-            this.txtUNMdetalle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUNMdetalle.Location = new System.Drawing.Point(255, 116);
+            this.txtUNMdetalle.Margin = new System.Windows.Forms.Padding(2);
             this.txtUNMdetalle.MaxLength = 30;
             this.txtUNMdetalle.Name = "txtUNMdetalle";
             this.txtUNMdetalle.Size = new System.Drawing.Size(250, 26);
@@ -344,8 +344,8 @@
             // 
             this.txtUNMunidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtUNMunidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUNMunidad.Location = new System.Drawing.Point(124, 81);
-            this.txtUNMunidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUNMunidad.Location = new System.Drawing.Point(255, 81);
+            this.txtUNMunidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtUNMunidad.MaxLength = 30;
             this.txtUNMunidad.Name = "txtUNMunidad";
             this.txtUNMunidad.Size = new System.Drawing.Size(250, 26);
@@ -355,8 +355,8 @@
             // 
             this.txtUNMid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtUNMid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUNMid.Location = new System.Drawing.Point(124, 42);
-            this.txtUNMid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUNMid.Location = new System.Drawing.Point(255, 42);
+            this.txtUNMid.Margin = new System.Windows.Forms.Padding(2);
             this.txtUNMid.MaxLength = 50;
             this.txtUNMid.Name = "txtUNMid";
             this.txtUNMid.Size = new System.Drawing.Size(74, 26);

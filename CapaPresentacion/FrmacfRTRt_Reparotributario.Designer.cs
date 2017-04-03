@@ -177,9 +177,9 @@
             this.label1.Location = new System.Drawing.Point(9, 92);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(220, 29);
             this.label1.TabIndex = 134;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Reparo Tributario";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -205,7 +205,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(726, 289);
+            this.tabPage1.Size = new System.Drawing.Size(649, 291);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -306,42 +306,43 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Usuarios";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // labelX5
             // 
             this.labelX5.AutoSize = true;
-            this.labelX5.Location = new System.Drawing.Point(45, 173);
+            this.labelX5.Location = new System.Drawing.Point(45, 208);
             this.labelX5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(35, 13);
+            this.labelX5.Size = new System.Drawing.Size(135, 13);
             this.labelX5.TabIndex = 121;
-            this.labelX5.Text = "label4";
+            this.labelX5.Text = "Codigo de reparo Tributario";
             // 
             // labelX4
             // 
             this.labelX4.AutoSize = true;
-            this.labelX4.Location = new System.Drawing.Point(45, 143);
+            this.labelX4.Location = new System.Drawing.Point(45, 167);
             this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(35, 13);
+            this.labelX4.Size = new System.Drawing.Size(135, 13);
             this.labelX4.TabIndex = 120;
-            this.labelX4.Text = "label3";
+            this.labelX4.Text = "Estado de reparo Tributario";
             // 
             // labelX3
             // 
             this.labelX3.AutoSize = true;
-            this.labelX3.Location = new System.Drawing.Point(45, 113);
+            this.labelX3.Location = new System.Drawing.Point(45, 130);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(164, 13);
             this.labelX3.TabIndex = 119;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Responsable de reparo Tributario";
             // 
             // txtRTRcodigo
             // 
             this.txtRTRcodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtRTRcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRTRcodigo.Location = new System.Drawing.Point(219, 165);
+            this.txtRTRcodigo.Location = new System.Drawing.Point(219, 200);
             this.txtRTRcodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtRTRcodigo.MaxLength = 30;
             this.txtRTRcodigo.Name = "txtRTRcodigo";
@@ -352,7 +353,7 @@
             // 
             this.txtRTRestado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtRTRestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRTRestado.Location = new System.Drawing.Point(219, 135);
+            this.txtRTRestado.Location = new System.Drawing.Point(219, 159);
             this.txtRTRestado.Margin = new System.Windows.Forms.Padding(2);
             this.txtRTRestado.MaxLength = 30;
             this.txtRTRestado.Name = "txtRTRestado";
@@ -363,7 +364,7 @@
             // 
             this.txtRTRresponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtRTRresponsable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRTRresponsable.Location = new System.Drawing.Point(219, 105);
+            this.txtRTRresponsable.Location = new System.Drawing.Point(219, 122);
             this.txtRTRresponsable.Margin = new System.Windows.Forms.Padding(2);
             this.txtRTRresponsable.MaxLength = 30;
             this.txtRTRresponsable.Name = "txtRTRresponsable";
@@ -373,28 +374,28 @@
             // labelX1
             // 
             this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(40, 53);
+            this.labelX1.Location = new System.Drawing.Point(45, 53);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(138, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Periodo de reparo Tributario";
             // 
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(45, 83);
+            this.labelX2.Location = new System.Drawing.Point(45, 90);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(132, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Fecha de reparo Tributario";
             // 
             // txtRTRfecha
             // 
             this.txtRTRfecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtRTRfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRTRfecha.Location = new System.Drawing.Point(219, 75);
+            this.txtRTRfecha.Location = new System.Drawing.Point(219, 82);
             this.txtRTRfecha.Margin = new System.Windows.Forms.Padding(2);
             this.txtRTRfecha.MaxLength = 30;
             this.txtRTRfecha.Name = "txtRTRfecha";

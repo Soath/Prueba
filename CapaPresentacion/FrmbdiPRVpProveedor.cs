@@ -446,7 +446,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Proveedor";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -455,10 +454,6 @@ namespace CapaPresentacion
             this.txtName1.TabIndex = 2;
             this.txtStras.TabIndex = 3;
             this.txtStras.TextAlign = HorizontalAlignment.Right;
-            this.labelX1.Text = "Codigo de Proveedor (RUC)";
-            this.labelX2.Text = "Nombre de Proveedor";
-            this.labelX3.Text = "Direccion de Proveedor";
-            this.labelX4.Text = "RUC , DNI ,Documento de Identificacion";
             this.groupBox2.Text = "Proveedor";
         }
         //-------------------------------------------------------------------

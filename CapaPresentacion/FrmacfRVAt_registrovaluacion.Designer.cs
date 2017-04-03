@@ -177,9 +177,9 @@
             this.label1.Location = new System.Drawing.Point(11, 93);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(283, 29);
             this.label1.TabIndex = 134;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Registro de Evaluación";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -306,12 +306,13 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Usuarios";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // txtRVAfecha
             // 
             this.txtRVAfecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtRVAfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRVAfecha.Location = new System.Drawing.Point(134, 98);
+            this.txtRVAfecha.Location = new System.Drawing.Point(162, 95);
             this.txtRVAfecha.Margin = new System.Windows.Forms.Padding(2);
             this.txtRVAfecha.MaxLength = 30;
             this.txtRVAfecha.Name = "txtRVAfecha";
@@ -324,15 +325,15 @@
             this.labelX5.Location = new System.Drawing.Point(82, 179);
             this.labelX5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(35, 13);
+            this.labelX5.Size = new System.Drawing.Size(40, 13);
             this.labelX5.TabIndex = 119;
-            this.labelX5.Text = "label2";
+            this.labelX5.Text = "Estado";
             // 
             // txtRVestado
             // 
             this.txtRVestado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtRVestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRVestado.Location = new System.Drawing.Point(134, 171);
+            this.txtRVestado.Location = new System.Drawing.Point(162, 170);
             this.txtRVestado.Margin = new System.Windows.Forms.Padding(2);
             this.txtRVestado.MaxLength = 30;
             this.txtRVestado.Name = "txtRVestado";
@@ -345,15 +346,15 @@
             this.labelX4.Location = new System.Drawing.Point(82, 145);
             this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(35, 13);
+            this.labelX4.Size = new System.Drawing.Size(69, 13);
             this.labelX4.TabIndex = 117;
-            this.labelX4.Text = "label2";
+            this.labelX4.Text = "Responsable";
             // 
             // txtRVAresponsable
             // 
             this.txtRVAresponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtRVAresponsable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRVAresponsable.Location = new System.Drawing.Point(134, 137);
+            this.txtRVAresponsable.Location = new System.Drawing.Point(162, 135);
             this.txtRVAresponsable.Margin = new System.Windows.Forms.Padding(2);
             this.txtRVAresponsable.MaxLength = 30;
             this.txtRVAresponsable.Name = "txtRVAresponsable";
@@ -376,9 +377,9 @@
             this.labelX3.Location = new System.Drawing.Point(82, 106);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(37, 13);
             this.labelX3.TabIndex = 113;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Fecha";
             // 
             // labelX2
             // 
@@ -386,15 +387,15 @@
             this.labelX2.Location = new System.Drawing.Point(82, 63);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(43, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Periodo";
             // 
             // txtRVAperiodo
             // 
             this.txtRVAperiodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtRVAperiodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRVAperiodo.Location = new System.Drawing.Point(134, 63);
+            this.txtRVAperiodo.Location = new System.Drawing.Point(162, 57);
             this.txtRVAperiodo.Margin = new System.Windows.Forms.Padding(2);
             this.txtRVAperiodo.MaxLength = 30;
             this.txtRVAperiodo.Name = "txtRVAperiodo";
@@ -405,7 +406,7 @@
             // 
             this.txtRVAcodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtRVAcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRVAcodigo.Location = new System.Drawing.Point(134, 29);
+            this.txtRVAcodigo.Location = new System.Drawing.Point(162, 21);
             this.txtRVAcodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtRVAcodigo.MaxLength = 50;
             this.txtRVAcodigo.Name = "txtRVAcodigo";

@@ -173,9 +173,9 @@
             this.label1.Location = new System.Drawing.Point(11, 104);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(123, 29);
             this.label1.TabIndex = 125;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Ambiente";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -277,7 +277,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(726, 289);
+            this.tabPage2.Size = new System.Drawing.Size(643, 271);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -298,6 +298,7 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Usuarios";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // labelX1
             // 
@@ -305,9 +306,9 @@
             this.labelX1.Location = new System.Drawing.Point(61, 54);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(102, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo de Ambiente";
             // 
             // labelX3
             // 
@@ -315,9 +316,9 @@
             this.labelX3.Location = new System.Drawing.Point(61, 131);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(124, 13);
             this.labelX3.TabIndex = 113;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Descripcion de ambiente";
             // 
             // labelX2
             // 
@@ -325,15 +326,15 @@
             this.labelX2.Location = new System.Drawing.Point(61, 94);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(80, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Codigo de local";
             // 
             // txtAMBambiente
             // 
             this.txtAMBambiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtAMBambiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAMBambiente.Location = new System.Drawing.Point(113, 123);
+            this.txtAMBambiente.Location = new System.Drawing.Point(196, 123);
             this.txtAMBambiente.Margin = new System.Windows.Forms.Padding(2);
             this.txtAMBambiente.MaxLength = 30;
             this.txtAMBambiente.Name = "txtAMBambiente";
@@ -344,7 +345,7 @@
             // 
             this.txtLOCid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtLOCid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLOCid.Location = new System.Drawing.Point(113, 88);
+            this.txtLOCid.Location = new System.Drawing.Point(196, 85);
             this.txtLOCid.Margin = new System.Windows.Forms.Padding(2);
             this.txtLOCid.MaxLength = 30;
             this.txtLOCid.Name = "txtLOCid";
@@ -355,7 +356,7 @@
             // 
             this.txtAMBid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtAMBid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAMBid.Location = new System.Drawing.Point(113, 54);
+            this.txtAMBid.Location = new System.Drawing.Point(196, 44);
             this.txtAMBid.Margin = new System.Windows.Forms.Padding(2);
             this.txtAMBid.MaxLength = 50;
             this.txtAMBid.Name = "txtAMBid";

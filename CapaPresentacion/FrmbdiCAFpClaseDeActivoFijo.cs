@@ -436,15 +436,12 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Clase de Activo Fijo";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
             this.txtANLKL.TabIndex = 1;
             this.txtANLKL.TextAlign = HorizontalAlignment.Right;
             this.txtTXK50.TabIndex = 2;
-            this.labelX1.Text = "Codigo de Clase";
-            this.labelX2.Text = "Descripcion ";
             this.groupBox2.Text = "Clase de Activo Fijo";
         }
         //-------------------------------------------------------------------

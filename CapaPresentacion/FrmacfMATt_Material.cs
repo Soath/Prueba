@@ -452,7 +452,6 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "MATERIAL";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
@@ -462,11 +461,7 @@ namespace CapaPresentacion
             this.txtMATmaterial.TextAlign = HorizontalAlignment.Right;
             this.txtMATabreviado.TabIndex = 3;
             this.txtMATabreviado.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Codigo de Material";
-            this.labelX2.Text = "Descripcion de Material";
-            this.labelX3.Text = "Abreviatura de Material";
+            
             this.groupBox2.Text = "MATERIAL";
         }
         //-------------------------------------------------------------------

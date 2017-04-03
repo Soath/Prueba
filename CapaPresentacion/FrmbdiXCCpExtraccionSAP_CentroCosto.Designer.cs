@@ -175,9 +175,9 @@
             this.label1.Location = new System.Drawing.Point(9, 81);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(203, 29);
             this.label1.TabIndex = 131;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Centro de Costo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -307,7 +307,7 @@
             // 
             this.txtKLTXT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtKLTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKLTXT.Location = new System.Drawing.Point(183, 117);
+            this.txtKLTXT.Location = new System.Drawing.Point(271, 114);
             this.txtKLTXT.Margin = new System.Windows.Forms.Padding(2);
             this.txtKLTXT.MaxLength = 30;
             this.txtKLTXT.Name = "txtKLTXT";
@@ -318,7 +318,7 @@
             // 
             this.txtMCDS3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtMCDS3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMCDS3.Location = new System.Drawing.Point(183, 152);
+            this.txtMCDS3.Location = new System.Drawing.Point(271, 161);
             this.txtMCDS3.Margin = new System.Windows.Forms.Padding(2);
             this.txtMCDS3.MaxLength = 30;
             this.txtMCDS3.Name = "txtMCDS3";
@@ -327,13 +327,12 @@
             // 
             // labelX4
             // 
-            this.labelX4.AutoSize = true;
             this.labelX4.Location = new System.Drawing.Point(52, 161);
             this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(35, 13);
+            this.labelX4.Size = new System.Drawing.Size(184, 30);
             this.labelX4.TabIndex = 116;
-            this.labelX4.Text = "label2";
+            this.labelX4.Text = "Descripción abreviada de centro de Costos-Mayusculas";
             // 
             // labelX1
             // 
@@ -341,9 +340,9 @@
             this.labelX1.Location = new System.Drawing.Point(51, 42);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(157, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo o ID de Centro de Costo";
             // 
             // labelX3
             // 
@@ -351,9 +350,9 @@
             this.labelX3.Location = new System.Drawing.Point(51, 122);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(157, 13);
             this.labelX3.TabIndex = 113;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Descripcion de Centro de Costo";
             // 
             // labelX2
             // 
@@ -361,15 +360,15 @@
             this.labelX2.Location = new System.Drawing.Point(51, 79);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(207, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Descripción abreviada de Centro de Costo";
             // 
             // txtKTEXT
             // 
             this.txtKTEXT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtKTEXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKTEXT.Location = new System.Drawing.Point(183, 79);
+            this.txtKTEXT.Location = new System.Drawing.Point(271, 71);
             this.txtKTEXT.Margin = new System.Windows.Forms.Padding(2);
             this.txtKTEXT.MaxLength = 30;
             this.txtKTEXT.Name = "txtKTEXT";
@@ -380,11 +379,11 @@
             // 
             this.txtKOSTL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtKOSTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKOSTL.Location = new System.Drawing.Point(183, 42);
+            this.txtKOSTL.Location = new System.Drawing.Point(271, 34);
             this.txtKOSTL.Margin = new System.Windows.Forms.Padding(2);
             this.txtKOSTL.MaxLength = 50;
             this.txtKOSTL.Name = "txtKOSTL";
-            this.txtKOSTL.Size = new System.Drawing.Size(250, 26);
+            this.txtKOSTL.Size = new System.Drawing.Size(111, 26);
             this.txtKOSTL.TabIndex = 101;
             this.txtKOSTL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

@@ -175,9 +175,9 @@
             this.label1.Location = new System.Drawing.Point(11, 89);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(135, 29);
             this.label1.TabIndex = 131;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "Proveedor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -307,7 +307,7 @@
             // 
             this.txtSTCD1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtSTCD1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSTCD1.Location = new System.Drawing.Point(171, 133);
+            this.txtSTCD1.Location = new System.Drawing.Point(203, 142);
             this.txtSTCD1.Margin = new System.Windows.Forms.Padding(2);
             this.txtSTCD1.MaxLength = 30;
             this.txtSTCD1.Name = "txtSTCD1";
@@ -316,13 +316,12 @@
             // 
             // labelX4
             // 
-            this.labelX4.AutoSize = true;
-            this.labelX4.Location = new System.Drawing.Point(43, 142);
+            this.labelX4.Location = new System.Drawing.Point(39, 142);
             this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(35, 13);
+            this.labelX4.Size = new System.Drawing.Size(124, 34);
             this.labelX4.TabIndex = 116;
-            this.labelX4.Text = "label2";
+            this.labelX4.Text = "RUC , DNI ,Documento de Identificacion";
             // 
             // labelX1
             // 
@@ -330,9 +329,9 @@
             this.labelX1.Location = new System.Drawing.Point(39, 35);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(139, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo de Proveedor (RUC)";
             // 
             // labelX3
             // 
@@ -340,25 +339,25 @@
             this.labelX3.Location = new System.Drawing.Point(39, 108);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(119, 13);
             this.labelX3.TabIndex = 113;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Direccion de Proveedor";
             // 
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(39, 65);
+            this.labelX2.Location = new System.Drawing.Point(39, 70);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(111, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Nombre de Proveedor";
             // 
             // txtStras
             // 
             this.txtStras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtStras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStras.Location = new System.Drawing.Point(171, 100);
+            this.txtStras.Location = new System.Drawing.Point(203, 100);
             this.txtStras.Margin = new System.Windows.Forms.Padding(2);
             this.txtStras.MaxLength = 30;
             this.txtStras.Name = "txtStras";
@@ -369,7 +368,7 @@
             // 
             this.txtName1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName1.Location = new System.Drawing.Point(171, 65);
+            this.txtName1.Location = new System.Drawing.Point(203, 62);
             this.txtName1.Margin = new System.Windows.Forms.Padding(2);
             this.txtName1.MaxLength = 30;
             this.txtName1.Name = "txtName1";
@@ -380,7 +379,7 @@
             // 
             this.txtLIFNR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtLIFNR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLIFNR.Location = new System.Drawing.Point(171, 35);
+            this.txtLIFNR.Location = new System.Drawing.Point(203, 27);
             this.txtLIFNR.Margin = new System.Windows.Forms.Padding(2);
             this.txtLIFNR.MaxLength = 50;
             this.txtLIFNR.Name = "txtLIFNR";

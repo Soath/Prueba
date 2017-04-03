@@ -437,15 +437,12 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Sociedades";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
             this.txtBUKRS.TabIndex = 1;
             this.txtBUKRS.TextAlign = HorizontalAlignment.Right;
             this.txtBUTXT.TabIndex = 2;
-            this.labelX1.Text = "Codigo de Empresas";
-            this.labelX2.Text = "Descripcion de Empresa";
             this.groupBox2.Text = "Sociedades";
         }
         //-------------------------------------------------------------------

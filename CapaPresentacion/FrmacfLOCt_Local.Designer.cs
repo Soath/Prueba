@@ -175,9 +175,9 @@
             this.label1.Location = new System.Drawing.Point(9, 98);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(95, 29);
             this.label1.TabIndex = 131;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "LOCAL";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -279,7 +279,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(726, 289);
+            this.tabPage2.Size = new System.Drawing.Size(646, 270);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -302,6 +302,7 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Usuarios";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // labelX4
             // 
@@ -309,15 +310,15 @@
             this.labelX4.Location = new System.Drawing.Point(99, 160);
             this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(35, 13);
+            this.labelX4.Size = new System.Drawing.Size(106, 13);
             this.labelX4.TabIndex = 117;
-            this.labelX4.Text = "label2";
+            this.labelX4.Text = "Codigo de Segmento";
             // 
             // txtSEGMENT
             // 
             this.txtSEGMENT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtSEGMENT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSEGMENT.Location = new System.Drawing.Point(151, 152);
+            this.txtSEGMENT.Location = new System.Drawing.Point(211, 152);
             this.txtSEGMENT.Margin = new System.Windows.Forms.Padding(2);
             this.txtSEGMENT.MaxLength = 30;
             this.txtSEGMENT.Name = "txtSEGMENT";
@@ -330,9 +331,9 @@
             this.labelX1.Location = new System.Drawing.Point(99, 44);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(80, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo de local";
             // 
             // labelX3
             // 
@@ -340,9 +341,9 @@
             this.labelX3.Location = new System.Drawing.Point(99, 121);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(96, 13);
             this.labelX3.TabIndex = 113;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Direccion de Local";
             // 
             // labelX2
             // 
@@ -350,15 +351,15 @@
             this.labelX2.Location = new System.Drawing.Point(99, 78);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(107, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Descripcion de Local";
             // 
             // txtLOCdireccion
             // 
             this.txtLOCdireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtLOCdireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLOCdireccion.Location = new System.Drawing.Point(151, 113);
+            this.txtLOCdireccion.Location = new System.Drawing.Point(211, 110);
             this.txtLOCdireccion.Margin = new System.Windows.Forms.Padding(2);
             this.txtLOCdireccion.MaxLength = 30;
             this.txtLOCdireccion.Name = "txtLOCdireccion";
@@ -369,7 +370,7 @@
             // 
             this.txtLOClocal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtLOClocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLOClocal.Location = new System.Drawing.Point(151, 78);
+            this.txtLOClocal.Location = new System.Drawing.Point(211, 71);
             this.txtLOClocal.Margin = new System.Windows.Forms.Padding(2);
             this.txtLOClocal.MaxLength = 30;
             this.txtLOClocal.Name = "txtLOClocal";
@@ -380,11 +381,11 @@
             // 
             this.txtLOCid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtLOCid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLOCid.Location = new System.Drawing.Point(151, 44);
+            this.txtLOCid.Location = new System.Drawing.Point(211, 36);
             this.txtLOCid.Margin = new System.Windows.Forms.Padding(2);
             this.txtLOCid.MaxLength = 50;
             this.txtLOCid.Name = "txtLOCid";
-            this.txtLOCid.Size = new System.Drawing.Size(74, 26);
+            this.txtLOCid.Size = new System.Drawing.Size(105, 26);
             this.txtLOCid.TabIndex = 101;
             // 
             // ttMensaje

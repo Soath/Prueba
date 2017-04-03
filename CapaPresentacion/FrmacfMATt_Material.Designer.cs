@@ -173,9 +173,9 @@
             this.label1.Location = new System.Drawing.Point(9, 102);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(139, 29);
             this.label1.TabIndex = 134;
-            this.label1.Text = "Titulo";
+            this.label1.Text = "MATERIAL";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabControl1
@@ -277,7 +277,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(726, 289);
+            this.tabPage2.Size = new System.Drawing.Size(641, 270);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -305,9 +305,9 @@
             this.labelX1.Location = new System.Drawing.Point(84, 57);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
+            this.labelX1.Size = new System.Drawing.Size(95, 13);
             this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
+            this.labelX1.Text = "Codigo de Material";
             // 
             // labelX3
             // 
@@ -315,25 +315,25 @@
             this.labelX3.Location = new System.Drawing.Point(84, 134);
             this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
+            this.labelX3.Size = new System.Drawing.Size(116, 13);
             this.labelX3.TabIndex = 113;
-            this.labelX3.Text = "label2";
+            this.labelX3.Text = "Abreviatura de Material";
             // 
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(84, 91);
+            this.labelX2.Location = new System.Drawing.Point(84, 96);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
+            this.labelX2.Size = new System.Drawing.Size(118, 13);
             this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
+            this.labelX2.Text = "Descripcion de Material";
             // 
             // txtMATabreviado
             // 
             this.txtMATabreviado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtMATabreviado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMATabreviado.Location = new System.Drawing.Point(184, 126);
+            this.txtMATabreviado.Location = new System.Drawing.Point(215, 124);
             this.txtMATabreviado.Margin = new System.Windows.Forms.Padding(2);
             this.txtMATabreviado.MaxLength = 30;
             this.txtMATabreviado.Name = "txtMATabreviado";
@@ -344,7 +344,7 @@
             // 
             this.txtMATmaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtMATmaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMATmaterial.Location = new System.Drawing.Point(184, 91);
+            this.txtMATmaterial.Location = new System.Drawing.Point(215, 86);
             this.txtMATmaterial.Margin = new System.Windows.Forms.Padding(2);
             this.txtMATmaterial.MaxLength = 30;
             this.txtMATmaterial.Name = "txtMATmaterial";
@@ -355,7 +355,7 @@
             // 
             this.txtMATid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtMATid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMATid.Location = new System.Drawing.Point(184, 57);
+            this.txtMATid.Location = new System.Drawing.Point(215, 50);
             this.txtMATid.Margin = new System.Windows.Forms.Padding(2);
             this.txtMATid.MaxLength = 50;
             this.txtMATid.Name = "txtMATid";

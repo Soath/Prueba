@@ -527,15 +527,7 @@ namespace CapaPresentacion
             this.txtRTRperiodo.TabIndex = 1;
             this.txtRTRperiodo.TextAlign = HorizontalAlignment.Right;
             this.txtRTRfecha.TabIndex = 2;
-            //this.txtAMBambiente.TabIndex = 3;
-            //this.txtAMBambiente.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TextAlign = HorizontalAlignment.Right;
-            //this.txtStock.TabIndex = 4;
-            this.labelX1.Text = "Periodo de reparo Tributario";
-            this.labelX2.Text = "Fecha de reparo Tributario";
-            this.labelX3.Text = "Responsable de reparo Tributario";
-            this.labelX4.Text = "Estado de reparo Tributario";
-            this.labelX5.Text = "Codigo de reparo Tributario.";
+            
             this.groupBox2.Text = "Reparo Tributario";
         }
         //-------------------------------------------------------------------
@@ -565,6 +557,11 @@ namespace CapaPresentacion
         }
 
         private void FrmacfRTRt_Reparotributario_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }

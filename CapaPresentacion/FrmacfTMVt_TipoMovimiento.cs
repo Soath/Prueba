@@ -485,15 +485,12 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Tipo Movimiento ";
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	
             this.txtTVMid.TabIndex = 1;
             this.txtTVMid.TextAlign = HorizontalAlignment.Right;
             this.txtTVMtipomovimiento.TabIndex = 2;
-            this.labelX1.Text = "Código de Movimiento";
-            this.labelX2.Text = "Descripción de Movimiento";
             this.groupBox2.Text = "Tipo Movimiento";
         }
         //-------------------------------------------------------------------

@@ -31,11 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmacfSELt_SistemaElectrico));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripEliminar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
+            this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataListado = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.chkEliminar = new System.Windows.Forms.CheckBox();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -49,22 +57,14 @@
             this.txtSELid = new System.Windows.Forms.TextBox();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripEliminar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
-            this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -86,202 +86,6 @@
             this.toolStrip1.TabIndex = 133;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(11, 84);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
-            this.label1.TabIndex = 131;
-            this.label1.Text = "Titulo";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(2, 115);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(655, 314);
-            this.tabControl1.TabIndex = 132;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tabPage1.Controls.Add(this.dataListado);
-            this.tabPage1.Controls.Add(this.pictureBox2);
-            this.tabPage1.Controls.Add(this.lblTotal);
-            this.tabPage1.Controls.Add(this.chkEliminar);
-            this.tabPage1.Controls.Add(this.txtBuscar);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(647, 288);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Listado";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // dataListado
-            // 
-            this.dataListado.AllowUserToAddRows = false;
-            this.dataListado.AllowUserToDeleteRows = false;
-            this.dataListado.AllowUserToOrderColumns = true;
-            this.dataListado.BackgroundColor = System.Drawing.Color.White;
-            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Eliminar});
-            this.dataListado.Location = new System.Drawing.Point(10, 85);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
-            this.dataListado.MultiSelect = false;
-            this.dataListado.Name = "dataListado";
-            this.dataListado.ReadOnly = true;
-            this.dataListado.RowTemplate.Height = 24;
-            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(610, 166);
-            this.dataListado.TabIndex = 9;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            this.Eliminar.Width = 50;
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(375, 64);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(41, 13);
-            this.lblTotal.TabIndex = 6;
-            this.lblTotal.Text = "lblTotal";
-            // 
-            // chkEliminar
-            // 
-            this.chkEliminar.AutoSize = true;
-            this.chkEliminar.Location = new System.Drawing.Point(10, 64);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.chkEliminar.Name = "chkEliminar";
-            this.chkEliminar.Size = new System.Drawing.Size(62, 17);
-            this.chkEliminar.TabIndex = 5;
-            this.chkEliminar.Text = "Eliminar";
-            this.chkEliminar.UseVisualStyleBackColor = true;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(80, 28);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(246, 20);
-            this.txtBuscar.TabIndex = 2;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(647, 288);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Mantenimiento";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.labelX3);
-            this.groupBox2.Controls.Add(this.txtSEGMENT);
-            this.groupBox2.Controls.Add(this.labelX1);
-            this.groupBox2.Controls.Add(this.labelX2);
-            this.groupBox2.Controls.Add(this.txtSELsistemaelectrico);
-            this.groupBox2.Controls.Add(this.txtSELid);
-            this.groupBox2.Location = new System.Drawing.Point(10, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(614, 259);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Usuarios";
-            // 
-            // labelX3
-            // 
-            this.labelX3.AutoSize = true;
-            this.labelX3.Location = new System.Drawing.Point(45, 135);
-            this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(35, 13);
-            this.labelX3.TabIndex = 117;
-            this.labelX3.Text = "label2";
-            // 
-            // txtSEGMENT
-            // 
-            this.txtSEGMENT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtSEGMENT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSEGMENT.Location = new System.Drawing.Point(219, 127);
-            this.txtSEGMENT.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSEGMENT.MaxLength = 30;
-            this.txtSEGMENT.Name = "txtSEGMENT";
-            this.txtSEGMENT.Size = new System.Drawing.Size(250, 26);
-            this.txtSEGMENT.TabIndex = 116;
-            // 
-            // labelX1
-            // 
-            this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(40, 53);
-            this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 13);
-            this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo";
-            // 
-            // labelX2
-            // 
-            this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(45, 91);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 13);
-            this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "label2";
-            // 
-            // txtSELsistemaelectrico
-            // 
-            this.txtSELsistemaelectrico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtSELsistemaelectrico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSELsistemaelectrico.Location = new System.Drawing.Point(219, 83);
-            this.txtSELsistemaelectrico.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSELsistemaelectrico.MaxLength = 30;
-            this.txtSELsistemaelectrico.Name = "txtSELsistemaelectrico";
-            this.txtSELsistemaelectrico.Size = new System.Drawing.Size(250, 26);
-            this.txtSELsistemaelectrico.TabIndex = 108;
-            // 
-            // txtSELid
-            // 
-            this.txtSELid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtSELid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSELid.Location = new System.Drawing.Point(219, 45);
-            this.txtSELid.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSELid.MaxLength = 50;
-            this.txtSELid.Name = "txtSELid";
-            this.txtSELid.Size = new System.Drawing.Size(250, 26);
-            this.txtSELid.TabIndex = 101;
-            // 
-            // ttMensaje
-            // 
-            this.ttMensaje.IsBalloon = true;
-            // 
-            // errorIcono
-            // 
-            this.errorIcono.ContainerControl = this;
             // 
             // toolStripRefrescar
             // 
@@ -362,6 +166,73 @@
             this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripCancelar.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(11, 84);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(217, 29);
+            this.label1.TabIndex = 131;
+            this.label1.Text = "Sistema Electrico";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(2, 115);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(655, 314);
+            this.tabControl1.TabIndex = 132;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.tabPage1.Controls.Add(this.dataListado);
+            this.tabPage1.Controls.Add(this.pictureBox2);
+            this.tabPage1.Controls.Add(this.lblTotal);
+            this.tabPage1.Controls.Add(this.chkEliminar);
+            this.tabPage1.Controls.Add(this.txtBuscar);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(647, 288);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Listado";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dataListado
+            // 
+            this.dataListado.AllowUserToAddRows = false;
+            this.dataListado.AllowUserToDeleteRows = false;
+            this.dataListado.AllowUserToOrderColumns = true;
+            this.dataListado.BackgroundColor = System.Drawing.Color.White;
+            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Eliminar});
+            this.dataListado.Location = new System.Drawing.Point(10, 85);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
+            this.dataListado.MultiSelect = false;
+            this.dataListado.Name = "dataListado";
+            this.dataListado.ReadOnly = true;
+            this.dataListado.RowTemplate.Height = 24;
+            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListado.Size = new System.Drawing.Size(610, 166);
+            this.dataListado.TabIndex = 9;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            this.Eliminar.Width = 50;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(15, 16);
@@ -370,6 +241,135 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(375, 64);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(41, 13);
+            this.lblTotal.TabIndex = 6;
+            this.lblTotal.Text = "lblTotal";
+            // 
+            // chkEliminar
+            // 
+            this.chkEliminar.AutoSize = true;
+            this.chkEliminar.Location = new System.Drawing.Point(10, 64);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.chkEliminar.Name = "chkEliminar";
+            this.chkEliminar.Size = new System.Drawing.Size(62, 17);
+            this.chkEliminar.TabIndex = 5;
+            this.chkEliminar.Text = "Eliminar";
+            this.chkEliminar.UseVisualStyleBackColor = true;
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(80, 28);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(246, 20);
+            this.txtBuscar.TabIndex = 2;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.groupBox2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(647, 288);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Mantenimiento";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.labelX3);
+            this.groupBox2.Controls.Add(this.txtSEGMENT);
+            this.groupBox2.Controls.Add(this.labelX1);
+            this.groupBox2.Controls.Add(this.labelX2);
+            this.groupBox2.Controls.Add(this.txtSELsistemaelectrico);
+            this.groupBox2.Controls.Add(this.txtSELid);
+            this.groupBox2.Location = new System.Drawing.Point(10, 15);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(614, 259);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Usuarios";
+            // 
+            // labelX3
+            // 
+            this.labelX3.AutoSize = true;
+            this.labelX3.Location = new System.Drawing.Point(45, 135);
+            this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(106, 13);
+            this.labelX3.TabIndex = 117;
+            this.labelX3.Text = "Código de Segmento";
+            // 
+            // txtSEGMENT
+            // 
+            this.txtSEGMENT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtSEGMENT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSEGMENT.Location = new System.Drawing.Point(219, 127);
+            this.txtSEGMENT.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSEGMENT.MaxLength = 30;
+            this.txtSEGMENT.Name = "txtSEGMENT";
+            this.txtSEGMENT.Size = new System.Drawing.Size(250, 26);
+            this.txtSEGMENT.TabIndex = 116;
+            // 
+            // labelX1
+            // 
+            this.labelX1.AutoSize = true;
+            this.labelX1.Location = new System.Drawing.Point(44, 53);
+            this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(139, 13);
+            this.labelX1.TabIndex = 115;
+            this.labelX1.Text = "Código de Sistema Electrico";
+            // 
+            // labelX2
+            // 
+            this.labelX2.AutoSize = true;
+            this.labelX2.Location = new System.Drawing.Point(44, 91);
+            this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(162, 13);
+            this.labelX2.TabIndex = 112;
+            this.labelX2.Text = "Descripción de Sistema Electrico";
+            // 
+            // txtSELsistemaelectrico
+            // 
+            this.txtSELsistemaelectrico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtSELsistemaelectrico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSELsistemaelectrico.Location = new System.Drawing.Point(219, 83);
+            this.txtSELsistemaelectrico.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSELsistemaelectrico.MaxLength = 30;
+            this.txtSELsistemaelectrico.Name = "txtSELsistemaelectrico";
+            this.txtSELsistemaelectrico.Size = new System.Drawing.Size(250, 26);
+            this.txtSELsistemaelectrico.TabIndex = 108;
+            // 
+            // txtSELid
+            // 
+            this.txtSELid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtSELid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSELid.Location = new System.Drawing.Point(219, 45);
+            this.txtSELid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSELid.MaxLength = 50;
+            this.txtSELid.Name = "txtSELid";
+            this.txtSELid.Size = new System.Drawing.Size(250, 26);
+            this.txtSELid.TabIndex = 101;
+            // 
+            // ttMensaje
+            // 
+            this.ttMensaje.IsBalloon = true;
+            // 
+            // errorIcono
+            // 
+            this.errorIcono.ContainerControl = this;
             // 
             // FrmacfSELt_SistemaElectrico
             // 
@@ -382,17 +382,18 @@
             this.Name = "FrmacfSELt_SistemaElectrico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfSELt_SistemaElectrico";
+            this.Load += new System.EventHandler(this.FrmacfSELt_SistemaElectrico_Load_1);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
