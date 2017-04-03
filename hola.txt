@@ -1,0 +1,6 @@
+Detalle Activo Fijo = Form_ActivoFijo
+
+
+
+--Error de Conexion con Excel al importar.
+Instalar https://www.microsoft.com/es-es/download/details.aspx?id=23734 para SO de 64 bits
