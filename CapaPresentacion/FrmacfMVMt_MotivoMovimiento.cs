@@ -40,6 +40,7 @@ namespace CapaPresentacion
             this.toolStripImprimir.Click += new System.EventHandler(this.Control_Click_Imprimir);
             this.toolStripGuardar.Click += new System.EventHandler(this.Control_Click_Guardar);
             this.toolStripCancelar.Click += new System.EventHandler(this.Control_Click_Cancelar);
+            this.toolStripImportar.Click += new System.EventHandler(this.Control_Click_Importar);
 
             this.chkEliminar.Click += new System.EventHandler(this.Control_Click_ChkEliminar);
 
@@ -58,6 +59,11 @@ namespace CapaPresentacion
         private void Control_Click_Refrescar(object sender, EventArgs e)
         {
             this.BotonRefrescar();
+        }
+        private void Control_Click_Importar(object sender, EventArgs e)
+        {
+            this.BotonImportar();
+
         }
         private void Control_Click_Agregar(object sender, EventArgs e)
         {
@@ -128,6 +134,7 @@ namespace CapaPresentacion
             this.toolStripEditar.Visible = edo;
             this.toolStripEliminar.Visible = edo;
             this.toolStripImprimir.Visible = edo;
+            this.toolStripImportar.Visible = edo;
 
             this.toolStripGuardar.Visible = !edo;
             this.toolStripCancelar.Visible = !edo;
@@ -140,6 +147,7 @@ namespace CapaPresentacion
             this.toolStripEditar.Enabled = edo;
             this.toolStripEliminar.Enabled = edo;
             this.toolStripImprimir.Enabled = edo;
+            this.toolStripImportar.Visible = edo;
         }
 
         private void OcultarColumnas()
@@ -219,6 +227,11 @@ namespace CapaPresentacion
         {
             Form FrmMVMReporte = new FrmMVMReporte();
             FrmMVMReporte.Show();
+        }
+        private void BotonImportar()
+        {
+            Form FrmExcel = new FrmExcel();
+            FrmExcel.Show();
         }
 
         private void BotonGuardar()
@@ -488,6 +501,11 @@ namespace CapaPresentacion
         }
 
         private void toolStripEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripCancelar_Click(object sender, EventArgs e)
         {
 
         }

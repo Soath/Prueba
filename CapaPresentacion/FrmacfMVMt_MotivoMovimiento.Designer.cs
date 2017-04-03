@@ -40,6 +40,7 @@
             this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
             this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
             this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripImportar = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -89,7 +90,8 @@
             this.toolStripEliminar,
             this.toolStripImprimir,
             this.toolStripGuardar,
-            this.toolStripCancelar});
+            this.toolStripCancelar,
+            this.toolStripImportar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(681, 67);
@@ -176,6 +178,18 @@
             this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripCancelar.Visible = false;
+            this.toolStripCancelar.Click += new System.EventHandler(this.toolStripCancelar_Click);
+            // 
+            // toolStripImportar
+            // 
+            this.toolStripImportar.Image = global::CapaPresentacion.Properties.Resources.AppMenuClose;
+            this.toolStripImportar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripImportar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripImportar.Name = "toolStripImportar";
+            this.toolStripImportar.Size = new System.Drawing.Size(57, 64);
+            this.toolStripImportar.Text = "Importar";
+            this.toolStripImportar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // label1
             // 
@@ -460,5 +474,6 @@
         private System.Windows.Forms.TextBox txtTMVid;
         private System.Windows.Forms.TextBox txtMVMjustificacion;
         private System.Windows.Forms.Label labelX4;
+        private System.Windows.Forms.ToolStripButton toolStripImportar;
     }
 }
