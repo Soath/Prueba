@@ -103,17 +103,53 @@
     <Compile Include="FrmacfCMPt_Componente.Designer.cs">
       <DependentUpon>FrmacfCMPt_Componente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfCRSt_Caracteristicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfCRSt_Caracteristicas.Designer.cs">
+      <DependentUpon>FrmacfCRSt_Caracteristicas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfCSTt_Costo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmacfCSTt_Costo.Designer.cs">
       <DependentUpon>FrmacfCSTt_Costo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfDDFt_detalledediferido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfDDFt_detalledediferido.Designer.cs">
+      <DependentUpon>FrmacfDDFt_detalledediferido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfDRTt_detallereparotributario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfDRTt_detallereparotributario.Designer.cs">
+      <DependentUpon>FrmacfDRTt_detallereparotributario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfEDIt_edificaciondetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfEDIt_edificaciondetalle.Designer.cs">
+      <DependentUpon>FrmacfEDIt_edificaciondetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfESTt_Estado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmacfESTt_Estado.Designer.cs">
       <DependentUpon>FrmacfESTt_Estado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfICRt_Inventariocaracteristicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfICRt_Inventariocaracteristicas.Designer.cs">
+      <DependentUpon>FrmacfICRt_Inventariocaracteristicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfINBt_Inventariobienes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfINBt_Inventariobienes.Designer.cs">
+      <DependentUpon>FrmacfINBt_Inventariobienes.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmacfINVp_Inventario.cs">
       <SubType>Form</SubType>
@@ -289,6 +325,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Pruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pruebas.Designer.cs">
+      <DependentUpon>Pruebas.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -330,11 +372,29 @@
     <EmbeddedResource Include="FrmacfCMPt_Componente.resx">
       <DependentUpon>FrmacfCMPt_Componente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfCRSt_Caracteristicas.resx">
+      <DependentUpon>FrmacfCRSt_Caracteristicas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfCSTt_Costo.resx">
       <DependentUpon>FrmacfCSTt_Costo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfDDFt_detalledediferido.resx">
+      <DependentUpon>FrmacfDDFt_detalledediferido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfDRTt_detallereparotributario.resx">
+      <DependentUpon>FrmacfDRTt_detallereparotributario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfEDIt_edificaciondetalle.resx">
+      <DependentUpon>FrmacfEDIt_edificaciondetalle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfESTt_Estado.resx">
       <DependentUpon>FrmacfESTt_Estado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfICRt_Inventariocaracteristicas.resx">
+      <DependentUpon>FrmacfICRt_Inventariocaracteristicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfINBt_Inventariobienes.resx">
+      <DependentUpon>FrmacfINBt_Inventariobienes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfINVp_Inventario.resx">
       <DependentUpon>FrmacfINVp_Inventario.cs</DependentUpon>
@@ -418,6 +478,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pruebas.resx">
+      <DependentUpon>Pruebas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report6.rdlc" />
     <EmbeddedResource Include="UserControl1.resx">

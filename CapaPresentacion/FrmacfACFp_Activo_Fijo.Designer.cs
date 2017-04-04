@@ -31,24 +31,27 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmacfACFp_Activo_Fijo));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripEliminar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
-            this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripPrimero = new System.Windows.Forms.ToolStripButton();
-            this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
-            this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
-            this.toolStripBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox2 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -56,68 +59,27 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
-            this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ACFdescripcion2 = new System.Windows.Forms.TextBox();
-            this.ACFid = new System.Windows.Forms.TextBox();
-            this.ACFdescripcion = new System.Windows.Forms.TextBox();
-            this.comboBox1Estado = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox4 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
             this.textBox28 = new System.Windows.Forms.TextBox();
             this.textBox29 = new System.Windows.Forms.TextBox();
@@ -139,6 +101,7 @@
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox5 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
             this.textBox45 = new System.Windows.Forms.TextBox();
             this.textBox46 = new System.Windows.Forms.TextBox();
@@ -146,6 +109,43 @@
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
+            this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
+            this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
+            this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ACFdescripcion2 = new System.Windows.Forms.TextBox();
+            this.ACFid = new System.Windows.Forms.TextBox();
+            this.ACFdescripcion = new System.Windows.Forms.TextBox();
+            this.comboBox1Estado = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripEliminar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
+            this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripPrimero = new System.Windows.Forms.ToolStripButton();
+            this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
+            this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -158,21 +158,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3.Panel)).BeginInit();
             this.kryptonGroupBox3.Panel.SuspendLayout();
             this.kryptonGroupBox3.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4.Panel)).BeginInit();
+            this.kryptonGroupBox4.Panel.SuspendLayout();
+            this.kryptonGroupBox4.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox5.Panel)).BeginInit();
+            this.kryptonGroupBox5.Panel.SuspendLayout();
+            this.kryptonGroupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
             this.kryptonGroupBox1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4.Panel)).BeginInit();
-            this.kryptonGroupBox4.Panel.SuspendLayout();
-            this.kryptonGroupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox5.Panel)).BeginInit();
-            this.kryptonGroupBox5.Panel.SuspendLayout();
-            this.kryptonGroupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -197,147 +197,9 @@
             this.toolStripTextBox1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(747, 67);
+            this.toolStrip1.Size = new System.Drawing.Size(802, 67);
             this.toolStrip1.TabIndex = 124;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripRefrescar
-            // 
-            this.toolStripRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripRefrescar.Image")));
-            this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripRefrescar.Name = "toolStripRefrescar";
-            this.toolStripRefrescar.Size = new System.Drawing.Size(63, 64);
-            this.toolStripRefrescar.Text = "Actualizar";
-            this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripAgregar
-            // 
-            this.toolStripAgregar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAgregar.Image")));
-            this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripAgregar.Name = "toolStripAgregar";
-            this.toolStripAgregar.Size = new System.Drawing.Size(53, 64);
-            this.toolStripAgregar.Text = "Agregar";
-            this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripAgregar.Click += new System.EventHandler(this.toolStripAgregar_Click);
-            // 
-            // toolStripEditar
-            // 
-            this.toolStripEditar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEditar.Image")));
-            this.toolStripEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(41, 64);
-            this.toolStripEditar.Text = "Editar";
-            this.toolStripEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripEliminar
-            // 
-            this.toolStripEliminar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEliminar.Image")));
-            this.toolStripEliminar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(54, 64);
-            this.toolStripEliminar.Text = "Eliminar";
-            this.toolStripEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripImprimir
-            // 
-            this.toolStripImprimir.Image = ((System.Drawing.Image)(resources.GetObject("toolStripImprimir.Image")));
-            this.toolStripImprimir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripImprimir.Name = "toolStripImprimir";
-            this.toolStripImprimir.Size = new System.Drawing.Size(57, 64);
-            this.toolStripImprimir.Text = "Imprimir";
-            this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripGuardar
-            // 
-            this.toolStripGuardar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripGuardar.Image")));
-            this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripGuardar.Name = "toolStripGuardar";
-            this.toolStripGuardar.Size = new System.Drawing.Size(53, 64);
-            this.toolStripGuardar.Text = "Guardar";
-            this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripGuardar.Visible = false;
-            // 
-            // toolStripCancelar
-            // 
-            this.toolStripCancelar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCancelar.Image")));
-            this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripCancelar.Name = "toolStripCancelar";
-            this.toolStripCancelar.Size = new System.Drawing.Size(57, 64);
-            this.toolStripCancelar.Text = "Cancelar";
-            this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripCancelar.Visible = false;
-            // 
-            // toolStripPrimero
-            // 
-            this.toolStripPrimero.AutoSize = false;
-            this.toolStripPrimero.Image = ((System.Drawing.Image)(resources.GetObject("toolStripPrimero.Image")));
-            this.toolStripPrimero.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripPrimero.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripPrimero.Name = "toolStripPrimero";
-            this.toolStripPrimero.Size = new System.Drawing.Size(60, 79);
-            this.toolStripPrimero.Text = "Primero";
-            this.toolStripPrimero.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripPrimero.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.toolStripPrimero.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripAnterior
-            // 
-            this.toolStripAnterior.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toolStripAnterior.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAnterior.Image")));
-            this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripAnterior.Name = "toolStripAnterior";
-            this.toolStripAnterior.Size = new System.Drawing.Size(54, 64);
-            this.toolStripAnterior.Text = "Anterior";
-            this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripSiguiente
-            // 
-            this.toolStripSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSiguiente.Image")));
-            this.toolStripSiguiente.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripSiguiente.Name = "toolStripSiguiente";
-            this.toolStripSiguiente.Size = new System.Drawing.Size(60, 64);
-            this.toolStripSiguiente.Text = "Siguiente";
-            this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripUltimo
-            // 
-            this.toolStripUltimo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripUltimo.Image")));
-            this.toolStripUltimo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripUltimo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripUltimo.Name = "toolStripUltimo";
-            this.toolStripUltimo.Size = new System.Drawing.Size(47, 64);
-            this.toolStripUltimo.Text = "Ultimo";
-            this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripBuscar
-            // 
-            this.toolStripBuscar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBuscar.Image")));
-            this.toolStripBuscar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripBuscar.Name = "toolStripBuscar";
-            this.toolStripBuscar.Size = new System.Drawing.Size(46, 64);
-            this.toolStripBuscar.Text = "Buscar";
-            this.toolStripBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripComboBox1
             // 
@@ -377,7 +239,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(9, 284);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(729, 249);
@@ -388,9 +250,9 @@
             this.tabPage1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.tabPage1.Controls.Add(this.kryptonGroupBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(721, 223);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
@@ -399,7 +261,7 @@
             // kryptonGroupBox2
             // 
             this.kryptonGroupBox2.Location = new System.Drawing.Point(25, 23);
-            this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
             // kryptonGroupBox2.Panel
@@ -426,505 +288,6 @@
             this.kryptonGroupBox2.Panel.Controls.Add(this.textBox14);
             this.kryptonGroupBox2.Size = new System.Drawing.Size(692, 186);
             this.kryptonGroupBox2.TabIndex = 134;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(156, 132);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(171, 20);
-            this.textBox10.TabIndex = 4;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(156, 105);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(171, 20);
-            this.textBox11.TabIndex = 3;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(156, 75);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(171, 20);
-            this.textBox12.TabIndex = 2;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(156, 45);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(171, 20);
-            this.textBox13.TabIndex = 1;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(156, 12);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(171, 20);
-            this.textBox14.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.kryptonGroupBox3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Size = new System.Drawing.Size(721, 223);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Mantenimiento";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // kryptonGroupBox3
-            // 
-            this.kryptonGroupBox3.Location = new System.Drawing.Point(24, 20);
-            this.kryptonGroupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.kryptonGroupBox3.Name = "kryptonGroupBox3";
-            // 
-            // kryptonGroupBox3.Panel
-            // 
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox23);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox24);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox25);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox26);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox27);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox15);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox16);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox17);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox18);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox19);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.label32);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.label31);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.label30);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.label29);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.label28);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.label27);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.label26);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.label25);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.label24);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.label23);
-            this.kryptonGroupBox3.Size = new System.Drawing.Size(693, 186);
-            this.kryptonGroupBox3.TabIndex = 134;
-            // 
-            // ttMensaje
-            // 
-            this.ttMensaje.IsBalloon = true;
-            // 
-            // errorIcono
-            // 
-            this.errorIcono.ContainerControl = this;
-            // 
-            // kryptonGroupBox1
-            // 
-            this.kryptonGroupBox1.Location = new System.Drawing.Point(9, 98);
-            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
-            // 
-            // kryptonGroupBox1.Panel
-            // 
-            this.kryptonGroupBox1.Panel.Controls.Add(this.label6);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.label5);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.label4);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.label3);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.label2);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox5);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox4);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox3);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox2);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.ACFdescripcion2);
-            this.kryptonGroupBox1.Size = new System.Drawing.Size(362, 186);
-            this.kryptonGroupBox1.TabIndex = 133;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(161, 133);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 20);
-            this.textBox5.TabIndex = 4;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(161, 107);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 20);
-            this.textBox4.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(161, 76);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 20);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(161, 42);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 20);
-            this.textBox2.TabIndex = 1;
-            // 
-            // ACFdescripcion2
-            // 
-            this.ACFdescripcion2.Location = new System.Drawing.Point(161, 13);
-            this.ACFdescripcion2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ACFdescripcion2.Name = "ACFdescripcion2";
-            this.ACFdescripcion2.Size = new System.Drawing.Size(103, 20);
-            this.ACFdescripcion2.TabIndex = 0;
-            // 
-            // ACFid
-            // 
-            this.ACFid.Location = new System.Drawing.Point(547, 126);
-            this.ACFid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ACFid.Name = "ACFid";
-            this.ACFid.Size = new System.Drawing.Size(187, 20);
-            this.ACFid.TabIndex = 134;
-            // 
-            // ACFdescripcion
-            // 
-            this.ACFdescripcion.Location = new System.Drawing.Point(547, 154);
-            this.ACFdescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ACFdescripcion.Name = "ACFdescripcion";
-            this.ACFdescripcion.Size = new System.Drawing.Size(187, 20);
-            this.ACFdescripcion.TabIndex = 135;
-            // 
-            // comboBox1Estado
-            // 
-            this.comboBox1Estado.FormattingEnabled = true;
-            this.comboBox1Estado.Location = new System.Drawing.Point(547, 266);
-            this.comboBox1Estado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1Estado.Name = "comboBox1Estado";
-            this.comboBox1Estado.Size = new System.Drawing.Size(187, 21);
-            this.comboBox1Estado.TabIndex = 136;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Codigo de activo";
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(9, 37);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 31);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Codigo de supranumero o Num. de componentizacion";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 83);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Nombre o descripcion ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 112);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Numero de componentizacion";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 134);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Numero de comprobante";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(395, 133);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 13);
-            this.label7.TabIndex = 137;
-            this.label7.Text = "Nº de Cuenta Contable";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(395, 157);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(152, 13);
-            this.label8.TabIndex = 138;
-            this.label8.Text = "Nº de Cuenta de Depreciacion";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(395, 184);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 13);
-            this.label9.TabIndex = 139;
-            this.label9.Text = "Valor NIIF";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(396, 213);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 13);
-            this.label10.TabIndex = 140;
-            this.label10.Text = "Vida util NIIF dia";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(396, 243);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 13);
-            this.label11.TabIndex = 141;
-            this.label11.Text = "Factor NIIF";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(396, 269);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 13);
-            this.label12.TabIndex = 142;
-            this.label12.Text = "Factor Tributario";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(547, 181);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 20);
-            this.textBox1.TabIndex = 143;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(547, 213);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(187, 20);
-            this.textBox6.TabIndex = 144;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(547, 240);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(187, 20);
-            this.textBox7.TabIndex = 145;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 13);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Factor de capitalizacion";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 48);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 13);
-            this.label14.TabIndex = 6;
-            this.label14.Text = "Fecha de Movimiento";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(13, 82);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(118, 13);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "Fecha de Comprobante";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(13, 112);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(131, 13);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Fecha de Nota de Ingreso";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(13, 139);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(138, 13);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "Fecha de Orden de Compra";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(355, 19);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(120, 13);
-            this.label18.TabIndex = 10;
-            this.label18.Text = "Fecha de Incorporacion";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(355, 50);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(136, 13);
-            this.label19.TabIndex = 11;
-            this.label19.Text = "Numero de nota de Ingreso";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(355, 82);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(81, 13);
-            this.label20.TabIndex = 12;
-            this.label20.Text = "Codigo de Obra";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(355, 112);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(134, 13);
-            this.label21.TabIndex = 13;
-            this.label21.Text = "Observacion de Activo Fijo";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(356, 139);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(125, 13);
-            this.label22.TabIndex = 14;
-            this.label22.Text = "Criterio de Clasificacion 1";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(14, 16);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(125, 13);
-            this.label23.TabIndex = 5;
-            this.label23.Text = "Criterio de Clasificacion 2";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(14, 46);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(125, 13);
-            this.label24.TabIndex = 6;
-            this.label24.Text = "Criterio de Clasificacion 3";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(14, 76);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(125, 13);
-            this.label25.TabIndex = 7;
-            this.label25.Text = "Criterio de Clasificacion 4";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(14, 107);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(145, 13);
-            this.label26.TabIndex = 8;
-            this.label26.Text = "Numero de Orden de Compra";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(14, 136);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(108, 13);
-            this.label27.TabIndex = 9;
-            this.label27.Text = "Vida Util NIIF por año";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(356, 16);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(78, 13);
-            this.label28.TabIndex = 10;
-            this.label28.Text = "Valor Tributario";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(356, 46);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(121, 13);
-            this.label29.TabIndex = 11;
-            this.label29.Text = "vida util tributario por dia";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(356, 76);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(126, 13);
-            this.label30.TabIndex = 12;
-            this.label30.Text = "Vida util tributario por año";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(357, 108);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(100, 13);
-            this.label31.TabIndex = 13;
-            this.label31.Text = "codigo de ambiente";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(357, 136);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(84, 13);
-            this.label32.TabIndex = 14;
-            this.label32.Text = "Codigo de Clase";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.kryptonGroupBox4);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(721, 223);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.kryptonGroupBox5);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(721, 223);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // textBox8
             // 
@@ -966,45 +329,178 @@
             this.textBox22.Size = new System.Drawing.Size(171, 20);
             this.textBox22.TabIndex = 15;
             // 
-            // textBox15
+            // label22
             // 
-            this.textBox15.Location = new System.Drawing.Point(161, 133);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(171, 20);
-            this.textBox15.TabIndex = 19;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(356, 139);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(125, 13);
+            this.label22.TabIndex = 14;
+            this.label22.Text = "Criterio de Clasificacion 1";
             // 
-            // textBox16
+            // label21
             // 
-            this.textBox16.Location = new System.Drawing.Point(161, 106);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(171, 20);
-            this.textBox16.TabIndex = 18;
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(355, 112);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(134, 13);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "Observacion de Activo Fijo";
             // 
-            // textBox17
+            // label20
             // 
-            this.textBox17.Location = new System.Drawing.Point(161, 76);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(171, 20);
-            this.textBox17.TabIndex = 17;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(355, 82);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(81, 13);
+            this.label20.TabIndex = 12;
+            this.label20.Text = "Codigo de Obra";
             // 
-            // textBox18
+            // label19
             // 
-            this.textBox18.Location = new System.Drawing.Point(161, 46);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(171, 20);
-            this.textBox18.TabIndex = 16;
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(355, 50);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(136, 13);
+            this.label19.TabIndex = 11;
+            this.label19.Text = "Numero de nota de Ingreso";
             // 
-            // textBox19
+            // label18
             // 
-            this.textBox19.Location = new System.Drawing.Point(161, 13);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(171, 20);
-            this.textBox19.TabIndex = 15;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(355, 19);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(120, 13);
+            this.label18.TabIndex = 10;
+            this.label18.Text = "Fecha de Incorporacion";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(13, 139);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(138, 13);
+            this.label17.TabIndex = 9;
+            this.label17.Text = "Fecha de Orden de Compra";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(13, 112);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(131, 13);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "Fecha de Nota de Ingreso";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(13, 82);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(118, 13);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "Fecha de Comprobante";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(13, 48);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(109, 13);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "Fecha de Movimiento";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(13, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(119, 13);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Factor de capitalizacion";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(156, 132);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(171, 20);
+            this.textBox10.TabIndex = 4;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(156, 105);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(171, 20);
+            this.textBox11.TabIndex = 3;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(156, 75);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(171, 20);
+            this.textBox12.TabIndex = 2;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(156, 45);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(171, 20);
+            this.textBox13.TabIndex = 1;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(156, 12);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(171, 20);
+            this.textBox14.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.kryptonGroupBox3);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(721, 223);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Mantenimiento";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // kryptonGroupBox3
+            // 
+            this.kryptonGroupBox3.Location = new System.Drawing.Point(24, 20);
+            this.kryptonGroupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonGroupBox3.Name = "kryptonGroupBox3";
+            // 
+            // kryptonGroupBox3.Panel
+            // 
+            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox23);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox24);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox25);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox26);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox27);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox15);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox16);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox17);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox18);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox19);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.label32);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.label31);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.label30);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.label29);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.label28);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.label27);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.label26);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.label25);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.label24);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.label23);
+            this.kryptonGroupBox3.Size = new System.Drawing.Size(693, 186);
+            this.kryptonGroupBox3.TabIndex = 134;
             // 
             // textBox23
             // 
@@ -1045,6 +541,146 @@
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(171, 20);
             this.textBox27.TabIndex = 20;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(161, 133);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(171, 20);
+            this.textBox15.TabIndex = 19;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(161, 106);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(171, 20);
+            this.textBox16.TabIndex = 18;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(161, 76);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(171, 20);
+            this.textBox17.TabIndex = 17;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(161, 46);
+            this.textBox18.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(171, 20);
+            this.textBox18.TabIndex = 16;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(161, 13);
+            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(171, 20);
+            this.textBox19.TabIndex = 15;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(357, 136);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(84, 13);
+            this.label32.TabIndex = 14;
+            this.label32.Text = "Codigo de Clase";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(357, 108);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(100, 13);
+            this.label31.TabIndex = 13;
+            this.label31.Text = "codigo de ambiente";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(356, 76);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(126, 13);
+            this.label30.TabIndex = 12;
+            this.label30.Text = "Vida util tributario por año";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(356, 46);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(121, 13);
+            this.label29.TabIndex = 11;
+            this.label29.Text = "vida util tributario por dia";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(356, 16);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(78, 13);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "Valor Tributario";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(14, 136);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(108, 13);
+            this.label27.TabIndex = 9;
+            this.label27.Text = "Vida Util NIIF por año";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(14, 107);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(145, 13);
+            this.label26.TabIndex = 8;
+            this.label26.Text = "Numero de Orden de Compra";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(14, 76);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(125, 13);
+            this.label25.TabIndex = 7;
+            this.label25.Text = "Criterio de Clasificacion 4";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(14, 46);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(125, 13);
+            this.label24.TabIndex = 6;
+            this.label24.Text = "Criterio de Clasificacion 3";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(14, 16);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(125, 13);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "Criterio de Clasificacion 2";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.kryptonGroupBox4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(721, 223);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // kryptonGroupBox4
             // 
@@ -1247,6 +883,16 @@
             this.label42.TabIndex = 5;
             this.label42.Text = "Cód. de documento";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.kryptonGroupBox5);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(721, 223);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // kryptonGroupBox5
             // 
             this.kryptonGroupBox5.Location = new System.Drawing.Point(14, 18);
@@ -1315,11 +961,365 @@
             this.label52.TabIndex = 5;
             this.label52.Text = "Codigo VNR";
             // 
+            // ttMensaje
+            // 
+            this.ttMensaje.IsBalloon = true;
+            // 
+            // errorIcono
+            // 
+            this.errorIcono.ContainerControl = this;
+            // 
+            // kryptonGroupBox1
+            // 
+            this.kryptonGroupBox1.Location = new System.Drawing.Point(9, 98);
+            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
+            // 
+            // kryptonGroupBox1.Panel
+            // 
+            this.kryptonGroupBox1.Panel.Controls.Add(this.label6);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.label5);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.label4);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.label3);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.label2);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox5);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox4);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox3);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox2);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.ACFdescripcion2);
+            this.kryptonGroupBox1.Size = new System.Drawing.Size(362, 186);
+            this.kryptonGroupBox1.TabIndex = 133;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(9, 134);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(124, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Numero de comprobante";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 112);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(148, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Numero de componentizacion";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(9, 83);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Nombre o descripcion ";
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(9, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 31);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Codigo de supranumero o Num. de componentizacion";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Codigo de activo";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(161, 133);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(179, 20);
+            this.textBox5.TabIndex = 4;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(161, 107);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(179, 20);
+            this.textBox4.TabIndex = 3;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(161, 76);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(179, 20);
+            this.textBox3.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(161, 42);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(179, 20);
+            this.textBox2.TabIndex = 1;
+            // 
+            // ACFdescripcion2
+            // 
+            this.ACFdescripcion2.Location = new System.Drawing.Point(161, 13);
+            this.ACFdescripcion2.Margin = new System.Windows.Forms.Padding(2);
+            this.ACFdescripcion2.Name = "ACFdescripcion2";
+            this.ACFdescripcion2.Size = new System.Drawing.Size(103, 20);
+            this.ACFdescripcion2.TabIndex = 0;
+            // 
+            // ACFid
+            // 
+            this.ACFid.Location = new System.Drawing.Point(547, 126);
+            this.ACFid.Margin = new System.Windows.Forms.Padding(2);
+            this.ACFid.Name = "ACFid";
+            this.ACFid.Size = new System.Drawing.Size(187, 20);
+            this.ACFid.TabIndex = 134;
+            // 
+            // ACFdescripcion
+            // 
+            this.ACFdescripcion.Location = new System.Drawing.Point(547, 154);
+            this.ACFdescripcion.Margin = new System.Windows.Forms.Padding(2);
+            this.ACFdescripcion.Name = "ACFdescripcion";
+            this.ACFdescripcion.Size = new System.Drawing.Size(187, 20);
+            this.ACFdescripcion.TabIndex = 135;
+            // 
+            // comboBox1Estado
+            // 
+            this.comboBox1Estado.FormattingEnabled = true;
+            this.comboBox1Estado.Location = new System.Drawing.Point(547, 266);
+            this.comboBox1Estado.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1Estado.Name = "comboBox1Estado";
+            this.comboBox1Estado.Size = new System.Drawing.Size(187, 21);
+            this.comboBox1Estado.TabIndex = 136;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(395, 133);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(116, 13);
+            this.label7.TabIndex = 137;
+            this.label7.Text = "Nº de Cuenta Contable";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(395, 157);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(152, 13);
+            this.label8.TabIndex = 138;
+            this.label8.Text = "Nº de Cuenta de Depreciacion";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(395, 184);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 13);
+            this.label9.TabIndex = 139;
+            this.label9.Text = "Valor NIIF";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(396, 213);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 13);
+            this.label10.TabIndex = 140;
+            this.label10.Text = "Vida util NIIF dia";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(396, 243);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(60, 13);
+            this.label11.TabIndex = 141;
+            this.label11.Text = "Factor NIIF";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(396, 269);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(84, 13);
+            this.label12.TabIndex = 142;
+            this.label12.Text = "Factor Tributario";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(547, 181);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(187, 20);
+            this.textBox1.TabIndex = 143;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(547, 213);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(187, 20);
+            this.textBox6.TabIndex = 144;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(547, 240);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(187, 20);
+            this.textBox7.TabIndex = 145;
+            // 
+            // toolStripRefrescar
+            // 
+            this.toolStripRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripRefrescar.Image")));
+            this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripRefrescar.Name = "toolStripRefrescar";
+            this.toolStripRefrescar.Size = new System.Drawing.Size(63, 64);
+            this.toolStripRefrescar.Text = "Actualizar";
+            this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripAgregar
+            // 
+            this.toolStripAgregar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAgregar.Image")));
+            this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripAgregar.Name = "toolStripAgregar";
+            this.toolStripAgregar.Size = new System.Drawing.Size(53, 64);
+            this.toolStripAgregar.Text = "Agregar";
+            this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripAgregar.Click += new System.EventHandler(this.toolStripAgregar_Click);
+            // 
+            // toolStripEditar
+            // 
+            this.toolStripEditar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEditar.Image")));
+            this.toolStripEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripEditar.Name = "toolStripEditar";
+            this.toolStripEditar.Size = new System.Drawing.Size(41, 64);
+            this.toolStripEditar.Text = "Editar";
+            this.toolStripEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripEliminar
+            // 
+            this.toolStripEliminar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEliminar.Image")));
+            this.toolStripEliminar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripEliminar.Name = "toolStripEliminar";
+            this.toolStripEliminar.Size = new System.Drawing.Size(54, 64);
+            this.toolStripEliminar.Text = "Eliminar";
+            this.toolStripEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripImprimir
+            // 
+            this.toolStripImprimir.Image = ((System.Drawing.Image)(resources.GetObject("toolStripImprimir.Image")));
+            this.toolStripImprimir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripImprimir.Name = "toolStripImprimir";
+            this.toolStripImprimir.Size = new System.Drawing.Size(57, 64);
+            this.toolStripImprimir.Text = "Imprimir";
+            this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripGuardar
+            // 
+            this.toolStripGuardar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripGuardar.Image")));
+            this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripGuardar.Name = "toolStripGuardar";
+            this.toolStripGuardar.Size = new System.Drawing.Size(53, 64);
+            this.toolStripGuardar.Text = "Guardar";
+            this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripGuardar.Visible = false;
+            // 
+            // toolStripCancelar
+            // 
+            this.toolStripCancelar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCancelar.Image")));
+            this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripCancelar.Name = "toolStripCancelar";
+            this.toolStripCancelar.Size = new System.Drawing.Size(57, 64);
+            this.toolStripCancelar.Text = "Cancelar";
+            this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripCancelar.Visible = false;
+            // 
+            // toolStripPrimero
+            // 
+            this.toolStripPrimero.AutoSize = false;
+            this.toolStripPrimero.Image = ((System.Drawing.Image)(resources.GetObject("toolStripPrimero.Image")));
+            this.toolStripPrimero.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripPrimero.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripPrimero.Name = "toolStripPrimero";
+            this.toolStripPrimero.Size = new System.Drawing.Size(60, 79);
+            this.toolStripPrimero.Text = "Primero";
+            this.toolStripPrimero.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripPrimero.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.toolStripPrimero.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripAnterior
+            // 
+            this.toolStripAnterior.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.toolStripAnterior.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAnterior.Image")));
+            this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripAnterior.Name = "toolStripAnterior";
+            this.toolStripAnterior.Size = new System.Drawing.Size(54, 64);
+            this.toolStripAnterior.Text = "Anterior";
+            this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripSiguiente
+            // 
+            this.toolStripSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSiguiente.Image")));
+            this.toolStripSiguiente.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripSiguiente.Name = "toolStripSiguiente";
+            this.toolStripSiguiente.Size = new System.Drawing.Size(60, 64);
+            this.toolStripSiguiente.Text = "Siguiente";
+            this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripUltimo
+            // 
+            this.toolStripUltimo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripUltimo.Image")));
+            this.toolStripUltimo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripUltimo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripUltimo.Name = "toolStripUltimo";
+            this.toolStripUltimo.Size = new System.Drawing.Size(47, 64);
+            this.toolStripUltimo.Text = "Ultimo";
+            this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripBuscar
+            // 
+            this.toolStripBuscar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBuscar.Image")));
+            this.toolStripBuscar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripBuscar.Name = "toolStripBuscar";
+            this.toolStripBuscar.Size = new System.Drawing.Size(46, 64);
+            this.toolStripBuscar.Text = "Buscar";
+            this.toolStripBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // FrmacfACFp_Activo_Fijo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 555);
+            this.ClientSize = new System.Drawing.Size(802, 555);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox1);
@@ -1355,24 +1355,24 @@
             this.kryptonGroupBox3.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox3)).EndInit();
             this.kryptonGroupBox3.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4.Panel)).EndInit();
+            this.kryptonGroupBox4.Panel.ResumeLayout(false);
+            this.kryptonGroupBox4.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4)).EndInit();
+            this.kryptonGroupBox4.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox5.Panel)).EndInit();
+            this.kryptonGroupBox5.Panel.ResumeLayout(false);
+            this.kryptonGroupBox5.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox5)).EndInit();
+            this.kryptonGroupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
             this.kryptonGroupBox1.Panel.ResumeLayout(false);
             this.kryptonGroupBox1.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
             this.kryptonGroupBox1.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4.Panel)).EndInit();
-            this.kryptonGroupBox4.Panel.ResumeLayout(false);
-            this.kryptonGroupBox4.Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox4)).EndInit();
-            this.kryptonGroupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox5.Panel)).EndInit();
-            this.kryptonGroupBox5.Panel.ResumeLayout(false);
-            this.kryptonGroupBox5.Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox5)).EndInit();
-            this.kryptonGroupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
