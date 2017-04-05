@@ -232,3 +232,16 @@ C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacio
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfICRt_Inventariocaracteristicas.resources
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfINBt_Inventariobienes.resources
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Pruebas.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfCRSt_Caracteristicas.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfDDFt_detalledediferido.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfDRTt_detallereparotributario.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfEDIt_edificaciondetalle.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfICRt_Inventariocaracteristicas.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfINBt_Inventariobienes.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfMEQt_maquinariaequipo.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmExcel.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Pruebas.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfMVAt_MovimientoActivo.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfTRNt_terrenodetallecs.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfUBEt_UbicacionElectrica.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiSEGpSegmento.resources

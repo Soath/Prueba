@@ -175,6 +175,18 @@
     <Compile Include="FrmacfMATt_Material.Designer.cs">
       <DependentUpon>FrmacfMATt_Material.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfMEQt_maquinariaequipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfMEQt_maquinariaequipo.Designer.cs">
+      <DependentUpon>FrmacfMEQt_maquinariaequipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfMVAt_MovimientoActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfMVAt_MovimientoActivo.Designer.cs">
+      <DependentUpon>FrmacfMVAt_MovimientoActivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfMVMt_MotivoMovimiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +228,18 @@
     </Compile>
     <Compile Include="FrmacfTMVt_TipoMovimiento.Designer.cs">
       <DependentUpon>FrmacfTMVt_TipoMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfTRNt_terrenodetallecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfTRNt_terrenodetallecs.Designer.cs">
+      <DependentUpon>FrmacfTRNt_terrenodetallecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfUBEt_UbicacionElectrica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfUBEt_UbicacionElectrica.Designer.cs">
+      <DependentUpon>FrmacfUBEt_UbicacionElectrica.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmacfUNMt_Unimed.cs">
       <SubType>Form</SubType>
@@ -264,6 +288,12 @@
     </Compile>
     <Compile Include="FrmbdiPRVpProveedor.Designer.cs">
       <DependentUpon>FrmbdiPRVpProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmbdiSEGpSegmento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmbdiSEGpSegmento.Designer.cs">
+      <DependentUpon>FrmbdiSEGpSegmento.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmbdiSOCpSociedades.cs">
       <SubType>Form</SubType>
@@ -408,6 +438,12 @@
     <EmbeddedResource Include="FrmacfMATt_Material.resx">
       <DependentUpon>FrmacfMATt_Material.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfMEQt_maquinariaequipo.resx">
+      <DependentUpon>FrmacfMEQt_maquinariaequipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfMVAt_MovimientoActivo.resx">
+      <DependentUpon>FrmacfMVAt_MovimientoActivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfMVMt_MotivoMovimiento.resx">
       <DependentUpon>FrmacfMVMt_MotivoMovimiento.cs</DependentUpon>
     </EmbeddedResource>
@@ -429,6 +465,12 @@
     <EmbeddedResource Include="FrmacfTMVt_TipoMovimiento.resx">
       <DependentUpon>FrmacfTMVt_TipoMovimiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfTRNt_terrenodetallecs.resx">
+      <DependentUpon>FrmacfTRNt_terrenodetallecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfUBEt_UbicacionElectrica.resx">
+      <DependentUpon>FrmacfUBEt_UbicacionElectrica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfUNMt_Unimed.resx">
       <DependentUpon>FrmacfUNMt_Unimed.cs</DependentUpon>
     </EmbeddedResource>
@@ -449,6 +491,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmbdiPRVpProveedor.resx">
       <DependentUpon>FrmbdiPRVpProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmbdiSEGpSegmento.resx">
+      <DependentUpon>FrmbdiSEGpSegmento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmbdiSOCpSociedades.resx">
       <DependentUpon>FrmbdiSOCpSociedades.cs</DependentUpon>
