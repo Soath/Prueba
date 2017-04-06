@@ -111,7 +111,7 @@ namespace CapaNegocio
         //Metodo Editar que llama al metodo Editar de la clase DPostres
         //de la CapaDatos
         public static string Editar(
-            string iACFid,
+         string iACFid,
          string sBUKRS,
          string sSEGMENT,
          string sANLKL,
