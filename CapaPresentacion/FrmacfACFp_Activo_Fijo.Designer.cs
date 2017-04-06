@@ -31,6 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmacfACFp_Activo_Fijo));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripEliminar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
+            this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripPrimero = new System.Windows.Forms.ToolStripButton();
+            this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
+            this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -134,18 +146,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripEliminar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
-            this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripPrimero = new System.Windows.Forms.ToolStripButton();
-            this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
-            this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
-            this.toolStripBuscar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripImportar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -192,6 +193,7 @@
             this.toolStripAnterior,
             this.toolStripSiguiente,
             this.toolStripUltimo,
+            this.toolStripImportar,
             this.toolStripBuscar,
             this.toolStripComboBox1,
             this.toolStripTextBox1});
@@ -200,6 +202,144 @@
             this.toolStrip1.Size = new System.Drawing.Size(802, 67);
             this.toolStrip1.TabIndex = 124;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripRefrescar
+            // 
+            this.toolStripRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripRefrescar.Image")));
+            this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripRefrescar.Name = "toolStripRefrescar";
+            this.toolStripRefrescar.Size = new System.Drawing.Size(63, 64);
+            this.toolStripRefrescar.Text = "Actualizar";
+            this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripAgregar
+            // 
+            this.toolStripAgregar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAgregar.Image")));
+            this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripAgregar.Name = "toolStripAgregar";
+            this.toolStripAgregar.Size = new System.Drawing.Size(53, 64);
+            this.toolStripAgregar.Text = "Agregar";
+            this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripAgregar.Click += new System.EventHandler(this.toolStripAgregar_Click);
+            // 
+            // toolStripEditar
+            // 
+            this.toolStripEditar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEditar.Image")));
+            this.toolStripEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripEditar.Name = "toolStripEditar";
+            this.toolStripEditar.Size = new System.Drawing.Size(41, 64);
+            this.toolStripEditar.Text = "Editar";
+            this.toolStripEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripEliminar
+            // 
+            this.toolStripEliminar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEliminar.Image")));
+            this.toolStripEliminar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripEliminar.Name = "toolStripEliminar";
+            this.toolStripEliminar.Size = new System.Drawing.Size(54, 64);
+            this.toolStripEliminar.Text = "Eliminar";
+            this.toolStripEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripImprimir
+            // 
+            this.toolStripImprimir.Image = ((System.Drawing.Image)(resources.GetObject("toolStripImprimir.Image")));
+            this.toolStripImprimir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripImprimir.Name = "toolStripImprimir";
+            this.toolStripImprimir.Size = new System.Drawing.Size(57, 64);
+            this.toolStripImprimir.Text = "Imprimir";
+            this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripGuardar
+            // 
+            this.toolStripGuardar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripGuardar.Image")));
+            this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripGuardar.Name = "toolStripGuardar";
+            this.toolStripGuardar.Size = new System.Drawing.Size(53, 64);
+            this.toolStripGuardar.Text = "Guardar";
+            this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripGuardar.Visible = false;
+            // 
+            // toolStripCancelar
+            // 
+            this.toolStripCancelar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCancelar.Image")));
+            this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripCancelar.Name = "toolStripCancelar";
+            this.toolStripCancelar.Size = new System.Drawing.Size(57, 64);
+            this.toolStripCancelar.Text = "Cancelar";
+            this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripCancelar.Visible = false;
+            // 
+            // toolStripPrimero
+            // 
+            this.toolStripPrimero.AutoSize = false;
+            this.toolStripPrimero.Image = ((System.Drawing.Image)(resources.GetObject("toolStripPrimero.Image")));
+            this.toolStripPrimero.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripPrimero.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripPrimero.Name = "toolStripPrimero";
+            this.toolStripPrimero.Size = new System.Drawing.Size(60, 79);
+            this.toolStripPrimero.Text = "Primero";
+            this.toolStripPrimero.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripPrimero.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.toolStripPrimero.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripAnterior
+            // 
+            this.toolStripAnterior.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.toolStripAnterior.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAnterior.Image")));
+            this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripAnterior.Name = "toolStripAnterior";
+            this.toolStripAnterior.Size = new System.Drawing.Size(54, 64);
+            this.toolStripAnterior.Text = "Anterior";
+            this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripSiguiente
+            // 
+            this.toolStripSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSiguiente.Image")));
+            this.toolStripSiguiente.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripSiguiente.Name = "toolStripSiguiente";
+            this.toolStripSiguiente.Size = new System.Drawing.Size(60, 64);
+            this.toolStripSiguiente.Text = "Siguiente";
+            this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripUltimo
+            // 
+            this.toolStripUltimo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripUltimo.Image")));
+            this.toolStripUltimo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripUltimo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripUltimo.Name = "toolStripUltimo";
+            this.toolStripUltimo.Size = new System.Drawing.Size(47, 64);
+            this.toolStripUltimo.Text = "Ultimo";
+            this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripBuscar
+            // 
+            this.toolStripBuscar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBuscar.Image")));
+            this.toolStripBuscar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripBuscar.Name = "toolStripBuscar";
+            this.toolStripBuscar.Size = new System.Drawing.Size(46, 64);
+            this.toolStripBuscar.Text = "Buscar";
+            this.toolStripBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripComboBox1
             // 
@@ -1177,143 +1317,17 @@
             this.textBox7.Size = new System.Drawing.Size(187, 20);
             this.textBox7.TabIndex = 145;
             // 
-            // toolStripRefrescar
+            // toolStripImportar
             // 
-            this.toolStripRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripRefrescar.Image")));
-            this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripRefrescar.Name = "toolStripRefrescar";
-            this.toolStripRefrescar.Size = new System.Drawing.Size(63, 64);
-            this.toolStripRefrescar.Text = "Actualizar";
-            this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripAgregar
-            // 
-            this.toolStripAgregar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAgregar.Image")));
-            this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripAgregar.Name = "toolStripAgregar";
-            this.toolStripAgregar.Size = new System.Drawing.Size(53, 64);
-            this.toolStripAgregar.Text = "Agregar";
-            this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripAgregar.Click += new System.EventHandler(this.toolStripAgregar_Click);
-            // 
-            // toolStripEditar
-            // 
-            this.toolStripEditar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEditar.Image")));
-            this.toolStripEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(41, 64);
-            this.toolStripEditar.Text = "Editar";
-            this.toolStripEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripEliminar
-            // 
-            this.toolStripEliminar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEliminar.Image")));
-            this.toolStripEliminar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(54, 64);
-            this.toolStripEliminar.Text = "Eliminar";
-            this.toolStripEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripImprimir
-            // 
-            this.toolStripImprimir.Image = ((System.Drawing.Image)(resources.GetObject("toolStripImprimir.Image")));
-            this.toolStripImprimir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripImprimir.Name = "toolStripImprimir";
-            this.toolStripImprimir.Size = new System.Drawing.Size(57, 64);
-            this.toolStripImprimir.Text = "Imprimir";
-            this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripGuardar
-            // 
-            this.toolStripGuardar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripGuardar.Image")));
-            this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripGuardar.Name = "toolStripGuardar";
-            this.toolStripGuardar.Size = new System.Drawing.Size(53, 64);
-            this.toolStripGuardar.Text = "Guardar";
-            this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripGuardar.Visible = false;
-            // 
-            // toolStripCancelar
-            // 
-            this.toolStripCancelar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCancelar.Image")));
-            this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripCancelar.Name = "toolStripCancelar";
-            this.toolStripCancelar.Size = new System.Drawing.Size(57, 64);
-            this.toolStripCancelar.Text = "Cancelar";
-            this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripCancelar.Visible = false;
-            // 
-            // toolStripPrimero
-            // 
-            this.toolStripPrimero.AutoSize = false;
-            this.toolStripPrimero.Image = ((System.Drawing.Image)(resources.GetObject("toolStripPrimero.Image")));
-            this.toolStripPrimero.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripPrimero.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripPrimero.Name = "toolStripPrimero";
-            this.toolStripPrimero.Size = new System.Drawing.Size(60, 79);
-            this.toolStripPrimero.Text = "Primero";
-            this.toolStripPrimero.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripPrimero.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.toolStripPrimero.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripAnterior
-            // 
-            this.toolStripAnterior.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toolStripAnterior.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAnterior.Image")));
-            this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripAnterior.Name = "toolStripAnterior";
-            this.toolStripAnterior.Size = new System.Drawing.Size(54, 64);
-            this.toolStripAnterior.Text = "Anterior";
-            this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripSiguiente
-            // 
-            this.toolStripSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSiguiente.Image")));
-            this.toolStripSiguiente.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripSiguiente.Name = "toolStripSiguiente";
-            this.toolStripSiguiente.Size = new System.Drawing.Size(60, 64);
-            this.toolStripSiguiente.Text = "Siguiente";
-            this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripUltimo
-            // 
-            this.toolStripUltimo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripUltimo.Image")));
-            this.toolStripUltimo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripUltimo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripUltimo.Name = "toolStripUltimo";
-            this.toolStripUltimo.Size = new System.Drawing.Size(47, 64);
-            this.toolStripUltimo.Text = "Ultimo";
-            this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripBuscar
-            // 
-            this.toolStripBuscar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBuscar.Image")));
-            this.toolStripBuscar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripBuscar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripBuscar.Name = "toolStripBuscar";
-            this.toolStripBuscar.Size = new System.Drawing.Size(46, 64);
-            this.toolStripBuscar.Text = "Buscar";
-            this.toolStripBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripImportar.Image = global::CapaPresentacion.Properties.Resources.AppMenuClose;
+            this.toolStripImportar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImportar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripImportar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripImportar.Name = "toolStripImportar";
+            this.toolStripImportar.Size = new System.Drawing.Size(57, 51);
+            this.toolStripImportar.Text = "Importar";
+            this.toolStripImportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripImportar.Click += new System.EventHandler(this.toolStripImportar_Click);
             // 
             // FrmacfACFp_Activo_Fijo
             // 
@@ -1496,5 +1510,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripButton toolStripImportar;
     }
 }
