@@ -49,11 +49,10 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox2 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.txtACFord41 = new System.Windows.Forms.TextBox();
+            this.txtACFobservacion = new System.Windows.Forms.TextBox();
+            this.txtACFobra = new System.Windows.Forms.TextBox();
+            this.txtACFnotaingreso = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -64,23 +63,17 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtACFfcapitalizacion = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.txtACFvutiltribanio = new System.Windows.Forms.TextBox();
+            this.txtACFvutiltribdia = new System.Windows.Forms.TextBox();
+            this.txtACFvalortrib = new System.Windows.Forms.TextBox();
+            this.txtACFvutilniifanio = new System.Windows.Forms.TextBox();
+            this.txtACFordencompra = new System.Windows.Forms.TextBox();
+            this.txtACFord44 = new System.Windows.Forms.TextBox();
+            this.txtACFord43 = new System.Windows.Forms.TextBox();
+            this.txtACFord42 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -93,16 +86,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox4 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -115,9 +98,8 @@
             this.label42 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox5 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.txtACFdepacuniif = new System.Windows.Forms.TextBox();
+            this.txtACFdepacutrib = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
@@ -129,24 +111,49 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ACFdescripcion2 = new System.Windows.Forms.TextBox();
-            this.ACFid = new System.Windows.Forms.TextBox();
-            this.ACFdescripcion = new System.Windows.Forms.TextBox();
-            this.comboBox1Estado = new System.Windows.Forms.ComboBox();
+            this.txtACFcomprobante = new System.Windows.Forms.TextBox();
+            this.txtACFanlue = new System.Windows.Forms.TextBox();
+            this.txtACFdescripcion = new System.Windows.Forms.TextBox();
+            this.txtACFid = new System.Windows.Forms.TextBox();
+            this.txtACFcuenta = new System.Windows.Forms.TextBox();
+            this.txtACFcuentadep = new System.Windows.Forms.TextBox();
+            this.cboACFfactortrib = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+            this.txtACFvalorniif = new System.Windows.Forms.TextBox();
+            this.txtACFvutilniifdia = new System.Windows.Forms.TextBox();
+            this.txtACFfactorniif = new System.Windows.Forms.TextBox();
+            this.txtACFfactortrib = new System.Windows.Forms.TextBox();
+            this.cboBUKRS = new System.Windows.Forms.ComboBox();
+            this.cboSEGMENT = new System.Windows.Forms.ComboBox();
+            this.cboANLKL = new System.Windows.Forms.ComboBox();
+            this.cboPERNR = new System.Windows.Forms.ComboBox();
+            this.cboCSTid = new System.Windows.Forms.ComboBox();
+            this.cboMVMid = new System.Windows.Forms.ComboBox();
+            this.cboVNRid = new System.Windows.Forms.ComboBox();
+            this.cboCMPid = new System.Windows.Forms.ComboBox();
+            this.cboLIFNR = new System.Windows.Forms.ComboBox();
+            this.cboBLART = new System.Windows.Forms.ComboBox();
+            this.cboKOSTL = new System.Windows.Forms.ComboBox();
+            this.cboAMBid = new System.Windows.Forms.ComboBox();
+            this.cboUBEid = new System.Windows.Forms.ComboBox();
+            this.cboV_T087U_ANLUE = new System.Windows.Forms.ComboBox();
+            this.dtpACFfmovimiento = new System.Windows.Forms.DateTimePicker();
+            this.dtpACFfechacomprobante = new System.Windows.Forms.DateTimePicker();
+            this.dtpACFfechanotaingreso = new System.Windows.Forms.DateTimePicker();
+            this.dtpACFfechaordencompra = new System.Windows.Forms.DateTimePicker();
+            this.dtpACFfincorporacion = new System.Windows.Forms.DateTimePicker();
+=======
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.toolStripImportar = new System.Windows.Forms.ToolStripButton();
+>>>>>>> b609767f57c03af5303a6105e5432aed640c34f7
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -406,11 +413,15 @@
             // 
             // kryptonGroupBox2.Panel
             // 
-            this.kryptonGroupBox2.Panel.Controls.Add(this.textBox8);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.textBox9);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.textBox20);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.textBox21);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.textBox22);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.dtpACFfincorporacion);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.dtpACFfechaordencompra);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.dtpACFfechanotaingreso);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.dtpACFfechacomprobante);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.dtpACFfmovimiento);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.txtACFord41);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.txtACFobservacion);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.txtACFobra);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.txtACFnotaingreso);
             this.kryptonGroupBox2.Panel.Controls.Add(this.label22);
             this.kryptonGroupBox2.Panel.Controls.Add(this.label21);
             this.kryptonGroupBox2.Panel.Controls.Add(this.label20);
@@ -421,53 +432,41 @@
             this.kryptonGroupBox2.Panel.Controls.Add(this.label15);
             this.kryptonGroupBox2.Panel.Controls.Add(this.label14);
             this.kryptonGroupBox2.Panel.Controls.Add(this.label13);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.textBox10);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.textBox11);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.textBox12);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.textBox13);
-            this.kryptonGroupBox2.Panel.Controls.Add(this.textBox14);
+            this.kryptonGroupBox2.Panel.Controls.Add(this.txtACFfcapitalizacion);
             this.kryptonGroupBox2.Size = new System.Drawing.Size(692, 186);
             this.kryptonGroupBox2.TabIndex = 134;
             // 
-            // textBox8
+            // txtACFord41
             // 
-            this.textBox8.Location = new System.Drawing.Point(507, 133);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(171, 20);
-            this.textBox8.TabIndex = 19;
+            this.txtACFord41.Location = new System.Drawing.Point(507, 133);
+            this.txtACFord41.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFord41.Name = "txtACFord41";
+            this.txtACFord41.Size = new System.Drawing.Size(171, 20);
+            this.txtACFord41.TabIndex = 19;
             // 
-            // textBox9
+            // txtACFobservacion
             // 
-            this.textBox9.Location = new System.Drawing.Point(507, 106);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(171, 20);
-            this.textBox9.TabIndex = 18;
+            this.txtACFobservacion.Location = new System.Drawing.Point(507, 106);
+            this.txtACFobservacion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFobservacion.Name = "txtACFobservacion";
+            this.txtACFobservacion.Size = new System.Drawing.Size(171, 20);
+            this.txtACFobservacion.TabIndex = 18;
             // 
-            // textBox20
+            // txtACFobra
             // 
-            this.textBox20.Location = new System.Drawing.Point(507, 76);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(171, 20);
-            this.textBox20.TabIndex = 17;
+            this.txtACFobra.Location = new System.Drawing.Point(507, 76);
+            this.txtACFobra.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFobra.Name = "txtACFobra";
+            this.txtACFobra.Size = new System.Drawing.Size(171, 20);
+            this.txtACFobra.TabIndex = 17;
             // 
-            // textBox21
+            // txtACFnotaingreso
             // 
-            this.textBox21.Location = new System.Drawing.Point(507, 46);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(171, 20);
-            this.textBox21.TabIndex = 16;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(507, 13);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(171, 20);
-            this.textBox22.TabIndex = 15;
+            this.txtACFnotaingreso.Location = new System.Drawing.Point(507, 46);
+            this.txtACFnotaingreso.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFnotaingreso.Name = "txtACFnotaingreso";
+            this.txtACFnotaingreso.Size = new System.Drawing.Size(171, 20);
+            this.txtACFnotaingreso.TabIndex = 16;
             // 
             // label22
             // 
@@ -559,45 +558,13 @@
             this.label13.TabIndex = 5;
             this.label13.Text = "Factor de capitalizacion";
             // 
-            // textBox10
+            // txtACFfcapitalizacion
             // 
-            this.textBox10.Location = new System.Drawing.Point(156, 132);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(171, 20);
-            this.textBox10.TabIndex = 4;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(156, 105);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(171, 20);
-            this.textBox11.TabIndex = 3;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(156, 75);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(171, 20);
-            this.textBox12.TabIndex = 2;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(156, 45);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(171, 20);
-            this.textBox13.TabIndex = 1;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(156, 12);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(171, 20);
-            this.textBox14.TabIndex = 0;
+            this.txtACFfcapitalizacion.Location = new System.Drawing.Point(156, 12);
+            this.txtACFfcapitalizacion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFfcapitalizacion.Name = "txtACFfcapitalizacion";
+            this.txtACFfcapitalizacion.Size = new System.Drawing.Size(171, 20);
+            this.txtACFfcapitalizacion.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -619,16 +586,16 @@
             // 
             // kryptonGroupBox3.Panel
             // 
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox23);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox24);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox25);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox26);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox27);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox15);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox16);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox17);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox18);
-            this.kryptonGroupBox3.Panel.Controls.Add(this.textBox19);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.cboAMBid);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.cboANLKL);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.txtACFvutiltribanio);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.txtACFvutiltribdia);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.txtACFvalortrib);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.txtACFvutilniifanio);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.txtACFordencompra);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.txtACFord44);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.txtACFord43);
+            this.kryptonGroupBox3.Panel.Controls.Add(this.txtACFord42);
             this.kryptonGroupBox3.Panel.Controls.Add(this.label32);
             this.kryptonGroupBox3.Panel.Controls.Add(this.label31);
             this.kryptonGroupBox3.Panel.Controls.Add(this.label30);
@@ -642,85 +609,69 @@
             this.kryptonGroupBox3.Size = new System.Drawing.Size(693, 186);
             this.kryptonGroupBox3.TabIndex = 134;
             // 
-            // textBox23
+            // txtACFvutiltribanio
             // 
-            this.textBox23.Location = new System.Drawing.Point(508, 133);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(171, 20);
-            this.textBox23.TabIndex = 24;
+            this.txtACFvutiltribanio.Location = new System.Drawing.Point(508, 76);
+            this.txtACFvutiltribanio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFvutiltribanio.Name = "txtACFvutiltribanio";
+            this.txtACFvutiltribanio.Size = new System.Drawing.Size(171, 20);
+            this.txtACFvutiltribanio.TabIndex = 22;
             // 
-            // textBox24
+            // txtACFvutiltribdia
             // 
-            this.textBox24.Location = new System.Drawing.Point(508, 106);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(171, 20);
-            this.textBox24.TabIndex = 23;
+            this.txtACFvutiltribdia.Location = new System.Drawing.Point(508, 46);
+            this.txtACFvutiltribdia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFvutiltribdia.Name = "txtACFvutiltribdia";
+            this.txtACFvutiltribdia.Size = new System.Drawing.Size(171, 20);
+            this.txtACFvutiltribdia.TabIndex = 21;
             // 
-            // textBox25
+            // txtACFvalortrib
             // 
-            this.textBox25.Location = new System.Drawing.Point(508, 76);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(171, 20);
-            this.textBox25.TabIndex = 22;
+            this.txtACFvalortrib.Location = new System.Drawing.Point(508, 13);
+            this.txtACFvalortrib.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFvalortrib.Name = "txtACFvalortrib";
+            this.txtACFvalortrib.Size = new System.Drawing.Size(171, 20);
+            this.txtACFvalortrib.TabIndex = 20;
             // 
-            // textBox26
+            // txtACFvutilniifanio
             // 
-            this.textBox26.Location = new System.Drawing.Point(508, 46);
-            this.textBox26.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(171, 20);
-            this.textBox26.TabIndex = 21;
+            this.txtACFvutilniifanio.Location = new System.Drawing.Point(161, 133);
+            this.txtACFvutilniifanio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFvutilniifanio.Name = "txtACFvutilniifanio";
+            this.txtACFvutilniifanio.Size = new System.Drawing.Size(171, 20);
+            this.txtACFvutilniifanio.TabIndex = 19;
             // 
-            // textBox27
+            // txtACFordencompra
             // 
-            this.textBox27.Location = new System.Drawing.Point(508, 13);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(171, 20);
-            this.textBox27.TabIndex = 20;
+            this.txtACFordencompra.Location = new System.Drawing.Point(161, 106);
+            this.txtACFordencompra.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFordencompra.Name = "txtACFordencompra";
+            this.txtACFordencompra.Size = new System.Drawing.Size(171, 20);
+            this.txtACFordencompra.TabIndex = 18;
             // 
-            // textBox15
+            // txtACFord44
             // 
-            this.textBox15.Location = new System.Drawing.Point(161, 133);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(171, 20);
-            this.textBox15.TabIndex = 19;
+            this.txtACFord44.Location = new System.Drawing.Point(161, 76);
+            this.txtACFord44.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFord44.Name = "txtACFord44";
+            this.txtACFord44.Size = new System.Drawing.Size(171, 20);
+            this.txtACFord44.TabIndex = 17;
             // 
-            // textBox16
+            // txtACFord43
             // 
-            this.textBox16.Location = new System.Drawing.Point(161, 106);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(171, 20);
-            this.textBox16.TabIndex = 18;
+            this.txtACFord43.Location = new System.Drawing.Point(161, 46);
+            this.txtACFord43.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFord43.Name = "txtACFord43";
+            this.txtACFord43.Size = new System.Drawing.Size(171, 20);
+            this.txtACFord43.TabIndex = 16;
             // 
-            // textBox17
+            // txtACFord42
             // 
-            this.textBox17.Location = new System.Drawing.Point(161, 76);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(171, 20);
-            this.textBox17.TabIndex = 17;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(161, 46);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(171, 20);
-            this.textBox18.TabIndex = 16;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(161, 13);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(171, 20);
-            this.textBox19.TabIndex = 15;
+            this.txtACFord42.Location = new System.Drawing.Point(161, 13);
+            this.txtACFord42.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFord42.Name = "txtACFord42";
+            this.txtACFord42.Size = new System.Drawing.Size(171, 20);
+            this.txtACFord42.TabIndex = 15;
             // 
             // label32
             // 
@@ -830,16 +781,16 @@
             // 
             // kryptonGroupBox4.Panel
             // 
-            this.kryptonGroupBox4.Panel.Controls.Add(this.textBox28);
-            this.kryptonGroupBox4.Panel.Controls.Add(this.textBox29);
-            this.kryptonGroupBox4.Panel.Controls.Add(this.textBox30);
-            this.kryptonGroupBox4.Panel.Controls.Add(this.textBox31);
-            this.kryptonGroupBox4.Panel.Controls.Add(this.textBox32);
-            this.kryptonGroupBox4.Panel.Controls.Add(this.textBox33);
-            this.kryptonGroupBox4.Panel.Controls.Add(this.textBox34);
-            this.kryptonGroupBox4.Panel.Controls.Add(this.textBox35);
-            this.kryptonGroupBox4.Panel.Controls.Add(this.textBox36);
-            this.kryptonGroupBox4.Panel.Controls.Add(this.textBox37);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.cboUBEid);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.cboKOSTL);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.cboBLART);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.cboLIFNR);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.cboCMPid);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.cboMVMid);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.cboCSTid);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.cboPERNR);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.cboSEGMENT);
+            this.kryptonGroupBox4.Panel.Controls.Add(this.cboBUKRS);
             this.kryptonGroupBox4.Panel.Controls.Add(this.label33);
             this.kryptonGroupBox4.Panel.Controls.Add(this.label34);
             this.kryptonGroupBox4.Panel.Controls.Add(this.label35);
@@ -852,86 +803,6 @@
             this.kryptonGroupBox4.Panel.Controls.Add(this.label42);
             this.kryptonGroupBox4.Size = new System.Drawing.Size(693, 186);
             this.kryptonGroupBox4.TabIndex = 135;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(508, 133);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(171, 20);
-            this.textBox28.TabIndex = 24;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(508, 106);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(171, 20);
-            this.textBox29.TabIndex = 23;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(508, 76);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(171, 20);
-            this.textBox30.TabIndex = 22;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(508, 46);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(171, 20);
-            this.textBox31.TabIndex = 21;
-            // 
-            // textBox32
-            // 
-            this.textBox32.Location = new System.Drawing.Point(508, 13);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(171, 20);
-            this.textBox32.TabIndex = 20;
-            // 
-            // textBox33
-            // 
-            this.textBox33.Location = new System.Drawing.Point(161, 133);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(171, 20);
-            this.textBox33.TabIndex = 19;
-            // 
-            // textBox34
-            // 
-            this.textBox34.Location = new System.Drawing.Point(161, 106);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(171, 20);
-            this.textBox34.TabIndex = 18;
-            // 
-            // textBox35
-            // 
-            this.textBox35.Location = new System.Drawing.Point(161, 76);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(171, 20);
-            this.textBox35.TabIndex = 17;
-            // 
-            // textBox36
-            // 
-            this.textBox36.Location = new System.Drawing.Point(161, 46);
-            this.textBox36.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(171, 20);
-            this.textBox36.TabIndex = 16;
-            // 
-            // textBox37
-            // 
-            this.textBox37.Location = new System.Drawing.Point(161, 13);
-            this.textBox37.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(171, 20);
-            this.textBox37.TabIndex = 15;
             // 
             // label33
             // 
@@ -1041,38 +912,30 @@
             // 
             // kryptonGroupBox5.Panel
             // 
-            this.kryptonGroupBox5.Panel.Controls.Add(this.textBox45);
-            this.kryptonGroupBox5.Panel.Controls.Add(this.textBox46);
-            this.kryptonGroupBox5.Panel.Controls.Add(this.textBox47);
+            this.kryptonGroupBox5.Panel.Controls.Add(this.cboVNRid);
+            this.kryptonGroupBox5.Panel.Controls.Add(this.txtACFdepacuniif);
+            this.kryptonGroupBox5.Panel.Controls.Add(this.txtACFdepacutrib);
             this.kryptonGroupBox5.Panel.Controls.Add(this.label50);
             this.kryptonGroupBox5.Panel.Controls.Add(this.label51);
             this.kryptonGroupBox5.Panel.Controls.Add(this.label52);
             this.kryptonGroupBox5.Size = new System.Drawing.Size(693, 186);
             this.kryptonGroupBox5.TabIndex = 136;
             // 
-            // textBox45
+            // txtACFdepacuniif
             // 
-            this.textBox45.Location = new System.Drawing.Point(205, 76);
-            this.textBox45.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(171, 20);
-            this.textBox45.TabIndex = 17;
+            this.txtACFdepacuniif.Location = new System.Drawing.Point(205, 76);
+            this.txtACFdepacuniif.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFdepacuniif.Name = "txtACFdepacuniif";
+            this.txtACFdepacuniif.Size = new System.Drawing.Size(171, 20);
+            this.txtACFdepacuniif.TabIndex = 17;
             // 
-            // textBox46
+            // txtACFdepacutrib
             // 
-            this.textBox46.Location = new System.Drawing.Point(205, 46);
-            this.textBox46.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(171, 20);
-            this.textBox46.TabIndex = 16;
-            // 
-            // textBox47
-            // 
-            this.textBox47.Location = new System.Drawing.Point(205, 13);
-            this.textBox47.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(171, 20);
-            this.textBox47.TabIndex = 15;
+            this.txtACFdepacutrib.Location = new System.Drawing.Point(205, 46);
+            this.txtACFdepacutrib.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFdepacutrib.Name = "txtACFdepacutrib";
+            this.txtACFdepacutrib.Size = new System.Drawing.Size(171, 20);
+            this.txtACFdepacutrib.TabIndex = 16;
             // 
             // label50
             // 
@@ -1117,16 +980,16 @@
             // 
             // kryptonGroupBox1.Panel
             // 
+            this.kryptonGroupBox1.Panel.Controls.Add(this.cboV_T087U_ANLUE);
             this.kryptonGroupBox1.Panel.Controls.Add(this.label6);
             this.kryptonGroupBox1.Panel.Controls.Add(this.label5);
             this.kryptonGroupBox1.Panel.Controls.Add(this.label4);
             this.kryptonGroupBox1.Panel.Controls.Add(this.label3);
             this.kryptonGroupBox1.Panel.Controls.Add(this.label2);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox5);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox4);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox3);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.textBox2);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.ACFdescripcion2);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtACFcomprobante);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtACFanlue);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtACFdescripcion);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtACFid);
             this.kryptonGroupBox1.Size = new System.Drawing.Size(362, 186);
             this.kryptonGroupBox1.TabIndex = 133;
             // 
@@ -1174,70 +1037,62 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Codigo de activo";
             // 
-            // textBox5
+            // txtACFcomprobante
             // 
-            this.textBox5.Location = new System.Drawing.Point(161, 133);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 20);
-            this.textBox5.TabIndex = 4;
+            this.txtACFcomprobante.Location = new System.Drawing.Point(161, 133);
+            this.txtACFcomprobante.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFcomprobante.Name = "txtACFcomprobante";
+            this.txtACFcomprobante.Size = new System.Drawing.Size(179, 20);
+            this.txtACFcomprobante.TabIndex = 4;
             // 
-            // textBox4
+            // txtACFanlue
             // 
-            this.textBox4.Location = new System.Drawing.Point(161, 107);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 20);
-            this.textBox4.TabIndex = 3;
+            this.txtACFanlue.Location = new System.Drawing.Point(161, 107);
+            this.txtACFanlue.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFanlue.Name = "txtACFanlue";
+            this.txtACFanlue.Size = new System.Drawing.Size(179, 20);
+            this.txtACFanlue.TabIndex = 3;
             // 
-            // textBox3
+            // txtACFdescripcion
             // 
-            this.textBox3.Location = new System.Drawing.Point(161, 76);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 20);
-            this.textBox3.TabIndex = 2;
+            this.txtACFdescripcion.Location = new System.Drawing.Point(161, 76);
+            this.txtACFdescripcion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFdescripcion.Name = "txtACFdescripcion";
+            this.txtACFdescripcion.Size = new System.Drawing.Size(179, 20);
+            this.txtACFdescripcion.TabIndex = 2;
             // 
-            // textBox2
+            // txtACFid
             // 
-            this.textBox2.Location = new System.Drawing.Point(161, 42);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtACFid.Location = new System.Drawing.Point(161, 13);
+            this.txtACFid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFid.Name = "txtACFid";
+            this.txtACFid.Size = new System.Drawing.Size(103, 20);
+            this.txtACFid.TabIndex = 0;
             // 
-            // ACFdescripcion2
+            // txtACFcuenta
             // 
-            this.ACFdescripcion2.Location = new System.Drawing.Point(161, 13);
-            this.ACFdescripcion2.Margin = new System.Windows.Forms.Padding(2);
-            this.ACFdescripcion2.Name = "ACFdescripcion2";
-            this.ACFdescripcion2.Size = new System.Drawing.Size(103, 20);
-            this.ACFdescripcion2.TabIndex = 0;
+            this.txtACFcuenta.Location = new System.Drawing.Point(547, 126);
+            this.txtACFcuenta.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFcuenta.Name = "txtACFcuenta";
+            this.txtACFcuenta.Size = new System.Drawing.Size(187, 20);
+            this.txtACFcuenta.TabIndex = 134;
             // 
-            // ACFid
+            // txtACFcuentadep
             // 
-            this.ACFid.Location = new System.Drawing.Point(547, 126);
-            this.ACFid.Margin = new System.Windows.Forms.Padding(2);
-            this.ACFid.Name = "ACFid";
-            this.ACFid.Size = new System.Drawing.Size(187, 20);
-            this.ACFid.TabIndex = 134;
+            this.txtACFcuentadep.Location = new System.Drawing.Point(547, 154);
+            this.txtACFcuentadep.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFcuentadep.Name = "txtACFcuentadep";
+            this.txtACFcuentadep.Size = new System.Drawing.Size(187, 20);
+            this.txtACFcuentadep.TabIndex = 135;
             // 
-            // ACFdescripcion
+            // cboACFfactortrib
             // 
-            this.ACFdescripcion.Location = new System.Drawing.Point(547, 154);
-            this.ACFdescripcion.Margin = new System.Windows.Forms.Padding(2);
-            this.ACFdescripcion.Name = "ACFdescripcion";
-            this.ACFdescripcion.Size = new System.Drawing.Size(187, 20);
-            this.ACFdescripcion.TabIndex = 135;
-            // 
-            // comboBox1Estado
-            // 
-            this.comboBox1Estado.FormattingEnabled = true;
-            this.comboBox1Estado.Location = new System.Drawing.Point(547, 266);
-            this.comboBox1Estado.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1Estado.Name = "comboBox1Estado";
-            this.comboBox1Estado.Size = new System.Drawing.Size(187, 21);
-            this.comboBox1Estado.TabIndex = 136;
+            this.cboACFfactortrib.FormattingEnabled = true;
+            this.cboACFfactortrib.Location = new System.Drawing.Point(735, 266);
+            this.cboACFfactortrib.Margin = new System.Windows.Forms.Padding(2);
+            this.cboACFfactortrib.Name = "cboACFfactortrib";
+            this.cboACFfactortrib.Size = new System.Drawing.Size(67, 21);
+            this.cboACFfactortrib.TabIndex = 136;
             // 
             // label7
             // 
@@ -1293,30 +1148,196 @@
             this.label12.TabIndex = 142;
             this.label12.Text = "Factor Tributario";
             // 
-            // textBox1
+            // txtACFvalorniif
             // 
-            this.textBox1.Location = new System.Drawing.Point(547, 181);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 20);
-            this.textBox1.TabIndex = 143;
+            this.txtACFvalorniif.Location = new System.Drawing.Point(547, 181);
+            this.txtACFvalorniif.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFvalorniif.Name = "txtACFvalorniif";
+            this.txtACFvalorniif.Size = new System.Drawing.Size(187, 20);
+            this.txtACFvalorniif.TabIndex = 143;
             // 
-            // textBox6
+            // txtACFvutilniifdia
             // 
-            this.textBox6.Location = new System.Drawing.Point(547, 213);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(187, 20);
-            this.textBox6.TabIndex = 144;
+            this.txtACFvutilniifdia.Location = new System.Drawing.Point(547, 213);
+            this.txtACFvutilniifdia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFvutilniifdia.Name = "txtACFvutilniifdia";
+            this.txtACFvutilniifdia.Size = new System.Drawing.Size(187, 20);
+            this.txtACFvutilniifdia.TabIndex = 144;
             // 
-            // textBox7
+            // txtACFfactorniif
             // 
-            this.textBox7.Location = new System.Drawing.Point(547, 240);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(187, 20);
-            this.textBox7.TabIndex = 145;
+            this.txtACFfactorniif.Location = new System.Drawing.Point(547, 240);
+            this.txtACFfactorniif.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFfactorniif.Name = "txtACFfactorniif";
+            this.txtACFfactorniif.Size = new System.Drawing.Size(187, 20);
+            this.txtACFfactorniif.TabIndex = 145;
             // 
+<<<<<<< HEAD
+            // txtACFfactortrib
+            // 
+            this.txtACFfactortrib.Location = new System.Drawing.Point(547, 269);
+            this.txtACFfactortrib.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFfactortrib.Name = "txtACFfactortrib";
+            this.txtACFfactortrib.Size = new System.Drawing.Size(187, 20);
+            this.txtACFfactortrib.TabIndex = 146;
+            // 
+            // cboBUKRS
+            // 
+            this.cboBUKRS.FormattingEnabled = true;
+            this.cboBUKRS.Location = new System.Drawing.Point(161, 46);
+            this.cboBUKRS.Name = "cboBUKRS";
+            this.cboBUKRS.Size = new System.Drawing.Size(171, 21);
+            this.cboBUKRS.TabIndex = 147;
+            // 
+            // cboSEGMENT
+            // 
+            this.cboSEGMENT.FormattingEnabled = true;
+            this.cboSEGMENT.Location = new System.Drawing.Point(508, 104);
+            this.cboSEGMENT.Name = "cboSEGMENT";
+            this.cboSEGMENT.Size = new System.Drawing.Size(171, 21);
+            this.cboSEGMENT.TabIndex = 148;
+            // 
+            // cboANLKL
+            // 
+            this.cboANLKL.FormattingEnabled = true;
+            this.cboANLKL.Location = new System.Drawing.Point(508, 133);
+            this.cboANLKL.Name = "cboANLKL";
+            this.cboANLKL.Size = new System.Drawing.Size(171, 21);
+            this.cboANLKL.TabIndex = 150;
+            // 
+            // cboPERNR
+            // 
+            this.cboPERNR.FormattingEnabled = true;
+            this.cboPERNR.Location = new System.Drawing.Point(508, 75);
+            this.cboPERNR.Name = "cboPERNR";
+            this.cboPERNR.Size = new System.Drawing.Size(171, 21);
+            this.cboPERNR.TabIndex = 149;
+            // 
+            // cboCSTid
+            // 
+            this.cboCSTid.FormattingEnabled = true;
+            this.cboCSTid.Location = new System.Drawing.Point(161, 104);
+            this.cboCSTid.Name = "cboCSTid";
+            this.cboCSTid.Size = new System.Drawing.Size(171, 21);
+            this.cboCSTid.TabIndex = 150;
+            // 
+            // cboMVMid
+            // 
+            this.cboMVMid.FormattingEnabled = true;
+            this.cboMVMid.Location = new System.Drawing.Point(508, 43);
+            this.cboMVMid.Name = "cboMVMid";
+            this.cboMVMid.Size = new System.Drawing.Size(171, 21);
+            this.cboMVMid.TabIndex = 151;
+            // 
+            // cboVNRid
+            // 
+            this.cboVNRid.FormattingEnabled = true;
+            this.cboVNRid.Location = new System.Drawing.Point(205, 8);
+            this.cboVNRid.Name = "cboVNRid";
+            this.cboVNRid.Size = new System.Drawing.Size(171, 21);
+            this.cboVNRid.TabIndex = 150;
+            // 
+            // cboCMPid
+            // 
+            this.cboCMPid.FormattingEnabled = true;
+            this.cboCMPid.Location = new System.Drawing.Point(161, 77);
+            this.cboCMPid.Name = "cboCMPid";
+            this.cboCMPid.Size = new System.Drawing.Size(171, 21);
+            this.cboCMPid.TabIndex = 152;
+            // 
+            // cboLIFNR
+            // 
+            this.cboLIFNR.FormattingEnabled = true;
+            this.cboLIFNR.Location = new System.Drawing.Point(508, 12);
+            this.cboLIFNR.Name = "cboLIFNR";
+            this.cboLIFNR.Size = new System.Drawing.Size(171, 21);
+            this.cboLIFNR.TabIndex = 153;
+            // 
+            // cboBLART
+            // 
+            this.cboBLART.FormattingEnabled = true;
+            this.cboBLART.Location = new System.Drawing.Point(161, 12);
+            this.cboBLART.Name = "cboBLART";
+            this.cboBLART.Size = new System.Drawing.Size(171, 21);
+            this.cboBLART.TabIndex = 154;
+            // 
+            // cboKOSTL
+            // 
+            this.cboKOSTL.FormattingEnabled = true;
+            this.cboKOSTL.Location = new System.Drawing.Point(161, 132);
+            this.cboKOSTL.Name = "cboKOSTL";
+            this.cboKOSTL.Size = new System.Drawing.Size(171, 21);
+            this.cboKOSTL.TabIndex = 155;
+            // 
+            // cboAMBid
+            // 
+            this.cboAMBid.FormattingEnabled = true;
+            this.cboAMBid.Location = new System.Drawing.Point(508, 104);
+            this.cboAMBid.Name = "cboAMBid";
+            this.cboAMBid.Size = new System.Drawing.Size(171, 21);
+            this.cboAMBid.TabIndex = 151;
+            // 
+            // cboUBEid
+            // 
+            this.cboUBEid.FormattingEnabled = true;
+            this.cboUBEid.Location = new System.Drawing.Point(508, 133);
+            this.cboUBEid.Name = "cboUBEid";
+            this.cboUBEid.Size = new System.Drawing.Size(171, 21);
+            this.cboUBEid.TabIndex = 156;
+            // 
+            // cboV_T087U_ANLUE
+            // 
+            this.cboV_T087U_ANLUE.FormattingEnabled = true;
+            this.cboV_T087U_ANLUE.Location = new System.Drawing.Point(161, 38);
+            this.cboV_T087U_ANLUE.Name = "cboV_T087U_ANLUE";
+            this.cboV_T087U_ANLUE.Size = new System.Drawing.Size(171, 21);
+            this.cboV_T087U_ANLUE.TabIndex = 155;
+            // 
+            // dtpACFfmovimiento
+            // 
+            this.dtpACFfmovimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfmovimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfmovimiento.Location = new System.Drawing.Point(156, 46);
+            this.dtpACFfmovimiento.Name = "dtpACFfmovimiento";
+            this.dtpACFfmovimiento.Size = new System.Drawing.Size(171, 20);
+            this.dtpACFfmovimiento.TabIndex = 148;
+            // 
+            // dtpACFfechacomprobante
+            // 
+            this.dtpACFfechacomprobante.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfechacomprobante.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfechacomprobante.Location = new System.Drawing.Point(156, 80);
+            this.dtpACFfechacomprobante.Name = "dtpACFfechacomprobante";
+            this.dtpACFfechacomprobante.Size = new System.Drawing.Size(171, 20);
+            this.dtpACFfechacomprobante.TabIndex = 149;
+            // 
+            // dtpACFfechanotaingreso
+            // 
+            this.dtpACFfechanotaingreso.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfechanotaingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(156, 107);
+            this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
+            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(171, 20);
+            this.dtpACFfechanotaingreso.TabIndex = 150;
+            // 
+            // dtpACFfechaordencompra
+            // 
+            this.dtpACFfechaordencompra.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfechaordencompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfechaordencompra.Location = new System.Drawing.Point(156, 139);
+            this.dtpACFfechaordencompra.Name = "dtpACFfechaordencompra";
+            this.dtpACFfechaordencompra.Size = new System.Drawing.Size(171, 20);
+            this.dtpACFfechaordencompra.TabIndex = 151;
+            // 
+            // dtpACFfincorporacion
+            // 
+            this.dtpACFfincorporacion.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfincorporacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfincorporacion.Location = new System.Drawing.Point(507, 13);
+            this.dtpACFfincorporacion.Name = "dtpACFfincorporacion";
+            this.dtpACFfincorporacion.Size = new System.Drawing.Size(171, 20);
+            this.dtpACFfincorporacion.TabIndex = 152;
+=======
             // toolStripImportar
             // 
             this.toolStripImportar.Image = global::CapaPresentacion.Properties.Resources.AppMenuClose;
@@ -1328,24 +1349,26 @@
             this.toolStripImportar.Text = "Importar";
             this.toolStripImportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripImportar.Click += new System.EventHandler(this.toolStripImportar_Click);
+>>>>>>> b609767f57c03af5303a6105e5432aed640c34f7
             // 
             // FrmacfACFp_Activo_Fijo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 555);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtACFfactortrib);
+            this.Controls.Add(this.txtACFfactorniif);
+            this.Controls.Add(this.txtACFvutilniifdia);
+            this.Controls.Add(this.txtACFvalorniif);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox1Estado);
-            this.Controls.Add(this.ACFdescripcion);
-            this.Controls.Add(this.ACFid);
+            this.Controls.Add(this.cboACFfactortrib);
+            this.Controls.Add(this.txtACFcuentadep);
+            this.Controls.Add(this.txtACFcuenta);
             this.Controls.Add(this.kryptonGroupBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
@@ -1414,28 +1437,22 @@
         private System.Windows.Forms.ToolStripButton toolStripUltimo;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox2;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtACFfcapitalizacion;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox3;
-        private System.Windows.Forms.TextBox ACFid;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox ACFdescripcion2;
-        private System.Windows.Forms.TextBox ACFdescripcion;
+        private System.Windows.Forms.TextBox txtACFcuenta;
+        private System.Windows.Forms.TextBox txtACFcomprobante;
+        private System.Windows.Forms.TextBox txtACFanlue;
+        private System.Windows.Forms.TextBox txtACFdescripcion;
+        private System.Windows.Forms.TextBox txtACFid;
+        private System.Windows.Forms.TextBox txtACFcuentadep;
         private System.Windows.Forms.ToolStripButton toolStripBuscar;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
-        private System.Windows.Forms.ComboBox comboBox1Estado;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.ComboBox cboACFfactortrib;
+        private System.Windows.Forms.TextBox txtACFord41;
+        private System.Windows.Forms.TextBox txtACFobservacion;
+        private System.Windows.Forms.TextBox txtACFobra;
+        private System.Windows.Forms.TextBox txtACFnotaingreso;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
@@ -1446,16 +1463,14 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox txtACFvutiltribanio;
+        private System.Windows.Forms.TextBox txtACFvutiltribdia;
+        private System.Windows.Forms.TextBox txtACFvalortrib;
+        private System.Windows.Forms.TextBox txtACFvutilniifanio;
+        private System.Windows.Forms.TextBox txtACFordencompra;
+        private System.Windows.Forms.TextBox txtACFord44;
+        private System.Windows.Forms.TextBox txtACFord43;
+        private System.Windows.Forms.TextBox txtACFord42;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
@@ -1468,16 +1483,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TabPage tabPage3;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox4;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
@@ -1490,15 +1495,14 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.TabPage tabPage4;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox5;
-        private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox txtACFdepacuniif;
+        private System.Windows.Forms.TextBox txtACFdepacutrib;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtACFfactorniif;
+        private System.Windows.Forms.TextBox txtACFvutilniifdia;
+        private System.Windows.Forms.TextBox txtACFvalorniif;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -1510,6 +1514,29 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+<<<<<<< HEAD
+        private System.Windows.Forms.TextBox txtACFfactortrib;
+        private System.Windows.Forms.DateTimePicker dtpACFfincorporacion;
+        private System.Windows.Forms.DateTimePicker dtpACFfechaordencompra;
+        private System.Windows.Forms.DateTimePicker dtpACFfechanotaingreso;
+        private System.Windows.Forms.DateTimePicker dtpACFfechacomprobante;
+        private System.Windows.Forms.DateTimePicker dtpACFfmovimiento;
+        private System.Windows.Forms.ComboBox cboAMBid;
+        private System.Windows.Forms.ComboBox cboANLKL;
+        private System.Windows.Forms.ComboBox cboUBEid;
+        private System.Windows.Forms.ComboBox cboKOSTL;
+        private System.Windows.Forms.ComboBox cboBLART;
+        private System.Windows.Forms.ComboBox cboLIFNR;
+        private System.Windows.Forms.ComboBox cboCMPid;
+        private System.Windows.Forms.ComboBox cboMVMid;
+        private System.Windows.Forms.ComboBox cboCSTid;
+        private System.Windows.Forms.ComboBox cboPERNR;
+        private System.Windows.Forms.ComboBox cboSEGMENT;
+        private System.Windows.Forms.ComboBox cboBUKRS;
+        private System.Windows.Forms.ComboBox cboVNRid;
+        private System.Windows.Forms.ComboBox cboV_T087U_ANLUE;
+=======
         private System.Windows.Forms.ToolStripButton toolStripImportar;
+>>>>>>> b609767f57c03af5303a6105e5432aed640c34f7
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using CapaNegocio;
 
 namespace CapaPresentacion
@@ -109,11 +110,11 @@ namespace CapaPresentacion
 
         private void Control_Click_Prev(object sender, EventArgs e)
             {
-                Prev(ACFid.Text);
+                Prev(txtACFcuenta.Text);
             }
         private void Control_Click_Next(object sender, EventArgs e)
             {
-                Next(ACFid.Text);
+                Next(txtACFcuenta.Text);
             }
         private void Control_Click_Top(object sender, EventArgs e)
             {
@@ -238,9 +239,25 @@ namespace CapaPresentacion
             this.Activo = 1;
             this.tomaTab();
             this.Botones(true);
-            this.comboBox1Estado.DataSource = NacfESTt_Estado.Mostrar();
-            this.comboBox1Estado.ValueMember = "ESTestado";
-            this.comboBox1Estado.SelectedIndex = 0;
+            this.cboACFfactortrib.DataSource    = NacfESTt_Estado.Mostrar();
+            this.cboACFfactortrib.ValueMember   = "ESTestado";
+            this.cboACFfactortrib.SelectedIndex = 0;
+            this.cboBUKRS.DataSource    = NbdiSOCpSociedades.Mostrar();
+            this.cboBUKRS.ValueMember = "BUKRS";
+            this.cboBUKRS.SelectedIndex = 0;
+            //this.cboSEGMENT.Text
+            //this.cboANLKL.Text
+            //this.cboPERNR.Text
+            //this.cboCSTid.Text
+            //this.cboMVMid.Text
+            //this.cboVNRid.Text
+            //this.cboCMPid.Text
+            //this.cboLIFNR.Text
+            //this.cboBLART.Text
+            //this.cboKOSTL.Text
+            //this.cboAMBid.Text
+            //this.cboUBEid.Text
+            //this.cboV_T087U_ANLUE.Text
 
         }
         private void Top()
@@ -255,8 +272,54 @@ namespace CapaPresentacion
                 {
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
-                    ACFid.Text = Convert.ToString(row["ACFid"]);
-                    ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
+                    txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
+                    cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
+                    cboANLKL.Text = Convert.ToString(row["ANLKL"]);
+                    cboPERNR.Text = Convert.ToString(row["PERNR"]);
+                    cboCSTid.Text = Convert.ToString(row["CSTid"]);
+                    cboMVMid.Text = Convert.ToString(row["MVMid"]);
+                    dtpACFfmovimiento.Text = Convert.ToString(row["ACFfmovimiento"]);
+                    cboVNRid.Text = Convert.ToString(row["VNRid"]);
+                    txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
+                    dtpACFfincorporacion.Text = Convert.ToString(row["ACFfincorporacion"]);
+                    txtACFfcapitalizacion.Text = Convert.ToString(row["ACFfcapitalizacion"]);
+                    txtACFvutiltribanio.Text = Convert.ToString(row["ACFvutiltribanio"]);
+                    txtACFvutiltribdia.Text = Convert.ToString(row["ACFvutiltribdia"]);
+                    txtACFvalortrib.Text = Convert.ToString(row["ACFvalortrib"]);
+                    txtACFvutilniifanio.Text = Convert.ToString(row["ACFvutilniifanio"]);
+                    txtACFvutilniifdia.Text = Convert.ToString(row["ACFvutilniifdia"]);
+                    txtACFvalorniif.Text = Convert.ToString(row["ACFvalorniif"]);
+                    txtACFdepacutrib.Text = Convert.ToString(row["ACFdepacutrib"]);
+                    txtACFdepacuniif.Text = Convert.ToString(row["ACFdepacuniif"]);
+                    txtACFobra.Text = Convert.ToString(row["ACFobra"]);
+                    txtACFord41.Text = Convert.ToString(row["ACFord41"]);
+                    txtACFord42.Text = Convert.ToString(row["ACFord42"]);
+                    txtACFord43.Text = Convert.ToString(row["ACFord43"]);
+                    txtACFord44.Text = Convert.ToString(row["ACFord44"]);
+                    txtACFanlue.Text = Convert.ToString(row["ACFanlue"]);
+                    txtACFfactortrib.Text = Convert.ToString(row["ACFfactortrib"]);
+                    txtACFfactorniif.Text = Convert.ToString(row["ACFfactorniif"]);
+                    txtACFcuenta.Text = Convert.ToString(row["ACFcuenta"]);
+                    txtACFcuentadep.Text = Convert.ToString(row["ACFcuentadep"]);
+                    cboCMPid.Text = Convert.ToString(row["CMPid"]);
+                    txtACFobservacion.Text = Convert.ToString(row["ACFobservacion"]);
+                    cboLIFNR.Text = Convert.ToString(row["LIFNR"]);
+                    txtACFnotaingreso.Text = Convert.ToString(row["ACFnotaingreso"]);
+                    dtpACFfechanotaingreso.Text = Convert.ToString(row["ACFfechanotaingreso"]);
+                    txtACFordencompra.Text = Convert.ToString(row["ACFordencompra"]);
+                    dtpACFfechaordencompra.Text = Convert.ToString(row["ACFfechaordencompra"]);
+                    cboBLART.Text = Convert.ToString(row["BLART"]);
+                    txtACFcomprobante.Text = Convert.ToString(row["ACFcomprobante"]);
+                    cboKOSTL.Text = Convert.ToString(row["KOSTL"]);
+                    cboAMBid.Text = Convert.ToString(row["AMBid"]);
+                    cboUBEid.Text = Convert.ToString(row["UBEid"]);
+                    dtpACFfechacomprobante.Text = Convert.ToString(row["ACFfechacomprobante"]);
+                    cboV_T087U_ANLUE.Text = Convert.ToString(row["V_T087U_ANLUE"]);
+
+                    //guardo datos en variables
+                    //ACFid.Text = Convert.ToString(row["ACFid"]);
+                    //ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
 
                 }
                 else
@@ -281,8 +344,54 @@ namespace CapaPresentacion
                 {
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
-                    ACFid.Text = Convert.ToString(row["ACFid"]);
-                    ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
+                    txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
+                    cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
+                    cboANLKL.Text = Convert.ToString(row["ANLKL"]);
+                    cboPERNR.Text = Convert.ToString(row["PERNR"]);
+                    cboCSTid.Text = Convert.ToString(row["CSTid"]);
+                    cboMVMid.Text = Convert.ToString(row["MVMid"]);
+                    dtpACFfmovimiento.Text = Convert.ToString(row["ACFfmovimiento"]);
+                    cboVNRid.Text = Convert.ToString(row["VNRid"]);
+                    txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
+                    dtpACFfincorporacion.Text = Convert.ToString(row["ACFfincorporacion"]);
+                    txtACFfcapitalizacion.Text = Convert.ToString(row["ACFfcapitalizacion"]);
+                    txtACFvutiltribanio.Text = Convert.ToString(row["ACFvutiltribanio"]);
+                    txtACFvutiltribdia.Text = Convert.ToString(row["ACFvutiltribdia"]);
+                    txtACFvalortrib.Text = Convert.ToString(row["ACFvalortrib"]);
+                    txtACFvutilniifanio.Text = Convert.ToString(row["ACFvutilniifanio"]);
+                    txtACFvutilniifdia.Text = Convert.ToString(row["ACFvutilniifdia"]);
+                    txtACFvalorniif.Text = Convert.ToString(row["ACFvalorniif"]);
+                    txtACFdepacutrib.Text = Convert.ToString(row["ACFdepacutrib"]);
+                    txtACFdepacuniif.Text = Convert.ToString(row["ACFdepacuniif"]);
+                    txtACFobra.Text = Convert.ToString(row["ACFobra"]);
+                    txtACFord41.Text = Convert.ToString(row["ACFord41"]);
+                    txtACFord42.Text = Convert.ToString(row["ACFord42"]);
+                    txtACFord43.Text = Convert.ToString(row["ACFord43"]);
+                    txtACFord44.Text = Convert.ToString(row["ACFord44"]);
+                    txtACFanlue.Text = Convert.ToString(row["ACFanlue"]);
+                    txtACFfactortrib.Text = Convert.ToString(row["ACFfactortrib"]);
+                    txtACFfactorniif.Text = Convert.ToString(row["ACFfactorniif"]);
+                    txtACFcuenta.Text = Convert.ToString(row["ACFcuenta"]);
+                    txtACFcuentadep.Text = Convert.ToString(row["ACFcuentadep"]);
+                    cboCMPid.Text = Convert.ToString(row["CMPid"]);
+                    txtACFobservacion.Text = Convert.ToString(row["ACFobservacion"]);
+                    cboLIFNR.Text = Convert.ToString(row["LIFNR"]);
+                    txtACFnotaingreso.Text = Convert.ToString(row["ACFnotaingreso"]);
+                    dtpACFfechanotaingreso.Text = Convert.ToString(row["ACFfechanotaingreso"]);
+                    txtACFordencompra.Text = Convert.ToString(row["ACFordencompra"]);
+                    dtpACFfechaordencompra.Text = Convert.ToString(row["ACFfechaordencompra"]);
+                    cboBLART.Text = Convert.ToString(row["BLART"]);
+                    txtACFcomprobante.Text = Convert.ToString(row["ACFcomprobante"]);
+                    cboKOSTL.Text = Convert.ToString(row["KOSTL"]);
+                    cboAMBid.Text = Convert.ToString(row["AMBid"]);
+                    cboUBEid.Text = Convert.ToString(row["UBEid"]);
+                    dtpACFfechacomprobante.Text = Convert.ToString(row["ACFfechacomprobante"]);
+                    cboV_T087U_ANLUE.Text = Convert.ToString(row["V_T087U_ANLUE"]);
+
+                    //guardo datos en variables
+                    //ACFid.Text = Convert.ToString(row["ACFid"]);
+                    //ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
 
                 }
                 else
@@ -307,8 +416,53 @@ namespace CapaPresentacion
                 {
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
-                    ACFid.Text = Convert.ToString(row["ACFid"]);
-                    ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
+                    txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
+                    cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
+                    cboANLKL.Text = Convert.ToString(row["ANLKL"]);
+                    cboPERNR.Text = Convert.ToString(row["PERNR"]);
+                    cboCSTid.Text = Convert.ToString(row["CSTid"]);
+                    cboMVMid.Text = Convert.ToString(row["MVMid"]);
+                    dtpACFfmovimiento.Text = Convert.ToString(row["ACFfmovimiento"]);
+                    cboVNRid.Text = Convert.ToString(row["VNRid"]);
+                    txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
+                    dtpACFfincorporacion.Text = Convert.ToString(row["ACFfincorporacion"]);
+                    txtACFfcapitalizacion.Text = Convert.ToString(row["ACFfcapitalizacion"]);
+                    txtACFvutiltribanio.Text = Convert.ToString(row["ACFvutiltribanio"]);
+                    txtACFvutiltribdia.Text = Convert.ToString(row["ACFvutiltribdia"]);
+                    txtACFvalortrib.Text = Convert.ToString(row["ACFvalortrib"]);
+                    txtACFvutilniifanio.Text = Convert.ToString(row["ACFvutilniifanio"]);
+                    txtACFvutilniifdia.Text = Convert.ToString(row["ACFvutilniifdia"]);
+                    txtACFvalorniif.Text = Convert.ToString(row["ACFvalorniif"]);
+                    txtACFdepacutrib.Text = Convert.ToString(row["ACFdepacutrib"]);
+                    txtACFdepacuniif.Text = Convert.ToString(row["ACFdepacuniif"]);
+                    txtACFobra.Text = Convert.ToString(row["ACFobra"]);
+                    txtACFord41.Text = Convert.ToString(row["ACFord41"]);
+                    txtACFord42.Text = Convert.ToString(row["ACFord42"]);
+                    txtACFord43.Text = Convert.ToString(row["ACFord43"]);
+                    txtACFord44.Text = Convert.ToString(row["ACFord44"]);
+                    txtACFanlue.Text = Convert.ToString(row["ACFanlue"]);
+                    txtACFfactortrib.Text = Convert.ToString(row["ACFfactortrib"]);
+                    txtACFfactorniif.Text = Convert.ToString(row["ACFfactorniif"]);
+                    txtACFcuenta.Text = Convert.ToString(row["ACFcuenta"]);
+                    txtACFcuentadep.Text = Convert.ToString(row["ACFcuentadep"]);
+                    cboCMPid.Text = Convert.ToString(row["CMPid"]);
+                    txtACFobservacion.Text = Convert.ToString(row["ACFobservacion"]);
+                    cboLIFNR.Text = Convert.ToString(row["LIFNR"]);
+                    txtACFnotaingreso.Text = Convert.ToString(row["ACFnotaingreso"]);
+                    dtpACFfechanotaingreso.Text = Convert.ToString(row["ACFfechanotaingreso"]);
+                    txtACFordencompra.Text = Convert.ToString(row["ACFordencompra"]);
+                    dtpACFfechaordencompra.Text = Convert.ToString(row["ACFfechaordencompra"]);
+                    cboBLART.Text = Convert.ToString(row["BLART"]);
+                    txtACFcomprobante.Text = Convert.ToString(row["ACFcomprobante"]);
+                    cboKOSTL.Text = Convert.ToString(row["KOSTL"]);
+                    cboAMBid.Text = Convert.ToString(row["AMBid"]);
+                    cboUBEid.Text = Convert.ToString(row["UBEid"]);
+                    dtpACFfechacomprobante.Text = Convert.ToString(row["ACFfechacomprobante"]);
+                    cboV_T087U_ANLUE.Text = Convert.ToString(row["V_T087U_ANLUE"]);
+                    //guardo datos en variables
+                    //ACFid.Text = Convert.ToString(row["ACFid"]);
+                    //ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
 
                 }
                 else
@@ -333,9 +487,54 @@ namespace CapaPresentacion
                 {
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
-                    ACFid.Text = Convert.ToString(row["ACFid"]);
-                    ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
+                    txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
+                    cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
+                    cboANLKL.Text = Convert.ToString(row["ANLKL"]);
+                    cboPERNR.Text = Convert.ToString(row["PERNR"]);
+                    cboCSTid.Text = Convert.ToString(row["CSTid"]);
+                    cboMVMid.Text = Convert.ToString(row["MVMid"]);
+                    dtpACFfmovimiento.Text = Convert.ToString(row["ACFfmovimiento"]);
+                    cboVNRid.Text = Convert.ToString(row["VNRid"]);
+                    txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
+                    dtpACFfincorporacion.Text = Convert.ToString(row["ACFfincorporacion"]);
+                    txtACFfcapitalizacion.Text = Convert.ToString(row["ACFfcapitalizacion"]);
+                    txtACFvutiltribanio.Text = Convert.ToString(row["ACFvutiltribanio"]);
+                    txtACFvutiltribdia.Text = Convert.ToString(row["ACFvutiltribdia"]);
+                    txtACFvalortrib.Text = Convert.ToString(row["ACFvalortrib"]);
+                    txtACFvutilniifanio.Text = Convert.ToString(row["ACFvutilniifanio"]);
+                    txtACFvutilniifdia.Text = Convert.ToString(row["ACFvutilniifdia"]);
+                    txtACFvalorniif.Text = Convert.ToString(row["ACFvalorniif"]);
+                    txtACFdepacutrib.Text = Convert.ToString(row["ACFdepacutrib"]);
+                    txtACFdepacuniif.Text = Convert.ToString(row["ACFdepacuniif"]);
+                    txtACFobra.Text = Convert.ToString(row["ACFobra"]);
+                    txtACFord41.Text = Convert.ToString(row["ACFord41"]);
+                    txtACFord42.Text = Convert.ToString(row["ACFord42"]);
+                    txtACFord43.Text = Convert.ToString(row["ACFord43"]);
+                    txtACFord44.Text = Convert.ToString(row["ACFord44"]);
+                    txtACFanlue.Text = Convert.ToString(row["ACFanlue"]);
+                    txtACFfactortrib.Text = Convert.ToString(row["ACFfactortrib"]);
+                    txtACFfactorniif.Text = Convert.ToString(row["ACFfactorniif"]);
+                    txtACFcuenta.Text = Convert.ToString(row["ACFcuenta"]);
+                    txtACFcuentadep.Text = Convert.ToString(row["ACFcuentadep"]);
+                    cboCMPid.Text = Convert.ToString(row["CMPid"]);
+                    txtACFobservacion.Text = Convert.ToString(row["ACFobservacion"]);
+                    cboLIFNR.Text = Convert.ToString(row["LIFNR"]);
+                    txtACFnotaingreso.Text = Convert.ToString(row["ACFnotaingreso"]);
+                    dtpACFfechanotaingreso.Text = Convert.ToString(row["ACFfechanotaingreso"]);
+                    txtACFordencompra.Text = Convert.ToString(row["ACFordencompra"]);
+                    dtpACFfechaordencompra.Text = Convert.ToString(row["ACFfechaordencompra"]);
+                    cboBLART.Text = Convert.ToString(row["BLART"]);
+                    txtACFcomprobante.Text = Convert.ToString(row["ACFcomprobante"]);
+                    cboKOSTL.Text = Convert.ToString(row["KOSTL"]);
+                    cboAMBid.Text = Convert.ToString(row["AMBid"]);
+                    cboUBEid.Text = Convert.ToString(row["UBEid"]);
+                    dtpACFfechacomprobante.Text = Convert.ToString(row["ACFfechacomprobante"]);
+                    cboV_T087U_ANLUE.Text = Convert.ToString(row["V_T087U_ANLUE"]);
 
+                    //guardo datos en variables
+                    //ACFid.Text = Convert.ToString(row["ACFid"]);
+                    //ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
@@ -444,7 +643,54 @@ namespace CapaPresentacion
             MessageBox.Show("insertar");
             try
             {
-                Rta = NacfACFp_Activo_Fijo.Insertar(this.ACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.ACFdescripcion2.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
+                /*Rta = NacfACFp_Activo_Fijo.Insertar(
+                      this.txtACFid.Text
+                    , this.cboBUKRS.Text
+                    , this.cboSEGMENT.Text
+                    , this.cboANLKL.Text
+                    , this.cboPERNR.Text
+                    , this.cboCSTid.Text
+                    , this.cboMVMid.Text
+                    , this.dtpACFfmovimiento.Text
+                    , this.cboVNRid.Text
+                    , this.txtACFdescripcion.Text
+                    , this.dtpACFfincorporacion.Text
+                    , this.txtACFfcapitalizacion.Text
+                    , this.txtACFvutiltribanio.Text
+                    , this.txtACFvutiltribdia.Text
+                    , this.txtACFvalortrib.Text
+                    , this.txtACFvutilniifanio.Text
+                    , this.txtACFvutilniifdia.Text
+                    , this.txtACFvalorniif.Text
+                    , this.txtACFdepacutrib.Text
+                    , this.txtACFdepacuniif.Text
+                    , this.txtACFobra.Text
+                    , this.txtACFord41.Text
+                    , this.txtACFord42.Text
+                    , this.txtACFord43.Text
+                    , this.txtACFord44.Text
+                    , this.txtACFanlue.Text
+                    , this.txtACFfactortrib.Text
+                    , this.txtACFfactorniif.Text
+                    , this.txtACFcuenta.Text
+                    , this.txtACFcuentadep.Text
+                    , this.cboCMPid.Text
+                    , this.txtACFobservacion.Text
+                    , this.cboLIFNR.Text
+                    , this.txtACFnotaingreso.Text
+                    , this.dtpACFfechanotaingreso.Text
+                    , this.txtACFordencompra.Text
+                    , this.dtpACFfechaordencompra.Text
+                    , this.cboBLART.Text
+                    , this.txtACFcomprobante.Text
+                    , this.cboKOSTL.Text
+                    , this.cboAMBid.Text
+                    , this.cboUBEid.Text
+                    , this.dtpACFfechacomprobante.Text
+                    , this.cboV_T087U_ANLUE.Text
+                    );*/
+                Rta = NacfACFp_Activo_Fijo.Insertar(this.txtACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
+
 
                 if (Rta.Equals("OK"))
                 {
@@ -470,7 +716,55 @@ namespace CapaPresentacion
             try
             {
                 
-                Rta = NacfACFp_Activo_Fijo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.ACFdescripcion2.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
+                Rta = NacfACFp_Activo_Fijo.Editar(
+                      this.txtACFid.Text
+                    , this.cboBUKRS.Text
+                    , this.cboSEGMENT.Text
+                    , this.cboANLKL.Text
+                    , this.cboPERNR.Text
+                    , this.cboCSTid.Text
+                    , this.cboMVMid.Text
+                    , this.dtpACFfmovimiento.Text
+                    , this.cboVNRid.Text
+                    , this.txtACFdescripcion.Text
+                    , this.dtpACFfincorporacion.Text
+                    , this.txtACFfcapitalizacion.Text
+                    , this.txtACFvutiltribanio.Text
+                    , this.txtACFvutiltribdia.Text
+                    , this.txtACFvalortrib.Text
+                    , this.txtACFvutilniifanio.Text
+                    , this.txtACFvutilniifdia.Text
+                    , this.txtACFvalorniif.Text
+                    , this.txtACFdepacutrib.Text
+                    , this.txtACFdepacuniif.Text
+                    , this.txtACFobra.Text
+                    , this.txtACFord41.Text
+                    , this.txtACFord42.Text
+                    , this.txtACFord43.Text
+                    , this.txtACFord44.Text
+                    , this.txtACFanlue.Text
+                    , this.txtACFfactortrib.Text
+                    , this.txtACFfactorniif.Text
+                    , this.txtACFcuenta.Text
+                    , this.txtACFcuentadep.Text
+                    , this.cboCMPid.Text
+                    , this.txtACFobservacion.Text
+                    , this.cboLIFNR.Text
+                    , this.txtACFnotaingreso.Text
+                    , this.dtpACFfechanotaingreso.Text
+                    , this.txtACFordencompra.Text
+                    , this.dtpACFfechaordencompra.Text
+                    , this.cboBLART.Text
+                    , this.txtACFcomprobante.Text
+                    , this.cboKOSTL.Text
+                    , this.cboAMBid.Text
+                    , this.cboUBEid.Text
+                    , this.dtpACFfechacomprobante.Text
+                    , this.cboV_T087U_ANLUE.Text
+                    );
+
+                //Rta = NacfACFp_Activo_Fijo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
+              
                 if (Rta.Equals("OK"))
                 {
                     this.MensajeOk("Regsitro Actualizado Correctamente");
@@ -537,9 +831,53 @@ namespace CapaPresentacion
                 {
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
-                    ACFid.Text = Convert.ToString(row["ACFid"]);
-                    ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
-
+                    txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
+                    cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
+                    cboANLKL.Text = Convert.ToString(row["ANLKL"]);
+                    cboPERNR.Text = Convert.ToString(row["PERNR"]);
+                    cboCSTid.Text = Convert.ToString(row["CSTid"]);
+                    cboMVMid.Text = Convert.ToString(row["MVMid"]);
+                    dtpACFfmovimiento.Text = Convert.ToString(row["ACFfmovimiento"]);
+                    cboVNRid.Text = Convert.ToString(row["VNRid"]);
+                    txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
+                    dtpACFfincorporacion.Text = Convert.ToString(row["ACFfincorporacion"]);
+                    txtACFfcapitalizacion.Text = Convert.ToString(row["ACFfcapitalizacion"]);
+                    txtACFvutiltribanio.Text = Convert.ToString(row["ACFvutiltribanio"]);
+                    txtACFvutiltribdia.Text = Convert.ToString(row["ACFvutiltribdia"]);
+                    txtACFvalortrib.Text = Convert.ToString(row["ACFvalortrib"]);
+                    txtACFvutilniifanio.Text = Convert.ToString(row["ACFvutilniifanio"]);
+                    txtACFvutilniifdia.Text = Convert.ToString(row["ACFvutilniifdia"]);
+                    txtACFvalorniif.Text = Convert.ToString(row["ACFvalorniif"]);
+                    txtACFdepacutrib.Text = Convert.ToString(row["ACFdepacutrib"]);
+                    txtACFdepacuniif.Text = Convert.ToString(row["ACFdepacuniif"]);
+                    txtACFobra.Text = Convert.ToString(row["ACFobra"]);
+                    txtACFord41.Text = Convert.ToString(row["ACFord41"]);
+                    txtACFord42.Text = Convert.ToString(row["ACFord42"]);
+                    txtACFord43.Text = Convert.ToString(row["ACFord43"]);
+                    txtACFord44.Text = Convert.ToString(row["ACFord44"]);
+                    txtACFanlue.Text = Convert.ToString(row["ACFanlue"]);
+                    txtACFfactortrib.Text = Convert.ToString(row["ACFfactortrib"]);
+                    txtACFfactorniif.Text = Convert.ToString(row["ACFfactorniif"]);
+                    txtACFcuenta.Text = Convert.ToString(row["ACFcuenta"]);
+                    txtACFcuentadep.Text = Convert.ToString(row["ACFcuentadep"]);
+                    cboCMPid.Text = Convert.ToString(row["CMPid"]);
+                    txtACFobservacion.Text = Convert.ToString(row["ACFobservacion"]);
+                    cboLIFNR.Text = Convert.ToString(row["LIFNR"]);
+                    txtACFnotaingreso.Text = Convert.ToString(row["ACFnotaingreso"]);
+                    dtpACFfechanotaingreso.Text = Convert.ToString(row["ACFfechanotaingreso"]);
+                    txtACFordencompra.Text = Convert.ToString(row["ACFordencompra"]);
+                    dtpACFfechaordencompra.Text = Convert.ToString(row["ACFfechaordencompra"]);
+                    cboBLART.Text = Convert.ToString(row["BLART"]);
+                    txtACFcomprobante.Text = Convert.ToString(row["ACFcomprobante"]);
+                    cboKOSTL.Text = Convert.ToString(row["KOSTL"]);
+                    cboAMBid.Text = Convert.ToString(row["AMBid"]);
+                    cboUBEid.Text = Convert.ToString(row["UBEid"]);
+                    dtpACFfechacomprobante.Text = Convert.ToString(row["ACFfechacomprobante"]);
+                    cboV_T087U_ANLUE.Text = Convert.ToString(row["V_T087U_ANLUE"]);
+                    //guardo datos en variables
+                    //txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    //txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
