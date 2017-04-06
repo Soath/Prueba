@@ -47,6 +47,7 @@ namespace CapaPresentacion
             this.toolStripPrimero.Click += new System.EventHandler(this.Control_Click_Top);
             this.toolStripUltimo.Click += new System.EventHandler(this.Control_Click_Last);
             this.toolStripBuscar.Click += new System.EventHandler(this.Control_Click_Serch);
+            this.toolStripImportar.Click += new System.EventHandler(this.Control_Click_Importar);
 
             EstadoText(this.Controls, true, false);
             mostrar();
@@ -156,6 +157,10 @@ namespace CapaPresentacion
         {
             this.BotonRefrescar();
         }
+        private void Control_Click_Importar(object sender, EventArgs e)
+        {
+            this.BotonImportar();
+        }
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
             this.tomaTab();
@@ -186,6 +191,7 @@ namespace CapaPresentacion
             this.toolStripEditar.Visible = edo;
             this.toolStripEliminar.Visible = edo;
             this.toolStripImprimir.Visible = edo;
+            this.toolStripImportar.Visible = edo;
 
             this.toolStripGuardar.Visible = !edo;
             this.toolStripCancelar.Visible = !edo;
@@ -206,6 +212,7 @@ namespace CapaPresentacion
             this.toolStripAgregar.Enabled = !edo;
             this.toolStripEditar.Enabled = edo;
             this.toolStripEliminar.Enabled = edo;
+            this.toolStripImportar.Visible = edo;
             this.toolStripImprimir.Enabled = edo;
             this.toolStripPrimero.Enabled = edo;
             this.toolStripAnterior.Enabled = edo;
@@ -544,7 +551,11 @@ namespace CapaPresentacion
             this.toolStripComboBox1.Enabled = true;
             this.toolStripTextBox1.Enabled = true;
         }
-
+        private void BotonImportar()
+        {
+            Form FrmExcel = new FrmExcel();
+            FrmExcel.Show();
+        }
         private void BotonRefrescar()
         {
             EstadoText(this.Controls, false, false);
@@ -1003,6 +1014,11 @@ namespace CapaPresentacion
         }
 
         private void toolStripAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripImportar_Click(object sender, EventArgs e)
         {
 
         }

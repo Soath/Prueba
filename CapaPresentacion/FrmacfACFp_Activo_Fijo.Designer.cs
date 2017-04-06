@@ -124,6 +124,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.txtACFvalorniif = new System.Windows.Forms.TextBox();
             this.txtACFvutilniifdia = new System.Windows.Forms.TextBox();
             this.txtACFfactorniif = new System.Windows.Forms.TextBox();
@@ -147,6 +148,12 @@
             this.dtpACFfechanotaingreso = new System.Windows.Forms.DateTimePicker();
             this.dtpACFfechaordencompra = new System.Windows.Forms.DateTimePicker();
             this.dtpACFfincorporacion = new System.Windows.Forms.DateTimePicker();
+=======
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.toolStripImportar = new System.Windows.Forms.ToolStripButton();
+>>>>>>> b609767f57c03af5303a6105e5432aed640c34f7
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -193,6 +200,7 @@
             this.toolStripAnterior,
             this.toolStripSiguiente,
             this.toolStripUltimo,
+            this.toolStripImportar,
             this.toolStripBuscar,
             this.toolStripComboBox1,
             this.toolStripTextBox1});
@@ -1164,6 +1172,7 @@
             this.txtACFfactorniif.Size = new System.Drawing.Size(187, 20);
             this.txtACFfactorniif.TabIndex = 145;
             // 
+<<<<<<< HEAD
             // txtACFfactortrib
             // 
             this.txtACFfactortrib.Location = new System.Drawing.Point(547, 269);
@@ -1328,6 +1337,19 @@
             this.dtpACFfincorporacion.Name = "dtpACFfincorporacion";
             this.dtpACFfincorporacion.Size = new System.Drawing.Size(171, 20);
             this.dtpACFfincorporacion.TabIndex = 152;
+=======
+            // toolStripImportar
+            // 
+            this.toolStripImportar.Image = global::CapaPresentacion.Properties.Resources.AppMenuClose;
+            this.toolStripImportar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImportar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripImportar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripImportar.Name = "toolStripImportar";
+            this.toolStripImportar.Size = new System.Drawing.Size(57, 51);
+            this.toolStripImportar.Text = "Importar";
+            this.toolStripImportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripImportar.Click += new System.EventHandler(this.toolStripImportar_Click);
+>>>>>>> b609767f57c03af5303a6105e5432aed640c34f7
             // 
             // FrmacfACFp_Activo_Fijo
             // 
@@ -1492,6 +1514,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox txtACFfactortrib;
         private System.Windows.Forms.DateTimePicker dtpACFfincorporacion;
         private System.Windows.Forms.DateTimePicker dtpACFfechaordencompra;
@@ -1512,5 +1535,8 @@
         private System.Windows.Forms.ComboBox cboBUKRS;
         private System.Windows.Forms.ComboBox cboVNRid;
         private System.Windows.Forms.ComboBox cboV_T087U_ANLUE;
+=======
+        private System.Windows.Forms.ToolStripButton toolStripImportar;
+>>>>>>> b609767f57c03af5303a6105e5432aed640c34f7
     }
 }

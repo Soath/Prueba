@@ -89,9 +89,9 @@
             this.toolStripEditar,
             this.toolStripEliminar,
             this.toolStripImprimir,
+            this.toolStripImportar,
             this.toolStripGuardar,
-            this.toolStripCancelar,
-            this.toolStripImportar});
+            this.toolStripCancelar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(681, 67);
@@ -190,6 +190,7 @@
             this.toolStripImportar.Text = "Importar";
             this.toolStripImportar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripImportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripImportar.Click += new System.EventHandler(this.toolStripImportar_Click);
             // 
             // label1
             // 
