@@ -225,13 +225,13 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            Form FrmMVMReporte = new FrmMVMReporte();
-            FrmMVMReporte.Show();
+            Form FrmMVMReporteD = new FrmMVMReporteD();
+            FrmMVMReporteD.Show();
         }
         private void BotonImportar()
         {
-            Form FrmExcel = new FrmExcel();
-            FrmExcel.Show();
+            Form FrmExcel2 = new FrmExcel2();
+            FrmExcel2.Show();
         }
 
         private void BotonGuardar()
@@ -293,6 +293,7 @@ namespace CapaPresentacion
             this.txtTMVid.Text = Convert.ToString(this.ObtenerSeleccion().Cells[1].Value);
             this.txtMVMid.Text = Convert.ToString(this.ObtenerSeleccion().Cells[2].Value);
             this.txtMVMmotivomovimiento.Text = Convert.ToString(this.ObtenerSeleccion().Cells[3].Value);
+            this.txtMVMmotivomovimiento.Text = this.txtMVMmotivomovimiento.Text.Trim();
             this.txtMVMjustificacion.Text = Convert.ToString(this.ObtenerSeleccion().Cells[4].Value);
         }
         private bool validaCampos()

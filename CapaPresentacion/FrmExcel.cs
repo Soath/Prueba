@@ -12,7 +12,7 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-
+    
     public partial class FrmExcel : Form
     {
         public FrmExcel()
@@ -41,7 +41,7 @@ namespace CapaPresentacion
                 
             }
             
-
+                
 
         }
         }
@@ -49,7 +49,7 @@ namespace CapaPresentacion
         {
             dataGridView1.AllowUserToAddRows = false;
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -122,3 +122,4 @@ namespace CapaPresentacion
         }
     }
 }
+

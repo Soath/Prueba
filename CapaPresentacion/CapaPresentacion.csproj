@@ -74,10 +74,10 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActivosFijosDataSet2.Designer.cs">
+    <Compile Include="ActivosFijosDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ActivosFijosDataSet2.xsd</DependentUpon>
+      <DependentUpon>ActivosFijosDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -325,6 +325,12 @@
     <Compile Include="FrmExcel.Designer.cs">
       <DependentUpon>FrmExcel.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmExcel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExcel2.Designer.cs">
+      <DependentUpon>FrmExcel2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -337,11 +343,11 @@
     <Compile Include="FrmacfACFp_Activo_Fijo.Designer.cs">
       <DependentUpon>FrmacfACFp_Activo_Fijo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMVMReporte.cs">
+    <Compile Include="FrmMVMReporteD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMVMReporte.Designer.cs">
-      <DependentUpon>FrmMVMReporte.cs</DependentUpon>
+    <Compile Include="FrmMVMReporteD.Designer.cs">
+      <DependentUpon>FrmMVMReporteD.cs</DependentUpon>
     </Compile>
     <Compile Include="Importar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -510,14 +516,17 @@
     <EmbeddedResource Include="FrmExcel.resx">
       <DependentUpon>FrmExcel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmExcel2.resx">
+      <DependentUpon>FrmExcel2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfACFp_Activo_Fijo.resx">
       <DependentUpon>FrmacfACFp_Activo_Fijo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMVMReporte.resx">
-      <DependentUpon>FrmMVMReporte.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMVMReporteD.resx">
+      <DependentUpon>FrmMVMReporteD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -527,7 +536,7 @@
     <EmbeddedResource Include="Pruebas.resx">
       <DependentUpon>Pruebas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
@@ -539,16 +548,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ActivosFijosDataSet2.xsc">
-      <DependentUpon>ActivosFijosDataSet2.xsd</DependentUpon>
+    <None Include="ActivosFijosDataSet.xsc">
+      <DependentUpon>ActivosFijosDataSet.xsd</DependentUpon>
     </None>
-    <None Include="ActivosFijosDataSet2.xsd">
+    <None Include="ActivosFijosDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ActivosFijosDataSet2.Designer.cs</LastGenOutput>
+      <LastGenOutput>ActivosFijosDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ActivosFijosDataSet2.xss">
-      <DependentUpon>ActivosFijosDataSet2.xsd</DependentUpon>
+    <None Include="ActivosFijosDataSet.xss">
+      <DependentUpon>ActivosFijosDataSet.xsd</DependentUpon>
     </None>
     <None Include="app.config" />
     <None Include="img\actualizar.jpg" />
