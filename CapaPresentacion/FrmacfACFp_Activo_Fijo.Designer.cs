@@ -42,6 +42,7 @@
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripImportar = new System.Windows.Forms.ToolStripButton();
             this.toolStripBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
@@ -49,6 +50,11 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox2 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.dtpACFfincorporacion = new System.Windows.Forms.DateTimePicker();
+            this.dtpACFfechaordencompra = new System.Windows.Forms.DateTimePicker();
+            this.dtpACFfechanotaingreso = new System.Windows.Forms.DateTimePicker();
+            this.dtpACFfechacomprobante = new System.Windows.Forms.DateTimePicker();
+            this.dtpACFfmovimiento = new System.Windows.Forms.DateTimePicker();
             this.txtACFord41 = new System.Windows.Forms.TextBox();
             this.txtACFobservacion = new System.Windows.Forms.TextBox();
             this.txtACFobra = new System.Windows.Forms.TextBox();
@@ -66,6 +72,8 @@
             this.txtACFfcapitalizacion = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.cboAMBid = new System.Windows.Forms.ComboBox();
+            this.cboANLKL = new System.Windows.Forms.ComboBox();
             this.txtACFvutiltribanio = new System.Windows.Forms.TextBox();
             this.txtACFvutiltribdia = new System.Windows.Forms.TextBox();
             this.txtACFvalortrib = new System.Windows.Forms.TextBox();
@@ -86,6 +94,16 @@
             this.label23 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox4 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.cboUBEid = new System.Windows.Forms.ComboBox();
+            this.cboKOSTL = new System.Windows.Forms.ComboBox();
+            this.cboBLART = new System.Windows.Forms.ComboBox();
+            this.cboLIFNR = new System.Windows.Forms.ComboBox();
+            this.cboCMPid = new System.Windows.Forms.ComboBox();
+            this.cboMVMid = new System.Windows.Forms.ComboBox();
+            this.cboCSTid = new System.Windows.Forms.ComboBox();
+            this.cboPERNR = new System.Windows.Forms.ComboBox();
+            this.cboSEGMENT = new System.Windows.Forms.ComboBox();
+            this.cboBUKRS = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -98,6 +116,7 @@
             this.label42 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox5 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.cboVNRid = new System.Windows.Forms.ComboBox();
             this.txtACFdepacuniif = new System.Windows.Forms.TextBox();
             this.txtACFdepacutrib = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
@@ -106,6 +125,7 @@
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.cboV_T087U_ANLUE = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -124,36 +144,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.txtACFvalorniif = new System.Windows.Forms.TextBox();
             this.txtACFvutilniifdia = new System.Windows.Forms.TextBox();
             this.txtACFfactorniif = new System.Windows.Forms.TextBox();
             this.txtACFfactortrib = new System.Windows.Forms.TextBox();
-            this.cboBUKRS = new System.Windows.Forms.ComboBox();
-            this.cboSEGMENT = new System.Windows.Forms.ComboBox();
-            this.cboANLKL = new System.Windows.Forms.ComboBox();
-            this.cboPERNR = new System.Windows.Forms.ComboBox();
-            this.cboCSTid = new System.Windows.Forms.ComboBox();
-            this.cboMVMid = new System.Windows.Forms.ComboBox();
-            this.cboVNRid = new System.Windows.Forms.ComboBox();
-            this.cboCMPid = new System.Windows.Forms.ComboBox();
-            this.cboLIFNR = new System.Windows.Forms.ComboBox();
-            this.cboBLART = new System.Windows.Forms.ComboBox();
-            this.cboKOSTL = new System.Windows.Forms.ComboBox();
-            this.cboAMBid = new System.Windows.Forms.ComboBox();
-            this.cboUBEid = new System.Windows.Forms.ComboBox();
-            this.cboV_T087U_ANLUE = new System.Windows.Forms.ComboBox();
-            this.dtpACFfmovimiento = new System.Windows.Forms.DateTimePicker();
-            this.dtpACFfechacomprobante = new System.Windows.Forms.DateTimePicker();
-            this.dtpACFfechanotaingreso = new System.Windows.Forms.DateTimePicker();
-            this.dtpACFfechaordencompra = new System.Windows.Forms.DateTimePicker();
-            this.dtpACFfincorporacion = new System.Windows.Forms.DateTimePicker();
-=======
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.toolStripImportar = new System.Windows.Forms.ToolStripButton();
->>>>>>> b609767f57c03af5303a6105e5432aed640c34f7
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -337,6 +331,18 @@
             this.toolStripUltimo.Text = "Ultimo";
             this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // toolStripImportar
+            // 
+            this.toolStripImportar.Image = global::CapaPresentacion.Properties.Resources.AppMenuClose;
+            this.toolStripImportar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImportar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripImportar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripImportar.Name = "toolStripImportar";
+            this.toolStripImportar.Size = new System.Drawing.Size(57, 64);
+            this.toolStripImportar.Text = "Importar";
+            this.toolStripImportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripImportar.Click += new System.EventHandler(this.toolStripImportar_Click);
+            // 
             // toolStripBuscar
             // 
             this.toolStripBuscar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBuscar.Image")));
@@ -435,6 +441,51 @@
             this.kryptonGroupBox2.Panel.Controls.Add(this.txtACFfcapitalizacion);
             this.kryptonGroupBox2.Size = new System.Drawing.Size(692, 186);
             this.kryptonGroupBox2.TabIndex = 134;
+            // 
+            // dtpACFfincorporacion
+            // 
+            this.dtpACFfincorporacion.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfincorporacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfincorporacion.Location = new System.Drawing.Point(507, 13);
+            this.dtpACFfincorporacion.Name = "dtpACFfincorporacion";
+            this.dtpACFfincorporacion.Size = new System.Drawing.Size(171, 20);
+            this.dtpACFfincorporacion.TabIndex = 152;
+            // 
+            // dtpACFfechaordencompra
+            // 
+            this.dtpACFfechaordencompra.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfechaordencompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfechaordencompra.Location = new System.Drawing.Point(156, 139);
+            this.dtpACFfechaordencompra.Name = "dtpACFfechaordencompra";
+            this.dtpACFfechaordencompra.Size = new System.Drawing.Size(171, 20);
+            this.dtpACFfechaordencompra.TabIndex = 151;
+            // 
+            // dtpACFfechanotaingreso
+            // 
+            this.dtpACFfechanotaingreso.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfechanotaingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(156, 107);
+            this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
+            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(171, 20);
+            this.dtpACFfechanotaingreso.TabIndex = 150;
+            // 
+            // dtpACFfechacomprobante
+            // 
+            this.dtpACFfechacomprobante.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfechacomprobante.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfechacomprobante.Location = new System.Drawing.Point(156, 80);
+            this.dtpACFfechacomprobante.Name = "dtpACFfechacomprobante";
+            this.dtpACFfechacomprobante.Size = new System.Drawing.Size(171, 20);
+            this.dtpACFfechacomprobante.TabIndex = 149;
+            // 
+            // dtpACFfmovimiento
+            // 
+            this.dtpACFfmovimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfmovimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfmovimiento.Location = new System.Drawing.Point(156, 46);
+            this.dtpACFfmovimiento.Name = "dtpACFfmovimiento";
+            this.dtpACFfmovimiento.Size = new System.Drawing.Size(171, 20);
+            this.dtpACFfmovimiento.TabIndex = 148;
             // 
             // txtACFord41
             // 
@@ -608,6 +659,22 @@
             this.kryptonGroupBox3.Panel.Controls.Add(this.label23);
             this.kryptonGroupBox3.Size = new System.Drawing.Size(693, 186);
             this.kryptonGroupBox3.TabIndex = 134;
+            // 
+            // cboAMBid
+            // 
+            this.cboAMBid.FormattingEnabled = true;
+            this.cboAMBid.Location = new System.Drawing.Point(508, 104);
+            this.cboAMBid.Name = "cboAMBid";
+            this.cboAMBid.Size = new System.Drawing.Size(171, 21);
+            this.cboAMBid.TabIndex = 151;
+            // 
+            // cboANLKL
+            // 
+            this.cboANLKL.FormattingEnabled = true;
+            this.cboANLKL.Location = new System.Drawing.Point(508, 133);
+            this.cboANLKL.Name = "cboANLKL";
+            this.cboANLKL.Size = new System.Drawing.Size(171, 21);
+            this.cboANLKL.TabIndex = 150;
             // 
             // txtACFvutiltribanio
             // 
@@ -804,6 +871,86 @@
             this.kryptonGroupBox4.Size = new System.Drawing.Size(693, 186);
             this.kryptonGroupBox4.TabIndex = 135;
             // 
+            // cboUBEid
+            // 
+            this.cboUBEid.FormattingEnabled = true;
+            this.cboUBEid.Location = new System.Drawing.Point(508, 133);
+            this.cboUBEid.Name = "cboUBEid";
+            this.cboUBEid.Size = new System.Drawing.Size(171, 21);
+            this.cboUBEid.TabIndex = 156;
+            // 
+            // cboKOSTL
+            // 
+            this.cboKOSTL.FormattingEnabled = true;
+            this.cboKOSTL.Location = new System.Drawing.Point(161, 132);
+            this.cboKOSTL.Name = "cboKOSTL";
+            this.cboKOSTL.Size = new System.Drawing.Size(171, 21);
+            this.cboKOSTL.TabIndex = 155;
+            // 
+            // cboBLART
+            // 
+            this.cboBLART.FormattingEnabled = true;
+            this.cboBLART.Location = new System.Drawing.Point(161, 12);
+            this.cboBLART.Name = "cboBLART";
+            this.cboBLART.Size = new System.Drawing.Size(171, 21);
+            this.cboBLART.TabIndex = 154;
+            // 
+            // cboLIFNR
+            // 
+            this.cboLIFNR.FormattingEnabled = true;
+            this.cboLIFNR.Location = new System.Drawing.Point(508, 12);
+            this.cboLIFNR.Name = "cboLIFNR";
+            this.cboLIFNR.Size = new System.Drawing.Size(171, 21);
+            this.cboLIFNR.TabIndex = 153;
+            // 
+            // cboCMPid
+            // 
+            this.cboCMPid.FormattingEnabled = true;
+            this.cboCMPid.Location = new System.Drawing.Point(161, 77);
+            this.cboCMPid.Name = "cboCMPid";
+            this.cboCMPid.Size = new System.Drawing.Size(171, 21);
+            this.cboCMPid.TabIndex = 152;
+            // 
+            // cboMVMid
+            // 
+            this.cboMVMid.FormattingEnabled = true;
+            this.cboMVMid.Location = new System.Drawing.Point(508, 43);
+            this.cboMVMid.Name = "cboMVMid";
+            this.cboMVMid.Size = new System.Drawing.Size(171, 21);
+            this.cboMVMid.TabIndex = 151;
+            // 
+            // cboCSTid
+            // 
+            this.cboCSTid.FormattingEnabled = true;
+            this.cboCSTid.Location = new System.Drawing.Point(161, 104);
+            this.cboCSTid.Name = "cboCSTid";
+            this.cboCSTid.Size = new System.Drawing.Size(171, 21);
+            this.cboCSTid.TabIndex = 150;
+            // 
+            // cboPERNR
+            // 
+            this.cboPERNR.FormattingEnabled = true;
+            this.cboPERNR.Location = new System.Drawing.Point(508, 75);
+            this.cboPERNR.Name = "cboPERNR";
+            this.cboPERNR.Size = new System.Drawing.Size(171, 21);
+            this.cboPERNR.TabIndex = 149;
+            // 
+            // cboSEGMENT
+            // 
+            this.cboSEGMENT.FormattingEnabled = true;
+            this.cboSEGMENT.Location = new System.Drawing.Point(508, 104);
+            this.cboSEGMENT.Name = "cboSEGMENT";
+            this.cboSEGMENT.Size = new System.Drawing.Size(171, 21);
+            this.cboSEGMENT.TabIndex = 148;
+            // 
+            // cboBUKRS
+            // 
+            this.cboBUKRS.FormattingEnabled = true;
+            this.cboBUKRS.Location = new System.Drawing.Point(161, 46);
+            this.cboBUKRS.Name = "cboBUKRS";
+            this.cboBUKRS.Size = new System.Drawing.Size(171, 21);
+            this.cboBUKRS.TabIndex = 147;
+            // 
             // label33
             // 
             this.label33.AutoSize = true;
@@ -921,6 +1068,14 @@
             this.kryptonGroupBox5.Size = new System.Drawing.Size(693, 186);
             this.kryptonGroupBox5.TabIndex = 136;
             // 
+            // cboVNRid
+            // 
+            this.cboVNRid.FormattingEnabled = true;
+            this.cboVNRid.Location = new System.Drawing.Point(205, 8);
+            this.cboVNRid.Name = "cboVNRid";
+            this.cboVNRid.Size = new System.Drawing.Size(171, 21);
+            this.cboVNRid.TabIndex = 150;
+            // 
             // txtACFdepacuniif
             // 
             this.txtACFdepacuniif.Location = new System.Drawing.Point(205, 76);
@@ -992,6 +1147,14 @@
             this.kryptonGroupBox1.Panel.Controls.Add(this.txtACFid);
             this.kryptonGroupBox1.Size = new System.Drawing.Size(362, 186);
             this.kryptonGroupBox1.TabIndex = 133;
+            // 
+            // cboV_T087U_ANLUE
+            // 
+            this.cboV_T087U_ANLUE.FormattingEnabled = true;
+            this.cboV_T087U_ANLUE.Location = new System.Drawing.Point(161, 38);
+            this.cboV_T087U_ANLUE.Name = "cboV_T087U_ANLUE";
+            this.cboV_T087U_ANLUE.Size = new System.Drawing.Size(171, 21);
+            this.cboV_T087U_ANLUE.TabIndex = 155;
             // 
             // label6
             // 
@@ -1172,7 +1335,6 @@
             this.txtACFfactorniif.Size = new System.Drawing.Size(187, 20);
             this.txtACFfactorniif.TabIndex = 145;
             // 
-<<<<<<< HEAD
             // txtACFfactortrib
             // 
             this.txtACFfactortrib.Location = new System.Drawing.Point(547, 269);
@@ -1180,176 +1342,6 @@
             this.txtACFfactortrib.Name = "txtACFfactortrib";
             this.txtACFfactortrib.Size = new System.Drawing.Size(187, 20);
             this.txtACFfactortrib.TabIndex = 146;
-            // 
-            // cboBUKRS
-            // 
-            this.cboBUKRS.FormattingEnabled = true;
-            this.cboBUKRS.Location = new System.Drawing.Point(161, 46);
-            this.cboBUKRS.Name = "cboBUKRS";
-            this.cboBUKRS.Size = new System.Drawing.Size(171, 21);
-            this.cboBUKRS.TabIndex = 147;
-            // 
-            // cboSEGMENT
-            // 
-            this.cboSEGMENT.FormattingEnabled = true;
-            this.cboSEGMENT.Location = new System.Drawing.Point(508, 104);
-            this.cboSEGMENT.Name = "cboSEGMENT";
-            this.cboSEGMENT.Size = new System.Drawing.Size(171, 21);
-            this.cboSEGMENT.TabIndex = 148;
-            // 
-            // cboANLKL
-            // 
-            this.cboANLKL.FormattingEnabled = true;
-            this.cboANLKL.Location = new System.Drawing.Point(508, 133);
-            this.cboANLKL.Name = "cboANLKL";
-            this.cboANLKL.Size = new System.Drawing.Size(171, 21);
-            this.cboANLKL.TabIndex = 150;
-            // 
-            // cboPERNR
-            // 
-            this.cboPERNR.FormattingEnabled = true;
-            this.cboPERNR.Location = new System.Drawing.Point(508, 75);
-            this.cboPERNR.Name = "cboPERNR";
-            this.cboPERNR.Size = new System.Drawing.Size(171, 21);
-            this.cboPERNR.TabIndex = 149;
-            // 
-            // cboCSTid
-            // 
-            this.cboCSTid.FormattingEnabled = true;
-            this.cboCSTid.Location = new System.Drawing.Point(161, 104);
-            this.cboCSTid.Name = "cboCSTid";
-            this.cboCSTid.Size = new System.Drawing.Size(171, 21);
-            this.cboCSTid.TabIndex = 150;
-            // 
-            // cboMVMid
-            // 
-            this.cboMVMid.FormattingEnabled = true;
-            this.cboMVMid.Location = new System.Drawing.Point(508, 43);
-            this.cboMVMid.Name = "cboMVMid";
-            this.cboMVMid.Size = new System.Drawing.Size(171, 21);
-            this.cboMVMid.TabIndex = 151;
-            // 
-            // cboVNRid
-            // 
-            this.cboVNRid.FormattingEnabled = true;
-            this.cboVNRid.Location = new System.Drawing.Point(205, 8);
-            this.cboVNRid.Name = "cboVNRid";
-            this.cboVNRid.Size = new System.Drawing.Size(171, 21);
-            this.cboVNRid.TabIndex = 150;
-            // 
-            // cboCMPid
-            // 
-            this.cboCMPid.FormattingEnabled = true;
-            this.cboCMPid.Location = new System.Drawing.Point(161, 77);
-            this.cboCMPid.Name = "cboCMPid";
-            this.cboCMPid.Size = new System.Drawing.Size(171, 21);
-            this.cboCMPid.TabIndex = 152;
-            // 
-            // cboLIFNR
-            // 
-            this.cboLIFNR.FormattingEnabled = true;
-            this.cboLIFNR.Location = new System.Drawing.Point(508, 12);
-            this.cboLIFNR.Name = "cboLIFNR";
-            this.cboLIFNR.Size = new System.Drawing.Size(171, 21);
-            this.cboLIFNR.TabIndex = 153;
-            // 
-            // cboBLART
-            // 
-            this.cboBLART.FormattingEnabled = true;
-            this.cboBLART.Location = new System.Drawing.Point(161, 12);
-            this.cboBLART.Name = "cboBLART";
-            this.cboBLART.Size = new System.Drawing.Size(171, 21);
-            this.cboBLART.TabIndex = 154;
-            // 
-            // cboKOSTL
-            // 
-            this.cboKOSTL.FormattingEnabled = true;
-            this.cboKOSTL.Location = new System.Drawing.Point(161, 132);
-            this.cboKOSTL.Name = "cboKOSTL";
-            this.cboKOSTL.Size = new System.Drawing.Size(171, 21);
-            this.cboKOSTL.TabIndex = 155;
-            // 
-            // cboAMBid
-            // 
-            this.cboAMBid.FormattingEnabled = true;
-            this.cboAMBid.Location = new System.Drawing.Point(508, 104);
-            this.cboAMBid.Name = "cboAMBid";
-            this.cboAMBid.Size = new System.Drawing.Size(171, 21);
-            this.cboAMBid.TabIndex = 151;
-            // 
-            // cboUBEid
-            // 
-            this.cboUBEid.FormattingEnabled = true;
-            this.cboUBEid.Location = new System.Drawing.Point(508, 133);
-            this.cboUBEid.Name = "cboUBEid";
-            this.cboUBEid.Size = new System.Drawing.Size(171, 21);
-            this.cboUBEid.TabIndex = 156;
-            // 
-            // cboV_T087U_ANLUE
-            // 
-            this.cboV_T087U_ANLUE.FormattingEnabled = true;
-            this.cboV_T087U_ANLUE.Location = new System.Drawing.Point(161, 38);
-            this.cboV_T087U_ANLUE.Name = "cboV_T087U_ANLUE";
-            this.cboV_T087U_ANLUE.Size = new System.Drawing.Size(171, 21);
-            this.cboV_T087U_ANLUE.TabIndex = 155;
-            // 
-            // dtpACFfmovimiento
-            // 
-            this.dtpACFfmovimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpACFfmovimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpACFfmovimiento.Location = new System.Drawing.Point(156, 46);
-            this.dtpACFfmovimiento.Name = "dtpACFfmovimiento";
-            this.dtpACFfmovimiento.Size = new System.Drawing.Size(171, 20);
-            this.dtpACFfmovimiento.TabIndex = 148;
-            // 
-            // dtpACFfechacomprobante
-            // 
-            this.dtpACFfechacomprobante.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpACFfechacomprobante.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpACFfechacomprobante.Location = new System.Drawing.Point(156, 80);
-            this.dtpACFfechacomprobante.Name = "dtpACFfechacomprobante";
-            this.dtpACFfechacomprobante.Size = new System.Drawing.Size(171, 20);
-            this.dtpACFfechacomprobante.TabIndex = 149;
-            // 
-            // dtpACFfechanotaingreso
-            // 
-            this.dtpACFfechanotaingreso.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpACFfechanotaingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(156, 107);
-            this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
-            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(171, 20);
-            this.dtpACFfechanotaingreso.TabIndex = 150;
-            // 
-            // dtpACFfechaordencompra
-            // 
-            this.dtpACFfechaordencompra.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpACFfechaordencompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpACFfechaordencompra.Location = new System.Drawing.Point(156, 139);
-            this.dtpACFfechaordencompra.Name = "dtpACFfechaordencompra";
-            this.dtpACFfechaordencompra.Size = new System.Drawing.Size(171, 20);
-            this.dtpACFfechaordencompra.TabIndex = 151;
-            // 
-            // dtpACFfincorporacion
-            // 
-            this.dtpACFfincorporacion.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpACFfincorporacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpACFfincorporacion.Location = new System.Drawing.Point(507, 13);
-            this.dtpACFfincorporacion.Name = "dtpACFfincorporacion";
-            this.dtpACFfincorporacion.Size = new System.Drawing.Size(171, 20);
-            this.dtpACFfincorporacion.TabIndex = 152;
-=======
-            // toolStripImportar
-            // 
-            this.toolStripImportar.Image = global::CapaPresentacion.Properties.Resources.AppMenuClose;
-            this.toolStripImportar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripImportar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripImportar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripImportar.Name = "toolStripImportar";
-            this.toolStripImportar.Size = new System.Drawing.Size(57, 51);
-            this.toolStripImportar.Text = "Importar";
-            this.toolStripImportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripImportar.Click += new System.EventHandler(this.toolStripImportar_Click);
->>>>>>> b609767f57c03af5303a6105e5432aed640c34f7
             // 
             // FrmacfACFp_Activo_Fijo
             // 
@@ -1514,7 +1506,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-<<<<<<< HEAD
+
         private System.Windows.Forms.TextBox txtACFfactortrib;
         private System.Windows.Forms.DateTimePicker dtpACFfincorporacion;
         private System.Windows.Forms.DateTimePicker dtpACFfechaordencompra;
@@ -1535,8 +1527,6 @@
         private System.Windows.Forms.ComboBox cboBUKRS;
         private System.Windows.Forms.ComboBox cboVNRid;
         private System.Windows.Forms.ComboBox cboV_T087U_ANLUE;
-=======
         private System.Windows.Forms.ToolStripButton toolStripImportar;
->>>>>>> b609767f57c03af5303a6105e5432aed640c34f7
     }
 }

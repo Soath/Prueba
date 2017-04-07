@@ -245,11 +245,26 @@ namespace CapaPresentacion
             this.cboBUKRS.DataSource    = NbdiSOCpSociedades.Mostrar();
             this.cboBUKRS.ValueMember = "BUKRS";
             this.cboBUKRS.SelectedIndex = 0;
-            //this.cboSEGMENT.Text
+            //this.cboSEGMENT.DataSource    =   
+            //this.cboSEGMENT.ValueMenber   =
+            //this.cboSEGMENT.SelectedIndex =
+
             //this.cboANLKL.Text
+            //this.cboANLKL.Text
+            //this.cboANLKL.Text
+
             //this.cboPERNR.Text
+            //this.cboPERNR.Text
+            //this.cboPERNR.Text
+
             //this.cboCSTid.Text
+            //this.cboCSTid.Text
+            //this.cboCSTid.Text
+
             //this.cboMVMid.Text
+            //this.cboMVMid.Text
+            //this.cboMVMid.Text
+
             //this.cboVNRid.Text
             //this.cboCMPid.Text
             //this.cboLIFNR.Text
@@ -257,7 +272,10 @@ namespace CapaPresentacion
             //this.cboKOSTL.Text
             //this.cboAMBid.Text
             //this.cboUBEid.Text
-            //this.cboV_T087U_ANLUE.Text
+
+            this.cboV_T087U_ANLUE.DataSource    = NacfSPNt_Supranumero.Mostrar();
+            this.cboV_T087U_ANLUE.ValueMember = "V_T087U_ANLUE";
+            this.cboV_T087U_ANLUE.SelectedIndex = 0;
 
         }
         private void Top()
