@@ -239,11 +239,7 @@ namespace CapaPresentacion
             this.Activo = 1;
             this.tomaTab();
             this.Botones(true);
-
-            this.cboACFfactortrib.DataSource    = NacfESTt_Estado.Mostrar();
-            this.cboACFfactortrib.ValueMember   = "ESTestado";
-            this.cboACFfactortrib.SelectedIndex = 0;
-
+            
             this.cboBUKRS.DataSource    = NbdiSOCpSociedades.Mostrar();
             this.cboBUKRS.ValueMember = "BUKRS";
             this.cboBUKRS.SelectedIndex = 0;
