@@ -308,7 +308,7 @@
             this.kryptonGroupBox8.Panel.Controls.Add(this.txtKOSTL);
             this.kryptonGroupBox8.Panel.Controls.Add(this.txtVNRid);
             this.kryptonGroupBox8.Panel.Controls.Add(this.txtUBEid);
-            this.kryptonGroupBox8.Size = new System.Drawing.Size(362, 186);
+            this.kryptonGroupBox8.Size = new System.Drawing.Size(392, 186);
             this.kryptonGroupBox8.TabIndex = 234;
             // 
             // lblUBEobra
@@ -358,7 +358,7 @@
             // 
             // txtUBEobra
             // 
-            this.txtUBEobra.Location = new System.Drawing.Point(161, 133);
+            this.txtUBEobra.Location = new System.Drawing.Point(198, 133);
             this.txtUBEobra.Margin = new System.Windows.Forms.Padding(2);
             this.txtUBEobra.Name = "txtUBEobra";
             this.txtUBEobra.Size = new System.Drawing.Size(179, 20);
@@ -366,7 +366,7 @@
             // 
             // txtUBEcodigogis
             // 
-            this.txtUBEcodigogis.Location = new System.Drawing.Point(161, 107);
+            this.txtUBEcodigogis.Location = new System.Drawing.Point(198, 107);
             this.txtUBEcodigogis.Margin = new System.Windows.Forms.Padding(2);
             this.txtUBEcodigogis.Name = "txtUBEcodigogis";
             this.txtUBEcodigogis.Size = new System.Drawing.Size(179, 20);
@@ -374,7 +374,7 @@
             // 
             // txtKOSTL
             // 
-            this.txtKOSTL.Location = new System.Drawing.Point(161, 76);
+            this.txtKOSTL.Location = new System.Drawing.Point(198, 76);
             this.txtKOSTL.Margin = new System.Windows.Forms.Padding(2);
             this.txtKOSTL.Name = "txtKOSTL";
             this.txtKOSTL.Size = new System.Drawing.Size(179, 20);
@@ -382,7 +382,7 @@
             // 
             // txtVNRid
             // 
-            this.txtVNRid.Location = new System.Drawing.Point(161, 42);
+            this.txtVNRid.Location = new System.Drawing.Point(198, 42);
             this.txtVNRid.Margin = new System.Windows.Forms.Padding(2);
             this.txtVNRid.Name = "txtVNRid";
             this.txtVNRid.Size = new System.Drawing.Size(179, 20);
@@ -390,7 +390,7 @@
             // 
             // txtUBEid
             // 
-            this.txtUBEid.Location = new System.Drawing.Point(161, 13);
+            this.txtUBEid.Location = new System.Drawing.Point(198, 13);
             this.txtUBEid.Margin = new System.Windows.Forms.Padding(2);
             this.txtUBEid.Name = "txtUBEid";
             this.txtUBEid.Size = new System.Drawing.Size(103, 20);
