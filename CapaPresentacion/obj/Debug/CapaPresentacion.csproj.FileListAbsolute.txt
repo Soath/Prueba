@@ -44,7 +44,6 @@ C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEditarLocal.resources
 C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMain.resources
 C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfACFp_Activo_Fijo.resources
-C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMVMReporte.resources
 C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
 C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl1.resources
 C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.UserControl2.resources
@@ -258,3 +257,5 @@ C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Pruebas.resources
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMVMReporteD.resources
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmExcel2.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmExcel2.resources
+C:\Users\Samael\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMVMReporteD.resources

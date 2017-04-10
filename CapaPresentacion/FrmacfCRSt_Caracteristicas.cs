@@ -21,5 +21,10 @@ namespace CapaPresentacion
         {
             
         }
+
+        private void FrmacfCRSt_Caracteristicas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

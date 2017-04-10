@@ -239,39 +239,62 @@ namespace CapaPresentacion
             this.Activo = 1;
             this.tomaTab();
             this.Botones(true);
+
             this.cboACFfactortrib.DataSource    = NacfESTt_Estado.Mostrar();
             this.cboACFfactortrib.ValueMember   = "ESTestado";
             this.cboACFfactortrib.SelectedIndex = 0;
+
             this.cboBUKRS.DataSource    = NbdiSOCpSociedades.Mostrar();
             this.cboBUKRS.ValueMember = "BUKRS";
             this.cboBUKRS.SelectedIndex = 0;
-            //this.cboSEGMENT.DataSource    =   
-            //this.cboSEGMENT.ValueMenber   =
-            //this.cboSEGMENT.SelectedIndex =
 
-            //this.cboANLKL.Text
-            //this.cboANLKL.Text
-            //this.cboANLKL.Text
+           this.cboSEGMENT.DataSource = NbdiSEGpSegmento.Mostrar();
+           this.cboSEGMENT.ValueMember = "SEGMENT";
+           this.cboSEGMENT.SelectedIndex = 0;
 
-            //this.cboPERNR.Text
-            //this.cboPERNR.Text
-            //this.cboPERNR.Text
+           this.cboANLKL.DataSource = NbdiCAFpClaseDeActivoFijo.Mostrar();
+           this.cboANLKL.ValueMember = "ANLKL";
+           this.cboANLKL.SelectedIndex = 0;
 
-            //this.cboCSTid.Text
-            //this.cboCSTid.Text
-            //this.cboCSTid.Text
+           this.cboPERNR.DataSource = NbdiXPEpExtraccionSAP_Personal.Mostrar();
+           this.cboPERNR.ValueMember = "PERNR";
+           this.cboPERNR.SelectedIndex = 0;
 
-            //this.cboMVMid.Text
-            //this.cboMVMid.Text
-            //this.cboMVMid.Text
+           this.cboCSTid.DataSource = NacfCSTt_Costo.Mostrar();
+           this.cboCSTid.ValueMember = "CSTid";
+           this.cboCSTid.SelectedIndex = 0;
 
-            //this.cboVNRid.Text
-            //this.cboCMPid.Text
-            //this.cboLIFNR.Text
-            //this.cboBLART.Text
-            //this.cboKOSTL.Text
-            //this.cboAMBid.Text
-            //this.cboUBEid.Text
+           this.cboMVMid.DataSource = NacfMVMt_MotivoMovimiento.Mostrar();
+           this.cboMVMid.ValueMember = "MVMid";
+           this.cboMVMid.SelectedIndex = 0;
+
+           this.cboVNRid.DataSource = NacfVNRt_VNR.Mostrar();
+           this.cboVNRid.ValueMember = "VNRid";
+           this.cboVNRid.SelectedIndex = 0;
+
+           this.cboCMPid.DataSource = NacfCMPt_Componente.Mostrar();
+           this.cboCMPid.ValueMember = "CMPid";
+           this.cboCMPid.SelectedIndex = 0;
+
+           this.cboLIFNR.DataSource = NbdiPRVpProveedor.Mostrar();
+           this.cboLIFNR.ValueMember = "LIFNR";
+           this.cboLIFNR.SelectedIndex = 0;
+
+           this.cboBLART.DataSource = NbdiCDDpClasesDeDocumento.Mostrar();
+           this.cboBLART.ValueMember = "BLART";
+           this.cboBLART.SelectedIndex = 0;
+
+           this.cboKOSTL.DataSource = NbdiXCCpExtraccionSAP_CentroCosto.Mostrar();
+           this.cboKOSTL.ValueMember = "KOSTL";
+           this.cboKOSTL.SelectedIndex = 0;
+
+           this.cboAMBid.DataSource = NacfAMBt_Ambiente.Mostrar();
+           this.cboAMBid.ValueMember = "AMBid";
+           this.cboAMBid.SelectedIndex = 0;
+
+           this.cboUBEid.DataSource = NacfUBEt_UbicacionElectrica.Mostrar();
+           this.cboUBEid.ValueMember = "UBEid";
+           this.cboUBEid.SelectedIndex = 0;
 
             this.cboV_T087U_ANLUE.DataSource    = NacfSPNt_Supranumero.Mostrar();
             this.cboV_T087U_ANLUE.ValueMember = "V_T087U_ANLUE";
@@ -661,7 +684,7 @@ namespace CapaPresentacion
             MessageBox.Show("insertar");
             try
             {
-                /*Rta = NacfACFp_Activo_Fijo.Insertar(
+                Rta = NacfACFp_Activo_Fijo.Insertar(
                       this.txtACFid.Text
                     , this.cboBUKRS.Text
                     , this.cboSEGMENT.Text
@@ -706,8 +729,8 @@ namespace CapaPresentacion
                     , this.cboUBEid.Text
                     , this.dtpACFfechacomprobante.Text
                     , this.cboV_T087U_ANLUE.Text
-                    );*/
-                Rta = NacfACFp_Activo_Fijo.Insertar(this.txtACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
+                    );
+               // Rta = NacfACFp_Activo_Fijo.Insertar(this.txtACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
 
 
                 if (Rta.Equals("OK"))
