@@ -636,7 +636,7 @@
             this.toolStripTextBox1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(774, 67);
+            this.toolStrip1.Size = new System.Drawing.Size(778, 67);
             this.toolStrip1.TabIndex = 221;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -820,7 +820,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 541);
+            this.ClientSize = new System.Drawing.Size(778, 596);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.kryptonGroupBox8);
             this.Controls.Add(this.txtACFtc);
@@ -839,6 +839,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmacfTRNt_terrenodetallecs";
             this.Text = "FrmacfTRNt_terrenodetallecs";
+            this.Load += new System.EventHandler(this.FrmacfTRNt_terrenodetallecs_Load);
             this.tabControl2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();

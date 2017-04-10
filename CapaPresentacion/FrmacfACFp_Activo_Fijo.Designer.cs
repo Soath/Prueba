@@ -51,7 +51,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dtpACFfincorporacion = new System.Windows.Forms.DateTimePicker();
             this.dtpACFfechaordencompra = new System.Windows.Forms.DateTimePicker();
-            this.dtpACFfechanotaingreso = new System.Windows.Forms.DateTimePicker();
             this.dtpACFfechacomprobante = new System.Windows.Forms.DateTimePicker();
             this.dtpACFfmovimiento = new System.Windows.Forms.DateTimePicker();
             this.txtACFord41 = new System.Windows.Forms.TextBox();
@@ -271,8 +270,9 @@
             this.lblCRSpuertos = new System.Windows.Forms.Label();
             this.lblCRScapacidad = new System.Windows.Forms.Label();
             this.lblCRSresolucion = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnTerreno_Edificaciones = new System.Windows.Forms.Button();
+            this.btnUbicacion_electrica = new System.Windows.Forms.Button();
+            this.dtpACFfechanotaingreso = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -555,15 +555,6 @@
             this.dtpACFfechaordencompra.Size = new System.Drawing.Size(140, 20);
             this.dtpACFfechaordencompra.TabIndex = 151;
             // 
-            // dtpACFfechanotaingreso
-            // 
-            this.dtpACFfechanotaingreso.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpACFfechanotaingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(453, 196);
-            this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
-            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(140, 20);
-            this.dtpACFfechanotaingreso.TabIndex = 150;
-            // 
             // dtpACFfechacomprobante
             // 
             this.dtpACFfechacomprobante.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
@@ -714,7 +705,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.btnTerreno_Edificaciones);
             this.tabPage2.Controls.Add(this.txtCRSobservacion);
             this.tabPage2.Controls.Add(this.txtCRSfadqpredio);
             this.tabPage2.Controls.Add(this.txtCRScodigoagua);
@@ -942,7 +933,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.btnUbicacion_electrica);
             this.tabPage3.Controls.Add(this.txtCRScalle);
             this.tabPage3.Controls.Add(this.txtCRSurbanizacion);
             this.tabPage3.Controls.Add(this.txtCRScentropoblado);
@@ -2534,29 +2525,40 @@
             this.lblCRSresolucion.TabIndex = 28;
             this.lblCRSresolucion.Text = "Resolucion";
             // 
-            // button1
+            // btnTerreno_Edificaciones
             // 
-            this.button1.Location = new System.Drawing.Point(644, 208);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 47);
-            this.button1.TabIndex = 71;
-            this.button1.Text = "Detalles de Edificaciones";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTerreno_Edificaciones.Location = new System.Drawing.Point(644, 208);
+            this.btnTerreno_Edificaciones.Name = "btnTerreno_Edificaciones";
+            this.btnTerreno_Edificaciones.Size = new System.Drawing.Size(116, 47);
+            this.btnTerreno_Edificaciones.TabIndex = 71;
+            this.btnTerreno_Edificaciones.Text = "Detalles de Edificaciones";
+            this.btnTerreno_Edificaciones.UseVisualStyleBackColor = true;
+            this.btnTerreno_Edificaciones.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnUbicacion_electrica
             // 
-            this.button2.Location = new System.Drawing.Point(309, 200);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 37);
-            this.button2.TabIndex = 72;
-            this.button2.Text = "Ubicacion Eléctrica";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUbicacion_electrica.Location = new System.Drawing.Point(503, 179);
+            this.btnUbicacion_electrica.Name = "btnUbicacion_electrica";
+            this.btnUbicacion_electrica.Size = new System.Drawing.Size(116, 37);
+            this.btnUbicacion_electrica.TabIndex = 72;
+            this.btnUbicacion_electrica.Text = "Ubicacion Eléctrica";
+            this.btnUbicacion_electrica.UseVisualStyleBackColor = true;
+            this.btnUbicacion_electrica.Click += new System.EventHandler(this.btnUbicacion_electrica_Click);
+            // 
+            // dtpACFfechanotaingreso
+            // 
+            this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(454, 195);
+            this.dtpACFfechanotaingreso.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
+            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(140, 20);
+            this.dtpACFfechanotaingreso.TabIndex = 157;
             // 
             // FrmacfACFp_Activo_Fijo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1214, 812);
+            this.Controls.Add(this.dtpACFfechanotaingreso);
             this.Controls.Add(this.cboVNRid);
             this.Controls.Add(this.cboUBEid);
             this.Controls.Add(this.txtACFdepacuniif);
@@ -2589,7 +2591,6 @@
             this.Controls.Add(this.cboBUKRS);
             this.Controls.Add(this.txtACFfactortrib);
             this.Controls.Add(this.label38);
-            this.Controls.Add(this.dtpACFfechanotaingreso);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label40);
@@ -2768,7 +2769,6 @@
         private System.Windows.Forms.TextBox txtACFfactortrib;
         private System.Windows.Forms.DateTimePicker dtpACFfincorporacion;
         private System.Windows.Forms.DateTimePicker dtpACFfechaordencompra;
-        private System.Windows.Forms.DateTimePicker dtpACFfechanotaingreso;
         private System.Windows.Forms.DateTimePicker dtpACFfechacomprobante;
         private System.Windows.Forms.DateTimePicker dtpACFfmovimiento;
         private System.Windows.Forms.ComboBox cboAMBid;
@@ -2915,7 +2915,8 @@
         private System.Windows.Forms.Label lblCRSpuertos;
         private System.Windows.Forms.Label lblCRScapacidad;
         private System.Windows.Forms.Label lblCRSresolucion;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnTerreno_Edificaciones;
+        private System.Windows.Forms.Button btnUbicacion_electrica;
+        private System.Windows.Forms.TextBox dtpACFfechanotaingreso;
     }
 }

@@ -16,7 +16,6 @@ namespace CapaPresentacion
     //
     public partial class FrmacfACFp_Activo_Fijo : KryptonForm
     {
-
         int Activo = 1;
         int Graba = 0;
         public int idEditar = 0;
@@ -59,12 +58,9 @@ namespace CapaPresentacion
         //--------------------------------------------------------------------------------------------------	
         // insertar aqui todos los procedimientos para ABC	
         //--------------------------------------------------------------------------------------------------	
-
-
-
+        
         private void CheckAll(Control parent, bool value)
-        {
-           
+        {           
             foreach (Control currentControl in parent.Controls)
             {
                 if (currentControl is TextBox)
@@ -73,16 +69,13 @@ namespace CapaPresentacion
                     currentControl.Leave += Control_Leave;
                     currentControl.KeyPress += MoverFoco;
                 }
-
                 // Recurse if control contains other controls
                 if (currentControl.Controls.Count > 0)
                 {
                     CheckAll(currentControl, value);
                 }
             }
-        }
-
-    
+        }   
 
         void ctrl_LostFocus(object sender, EventArgs e)
         {
@@ -103,18 +96,17 @@ namespace CapaPresentacion
             if (e.KeyChar == 13)
             {
                 SendKeys.Send("{TAB}");
-
             }
         }
 
 
         private void Control_Click_Prev(object sender, EventArgs e)
             {
-                Prev(txtACFcuenta.Text);
+                Prev(txtACFid.Text);
             }
         private void Control_Click_Next(object sender, EventArgs e)
             {
-                Next(txtACFcuenta.Text);
+                Next(txtACFid.Text);
             }
         private void Control_Click_Top(object sender, EventArgs e)
             {
@@ -177,7 +169,6 @@ namespace CapaPresentacion
         private void MensajeOk(string mensaje)
         {
             MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
         }
         private void MensajeError(string mensaje)
         {
@@ -185,7 +176,6 @@ namespace CapaPresentacion
         }
         private void Botones(bool edo)
         {
-
             this.toolStripRefrescar.Visible = edo;
             this.toolStripAgregar.Visible = edo;
             this.toolStripEditar.Visible = edo;
@@ -202,12 +192,10 @@ namespace CapaPresentacion
             this.toolStripBuscar.Visible = edo;
             this.toolStripComboBox1.Visible = edo;
             this.toolStripTextBox1.Visible = edo;
-
         }
 
         private void BotonesSinReg(bool edo)
         {
-
             this.toolStripRefrescar.Enabled = edo;
             this.toolStripAgregar.Enabled = !edo;
             this.toolStripEditar.Enabled = edo;
@@ -221,13 +209,9 @@ namespace CapaPresentacion
             this.toolStripBuscar.Enabled = edo;
             this.toolStripComboBox1.Enabled = edo;
             this.toolStripTextBox1.Enabled = edo;
-
-
         }
 
-        private void OcultarColumnas()
-        {
-        }
+        private void OcultarColumnas()        {}
 
         private void mostrar()
         {
@@ -361,7 +345,6 @@ namespace CapaPresentacion
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
-
             }
             catch (Exception ex)
             {
@@ -500,7 +483,6 @@ namespace CapaPresentacion
                     //guardo datos en variables
                     //ACFid.Text = Convert.ToString(row["ACFid"]);
                     //ACFdescripcion2.Text = Convert.ToString(row["ACFdescripcion"]);
-
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
@@ -575,7 +557,6 @@ namespace CapaPresentacion
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
-
             }
             catch (Exception ex)
             {
@@ -606,7 +587,6 @@ namespace CapaPresentacion
             this.LimpiaCampos();
             this.Botones(false);
             //tabControl1.SelectedTab = tabPage2;
-
         }
 
         private void BotonEditar()
@@ -616,18 +596,14 @@ namespace CapaPresentacion
             this.Botones(false);
             EstadoText(this.Controls, false, true);
            // tabControl1.SelectedTab = tabPage2;
-            this.CargaDatos();
-           
+            this.CargaDatos();           
         }
         private void BotonEliminar()
         {
             this.borrauno();
             this.mostrar();
         }
-        private void BotonImprimir()
-        {
-
-        }
+        private void BotonImprimir()  {}
 
         private void BotonGuardar()
         {
@@ -659,13 +635,10 @@ namespace CapaPresentacion
 
         }
 
-        public void LimpiaCampos()
-        {
-        }
-        private void CargaDatos()
-        {
+        public void LimpiaCampos() {}
+        private void CargaDatos() 
+        {         
             idEditar = 0;
-
         }
         private bool validaCampos()
         {
@@ -727,11 +700,10 @@ namespace CapaPresentacion
                     , this.cboV_T087U_ANLUE.Text
                     );
                // Rta = NacfACFp_Activo_Fijo.Insertar(this.txtACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
-
-
+                
                 if (Rta.Equals("OK"))
                 {
-                    this.MensajeOk("Regsitro Acgregado Correctamente");
+                    this.MensajeOk("Regsitro Agregado Correctamente");
                 }
                 else
                 {
@@ -751,8 +723,7 @@ namespace CapaPresentacion
         {
             string Rta = string.Empty;
             try
-            {
-                
+            {                
                 Rta = NacfACFp_Activo_Fijo.Editar(
                       this.txtACFid.Text
                     , this.cboBUKRS.Text
@@ -810,13 +781,11 @@ namespace CapaPresentacion
                 {
                     this.MensajeError("Error al Actualizar Registro " + Rta);
                 }
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
-
         }
 
         //-----------------------------------------------------------------------------------	
@@ -844,7 +813,6 @@ namespace CapaPresentacion
 
             }
         }
-
         
         private void buscarNombre()
         {
@@ -918,7 +886,6 @@ namespace CapaPresentacion
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
-
             }
             catch (Exception ex)
             {
@@ -941,10 +908,7 @@ namespace CapaPresentacion
             this.mostrar();
         }
 
-        private void FrmPostres_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void FrmPostres_Load(object sender, EventArgs e) {}
 
         
         public void Control_Enter(object sender, EventArgs e)
@@ -960,7 +924,6 @@ namespace CapaPresentacion
 
         public static void EstadoText(Control.ControlCollection Controles, bool Limpiar, bool Enabled)
         {
-
             foreach (Control c in Controles)
             {
                 if (c.Parent.Enabled == true)
@@ -974,13 +937,10 @@ namespace CapaPresentacion
                             ComboBox cmb = (ComboBox)c;
                             if (cmb.Items.Count >= 0)
                             {
-
                                 cmb.Focus();
                                 //cmb.SelectedItem = cmb.Items[0];
                             }
-                        }
-
-                     
+                        }                                           
 
                         if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
                             c.Text = string.Empty;
@@ -992,9 +952,7 @@ namespace CapaPresentacion
                             c.Enabled = Enabled;
 
                         if (c.Tag.ToString().IndexOf("D") != -1)
-                            c.Enabled = false;
-
-          
+                            c.Enabled = false;                                  
                     }
                     else
                     {
@@ -1012,8 +970,6 @@ namespace CapaPresentacion
                         if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
                             ((CheckBox)c).Checked = false;
                     }
-
-
 
                     if (c is RadioButton)
                     {
@@ -1043,21 +999,25 @@ namespace CapaPresentacion
 
                         if (c.Tag.ToString().IndexOf("D") != -1)
                             c.Enabled = false;
-                    }
-
-                   
+                    }                   
                 }
             }
         }
 
-        private void toolStripAgregar_Click(object sender, EventArgs e)
-        {
+        private void toolStripAgregar_Click(object sender, EventArgs e) {}
 
+        private void toolStripImportar_Click(object sender, EventArgs e) {}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form FrmacfRNTt_terrenodetallecs = new FrmacfTRNt_terrenodetallecs();
+            FrmacfRNTt_terrenodetallecs.ShowDialog();
         }
 
-        private void toolStripImportar_Click(object sender, EventArgs e)
+        private void btnUbicacion_electrica_Click(object sender, EventArgs e)
         {
-
+            Form FrmacfUBEt_UbicacionElectrica = new FrmacfUBEt_UbicacionElectrica();
+            FrmacfUBEt_UbicacionElectrica.ShowDialog();
         }
 
 

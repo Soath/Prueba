@@ -724,6 +724,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmacfUBEt_UbicacionElectrica";
             this.Text = "FrmacfUBEt_UbicacionElectrica";
+            this.Load += new System.EventHandler(this.FrmacfUBEt_UbicacionElectrica_Load);
             this.tabControl2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
