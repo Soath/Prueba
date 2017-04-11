@@ -58,8 +58,6 @@
             this.ribbonButton10 = new System.Windows.Forms.RibbonButton();
             this.ribbonSeparator21 = new System.Windows.Forms.RibbonSeparator();
             this.ribbonButton36 = new System.Windows.Forms.RibbonButton();
-            this.ribbonSeparator22 = new System.Windows.Forms.RibbonSeparator();
-            this.ribbonButton37 = new System.Windows.Forms.RibbonButton();
             this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButton12 = new System.Windows.Forms.RibbonButton();
@@ -112,6 +110,8 @@
             this.ribbonPanel14 = new System.Windows.Forms.RibbonPanel();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.kryptonBorderEdge1 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
+            this.ribbonSeparator30 = new System.Windows.Forms.RibbonSeparator();
+            this.ribbonButton45 = new System.Windows.Forms.RibbonButton();
             this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,6 +188,8 @@
             this.ribbonPanel1.Items.Add(this.ribbonButton4);
             this.ribbonPanel1.Items.Add(this.ribbonSeparator20);
             this.ribbonPanel1.Items.Add(this.ribbonButton35);
+            this.ribbonPanel1.Items.Add(this.ribbonSeparator30);
+            this.ribbonPanel1.Items.Add(this.ribbonButton45);
             this.ribbonPanel1.Text = "Tablas del Sistema";
             // 
             // ribbonButton1
@@ -245,8 +247,6 @@
             this.ribbonPanel2.Items.Add(this.ribbonButton10);
             this.ribbonPanel2.Items.Add(this.ribbonSeparator21);
             this.ribbonPanel2.Items.Add(this.ribbonButton36);
-            this.ribbonPanel2.Items.Add(this.ribbonSeparator22);
-            this.ribbonPanel2.Items.Add(this.ribbonButton37);
             this.ribbonPanel2.Text = "Tablas Complementarias";
             // 
             // ribbonButton5
@@ -297,12 +297,6 @@
             this.ribbonButton36.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton36.SmallImage")));
             this.ribbonButton36.Text = "Clases de Documento";
             this.ribbonButton36.Click += new System.EventHandler(this.ribbonButton36_Click);
-            // 
-            // ribbonButton37
-            // 
-            this.ribbonButton37.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton37.Image")));
-            this.ribbonButton37.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton37.SmallImage")));
-            this.ribbonButton37.Text = "Clases de Activo Fijo";
             // 
             // ribbonTab2
             // 
@@ -585,6 +579,12 @@
             this.kryptonBorderEdge1.Size = new System.Drawing.Size(38, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
+            // ribbonButton45
+            // 
+            this.ribbonButton45.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton45.Image")));
+            this.ribbonButton45.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton45.SmallImage")));
+            this.ribbonButton45.Text = "Inventario Caracteristicas";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -687,7 +687,7 @@
         private System.Windows.Forms.RibbonButton ribbonButton35;
         private System.Windows.Forms.RibbonSeparator ribbonSeparator21;
         private System.Windows.Forms.RibbonButton ribbonButton36;
-        private System.Windows.Forms.RibbonSeparator ribbonSeparator22;
-        private System.Windows.Forms.RibbonButton ribbonButton37;
+        private System.Windows.Forms.RibbonSeparator ribbonSeparator30;
+        private System.Windows.Forms.RibbonButton ribbonButton45;
     }
 }

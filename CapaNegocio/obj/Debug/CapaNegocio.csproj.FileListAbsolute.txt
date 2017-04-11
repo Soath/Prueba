@@ -12,3 +12,10 @@ C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.pdb
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\jcho\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\jcho\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\jcho\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\jcho\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\jcho\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\jcho\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\jcho\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.pdb

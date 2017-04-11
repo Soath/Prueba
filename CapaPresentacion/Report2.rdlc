@@ -6,16 +6,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.21211cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.21211cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.21211cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.21211cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -325,11 +325,11 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet3</DataSetName>
-        <Top>0.14111cm</Top>
-        <Left>4.15682cm</Left>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>0.03528cm</Top>
+        <Left>3.67242cm</Left>
         <Height>1.2cm</Height>
-        <Width>8.84845cm</Width>
+        <Width>10cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -337,7 +337,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2.95877in</Height>
+    <Height>2in</Height>
     <Style />
   </Body>
   <Width>6.64167in</Width>
@@ -595,7 +595,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
-          <Top>0.17639cm</Top>
+          <Top>0.24695cm</Top>
           <Left>1.72707cm</Left>
           <Height>0.6cm</Height>
           <Width>3.07777cm</Width>
@@ -626,7 +626,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox11</rd:DefaultName>
-          <Top>0.17639cm</Top>
+          <Top>0.24695cm</Top>
+          <Left>0cm</Left>
           <Height>0.6cm</Height>
           <Width>1.65651cm</Width>
           <ZIndex>1</ZIndex>
@@ -647,7 +648,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>IP |</Value>
+                  <Value>190.117.111.145|</Value>
                   <Style>
                     <FontFamily>Marigold</FontFamily>
                   </Style>
@@ -657,7 +658,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
-          <Top>0.17639cm</Top>
+          <Top>0.24695cm</Top>
           <Left>5.36927cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
@@ -689,7 +690,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
-          <Top>0.10583cm</Top>
+          <Top>0.17639cm</Top>
           <Left>14.36984cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
@@ -722,18 +723,18 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="ActivosFijosDataSet2">
+    <DataSource Name="ActivosFijosDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>c1a03de8-889b-44ee-9a43-4cdbddb48557</rd:DataSourceID>
+      <rd:DataSourceID>5499ab0c-e559-4bbc-ac6c-804e75c729d7</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet3">
+    <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>ActivosFijosDataSet2</DataSourceName>
+        <DataSourceName>ActivosFijosDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -755,8 +756,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>ActivosFijosDataSet2</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\ActivosFijosDataSet2.xsd</rd:SchemaPath>
+        <rd:DataSetName>ActivosFijosDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\ActivosFijosDataSet.xsd</rd:SchemaPath>
         <rd:TableName>acfMVMt_MotivoMovimiento</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -782,5 +783,5 @@ uM4h6XyVh91PQt91Lr3mRM0nh9vr8fvDnJ/qIzhsHLWZ58nDOUspwCbhb4NmvzHsP7+W3k0O54asMBO8
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>2ad7bcc3-e7e6-4f55-9faf-4220bbb52593</rd:ReportID>
+  <rd:ReportID>0746c90f-0333-4f1a-8197-63dea5c15212</rd:ReportID>
 </Report>
