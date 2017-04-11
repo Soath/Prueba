@@ -74,10 +74,10 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActivosFijosDataSet2.Designer.cs">
+    <Compile Include="ActivosFijosDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ActivosFijosDataSet2.xsd</DependentUpon>
+      <DependentUpon>ActivosFijosDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -103,17 +103,53 @@
     <Compile Include="FrmacfCMPt_Componente.Designer.cs">
       <DependentUpon>FrmacfCMPt_Componente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfCRSt_Caracteristicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfCRSt_Caracteristicas.Designer.cs">
+      <DependentUpon>FrmacfCRSt_Caracteristicas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfCSTt_Costo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmacfCSTt_Costo.Designer.cs">
       <DependentUpon>FrmacfCSTt_Costo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfDDFt_detalledediferido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfDDFt_detalledediferido.Designer.cs">
+      <DependentUpon>FrmacfDDFt_detalledediferido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfDRTt_detallereparotributario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfDRTt_detallereparotributario.Designer.cs">
+      <DependentUpon>FrmacfDRTt_detallereparotributario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfEDIt_edificaciondetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfEDIt_edificaciondetalle.Designer.cs">
+      <DependentUpon>FrmacfEDIt_edificaciondetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfESTt_Estado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmacfESTt_Estado.Designer.cs">
       <DependentUpon>FrmacfESTt_Estado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfICRt_Inventariocaracteristicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfICRt_Inventariocaracteristicas.Designer.cs">
+      <DependentUpon>FrmacfICRt_Inventariocaracteristicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfINBt_Inventariobienes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfINBt_Inventariobienes.Designer.cs">
+      <DependentUpon>FrmacfINBt_Inventariobienes.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmacfINVp_Inventario.cs">
       <SubType>Form</SubType>
@@ -138,6 +174,18 @@
     </Compile>
     <Compile Include="FrmacfMATt_Material.Designer.cs">
       <DependentUpon>FrmacfMATt_Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfMEQt_maquinariaequipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfMEQt_maquinariaequipo.Designer.cs">
+      <DependentUpon>FrmacfMEQt_maquinariaequipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfMVAt_MovimientoActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfMVAt_MovimientoActivo.Designer.cs">
+      <DependentUpon>FrmacfMVAt_MovimientoActivo.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmacfMVMt_MotivoMovimiento.cs">
       <SubType>Form</SubType>
@@ -180,6 +228,18 @@
     </Compile>
     <Compile Include="FrmacfTMVt_TipoMovimiento.Designer.cs">
       <DependentUpon>FrmacfTMVt_TipoMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfTRNt_terrenodetallecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfTRNt_terrenodetallecs.Designer.cs">
+      <DependentUpon>FrmacfTRNt_terrenodetallecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfUBEt_UbicacionElectrica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfUBEt_UbicacionElectrica.Designer.cs">
+      <DependentUpon>FrmacfUBEt_UbicacionElectrica.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmacfUNMt_Unimed.cs">
       <SubType>Form</SubType>
@@ -229,6 +289,12 @@
     <Compile Include="FrmbdiPRVpProveedor.Designer.cs">
       <DependentUpon>FrmbdiPRVpProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmbdiSEGpSegmento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmbdiSEGpSegmento.Designer.cs">
+      <DependentUpon>FrmbdiSEGpSegmento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmbdiSOCpSociedades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +325,12 @@
     <Compile Include="FrmExcel.Designer.cs">
       <DependentUpon>FrmExcel.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmExcel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExcel2.Designer.cs">
+      <DependentUpon>FrmExcel2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,11 +343,11 @@
     <Compile Include="FrmacfACFp_Activo_Fijo.Designer.cs">
       <DependentUpon>FrmacfACFp_Activo_Fijo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMVMReporte.cs">
+    <Compile Include="FrmMVMReporteD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMVMReporte.Designer.cs">
-      <DependentUpon>FrmMVMReporte.cs</DependentUpon>
+    <Compile Include="FrmMVMReporteD.Designer.cs">
+      <DependentUpon>FrmMVMReporteD.cs</DependentUpon>
     </Compile>
     <Compile Include="Importar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -288,6 +360,12 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Pruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pruebas.Designer.cs">
+      <DependentUpon>Pruebas.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
@@ -330,11 +408,29 @@
     <EmbeddedResource Include="FrmacfCMPt_Componente.resx">
       <DependentUpon>FrmacfCMPt_Componente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfCRSt_Caracteristicas.resx">
+      <DependentUpon>FrmacfCRSt_Caracteristicas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfCSTt_Costo.resx">
       <DependentUpon>FrmacfCSTt_Costo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfDDFt_detalledediferido.resx">
+      <DependentUpon>FrmacfDDFt_detalledediferido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfDRTt_detallereparotributario.resx">
+      <DependentUpon>FrmacfDRTt_detallereparotributario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfEDIt_edificaciondetalle.resx">
+      <DependentUpon>FrmacfEDIt_edificaciondetalle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfESTt_Estado.resx">
       <DependentUpon>FrmacfESTt_Estado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfICRt_Inventariocaracteristicas.resx">
+      <DependentUpon>FrmacfICRt_Inventariocaracteristicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfINBt_Inventariobienes.resx">
+      <DependentUpon>FrmacfINBt_Inventariobienes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfINVp_Inventario.resx">
       <DependentUpon>FrmacfINVp_Inventario.cs</DependentUpon>
@@ -347,6 +443,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfMATt_Material.resx">
       <DependentUpon>FrmacfMATt_Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfMEQt_maquinariaequipo.resx">
+      <DependentUpon>FrmacfMEQt_maquinariaequipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfMVAt_MovimientoActivo.resx">
+      <DependentUpon>FrmacfMVAt_MovimientoActivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfMVMt_MotivoMovimiento.resx">
       <DependentUpon>FrmacfMVMt_MotivoMovimiento.cs</DependentUpon>
@@ -369,6 +471,12 @@
     <EmbeddedResource Include="FrmacfTMVt_TipoMovimiento.resx">
       <DependentUpon>FrmacfTMVt_TipoMovimiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfTRNt_terrenodetallecs.resx">
+      <DependentUpon>FrmacfTRNt_terrenodetallecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfUBEt_UbicacionElectrica.resx">
+      <DependentUpon>FrmacfUBEt_UbicacionElectrica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfUNMt_Unimed.resx">
       <DependentUpon>FrmacfUNMt_Unimed.cs</DependentUpon>
     </EmbeddedResource>
@@ -390,6 +498,9 @@
     <EmbeddedResource Include="FrmbdiPRVpProveedor.resx">
       <DependentUpon>FrmbdiPRVpProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmbdiSEGpSegmento.resx">
+      <DependentUpon>FrmbdiSEGpSegmento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmbdiSOCpSociedades.resx">
       <DependentUpon>FrmbdiSOCpSociedades.cs</DependentUpon>
     </EmbeddedResource>
@@ -405,21 +516,27 @@
     <EmbeddedResource Include="FrmExcel.resx">
       <DependentUpon>FrmExcel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmExcel2.resx">
+      <DependentUpon>FrmExcel2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfACFp_Activo_Fijo.resx">
       <DependentUpon>FrmacfACFp_Activo_Fijo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMVMReporte.resx">
-      <DependentUpon>FrmMVMReporte.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMVMReporteD.resx">
+      <DependentUpon>FrmMVMReporteD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Pruebas.resx">
+      <DependentUpon>Pruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
@@ -431,16 +548,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ActivosFijosDataSet2.xsc">
-      <DependentUpon>ActivosFijosDataSet2.xsd</DependentUpon>
+    <None Include="ActivosFijosDataSet.xsc">
+      <DependentUpon>ActivosFijosDataSet.xsd</DependentUpon>
     </None>
-    <None Include="ActivosFijosDataSet2.xsd">
+    <None Include="ActivosFijosDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ActivosFijosDataSet2.Designer.cs</LastGenOutput>
+      <LastGenOutput>ActivosFijosDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ActivosFijosDataSet2.xss">
-      <DependentUpon>ActivosFijosDataSet2.xsd</DependentUpon>
+    <None Include="ActivosFijosDataSet.xss">
+      <DependentUpon>ActivosFijosDataSet.xsd</DependentUpon>
     </None>
     <None Include="app.config" />
     <None Include="img\actualizar.jpg" />

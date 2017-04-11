@@ -448,7 +448,7 @@ namespace CapaDatos
 
                 SqlParameter ParACFid = new SqlParameter();
                 ParACFid.ParameterName = "@ACFid";
-                ParACFid.SqlDbType = SqlDbType.Char;
+                ParACFid.SqlDbType = SqlDbType.Int;
                 ParACFid.Size = 50;
                 ParACFid.Value = ACFid;
                 SqlCmd.Parameters.Add(ParACFid);

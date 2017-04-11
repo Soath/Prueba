@@ -1,0 +1,5 @@
+C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Release\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Release\View1.g.cs
+C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Release\ViewModel1.g.cs
+C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Release\CapaPresentacion_MarkupCompile.cache
+C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Release\CapaPresentacion_MarkupCompile.lref
