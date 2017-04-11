@@ -32,7 +32,6 @@ namespace CapaPresentacion
                     {
                         ruta = openfile1.FileName;
                     }
-                    
                 }
 
                 conn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;data source=" + ruta + ";Extended Properties='Excel 12.0 Xml;HDR=Yes'");

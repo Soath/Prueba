@@ -17,10 +17,5 @@ namespace CapaPresentacion
             InitializeComponent();
             this.Dock = DockStyle.Fill;
         }
-
-        private void kryptonHeaderGroup3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
