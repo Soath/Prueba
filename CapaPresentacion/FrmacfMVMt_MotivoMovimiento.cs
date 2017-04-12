@@ -225,8 +225,11 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            Form FrmMVMReporteD = new FrmMVMReporteD();
-            FrmMVMReporteD.Show();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_MVMMotivoMovimiento.rdlc", NacfMVMt_MotivoMovimiento.Mostrar());
+            rptalu.ShowDialog();
+          /*  Form FrmMVMReporteD = new FrmMVMReporteD();
+            FrmMVMReporteD.Show();*/
+            
         }
         private void BotonImportar()
         {

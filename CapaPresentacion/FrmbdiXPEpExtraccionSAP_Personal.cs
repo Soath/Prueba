@@ -229,6 +229,8 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_XPESAPPersonal.rdlc", NbdiXPEpExtraccionSAP_Personal.Mostrar());
+            rptalu.ShowDialog();
         }
 
         private void BotonGuardar()

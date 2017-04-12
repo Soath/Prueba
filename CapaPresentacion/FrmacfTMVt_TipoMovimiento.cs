@@ -274,7 +274,8 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_TMVTipoMovimiento.rdlc", NacfTMVt_TipoMovimiento.Mostrar());
+            rptalu.ShowDialog();
         }
 
         private void BotonGuardar()

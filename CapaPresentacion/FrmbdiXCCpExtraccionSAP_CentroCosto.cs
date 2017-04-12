@@ -276,7 +276,8 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_XCCSAPCentroCosto.rdlc", NbdiXCCpExtraccionSAP_CentroCosto.Mostrar());
+            rptalu.ShowDialog();
         }
 
         private void BotonGuardar()

@@ -222,7 +222,8 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_AMBAmbiente.rdlc", NacfAMBt_Ambiente.Mostrar());
+            rptalu.ShowDialog();
         }
 
         private void BotonGuardar()

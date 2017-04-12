@@ -275,7 +275,8 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_ACTactividad.rdlc", NacfACTt_Actividad.Mostrar());
+            rptalu.ShowDialog();
         }
 
         private void BotonGuardar()

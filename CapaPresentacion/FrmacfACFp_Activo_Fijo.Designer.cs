@@ -46,9 +46,144 @@
             this.toolStripBuscar = new System.Windows.Forms.ToolStripButton();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripImagen = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtCRScantidad = new System.Windows.Forms.TextBox();
+            this.txtUNMid = new System.Windows.Forms.TextBox();
+            this.txtCRStipo = new System.Windows.Forms.TextBox();
+            this.lblCRScantidad = new System.Windows.Forms.Label();
+            this.lblUNMid = new System.Windows.Forms.Label();
+            this.lblCRStipo = new System.Windows.Forms.Label();
+            this.lblMATid = new System.Windows.Forms.Label();
+            this.lblCRScolor = new System.Windows.Forms.Label();
+            this.txtMATid = new System.Windows.Forms.TextBox();
+            this.txtCRScolor = new System.Windows.Forms.TextBox();
+            this.lblCRSmodelo = new System.Windows.Forms.Label();
+            this.lblCRSserie = new System.Windows.Forms.Label();
+            this.lblESTid = new System.Windows.Forms.Label();
+            this.lblMARid = new System.Windows.Forms.Label();
+            this.lblACFid = new System.Windows.Forms.Label();
+            this.txtCRSmodelo = new System.Windows.Forms.TextBox();
+            this.txtCRSserie = new System.Windows.Forms.TextBox();
+            this.txtESTid = new System.Windows.Forms.TextBox();
+            this.txtMARid = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnTerreno_Edificaciones = new System.Windows.Forms.Button();
+            this.txtCRSobservacion = new System.Windows.Forms.TextBox();
+            this.txtCRSfadqpredio = new System.Windows.Forms.TextBox();
+            this.txtCRScodigoagua = new System.Windows.Forms.TextBox();
+            this.lblCRSobservacion = new System.Windows.Forms.Label();
+            this.lblCRSfadqpredio = new System.Windows.Forms.Label();
+            this.lblCRScodigoagua = new System.Windows.Forms.Label();
+            this.txtCRScodigoluz = new System.Windows.Forms.TextBox();
+            this.txtCRSvalorautovaluo = new System.Windows.Forms.TextBox();
+            this.txtCRSusopredio = new System.Windows.Forms.TextBox();
+            this.txtCRSperimetro = new System.Windows.Forms.TextBox();
+            this.txtCRSareaconstruida = new System.Windows.Forms.TextBox();
+            this.lblCRScodigoluz = new System.Windows.Forms.Label();
+            this.lblCRSvalorautovaluo = new System.Windows.Forms.Label();
+            this.lblCRSusopredio = new System.Windows.Forms.Label();
+            this.lblCRSperimetro = new System.Windows.Forms.Label();
+            this.lblCRSareaconstruida = new System.Windows.Forms.Label();
+            this.txtCRSficharegistral = new System.Windows.Forms.TextBox();
+            this.txtCRSfinscpredio = new System.Windows.Forms.TextBox();
+            this.txtCRSasientopredio = new System.Windows.Forms.TextBox();
+            this.txtCRSfoliofinpredio = new System.Windows.Forms.TextBox();
+            this.txtCRSfolioinipredio = new System.Windows.Forms.TextBox();
+            this.lblCRSficharegistral = new System.Windows.Forms.Label();
+            this.lblCRSfinscpredio = new System.Windows.Forms.Label();
+            this.lblCRSasientopredio = new System.Windows.Forms.Label();
+            this.lblCRSfoliofinpredio = new System.Windows.Forms.Label();
+            this.lblCRSfolioinipredio = new System.Windows.Forms.Label();
+            this.txtCRStomopredio = new System.Windows.Forms.TextBox();
+            this.txtCRSpartidapredio = new System.Windows.Forms.TextBox();
+            this.txtCRSpisospredio = new System.Windows.Forms.TextBox();
+            this.txtCRSnombrepredio = new System.Windows.Forms.TextBox();
+            this.txtCRSkilometro = new System.Windows.Forms.TextBox();
+            this.txtCRScarretera = new System.Windows.Forms.TextBox();
+            this.txtCRSinterior = new System.Windows.Forms.TextBox();
+            this.txtCRSdepartamento = new System.Windows.Forms.TextBox();
+            this.txtCRSnumeropredio = new System.Windows.Forms.TextBox();
+            this.txtCRSlote = new System.Windows.Forms.TextBox();
+            this.lblCRStomopredio = new System.Windows.Forms.Label();
+            this.lblCRSpartidapredio = new System.Windows.Forms.Label();
+            this.lblCRSpisospredio = new System.Windows.Forms.Label();
+            this.lblCRSnombrepredio = new System.Windows.Forms.Label();
+            this.lblCRSkilometro = new System.Windows.Forms.Label();
+            this.lblCRScarretera = new System.Windows.Forms.Label();
+            this.lblCRSinterior = new System.Windows.Forms.Label();
+            this.lblCRSdepartamento = new System.Windows.Forms.Label();
+            this.lblCRSnumeropredio = new System.Windows.Forms.Label();
+            this.lblCRSlote = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnUbicacion_electrica = new System.Windows.Forms.Button();
+            this.txtCRScalle = new System.Windows.Forms.TextBox();
+            this.txtCRSurbanizacion = new System.Windows.Forms.TextBox();
+            this.txtCRScentropoblado = new System.Windows.Forms.TextBox();
+            this.txtCRSalquilacable = new System.Windows.Forms.TextBox();
+            this.txtCRScajaderivadora = new System.Windows.Forms.TextBox();
+            this.txtCRSesfuerzopunta = new System.Windows.Forms.TextBox();
+            this.txtCRSutmy = new System.Windows.Forms.TextBox();
+            this.txtCRSutmx = new System.Windows.Forms.TextBox();
+            this.lblCRScalle = new System.Windows.Forms.Label();
+            this.lblCRSurbanizacion = new System.Windows.Forms.Label();
+            this.lblCRScentropoblado = new System.Windows.Forms.Label();
+            this.lblCRSalquilacable = new System.Windows.Forms.Label();
+            this.lblCRScajaderivadora = new System.Windows.Forms.Label();
+            this.lblCRSesfuerzopunta = new System.Windows.Forms.Label();
+            this.lblCRSutmy = new System.Windows.Forms.Label();
+            this.lblCRSutmx = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.txtCRSaltura = new System.Windows.Forms.TextBox();
+            this.txtCRSvehcargautil = new System.Windows.Forms.TextBox();
+            this.txtCRSvehpesoseco = new System.Windows.Forms.TextBox();
+            this.lblCRSvehplaca = new System.Windows.Forms.Label();
+            this.txtCRSvehasientos = new System.Windows.Forms.TextBox();
+            this.txtCRSvehpasajeros = new System.Windows.Forms.TextBox();
+            this.lblCRSaltura = new System.Windows.Forms.Label();
+            this.lblCRSvehcargautil = new System.Windows.Forms.Label();
+            this.lblCRSvehpesoseco = new System.Windows.Forms.Label();
+            this.txtCRSancho = new System.Windows.Forms.TextBox();
+            this.lblCRSvehasientos = new System.Windows.Forms.Label();
+            this.cboCRSvehplaca = new System.Windows.Forms.ComboBox();
+            this.lblCRSvehpasajeros = new System.Windows.Forms.Label();
+            this.lblCRSvehejes = new System.Windows.Forms.Label();
+            this.lblCRSvehcombustible = new System.Windows.Forms.Label();
+            this.lblCRSancho = new System.Windows.Forms.Label();
+            this.lblCRSvehclase = new System.Windows.Forms.Label();
+            this.lblCRSvehinscripcion = new System.Windows.Forms.Label();
+            this.lblCRSvehexpediente = new System.Windows.Forms.Label();
+            this.txtCRSvehejes = new System.Windows.Forms.TextBox();
+            this.txtCRSvehcombustible = new System.Windows.Forms.TextBox();
+            this.txtCRSvehclase = new System.Windows.Forms.TextBox();
+            this.txtCRSvehinscripcion = new System.Windows.Forms.TextBox();
+            this.txtCRSvehexpediente = new System.Windows.Forms.TextBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.txtCRStemperatura = new System.Windows.Forms.TextBox();
+            this.txtCRSfrecuencia = new System.Windows.Forms.TextBox();
+            this.txtCRSvsalida = new System.Windows.Forms.TextBox();
+            this.txtCRSventrada = new System.Windows.Forms.TextBox();
+            this.txtCRSvnominal = new System.Windows.Forms.TextBox();
+            this.txtCRSpotencia = new System.Windows.Forms.TextBox();
+            this.txtCRScapacidad = new System.Windows.Forms.TextBox();
+            this.txtCRSresolucion = new System.Windows.Forms.TextBox();
+            this.txtCRSpuertos = new System.Windows.Forms.TextBox();
+            this.txtCRSprocesador = new System.Windows.Forms.TextBox();
+            this.txtCRSvelocidad = new System.Windows.Forms.TextBox();
+            this.lblCRStemperatura = new System.Windows.Forms.Label();
+            this.lblCRSfrecuencia = new System.Windows.Forms.Label();
+            this.lblCRSvsalida = new System.Windows.Forms.Label();
+            this.lblCRSventrada = new System.Windows.Forms.Label();
+            this.lblCRSvnominal = new System.Windows.Forms.Label();
+            this.lblCRSpotencia = new System.Windows.Forms.Label();
+            this.lblCRSprocesador = new System.Windows.Forms.Label();
+            this.lblCRSvelocidad = new System.Windows.Forms.Label();
+            this.lblCRSpuertos = new System.Windows.Forms.Label();
+            this.lblCRScapacidad = new System.Windows.Forms.Label();
+            this.lblCRSresolucion = new System.Windows.Forms.Label();
             this.dtpACFfincorporacion = new System.Windows.Forms.DateTimePicker();
             this.dtpACFfechaordencompra = new System.Windows.Forms.DateTimePicker();
             this.dtpACFfechacomprobante = new System.Windows.Forms.DateTimePicker();
@@ -68,7 +203,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtACFfcapitalizacion = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.cboAMBid = new System.Windows.Forms.ComboBox();
             this.cboANLKL = new System.Windows.Forms.ComboBox();
             this.txtACFvutiltribanio = new System.Windows.Forms.TextBox();
@@ -89,7 +223,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.cboUBEid = new System.Windows.Forms.ComboBox();
             this.cboKOSTL = new System.Windows.Forms.ComboBox();
             this.cboBLART = new System.Windows.Forms.ComboBox();
@@ -110,7 +243,6 @@
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.cboVNRid = new System.Windows.Forms.ComboBox();
             this.txtACFdepacuniif = new System.Windows.Forms.TextBox();
             this.txtACFdepacutrib = new System.Windows.Forms.TextBox();
@@ -141,137 +273,6 @@
             this.txtACFvutilniifdia = new System.Windows.Forms.TextBox();
             this.txtACFfactorniif = new System.Windows.Forms.TextBox();
             this.txtACFfactortrib = new System.Windows.Forms.TextBox();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.lblCRSmodelo = new System.Windows.Forms.Label();
-            this.lblCRSserie = new System.Windows.Forms.Label();
-            this.lblESTid = new System.Windows.Forms.Label();
-            this.lblMARid = new System.Windows.Forms.Label();
-            this.lblACFid = new System.Windows.Forms.Label();
-            this.txtCRSmodelo = new System.Windows.Forms.TextBox();
-            this.txtCRSserie = new System.Windows.Forms.TextBox();
-            this.txtESTid = new System.Windows.Forms.TextBox();
-            this.txtMARid = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtCRScantidad = new System.Windows.Forms.TextBox();
-            this.txtUNMid = new System.Windows.Forms.TextBox();
-            this.txtCRStipo = new System.Windows.Forms.TextBox();
-            this.lblCRScantidad = new System.Windows.Forms.Label();
-            this.lblUNMid = new System.Windows.Forms.Label();
-            this.lblCRStipo = new System.Windows.Forms.Label();
-            this.lblMATid = new System.Windows.Forms.Label();
-            this.lblCRScolor = new System.Windows.Forms.Label();
-            this.txtMATid = new System.Windows.Forms.TextBox();
-            this.txtCRScolor = new System.Windows.Forms.TextBox();
-            this.txtCRStomopredio = new System.Windows.Forms.TextBox();
-            this.txtCRSpartidapredio = new System.Windows.Forms.TextBox();
-            this.txtCRSpisospredio = new System.Windows.Forms.TextBox();
-            this.txtCRSnombrepredio = new System.Windows.Forms.TextBox();
-            this.txtCRSkilometro = new System.Windows.Forms.TextBox();
-            this.txtCRScarretera = new System.Windows.Forms.TextBox();
-            this.txtCRSinterior = new System.Windows.Forms.TextBox();
-            this.txtCRSdepartamento = new System.Windows.Forms.TextBox();
-            this.txtCRSnumeropredio = new System.Windows.Forms.TextBox();
-            this.txtCRSlote = new System.Windows.Forms.TextBox();
-            this.lblCRStomopredio = new System.Windows.Forms.Label();
-            this.lblCRSpartidapredio = new System.Windows.Forms.Label();
-            this.lblCRSpisospredio = new System.Windows.Forms.Label();
-            this.lblCRSnombrepredio = new System.Windows.Forms.Label();
-            this.lblCRSkilometro = new System.Windows.Forms.Label();
-            this.lblCRScarretera = new System.Windows.Forms.Label();
-            this.lblCRSinterior = new System.Windows.Forms.Label();
-            this.lblCRSdepartamento = new System.Windows.Forms.Label();
-            this.lblCRSnumeropredio = new System.Windows.Forms.Label();
-            this.lblCRSlote = new System.Windows.Forms.Label();
-            this.txtCRSficharegistral = new System.Windows.Forms.TextBox();
-            this.txtCRSfinscpredio = new System.Windows.Forms.TextBox();
-            this.txtCRSasientopredio = new System.Windows.Forms.TextBox();
-            this.txtCRSfoliofinpredio = new System.Windows.Forms.TextBox();
-            this.txtCRSfolioinipredio = new System.Windows.Forms.TextBox();
-            this.lblCRSficharegistral = new System.Windows.Forms.Label();
-            this.lblCRSfinscpredio = new System.Windows.Forms.Label();
-            this.lblCRSasientopredio = new System.Windows.Forms.Label();
-            this.lblCRSfoliofinpredio = new System.Windows.Forms.Label();
-            this.lblCRSfolioinipredio = new System.Windows.Forms.Label();
-            this.txtCRScodigoluz = new System.Windows.Forms.TextBox();
-            this.txtCRSvalorautovaluo = new System.Windows.Forms.TextBox();
-            this.txtCRSusopredio = new System.Windows.Forms.TextBox();
-            this.txtCRSperimetro = new System.Windows.Forms.TextBox();
-            this.txtCRSareaconstruida = new System.Windows.Forms.TextBox();
-            this.lblCRScodigoluz = new System.Windows.Forms.Label();
-            this.lblCRSvalorautovaluo = new System.Windows.Forms.Label();
-            this.lblCRSusopredio = new System.Windows.Forms.Label();
-            this.lblCRSperimetro = new System.Windows.Forms.Label();
-            this.lblCRSareaconstruida = new System.Windows.Forms.Label();
-            this.txtCRSobservacion = new System.Windows.Forms.TextBox();
-            this.txtCRSfadqpredio = new System.Windows.Forms.TextBox();
-            this.txtCRScodigoagua = new System.Windows.Forms.TextBox();
-            this.lblCRSobservacion = new System.Windows.Forms.Label();
-            this.lblCRSfadqpredio = new System.Windows.Forms.Label();
-            this.lblCRScodigoagua = new System.Windows.Forms.Label();
-            this.txtCRScalle = new System.Windows.Forms.TextBox();
-            this.txtCRSurbanizacion = new System.Windows.Forms.TextBox();
-            this.txtCRScentropoblado = new System.Windows.Forms.TextBox();
-            this.txtCRSalquilacable = new System.Windows.Forms.TextBox();
-            this.txtCRScajaderivadora = new System.Windows.Forms.TextBox();
-            this.txtCRSesfuerzopunta = new System.Windows.Forms.TextBox();
-            this.txtCRSutmy = new System.Windows.Forms.TextBox();
-            this.txtCRSutmx = new System.Windows.Forms.TextBox();
-            this.lblCRScalle = new System.Windows.Forms.Label();
-            this.lblCRSurbanizacion = new System.Windows.Forms.Label();
-            this.lblCRScentropoblado = new System.Windows.Forms.Label();
-            this.lblCRSalquilacable = new System.Windows.Forms.Label();
-            this.lblCRScajaderivadora = new System.Windows.Forms.Label();
-            this.lblCRSesfuerzopunta = new System.Windows.Forms.Label();
-            this.lblCRSutmy = new System.Windows.Forms.Label();
-            this.lblCRSutmx = new System.Windows.Forms.Label();
-            this.txtCRSaltura = new System.Windows.Forms.TextBox();
-            this.txtCRSvehcargautil = new System.Windows.Forms.TextBox();
-            this.txtCRSvehpesoseco = new System.Windows.Forms.TextBox();
-            this.lblCRSvehplaca = new System.Windows.Forms.Label();
-            this.txtCRSvehasientos = new System.Windows.Forms.TextBox();
-            this.txtCRSvehpasajeros = new System.Windows.Forms.TextBox();
-            this.lblCRSaltura = new System.Windows.Forms.Label();
-            this.lblCRSvehcargautil = new System.Windows.Forms.Label();
-            this.lblCRSvehpesoseco = new System.Windows.Forms.Label();
-            this.txtCRSancho = new System.Windows.Forms.TextBox();
-            this.lblCRSvehasientos = new System.Windows.Forms.Label();
-            this.cboCRSvehplaca = new System.Windows.Forms.ComboBox();
-            this.lblCRSvehpasajeros = new System.Windows.Forms.Label();
-            this.lblCRSvehejes = new System.Windows.Forms.Label();
-            this.lblCRSvehcombustible = new System.Windows.Forms.Label();
-            this.lblCRSancho = new System.Windows.Forms.Label();
-            this.lblCRSvehclase = new System.Windows.Forms.Label();
-            this.lblCRSvehinscripcion = new System.Windows.Forms.Label();
-            this.lblCRSvehexpediente = new System.Windows.Forms.Label();
-            this.txtCRSvehejes = new System.Windows.Forms.TextBox();
-            this.txtCRSvehcombustible = new System.Windows.Forms.TextBox();
-            this.txtCRSvehclase = new System.Windows.Forms.TextBox();
-            this.txtCRSvehinscripcion = new System.Windows.Forms.TextBox();
-            this.txtCRSvehexpediente = new System.Windows.Forms.TextBox();
-            this.txtCRStemperatura = new System.Windows.Forms.TextBox();
-            this.txtCRSfrecuencia = new System.Windows.Forms.TextBox();
-            this.txtCRSvsalida = new System.Windows.Forms.TextBox();
-            this.txtCRSventrada = new System.Windows.Forms.TextBox();
-            this.txtCRSvnominal = new System.Windows.Forms.TextBox();
-            this.txtCRSpotencia = new System.Windows.Forms.TextBox();
-            this.txtCRScapacidad = new System.Windows.Forms.TextBox();
-            this.txtCRSresolucion = new System.Windows.Forms.TextBox();
-            this.txtCRSpuertos = new System.Windows.Forms.TextBox();
-            this.txtCRSprocesador = new System.Windows.Forms.TextBox();
-            this.txtCRSvelocidad = new System.Windows.Forms.TextBox();
-            this.lblCRStemperatura = new System.Windows.Forms.Label();
-            this.lblCRSfrecuencia = new System.Windows.Forms.Label();
-            this.lblCRSvsalida = new System.Windows.Forms.Label();
-            this.lblCRSventrada = new System.Windows.Forms.Label();
-            this.lblCRSvnominal = new System.Windows.Forms.Label();
-            this.lblCRSpotencia = new System.Windows.Forms.Label();
-            this.lblCRSprocesador = new System.Windows.Forms.Label();
-            this.lblCRSvelocidad = new System.Windows.Forms.Label();
-            this.lblCRSpuertos = new System.Windows.Forms.Label();
-            this.lblCRScapacidad = new System.Windows.Forms.Label();
-            this.lblCRSresolucion = new System.Windows.Forms.Label();
-            this.btnTerreno_Edificaciones = new System.Windows.Forms.Button();
-            this.btnUbicacion_electrica = new System.Windows.Forms.Button();
             this.dtpACFfechanotaingreso = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -279,8 +280,8 @@
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -303,7 +304,8 @@
             this.toolStripImportar,
             this.toolStripBuscar,
             this.toolStripComboBox1,
-            this.toolStripTextBox1});
+            this.toolStripTextBox1,
+            this.toolStripImagen});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1214, 67);
@@ -478,6 +480,17 @@
             this.toolStripTextBox1.Size = new System.Drawing.Size(58, 67);
             this.toolStripTextBox1.Text = "Expresion";
             // 
+            // toolStripImagen
+            // 
+            this.toolStripImagen.Image = ((System.Drawing.Image)(resources.GetObject("toolStripImagen.Image")));
+            this.toolStripImagen.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImagen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripImagen.Name = "toolStripImagen";
+            this.toolStripImagen.Size = new System.Drawing.Size(51, 64);
+            this.toolStripImagen.Text = "Imagen";
+            this.toolStripImagen.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImagen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -536,6 +549,1263 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Características Generales";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txtCRScantidad
+            // 
+            this.txtCRScantidad.Location = new System.Drawing.Point(627, 171);
+            this.txtCRScantidad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRScantidad.Name = "txtCRScantidad";
+            this.txtCRScantidad.Size = new System.Drawing.Size(187, 20);
+            this.txtCRScantidad.TabIndex = 171;
+            // 
+            // txtUNMid
+            // 
+            this.txtUNMid.Location = new System.Drawing.Point(627, 144);
+            this.txtUNMid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUNMid.Name = "txtUNMid";
+            this.txtUNMid.Size = new System.Drawing.Size(187, 20);
+            this.txtUNMid.TabIndex = 170;
+            // 
+            // txtCRStipo
+            // 
+            this.txtCRStipo.Location = new System.Drawing.Point(627, 112);
+            this.txtCRStipo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRStipo.Name = "txtCRStipo";
+            this.txtCRStipo.Size = new System.Drawing.Size(187, 20);
+            this.txtCRStipo.TabIndex = 169;
+            // 
+            // lblCRScantidad
+            // 
+            this.lblCRScantidad.AutoSize = true;
+            this.lblCRScantidad.Location = new System.Drawing.Point(476, 174);
+            this.lblCRScantidad.Name = "lblCRScantidad";
+            this.lblCRScantidad.Size = new System.Drawing.Size(49, 13);
+            this.lblCRScantidad.TabIndex = 168;
+            this.lblCRScantidad.Text = "Cantidad";
+            // 
+            // lblUNMid
+            // 
+            this.lblUNMid.AutoSize = true;
+            this.lblUNMid.Location = new System.Drawing.Point(476, 144);
+            this.lblUNMid.Name = "lblUNMid";
+            this.lblUNMid.Size = new System.Drawing.Size(142, 13);
+            this.lblUNMid.TabIndex = 167;
+            this.lblUNMid.Text = "Codigo de unidad de medida";
+            // 
+            // lblCRStipo
+            // 
+            this.lblCRStipo.AutoSize = true;
+            this.lblCRStipo.Location = new System.Drawing.Point(475, 115);
+            this.lblCRStipo.Name = "lblCRStipo";
+            this.lblCRStipo.Size = new System.Drawing.Size(28, 13);
+            this.lblCRStipo.TabIndex = 166;
+            this.lblCRStipo.Text = "Tipo";
+            // 
+            // lblMATid
+            // 
+            this.lblMATid.AutoSize = true;
+            this.lblMATid.Location = new System.Drawing.Point(475, 88);
+            this.lblMATid.Name = "lblMATid";
+            this.lblMATid.Size = new System.Drawing.Size(94, 13);
+            this.lblMATid.TabIndex = 165;
+            this.lblMATid.Text = "Codigo de material";
+            // 
+            // lblCRScolor
+            // 
+            this.lblCRScolor.AutoSize = true;
+            this.lblCRScolor.Location = new System.Drawing.Point(475, 64);
+            this.lblCRScolor.Name = "lblCRScolor";
+            this.lblCRScolor.Size = new System.Drawing.Size(31, 13);
+            this.lblCRScolor.TabIndex = 164;
+            this.lblCRScolor.Text = "Color";
+            // 
+            // txtMATid
+            // 
+            this.txtMATid.Location = new System.Drawing.Point(627, 85);
+            this.txtMATid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMATid.Name = "txtMATid";
+            this.txtMATid.Size = new System.Drawing.Size(187, 20);
+            this.txtMATid.TabIndex = 163;
+            // 
+            // txtCRScolor
+            // 
+            this.txtCRScolor.Location = new System.Drawing.Point(627, 57);
+            this.txtCRScolor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRScolor.Name = "txtCRScolor";
+            this.txtCRScolor.Size = new System.Drawing.Size(187, 20);
+            this.txtCRScolor.TabIndex = 162;
+            // 
+            // lblCRSmodelo
+            // 
+            this.lblCRSmodelo.AutoSize = true;
+            this.lblCRSmodelo.Location = new System.Drawing.Point(30, 185);
+            this.lblCRSmodelo.Name = "lblCRSmodelo";
+            this.lblCRSmodelo.Size = new System.Drawing.Size(42, 13);
+            this.lblCRSmodelo.TabIndex = 19;
+            this.lblCRSmodelo.Text = "Modelo";
+            // 
+            // lblCRSserie
+            // 
+            this.lblCRSserie.AutoSize = true;
+            this.lblCRSserie.Location = new System.Drawing.Point(30, 163);
+            this.lblCRSserie.Name = "lblCRSserie";
+            this.lblCRSserie.Size = new System.Drawing.Size(31, 13);
+            this.lblCRSserie.TabIndex = 18;
+            this.lblCRSserie.Text = "Serie";
+            // 
+            // lblESTid
+            // 
+            this.lblESTid.AutoSize = true;
+            this.lblESTid.Location = new System.Drawing.Point(30, 134);
+            this.lblESTid.Name = "lblESTid";
+            this.lblESTid.Size = new System.Drawing.Size(128, 13);
+            this.lblESTid.TabIndex = 17;
+            this.lblESTid.Text = "Codigo de estado de bien";
+            // 
+            // lblMARid
+            // 
+            this.lblMARid.AutoSize = true;
+            this.lblMARid.Location = new System.Drawing.Point(30, 96);
+            this.lblMARid.Name = "lblMARid";
+            this.lblMARid.Size = new System.Drawing.Size(87, 13);
+            this.lblMARid.TabIndex = 16;
+            this.lblMARid.Text = "Codigo de marca";
+            // 
+            // lblACFid
+            // 
+            this.lblACFid.AutoSize = true;
+            this.lblACFid.Location = new System.Drawing.Point(30, 64);
+            this.lblACFid.Name = "lblACFid";
+            this.lblACFid.Size = new System.Drawing.Size(87, 13);
+            this.lblACFid.TabIndex = 15;
+            this.lblACFid.Text = "Codigo de activo";
+            // 
+            // txtCRSmodelo
+            // 
+            this.txtCRSmodelo.Location = new System.Drawing.Point(182, 184);
+            this.txtCRSmodelo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSmodelo.Name = "txtCRSmodelo";
+            this.txtCRSmodelo.Size = new System.Drawing.Size(179, 20);
+            this.txtCRSmodelo.TabIndex = 14;
+            // 
+            // txtCRSserie
+            // 
+            this.txtCRSserie.Location = new System.Drawing.Point(182, 158);
+            this.txtCRSserie.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSserie.Name = "txtCRSserie";
+            this.txtCRSserie.Size = new System.Drawing.Size(179, 20);
+            this.txtCRSserie.TabIndex = 13;
+            // 
+            // txtESTid
+            // 
+            this.txtESTid.Location = new System.Drawing.Point(182, 127);
+            this.txtESTid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtESTid.Name = "txtESTid";
+            this.txtESTid.Size = new System.Drawing.Size(179, 20);
+            this.txtESTid.TabIndex = 12;
+            // 
+            // txtMARid
+            // 
+            this.txtMARid.Location = new System.Drawing.Point(182, 93);
+            this.txtMARid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMARid.Name = "txtMARid";
+            this.txtMARid.Size = new System.Drawing.Size(179, 20);
+            this.txtMARid.TabIndex = 11;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(182, 64);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(103, 20);
+            this.textBox1.TabIndex = 10;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.btnTerreno_Edificaciones);
+            this.tabPage2.Controls.Add(this.txtCRSobservacion);
+            this.tabPage2.Controls.Add(this.txtCRSfadqpredio);
+            this.tabPage2.Controls.Add(this.txtCRScodigoagua);
+            this.tabPage2.Controls.Add(this.lblCRSobservacion);
+            this.tabPage2.Controls.Add(this.lblCRSfadqpredio);
+            this.tabPage2.Controls.Add(this.lblCRScodigoagua);
+            this.tabPage2.Controls.Add(this.txtCRScodigoluz);
+            this.tabPage2.Controls.Add(this.txtCRSvalorautovaluo);
+            this.tabPage2.Controls.Add(this.txtCRSusopredio);
+            this.tabPage2.Controls.Add(this.txtCRSperimetro);
+            this.tabPage2.Controls.Add(this.txtCRSareaconstruida);
+            this.tabPage2.Controls.Add(this.lblCRScodigoluz);
+            this.tabPage2.Controls.Add(this.lblCRSvalorautovaluo);
+            this.tabPage2.Controls.Add(this.lblCRSusopredio);
+            this.tabPage2.Controls.Add(this.lblCRSperimetro);
+            this.tabPage2.Controls.Add(this.lblCRSareaconstruida);
+            this.tabPage2.Controls.Add(this.txtCRSficharegistral);
+            this.tabPage2.Controls.Add(this.txtCRSfinscpredio);
+            this.tabPage2.Controls.Add(this.txtCRSasientopredio);
+            this.tabPage2.Controls.Add(this.txtCRSfoliofinpredio);
+            this.tabPage2.Controls.Add(this.txtCRSfolioinipredio);
+            this.tabPage2.Controls.Add(this.lblCRSficharegistral);
+            this.tabPage2.Controls.Add(this.lblCRSfinscpredio);
+            this.tabPage2.Controls.Add(this.lblCRSasientopredio);
+            this.tabPage2.Controls.Add(this.lblCRSfoliofinpredio);
+            this.tabPage2.Controls.Add(this.lblCRSfolioinipredio);
+            this.tabPage2.Controls.Add(this.txtCRStomopredio);
+            this.tabPage2.Controls.Add(this.txtCRSpartidapredio);
+            this.tabPage2.Controls.Add(this.txtCRSpisospredio);
+            this.tabPage2.Controls.Add(this.txtCRSnombrepredio);
+            this.tabPage2.Controls.Add(this.txtCRSkilometro);
+            this.tabPage2.Controls.Add(this.txtCRScarretera);
+            this.tabPage2.Controls.Add(this.txtCRSinterior);
+            this.tabPage2.Controls.Add(this.txtCRSdepartamento);
+            this.tabPage2.Controls.Add(this.txtCRSnumeropredio);
+            this.tabPage2.Controls.Add(this.txtCRSlote);
+            this.tabPage2.Controls.Add(this.lblCRStomopredio);
+            this.tabPage2.Controls.Add(this.lblCRSpartidapredio);
+            this.tabPage2.Controls.Add(this.lblCRSpisospredio);
+            this.tabPage2.Controls.Add(this.lblCRSnombrepredio);
+            this.tabPage2.Controls.Add(this.lblCRSkilometro);
+            this.tabPage2.Controls.Add(this.lblCRScarretera);
+            this.tabPage2.Controls.Add(this.lblCRSinterior);
+            this.tabPage2.Controls.Add(this.lblCRSdepartamento);
+            this.tabPage2.Controls.Add(this.lblCRSnumeropredio);
+            this.tabPage2.Controls.Add(this.lblCRSlote);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(1069, 331);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Terreno y Edificaciones";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnTerreno_Edificaciones
+            // 
+            this.btnTerreno_Edificaciones.Location = new System.Drawing.Point(644, 208);
+            this.btnTerreno_Edificaciones.Name = "btnTerreno_Edificaciones";
+            this.btnTerreno_Edificaciones.Size = new System.Drawing.Size(116, 47);
+            this.btnTerreno_Edificaciones.TabIndex = 71;
+            this.btnTerreno_Edificaciones.Text = "Detalles de Edificaciones";
+            this.btnTerreno_Edificaciones.UseVisualStyleBackColor = true;
+            this.btnTerreno_Edificaciones.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtCRSobservacion
+            // 
+            this.txtCRSobservacion.Location = new System.Drawing.Point(772, 73);
+            this.txtCRSobservacion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSobservacion.Name = "txtCRSobservacion";
+            this.txtCRSobservacion.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSobservacion.TabIndex = 70;
+            // 
+            // txtCRSfadqpredio
+            // 
+            this.txtCRSfadqpredio.Location = new System.Drawing.Point(772, 43);
+            this.txtCRSfadqpredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSfadqpredio.Name = "txtCRSfadqpredio";
+            this.txtCRSfadqpredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSfadqpredio.TabIndex = 69;
+            // 
+            // txtCRScodigoagua
+            // 
+            this.txtCRScodigoagua.Location = new System.Drawing.Point(772, 10);
+            this.txtCRScodigoagua.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRScodigoagua.Name = "txtCRScodigoagua";
+            this.txtCRScodigoagua.Size = new System.Drawing.Size(140, 20);
+            this.txtCRScodigoagua.TabIndex = 68;
+            // 
+            // lblCRSobservacion
+            // 
+            this.lblCRSobservacion.AutoSize = true;
+            this.lblCRSobservacion.Location = new System.Drawing.Point(606, 73);
+            this.lblCRSobservacion.Name = "lblCRSobservacion";
+            this.lblCRSobservacion.Size = new System.Drawing.Size(67, 13);
+            this.lblCRSobservacion.TabIndex = 67;
+            this.lblCRSobservacion.Text = "Observacion";
+            // 
+            // lblCRSfadqpredio
+            // 
+            this.lblCRSfadqpredio.AutoSize = true;
+            this.lblCRSfadqpredio.Location = new System.Drawing.Point(606, 43);
+            this.lblCRSfadqpredio.Name = "lblCRSfadqpredio";
+            this.lblCRSfadqpredio.Size = new System.Drawing.Size(154, 13);
+            this.lblCRSfadqpredio.TabIndex = 66;
+            this.lblCRSfadqpredio.Text = "Fech. de Adquisicion de Predio";
+            // 
+            // lblCRScodigoagua
+            // 
+            this.lblCRScodigoagua.AutoSize = true;
+            this.lblCRScodigoagua.Location = new System.Drawing.Point(606, 13);
+            this.lblCRScodigoagua.Name = "lblCRScodigoagua";
+            this.lblCRScodigoagua.Size = new System.Drawing.Size(82, 13);
+            this.lblCRScodigoagua.TabIndex = 65;
+            this.lblCRScodigoagua.Text = "Codigo de agua";
+            // 
+            // txtCRScodigoluz
+            // 
+            this.txtCRScodigoluz.Location = new System.Drawing.Point(437, 279);
+            this.txtCRScodigoluz.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRScodigoluz.Name = "txtCRScodigoluz";
+            this.txtCRScodigoluz.Size = new System.Drawing.Size(140, 20);
+            this.txtCRScodigoluz.TabIndex = 64;
+            // 
+            // txtCRSvalorautovaluo
+            // 
+            this.txtCRSvalorautovaluo.Location = new System.Drawing.Point(437, 252);
+            this.txtCRSvalorautovaluo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvalorautovaluo.Name = "txtCRSvalorautovaluo";
+            this.txtCRSvalorautovaluo.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSvalorautovaluo.TabIndex = 63;
+            // 
+            // txtCRSusopredio
+            // 
+            this.txtCRSusopredio.Location = new System.Drawing.Point(437, 222);
+            this.txtCRSusopredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSusopredio.Name = "txtCRSusopredio";
+            this.txtCRSusopredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSusopredio.TabIndex = 62;
+            // 
+            // txtCRSperimetro
+            // 
+            this.txtCRSperimetro.Location = new System.Drawing.Point(437, 192);
+            this.txtCRSperimetro.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSperimetro.Name = "txtCRSperimetro";
+            this.txtCRSperimetro.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSperimetro.TabIndex = 61;
+            // 
+            // txtCRSareaconstruida
+            // 
+            this.txtCRSareaconstruida.Location = new System.Drawing.Point(437, 159);
+            this.txtCRSareaconstruida.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSareaconstruida.Name = "txtCRSareaconstruida";
+            this.txtCRSareaconstruida.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSareaconstruida.TabIndex = 60;
+            // 
+            // lblCRScodigoluz
+            // 
+            this.lblCRScodigoluz.AutoSize = true;
+            this.lblCRScodigoluz.Location = new System.Drawing.Point(316, 282);
+            this.lblCRScodigoluz.Name = "lblCRScodigoluz";
+            this.lblCRScodigoluz.Size = new System.Drawing.Size(71, 13);
+            this.lblCRScodigoluz.TabIndex = 59;
+            this.lblCRScodigoluz.Text = "Código de luz";
+            // 
+            // lblCRSvalorautovaluo
+            // 
+            this.lblCRSvalorautovaluo.AutoSize = true;
+            this.lblCRSvalorautovaluo.Location = new System.Drawing.Point(316, 254);
+            this.lblCRSvalorautovaluo.Name = "lblCRSvalorautovaluo";
+            this.lblCRSvalorautovaluo.Size = new System.Drawing.Size(97, 13);
+            this.lblCRSvalorautovaluo.TabIndex = 58;
+            this.lblCRSvalorautovaluo.Text = "Valor de Autovaluo";
+            // 
+            // lblCRSusopredio
+            // 
+            this.lblCRSusopredio.AutoSize = true;
+            this.lblCRSusopredio.Location = new System.Drawing.Point(315, 222);
+            this.lblCRSusopredio.Name = "lblCRSusopredio";
+            this.lblCRSusopredio.Size = new System.Drawing.Size(74, 13);
+            this.lblCRSusopredio.TabIndex = 57;
+            this.lblCRSusopredio.Text = "Uso de Predio";
+            // 
+            // lblCRSperimetro
+            // 
+            this.lblCRSperimetro.AutoSize = true;
+            this.lblCRSperimetro.Location = new System.Drawing.Point(315, 192);
+            this.lblCRSperimetro.Name = "lblCRSperimetro";
+            this.lblCRSperimetro.Size = new System.Drawing.Size(51, 13);
+            this.lblCRSperimetro.TabIndex = 56;
+            this.lblCRSperimetro.Text = "Perimetro";
+            // 
+            // lblCRSareaconstruida
+            // 
+            this.lblCRSareaconstruida.AutoSize = true;
+            this.lblCRSareaconstruida.Location = new System.Drawing.Point(315, 162);
+            this.lblCRSareaconstruida.Name = "lblCRSareaconstruida";
+            this.lblCRSareaconstruida.Size = new System.Drawing.Size(81, 13);
+            this.lblCRSareaconstruida.TabIndex = 55;
+            this.lblCRSareaconstruida.Text = "Area construida";
+            // 
+            // txtCRSficharegistral
+            // 
+            this.txtCRSficharegistral.Location = new System.Drawing.Point(437, 130);
+            this.txtCRSficharegistral.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSficharegistral.Name = "txtCRSficharegistral";
+            this.txtCRSficharegistral.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSficharegistral.TabIndex = 54;
+            // 
+            // txtCRSfinscpredio
+            // 
+            this.txtCRSfinscpredio.Location = new System.Drawing.Point(437, 103);
+            this.txtCRSfinscpredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSfinscpredio.Name = "txtCRSfinscpredio";
+            this.txtCRSfinscpredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSfinscpredio.TabIndex = 53;
+            // 
+            // txtCRSasientopredio
+            // 
+            this.txtCRSasientopredio.Location = new System.Drawing.Point(437, 73);
+            this.txtCRSasientopredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSasientopredio.Name = "txtCRSasientopredio";
+            this.txtCRSasientopredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSasientopredio.TabIndex = 52;
+            // 
+            // txtCRSfoliofinpredio
+            // 
+            this.txtCRSfoliofinpredio.Location = new System.Drawing.Point(437, 43);
+            this.txtCRSfoliofinpredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSfoliofinpredio.Name = "txtCRSfoliofinpredio";
+            this.txtCRSfoliofinpredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSfoliofinpredio.TabIndex = 51;
+            // 
+            // txtCRSfolioinipredio
+            // 
+            this.txtCRSfolioinipredio.Location = new System.Drawing.Point(437, 10);
+            this.txtCRSfolioinipredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSfolioinipredio.Name = "txtCRSfolioinipredio";
+            this.txtCRSfolioinipredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSfolioinipredio.TabIndex = 50;
+            // 
+            // lblCRSficharegistral
+            // 
+            this.lblCRSficharegistral.AutoSize = true;
+            this.lblCRSficharegistral.Location = new System.Drawing.Point(315, 133);
+            this.lblCRSficharegistral.Name = "lblCRSficharegistral";
+            this.lblCRSficharegistral.Size = new System.Drawing.Size(77, 13);
+            this.lblCRSficharegistral.TabIndex = 49;
+            this.lblCRSficharegistral.Text = "Ficha Registral";
+            // 
+            // lblCRSfinscpredio
+            // 
+            this.lblCRSfinscpredio.AutoSize = true;
+            this.lblCRSfinscpredio.Location = new System.Drawing.Point(315, 104);
+            this.lblCRSfinscpredio.Name = "lblCRSfinscpredio";
+            this.lblCRSfinscpredio.Size = new System.Drawing.Size(122, 13);
+            this.lblCRSfinscpredio.TabIndex = 48;
+            this.lblCRSfinscpredio.Text = "Ficha de Insc. de Predio";
+            // 
+            // lblCRSasientopredio
+            // 
+            this.lblCRSasientopredio.AutoSize = true;
+            this.lblCRSasientopredio.Location = new System.Drawing.Point(315, 73);
+            this.lblCRSasientopredio.Name = "lblCRSasientopredio";
+            this.lblCRSasientopredio.Size = new System.Drawing.Size(89, 13);
+            this.lblCRSasientopredio.TabIndex = 47;
+            this.lblCRSasientopredio.Text = "Asiento de predio";
+            // 
+            // lblCRSfoliofinpredio
+            // 
+            this.lblCRSfoliofinpredio.AutoSize = true;
+            this.lblCRSfoliofinpredio.Location = new System.Drawing.Point(315, 43);
+            this.lblCRSfoliofinpredio.Name = "lblCRSfoliofinpredio";
+            this.lblCRSfoliofinpredio.Size = new System.Drawing.Size(76, 13);
+            this.lblCRSfoliofinpredio.TabIndex = 46;
+            this.lblCRSfoliofinpredio.Text = "Folio fin Predio";
+            // 
+            // lblCRSfolioinipredio
+            // 
+            this.lblCRSfolioinipredio.AutoSize = true;
+            this.lblCRSfolioinipredio.Location = new System.Drawing.Point(315, 13);
+            this.lblCRSfolioinipredio.Name = "lblCRSfolioinipredio";
+            this.lblCRSfolioinipredio.Size = new System.Drawing.Size(77, 13);
+            this.lblCRSfolioinipredio.TabIndex = 45;
+            this.lblCRSfolioinipredio.Text = "Folio de Predio";
+            // 
+            // txtCRStomopredio
+            // 
+            this.txtCRStomopredio.Location = new System.Drawing.Point(145, 283);
+            this.txtCRStomopredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRStomopredio.Name = "txtCRStomopredio";
+            this.txtCRStomopredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRStomopredio.TabIndex = 44;
+            // 
+            // txtCRSpartidapredio
+            // 
+            this.txtCRSpartidapredio.Location = new System.Drawing.Point(145, 256);
+            this.txtCRSpartidapredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSpartidapredio.Name = "txtCRSpartidapredio";
+            this.txtCRSpartidapredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSpartidapredio.TabIndex = 43;
+            // 
+            // txtCRSpisospredio
+            // 
+            this.txtCRSpisospredio.Location = new System.Drawing.Point(145, 226);
+            this.txtCRSpisospredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSpisospredio.Name = "txtCRSpisospredio";
+            this.txtCRSpisospredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSpisospredio.TabIndex = 42;
+            // 
+            // txtCRSnombrepredio
+            // 
+            this.txtCRSnombrepredio.Location = new System.Drawing.Point(145, 196);
+            this.txtCRSnombrepredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSnombrepredio.Name = "txtCRSnombrepredio";
+            this.txtCRSnombrepredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSnombrepredio.TabIndex = 41;
+            // 
+            // txtCRSkilometro
+            // 
+            this.txtCRSkilometro.Location = new System.Drawing.Point(145, 163);
+            this.txtCRSkilometro.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSkilometro.Name = "txtCRSkilometro";
+            this.txtCRSkilometro.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSkilometro.TabIndex = 40;
+            // 
+            // txtCRScarretera
+            // 
+            this.txtCRScarretera.Location = new System.Drawing.Point(145, 134);
+            this.txtCRScarretera.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRScarretera.Name = "txtCRScarretera";
+            this.txtCRScarretera.Size = new System.Drawing.Size(140, 20);
+            this.txtCRScarretera.TabIndex = 39;
+            // 
+            // txtCRSinterior
+            // 
+            this.txtCRSinterior.Location = new System.Drawing.Point(145, 107);
+            this.txtCRSinterior.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSinterior.Name = "txtCRSinterior";
+            this.txtCRSinterior.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSinterior.TabIndex = 38;
+            // 
+            // txtCRSdepartamento
+            // 
+            this.txtCRSdepartamento.Location = new System.Drawing.Point(145, 77);
+            this.txtCRSdepartamento.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSdepartamento.Name = "txtCRSdepartamento";
+            this.txtCRSdepartamento.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSdepartamento.TabIndex = 37;
+            // 
+            // txtCRSnumeropredio
+            // 
+            this.txtCRSnumeropredio.Location = new System.Drawing.Point(145, 47);
+            this.txtCRSnumeropredio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSnumeropredio.Name = "txtCRSnumeropredio";
+            this.txtCRSnumeropredio.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSnumeropredio.TabIndex = 36;
+            // 
+            // txtCRSlote
+            // 
+            this.txtCRSlote.Location = new System.Drawing.Point(145, 14);
+            this.txtCRSlote.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSlote.Name = "txtCRSlote";
+            this.txtCRSlote.Size = new System.Drawing.Size(140, 20);
+            this.txtCRSlote.TabIndex = 35;
+            // 
+            // lblCRStomopredio
+            // 
+            this.lblCRStomopredio.AutoSize = true;
+            this.lblCRStomopredio.Location = new System.Drawing.Point(17, 286);
+            this.lblCRStomopredio.Name = "lblCRStomopredio";
+            this.lblCRStomopredio.Size = new System.Drawing.Size(81, 13);
+            this.lblCRStomopredio.TabIndex = 34;
+            this.lblCRStomopredio.Text = "Tomo de predio";
+            // 
+            // lblCRSpartidapredio
+            // 
+            this.lblCRSpartidapredio.AutoSize = true;
+            this.lblCRSpartidapredio.Location = new System.Drawing.Point(17, 258);
+            this.lblCRSpartidapredio.Name = "lblCRSpartidapredio";
+            this.lblCRSpartidapredio.Size = new System.Drawing.Size(132, 13);
+            this.lblCRSpartidapredio.TabIndex = 33;
+            this.lblCRSpartidapredio.Text = "Partida Registral de Predio";
+            // 
+            // lblCRSpisospredio
+            // 
+            this.lblCRSpisospredio.AutoSize = true;
+            this.lblCRSpisospredio.Location = new System.Drawing.Point(16, 226);
+            this.lblCRSpisospredio.Name = "lblCRSpisospredio";
+            this.lblCRSpisospredio.Size = new System.Drawing.Size(75, 13);
+            this.lblCRSpisospredio.TabIndex = 32;
+            this.lblCRSpisospredio.Text = "Piso de Predio";
+            // 
+            // lblCRSnombrepredio
+            // 
+            this.lblCRSnombrepredio.AutoSize = true;
+            this.lblCRSnombrepredio.Location = new System.Drawing.Point(16, 196);
+            this.lblCRSnombrepredio.Name = "lblCRSnombrepredio";
+            this.lblCRSnombrepredio.Size = new System.Drawing.Size(92, 13);
+            this.lblCRSnombrepredio.TabIndex = 31;
+            this.lblCRSnombrepredio.Text = "Nombre de Predio";
+            // 
+            // lblCRSkilometro
+            // 
+            this.lblCRSkilometro.AutoSize = true;
+            this.lblCRSkilometro.Location = new System.Drawing.Point(16, 166);
+            this.lblCRSkilometro.Name = "lblCRSkilometro";
+            this.lblCRSkilometro.Size = new System.Drawing.Size(50, 13);
+            this.lblCRSkilometro.TabIndex = 30;
+            this.lblCRSkilometro.Text = "Kilometro";
+            // 
+            // lblCRScarretera
+            // 
+            this.lblCRScarretera.AutoSize = true;
+            this.lblCRScarretera.Location = new System.Drawing.Point(16, 137);
+            this.lblCRScarretera.Name = "lblCRScarretera";
+            this.lblCRScarretera.Size = new System.Drawing.Size(50, 13);
+            this.lblCRScarretera.TabIndex = 29;
+            this.lblCRScarretera.Text = "Carretera";
+            // 
+            // lblCRSinterior
+            // 
+            this.lblCRSinterior.AutoSize = true;
+            this.lblCRSinterior.Location = new System.Drawing.Point(16, 108);
+            this.lblCRSinterior.Name = "lblCRSinterior";
+            this.lblCRSinterior.Size = new System.Drawing.Size(39, 13);
+            this.lblCRSinterior.TabIndex = 28;
+            this.lblCRSinterior.Text = "Interior";
+            // 
+            // lblCRSdepartamento
+            // 
+            this.lblCRSdepartamento.AutoSize = true;
+            this.lblCRSdepartamento.Location = new System.Drawing.Point(16, 77);
+            this.lblCRSdepartamento.Name = "lblCRSdepartamento";
+            this.lblCRSdepartamento.Size = new System.Drawing.Size(74, 13);
+            this.lblCRSdepartamento.TabIndex = 27;
+            this.lblCRSdepartamento.Text = "Departamento";
+            // 
+            // lblCRSnumeropredio
+            // 
+            this.lblCRSnumeropredio.AutoSize = true;
+            this.lblCRSnumeropredio.Location = new System.Drawing.Point(16, 47);
+            this.lblCRSnumeropredio.Name = "lblCRSnumeropredio";
+            this.lblCRSnumeropredio.Size = new System.Drawing.Size(91, 13);
+            this.lblCRSnumeropredio.TabIndex = 26;
+            this.lblCRSnumeropredio.Text = "Numero de predio";
+            // 
+            // lblCRSlote
+            // 
+            this.lblCRSlote.AutoSize = true;
+            this.lblCRSlote.Location = new System.Drawing.Point(16, 17);
+            this.lblCRSlote.Name = "lblCRSlote";
+            this.lblCRSlote.Size = new System.Drawing.Size(28, 13);
+            this.lblCRSlote.TabIndex = 25;
+            this.lblCRSlote.Text = "Lote";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.btnUbicacion_electrica);
+            this.tabPage3.Controls.Add(this.txtCRScalle);
+            this.tabPage3.Controls.Add(this.txtCRSurbanizacion);
+            this.tabPage3.Controls.Add(this.txtCRScentropoblado);
+            this.tabPage3.Controls.Add(this.txtCRSalquilacable);
+            this.tabPage3.Controls.Add(this.txtCRScajaderivadora);
+            this.tabPage3.Controls.Add(this.txtCRSesfuerzopunta);
+            this.tabPage3.Controls.Add(this.txtCRSutmy);
+            this.tabPage3.Controls.Add(this.txtCRSutmx);
+            this.tabPage3.Controls.Add(this.lblCRScalle);
+            this.tabPage3.Controls.Add(this.lblCRSurbanizacion);
+            this.tabPage3.Controls.Add(this.lblCRScentropoblado);
+            this.tabPage3.Controls.Add(this.lblCRSalquilacable);
+            this.tabPage3.Controls.Add(this.lblCRScajaderivadora);
+            this.tabPage3.Controls.Add(this.lblCRSesfuerzopunta);
+            this.tabPage3.Controls.Add(this.lblCRSutmy);
+            this.tabPage3.Controls.Add(this.lblCRSutmx);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1069, 331);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Ubic. Eléctrica";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnUbicacion_electrica
+            // 
+            this.btnUbicacion_electrica.Location = new System.Drawing.Point(503, 179);
+            this.btnUbicacion_electrica.Name = "btnUbicacion_electrica";
+            this.btnUbicacion_electrica.Size = new System.Drawing.Size(116, 37);
+            this.btnUbicacion_electrica.TabIndex = 72;
+            this.btnUbicacion_electrica.Text = "Ubicacion Eléctrica";
+            this.btnUbicacion_electrica.UseVisualStyleBackColor = true;
+            this.btnUbicacion_electrica.Click += new System.EventHandler(this.btnUbicacion_electrica_Click);
+            // 
+            // txtCRScalle
+            // 
+            this.txtCRScalle.Location = new System.Drawing.Point(521, 130);
+            this.txtCRScalle.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRScalle.Name = "txtCRScalle";
+            this.txtCRScalle.Size = new System.Drawing.Size(171, 20);
+            this.txtCRScalle.TabIndex = 40;
+            // 
+            // txtCRSurbanizacion
+            // 
+            this.txtCRSurbanizacion.Location = new System.Drawing.Point(521, 103);
+            this.txtCRSurbanizacion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSurbanizacion.Name = "txtCRSurbanizacion";
+            this.txtCRSurbanizacion.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSurbanizacion.TabIndex = 39;
+            // 
+            // txtCRScentropoblado
+            // 
+            this.txtCRScentropoblado.Location = new System.Drawing.Point(521, 68);
+            this.txtCRScentropoblado.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRScentropoblado.Name = "txtCRScentropoblado";
+            this.txtCRScentropoblado.Size = new System.Drawing.Size(171, 20);
+            this.txtCRScentropoblado.TabIndex = 38;
+            // 
+            // txtCRSalquilacable
+            // 
+            this.txtCRSalquilacable.Location = new System.Drawing.Point(521, 38);
+            this.txtCRSalquilacable.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSalquilacable.Name = "txtCRSalquilacable";
+            this.txtCRSalquilacable.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSalquilacable.TabIndex = 37;
+            // 
+            // txtCRScajaderivadora
+            // 
+            this.txtCRScajaderivadora.Location = new System.Drawing.Point(174, 134);
+            this.txtCRScajaderivadora.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRScajaderivadora.Name = "txtCRScajaderivadora";
+            this.txtCRScajaderivadora.Size = new System.Drawing.Size(171, 20);
+            this.txtCRScajaderivadora.TabIndex = 36;
+            // 
+            // txtCRSesfuerzopunta
+            // 
+            this.txtCRSesfuerzopunta.Location = new System.Drawing.Point(174, 98);
+            this.txtCRSesfuerzopunta.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSesfuerzopunta.Name = "txtCRSesfuerzopunta";
+            this.txtCRSesfuerzopunta.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSesfuerzopunta.TabIndex = 35;
+            // 
+            // txtCRSutmy
+            // 
+            this.txtCRSutmy.Location = new System.Drawing.Point(174, 71);
+            this.txtCRSutmy.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSutmy.Name = "txtCRSutmy";
+            this.txtCRSutmy.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSutmy.TabIndex = 34;
+            // 
+            // txtCRSutmx
+            // 
+            this.txtCRSutmx.Location = new System.Drawing.Point(174, 41);
+            this.txtCRSutmx.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSutmx.Name = "txtCRSutmx";
+            this.txtCRSutmx.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSutmx.TabIndex = 33;
+            // 
+            // lblCRScalle
+            // 
+            this.lblCRScalle.AutoSize = true;
+            this.lblCRScalle.Location = new System.Drawing.Point(370, 133);
+            this.lblCRScalle.Name = "lblCRScalle";
+            this.lblCRScalle.Size = new System.Drawing.Size(30, 13);
+            this.lblCRScalle.TabIndex = 32;
+            this.lblCRScalle.Text = "Calle";
+            // 
+            // lblCRSurbanizacion
+            // 
+            this.lblCRSurbanizacion.AutoSize = true;
+            this.lblCRSurbanizacion.Location = new System.Drawing.Point(370, 105);
+            this.lblCRSurbanizacion.Name = "lblCRSurbanizacion";
+            this.lblCRSurbanizacion.Size = new System.Drawing.Size(69, 13);
+            this.lblCRSurbanizacion.TabIndex = 31;
+            this.lblCRSurbanizacion.Text = "Urbanizacion";
+            // 
+            // lblCRScentropoblado
+            // 
+            this.lblCRScentropoblado.AutoSize = true;
+            this.lblCRScentropoblado.Location = new System.Drawing.Point(369, 68);
+            this.lblCRScentropoblado.Name = "lblCRScentropoblado";
+            this.lblCRScentropoblado.Size = new System.Drawing.Size(79, 13);
+            this.lblCRScentropoblado.TabIndex = 30;
+            this.lblCRScentropoblado.Text = "Centro poblado";
+            // 
+            // lblCRSalquilacable
+            // 
+            this.lblCRSalquilacable.AutoSize = true;
+            this.lblCRSalquilacable.Location = new System.Drawing.Point(369, 38);
+            this.lblCRSalquilacable.Name = "lblCRSalquilacable";
+            this.lblCRSalquilacable.Size = new System.Drawing.Size(68, 13);
+            this.lblCRSalquilacable.TabIndex = 29;
+            this.lblCRSalquilacable.Text = "Alquila Cable";
+            // 
+            // lblCRScajaderivadora
+            // 
+            this.lblCRScajaderivadora.AutoSize = true;
+            this.lblCRScajaderivadora.Location = new System.Drawing.Point(27, 137);
+            this.lblCRScajaderivadora.Name = "lblCRScajaderivadora";
+            this.lblCRScajaderivadora.Size = new System.Drawing.Size(80, 13);
+            this.lblCRScajaderivadora.TabIndex = 28;
+            this.lblCRScajaderivadora.Text = "caja derivadora";
+            // 
+            // lblCRSesfuerzopunta
+            // 
+            this.lblCRSesfuerzopunta.AutoSize = true;
+            this.lblCRSesfuerzopunta.Location = new System.Drawing.Point(27, 101);
+            this.lblCRSesfuerzopunta.Name = "lblCRSesfuerzopunta";
+            this.lblCRSesfuerzopunta.Size = new System.Drawing.Size(78, 13);
+            this.lblCRSesfuerzopunta.TabIndex = 27;
+            this.lblCRSesfuerzopunta.Text = "Esfuerzo punta";
+            // 
+            // lblCRSutmy
+            // 
+            this.lblCRSutmy.AutoSize = true;
+            this.lblCRSutmy.Location = new System.Drawing.Point(27, 72);
+            this.lblCRSutmy.Name = "lblCRSutmy";
+            this.lblCRSutmy.Size = new System.Drawing.Size(39, 13);
+            this.lblCRSutmy.TabIndex = 26;
+            this.lblCRSutmy.Text = "UTM y";
+            // 
+            // lblCRSutmx
+            // 
+            this.lblCRSutmx.AutoSize = true;
+            this.lblCRSutmx.Location = new System.Drawing.Point(27, 41);
+            this.lblCRSutmx.Name = "lblCRSutmx";
+            this.lblCRSutmx.Size = new System.Drawing.Size(39, 13);
+            this.lblCRSutmx.TabIndex = 25;
+            this.lblCRSutmx.Text = "UTM x";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.txtCRSaltura);
+            this.tabPage4.Controls.Add(this.txtCRSvehcargautil);
+            this.tabPage4.Controls.Add(this.txtCRSvehpesoseco);
+            this.tabPage4.Controls.Add(this.lblCRSvehplaca);
+            this.tabPage4.Controls.Add(this.txtCRSvehasientos);
+            this.tabPage4.Controls.Add(this.txtCRSvehpasajeros);
+            this.tabPage4.Controls.Add(this.lblCRSaltura);
+            this.tabPage4.Controls.Add(this.lblCRSvehcargautil);
+            this.tabPage4.Controls.Add(this.lblCRSvehpesoseco);
+            this.tabPage4.Controls.Add(this.txtCRSancho);
+            this.tabPage4.Controls.Add(this.lblCRSvehasientos);
+            this.tabPage4.Controls.Add(this.cboCRSvehplaca);
+            this.tabPage4.Controls.Add(this.lblCRSvehpasajeros);
+            this.tabPage4.Controls.Add(this.lblCRSvehejes);
+            this.tabPage4.Controls.Add(this.lblCRSvehcombustible);
+            this.tabPage4.Controls.Add(this.lblCRSancho);
+            this.tabPage4.Controls.Add(this.lblCRSvehclase);
+            this.tabPage4.Controls.Add(this.lblCRSvehinscripcion);
+            this.tabPage4.Controls.Add(this.lblCRSvehexpediente);
+            this.tabPage4.Controls.Add(this.txtCRSvehejes);
+            this.tabPage4.Controls.Add(this.txtCRSvehcombustible);
+            this.tabPage4.Controls.Add(this.txtCRSvehclase);
+            this.tabPage4.Controls.Add(this.txtCRSvehinscripcion);
+            this.tabPage4.Controls.Add(this.txtCRSvehexpediente);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1069, 331);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Vehiculos";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // txtCRSaltura
+            // 
+            this.txtCRSaltura.Location = new System.Drawing.Point(526, 169);
+            this.txtCRSaltura.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSaltura.Name = "txtCRSaltura";
+            this.txtCRSaltura.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSaltura.TabIndex = 180;
+            // 
+            // txtCRSvehcargautil
+            // 
+            this.txtCRSvehcargautil.Location = new System.Drawing.Point(526, 142);
+            this.txtCRSvehcargautil.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvehcargautil.Name = "txtCRSvehcargautil";
+            this.txtCRSvehcargautil.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvehcargautil.TabIndex = 179;
+            // 
+            // txtCRSvehpesoseco
+            // 
+            this.txtCRSvehpesoseco.Location = new System.Drawing.Point(526, 112);
+            this.txtCRSvehpesoseco.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvehpesoseco.Name = "txtCRSvehpesoseco";
+            this.txtCRSvehpesoseco.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvehpesoseco.TabIndex = 178;
+            // 
+            // lblCRSvehplaca
+            // 
+            this.lblCRSvehplaca.AutoSize = true;
+            this.lblCRSvehplaca.Location = new System.Drawing.Point(32, 51);
+            this.lblCRSvehplaca.Name = "lblCRSvehplaca";
+            this.lblCRSvehplaca.Size = new System.Drawing.Size(93, 13);
+            this.lblCRSvehplaca.TabIndex = 182;
+            this.lblCRSvehplaca.Text = "Placa de Vehiculo";
+            // 
+            // txtCRSvehasientos
+            // 
+            this.txtCRSvehasientos.Location = new System.Drawing.Point(526, 82);
+            this.txtCRSvehasientos.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvehasientos.Name = "txtCRSvehasientos";
+            this.txtCRSvehasientos.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvehasientos.TabIndex = 177;
+            // 
+            // txtCRSvehpasajeros
+            // 
+            this.txtCRSvehpasajeros.Location = new System.Drawing.Point(526, 51);
+            this.txtCRSvehpasajeros.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvehpasajeros.Name = "txtCRSvehpasajeros";
+            this.txtCRSvehpasajeros.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvehpasajeros.TabIndex = 176;
+            // 
+            // lblCRSaltura
+            // 
+            this.lblCRSaltura.AutoSize = true;
+            this.lblCRSaltura.Location = new System.Drawing.Point(375, 175);
+            this.lblCRSaltura.Name = "lblCRSaltura";
+            this.lblCRSaltura.Size = new System.Drawing.Size(34, 13);
+            this.lblCRSaltura.TabIndex = 174;
+            this.lblCRSaltura.Text = "Altura";
+            // 
+            // lblCRSvehcargautil
+            // 
+            this.lblCRSvehcargautil.AutoSize = true;
+            this.lblCRSvehcargautil.Location = new System.Drawing.Point(374, 148);
+            this.lblCRSvehcargautil.Name = "lblCRSvehcargautil";
+            this.lblCRSvehcargautil.Size = new System.Drawing.Size(112, 13);
+            this.lblCRSvehcargautil.TabIndex = 173;
+            this.lblCRSvehcargautil.Text = "Carga Util de Vehiculo";
+            // 
+            // lblCRSvehpesoseco
+            // 
+            this.lblCRSvehpesoseco.AutoSize = true;
+            this.lblCRSvehpesoseco.Location = new System.Drawing.Point(374, 118);
+            this.lblCRSvehpesoseco.Name = "lblCRSvehpesoseco";
+            this.lblCRSvehpesoseco.Size = new System.Drawing.Size(116, 13);
+            this.lblCRSvehpesoseco.TabIndex = 172;
+            this.lblCRSvehpesoseco.Text = "Peso seco de Vehiculo";
+            // 
+            // txtCRSancho
+            // 
+            this.txtCRSancho.Location = new System.Drawing.Point(526, 202);
+            this.txtCRSancho.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSancho.Name = "txtCRSancho";
+            this.txtCRSancho.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSancho.TabIndex = 175;
+            // 
+            // lblCRSvehasientos
+            // 
+            this.lblCRSvehasientos.AutoSize = true;
+            this.lblCRSvehasientos.Location = new System.Drawing.Point(374, 86);
+            this.lblCRSvehasientos.Name = "lblCRSvehasientos";
+            this.lblCRSvehasientos.Size = new System.Drawing.Size(105, 13);
+            this.lblCRSvehasientos.TabIndex = 171;
+            this.lblCRSvehasientos.Text = "Asientos de vehiculo";
+            // 
+            // cboCRSvehplaca
+            // 
+            this.cboCRSvehplaca.FormattingEnabled = true;
+            this.cboCRSvehplaca.Location = new System.Drawing.Point(175, 48);
+            this.cboCRSvehplaca.Margin = new System.Windows.Forms.Padding(2);
+            this.cboCRSvehplaca.Name = "cboCRSvehplaca";
+            this.cboCRSvehplaca.Size = new System.Drawing.Size(171, 21);
+            this.cboCRSvehplaca.TabIndex = 181;
+            // 
+            // lblCRSvehpasajeros
+            // 
+            this.lblCRSvehpasajeros.AutoSize = true;
+            this.lblCRSvehpasajeros.Location = new System.Drawing.Point(374, 57);
+            this.lblCRSvehpasajeros.Name = "lblCRSvehpasajeros";
+            this.lblCRSvehpasajeros.Size = new System.Drawing.Size(106, 13);
+            this.lblCRSvehpasajeros.TabIndex = 170;
+            this.lblCRSvehpasajeros.Text = "Pasajero de vehiculo";
+            // 
+            // lblCRSvehejes
+            // 
+            this.lblCRSvehejes.AutoSize = true;
+            this.lblCRSvehejes.Location = new System.Drawing.Point(32, 213);
+            this.lblCRSvehejes.Name = "lblCRSvehejes";
+            this.lblCRSvehejes.Size = new System.Drawing.Size(86, 13);
+            this.lblCRSvehejes.TabIndex = 169;
+            this.lblCRSvehejes.Text = "Ejes de Vehiculo";
+            // 
+            // lblCRSvehcombustible
+            // 
+            this.lblCRSvehcombustible.AutoSize = true;
+            this.lblCRSvehcombustible.Location = new System.Drawing.Point(32, 186);
+            this.lblCRSvehcombustible.Name = "lblCRSvehcombustible";
+            this.lblCRSvehcombustible.Size = new System.Drawing.Size(122, 13);
+            this.lblCRSvehcombustible.TabIndex = 168;
+            this.lblCRSvehcombustible.Text = "Combustible de vehiculo";
+            // 
+            // lblCRSancho
+            // 
+            this.lblCRSancho.AutoSize = true;
+            this.lblCRSancho.Location = new System.Drawing.Point(375, 205);
+            this.lblCRSancho.Name = "lblCRSancho";
+            this.lblCRSancho.Size = new System.Drawing.Size(38, 13);
+            this.lblCRSancho.TabIndex = 165;
+            this.lblCRSancho.Text = "Ancho";
+            // 
+            // lblCRSvehclase
+            // 
+            this.lblCRSvehclase.AutoSize = true;
+            this.lblCRSvehclase.Location = new System.Drawing.Point(32, 156);
+            this.lblCRSvehclase.Name = "lblCRSvehclase";
+            this.lblCRSvehclase.Size = new System.Drawing.Size(91, 13);
+            this.lblCRSvehclase.TabIndex = 167;
+            this.lblCRSvehclase.Text = "Clase de vehiculo";
+            // 
+            // lblCRSvehinscripcion
+            // 
+            this.lblCRSvehinscripcion.AutoSize = true;
+            this.lblCRSvehinscripcion.Location = new System.Drawing.Point(32, 118);
+            this.lblCRSvehinscripcion.Name = "lblCRSvehinscripcion";
+            this.lblCRSvehinscripcion.Size = new System.Drawing.Size(111, 13);
+            this.lblCRSvehinscripcion.TabIndex = 166;
+            this.lblCRSvehinscripcion.Text = "Incripcion de vehiculo";
+            // 
+            // lblCRSvehexpediente
+            // 
+            this.lblCRSvehexpediente.AutoSize = true;
+            this.lblCRSvehexpediente.Location = new System.Drawing.Point(32, 86);
+            this.lblCRSvehexpediente.Name = "lblCRSvehexpediente";
+            this.lblCRSvehexpediente.Size = new System.Drawing.Size(119, 13);
+            this.lblCRSvehexpediente.TabIndex = 164;
+            this.lblCRSvehexpediente.Text = "Expediente de Vehiculo";
+            // 
+            // txtCRSvehejes
+            // 
+            this.txtCRSvehejes.Location = new System.Drawing.Point(175, 206);
+            this.txtCRSvehejes.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvehejes.Name = "txtCRSvehejes";
+            this.txtCRSvehejes.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvehejes.TabIndex = 163;
+            // 
+            // txtCRSvehcombustible
+            // 
+            this.txtCRSvehcombustible.Location = new System.Drawing.Point(175, 179);
+            this.txtCRSvehcombustible.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvehcombustible.Name = "txtCRSvehcombustible";
+            this.txtCRSvehcombustible.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvehcombustible.TabIndex = 162;
+            // 
+            // txtCRSvehclase
+            // 
+            this.txtCRSvehclase.Location = new System.Drawing.Point(175, 149);
+            this.txtCRSvehclase.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvehclase.Name = "txtCRSvehclase";
+            this.txtCRSvehclase.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvehclase.TabIndex = 161;
+            // 
+            // txtCRSvehinscripcion
+            // 
+            this.txtCRSvehinscripcion.Location = new System.Drawing.Point(175, 115);
+            this.txtCRSvehinscripcion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvehinscripcion.Name = "txtCRSvehinscripcion";
+            this.txtCRSvehinscripcion.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvehinscripcion.TabIndex = 160;
+            // 
+            // txtCRSvehexpediente
+            // 
+            this.txtCRSvehexpediente.Location = new System.Drawing.Point(175, 82);
+            this.txtCRSvehexpediente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvehexpediente.Name = "txtCRSvehexpediente";
+            this.txtCRSvehexpediente.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvehexpediente.TabIndex = 159;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.txtCRStemperatura);
+            this.tabPage5.Controls.Add(this.txtCRSfrecuencia);
+            this.tabPage5.Controls.Add(this.txtCRSvsalida);
+            this.tabPage5.Controls.Add(this.txtCRSventrada);
+            this.tabPage5.Controls.Add(this.txtCRSvnominal);
+            this.tabPage5.Controls.Add(this.txtCRSpotencia);
+            this.tabPage5.Controls.Add(this.txtCRScapacidad);
+            this.tabPage5.Controls.Add(this.txtCRSresolucion);
+            this.tabPage5.Controls.Add(this.txtCRSpuertos);
+            this.tabPage5.Controls.Add(this.txtCRSprocesador);
+            this.tabPage5.Controls.Add(this.txtCRSvelocidad);
+            this.tabPage5.Controls.Add(this.lblCRStemperatura);
+            this.tabPage5.Controls.Add(this.lblCRSfrecuencia);
+            this.tabPage5.Controls.Add(this.lblCRSvsalida);
+            this.tabPage5.Controls.Add(this.lblCRSventrada);
+            this.tabPage5.Controls.Add(this.lblCRSvnominal);
+            this.tabPage5.Controls.Add(this.lblCRSpotencia);
+            this.tabPage5.Controls.Add(this.lblCRSprocesador);
+            this.tabPage5.Controls.Add(this.lblCRSvelocidad);
+            this.tabPage5.Controls.Add(this.lblCRSpuertos);
+            this.tabPage5.Controls.Add(this.lblCRScapacidad);
+            this.tabPage5.Controls.Add(this.lblCRSresolucion);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1069, 331);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Equipos";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // txtCRStemperatura
+            // 
+            this.txtCRStemperatura.Location = new System.Drawing.Point(539, 107);
+            this.txtCRStemperatura.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRStemperatura.Name = "txtCRStemperatura";
+            this.txtCRStemperatura.Size = new System.Drawing.Size(171, 20);
+            this.txtCRStemperatura.TabIndex = 46;
+            // 
+            // txtCRSfrecuencia
+            // 
+            this.txtCRSfrecuencia.Location = new System.Drawing.Point(539, 80);
+            this.txtCRSfrecuencia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSfrecuencia.Name = "txtCRSfrecuencia";
+            this.txtCRSfrecuencia.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSfrecuencia.TabIndex = 45;
+            // 
+            // txtCRSvsalida
+            // 
+            this.txtCRSvsalida.Location = new System.Drawing.Point(539, 50);
+            this.txtCRSvsalida.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvsalida.Name = "txtCRSvsalida";
+            this.txtCRSvsalida.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvsalida.TabIndex = 44;
+            // 
+            // txtCRSventrada
+            // 
+            this.txtCRSventrada.Location = new System.Drawing.Point(192, 201);
+            this.txtCRSventrada.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSventrada.Name = "txtCRSventrada";
+            this.txtCRSventrada.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSventrada.TabIndex = 43;
+            // 
+            // txtCRSvnominal
+            // 
+            this.txtCRSvnominal.Location = new System.Drawing.Point(192, 168);
+            this.txtCRSvnominal.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvnominal.Name = "txtCRSvnominal";
+            this.txtCRSvnominal.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvnominal.TabIndex = 42;
+            // 
+            // txtCRSpotencia
+            // 
+            this.txtCRSpotencia.Location = new System.Drawing.Point(192, 133);
+            this.txtCRSpotencia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSpotencia.Name = "txtCRSpotencia";
+            this.txtCRSpotencia.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSpotencia.TabIndex = 41;
+            // 
+            // txtCRScapacidad
+            // 
+            this.txtCRScapacidad.Location = new System.Drawing.Point(192, 106);
+            this.txtCRScapacidad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRScapacidad.Name = "txtCRScapacidad";
+            this.txtCRScapacidad.Size = new System.Drawing.Size(171, 20);
+            this.txtCRScapacidad.TabIndex = 40;
+            // 
+            // txtCRSresolucion
+            // 
+            this.txtCRSresolucion.Location = new System.Drawing.Point(192, 76);
+            this.txtCRSresolucion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSresolucion.Name = "txtCRSresolucion";
+            this.txtCRSresolucion.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSresolucion.TabIndex = 39;
+            // 
+            // txtCRSpuertos
+            // 
+            this.txtCRSpuertos.Location = new System.Drawing.Point(539, 171);
+            this.txtCRSpuertos.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSpuertos.Name = "txtCRSpuertos";
+            this.txtCRSpuertos.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSpuertos.TabIndex = 38;
+            // 
+            // txtCRSprocesador
+            // 
+            this.txtCRSprocesador.Location = new System.Drawing.Point(539, 138);
+            this.txtCRSprocesador.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSprocesador.Name = "txtCRSprocesador";
+            this.txtCRSprocesador.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSprocesador.TabIndex = 36;
+            // 
+            // txtCRSvelocidad
+            // 
+            this.txtCRSvelocidad.Location = new System.Drawing.Point(192, 41);
+            this.txtCRSvelocidad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSvelocidad.Name = "txtCRSvelocidad";
+            this.txtCRSvelocidad.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSvelocidad.TabIndex = 37;
+            // 
+            // lblCRStemperatura
+            // 
+            this.lblCRStemperatura.AutoSize = true;
+            this.lblCRStemperatura.Location = new System.Drawing.Point(388, 110);
+            this.lblCRStemperatura.Name = "lblCRStemperatura";
+            this.lblCRStemperatura.Size = new System.Drawing.Size(67, 13);
+            this.lblCRStemperatura.TabIndex = 35;
+            this.lblCRStemperatura.Text = "Temperatura";
+            // 
+            // lblCRSfrecuencia
+            // 
+            this.lblCRSfrecuencia.AutoSize = true;
+            this.lblCRSfrecuencia.Location = new System.Drawing.Point(388, 82);
+            this.lblCRSfrecuencia.Name = "lblCRSfrecuencia";
+            this.lblCRSfrecuencia.Size = new System.Drawing.Size(60, 13);
+            this.lblCRSfrecuencia.TabIndex = 34;
+            this.lblCRSfrecuencia.Text = "Frecuencia";
+            // 
+            // lblCRSvsalida
+            // 
+            this.lblCRSvsalida.AutoSize = true;
+            this.lblCRSvsalida.Location = new System.Drawing.Point(387, 50);
+            this.lblCRSvsalida.Name = "lblCRSvsalida";
+            this.lblCRSvsalida.Size = new System.Drawing.Size(76, 13);
+            this.lblCRSvsalida.TabIndex = 33;
+            this.lblCRSvsalida.Text = "Valor de salida";
+            // 
+            // lblCRSventrada
+            // 
+            this.lblCRSventrada.AutoSize = true;
+            this.lblCRSventrada.Location = new System.Drawing.Point(40, 201);
+            this.lblCRSventrada.Name = "lblCRSventrada";
+            this.lblCRSventrada.Size = new System.Drawing.Size(93, 13);
+            this.lblCRSventrada.TabIndex = 32;
+            this.lblCRSventrada.Text = "Voltaje de entrada";
+            // 
+            // lblCRSvnominal
+            // 
+            this.lblCRSvnominal.AutoSize = true;
+            this.lblCRSvnominal.Location = new System.Drawing.Point(40, 171);
+            this.lblCRSvnominal.Name = "lblCRSvnominal";
+            this.lblCRSvnominal.Size = new System.Drawing.Size(77, 13);
+            this.lblCRSvnominal.TabIndex = 31;
+            this.lblCRSvnominal.Text = "voltaje nominal";
+            // 
+            // lblCRSpotencia
+            // 
+            this.lblCRSpotencia.AutoSize = true;
+            this.lblCRSpotencia.Location = new System.Drawing.Point(45, 136);
+            this.lblCRSpotencia.Name = "lblCRSpotencia";
+            this.lblCRSpotencia.Size = new System.Drawing.Size(49, 13);
+            this.lblCRSpotencia.TabIndex = 30;
+            this.lblCRSpotencia.Text = "Potencia";
+            // 
+            // lblCRSprocesador
+            // 
+            this.lblCRSprocesador.AutoSize = true;
+            this.lblCRSprocesador.Location = new System.Drawing.Point(392, 141);
+            this.lblCRSprocesador.Name = "lblCRSprocesador";
+            this.lblCRSprocesador.Size = new System.Drawing.Size(61, 13);
+            this.lblCRSprocesador.TabIndex = 25;
+            this.lblCRSprocesador.Text = "Procesador";
+            // 
+            // lblCRSvelocidad
+            // 
+            this.lblCRSvelocidad.AutoSize = true;
+            this.lblCRSvelocidad.Location = new System.Drawing.Point(45, 41);
+            this.lblCRSvelocidad.Name = "lblCRSvelocidad";
+            this.lblCRSvelocidad.Size = new System.Drawing.Size(54, 13);
+            this.lblCRSvelocidad.TabIndex = 27;
+            this.lblCRSvelocidad.Text = "Velocidad";
+            // 
+            // lblCRSpuertos
+            // 
+            this.lblCRSpuertos.AutoSize = true;
+            this.lblCRSpuertos.Location = new System.Drawing.Point(392, 171);
+            this.lblCRSpuertos.Name = "lblCRSpuertos";
+            this.lblCRSpuertos.Size = new System.Drawing.Size(42, 13);
+            this.lblCRSpuertos.TabIndex = 26;
+            this.lblCRSpuertos.Text = "puertos";
+            // 
+            // lblCRScapacidad
+            // 
+            this.lblCRScapacidad.AutoSize = true;
+            this.lblCRScapacidad.Location = new System.Drawing.Point(45, 107);
+            this.lblCRScapacidad.Name = "lblCRScapacidad";
+            this.lblCRScapacidad.Size = new System.Drawing.Size(58, 13);
+            this.lblCRScapacidad.TabIndex = 29;
+            this.lblCRScapacidad.Text = "Capacidad";
+            // 
+            // lblCRSresolucion
+            // 
+            this.lblCRSresolucion.AutoSize = true;
+            this.lblCRSresolucion.Location = new System.Drawing.Point(45, 76);
+            this.lblCRSresolucion.Name = "lblCRSresolucion";
+            this.lblCRSresolucion.Size = new System.Drawing.Size(60, 13);
+            this.lblCRSresolucion.TabIndex = 28;
+            this.lblCRSresolucion.Text = "Resolucion";
             // 
             // dtpACFfincorporacion
             // 
@@ -702,64 +1972,6 @@
             this.txtACFfcapitalizacion.Name = "txtACFfcapitalizacion";
             this.txtACFfcapitalizacion.Size = new System.Drawing.Size(140, 20);
             this.txtACFfcapitalizacion.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.btnTerreno_Edificaciones);
-            this.tabPage2.Controls.Add(this.txtCRSobservacion);
-            this.tabPage2.Controls.Add(this.txtCRSfadqpredio);
-            this.tabPage2.Controls.Add(this.txtCRScodigoagua);
-            this.tabPage2.Controls.Add(this.lblCRSobservacion);
-            this.tabPage2.Controls.Add(this.lblCRSfadqpredio);
-            this.tabPage2.Controls.Add(this.lblCRScodigoagua);
-            this.tabPage2.Controls.Add(this.txtCRScodigoluz);
-            this.tabPage2.Controls.Add(this.txtCRSvalorautovaluo);
-            this.tabPage2.Controls.Add(this.txtCRSusopredio);
-            this.tabPage2.Controls.Add(this.txtCRSperimetro);
-            this.tabPage2.Controls.Add(this.txtCRSareaconstruida);
-            this.tabPage2.Controls.Add(this.lblCRScodigoluz);
-            this.tabPage2.Controls.Add(this.lblCRSvalorautovaluo);
-            this.tabPage2.Controls.Add(this.lblCRSusopredio);
-            this.tabPage2.Controls.Add(this.lblCRSperimetro);
-            this.tabPage2.Controls.Add(this.lblCRSareaconstruida);
-            this.tabPage2.Controls.Add(this.txtCRSficharegistral);
-            this.tabPage2.Controls.Add(this.txtCRSfinscpredio);
-            this.tabPage2.Controls.Add(this.txtCRSasientopredio);
-            this.tabPage2.Controls.Add(this.txtCRSfoliofinpredio);
-            this.tabPage2.Controls.Add(this.txtCRSfolioinipredio);
-            this.tabPage2.Controls.Add(this.lblCRSficharegistral);
-            this.tabPage2.Controls.Add(this.lblCRSfinscpredio);
-            this.tabPage2.Controls.Add(this.lblCRSasientopredio);
-            this.tabPage2.Controls.Add(this.lblCRSfoliofinpredio);
-            this.tabPage2.Controls.Add(this.lblCRSfolioinipredio);
-            this.tabPage2.Controls.Add(this.txtCRStomopredio);
-            this.tabPage2.Controls.Add(this.txtCRSpartidapredio);
-            this.tabPage2.Controls.Add(this.txtCRSpisospredio);
-            this.tabPage2.Controls.Add(this.txtCRSnombrepredio);
-            this.tabPage2.Controls.Add(this.txtCRSkilometro);
-            this.tabPage2.Controls.Add(this.txtCRScarretera);
-            this.tabPage2.Controls.Add(this.txtCRSinterior);
-            this.tabPage2.Controls.Add(this.txtCRSdepartamento);
-            this.tabPage2.Controls.Add(this.txtCRSnumeropredio);
-            this.tabPage2.Controls.Add(this.txtCRSlote);
-            this.tabPage2.Controls.Add(this.lblCRStomopredio);
-            this.tabPage2.Controls.Add(this.lblCRSpartidapredio);
-            this.tabPage2.Controls.Add(this.lblCRSpisospredio);
-            this.tabPage2.Controls.Add(this.lblCRSnombrepredio);
-            this.tabPage2.Controls.Add(this.lblCRSkilometro);
-            this.tabPage2.Controls.Add(this.lblCRScarretera);
-            this.tabPage2.Controls.Add(this.lblCRSinterior);
-            this.tabPage2.Controls.Add(this.lblCRSdepartamento);
-            this.tabPage2.Controls.Add(this.lblCRSnumeropredio);
-            this.tabPage2.Controls.Add(this.lblCRSlote);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(1069, 331);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Terreno y Edificaciones";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // cboAMBid
             // 
@@ -931,32 +2143,6 @@
             this.label23.TabIndex = 5;
             this.label23.Text = "Criterio de Clasificacion 2";
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.btnUbicacion_electrica);
-            this.tabPage3.Controls.Add(this.txtCRScalle);
-            this.tabPage3.Controls.Add(this.txtCRSurbanizacion);
-            this.tabPage3.Controls.Add(this.txtCRScentropoblado);
-            this.tabPage3.Controls.Add(this.txtCRSalquilacable);
-            this.tabPage3.Controls.Add(this.txtCRScajaderivadora);
-            this.tabPage3.Controls.Add(this.txtCRSesfuerzopunta);
-            this.tabPage3.Controls.Add(this.txtCRSutmy);
-            this.tabPage3.Controls.Add(this.txtCRSutmx);
-            this.tabPage3.Controls.Add(this.lblCRScalle);
-            this.tabPage3.Controls.Add(this.lblCRSurbanizacion);
-            this.tabPage3.Controls.Add(this.lblCRScentropoblado);
-            this.tabPage3.Controls.Add(this.lblCRSalquilacable);
-            this.tabPage3.Controls.Add(this.lblCRScajaderivadora);
-            this.tabPage3.Controls.Add(this.lblCRSesfuerzopunta);
-            this.tabPage3.Controls.Add(this.lblCRSutmy);
-            this.tabPage3.Controls.Add(this.lblCRSutmx);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1069, 331);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Ubic. Eléctrica";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // cboUBEid
             // 
             this.cboUBEid.FormattingEnabled = true;
@@ -1126,39 +2312,6 @@
             this.label42.Size = new System.Drawing.Size(100, 13);
             this.label42.TabIndex = 5;
             this.label42.Text = "Cód. de documento";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.txtCRSaltura);
-            this.tabPage4.Controls.Add(this.txtCRSvehcargautil);
-            this.tabPage4.Controls.Add(this.txtCRSvehpesoseco);
-            this.tabPage4.Controls.Add(this.lblCRSvehplaca);
-            this.tabPage4.Controls.Add(this.txtCRSvehasientos);
-            this.tabPage4.Controls.Add(this.txtCRSvehpasajeros);
-            this.tabPage4.Controls.Add(this.lblCRSaltura);
-            this.tabPage4.Controls.Add(this.lblCRSvehcargautil);
-            this.tabPage4.Controls.Add(this.lblCRSvehpesoseco);
-            this.tabPage4.Controls.Add(this.txtCRSancho);
-            this.tabPage4.Controls.Add(this.lblCRSvehasientos);
-            this.tabPage4.Controls.Add(this.cboCRSvehplaca);
-            this.tabPage4.Controls.Add(this.lblCRSvehpasajeros);
-            this.tabPage4.Controls.Add(this.lblCRSvehejes);
-            this.tabPage4.Controls.Add(this.lblCRSvehcombustible);
-            this.tabPage4.Controls.Add(this.lblCRSancho);
-            this.tabPage4.Controls.Add(this.lblCRSvehclase);
-            this.tabPage4.Controls.Add(this.lblCRSvehinscripcion);
-            this.tabPage4.Controls.Add(this.lblCRSvehexpediente);
-            this.tabPage4.Controls.Add(this.txtCRSvehejes);
-            this.tabPage4.Controls.Add(this.txtCRSvehcombustible);
-            this.tabPage4.Controls.Add(this.txtCRSvehclase);
-            this.tabPage4.Controls.Add(this.txtCRSvehinscripcion);
-            this.tabPage4.Controls.Add(this.txtCRSvehexpediente);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1069, 331);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Vehiculos";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // cboVNRid
             // 
@@ -1405,1146 +2558,6 @@
             this.txtACFfactortrib.Size = new System.Drawing.Size(140, 20);
             this.txtACFfactortrib.TabIndex = 146;
             // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.txtCRStemperatura);
-            this.tabPage5.Controls.Add(this.txtCRSfrecuencia);
-            this.tabPage5.Controls.Add(this.txtCRSvsalida);
-            this.tabPage5.Controls.Add(this.txtCRSventrada);
-            this.tabPage5.Controls.Add(this.txtCRSvnominal);
-            this.tabPage5.Controls.Add(this.txtCRSpotencia);
-            this.tabPage5.Controls.Add(this.txtCRScapacidad);
-            this.tabPage5.Controls.Add(this.txtCRSresolucion);
-            this.tabPage5.Controls.Add(this.txtCRSpuertos);
-            this.tabPage5.Controls.Add(this.txtCRSprocesador);
-            this.tabPage5.Controls.Add(this.txtCRSvelocidad);
-            this.tabPage5.Controls.Add(this.lblCRStemperatura);
-            this.tabPage5.Controls.Add(this.lblCRSfrecuencia);
-            this.tabPage5.Controls.Add(this.lblCRSvsalida);
-            this.tabPage5.Controls.Add(this.lblCRSventrada);
-            this.tabPage5.Controls.Add(this.lblCRSvnominal);
-            this.tabPage5.Controls.Add(this.lblCRSpotencia);
-            this.tabPage5.Controls.Add(this.lblCRSprocesador);
-            this.tabPage5.Controls.Add(this.lblCRSvelocidad);
-            this.tabPage5.Controls.Add(this.lblCRSpuertos);
-            this.tabPage5.Controls.Add(this.lblCRScapacidad);
-            this.tabPage5.Controls.Add(this.lblCRSresolucion);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1069, 331);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Equipos";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // lblCRSmodelo
-            // 
-            this.lblCRSmodelo.AutoSize = true;
-            this.lblCRSmodelo.Location = new System.Drawing.Point(30, 185);
-            this.lblCRSmodelo.Name = "lblCRSmodelo";
-            this.lblCRSmodelo.Size = new System.Drawing.Size(42, 13);
-            this.lblCRSmodelo.TabIndex = 19;
-            this.lblCRSmodelo.Text = "Modelo";
-            // 
-            // lblCRSserie
-            // 
-            this.lblCRSserie.AutoSize = true;
-            this.lblCRSserie.Location = new System.Drawing.Point(30, 163);
-            this.lblCRSserie.Name = "lblCRSserie";
-            this.lblCRSserie.Size = new System.Drawing.Size(31, 13);
-            this.lblCRSserie.TabIndex = 18;
-            this.lblCRSserie.Text = "Serie";
-            // 
-            // lblESTid
-            // 
-            this.lblESTid.AutoSize = true;
-            this.lblESTid.Location = new System.Drawing.Point(30, 134);
-            this.lblESTid.Name = "lblESTid";
-            this.lblESTid.Size = new System.Drawing.Size(128, 13);
-            this.lblESTid.TabIndex = 17;
-            this.lblESTid.Text = "Codigo de estado de bien";
-            // 
-            // lblMARid
-            // 
-            this.lblMARid.AutoSize = true;
-            this.lblMARid.Location = new System.Drawing.Point(30, 96);
-            this.lblMARid.Name = "lblMARid";
-            this.lblMARid.Size = new System.Drawing.Size(87, 13);
-            this.lblMARid.TabIndex = 16;
-            this.lblMARid.Text = "Codigo de marca";
-            // 
-            // lblACFid
-            // 
-            this.lblACFid.AutoSize = true;
-            this.lblACFid.Location = new System.Drawing.Point(30, 64);
-            this.lblACFid.Name = "lblACFid";
-            this.lblACFid.Size = new System.Drawing.Size(87, 13);
-            this.lblACFid.TabIndex = 15;
-            this.lblACFid.Text = "Codigo de activo";
-            // 
-            // txtCRSmodelo
-            // 
-            this.txtCRSmodelo.Location = new System.Drawing.Point(182, 184);
-            this.txtCRSmodelo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSmodelo.Name = "txtCRSmodelo";
-            this.txtCRSmodelo.Size = new System.Drawing.Size(179, 20);
-            this.txtCRSmodelo.TabIndex = 14;
-            // 
-            // txtCRSserie
-            // 
-            this.txtCRSserie.Location = new System.Drawing.Point(182, 158);
-            this.txtCRSserie.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSserie.Name = "txtCRSserie";
-            this.txtCRSserie.Size = new System.Drawing.Size(179, 20);
-            this.txtCRSserie.TabIndex = 13;
-            // 
-            // txtESTid
-            // 
-            this.txtESTid.Location = new System.Drawing.Point(182, 127);
-            this.txtESTid.Margin = new System.Windows.Forms.Padding(2);
-            this.txtESTid.Name = "txtESTid";
-            this.txtESTid.Size = new System.Drawing.Size(179, 20);
-            this.txtESTid.TabIndex = 12;
-            // 
-            // txtMARid
-            // 
-            this.txtMARid.Location = new System.Drawing.Point(182, 93);
-            this.txtMARid.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMARid.Name = "txtMARid";
-            this.txtMARid.Size = new System.Drawing.Size(179, 20);
-            this.txtMARid.TabIndex = 11;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(182, 64);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(103, 20);
-            this.textBox1.TabIndex = 10;
-            // 
-            // txtCRScantidad
-            // 
-            this.txtCRScantidad.Location = new System.Drawing.Point(627, 171);
-            this.txtCRScantidad.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRScantidad.Name = "txtCRScantidad";
-            this.txtCRScantidad.Size = new System.Drawing.Size(187, 20);
-            this.txtCRScantidad.TabIndex = 171;
-            // 
-            // txtUNMid
-            // 
-            this.txtUNMid.Location = new System.Drawing.Point(627, 144);
-            this.txtUNMid.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUNMid.Name = "txtUNMid";
-            this.txtUNMid.Size = new System.Drawing.Size(187, 20);
-            this.txtUNMid.TabIndex = 170;
-            // 
-            // txtCRStipo
-            // 
-            this.txtCRStipo.Location = new System.Drawing.Point(627, 112);
-            this.txtCRStipo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRStipo.Name = "txtCRStipo";
-            this.txtCRStipo.Size = new System.Drawing.Size(187, 20);
-            this.txtCRStipo.TabIndex = 169;
-            // 
-            // lblCRScantidad
-            // 
-            this.lblCRScantidad.AutoSize = true;
-            this.lblCRScantidad.Location = new System.Drawing.Point(476, 174);
-            this.lblCRScantidad.Name = "lblCRScantidad";
-            this.lblCRScantidad.Size = new System.Drawing.Size(49, 13);
-            this.lblCRScantidad.TabIndex = 168;
-            this.lblCRScantidad.Text = "Cantidad";
-            // 
-            // lblUNMid
-            // 
-            this.lblUNMid.AutoSize = true;
-            this.lblUNMid.Location = new System.Drawing.Point(476, 144);
-            this.lblUNMid.Name = "lblUNMid";
-            this.lblUNMid.Size = new System.Drawing.Size(142, 13);
-            this.lblUNMid.TabIndex = 167;
-            this.lblUNMid.Text = "Codigo de unidad de medida";
-            // 
-            // lblCRStipo
-            // 
-            this.lblCRStipo.AutoSize = true;
-            this.lblCRStipo.Location = new System.Drawing.Point(475, 115);
-            this.lblCRStipo.Name = "lblCRStipo";
-            this.lblCRStipo.Size = new System.Drawing.Size(28, 13);
-            this.lblCRStipo.TabIndex = 166;
-            this.lblCRStipo.Text = "Tipo";
-            // 
-            // lblMATid
-            // 
-            this.lblMATid.AutoSize = true;
-            this.lblMATid.Location = new System.Drawing.Point(475, 88);
-            this.lblMATid.Name = "lblMATid";
-            this.lblMATid.Size = new System.Drawing.Size(94, 13);
-            this.lblMATid.TabIndex = 165;
-            this.lblMATid.Text = "Codigo de material";
-            // 
-            // lblCRScolor
-            // 
-            this.lblCRScolor.AutoSize = true;
-            this.lblCRScolor.Location = new System.Drawing.Point(475, 64);
-            this.lblCRScolor.Name = "lblCRScolor";
-            this.lblCRScolor.Size = new System.Drawing.Size(31, 13);
-            this.lblCRScolor.TabIndex = 164;
-            this.lblCRScolor.Text = "Color";
-            // 
-            // txtMATid
-            // 
-            this.txtMATid.Location = new System.Drawing.Point(627, 85);
-            this.txtMATid.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMATid.Name = "txtMATid";
-            this.txtMATid.Size = new System.Drawing.Size(187, 20);
-            this.txtMATid.TabIndex = 163;
-            // 
-            // txtCRScolor
-            // 
-            this.txtCRScolor.Location = new System.Drawing.Point(627, 57);
-            this.txtCRScolor.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRScolor.Name = "txtCRScolor";
-            this.txtCRScolor.Size = new System.Drawing.Size(187, 20);
-            this.txtCRScolor.TabIndex = 162;
-            // 
-            // txtCRStomopredio
-            // 
-            this.txtCRStomopredio.Location = new System.Drawing.Point(145, 283);
-            this.txtCRStomopredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRStomopredio.Name = "txtCRStomopredio";
-            this.txtCRStomopredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRStomopredio.TabIndex = 44;
-            // 
-            // txtCRSpartidapredio
-            // 
-            this.txtCRSpartidapredio.Location = new System.Drawing.Point(145, 256);
-            this.txtCRSpartidapredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSpartidapredio.Name = "txtCRSpartidapredio";
-            this.txtCRSpartidapredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSpartidapredio.TabIndex = 43;
-            // 
-            // txtCRSpisospredio
-            // 
-            this.txtCRSpisospredio.Location = new System.Drawing.Point(145, 226);
-            this.txtCRSpisospredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSpisospredio.Name = "txtCRSpisospredio";
-            this.txtCRSpisospredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSpisospredio.TabIndex = 42;
-            // 
-            // txtCRSnombrepredio
-            // 
-            this.txtCRSnombrepredio.Location = new System.Drawing.Point(145, 196);
-            this.txtCRSnombrepredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSnombrepredio.Name = "txtCRSnombrepredio";
-            this.txtCRSnombrepredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSnombrepredio.TabIndex = 41;
-            // 
-            // txtCRSkilometro
-            // 
-            this.txtCRSkilometro.Location = new System.Drawing.Point(145, 163);
-            this.txtCRSkilometro.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSkilometro.Name = "txtCRSkilometro";
-            this.txtCRSkilometro.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSkilometro.TabIndex = 40;
-            // 
-            // txtCRScarretera
-            // 
-            this.txtCRScarretera.Location = new System.Drawing.Point(145, 134);
-            this.txtCRScarretera.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRScarretera.Name = "txtCRScarretera";
-            this.txtCRScarretera.Size = new System.Drawing.Size(140, 20);
-            this.txtCRScarretera.TabIndex = 39;
-            // 
-            // txtCRSinterior
-            // 
-            this.txtCRSinterior.Location = new System.Drawing.Point(145, 107);
-            this.txtCRSinterior.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSinterior.Name = "txtCRSinterior";
-            this.txtCRSinterior.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSinterior.TabIndex = 38;
-            // 
-            // txtCRSdepartamento
-            // 
-            this.txtCRSdepartamento.Location = new System.Drawing.Point(145, 77);
-            this.txtCRSdepartamento.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSdepartamento.Name = "txtCRSdepartamento";
-            this.txtCRSdepartamento.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSdepartamento.TabIndex = 37;
-            // 
-            // txtCRSnumeropredio
-            // 
-            this.txtCRSnumeropredio.Location = new System.Drawing.Point(145, 47);
-            this.txtCRSnumeropredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSnumeropredio.Name = "txtCRSnumeropredio";
-            this.txtCRSnumeropredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSnumeropredio.TabIndex = 36;
-            // 
-            // txtCRSlote
-            // 
-            this.txtCRSlote.Location = new System.Drawing.Point(145, 14);
-            this.txtCRSlote.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSlote.Name = "txtCRSlote";
-            this.txtCRSlote.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSlote.TabIndex = 35;
-            // 
-            // lblCRStomopredio
-            // 
-            this.lblCRStomopredio.AutoSize = true;
-            this.lblCRStomopredio.Location = new System.Drawing.Point(17, 286);
-            this.lblCRStomopredio.Name = "lblCRStomopredio";
-            this.lblCRStomopredio.Size = new System.Drawing.Size(81, 13);
-            this.lblCRStomopredio.TabIndex = 34;
-            this.lblCRStomopredio.Text = "Tomo de predio";
-            // 
-            // lblCRSpartidapredio
-            // 
-            this.lblCRSpartidapredio.AutoSize = true;
-            this.lblCRSpartidapredio.Location = new System.Drawing.Point(17, 258);
-            this.lblCRSpartidapredio.Name = "lblCRSpartidapredio";
-            this.lblCRSpartidapredio.Size = new System.Drawing.Size(132, 13);
-            this.lblCRSpartidapredio.TabIndex = 33;
-            this.lblCRSpartidapredio.Text = "Partida Registral de Predio";
-            // 
-            // lblCRSpisospredio
-            // 
-            this.lblCRSpisospredio.AutoSize = true;
-            this.lblCRSpisospredio.Location = new System.Drawing.Point(16, 226);
-            this.lblCRSpisospredio.Name = "lblCRSpisospredio";
-            this.lblCRSpisospredio.Size = new System.Drawing.Size(75, 13);
-            this.lblCRSpisospredio.TabIndex = 32;
-            this.lblCRSpisospredio.Text = "Piso de Predio";
-            // 
-            // lblCRSnombrepredio
-            // 
-            this.lblCRSnombrepredio.AutoSize = true;
-            this.lblCRSnombrepredio.Location = new System.Drawing.Point(16, 196);
-            this.lblCRSnombrepredio.Name = "lblCRSnombrepredio";
-            this.lblCRSnombrepredio.Size = new System.Drawing.Size(92, 13);
-            this.lblCRSnombrepredio.TabIndex = 31;
-            this.lblCRSnombrepredio.Text = "Nombre de Predio";
-            // 
-            // lblCRSkilometro
-            // 
-            this.lblCRSkilometro.AutoSize = true;
-            this.lblCRSkilometro.Location = new System.Drawing.Point(16, 166);
-            this.lblCRSkilometro.Name = "lblCRSkilometro";
-            this.lblCRSkilometro.Size = new System.Drawing.Size(50, 13);
-            this.lblCRSkilometro.TabIndex = 30;
-            this.lblCRSkilometro.Text = "Kilometro";
-            // 
-            // lblCRScarretera
-            // 
-            this.lblCRScarretera.AutoSize = true;
-            this.lblCRScarretera.Location = new System.Drawing.Point(16, 137);
-            this.lblCRScarretera.Name = "lblCRScarretera";
-            this.lblCRScarretera.Size = new System.Drawing.Size(50, 13);
-            this.lblCRScarretera.TabIndex = 29;
-            this.lblCRScarretera.Text = "Carretera";
-            // 
-            // lblCRSinterior
-            // 
-            this.lblCRSinterior.AutoSize = true;
-            this.lblCRSinterior.Location = new System.Drawing.Point(16, 108);
-            this.lblCRSinterior.Name = "lblCRSinterior";
-            this.lblCRSinterior.Size = new System.Drawing.Size(39, 13);
-            this.lblCRSinterior.TabIndex = 28;
-            this.lblCRSinterior.Text = "Interior";
-            // 
-            // lblCRSdepartamento
-            // 
-            this.lblCRSdepartamento.AutoSize = true;
-            this.lblCRSdepartamento.Location = new System.Drawing.Point(16, 77);
-            this.lblCRSdepartamento.Name = "lblCRSdepartamento";
-            this.lblCRSdepartamento.Size = new System.Drawing.Size(74, 13);
-            this.lblCRSdepartamento.TabIndex = 27;
-            this.lblCRSdepartamento.Text = "Departamento";
-            // 
-            // lblCRSnumeropredio
-            // 
-            this.lblCRSnumeropredio.AutoSize = true;
-            this.lblCRSnumeropredio.Location = new System.Drawing.Point(16, 47);
-            this.lblCRSnumeropredio.Name = "lblCRSnumeropredio";
-            this.lblCRSnumeropredio.Size = new System.Drawing.Size(91, 13);
-            this.lblCRSnumeropredio.TabIndex = 26;
-            this.lblCRSnumeropredio.Text = "Numero de predio";
-            // 
-            // lblCRSlote
-            // 
-            this.lblCRSlote.AutoSize = true;
-            this.lblCRSlote.Location = new System.Drawing.Point(16, 17);
-            this.lblCRSlote.Name = "lblCRSlote";
-            this.lblCRSlote.Size = new System.Drawing.Size(28, 13);
-            this.lblCRSlote.TabIndex = 25;
-            this.lblCRSlote.Text = "Lote";
-            // 
-            // txtCRSficharegistral
-            // 
-            this.txtCRSficharegistral.Location = new System.Drawing.Point(437, 130);
-            this.txtCRSficharegistral.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSficharegistral.Name = "txtCRSficharegistral";
-            this.txtCRSficharegistral.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSficharegistral.TabIndex = 54;
-            // 
-            // txtCRSfinscpredio
-            // 
-            this.txtCRSfinscpredio.Location = new System.Drawing.Point(437, 103);
-            this.txtCRSfinscpredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSfinscpredio.Name = "txtCRSfinscpredio";
-            this.txtCRSfinscpredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSfinscpredio.TabIndex = 53;
-            // 
-            // txtCRSasientopredio
-            // 
-            this.txtCRSasientopredio.Location = new System.Drawing.Point(437, 73);
-            this.txtCRSasientopredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSasientopredio.Name = "txtCRSasientopredio";
-            this.txtCRSasientopredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSasientopredio.TabIndex = 52;
-            // 
-            // txtCRSfoliofinpredio
-            // 
-            this.txtCRSfoliofinpredio.Location = new System.Drawing.Point(437, 43);
-            this.txtCRSfoliofinpredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSfoliofinpredio.Name = "txtCRSfoliofinpredio";
-            this.txtCRSfoliofinpredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSfoliofinpredio.TabIndex = 51;
-            // 
-            // txtCRSfolioinipredio
-            // 
-            this.txtCRSfolioinipredio.Location = new System.Drawing.Point(437, 10);
-            this.txtCRSfolioinipredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSfolioinipredio.Name = "txtCRSfolioinipredio";
-            this.txtCRSfolioinipredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSfolioinipredio.TabIndex = 50;
-            // 
-            // lblCRSficharegistral
-            // 
-            this.lblCRSficharegistral.AutoSize = true;
-            this.lblCRSficharegistral.Location = new System.Drawing.Point(315, 133);
-            this.lblCRSficharegistral.Name = "lblCRSficharegistral";
-            this.lblCRSficharegistral.Size = new System.Drawing.Size(77, 13);
-            this.lblCRSficharegistral.TabIndex = 49;
-            this.lblCRSficharegistral.Text = "Ficha Registral";
-            // 
-            // lblCRSfinscpredio
-            // 
-            this.lblCRSfinscpredio.AutoSize = true;
-            this.lblCRSfinscpredio.Location = new System.Drawing.Point(315, 104);
-            this.lblCRSfinscpredio.Name = "lblCRSfinscpredio";
-            this.lblCRSfinscpredio.Size = new System.Drawing.Size(122, 13);
-            this.lblCRSfinscpredio.TabIndex = 48;
-            this.lblCRSfinscpredio.Text = "Ficha de Insc. de Predio";
-            // 
-            // lblCRSasientopredio
-            // 
-            this.lblCRSasientopredio.AutoSize = true;
-            this.lblCRSasientopredio.Location = new System.Drawing.Point(315, 73);
-            this.lblCRSasientopredio.Name = "lblCRSasientopredio";
-            this.lblCRSasientopredio.Size = new System.Drawing.Size(89, 13);
-            this.lblCRSasientopredio.TabIndex = 47;
-            this.lblCRSasientopredio.Text = "Asiento de predio";
-            // 
-            // lblCRSfoliofinpredio
-            // 
-            this.lblCRSfoliofinpredio.AutoSize = true;
-            this.lblCRSfoliofinpredio.Location = new System.Drawing.Point(315, 43);
-            this.lblCRSfoliofinpredio.Name = "lblCRSfoliofinpredio";
-            this.lblCRSfoliofinpredio.Size = new System.Drawing.Size(76, 13);
-            this.lblCRSfoliofinpredio.TabIndex = 46;
-            this.lblCRSfoliofinpredio.Text = "Folio fin Predio";
-            // 
-            // lblCRSfolioinipredio
-            // 
-            this.lblCRSfolioinipredio.AutoSize = true;
-            this.lblCRSfolioinipredio.Location = new System.Drawing.Point(315, 13);
-            this.lblCRSfolioinipredio.Name = "lblCRSfolioinipredio";
-            this.lblCRSfolioinipredio.Size = new System.Drawing.Size(77, 13);
-            this.lblCRSfolioinipredio.TabIndex = 45;
-            this.lblCRSfolioinipredio.Text = "Folio de Predio";
-            // 
-            // txtCRScodigoluz
-            // 
-            this.txtCRScodigoluz.Location = new System.Drawing.Point(437, 279);
-            this.txtCRScodigoluz.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRScodigoluz.Name = "txtCRScodigoluz";
-            this.txtCRScodigoluz.Size = new System.Drawing.Size(140, 20);
-            this.txtCRScodigoluz.TabIndex = 64;
-            // 
-            // txtCRSvalorautovaluo
-            // 
-            this.txtCRSvalorautovaluo.Location = new System.Drawing.Point(437, 252);
-            this.txtCRSvalorautovaluo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvalorautovaluo.Name = "txtCRSvalorautovaluo";
-            this.txtCRSvalorautovaluo.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSvalorautovaluo.TabIndex = 63;
-            // 
-            // txtCRSusopredio
-            // 
-            this.txtCRSusopredio.Location = new System.Drawing.Point(437, 222);
-            this.txtCRSusopredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSusopredio.Name = "txtCRSusopredio";
-            this.txtCRSusopredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSusopredio.TabIndex = 62;
-            // 
-            // txtCRSperimetro
-            // 
-            this.txtCRSperimetro.Location = new System.Drawing.Point(437, 192);
-            this.txtCRSperimetro.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSperimetro.Name = "txtCRSperimetro";
-            this.txtCRSperimetro.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSperimetro.TabIndex = 61;
-            // 
-            // txtCRSareaconstruida
-            // 
-            this.txtCRSareaconstruida.Location = new System.Drawing.Point(437, 159);
-            this.txtCRSareaconstruida.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSareaconstruida.Name = "txtCRSareaconstruida";
-            this.txtCRSareaconstruida.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSareaconstruida.TabIndex = 60;
-            // 
-            // lblCRScodigoluz
-            // 
-            this.lblCRScodigoluz.AutoSize = true;
-            this.lblCRScodigoluz.Location = new System.Drawing.Point(316, 282);
-            this.lblCRScodigoluz.Name = "lblCRScodigoluz";
-            this.lblCRScodigoluz.Size = new System.Drawing.Size(71, 13);
-            this.lblCRScodigoluz.TabIndex = 59;
-            this.lblCRScodigoluz.Text = "Código de luz";
-            // 
-            // lblCRSvalorautovaluo
-            // 
-            this.lblCRSvalorautovaluo.AutoSize = true;
-            this.lblCRSvalorautovaluo.Location = new System.Drawing.Point(316, 254);
-            this.lblCRSvalorautovaluo.Name = "lblCRSvalorautovaluo";
-            this.lblCRSvalorautovaluo.Size = new System.Drawing.Size(97, 13);
-            this.lblCRSvalorautovaluo.TabIndex = 58;
-            this.lblCRSvalorautovaluo.Text = "Valor de Autovaluo";
-            // 
-            // lblCRSusopredio
-            // 
-            this.lblCRSusopredio.AutoSize = true;
-            this.lblCRSusopredio.Location = new System.Drawing.Point(315, 222);
-            this.lblCRSusopredio.Name = "lblCRSusopredio";
-            this.lblCRSusopredio.Size = new System.Drawing.Size(74, 13);
-            this.lblCRSusopredio.TabIndex = 57;
-            this.lblCRSusopredio.Text = "Uso de Predio";
-            // 
-            // lblCRSperimetro
-            // 
-            this.lblCRSperimetro.AutoSize = true;
-            this.lblCRSperimetro.Location = new System.Drawing.Point(315, 192);
-            this.lblCRSperimetro.Name = "lblCRSperimetro";
-            this.lblCRSperimetro.Size = new System.Drawing.Size(51, 13);
-            this.lblCRSperimetro.TabIndex = 56;
-            this.lblCRSperimetro.Text = "Perimetro";
-            // 
-            // lblCRSareaconstruida
-            // 
-            this.lblCRSareaconstruida.AutoSize = true;
-            this.lblCRSareaconstruida.Location = new System.Drawing.Point(315, 162);
-            this.lblCRSareaconstruida.Name = "lblCRSareaconstruida";
-            this.lblCRSareaconstruida.Size = new System.Drawing.Size(81, 13);
-            this.lblCRSareaconstruida.TabIndex = 55;
-            this.lblCRSareaconstruida.Text = "Area construida";
-            // 
-            // txtCRSobservacion
-            // 
-            this.txtCRSobservacion.Location = new System.Drawing.Point(772, 73);
-            this.txtCRSobservacion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSobservacion.Name = "txtCRSobservacion";
-            this.txtCRSobservacion.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSobservacion.TabIndex = 70;
-            // 
-            // txtCRSfadqpredio
-            // 
-            this.txtCRSfadqpredio.Location = new System.Drawing.Point(772, 43);
-            this.txtCRSfadqpredio.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSfadqpredio.Name = "txtCRSfadqpredio";
-            this.txtCRSfadqpredio.Size = new System.Drawing.Size(140, 20);
-            this.txtCRSfadqpredio.TabIndex = 69;
-            // 
-            // txtCRScodigoagua
-            // 
-            this.txtCRScodigoagua.Location = new System.Drawing.Point(772, 10);
-            this.txtCRScodigoagua.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRScodigoagua.Name = "txtCRScodigoagua";
-            this.txtCRScodigoagua.Size = new System.Drawing.Size(140, 20);
-            this.txtCRScodigoagua.TabIndex = 68;
-            // 
-            // lblCRSobservacion
-            // 
-            this.lblCRSobservacion.AutoSize = true;
-            this.lblCRSobservacion.Location = new System.Drawing.Point(606, 73);
-            this.lblCRSobservacion.Name = "lblCRSobservacion";
-            this.lblCRSobservacion.Size = new System.Drawing.Size(67, 13);
-            this.lblCRSobservacion.TabIndex = 67;
-            this.lblCRSobservacion.Text = "Observacion";
-            // 
-            // lblCRSfadqpredio
-            // 
-            this.lblCRSfadqpredio.AutoSize = true;
-            this.lblCRSfadqpredio.Location = new System.Drawing.Point(606, 43);
-            this.lblCRSfadqpredio.Name = "lblCRSfadqpredio";
-            this.lblCRSfadqpredio.Size = new System.Drawing.Size(154, 13);
-            this.lblCRSfadqpredio.TabIndex = 66;
-            this.lblCRSfadqpredio.Text = "Fech. de Adquisicion de Predio";
-            // 
-            // lblCRScodigoagua
-            // 
-            this.lblCRScodigoagua.AutoSize = true;
-            this.lblCRScodigoagua.Location = new System.Drawing.Point(606, 13);
-            this.lblCRScodigoagua.Name = "lblCRScodigoagua";
-            this.lblCRScodigoagua.Size = new System.Drawing.Size(82, 13);
-            this.lblCRScodigoagua.TabIndex = 65;
-            this.lblCRScodigoagua.Text = "Codigo de agua";
-            // 
-            // txtCRScalle
-            // 
-            this.txtCRScalle.Location = new System.Drawing.Point(521, 130);
-            this.txtCRScalle.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRScalle.Name = "txtCRScalle";
-            this.txtCRScalle.Size = new System.Drawing.Size(171, 20);
-            this.txtCRScalle.TabIndex = 40;
-            // 
-            // txtCRSurbanizacion
-            // 
-            this.txtCRSurbanizacion.Location = new System.Drawing.Point(521, 103);
-            this.txtCRSurbanizacion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSurbanizacion.Name = "txtCRSurbanizacion";
-            this.txtCRSurbanizacion.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSurbanizacion.TabIndex = 39;
-            // 
-            // txtCRScentropoblado
-            // 
-            this.txtCRScentropoblado.Location = new System.Drawing.Point(521, 68);
-            this.txtCRScentropoblado.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRScentropoblado.Name = "txtCRScentropoblado";
-            this.txtCRScentropoblado.Size = new System.Drawing.Size(171, 20);
-            this.txtCRScentropoblado.TabIndex = 38;
-            // 
-            // txtCRSalquilacable
-            // 
-            this.txtCRSalquilacable.Location = new System.Drawing.Point(521, 38);
-            this.txtCRSalquilacable.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSalquilacable.Name = "txtCRSalquilacable";
-            this.txtCRSalquilacable.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSalquilacable.TabIndex = 37;
-            // 
-            // txtCRScajaderivadora
-            // 
-            this.txtCRScajaderivadora.Location = new System.Drawing.Point(174, 134);
-            this.txtCRScajaderivadora.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRScajaderivadora.Name = "txtCRScajaderivadora";
-            this.txtCRScajaderivadora.Size = new System.Drawing.Size(171, 20);
-            this.txtCRScajaderivadora.TabIndex = 36;
-            // 
-            // txtCRSesfuerzopunta
-            // 
-            this.txtCRSesfuerzopunta.Location = new System.Drawing.Point(174, 98);
-            this.txtCRSesfuerzopunta.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSesfuerzopunta.Name = "txtCRSesfuerzopunta";
-            this.txtCRSesfuerzopunta.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSesfuerzopunta.TabIndex = 35;
-            // 
-            // txtCRSutmy
-            // 
-            this.txtCRSutmy.Location = new System.Drawing.Point(174, 71);
-            this.txtCRSutmy.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSutmy.Name = "txtCRSutmy";
-            this.txtCRSutmy.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSutmy.TabIndex = 34;
-            // 
-            // txtCRSutmx
-            // 
-            this.txtCRSutmx.Location = new System.Drawing.Point(174, 41);
-            this.txtCRSutmx.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSutmx.Name = "txtCRSutmx";
-            this.txtCRSutmx.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSutmx.TabIndex = 33;
-            // 
-            // lblCRScalle
-            // 
-            this.lblCRScalle.AutoSize = true;
-            this.lblCRScalle.Location = new System.Drawing.Point(370, 133);
-            this.lblCRScalle.Name = "lblCRScalle";
-            this.lblCRScalle.Size = new System.Drawing.Size(30, 13);
-            this.lblCRScalle.TabIndex = 32;
-            this.lblCRScalle.Text = "Calle";
-            // 
-            // lblCRSurbanizacion
-            // 
-            this.lblCRSurbanizacion.AutoSize = true;
-            this.lblCRSurbanizacion.Location = new System.Drawing.Point(370, 105);
-            this.lblCRSurbanizacion.Name = "lblCRSurbanizacion";
-            this.lblCRSurbanizacion.Size = new System.Drawing.Size(69, 13);
-            this.lblCRSurbanizacion.TabIndex = 31;
-            this.lblCRSurbanizacion.Text = "Urbanizacion";
-            // 
-            // lblCRScentropoblado
-            // 
-            this.lblCRScentropoblado.AutoSize = true;
-            this.lblCRScentropoblado.Location = new System.Drawing.Point(369, 68);
-            this.lblCRScentropoblado.Name = "lblCRScentropoblado";
-            this.lblCRScentropoblado.Size = new System.Drawing.Size(79, 13);
-            this.lblCRScentropoblado.TabIndex = 30;
-            this.lblCRScentropoblado.Text = "Centro poblado";
-            // 
-            // lblCRSalquilacable
-            // 
-            this.lblCRSalquilacable.AutoSize = true;
-            this.lblCRSalquilacable.Location = new System.Drawing.Point(369, 38);
-            this.lblCRSalquilacable.Name = "lblCRSalquilacable";
-            this.lblCRSalquilacable.Size = new System.Drawing.Size(68, 13);
-            this.lblCRSalquilacable.TabIndex = 29;
-            this.lblCRSalquilacable.Text = "Alquila Cable";
-            // 
-            // lblCRScajaderivadora
-            // 
-            this.lblCRScajaderivadora.AutoSize = true;
-            this.lblCRScajaderivadora.Location = new System.Drawing.Point(27, 137);
-            this.lblCRScajaderivadora.Name = "lblCRScajaderivadora";
-            this.lblCRScajaderivadora.Size = new System.Drawing.Size(80, 13);
-            this.lblCRScajaderivadora.TabIndex = 28;
-            this.lblCRScajaderivadora.Text = "caja derivadora";
-            // 
-            // lblCRSesfuerzopunta
-            // 
-            this.lblCRSesfuerzopunta.AutoSize = true;
-            this.lblCRSesfuerzopunta.Location = new System.Drawing.Point(27, 101);
-            this.lblCRSesfuerzopunta.Name = "lblCRSesfuerzopunta";
-            this.lblCRSesfuerzopunta.Size = new System.Drawing.Size(78, 13);
-            this.lblCRSesfuerzopunta.TabIndex = 27;
-            this.lblCRSesfuerzopunta.Text = "Esfuerzo punta";
-            // 
-            // lblCRSutmy
-            // 
-            this.lblCRSutmy.AutoSize = true;
-            this.lblCRSutmy.Location = new System.Drawing.Point(27, 72);
-            this.lblCRSutmy.Name = "lblCRSutmy";
-            this.lblCRSutmy.Size = new System.Drawing.Size(39, 13);
-            this.lblCRSutmy.TabIndex = 26;
-            this.lblCRSutmy.Text = "UTM y";
-            // 
-            // lblCRSutmx
-            // 
-            this.lblCRSutmx.AutoSize = true;
-            this.lblCRSutmx.Location = new System.Drawing.Point(27, 41);
-            this.lblCRSutmx.Name = "lblCRSutmx";
-            this.lblCRSutmx.Size = new System.Drawing.Size(39, 13);
-            this.lblCRSutmx.TabIndex = 25;
-            this.lblCRSutmx.Text = "UTM x";
-            // 
-            // txtCRSaltura
-            // 
-            this.txtCRSaltura.Location = new System.Drawing.Point(526, 169);
-            this.txtCRSaltura.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSaltura.Name = "txtCRSaltura";
-            this.txtCRSaltura.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSaltura.TabIndex = 180;
-            // 
-            // txtCRSvehcargautil
-            // 
-            this.txtCRSvehcargautil.Location = new System.Drawing.Point(526, 142);
-            this.txtCRSvehcargautil.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvehcargautil.Name = "txtCRSvehcargautil";
-            this.txtCRSvehcargautil.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvehcargautil.TabIndex = 179;
-            // 
-            // txtCRSvehpesoseco
-            // 
-            this.txtCRSvehpesoseco.Location = new System.Drawing.Point(526, 112);
-            this.txtCRSvehpesoseco.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvehpesoseco.Name = "txtCRSvehpesoseco";
-            this.txtCRSvehpesoseco.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvehpesoseco.TabIndex = 178;
-            // 
-            // lblCRSvehplaca
-            // 
-            this.lblCRSvehplaca.AutoSize = true;
-            this.lblCRSvehplaca.Location = new System.Drawing.Point(32, 51);
-            this.lblCRSvehplaca.Name = "lblCRSvehplaca";
-            this.lblCRSvehplaca.Size = new System.Drawing.Size(93, 13);
-            this.lblCRSvehplaca.TabIndex = 182;
-            this.lblCRSvehplaca.Text = "Placa de Vehiculo";
-            // 
-            // txtCRSvehasientos
-            // 
-            this.txtCRSvehasientos.Location = new System.Drawing.Point(526, 82);
-            this.txtCRSvehasientos.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvehasientos.Name = "txtCRSvehasientos";
-            this.txtCRSvehasientos.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvehasientos.TabIndex = 177;
-            // 
-            // txtCRSvehpasajeros
-            // 
-            this.txtCRSvehpasajeros.Location = new System.Drawing.Point(526, 51);
-            this.txtCRSvehpasajeros.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvehpasajeros.Name = "txtCRSvehpasajeros";
-            this.txtCRSvehpasajeros.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvehpasajeros.TabIndex = 176;
-            // 
-            // lblCRSaltura
-            // 
-            this.lblCRSaltura.AutoSize = true;
-            this.lblCRSaltura.Location = new System.Drawing.Point(375, 175);
-            this.lblCRSaltura.Name = "lblCRSaltura";
-            this.lblCRSaltura.Size = new System.Drawing.Size(34, 13);
-            this.lblCRSaltura.TabIndex = 174;
-            this.lblCRSaltura.Text = "Altura";
-            // 
-            // lblCRSvehcargautil
-            // 
-            this.lblCRSvehcargautil.AutoSize = true;
-            this.lblCRSvehcargautil.Location = new System.Drawing.Point(374, 148);
-            this.lblCRSvehcargautil.Name = "lblCRSvehcargautil";
-            this.lblCRSvehcargautil.Size = new System.Drawing.Size(112, 13);
-            this.lblCRSvehcargautil.TabIndex = 173;
-            this.lblCRSvehcargautil.Text = "Carga Util de Vehiculo";
-            // 
-            // lblCRSvehpesoseco
-            // 
-            this.lblCRSvehpesoseco.AutoSize = true;
-            this.lblCRSvehpesoseco.Location = new System.Drawing.Point(374, 118);
-            this.lblCRSvehpesoseco.Name = "lblCRSvehpesoseco";
-            this.lblCRSvehpesoseco.Size = new System.Drawing.Size(116, 13);
-            this.lblCRSvehpesoseco.TabIndex = 172;
-            this.lblCRSvehpesoseco.Text = "Peso seco de Vehiculo";
-            // 
-            // txtCRSancho
-            // 
-            this.txtCRSancho.Location = new System.Drawing.Point(526, 202);
-            this.txtCRSancho.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSancho.Name = "txtCRSancho";
-            this.txtCRSancho.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSancho.TabIndex = 175;
-            // 
-            // lblCRSvehasientos
-            // 
-            this.lblCRSvehasientos.AutoSize = true;
-            this.lblCRSvehasientos.Location = new System.Drawing.Point(374, 86);
-            this.lblCRSvehasientos.Name = "lblCRSvehasientos";
-            this.lblCRSvehasientos.Size = new System.Drawing.Size(105, 13);
-            this.lblCRSvehasientos.TabIndex = 171;
-            this.lblCRSvehasientos.Text = "Asientos de vehiculo";
-            // 
-            // cboCRSvehplaca
-            // 
-            this.cboCRSvehplaca.FormattingEnabled = true;
-            this.cboCRSvehplaca.Location = new System.Drawing.Point(175, 48);
-            this.cboCRSvehplaca.Margin = new System.Windows.Forms.Padding(2);
-            this.cboCRSvehplaca.Name = "cboCRSvehplaca";
-            this.cboCRSvehplaca.Size = new System.Drawing.Size(171, 21);
-            this.cboCRSvehplaca.TabIndex = 181;
-            // 
-            // lblCRSvehpasajeros
-            // 
-            this.lblCRSvehpasajeros.AutoSize = true;
-            this.lblCRSvehpasajeros.Location = new System.Drawing.Point(374, 57);
-            this.lblCRSvehpasajeros.Name = "lblCRSvehpasajeros";
-            this.lblCRSvehpasajeros.Size = new System.Drawing.Size(106, 13);
-            this.lblCRSvehpasajeros.TabIndex = 170;
-            this.lblCRSvehpasajeros.Text = "Pasajero de vehiculo";
-            // 
-            // lblCRSvehejes
-            // 
-            this.lblCRSvehejes.AutoSize = true;
-            this.lblCRSvehejes.Location = new System.Drawing.Point(32, 213);
-            this.lblCRSvehejes.Name = "lblCRSvehejes";
-            this.lblCRSvehejes.Size = new System.Drawing.Size(86, 13);
-            this.lblCRSvehejes.TabIndex = 169;
-            this.lblCRSvehejes.Text = "Ejes de Vehiculo";
-            // 
-            // lblCRSvehcombustible
-            // 
-            this.lblCRSvehcombustible.AutoSize = true;
-            this.lblCRSvehcombustible.Location = new System.Drawing.Point(32, 186);
-            this.lblCRSvehcombustible.Name = "lblCRSvehcombustible";
-            this.lblCRSvehcombustible.Size = new System.Drawing.Size(122, 13);
-            this.lblCRSvehcombustible.TabIndex = 168;
-            this.lblCRSvehcombustible.Text = "Combustible de vehiculo";
-            // 
-            // lblCRSancho
-            // 
-            this.lblCRSancho.AutoSize = true;
-            this.lblCRSancho.Location = new System.Drawing.Point(375, 205);
-            this.lblCRSancho.Name = "lblCRSancho";
-            this.lblCRSancho.Size = new System.Drawing.Size(38, 13);
-            this.lblCRSancho.TabIndex = 165;
-            this.lblCRSancho.Text = "Ancho";
-            // 
-            // lblCRSvehclase
-            // 
-            this.lblCRSvehclase.AutoSize = true;
-            this.lblCRSvehclase.Location = new System.Drawing.Point(32, 156);
-            this.lblCRSvehclase.Name = "lblCRSvehclase";
-            this.lblCRSvehclase.Size = new System.Drawing.Size(91, 13);
-            this.lblCRSvehclase.TabIndex = 167;
-            this.lblCRSvehclase.Text = "Clase de vehiculo";
-            // 
-            // lblCRSvehinscripcion
-            // 
-            this.lblCRSvehinscripcion.AutoSize = true;
-            this.lblCRSvehinscripcion.Location = new System.Drawing.Point(32, 118);
-            this.lblCRSvehinscripcion.Name = "lblCRSvehinscripcion";
-            this.lblCRSvehinscripcion.Size = new System.Drawing.Size(111, 13);
-            this.lblCRSvehinscripcion.TabIndex = 166;
-            this.lblCRSvehinscripcion.Text = "Incripcion de vehiculo";
-            // 
-            // lblCRSvehexpediente
-            // 
-            this.lblCRSvehexpediente.AutoSize = true;
-            this.lblCRSvehexpediente.Location = new System.Drawing.Point(32, 86);
-            this.lblCRSvehexpediente.Name = "lblCRSvehexpediente";
-            this.lblCRSvehexpediente.Size = new System.Drawing.Size(119, 13);
-            this.lblCRSvehexpediente.TabIndex = 164;
-            this.lblCRSvehexpediente.Text = "Expediente de Vehiculo";
-            // 
-            // txtCRSvehejes
-            // 
-            this.txtCRSvehejes.Location = new System.Drawing.Point(175, 206);
-            this.txtCRSvehejes.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvehejes.Name = "txtCRSvehejes";
-            this.txtCRSvehejes.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvehejes.TabIndex = 163;
-            // 
-            // txtCRSvehcombustible
-            // 
-            this.txtCRSvehcombustible.Location = new System.Drawing.Point(175, 179);
-            this.txtCRSvehcombustible.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvehcombustible.Name = "txtCRSvehcombustible";
-            this.txtCRSvehcombustible.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvehcombustible.TabIndex = 162;
-            // 
-            // txtCRSvehclase
-            // 
-            this.txtCRSvehclase.Location = new System.Drawing.Point(175, 149);
-            this.txtCRSvehclase.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvehclase.Name = "txtCRSvehclase";
-            this.txtCRSvehclase.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvehclase.TabIndex = 161;
-            // 
-            // txtCRSvehinscripcion
-            // 
-            this.txtCRSvehinscripcion.Location = new System.Drawing.Point(175, 115);
-            this.txtCRSvehinscripcion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvehinscripcion.Name = "txtCRSvehinscripcion";
-            this.txtCRSvehinscripcion.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvehinscripcion.TabIndex = 160;
-            // 
-            // txtCRSvehexpediente
-            // 
-            this.txtCRSvehexpediente.Location = new System.Drawing.Point(175, 82);
-            this.txtCRSvehexpediente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvehexpediente.Name = "txtCRSvehexpediente";
-            this.txtCRSvehexpediente.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvehexpediente.TabIndex = 159;
-            // 
-            // txtCRStemperatura
-            // 
-            this.txtCRStemperatura.Location = new System.Drawing.Point(539, 107);
-            this.txtCRStemperatura.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRStemperatura.Name = "txtCRStemperatura";
-            this.txtCRStemperatura.Size = new System.Drawing.Size(171, 20);
-            this.txtCRStemperatura.TabIndex = 46;
-            // 
-            // txtCRSfrecuencia
-            // 
-            this.txtCRSfrecuencia.Location = new System.Drawing.Point(539, 80);
-            this.txtCRSfrecuencia.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSfrecuencia.Name = "txtCRSfrecuencia";
-            this.txtCRSfrecuencia.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSfrecuencia.TabIndex = 45;
-            // 
-            // txtCRSvsalida
-            // 
-            this.txtCRSvsalida.Location = new System.Drawing.Point(539, 50);
-            this.txtCRSvsalida.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvsalida.Name = "txtCRSvsalida";
-            this.txtCRSvsalida.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvsalida.TabIndex = 44;
-            // 
-            // txtCRSventrada
-            // 
-            this.txtCRSventrada.Location = new System.Drawing.Point(192, 201);
-            this.txtCRSventrada.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSventrada.Name = "txtCRSventrada";
-            this.txtCRSventrada.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSventrada.TabIndex = 43;
-            // 
-            // txtCRSvnominal
-            // 
-            this.txtCRSvnominal.Location = new System.Drawing.Point(192, 168);
-            this.txtCRSvnominal.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvnominal.Name = "txtCRSvnominal";
-            this.txtCRSvnominal.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvnominal.TabIndex = 42;
-            // 
-            // txtCRSpotencia
-            // 
-            this.txtCRSpotencia.Location = new System.Drawing.Point(192, 133);
-            this.txtCRSpotencia.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSpotencia.Name = "txtCRSpotencia";
-            this.txtCRSpotencia.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSpotencia.TabIndex = 41;
-            // 
-            // txtCRScapacidad
-            // 
-            this.txtCRScapacidad.Location = new System.Drawing.Point(192, 106);
-            this.txtCRScapacidad.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRScapacidad.Name = "txtCRScapacidad";
-            this.txtCRScapacidad.Size = new System.Drawing.Size(171, 20);
-            this.txtCRScapacidad.TabIndex = 40;
-            // 
-            // txtCRSresolucion
-            // 
-            this.txtCRSresolucion.Location = new System.Drawing.Point(192, 76);
-            this.txtCRSresolucion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSresolucion.Name = "txtCRSresolucion";
-            this.txtCRSresolucion.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSresolucion.TabIndex = 39;
-            // 
-            // txtCRSpuertos
-            // 
-            this.txtCRSpuertos.Location = new System.Drawing.Point(539, 171);
-            this.txtCRSpuertos.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSpuertos.Name = "txtCRSpuertos";
-            this.txtCRSpuertos.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSpuertos.TabIndex = 38;
-            // 
-            // txtCRSprocesador
-            // 
-            this.txtCRSprocesador.Location = new System.Drawing.Point(539, 138);
-            this.txtCRSprocesador.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSprocesador.Name = "txtCRSprocesador";
-            this.txtCRSprocesador.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSprocesador.TabIndex = 36;
-            // 
-            // txtCRSvelocidad
-            // 
-            this.txtCRSvelocidad.Location = new System.Drawing.Point(192, 41);
-            this.txtCRSvelocidad.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSvelocidad.Name = "txtCRSvelocidad";
-            this.txtCRSvelocidad.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSvelocidad.TabIndex = 37;
-            // 
-            // lblCRStemperatura
-            // 
-            this.lblCRStemperatura.AutoSize = true;
-            this.lblCRStemperatura.Location = new System.Drawing.Point(388, 110);
-            this.lblCRStemperatura.Name = "lblCRStemperatura";
-            this.lblCRStemperatura.Size = new System.Drawing.Size(67, 13);
-            this.lblCRStemperatura.TabIndex = 35;
-            this.lblCRStemperatura.Text = "Temperatura";
-            // 
-            // lblCRSfrecuencia
-            // 
-            this.lblCRSfrecuencia.AutoSize = true;
-            this.lblCRSfrecuencia.Location = new System.Drawing.Point(388, 82);
-            this.lblCRSfrecuencia.Name = "lblCRSfrecuencia";
-            this.lblCRSfrecuencia.Size = new System.Drawing.Size(60, 13);
-            this.lblCRSfrecuencia.TabIndex = 34;
-            this.lblCRSfrecuencia.Text = "Frecuencia";
-            // 
-            // lblCRSvsalida
-            // 
-            this.lblCRSvsalida.AutoSize = true;
-            this.lblCRSvsalida.Location = new System.Drawing.Point(387, 50);
-            this.lblCRSvsalida.Name = "lblCRSvsalida";
-            this.lblCRSvsalida.Size = new System.Drawing.Size(76, 13);
-            this.lblCRSvsalida.TabIndex = 33;
-            this.lblCRSvsalida.Text = "Valor de salida";
-            // 
-            // lblCRSventrada
-            // 
-            this.lblCRSventrada.AutoSize = true;
-            this.lblCRSventrada.Location = new System.Drawing.Point(40, 201);
-            this.lblCRSventrada.Name = "lblCRSventrada";
-            this.lblCRSventrada.Size = new System.Drawing.Size(93, 13);
-            this.lblCRSventrada.TabIndex = 32;
-            this.lblCRSventrada.Text = "Voltaje de entrada";
-            // 
-            // lblCRSvnominal
-            // 
-            this.lblCRSvnominal.AutoSize = true;
-            this.lblCRSvnominal.Location = new System.Drawing.Point(40, 171);
-            this.lblCRSvnominal.Name = "lblCRSvnominal";
-            this.lblCRSvnominal.Size = new System.Drawing.Size(77, 13);
-            this.lblCRSvnominal.TabIndex = 31;
-            this.lblCRSvnominal.Text = "voltaje nominal";
-            // 
-            // lblCRSpotencia
-            // 
-            this.lblCRSpotencia.AutoSize = true;
-            this.lblCRSpotencia.Location = new System.Drawing.Point(45, 136);
-            this.lblCRSpotencia.Name = "lblCRSpotencia";
-            this.lblCRSpotencia.Size = new System.Drawing.Size(49, 13);
-            this.lblCRSpotencia.TabIndex = 30;
-            this.lblCRSpotencia.Text = "Potencia";
-            // 
-            // lblCRSprocesador
-            // 
-            this.lblCRSprocesador.AutoSize = true;
-            this.lblCRSprocesador.Location = new System.Drawing.Point(392, 141);
-            this.lblCRSprocesador.Name = "lblCRSprocesador";
-            this.lblCRSprocesador.Size = new System.Drawing.Size(61, 13);
-            this.lblCRSprocesador.TabIndex = 25;
-            this.lblCRSprocesador.Text = "Procesador";
-            // 
-            // lblCRSvelocidad
-            // 
-            this.lblCRSvelocidad.AutoSize = true;
-            this.lblCRSvelocidad.Location = new System.Drawing.Point(45, 41);
-            this.lblCRSvelocidad.Name = "lblCRSvelocidad";
-            this.lblCRSvelocidad.Size = new System.Drawing.Size(54, 13);
-            this.lblCRSvelocidad.TabIndex = 27;
-            this.lblCRSvelocidad.Text = "Velocidad";
-            // 
-            // lblCRSpuertos
-            // 
-            this.lblCRSpuertos.AutoSize = true;
-            this.lblCRSpuertos.Location = new System.Drawing.Point(392, 171);
-            this.lblCRSpuertos.Name = "lblCRSpuertos";
-            this.lblCRSpuertos.Size = new System.Drawing.Size(42, 13);
-            this.lblCRSpuertos.TabIndex = 26;
-            this.lblCRSpuertos.Text = "puertos";
-            // 
-            // lblCRScapacidad
-            // 
-            this.lblCRScapacidad.AutoSize = true;
-            this.lblCRScapacidad.Location = new System.Drawing.Point(45, 107);
-            this.lblCRScapacidad.Name = "lblCRScapacidad";
-            this.lblCRScapacidad.Size = new System.Drawing.Size(58, 13);
-            this.lblCRScapacidad.TabIndex = 29;
-            this.lblCRScapacidad.Text = "Capacidad";
-            // 
-            // lblCRSresolucion
-            // 
-            this.lblCRSresolucion.AutoSize = true;
-            this.lblCRSresolucion.Location = new System.Drawing.Point(45, 76);
-            this.lblCRSresolucion.Name = "lblCRSresolucion";
-            this.lblCRSresolucion.Size = new System.Drawing.Size(60, 13);
-            this.lblCRSresolucion.TabIndex = 28;
-            this.lblCRSresolucion.Text = "Resolucion";
-            // 
-            // btnTerreno_Edificaciones
-            // 
-            this.btnTerreno_Edificaciones.Location = new System.Drawing.Point(644, 208);
-            this.btnTerreno_Edificaciones.Name = "btnTerreno_Edificaciones";
-            this.btnTerreno_Edificaciones.Size = new System.Drawing.Size(116, 47);
-            this.btnTerreno_Edificaciones.TabIndex = 71;
-            this.btnTerreno_Edificaciones.Text = "Detalles de Edificaciones";
-            this.btnTerreno_Edificaciones.UseVisualStyleBackColor = true;
-            this.btnTerreno_Edificaciones.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnUbicacion_electrica
-            // 
-            this.btnUbicacion_electrica.Location = new System.Drawing.Point(503, 179);
-            this.btnUbicacion_electrica.Name = "btnUbicacion_electrica";
-            this.btnUbicacion_electrica.Size = new System.Drawing.Size(116, 37);
-            this.btnUbicacion_electrica.TabIndex = 72;
-            this.btnUbicacion_electrica.Text = "Ubicacion Eléctrica";
-            this.btnUbicacion_electrica.UseVisualStyleBackColor = true;
-            this.btnUbicacion_electrica.Click += new System.EventHandler(this.btnUbicacion_electrica_Click);
-            // 
             // dtpACFfechanotaingreso
             // 
             this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(454, 195);
@@ -2557,7 +2570,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1214, 812);
+            this.ClientSize = new System.Drawing.Size(1214, 741);
             this.Controls.Add(this.dtpACFfechanotaingreso);
             this.Controls.Add(this.cboVNRid);
             this.Controls.Add(this.cboUBEid);
@@ -2664,9 +2677,9 @@
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2918,5 +2931,6 @@
         private System.Windows.Forms.Button btnTerreno_Edificaciones;
         private System.Windows.Forms.Button btnUbicacion_electrica;
         private System.Windows.Forms.TextBox dtpACFfechanotaingreso;
+        private System.Windows.Forms.ToolStripButton toolStripImagen;
     }
 }

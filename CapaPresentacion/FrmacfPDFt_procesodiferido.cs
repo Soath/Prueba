@@ -229,7 +229,8 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_PDFProcesoDiferido.rdlc", NacfPDFt_procesodiferido.Mostrar());
+            rptalu.ShowDialog();
         }
 
         private void BotonGuardar()

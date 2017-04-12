@@ -222,6 +222,8 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_CSTCosto.rdlc", NacfCSTt_Costo.Mostrar());
+            rptalu.ShowDialog();
         }
 
         private void BotonGuardar()

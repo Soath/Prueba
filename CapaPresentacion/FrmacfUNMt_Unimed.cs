@@ -225,7 +225,8 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_UNMUnimed.rdlc", NacfUNMt_Unimed.Mostrar());
+            rptalu.ShowDialog();
         }
 
         private void BotonGuardar()

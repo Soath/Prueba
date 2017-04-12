@@ -265,3 +265,5 @@ C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacio
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmbdiSEGpSegmento.resources
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmExcel2.resources
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMVMReporteD.resources
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FormImagen.resources
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmReportes.resources

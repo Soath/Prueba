@@ -228,7 +228,8 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-
+            //FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_LOCLocal.rdlc", NACFLOCT_LOCAL.Mostrar());
+           // rptalu.ShowDialog();
         }
 
         private void BotonGuardar()
