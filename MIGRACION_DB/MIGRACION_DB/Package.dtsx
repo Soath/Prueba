@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{E3D4FF81-B31C-4BB2-B173-E5200F4FCD1B}">
+  DTS:VersionBuild="46"
+  DTS:VersionGUID="{8C4CB54D-A348-4BD5-9AE6-B2089BB80BE9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="LocalHost.ActivosFijosP">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;Initial Catalog=ActivosFijosP;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=TOSHIBA-PC;Initial Catalog=ActivosFijosP;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -57,7 +57,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAne26C4JgU0KzaUk1/dFLTgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABw0E06AhwnX/fyx/ZJQh25AAAAAASAAACgAAAAEAAAAEbNL6qd67pV820tNEWfbkIYAAAAzgfW9nkpHCHHqTZna1gftlOL2jw2ZTgVFAAAAF4d0DWi9fUjnhk0Dn1M2NKsY0RX</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAne26C4JgU0KzaUk1/dFLTgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABJfBZcrooya3LE/QirsbHTAAAAAASAAACgAAAAEAAAAP4u6nubtstvSiYAcsuIqqoYAAAAy4OZpanFM+qwIQyAj7XpWIjGJlKgvVobFAAAAJrNLShaV0jL5Toqdh200Lf90j2n</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -474,6 +474,7 @@
       DTS:refId="Package\Ambiente"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{DF086521-6704-4ECD-B176-0D9BB5BFEAFF}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -1008,6 +1009,7 @@
       DTS:refId="Package\Clase Documentos"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{7E3CA8DD-A766-4A03-9BB3-843928A59AF1}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -1416,13 +1418,14 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Costo"
+      DTS:refId="Package\Costo OBS"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{03A2045A-06AE-4C88-9588-5D1744DC65F5}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Costo"
+      DTS:ObjectName="Costo OBS"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -1430,7 +1433,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Costo\Conversión de datos"
+              refId="Package\Costo OBS\Conversión de datos"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
               description="Conversión de datos"
@@ -1438,63 +1441,63 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Costo\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                  refId="Package\Costo OBS\Conversión de datos.Inputs[Entrada de conversión de datos]"
                   name="Entrada de conversión de datos">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Costo\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[ACTid_actividad]"
+                      refId="Package\Costo OBS\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[ACTid_actividad]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="ACTid_actividad"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ACTid_actividad]" />
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ACTid_actividad]" />
                     <inputColumn
-                      refId="Package\Costo\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[CSTid_costo]"
+                      refId="Package\Costo OBS\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[CSTid_costo]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="CSTid_costo"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTid_costo]" />
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTid_costo]" />
                     <inputColumn
-                      refId="Package\Costo\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[CSTdescripcion]"
+                      refId="Package\Costo OBS\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[CSTdescripcion]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="35"
                       cachedName="CSTdescripcion"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdescripcion]" />
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdescripcion]" />
                     <inputColumn
-                      refId="Package\Costo\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[CSTdetalle]"
+                      refId="Package\Costo OBS\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[CSTdetalle]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="70"
                       cachedName="CSTdetalle"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdetalle]" />
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdetalle]" />
                     <inputColumn
-                      refId="Package\Costo\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[CSTabreviado]"
+                      refId="Package\Costo OBS\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[CSTabreviado]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="15"
                       cachedName="CSTabreviado"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTabreviado]" />
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTabreviado]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos]"
+                  refId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos]"
                   exclusionGroup="1"
                   name="Salida de conversión de datos"
-                  synchronousInputId="Package\Costo\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  synchronousInputId="Package\Costo OBS\Conversión de datos.Inputs[Entrada de conversión de datos]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ACTid_actividad]"
+                      refId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ACTid_actividad]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       length="2"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ACTid_actividad]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ACTid_actividad]"
                       name="Copia de ACTid_actividad"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1502,7 +1505,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ACTid_actividad]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ACTid_actividad]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -1510,13 +1513,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTid_costo]"
+                      refId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTid_costo]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       length="2"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTid_costo]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTid_costo]"
                       name="Copia de CSTid_costo"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1524,7 +1527,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTid_costo]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTid_costo]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -1532,13 +1535,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdescripcion]"
+                      refId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdescripcion]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       length="35"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdescripcion]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdescripcion]"
                       name="Copia de CSTdescripcion"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1546,7 +1549,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdescripcion]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdescripcion]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -1554,13 +1557,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdetalle]"
+                      refId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdetalle]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       length="70"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdetalle]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdetalle]"
                       name="Copia de CSTdetalle"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1568,7 +1571,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdetalle]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdetalle]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -1576,13 +1579,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTabreviado]"
+                      refId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTabreviado]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       length="15"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTabreviado]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTabreviado]"
                       name="Copia de CSTabreviado"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1590,7 +1593,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTabreviado]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTabreviado]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -1601,22 +1604,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Costo\Conversión de datos.Outputs[Salida de error de conversión de datos]"
+                  refId="Package\Costo OBS\Conversión de datos.Outputs[Salida de error de conversión de datos]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de conversión de datos"
-                  synchronousInputId="Package\Costo\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  synchronousInputId="Package\Costo OBS\Conversión de datos.Inputs[Entrada de conversión de datos]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Costo\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      refId="Package\Costo OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Costo\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      refId="Package\Costo OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1625,7 +1628,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Costo\Destino de OLE DB"
+              refId="Package\Costo OBS\Destino de OLE DB"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
@@ -1682,7 +1685,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Costo\Destino de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Costo OBS\Destino de OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[LocalHost.ActivosFijosP]"
                   connectionManagerRefId="Package.ConnectionManagers[LocalHost.ActivosFijosP]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -1690,87 +1693,87 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de CSTid_costo]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de CSTid_costo]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="Copia de CSTid_costo"
-                      externalMetadataColumnId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTid]"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTid_costo]" />
+                      externalMetadataColumnId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTid]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTid_costo]" />
                     <inputColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de ACTid_actividad]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de ACTid_actividad]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="Copia de ACTid_actividad"
-                      externalMetadataColumnId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ACTid]"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ACTid_actividad]" />
+                      externalMetadataColumnId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ACTid]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de ACTid_actividad]" />
                     <inputColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de CSTabreviado]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de CSTabreviado]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="15"
                       cachedName="Copia de CSTabreviado"
-                      externalMetadataColumnId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTabreviado]"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTabreviado]" />
+                      externalMetadataColumnId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTabreviado]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTabreviado]" />
                     <inputColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de CSTdetalle]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de CSTdetalle]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="70"
                       cachedName="Copia de CSTdetalle"
-                      externalMetadataColumnId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTdetalle]"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdetalle]" />
+                      externalMetadataColumnId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTdetalle]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdetalle]" />
                     <inputColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de CSTdescripcion]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de CSTdescripcion]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="35"
                       cachedName="Copia de CSTdescripcion"
-                      externalMetadataColumnId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTdescripcion]"
-                      lineageId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdescripcion]" />
+                      externalMetadataColumnId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTdescripcion]"
+                      lineageId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de CSTdescripcion]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTid]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTid]"
                       codePage="1252"
                       dataType="str"
                       length="4"
                       name="CSTid" />
                     <externalMetadataColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTdescripcion]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTdescripcion]"
                       codePage="1252"
                       dataType="str"
                       length="35"
                       name="CSTdescripcion" />
                     <externalMetadataColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTdetalle]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTdetalle]"
                       codePage="1252"
                       dataType="str"
                       length="70"
                       name="CSTdetalle" />
                     <externalMetadataColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTabreviado]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTabreviado]"
                       codePage="1252"
                       dataType="str"
                       length="15"
                       name="CSTabreviado" />
                     <externalMetadataColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ACTid]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ACTid]"
                       codePage="1252"
                       dataType="str"
                       length="2"
                       name="ACTid" />
                     <externalMetadataColumn
-                      refId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTid_costo]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CSTid_costo]"
                       codePage="1252"
                       dataType="str"
                       length="2"
@@ -1780,22 +1783,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Costo\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Costo OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Costo\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Costo\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Costo OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Costo\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Costo OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Costo\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Costo OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1804,7 +1807,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Costo\Origen de OLE DB"
+              refId="Package\Costo OBS\Origen de OLE DB"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
               description="Origen de OLE DB"
@@ -1853,7 +1856,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Costo\Origen de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Costo OBS\Origen de OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[www.electrosur.com.pe,1434.Activo_Fijo.clarico]"
                   connectionManagerRefId="Package.ConnectionManagers[www.electrosur.com.pe,1434.Activo_Fijo.clarico]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -1861,93 +1864,93 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                  refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ACTid_actividad]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ACTid_actividad]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[ACTid_actividad]"
+                      externalMetadataColumnId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[ACTid_actividad]"
                       length="2"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ACTid_actividad]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[ACTid_actividad]"
                       name="ACTid_actividad"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTid_costo]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTid_costo]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTid_costo]"
+                      externalMetadataColumnId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTid_costo]"
                       length="2"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTid_costo]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTid_costo]"
                       name="CSTid_costo"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdescripcion]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdescripcion]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTdescripcion]"
+                      externalMetadataColumnId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTdescripcion]"
                       length="35"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdescripcion]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdescripcion]"
                       name="CSTdescripcion"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdetalle]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdetalle]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTdetalle]"
+                      externalMetadataColumnId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTdetalle]"
                       length="70"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdetalle]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTdetalle]"
                       name="CSTdetalle"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTabreviado]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTabreviado]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTabreviado]"
+                      externalMetadataColumnId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTabreviado]"
                       length="15"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTabreviado]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CSTabreviado]"
                       name="CSTabreviado"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[ACTid_actividad]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[ACTid_actividad]"
                       codePage="1252"
                       dataType="str"
                       length="2"
                       name="ACTid_actividad" />
                     <externalMetadataColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTid_costo]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTid_costo]"
                       codePage="1252"
                       dataType="str"
                       length="2"
                       name="CSTid_costo" />
                     <externalMetadataColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTdescripcion]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTdescripcion]"
                       codePage="1252"
                       dataType="str"
                       length="35"
                       name="CSTdescripcion" />
                     <externalMetadataColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTdetalle]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTdetalle]"
                       codePage="1252"
                       dataType="str"
                       length="70"
                       name="CSTdetalle" />
                     <externalMetadataColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTabreviado]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CSTabreviado]"
                       codePage="1252"
                       dataType="str"
                       length="15"
@@ -1955,55 +1958,55 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                  refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
                   isErrorOut="true"
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ACTid_actividad]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ACTid_actividad]"
                       codePage="1252"
                       dataType="str"
                       length="2"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ACTid_actividad]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ACTid_actividad]"
                       name="ACTid_actividad" />
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTid_costo]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTid_costo]"
                       codePage="1252"
                       dataType="str"
                       length="2"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTid_costo]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTid_costo]"
                       name="CSTid_costo" />
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTdescripcion]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTdescripcion]"
                       codePage="1252"
                       dataType="str"
                       length="35"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTdescripcion]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTdescripcion]"
                       name="CSTdescripcion" />
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTdetalle]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTdetalle]"
                       codePage="1252"
                       dataType="str"
                       length="70"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTdetalle]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTdetalle]"
                       name="CSTdetalle" />
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTabreviado]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTabreviado]"
                       codePage="1252"
                       dataType="str"
                       length="15"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTabreviado]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CSTabreviado]"
                       name="CSTabreviado" />
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Costo\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2014,15 +2017,15 @@
           </components>
           <paths>
             <path
-              refId="Package\Costo.Paths[Salida de conversión de datos]"
-              endId="Package\Costo\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              refId="Package\Costo OBS.Paths[Salida de conversión de datos]"
+              endId="Package\Costo OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
-              startId="Package\Costo\Conversión de datos.Outputs[Salida de conversión de datos]" />
+              startId="Package\Costo OBS\Conversión de datos.Outputs[Salida de conversión de datos]" />
             <path
-              refId="Package\Costo.Paths[Salida de origen de OLE DB]"
-              endId="Package\Costo\Conversión de datos.Inputs[Entrada de conversión de datos]"
+              refId="Package\Costo OBS.Paths[Salida de origen de OLE DB]"
+              endId="Package\Costo OBS\Conversión de datos.Inputs[Entrada de conversión de datos]"
               name="Salida de origen de OLE DB"
-              startId="Package\Costo\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+              startId="Package\Costo OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2031,6 +2034,7 @@
       DTS:refId="Package\Estado"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{1181EE00-FF81-4CC2-9910-12C1D2E97D84}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -2458,6 +2462,7 @@
       DTS:refId="Package\Local"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{25223DF0-7487-47B9-97C2-4DC009656DA9}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -3060,6 +3065,7 @@
       DTS:refId="Package\Marca"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{97EEC99B-2635-48F0-A80B-46DD7A7030FE}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -3463,6 +3469,7 @@
       DTS:refId="Package\Material"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{17A5FA8D-D4E4-4F3B-BE22-0321DF4BD048}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -3928,13 +3935,14 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Motivo Movimiento"
+      DTS:refId="Package\Motivo Movimiento OBS"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{C1173EFB-2161-4101-A994-30983A6A8526}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Motivo Movimiento"
+      DTS:ObjectName="Motivo Movimiento OBS"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -3942,7 +3950,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Motivo Movimiento\Conversión de datos"
+              refId="Package\Motivo Movimiento OBS\Conversión de datos"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
               description="Conversión de datos"
@@ -3950,56 +3958,49 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Motivo Movimiento\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                  refId="Package\Motivo Movimiento OBS\Conversión de datos.Inputs[Entrada de conversión de datos]"
                   name="Entrada de conversión de datos">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Motivo Movimiento\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[MVTid_movimiento]"
+                      refId="Package\Motivo Movimiento OBS\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[MVTid_movimiento]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="MVTid_movimiento"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MVTid_movimiento]" />
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MVTid_movimiento]" />
                     <inputColumn
-                      refId="Package\Motivo Movimiento\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[MTVid_motivo]"
+                      refId="Package\Motivo Movimiento OBS\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[MTVid_motivo]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="MTVid_motivo"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVid_motivo]" />
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVid_motivo]" />
                     <inputColumn
-                      refId="Package\Motivo Movimiento\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[MTVdescripcion]"
+                      refId="Package\Motivo Movimiento OBS\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[MTVdescripcion]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="60"
                       cachedName="MTVdescripcion"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVdescripcion]" />
-                    <inputColumn
-                      refId="Package\Motivo Movimiento\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[MTVjustifica]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="MTVjustifica"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVjustifica]" />
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVdescripcion]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos]"
+                  refId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos]"
                   exclusionGroup="1"
                   name="Salida de conversión de datos"
-                  synchronousInputId="Package\Motivo Movimiento\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  synchronousInputId="Package\Motivo Movimiento OBS\Conversión de datos.Inputs[Entrada de conversión de datos]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MVTid_movimiento]"
+                      refId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MVTid_movimiento]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       length="2"
-                      lineageId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MVTid_movimiento]"
+                      lineageId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MVTid_movimiento]"
                       name="Copia de MVTid_movimiento"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -4007,7 +4008,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MVTid_movimiento]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MVTid_movimiento]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -4015,13 +4016,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVid_motivo]"
+                      refId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVid_motivo]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       length="2"
-                      lineageId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVid_motivo]"
+                      lineageId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVid_motivo]"
                       name="Copia de MTVid_motivo"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -4029,7 +4030,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVid_motivo]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVid_motivo]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -4037,13 +4038,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVdescripcion]"
+                      refId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVdescripcion]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       length="60"
-                      lineageId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVdescripcion]"
+                      lineageId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVdescripcion]"
                       name="Copia de MTVdescripcion"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -4051,27 +4052,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVdescripcion]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVjustifica]"
-                      dataType="ui1"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVjustifica]"
-                      name="Copia de MTVjustifica"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVjustifica]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVdescripcion]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -4082,22 +4063,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de error de conversión de datos]"
+                  refId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de error de conversión de datos]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de conversión de datos"
-                  synchronousInputId="Package\Motivo Movimiento\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  synchronousInputId="Package\Motivo Movimiento OBS\Conversión de datos.Inputs[Entrada de conversión de datos]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      refId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      lineageId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      refId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      lineageId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4106,7 +4087,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Motivo Movimiento\Destino de OLE DB"
+              refId="Package\Motivo Movimiento OBS\Destino de OLE DB"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
@@ -4163,7 +4144,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Motivo Movimiento\Destino de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[LocalHost.ActivosFijosP]"
                   connectionManagerRefId="Package.ConnectionManagers[LocalHost.ActivosFijosP]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -4171,88 +4152,84 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
-                  errorRowDisposition="FailComponent"
+                  errorRowDisposition="IgnoreFailure"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de MTVjustifica]"
-                      cachedDataType="ui1"
-                      cachedName="Copia de MTVjustifica"
-                      externalMetadataColumnId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMjustificacion]"
-                      lineageId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVjustifica]" />
-                    <inputColumn
-                      refId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de MTVdescripcion]"
+                      refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de MTVdescripcion]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="60"
                       cachedName="Copia de MTVdescripcion"
-                      externalMetadataColumnId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMmotivomovimiento]"
-                      lineageId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVdescripcion]" />
+                      externalMetadataColumnId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMmotivomovimiento]"
+                      lineageId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVdescripcion]" />
                     <inputColumn
-                      refId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de MTVid_motivo]"
+                      refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de MTVid_motivo]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="Copia de MTVid_motivo"
-                      externalMetadataColumnId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMid]"
-                      lineageId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVid_motivo]" />
+                      externalMetadataColumnId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMid]"
+                      lineageId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MTVid_motivo]" />
                     <inputColumn
-                      refId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de MVTid_movimiento]"
+                      refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de MVTid_movimiento]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="Copia de MVTid_movimiento"
-                      externalMetadataColumnId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[TMVid]"
-                      lineageId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MVTid_movimiento]" />
+                      externalMetadataColumnId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[TMVid]"
+                      lineageId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MVTid_movimiento]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[TMVid]"
+                      refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[TMVid]"
                       codePage="1252"
                       dataType="str"
                       length="2"
                       name="TMVid" />
                     <externalMetadataColumn
-                      refId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMid]"
+                      refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMid]"
                       codePage="1252"
                       dataType="str"
                       length="2"
                       name="MVMid" />
                     <externalMetadataColumn
-                      refId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMmotivomovimiento]"
+                      refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMmotivomovimiento]"
                       codePage="1252"
                       dataType="str"
                       length="60"
                       name="MVMmotivomovimiento" />
                     <externalMetadataColumn
-                      refId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMjustificacion]"
-                      dataType="i2"
+                      refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[MVMjustificacion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
                       name="MVMjustificacion" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Motivo Movimiento\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Motivo Movimiento\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Motivo Movimiento OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Motivo Movimiento OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Motivo Movimiento\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Motivo Movimiento OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4261,7 +4238,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Motivo Movimiento\Origen de OLE DB"
+              refId="Package\Motivo Movimiento OBS\Origen de OLE DB"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
               description="Origen de OLE DB"
@@ -4310,7 +4287,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Motivo Movimiento\Origen de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[www.electrosur.com.pe,1434.Activo_Fijo.clarico]"
                   connectionManagerRefId="Package.ConnectionManagers[www.electrosur.com.pe,1434.Activo_Fijo.clarico]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -4318,76 +4295,76 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                  refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MVTid_movimiento]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MVTid_movimiento]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MVTid_movimiento]"
+                      externalMetadataColumnId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MVTid_movimiento]"
                       length="2"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MVTid_movimiento]"
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MVTid_movimiento]"
                       name="MVTid_movimiento"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVid_motivo]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVid_motivo]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVid_motivo]"
+                      externalMetadataColumnId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVid_motivo]"
                       length="2"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVid_motivo]"
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVid_motivo]"
                       name="MTVid_motivo"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVdescripcion]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVdescripcion]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVdescripcion]"
+                      externalMetadataColumnId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVdescripcion]"
                       length="60"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVdescripcion]"
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVdescripcion]"
                       name="MTVdescripcion"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVjustifica]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVjustifica]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVjustifica]"
+                      externalMetadataColumnId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVjustifica]"
                       length="1"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVjustifica]"
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[MTVjustifica]"
                       name="MTVjustifica"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MVTid_movimiento]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MVTid_movimiento]"
                       codePage="1252"
                       dataType="str"
                       length="2"
                       name="MVTid_movimiento" />
                     <externalMetadataColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVid_motivo]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVid_motivo]"
                       codePage="1252"
                       dataType="str"
                       length="2"
                       name="MTVid_motivo" />
                     <externalMetadataColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVdescripcion]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVdescripcion]"
                       codePage="1252"
                       dataType="str"
                       length="60"
                       name="MTVdescripcion" />
                     <externalMetadataColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVjustifica]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[MTVjustifica]"
                       codePage="1252"
                       dataType="str"
                       length="1"
@@ -4395,48 +4372,48 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                  refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
                   isErrorOut="true"
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MVTid_movimiento]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MVTid_movimiento]"
                       codePage="1252"
                       dataType="str"
                       length="2"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MVTid_movimiento]"
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MVTid_movimiento]"
                       name="MVTid_movimiento" />
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVid_motivo]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVid_motivo]"
                       codePage="1252"
                       dataType="str"
                       length="2"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVid_motivo]"
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVid_motivo]"
                       name="MTVid_motivo" />
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVdescripcion]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVdescripcion]"
                       codePage="1252"
                       dataType="str"
                       length="60"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVdescripcion]"
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVdescripcion]"
                       name="MTVdescripcion" />
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVjustifica]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVjustifica]"
                       codePage="1252"
                       dataType="str"
                       length="1"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVjustifica]"
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[MTVjustifica]"
                       name="MTVjustifica" />
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4447,15 +4424,15 @@
           </components>
           <paths>
             <path
-              refId="Package\Motivo Movimiento.Paths[Salida de conversión de datos]"
-              endId="Package\Motivo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              refId="Package\Motivo Movimiento OBS.Paths[Salida de conversión de datos]"
+              endId="Package\Motivo Movimiento OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
-              startId="Package\Motivo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos]" />
+              startId="Package\Motivo Movimiento OBS\Conversión de datos.Outputs[Salida de conversión de datos]" />
             <path
-              refId="Package\Motivo Movimiento.Paths[Salida de origen de OLE DB]"
-              endId="Package\Motivo Movimiento\Conversión de datos.Inputs[Entrada de conversión de datos]"
+              refId="Package\Motivo Movimiento OBS.Paths[Salida de origen de OLE DB]"
+              endId="Package\Motivo Movimiento OBS\Conversión de datos.Inputs[Entrada de conversión de datos]"
               name="Salida de origen de OLE DB"
-              startId="Package\Motivo Movimiento\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+              startId="Package\Motivo Movimiento OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -5135,6 +5112,7 @@
       DTS:refId="Package\Sistema Electrico"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{1FDA3E8B-1F17-41A5-B7D3-AD3249782D10}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -5639,13 +5617,14 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Supranumero"
+      DTS:refId="Package\Supranumero OBS"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{FC911D8A-2209-48B5-8E48-116CD5EABA9C}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Supranumero"
+      DTS:ObjectName="Supranumero OBS"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -5653,7 +5632,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Supranumero\Conversión de datos"
+              refId="Package\Supranumero OBS\Conversión de datos"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
               description="Conversión de datos"
@@ -5661,42 +5640,42 @@
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Supranumero\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                  refId="Package\Supranumero OBS\Conversión de datos.Inputs[Entrada de conversión de datos]"
                   name="Entrada de conversión de datos">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Supranumero\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[V_T087U_ANLUE]"
+                      refId="Package\Supranumero OBS\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[V_T087U_ANLUE]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="12"
                       cachedName="V_T087U_ANLUE"
-                      lineageId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE]" />
+                      lineageId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE]" />
                     <inputColumn
-                      refId="Package\Supranumero\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[V_T087U_ANLUE_TXT]"
+                      refId="Package\Supranumero OBS\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[V_T087U_ANLUE_TXT]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="V_T087U_ANLUE_TXT"
-                      lineageId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]" />
+                      lineageId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Supranumero\Conversión de datos.Outputs[Salida de conversión de datos]"
+                  refId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de conversión de datos]"
                   exclusionGroup="1"
                   name="Salida de conversión de datos"
-                  synchronousInputId="Package\Supranumero\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  synchronousInputId="Package\Supranumero OBS\Conversión de datos.Inputs[Entrada de conversión de datos]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Supranumero\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE]"
+                      refId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       length="12"
-                      lineageId="Package\Supranumero\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE]"
+                      lineageId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE]"
                       name="Copia de V_T087U_ANLUE"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -5704,7 +5683,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -5712,13 +5691,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Supranumero\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE_TXT]"
+                      refId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE_TXT]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       length="100"
-                      lineageId="Package\Supranumero\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE_TXT]"
+                      lineageId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE_TXT]"
                       name="Copia de V_T087U_ANLUE_TXT"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -5726,7 +5705,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica la columna de entrada usada como origen de datos para la conversión."
-                          name="SourceInputColumnLineageID">#{Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
@@ -5737,22 +5716,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Supranumero\Conversión de datos.Outputs[Salida de error de conversión de datos]"
+                  refId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de error de conversión de datos]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de conversión de datos"
-                  synchronousInputId="Package\Supranumero\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  synchronousInputId="Package\Supranumero OBS\Conversión de datos.Inputs[Entrada de conversión de datos]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Supranumero\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      refId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Supranumero\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      lineageId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Supranumero\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      refId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Supranumero\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      lineageId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -5761,7 +5740,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Supranumero\Destino de OLE DB"
+              refId="Package\Supranumero OBS\Destino de OLE DB"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
@@ -5818,7 +5797,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Supranumero\Destino de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Supranumero OBS\Destino de OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[LocalHost.ActivosFijosP]"
                   connectionManagerRefId="Package.ConnectionManagers[LocalHost.ActivosFijosP]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -5826,39 +5805,39 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Supranumero\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Supranumero OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
-                  errorRowDisposition="FailComponent"
+                  errorRowDisposition="IgnoreFailure"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Supranumero\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de V_T087U_ANLUE]"
+                      refId="Package\Supranumero OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de V_T087U_ANLUE]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="12"
                       cachedName="Copia de V_T087U_ANLUE"
-                      externalMetadataColumnId="Package\Supranumero\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[V_T087U_ANLUE]"
-                      lineageId="Package\Supranumero\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE]" />
+                      externalMetadataColumnId="Package\Supranumero OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[V_T087U_ANLUE]"
+                      lineageId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE]" />
                     <inputColumn
-                      refId="Package\Supranumero\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de V_T087U_ANLUE_TXT]"
+                      refId="Package\Supranumero OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de V_T087U_ANLUE_TXT]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="Copia de V_T087U_ANLUE_TXT"
-                      externalMetadataColumnId="Package\Supranumero\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[V_T087U_ANLUE_TXT]"
-                      lineageId="Package\Supranumero\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE_TXT]" />
+                      externalMetadataColumnId="Package\Supranumero OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[V_T087U_ANLUE_TXT]"
+                      lineageId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de V_T087U_ANLUE_TXT]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Supranumero\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[V_T087U_ANLUE]"
+                      refId="Package\Supranumero OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[V_T087U_ANLUE]"
                       codePage="1252"
                       dataType="str"
                       length="12"
                       name="V_T087U_ANLUE" />
                     <externalMetadataColumn
-                      refId="Package\Supranumero\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[V_T087U_ANLUE_TXT]"
+                      refId="Package\Supranumero OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[V_T087U_ANLUE_TXT]"
                       codePage="1252"
                       dataType="str"
                       length="100"
@@ -5868,22 +5847,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Supranumero\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Supranumero OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Supranumero\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Supranumero OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Supranumero\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Supranumero OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Supranumero\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Supranumero OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Supranumero\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Supranumero OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Supranumero\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Supranumero OBS\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -5892,7 +5871,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Supranumero\Origen de OLE DB"
+              refId="Package\Supranumero OBS\Origen de OLE DB"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
               description="Origen de OLE DB"
@@ -5941,7 +5920,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Supranumero\Origen de OLE DB.Connections[OleDbConnection]"
+                  refId="Package\Supranumero OBS\Origen de OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[www.electrosur.com.pe,1434.Activo_Fijo.clarico]"
                   connectionManagerRefId="Package.ConnectionManagers[www.electrosur.com.pe,1434.Activo_Fijo.clarico]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -5949,42 +5928,42 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                  refId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE]"
+                      refId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[V_T087U_ANLUE]"
+                      externalMetadataColumnId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[V_T087U_ANLUE]"
                       length="12"
-                      lineageId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE]"
+                      lineageId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE]"
                       name="V_T087U_ANLUE"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]"
+                      refId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[V_T087U_ANLUE_TXT]"
+                      externalMetadataColumnId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[V_T087U_ANLUE_TXT]"
                       length="100"
-                      lineageId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]"
+                      lineageId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]"
                       name="V_T087U_ANLUE_TXT"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[V_T087U_ANLUE]"
+                      refId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[V_T087U_ANLUE]"
                       codePage="1252"
                       dataType="str"
                       length="12"
                       name="V_T087U_ANLUE" />
                     <externalMetadataColumn
-                      refId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[V_T087U_ANLUE_TXT]"
+                      refId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[V_T087U_ANLUE_TXT]"
                       codePage="1252"
                       dataType="str"
                       length="100"
@@ -5992,34 +5971,34 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                  refId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
                   isErrorOut="true"
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[V_T087U_ANLUE]"
+                      refId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[V_T087U_ANLUE]"
                       codePage="1252"
                       dataType="str"
                       length="12"
-                      lineageId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[V_T087U_ANLUE]"
+                      lineageId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[V_T087U_ANLUE]"
                       name="V_T087U_ANLUE" />
                     <outputColumn
-                      refId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]"
+                      refId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]"
                       codePage="1252"
                       dataType="str"
                       length="100"
-                      lineageId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]"
+                      lineageId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[V_T087U_ANLUE_TXT]"
                       name="V_T087U_ANLUE_TXT" />
                     <outputColumn
-                      refId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -6030,15 +6009,15 @@
           </components>
           <paths>
             <path
-              refId="Package\Supranumero.Paths[Salida de conversión de datos]"
-              endId="Package\Supranumero\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              refId="Package\Supranumero OBS.Paths[Salida de conversión de datos]"
+              endId="Package\Supranumero OBS\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
-              startId="Package\Supranumero\Conversión de datos.Outputs[Salida de conversión de datos]" />
+              startId="Package\Supranumero OBS\Conversión de datos.Outputs[Salida de conversión de datos]" />
             <path
-              refId="Package\Supranumero.Paths[Salida de origen de OLE DB]"
-              endId="Package\Supranumero\Conversión de datos.Inputs[Entrada de conversión de datos]"
+              refId="Package\Supranumero OBS.Paths[Salida de origen de OLE DB]"
+              endId="Package\Supranumero OBS\Conversión de datos.Inputs[Entrada de conversión de datos]"
               name="Salida de origen de OLE DB"
-              startId="Package\Supranumero\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+              startId="Package\Supranumero OBS\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -6047,6 +6026,7 @@
       DTS:refId="Package\Tipo Movimiento"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{57844E05-6DB9-4AD1-A245-E80AA7CC7106}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -6275,13 +6255,13 @@
                       externalMetadataColumnId="Package\Tipo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[TMVid]"
                       lineageId="Package\Tipo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MVTid_movimiento]" />
                     <inputColumn
-                      refId="Package\Tipo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de MVTtipo]"
+                      refId="Package\Tipo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de MVTdescripcion]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="Copia de MVTtipo"
+                      cachedLength="60"
+                      cachedName="Copia de MVTdescripcion"
                       externalMetadataColumnId="Package\Tipo Movimiento\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[TMVtipomovimiento]"
-                      lineageId="Package\Tipo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MVTtipo]" />
+                      lineageId="Package\Tipo Movimiento\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de MVTdescripcion]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -6505,6 +6485,7 @@
       DTS:refId="Package\Unidad de Medida"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
       DTS:DTSID="{972EFBB5-FD8D-444C-BED6-D51863E9A06A}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -6934,6 +6915,423 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\VNR"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{9B69B208-9697-41AB-976D-ED94F7E63093}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="VNR"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\VNR\Conversión de datos"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversión de datos"
+              name="Conversión de datos"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\VNR\Conversión de datos.Inputs[Entrada de conversión de datos]"
+                  name="Entrada de conversión de datos">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\VNR\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[VNRcodigo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="VNRcodigo"
+                      lineageId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[VNRcodigo]" />
+                    <inputColumn
+                      refId="Package\VNR\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[VNRdescripcion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="VNRdescripcion"
+                      lineageId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[VNRdescripcion]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\VNR\Conversión de datos.Outputs[Salida de conversión de datos]"
+                  exclusionGroup="1"
+                  name="Salida de conversión de datos"
+                  synchronousInputId="Package\VNR\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\VNR\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de VNRcodigo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="20"
+                      lineageId="Package\VNR\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de VNRcodigo]"
+                      name="Copia de VNRcodigo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[VNRcodigo]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\VNR\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de VNRdescripcion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      length="128"
+                      lineageId="Package\VNR\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de VNRdescripcion]"
+                      name="Copia de VNRdescripcion"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica la columna de entrada usada como origen de datos para la conversión."
+                          name="SourceInputColumnLineageID">#{Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[VNRdescripcion]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\VNR\Conversión de datos.Outputs[Salida de error de conversión de datos]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de conversión de datos"
+                  synchronousInputId="Package\VNR\Conversión de datos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\VNR\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\VNR\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\VNR\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\VNR\Conversión de datos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\VNR\Destino de OLE DB"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[acfVNRt_VNR]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Sólo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Sólo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Sólo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Sólo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\VNR\Destino de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.ActivosFijosP]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.ActivosFijosP]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de VNRcodigo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Copia de VNRcodigo"
+                      externalMetadataColumnId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[VNRid]"
+                      lineageId="Package\VNR\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de VNRcodigo]" />
+                    <inputColumn
+                      refId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Copia de VNRdescripcion]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="Copia de VNRdescripcion"
+                      externalMetadataColumnId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[VNRvnr]"
+                      lineageId="Package\VNR\Conversión de datos.Outputs[Salida de conversión de datos].Columns[Copia de VNRdescripcion]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[VNRid]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="VNRid" />
+                    <externalMetadataColumn
+                      refId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[VNRvnr]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="VNRvnr" />
+                    <externalMetadataColumn
+                      refId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[VNRcuenta]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="VNRcuenta" />
+                    <externalMetadataColumn
+                      refId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[VNRcuentadep]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="VNRcuentadep" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\VNR\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\VNR\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\VNR\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\VNR\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\VNR\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\VNR\Origen de OLE DB"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de OLE DB"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[acfVNR_vnrCodigos]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\VNR\Origen de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[www.electrosur.com.pe,1434.Activo_Fijo.clarico]"
+                  connectionManagerRefId="Package.ConnectionManagers[www.electrosur.com.pe,1434.Activo_Fijo.clarico]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[VNRcodigo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[VNRcodigo]"
+                      length="20"
+                      lineageId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[VNRcodigo]"
+                      name="VNRcodigo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[VNRdescripcion]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[VNRdescripcion]"
+                      length="128"
+                      lineageId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[VNRdescripcion]"
+                      name="VNRdescripcion"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[VNRcodigo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="VNRcodigo" />
+                    <externalMetadataColumn
+                      refId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[VNRdescripcion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="VNRdescripcion" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\VNR\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\VNR\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[VNRcodigo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\VNR\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[VNRcodigo]"
+                      name="VNRcodigo" />
+                    <outputColumn
+                      refId="Package\VNR\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[VNRdescripcion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      lineageId="Package\VNR\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[VNRdescripcion]"
+                      name="VNRdescripcion" />
+                    <outputColumn
+                      refId="Package\VNR\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\VNR\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\VNR\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\VNR\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\VNR.Paths[Salida de conversión de datos]"
+              endId="Package\VNR\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de conversión de datos"
+              startId="Package\VNR\Conversión de datos.Outputs[Salida de conversión de datos]" />
+            <path
+              refId="Package\VNR.Paths[Salida de origen de OLE DB]"
+              endId="Package\VNR\Conversión de datos.Inputs[Entrada de conversión de datos]"
+              name="Salida de origen de OLE DB"
+              startId="Package\VNR\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -6951,7 +7349,7 @@
       DTS:From="Package\Proveedor"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
-      DTS:To="Package\Supranumero" />
+      DTS:To="Package\Supranumero OBS" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 10]"
       DTS:CreationName=""
@@ -6977,10 +7375,18 @@
       DTS:ObjectName="Restricción 12"
       DTS:To="Package\Estado" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 13]"
+      DTS:CreationName=""
+      DTS:DTSID="{61F6B807-0E0D-40AE-A5D4-6C2D10A8E222}"
+      DTS:From="Package\Estado"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 13"
+      DTS:To="Package\VNR" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
       DTS:CreationName=""
       DTS:DTSID="{3A80D30A-3D12-4749-B1AE-CF08C79A3FAE}"
-      DTS:From="Package\Supranumero"
+      DTS:From="Package\Supranumero OBS"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 2"
       DTS:To="Package\Tipo Movimiento" />
@@ -7023,20 +7429,20 @@
       DTS:From="Package\Clase Documentos"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 7"
-      DTS:To="Package\Motivo Movimiento" />
+      DTS:To="Package\Motivo Movimiento OBS" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 8]"
       DTS:CreationName=""
       DTS:DTSID="{FD97112E-2643-4E6F-A774-E9F86AE56866}"
-      DTS:From="Package\Motivo Movimiento"
+      DTS:From="Package\Motivo Movimiento OBS"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 8"
-      DTS:To="Package\Costo" />
+      DTS:To="Package\Costo OBS" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 9]"
       DTS:CreationName=""
       DTS:DTSID="{1FF44465-1F64-4BC9-9CFB-EAF2BC4F935F}"
-      DTS:From="Package\Costo"
+      DTS:From="Package\Costo OBS"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 9"
       DTS:To="Package\Local" />
@@ -7066,8 +7472,8 @@
           Id="Package\Clase Documentos"
           TopLeft="193,178" />
         <NodeLayout
-          Size="107.2,41.6"
-          Id="Package\Costo"
+          Size="128,41.6"
+          Id="Package\Costo OBS"
           TopLeft="222,400" />
         <NodeLayout
           Size="112.8,41.6"
@@ -7086,8 +7492,8 @@
           Id="Package\Material"
           TopLeft="26,404" />
         <NodeLayout
-          Size="169.6,41.6"
-          Id="Package\Motivo Movimiento"
+          Size="190.4,41.6"
+          Id="Package\Motivo Movimiento OBS"
           TopLeft="195,269" />
         <NodeLayout
           Size="128.8,41.6"
@@ -7098,8 +7504,8 @@
           Id="Package\Sistema Electrico"
           TopLeft="404,169" />
         <NodeLayout
-          Size="144,41.6"
-          Id="Package\Supranumero"
+          Size="164.8,41.6"
+          Id="Package\Supranumero OBS"
           TopLeft="16,219" />
         <NodeLayout
           Size="159.2,41.6"
@@ -7133,30 +7539,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="79.5,149">
+          TopLeft="79.4,148.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="8.5,70"
+              EndConnector="19,70.4"
               Start="0,0"
-              End="8.5,62.5">
+              End="19,62.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31" />
+                    End="0,31.2" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31"
-                    Point2="0,35"
-                    Point3="4,35" />
+                    Point1="0,31.2"
+                    Point2="0,35.2"
+                    Point3="4,35.2" />
                   <mssgle:LineSegment
-                    End="4.5,35" />
+                    End="15,35.2" />
                   <mssgle:CubicBezierSegment
-                    Point1="4.5,35"
-                    Point2="8.5,35"
-                    Point3="8.5,39" />
+                    Point1="15,35.2"
+                    Point2="19,35.2"
+                    Point3="19,39.2" />
                   <mssgle:LineSegment
-                    End="8.5,62.5" />
+                    End="19,62.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7269,30 +7675,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="88,261">
+          TopLeft="99.5,260.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="12.5,50"
+              EndConnector="0,50.4"
               Start="0,0"
-              End="12.5,42.5">
+              End="0,42.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21"
-                    Point2="0,25"
-                    Point3="4,25" />
-                  <mssgle:LineSegment
-                    End="8.5,25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="8.5,25"
-                    Point2="12.5,25"
-                    Point3="12.5,29" />
-                  <mssgle:LineSegment
-                    End="12.5,42.5" />
+                    End="0,42.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7439,18 +7833,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 7]"
-          TopLeft="278.5,220">
+          TopLeft="277,219.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,49"
+              EndConnector="13.2,49.4"
               Start="0,0"
-              End="0,41.5">
+              End="13.2,41.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.5" />
+                    End="0,20.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.7"
+                    Point2="0,24.7"
+                    Point3="4,24.7" />
+                  <mssgle:LineSegment
+                    End="9.19999999999999,24.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.19999999999999,24.7"
+                    Point2="13.2,24.7"
+                    Point3="13.2,28.7" />
+                  <mssgle:LineSegment
+                    End="13.2,41.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7461,30 +7867,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 8]"
-          TopLeft="280,311">
+          TopLeft="290.2,310.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-21,89"
+              EndConnector="-24.2,89.4"
               Start="0,0"
-              End="-21,81.5">
+              End="-24.2,81.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.6132596685083" />
+                    End="0,48.9777777777778" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,48.6132596685083"
-                    Point2="0,52.6132596685083"
-                    Point3="-4,52.6132596685083" />
+                    Point1="0,48.9777777777778"
+                    Point2="0,52.9777777777778"
+                    Point3="-4,52.9777777777778" />
                   <mssgle:LineSegment
-                    End="-17,52.6132596685083" />
+                    End="-20.2,52.9777777777778" />
                   <mssgle:CubicBezierSegment
-                    Point1="-17,52.6132596685083"
-                    Point2="-21,52.6132596685083"
-                    Point3="-21,56.6132596685083" />
+                    Point1="-20.2,52.9777777777778"
+                    Point2="-24.2,52.9777777777778"
+                    Point3="-24.2,56.9777777777778" />
                   <mssgle:LineSegment
-                    End="-21,81.5" />
+                    End="-24.2,81.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7495,30 +7901,68 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 9]"
-          TopLeft="292,400">
+          TopLeft="306,400">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="104,-352"
+              EndConnector="118.266666666667,-352.4"
               Start="0,0"
-              End="104,-344.5">
+              End="118.266666666667,-344.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.0603825370957" />
+                    End="0,-171.610974063401" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25.0603825370957"
-                    Point2="0,29.0603825370957"
-                    Point3="4,29.0603825370957" />
+                    Point1="0,-171.610974063401"
+                    Point2="0,-175.610974063401"
+                    Point3="4,-175.610974063401" />
                   <mssgle:LineSegment
-                    End="100,29.0603825370957" />
+                    End="114.266666666667,-175.610974063401" />
                   <mssgle:CubicBezierSegment
-                    Point1="100,29.0603825370957"
-                    Point2="104,29.0603825370957"
-                    Point3="104,25.0603825370957" />
+                    Point1="114.266666666667,-175.610974063401"
+                    Point2="118.266666666667,-175.610974063401"
+                    Point3="118.266666666667,-179.610974063401" />
                   <mssgle:LineSegment
-                    End="104,-344.5" />
+                    End="118.266666666667,-344.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="99.2,41.6"
+          Id="Package\VNR"
+          TopLeft="425.714292964157,386.588238640228" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 13]"
+          TopLeft="465.4,308.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.91429296415686,77.9882386402276"
+              Start="0,0"
+              End="9.91429296415686,70.4882386402276">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.9941193201138" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.9941193201138"
+                    Point2="0,38.9941193201138"
+                    Point3="4,38.9941193201138" />
+                  <mssgle:LineSegment
+                    End="5.91429296415686,38.9941193201138" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.91429296415686,38.9941193201138"
+                    Point2="9.91429296415686,38.9941193201138"
+                    Point3="9.91429296415686,42.9941193201138" />
+                  <mssgle:LineSegment
+                    End="9.91429296415686,70.4882386402276" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7534,7 +7978,7 @@
     design-time-name="Package\Actividad">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="169.6,41.6"
           Id="Package\Actividad\Destino de OLE DB"
@@ -7578,7 +8022,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7600,7 +8046,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7636,7 +8084,7 @@
     design-time-name="Package\Ambiente">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="169.6,41.6"
           Id="Package\Ambiente\Destino de OLE DB"
@@ -7680,7 +8128,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7714,7 +8164,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7750,7 +8202,7 @@
     design-time-name="Package\Clase Documentos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="166.4,41.6"
           Id="Package\Clase Documentos\Origen de OLE DB"
@@ -7794,7 +8246,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7828,7 +8282,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7861,24 +8317,24 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Costo">
+    design-time-name="Package\Costo OBS">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="166.4,41.6"
-          Id="Package\Costo\Origen de OLE DB"
+          Id="Package\Costo OBS\Origen de OLE DB"
           TopLeft="117,52" />
         <NodeLayout
           Size="176.8,41.6"
-          Id="Package\Costo\Conversión de datos"
+          Id="Package\Costo OBS\Conversión de datos"
           TopLeft="293,206" />
         <NodeLayout
           Size="169.6,41.6"
-          Id="Package\Costo\Destino de OLE DB"
+          Id="Package\Costo OBS\Destino de OLE DB"
           TopLeft="592,311" />
         <EdgeLayout
-          Id="Package\Costo.Paths[Salida de origen de OLE DB]"
+          Id="Package\Costo OBS.Paths[Salida de origen de OLE DB]"
           TopLeft="200,94">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7912,7 +8368,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Costo.Paths[Salida de conversión de datos]"
+          Id="Package\Costo OBS.Paths[Salida de conversión de datos]"
           TopLeft="381.5,248">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7949,7 +8405,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Costo\Origen de OLE DB">
+    design-time-name="Package\Costo OBS\Origen de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7962,7 +8418,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Costo\Destino de OLE DB">
+    design-time-name="Package\Costo OBS\Destino de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8200,7 +8656,7 @@
     design-time-name="Package\Marca">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="169.6,41.6"
           Id="Package\Marca\Destino de OLE DB"
@@ -8244,7 +8700,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8278,7 +8736,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8314,7 +8774,7 @@
     design-time-name="Package\Material">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="169.6,41.6"
           Id="Package\Material\Destino de OLE DB"
@@ -8358,7 +8818,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8392,7 +8854,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8425,48 +8889,48 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Motivo Movimiento">
+    design-time-name="Package\Motivo Movimiento OBS">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="168,41.6"
-          Id="Package\Motivo Movimiento\Destino de OLE DB"
+          Id="Package\Motivo Movimiento OBS\Destino de OLE DB"
           TopLeft="357,274" />
         <NodeLayout
-          Size="176.8,41.6"
-          Id="Package\Motivo Movimiento\Conversión de datos"
+          Size="174.4,41.6"
+          Id="Package\Motivo Movimiento OBS\Conversión de datos"
           TopLeft="146,214" />
         <NodeLayout
           Size="166.4,41.6"
-          Id="Package\Motivo Movimiento\Origen de OLE DB"
+          Id="Package\Motivo Movimiento OBS\Origen de OLE DB"
           TopLeft="120,57" />
         <EdgeLayout
-          Id="Package\Motivo Movimiento.Paths[Salida de conversión de datos]"
-          TopLeft="322.8,234.8">
+          Id="Package\Motivo Movimiento OBS.Paths[Salida de conversión de datos]"
+          TopLeft="320.4,234.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="34.2,60"
+              EndConnector="36.6,60"
               Start="0,0"
-              End="26.7,60">
+              End="29.1,60">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="13.1,0" />
+                    End="14.3,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="13.1,0"
-                    Point2="17.1,0"
-                    Point3="17.1,4" />
+                    Point1="14.3,0"
+                    Point2="18.3,0"
+                    Point3="18.3,4" />
                   <mssgle:LineSegment
-                    End="17.1,56" />
+                    End="18.3,56" />
                   <mssgle:CubicBezierSegment
-                    Point1="17.1,56"
-                    Point2="17.1,60"
-                    Point3="21.1,60" />
+                    Point1="18.3,56"
+                    Point2="18.3,60"
+                    Point3="22.3,60" />
                   <mssgle:LineSegment
-                    End="26.7,60" />
+                    End="29.1,60" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8476,31 +8940,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Motivo Movimiento.Paths[Salida de origen de OLE DB]"
-          TopLeft="203,99">
+          Id="Package\Motivo Movimiento OBS.Paths[Salida de origen de OLE DB]"
+          TopLeft="203.2,98.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="31.5,115"
+              EndConnector="30,115.4"
               Start="0,0"
-              End="31.5,107.5">
+              End="30,107.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.5" />
+                    End="0,53.7" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,53.5"
-                    Point2="0,57.5"
-                    Point3="4,57.5" />
+                    Point1="0,53.7"
+                    Point2="0,57.7"
+                    Point3="4,57.7" />
                   <mssgle:LineSegment
-                    End="27.5,57.5" />
+                    End="26,57.7" />
                   <mssgle:CubicBezierSegment
-                    Point1="27.5,57.5"
-                    Point2="31.5,57.5"
-                    Point3="31.5,61.5" />
+                    Point1="26,57.7"
+                    Point2="30,57.7"
+                    Point3="30,61.7" />
                   <mssgle:LineSegment
-                    End="31.5,107.5" />
+                    End="30,107.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8513,7 +8977,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Motivo Movimiento\Destino de OLE DB">
+    design-time-name="Package\Motivo Movimiento OBS\Destino de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8526,7 +8990,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Motivo Movimiento\Origen de OLE DB">
+    design-time-name="Package\Motivo Movimiento OBS\Origen de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8542,11 +9006,7 @@
     design-time-name="Package\Proveedor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="166.4,41.6"
-          Id="Package\Proveedor\Origen de OLE DB"
-          TopLeft="261,50" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="169.6,41.6"
           Id="Package\Proveedor\Destino de OLE DB"
@@ -8555,6 +9015,10 @@
           Size="176.8,41.6"
           Id="Package\Proveedor\Conversión de datos"
           TopLeft="264,137" />
+        <NodeLayout
+          Size="166.4,41.6"
+          Id="Package\Proveedor\Origen de OLE DB"
+          TopLeft="261,50" />
         <EdgeLayout
           Id="Package\Proveedor.Paths[Salida de origen de OLE DB]"
           TopLeft="344,92">
@@ -8586,7 +9050,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8620,14 +9086,16 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Proveedor\Origen de OLE DB">
+    design-time-name="Package\Proveedor\Destino de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8640,7 +9108,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Proveedor\Destino de OLE DB">
+    design-time-name="Package\Proveedor\Origen de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8656,7 +9124,7 @@
     design-time-name="Package\Sistema Electrico">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="166.4,41.6"
           Id="Package\Sistema Electrico\Origen de OLE DB"
@@ -8700,7 +9168,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8734,7 +9204,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8767,24 +9239,24 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Supranumero">
+    design-time-name="Package\Supranumero OBS">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="169.6,41.6"
-          Id="Package\Supranumero\Destino de OLE DB"
+          Id="Package\Supranumero OBS\Destino de OLE DB"
           TopLeft="247,247" />
         <NodeLayout
           Size="166.4,41.6"
-          Id="Package\Supranumero\Origen de OLE DB"
+          Id="Package\Supranumero OBS\Origen de OLE DB"
           TopLeft="222,81" />
         <NodeLayout
           Size="176.8,41.6"
-          Id="Package\Supranumero\Conversión de datos"
+          Id="Package\Supranumero OBS\Conversión de datos"
           TopLeft="221,158" />
         <EdgeLayout
-          Id="Package\Supranumero.Paths[Salida de origen de OLE DB]"
+          Id="Package\Supranumero OBS.Paths[Salida de origen de OLE DB]"
           TopLeft="307.25,123">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -8806,7 +9278,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Supranumero.Paths[Salida de conversión de datos]"
+          Id="Package\Supranumero OBS.Paths[Salida de conversión de datos]"
           TopLeft="309.5,200">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -8843,7 +9315,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Supranumero\Destino de OLE DB">
+    design-time-name="Package\Supranumero OBS\Destino de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8856,7 +9328,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Supranumero\Origen de OLE DB">
+    design-time-name="Package\Supranumero OBS\Origen de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8986,7 +9458,7 @@
     design-time-name="Package\Unidad de Medida">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="166.4,41.6"
           Id="Package\Unidad de Medida\Origen de OLE DB"
@@ -9030,7 +9502,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9064,7 +9538,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9085,6 +9561,120 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Unidad de Medida\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\VNR">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\VNR\Origen de OLE DB"
+          TopLeft="84,40.8" />
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\VNR\Destino de OLE DB"
+          TopLeft="848,84.8" />
+        <NodeLayout
+          Size="174.4,41.6"
+          Id="Package\VNR\Conversión de datos"
+          TopLeft="496.8,96.8" />
+        <EdgeLayout
+          Id="Package\VNR.Paths[Salida de origen de OLE DB]"
+          TopLeft="247.2,61.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="249.6,56"
+              Start="0,0"
+              End="242.1,56">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="120.8,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="120.8,0"
+                    Point2="124.8,0"
+                    Point3="124.8,4" />
+                  <mssgle:LineSegment
+                    End="124.8,52" />
+                  <mssgle:CubicBezierSegment
+                    Point1="124.8,52"
+                    Point2="124.8,56"
+                    Point3="128.8,56" />
+                  <mssgle:LineSegment
+                    End="242.1,56" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\VNR.Paths[Salida de conversión de datos]"
+          TopLeft="671.2,117.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="176.8,-12"
+              Start="0,0"
+              End="169.3,-12">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="84.4,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="84.4,0"
+                    Point2="88.4,0"
+                    Point3="88.4,-4" />
+                  <mssgle:LineSegment
+                    End="88.4,-8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="88.4,-8"
+                    Point2="88.4,-12"
+                    Point3="92.4,-12" />
+                  <mssgle:LineSegment
+                    End="169.3,-12" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\VNR\Origen de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\VNR\Destino de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
