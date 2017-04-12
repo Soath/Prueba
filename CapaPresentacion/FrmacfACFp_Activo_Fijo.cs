@@ -1020,6 +1020,12 @@ namespace CapaPresentacion
             FrmacfUBEt_UbicacionElectrica.ShowDialog();
         }
 
+        private void toolStripImagen_Click(object sender, EventArgs e)
+        {
+            Form FormImagen = new FormImagen();
+            FormImagen.ShowDialog();
+        }
+
 
 
 

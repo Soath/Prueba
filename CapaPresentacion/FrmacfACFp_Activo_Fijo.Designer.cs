@@ -490,6 +490,7 @@
             this.toolStripImagen.Text = "Imagen";
             this.toolStripImagen.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripImagen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripImagen.Click += new System.EventHandler(this.toolStripImagen_Click);
             // 
             // label1
             // 
