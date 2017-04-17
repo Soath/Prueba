@@ -545,7 +545,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(916, 331);
+            this.tabPage1.Size = new System.Drawing.Size(916, 293);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Características Generales";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1200,7 +1200,7 @@
             this.tabPage3.Controls.Add(this.lblCRSutmx);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(916, 331);
+            this.tabPage3.Size = new System.Drawing.Size(916, 293);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Eléctrica";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1379,7 +1379,7 @@
             this.tabPage4.Controls.Add(this.txtCRSvehexpediente);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(916, 331);
+            this.tabPage4.Size = new System.Drawing.Size(916, 293);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Vehiculos";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1615,7 +1615,7 @@
             this.tabPage5.Controls.Add(this.lblCRSresolucion);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(916, 331);
+            this.tabPage5.Size = new System.Drawing.Size(916, 293);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Equipos";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -2633,6 +2633,7 @@
             this.Name = "FrmacfACFp_Activo_Fijo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfACFp_Activo_Fijo";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmPostres_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
