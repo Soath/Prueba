@@ -31,10 +31,10 @@ namespace CapaDatos
         private string sACFdepacutrib;
         private string decACFdepacuniif;
         private string sACFobra;
-        private string sACFord41;
-        private string sACFord42;
-        private string sACFord43;
-        private string sACFord44;
+        //private string sACFord41;
+        //private string sACFord42;
+        //private string sACFord43;
+        //private string sACFord44;
         private string sACFanlue;
         private string decACFfactortrib;
         private string decACFfactorniif;
@@ -160,26 +160,26 @@ namespace CapaDatos
             get { return sACFobra; }
             set { sACFobra = value; }
         }
-        public string ACFord41
-        {
-            get { return sACFord41; }
-            set { sACFord41 = value; }
-        }
-        public string ACFord42
-        {
-            get { return sACFord42; }
-            set { sACFord42 = value; }
-        }
-        public string ACFord43
-        {
-            get { return sACFord43; }
-            set { sACFord43 = value; }
-        }
-        public string ACFord44
-        {
-            get { return sACFord44; }
-            set { sACFord44 = value; }
-        }
+        //public string ACFord41
+        //{
+        //    get { return sACFord41; }
+        //    set { sACFord41 = value; }
+        //}
+        //public string ACFord42
+        //{
+        //    get { return sACFord42; }
+        //    set { sACFord42 = value; }
+        //}
+        //public string ACFord43
+        //{
+        //    get { return sACFord43; }
+        //    set { sACFord43 = value; }
+        //}
+        //public string ACFord44
+        //{
+        //    get { return sACFord44; }
+        //    set { sACFord44 = value; }
+        //}
         public string ACFanlue
         {
             get { return sACFanlue; }
@@ -302,10 +302,10 @@ namespace CapaDatos
          string ACFdepacutrib,           
          string ACFdepacuniif,         
          string ACFobra,                 
-         string ACFord41,                
-         string ACFord42,                
-         string ACFord43,                
-         string ACFord44,                
+         //string ACFord41,                
+         //string ACFord42,                
+         //string ACFord43,                
+         //string ACFord44,                
          string ACFanlue,                
          string ACFfactortrib,         
          string ACFfactorniif,         
@@ -348,10 +348,10 @@ namespace CapaDatos
         this.ACFdepacutrib = sACFdepacutrib;
         this.ACFdepacuniif = decACFdepacuniif;
         this.ACFobra = sACFobra;
-        this.ACFord41 = sACFord41;
-        this.ACFord42 = sACFord42;
-        this.ACFord43 = sACFord43;
-        this.ACFord44 = sACFord44;
+        //this.ACFord41 = sACFord41;
+        //this.ACFord42 = sACFord42;
+        //this.ACFord43 = sACFord43;
+        //this.ACFord44 = sACFord44;
         this.ACFanlue = sACFanlue;
         this.ACFfactortrib = decACFfactortrib;
         this.ACFfactorniif = decACFfactorniif;
@@ -658,29 +658,29 @@ namespace CapaDatos
                 ParACFobra.Value = acfACFp_Activo_Fijo.ACFobra;
                 SqlCmd.Parameters.Add(ParACFobra);
                 //
-                SqlParameter ParACFord41 = new SqlParameter();
-                ParACFord41.ParameterName = "@sACFord41";
-                ParACFord41.SqlDbType = SqlDbType.Char;
-                ParACFord41.Value = acfACFp_Activo_Fijo.ACFord41;
-                SqlCmd.Parameters.Add(ParACFord41);
-                //
-                SqlParameter ParACFord42 = new SqlParameter();
-                ParACFord42.ParameterName = "@sACFord42";
-                ParACFord42.SqlDbType = SqlDbType.Char;
-                ParACFord42.Value = acfACFp_Activo_Fijo.ACFord42;
-                SqlCmd.Parameters.Add(ParACFord42);
-                //
-                SqlParameter ParACFord43 = new SqlParameter();
-                ParACFord43.ParameterName = "@sACFord43";
-                ParACFord43.SqlDbType = SqlDbType.Char;
-                ParACFord43.Value = acfACFp_Activo_Fijo.ACFord43;
-                SqlCmd.Parameters.Add(ParACFord43);
-                //
-                SqlParameter ParACFord44 = new SqlParameter();
-                ParACFord44.ParameterName = "@sACFord44";
-                ParACFord44.SqlDbType = SqlDbType.Char;
-                ParACFord44.Value = acfACFp_Activo_Fijo.ACFord44;
-                SqlCmd.Parameters.Add(ParACFord44);
+                //SqlParameter ParACFord41 = new SqlParameter();
+                //ParACFord41.ParameterName = "@sACFord41";
+                //ParACFord41.SqlDbType = SqlDbType.Char;
+                //ParACFord41.Value = acfACFp_Activo_Fijo.ACFord41;
+                //SqlCmd.Parameters.Add(ParACFord41);
+                ////
+                //SqlParameter ParACFord42 = new SqlParameter();
+                //ParACFord42.ParameterName = "@sACFord42";
+                //ParACFord42.SqlDbType = SqlDbType.Char;
+                //ParACFord42.Value = acfACFp_Activo_Fijo.ACFord42;
+                //SqlCmd.Parameters.Add(ParACFord42);
+                ////
+                //SqlParameter ParACFord43 = new SqlParameter();
+                //ParACFord43.ParameterName = "@sACFord43";
+                //ParACFord43.SqlDbType = SqlDbType.Char;
+                //ParACFord43.Value = acfACFp_Activo_Fijo.ACFord43;
+                //SqlCmd.Parameters.Add(ParACFord43);
+                ////
+                //SqlParameter ParACFord44 = new SqlParameter();
+                //ParACFord44.ParameterName = "@sACFord44";
+                //ParACFord44.SqlDbType = SqlDbType.Char;
+                //ParACFord44.Value = acfACFp_Activo_Fijo.ACFord44;
+                //SqlCmd.Parameters.Add(ParACFord44);
                 //
                 SqlParameter ParACFanlue = new SqlParameter();
                 ParACFanlue.ParameterName = "@sACFanlue";
@@ -959,29 +959,29 @@ namespace CapaDatos
                 ParACFobra.Value = acfACFp_Activo_Fijo.ACFobra;
                 SqlCmd.Parameters.Add(ParACFobra);
                 //
-                SqlParameter ParACFord41 = new SqlParameter();
-                ParACFord41.ParameterName = "@sACFord41";
-                ParACFord41.SqlDbType = SqlDbType.Char;
-                ParACFord41.Value = acfACFp_Activo_Fijo.ACFord41;
-                SqlCmd.Parameters.Add(ParACFord41);
-                //
-                SqlParameter ParACFord42 = new SqlParameter();
-                ParACFord42.ParameterName = "@sACFord42";
-                ParACFord42.SqlDbType = SqlDbType.Char;
-                ParACFord42.Value = acfACFp_Activo_Fijo.ACFord42;
-                SqlCmd.Parameters.Add(ParACFord42);
-                //
-                SqlParameter ParACFord43 = new SqlParameter();
-                ParACFord43.ParameterName = "@sACFord43";
-                ParACFord43.SqlDbType = SqlDbType.Char;
-                ParACFord43.Value = acfACFp_Activo_Fijo.ACFord43;
-                SqlCmd.Parameters.Add(ParACFord43);
-                //
-                SqlParameter ParACFord44 = new SqlParameter();
-                ParACFord44.ParameterName = "@sACFord44";
-                ParACFord44.SqlDbType = SqlDbType.Char;
-                ParACFord44.Value = acfACFp_Activo_Fijo.ACFord44;
-                SqlCmd.Parameters.Add(ParACFord44);
+                //SqlParameter ParACFord41 = new SqlParameter();
+                //ParACFord41.ParameterName = "@sACFord41";
+                //ParACFord41.SqlDbType = SqlDbType.Char;
+                //ParACFord41.Value = acfACFp_Activo_Fijo.ACFord41;
+                //SqlCmd.Parameters.Add(ParACFord41);
+                ////
+                //SqlParameter ParACFord42 = new SqlParameter();
+                //ParACFord42.ParameterName = "@sACFord42";
+                //ParACFord42.SqlDbType = SqlDbType.Char;
+                //ParACFord42.Value = acfACFp_Activo_Fijo.ACFord42;
+                //SqlCmd.Parameters.Add(ParACFord42);
+                ////
+                //SqlParameter ParACFord43 = new SqlParameter();
+                //ParACFord43.ParameterName = "@sACFord43";
+                //ParACFord43.SqlDbType = SqlDbType.Char;
+                //ParACFord43.Value = acfACFp_Activo_Fijo.ACFord43;
+                //SqlCmd.Parameters.Add(ParACFord43);
+                ////
+                //SqlParameter ParACFord44 = new SqlParameter();
+                //ParACFord44.ParameterName = "@sACFord44";
+                //ParACFord44.SqlDbType = SqlDbType.Char;
+                //ParACFord44.Value = acfACFp_Activo_Fijo.ACFord44;
+                //SqlCmd.Parameters.Add(ParACFord44);
                 //
                 SqlParameter ParACFanlue = new SqlParameter();
                 ParACFanlue.ParameterName = "@sACFanlue";

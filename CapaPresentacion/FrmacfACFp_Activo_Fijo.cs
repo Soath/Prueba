@@ -314,10 +314,10 @@ namespace CapaPresentacion
                     txtACFdepacutrib.Text = Convert.ToString(row["ACFdepacutrib"]);
                     txtACFdepacuniif.Text = Convert.ToString(row["ACFdepacuniif"]);
                     txtACFobra.Text = Convert.ToString(row["ACFobra"]);
-                    txtACFord41.Text = Convert.ToString(row["ACFord41"]);
-                    txtACFord42.Text = Convert.ToString(row["ACFord42"]);
-                    txtACFord43.Text = Convert.ToString(row["ACFord43"]);
-                    txtACFord44.Text = Convert.ToString(row["ACFord44"]);
+                    //txtACFord41.Text = Convert.ToString(row["ACFord41"]);
+                    //txtACFord42.Text = Convert.ToString(row["ACFord42"]);
+                    //txtACFord43.Text = Convert.ToString(row["ACFord43"]);
+                    //txtACFord44.Text = Convert.ToString(row["ACFord44"]);
                     txtACFanlue.Text = Convert.ToString(row["ACFanlue"]);
                     txtACFfactortrib.Text = Convert.ToString(row["ACFfactortrib"]);
                     txtACFfactorniif.Text = Convert.ToString(row["ACFfactorniif"]);
@@ -385,10 +385,10 @@ namespace CapaPresentacion
                     txtACFdepacutrib.Text = Convert.ToString(row["ACFdepacutrib"]);
                     txtACFdepacuniif.Text = Convert.ToString(row["ACFdepacuniif"]);
                     txtACFobra.Text = Convert.ToString(row["ACFobra"]);
-                    txtACFord41.Text = Convert.ToString(row["ACFord41"]);
-                    txtACFord42.Text = Convert.ToString(row["ACFord42"]);
-                    txtACFord43.Text = Convert.ToString(row["ACFord43"]);
-                    txtACFord44.Text = Convert.ToString(row["ACFord44"]);
+                    //txtACFord41.Text = Convert.ToString(row["ACFord41"]);
+                    //txtACFord42.Text = Convert.ToString(row["ACFord42"]);
+                    //txtACFord43.Text = Convert.ToString(row["ACFord43"]);
+                    //txtACFord44.Text = Convert.ToString(row["ACFord44"]);
                     txtACFanlue.Text = Convert.ToString(row["ACFanlue"]);
                     txtACFfactortrib.Text = Convert.ToString(row["ACFfactortrib"]);
                     txtACFfactorniif.Text = Convert.ToString(row["ACFfactorniif"]);
@@ -457,10 +457,10 @@ namespace CapaPresentacion
                     txtACFdepacutrib.Text = Convert.ToString(row["ACFdepacutrib"]);
                     txtACFdepacuniif.Text = Convert.ToString(row["ACFdepacuniif"]);
                     txtACFobra.Text = Convert.ToString(row["ACFobra"]);
-                    txtACFord41.Text = Convert.ToString(row["ACFord41"]);
-                    txtACFord42.Text = Convert.ToString(row["ACFord42"]);
-                    txtACFord43.Text = Convert.ToString(row["ACFord43"]);
-                    txtACFord44.Text = Convert.ToString(row["ACFord44"]);
+                    //txtACFord41.Text = Convert.ToString(row["ACFord41"]);
+                    //txtACFord42.Text = Convert.ToString(row["ACFord42"]);
+                    //txtACFord43.Text = Convert.ToString(row["ACFord43"]);
+                    //txtACFord44.Text = Convert.ToString(row["ACFord44"]);
                     txtACFanlue.Text = Convert.ToString(row["ACFanlue"]);
                     txtACFfactortrib.Text = Convert.ToString(row["ACFfactortrib"]);
                     txtACFfactorniif.Text = Convert.ToString(row["ACFfactorniif"]);
@@ -527,10 +527,10 @@ namespace CapaPresentacion
                     txtACFdepacutrib.Text = Convert.ToString(row["ACFdepacutrib"]);
                     txtACFdepacuniif.Text = Convert.ToString(row["ACFdepacuniif"]);
                     txtACFobra.Text = Convert.ToString(row["ACFobra"]);
-                    txtACFord41.Text = Convert.ToString(row["ACFord41"]);
-                    txtACFord42.Text = Convert.ToString(row["ACFord42"]);
-                    txtACFord43.Text = Convert.ToString(row["ACFord43"]);
-                    txtACFord44.Text = Convert.ToString(row["ACFord44"]);
+                   //txtACFord41.Text = Convert.ToString(row["ACFord41"]);
+                   //txtACFord42.Text = Convert.ToString(row["ACFord42"]);
+                   //txtACFord43.Text = Convert.ToString(row["ACFord43"]);
+                   //txtACFord44.Text = Convert.ToString(row["ACFord44"]);
                     txtACFanlue.Text = Convert.ToString(row["ACFanlue"]);
                     txtACFfactortrib.Text = Convert.ToString(row["ACFfactortrib"]);
                     txtACFfactorniif.Text = Convert.ToString(row["ACFfactorniif"]);
@@ -675,10 +675,10 @@ namespace CapaPresentacion
                     , this.txtACFdepacutrib.Text
                     , this.txtACFdepacuniif.Text
                     , this.txtACFobra.Text
-                    , this.txtACFord41.Text
-                    , this.txtACFord42.Text
-                    , this.txtACFord43.Text
-                    , this.txtACFord44.Text
+                    //, this.txtACFord41.Text
+                    //, this.txtACFord42.Text
+                    //, this.txtACFord43.Text
+                    //, this.txtACFord44.Text
                     , this.txtACFanlue.Text
                     , this.txtACFfactortrib.Text
                     , this.txtACFfactorniif.Text
@@ -746,10 +746,10 @@ namespace CapaPresentacion
                     , this.txtACFdepacutrib.Text
                     , this.txtACFdepacuniif.Text
                     , this.txtACFobra.Text
-                    , this.txtACFord41.Text
-                    , this.txtACFord42.Text
-                    , this.txtACFord43.Text
-                    , this.txtACFord44.Text
+                   //, this.txtACFord41.Text
+                   //, this.txtACFord42.Text
+                   //, this.txtACFord43.Text
+                   //, this.txtACFord44.Text
                     , this.txtACFanlue.Text
                     , this.txtACFfactortrib.Text
                     , this.txtACFfactorniif.Text
@@ -857,10 +857,10 @@ namespace CapaPresentacion
                     txtACFdepacutrib.Text = Convert.ToString(row["ACFdepacutrib"]);
                     txtACFdepacuniif.Text = Convert.ToString(row["ACFdepacuniif"]);
                     txtACFobra.Text = Convert.ToString(row["ACFobra"]);
-                    txtACFord41.Text = Convert.ToString(row["ACFord41"]);
-                    txtACFord42.Text = Convert.ToString(row["ACFord42"]);
-                    txtACFord43.Text = Convert.ToString(row["ACFord43"]);
-                    txtACFord44.Text = Convert.ToString(row["ACFord44"]);
+                    //txtACFord41.Text = Convert.ToString(row["ACFord41"]);
+                    //txtACFord42.Text = Convert.ToString(row["ACFord42"]);
+                    //txtACFord43.Text = Convert.ToString(row["ACFord43"]);
+                    //txtACFord44.Text = Convert.ToString(row["ACFord44"]);
                     txtACFanlue.Text = Convert.ToString(row["ACFanlue"]);
                     txtACFfactortrib.Text = Convert.ToString(row["ACFfactortrib"]);
                     txtACFfactorniif.Text = Convert.ToString(row["ACFfactorniif"]);
@@ -1024,6 +1024,11 @@ namespace CapaPresentacion
         {
             Form FormImagen = new FormImagen();
             FormImagen.ShowDialog();
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
         }
 
 

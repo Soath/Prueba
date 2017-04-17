@@ -35,10 +35,10 @@ namespace CapaNegocio
          string sACFdepacutrib,           
          string decACFdepacuniif,         
          string sACFobra,                 
-         string sACFord41,                
-         string sACFord42,                
-         string sACFord43,                
-         string sACFord44,                
+         //string sACFord41,                
+         //string sACFord42,                
+         //string sACFord43,                
+         //string sACFord44,                
          string sACFanlue,                
          string decACFfactortrib,         
          string decACFfactorniif,         
@@ -81,10 +81,10 @@ namespace CapaNegocio
             Obj.ACFdepacutrib = sACFdepacutrib;
             Obj.ACFdepacuniif = decACFdepacuniif;
             Obj.ACFobra = sACFobra;
-            Obj.ACFord41 = sACFord41;
-            Obj.ACFord42 = sACFord42;
-            Obj.ACFord43 = sACFord43;
-            Obj.ACFord44 = sACFord44;
+            //Obj.ACFord41 = sACFord41;
+            //Obj.ACFord42 = sACFord42;
+            //Obj.ACFord43 = sACFord43;
+            //Obj.ACFord44 = sACFord44;
             Obj.ACFanlue = sACFanlue;
             Obj.ACFfactortrib = decACFfactortrib;
             Obj.ACFfactorniif = decACFfactorniif;
@@ -132,10 +132,10 @@ namespace CapaNegocio
          string sACFdepacutrib,
          string decACFdepacuniif,
          string sACFobra,
-         string sACFord41,
-         string sACFord42,
-         string sACFord43,
-         string sACFord44,
+         //string sACFord41,
+         //string sACFord42,
+         //string sACFord43,
+         //string sACFord44,
          string sACFanlue,
          string decACFfactortrib,
          string decACFfactorniif,
@@ -178,10 +178,10 @@ namespace CapaNegocio
             Obj.ACFdepacutrib = sACFdepacutrib;
             Obj.ACFdepacuniif = decACFdepacuniif;
             Obj.ACFobra = sACFobra;
-            Obj.ACFord41 = sACFord41;
-            Obj.ACFord42 = sACFord42;
-            Obj.ACFord43 = sACFord43;
-            Obj.ACFord44 = sACFord44;
+            //Obj.ACFord41 = sACFord41;
+            //Obj.ACFord42 = sACFord42;
+            //Obj.ACFord43 = sACFord43;
+            //Obj.ACFord44 = sACFord44;
             Obj.ACFanlue = sACFanlue;
             Obj.ACFfactortrib = decACFfactortrib;
             Obj.ACFfactorniif = decACFfactorniif;
