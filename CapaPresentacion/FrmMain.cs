@@ -117,6 +117,7 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            
         }
 
         private void ribbonOrbMenuItem2_Click(object sender, EventArgs e)
