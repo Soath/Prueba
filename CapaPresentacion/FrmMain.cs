@@ -74,6 +74,8 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
         }
         private void ribbonButton6_Click(object sender, EventArgs e)
         {
+            //Form FrmacfACTt_Actividad = new FrmacfACTt_Actividad();
+            //FrmacfACTt_Actividad.ShowDialog();
         }
         private void ribbonButton7_Click(object sender, EventArgs e)
         {
