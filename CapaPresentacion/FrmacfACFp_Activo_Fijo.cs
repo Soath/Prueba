@@ -294,6 +294,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    txtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                     cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
                     cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
                     cboANLKL.Text = Convert.ToString(row["ANLKL"]);
@@ -365,6 +366,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    txtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                     cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
                     cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
                     cboANLKL.Text = Convert.ToString(row["ANLKL"]);
@@ -437,6 +439,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    txtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                     cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
                     cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
                     cboANLKL.Text = Convert.ToString(row["ANLKL"]);
@@ -507,6 +510,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    txtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                     cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
                     cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
                     cboANLKL.Text = Convert.ToString(row["ANLKL"]);
@@ -655,6 +659,7 @@ namespace CapaPresentacion
             {
                 Rta = NacfACFp_Activo_Fijo.Insertar(
                       this.txtACFid.Text
+                    , this.txtACFtipo_activo.Text
                     , this.cboBUKRS.Text
                     , this.cboSEGMENT.Text
                     , this.cboANLKL.Text
@@ -726,6 +731,7 @@ namespace CapaPresentacion
             {                
                 Rta = NacfACFp_Activo_Fijo.Editar(
                       this.txtACFid.Text
+                    , this.txtACFtipo_activo.Text
                     , this.cboBUKRS.Text
                     , this.cboSEGMENT.Text
                     , this.cboANLKL.Text
@@ -837,6 +843,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    txtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                     cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
                     cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
                     cboANLKL.Text = Convert.ToString(row["ANLKL"]);

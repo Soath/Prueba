@@ -15,6 +15,7 @@ namespace CapaNegocio
         //de la CapaDatos
         public static string Insertar(
          string iACFid,
+         string sACFtipo_activo,
          string sBUKRS,                  
          string sSEGMENT,                 
          string sANLKL,                   
@@ -61,6 +62,7 @@ namespace CapaNegocio
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
             Obj.ACFid = iACFid;
+            Obj.ACFtipo_activo = sACFtipo_activo;
             Obj.BUKRS = sBUKRS;
             Obj.SEGMENT = sSEGMENT;
             Obj.ANLKL = sANLKL;
@@ -112,6 +114,7 @@ namespace CapaNegocio
         //de la CapaDatos
         public static string Editar(
          string iACFid,
+         string sACFtipo_activo,
          string sBUKRS,
          string sSEGMENT,
          string sANLKL,
@@ -158,6 +161,7 @@ namespace CapaNegocio
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
             Obj.ACFid = iACFid;
+            Obj.ACFtipo_activo = sACFtipo_activo;
             Obj.BUKRS = sBUKRS;
             Obj.SEGMENT = sSEGMENT;
             Obj.ANLKL = sANLKL;

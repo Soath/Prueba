@@ -270,6 +270,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtACFtipo_activo = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -2594,11 +2596,30 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Electrico";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(323, 84);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(76, 13);
+            this.label22.TabIndex = 163;
+            this.label22.Text = "Tipo de Activo";
+            // 
+            // txtACFtipo_activo
+            // 
+            this.txtACFtipo_activo.Location = new System.Drawing.Point(466, 83);
+            this.txtACFtipo_activo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFtipo_activo.Name = "txtACFtipo_activo";
+            this.txtACFtipo_activo.Size = new System.Drawing.Size(140, 20);
+            this.txtACFtipo_activo.TabIndex = 162;
+            // 
             // FrmacfACFp_Activo_Fijo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1220, 840);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.txtACFtipo_activo);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -2903,5 +2924,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtACFtipo_activo;
     }
 }

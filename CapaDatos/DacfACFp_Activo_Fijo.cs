@@ -11,6 +11,7 @@ namespace CapaDatos
     public class DacfACFp_Activo_Fijo{
 
         private string iACFid;
+        private string sACFtipo_activo;
         private string sBUKRS;
         private string sSEGMENT;
         private string sANLKL;
@@ -59,6 +60,11 @@ namespace CapaDatos
         {
             get { return iACFid; }
             set { iACFid = value; }
+        }
+        public string ACFtipo_activo
+        {
+            get { return sACFtipo_activo; }
+            set { sACFtipo_activo = value; }
         }
         public string BUKRS
         {
@@ -282,6 +288,7 @@ namespace CapaDatos
         //Constructor con parámetros
     public DacfACFp_Activo_Fijo(
          string ACFid,
+         string ACFtipo_activo,
          string BUKRS,               
          string SEGMENT,                 
          string ANLKL,                   
@@ -328,6 +335,7 @@ namespace CapaDatos
     {
 
         this.ACFid = iACFid;
+        this.ACFtipo_activo = sACFtipo_activo;
         this.BUKRS = sBUKRS;
         this.SEGMENT = sSEGMENT;
         this.ANLKL = sANLKL;
@@ -537,6 +545,12 @@ namespace CapaDatos
                 ParACFid.SqlDbType = SqlDbType.Int;
                 ParACFid.Value = acfACFp_Activo_Fijo.ACFid;
                 SqlCmd.Parameters.Add(ParACFid);
+                //
+                SqlParameter ParACFtipo_activo = new SqlParameter();
+                ParACFtipo_activo.ParameterName = "@sACFtipo_activo";
+                ParACFtipo_activo.SqlDbType = SqlDbType.Int;
+                ParACFtipo_activo.Value = acfACFp_Activo_Fijo.ACFtipo_activo;
+                SqlCmd.Parameters.Add(ParACFtipo_activo);
                 //
                 SqlParameter ParBUKRS = new SqlParameter();
                 ParBUKRS.ParameterName = "@sBUKRS";
@@ -838,6 +852,12 @@ namespace CapaDatos
                 ParACFid.SqlDbType = SqlDbType.Int;
                 ParACFid.Value = acfACFp_Activo_Fijo.ACFid;
                 SqlCmd.Parameters.Add(ParACFid);
+                //
+                SqlParameter ParACFtipo_activo = new SqlParameter();
+                ParACFtipo_activo.ParameterName = "@sACFtipo_activo";
+                ParACFtipo_activo.SqlDbType = SqlDbType.Int;
+                ParACFtipo_activo.Value = acfACFp_Activo_Fijo.ACFtipo_activo;
+                SqlCmd.Parameters.Add(ParACFtipo_activo);
                 //
                 SqlParameter ParBUKRS = new SqlParameter();
                 ParBUKRS.ParameterName = "@sBUKRS";
