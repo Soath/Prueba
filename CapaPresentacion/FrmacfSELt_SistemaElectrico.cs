@@ -275,7 +275,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_SELSistemaElectrico.rdlc", NacfSELt_SistemaElectrico.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_SELSistemaElectrico.rdlc", NacfSELt_SistemaElectrico.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

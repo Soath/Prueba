@@ -276,7 +276,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_XCCSAPCentroCosto.rdlc", NbdiXCCpExtraccionSAP_CentroCosto.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_XCCSAPCentroCosto.rdlc", NbdiXCCpExtraccionSAP_CentroCosto.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

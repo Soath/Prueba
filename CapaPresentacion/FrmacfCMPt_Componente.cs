@@ -282,7 +282,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_CMPComponente.rdlc", NacfCMPt_Componente.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_CMPComponente.rdlc", NacfCMPt_Componente.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

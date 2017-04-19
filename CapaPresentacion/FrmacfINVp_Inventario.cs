@@ -274,7 +274,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_INVInventario.rdlc", NacfINVp_Inventario.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_INVInventario.rdlc", NacfINVp_Inventario.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

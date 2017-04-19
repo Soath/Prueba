@@ -229,7 +229,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_RVARegistroValuacion.rdlc", NacfRVAt_registrovaluacion.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_RVARegistroValuacion.rdlc", NacfRVAt_registrovaluacion.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

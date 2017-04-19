@@ -218,7 +218,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_CAFClaseDeActivoFijo.rdlc", NbdiCAFpClaseDeActivoFijo.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_CAFClaseDeActivoFijo.rdlc", NbdiCAFpClaseDeActivoFijo.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

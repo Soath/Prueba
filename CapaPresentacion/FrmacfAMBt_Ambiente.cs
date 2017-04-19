@@ -222,7 +222,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_AMBAmbiente.rdlc", NacfAMBt_Ambiente.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_AMBAmbiente.rdlc", NacfAMBt_Ambiente.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

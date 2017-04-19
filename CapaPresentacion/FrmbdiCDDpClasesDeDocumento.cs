@@ -275,7 +275,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_CDDClasesDeDocumento.rdlc", NbdiCDDpClasesDeDocumento.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_CDDClasesDeDocumento.rdlc", NbdiCDDpClasesDeDocumento.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

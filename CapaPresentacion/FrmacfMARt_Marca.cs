@@ -275,8 +275,10 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_MARMarca.rdlc", NacfMARt_Marca.Mostrar());
+
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_MARMarca.rdlc", NacfMARt_Marca.Mostrar(),"ip");
              rptalu.ShowDialog();
+            
         }
 
         private void BotonGuardar()

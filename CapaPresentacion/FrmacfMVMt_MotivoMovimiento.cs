@@ -225,7 +225,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_MVMMotivoMovimiento.rdlc", NacfMVMt_MotivoMovimiento.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_MVMMotivoMovimiento.rdlc", NacfMVMt_MotivoMovimiento.Mostrar(),"ip");
             rptalu.ShowDialog();
           /*  Form FrmMVMReporteD = new FrmMVMReporteD();
             FrmMVMReporteD.Show();*/

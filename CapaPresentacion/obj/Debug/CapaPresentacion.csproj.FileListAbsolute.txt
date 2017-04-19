@@ -218,3 +218,5 @@ C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacio
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\RdlCompile.cache
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\RdlCompile.compiled
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Form2.resources
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.MDIParent1.resources

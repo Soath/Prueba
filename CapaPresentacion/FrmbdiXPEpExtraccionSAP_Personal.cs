@@ -229,7 +229,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_XPESAPPersonal.rdlc", NbdiXPEpExtraccionSAP_Personal.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_XPESAPPersonal.rdlc", NbdiXPEpExtraccionSAP_Personal.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

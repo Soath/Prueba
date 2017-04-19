@@ -221,7 +221,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_PRVProveedor.rdlc", NbdiPRVpProveedor.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_PRVProveedor.rdlc", NbdiPRVpProveedor.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

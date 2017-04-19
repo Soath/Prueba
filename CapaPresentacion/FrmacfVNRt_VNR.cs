@@ -226,7 +226,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_VNRvnr.rdlc", NacfVNRt_VNR.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_VNRvnr.rdlc", NacfVNRt_VNR.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 

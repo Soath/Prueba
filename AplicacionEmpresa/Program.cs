@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaPresentacion;
 
+
 namespace ActivosFijos
 {
     static class Program
@@ -12,10 +13,13 @@ namespace ActivosFijos
         /// &lt;summary&gt;
         /// The main entry point for the application.
         /// &lt;/summary&gt;
-        [STAThread]
+       [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+      
+
+
+     Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {

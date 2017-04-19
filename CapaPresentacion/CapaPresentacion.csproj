@@ -79,14 +79,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ActivosFijosDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DSActivosFijos.cs">
-      <DependentUpon>DSActivosFijos.xsd</DependentUpon>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DSActivosFijos.Designer.cs">
+    <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DSActivosFijos.xsd</DependentUpon>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -630,16 +630,16 @@
       <DependentUpon>ActivosFijosDataSet.xsd</DependentUpon>
     </None>
     <None Include="app.config" />
-    <None Include="DSActivosFijos.xsc">
-      <DependentUpon>DSActivosFijos.xsd</DependentUpon>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
-    <None Include="DSActivosFijos.xsd">
+    <None Include="DataSet1.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DSActivosFijos.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DSActivosFijos.xss">
-      <DependentUpon>DSActivosFijos.xsd</DependentUpon>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
     <None Include="img\actualizar.jpg" />
   </ItemGroup>

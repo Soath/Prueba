@@ -229,7 +229,7 @@ namespace CapaPresentacion
         }
         private void BotonImprimir()
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_PDFProcesoDiferido.rdlc", NacfPDFt_procesodiferido.Mostrar());
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_PDFProcesoDiferido.rdlc", NacfPDFt_procesodiferido.Mostrar(),"ip");
             rptalu.ShowDialog();
         }
 
