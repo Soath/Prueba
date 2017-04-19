@@ -10,8 +10,7 @@ namespace CapaDatos
 {
     public class DacfACFp_Activo_Fijo{
 
-        private string iACFid;
-        private string sACFtipo_activo;
+        private string iACFid;        
         private string sBUKRS;
         private string sSEGMENT;
         private string sANLKL;
@@ -55,6 +54,7 @@ namespace CapaDatos
         private string iUBEid;
         private string dtACFfechacomprobante;
         private string sV_T087U_ANLUE;
+        private string sACFtipo_activo;
 
         public string ACFid
         {
@@ -287,8 +287,7 @@ namespace CapaDatos
 	}
         //Constructor con parámetros
     public DacfACFp_Activo_Fijo(
-         string ACFid,
-         string ACFtipo_activo,
+         string ACFid,         
          string BUKRS,               
          string SEGMENT,                 
          string ANLKL,                   
@@ -331,11 +330,12 @@ namespace CapaDatos
          string AMBid,                   
          string UBEid,                   
          string ACFfechacomprobante,    
-         string V_T087U_ANLUE)         
+         string V_T087U_ANLUE,
+         string ACFtipo_activo
+         )         
     {
 
-        this.ACFid = iACFid;
-        this.ACFtipo_activo = sACFtipo_activo;
+        this.ACFid = iACFid;        
         this.BUKRS = sBUKRS;
         this.SEGMENT = sSEGMENT;
         this.ANLKL = sANLKL;
@@ -379,12 +379,14 @@ namespace CapaDatos
         this.UBEid = iUBEid;
         this.ACFfechacomprobante = dtACFfechacomprobante;
         this.V_T087U_ANLUE = sV_T087U_ANLUE;
+        this.ACFtipo_activo = sACFtipo_activo;
 	}
 	public object Clone() {
 		return base.MemberwiseClone();
 	}
 
         public DataTable Top() {
+                        
             DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
             SqlConnection SqlCon = new SqlConnection();
 
@@ -546,13 +548,7 @@ namespace CapaDatos
                 ParACFid.Value = acfACFp_Activo_Fijo.ACFid;
                 SqlCmd.Parameters.Add(ParACFid);
                 //
-                SqlParameter ParACFtipo_activo = new SqlParameter();
-                ParACFtipo_activo.ParameterName = "@sACFtipo_activo";
-                ParACFtipo_activo.SqlDbType = SqlDbType.Int;
-                ParACFtipo_activo.Value = acfACFp_Activo_Fijo.ACFtipo_activo;
-                SqlCmd.Parameters.Add(ParACFtipo_activo);
-                //
-                SqlParameter ParBUKRS = new SqlParameter();
+                                SqlParameter ParBUKRS = new SqlParameter();
                 ParBUKRS.ParameterName = "@sBUKRS";
                 ParBUKRS.SqlDbType = SqlDbType.Char;
                 ParBUKRS.Value = acfACFp_Activo_Fijo.BUKRS;
@@ -809,6 +805,12 @@ namespace CapaDatos
                 ParV_T087U_ANLUE.SqlDbType = SqlDbType.Char;
                 ParV_T087U_ANLUE.Value = acfACFp_Activo_Fijo.V_T087U_ANLUE;
                 SqlCmd.Parameters.Add(ParV_T087U_ANLUE);
+                //
+                SqlParameter ParACFtipo_activo = new SqlParameter();
+                ParACFtipo_activo.ParameterName = "@sACFtipo_activo";
+                ParACFtipo_activo.SqlDbType = SqlDbType.Char;
+                ParACFtipo_activo.Value = acfACFp_Activo_Fijo.ACFtipo_activo;
+                SqlCmd.Parameters.Add(ParACFtipo_activo);
                 //
 
                 //Ejecutamos nuestro comando
@@ -853,13 +855,7 @@ namespace CapaDatos
                 ParACFid.Value = acfACFp_Activo_Fijo.ACFid;
                 SqlCmd.Parameters.Add(ParACFid);
                 //
-                SqlParameter ParACFtipo_activo = new SqlParameter();
-                ParACFtipo_activo.ParameterName = "@sACFtipo_activo";
-                ParACFtipo_activo.SqlDbType = SqlDbType.Int;
-                ParACFtipo_activo.Value = acfACFp_Activo_Fijo.ACFtipo_activo;
-                SqlCmd.Parameters.Add(ParACFtipo_activo);
-                //
-                SqlParameter ParBUKRS = new SqlParameter();
+                                SqlParameter ParBUKRS = new SqlParameter();
                 ParBUKRS.ParameterName = "@sBUKRS";
                 ParBUKRS.SqlDbType = SqlDbType.Char;
                 ParBUKRS.Value = acfACFp_Activo_Fijo.BUKRS;
@@ -1116,6 +1112,12 @@ namespace CapaDatos
                 ParV_T087U_ANLUE.SqlDbType = SqlDbType.Char;
                 ParV_T087U_ANLUE.Value = acfACFp_Activo_Fijo.V_T087U_ANLUE;
                 SqlCmd.Parameters.Add(ParV_T087U_ANLUE);
+                //
+                SqlParameter ParACFtipo_activo = new SqlParameter();
+                ParACFtipo_activo.ParameterName = "@sACFtipo_activo";
+                ParACFtipo_activo.SqlDbType = SqlDbType.Char;
+                ParACFtipo_activo.Value = acfACFp_Activo_Fijo.ACFtipo_activo;
+                SqlCmd.Parameters.Add(ParACFtipo_activo);
                 //
 
                 //Ejecutamos nuestro comando
@@ -1234,7 +1236,7 @@ namespace CapaDatos
 
             SqlParameter ParBUKRS = new SqlParameter();
             ParBUKRS.ParameterName = "@iACFid";
-            ParBUKRS.SqlDbType = SqlDbType.Char;
+            ParBUKRS.SqlDbType = SqlDbType.Int;
             ParBUKRS.Size = 50;
             ParBUKRS.Value = iACFid;
             SqlCmd.Parameters.Add(ParBUKRS);

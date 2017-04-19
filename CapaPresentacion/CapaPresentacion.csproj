@@ -364,6 +364,12 @@
     <Compile Include="FrmacfACFp_Activo_Fijo.Designer.cs">
       <DependentUpon>FrmacfACFp_Activo_Fijo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMovimiento_Transferencia_Activo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovimiento_Transferencia_Activo.Designer.cs">
+      <DependentUpon>FrmMovimiento_Transferencia_Activo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMVMReporteD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -563,6 +569,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfACFp_Activo_Fijo.resx">
       <DependentUpon>FrmacfACFp_Activo_Fijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovimiento_Transferencia_Activo.resx">
+      <DependentUpon>FrmMovimiento_Transferencia_Activo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMVMReporteD.resx">
       <DependentUpon>FrmMVMReporteD.cs</DependentUpon>

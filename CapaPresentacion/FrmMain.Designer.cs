@@ -35,7 +35,6 @@
             this.ribbonOrbRecentItem1 = new System.Windows.Forms.RibbonOrbRecentItem();
             this.ribbonTab1 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonButton64 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton65 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton66 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton67 = new System.Windows.Forms.RibbonButton();
@@ -139,7 +138,7 @@
             this.ribbon1.CausesValidation = false;
             this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.ribbon1.Margin = new System.Windows.Forms.Padding(2);
+            this.ribbon1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbon1.Minimized = false;
             this.ribbon1.Name = "ribbon1";
             // 
@@ -158,7 +157,7 @@
             this.ribbon1.OrbStyle = System.Windows.Forms.RibbonOrbStyle.Office_2010;
             this.ribbon1.OrbText = "Inicio";
             this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.ribbon1.Size = new System.Drawing.Size(945, 132);
+            this.ribbon1.Size = new System.Drawing.Size(1260, 162);
             this.ribbon1.TabIndex = 0;
             this.ribbon1.Tabs.Add(this.ribbonTab1);
             this.ribbon1.Tabs.Add(this.ribbonTab2);
@@ -198,7 +197,6 @@
             // 
             // ribbonPanel2
             // 
-            this.ribbonPanel2.Items.Add(this.ribbonButton64);
             this.ribbonPanel2.Items.Add(this.ribbonButton65);
             this.ribbonPanel2.Items.Add(this.ribbonButton66);
             this.ribbonPanel2.Items.Add(this.ribbonButton67);
@@ -208,14 +206,6 @@
             this.ribbonPanel2.Items.Add(this.ribbonButton71);
             this.ribbonPanel2.Items.Add(this.ribbonButton72);
             this.ribbonPanel2.Text = "Tablas Principales";
-            // 
-            // ribbonButton64
-            // 
-            this.ribbonButton64.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton64.Image")));
-            this.ribbonButton64.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton64.SmallImage")));
-            this.ribbonButton64.Text = "Activo Fijo";
-            this.ribbonButton64.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
-            this.ribbonButton64.Click += new System.EventHandler(this.ribbonButton64_Click);
             // 
             // ribbonButton65
             // 
@@ -227,6 +217,7 @@
             // 
             // ribbonButton66
             // 
+            this.ribbonButton66.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton66.Image")));
             this.ribbonButton66.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton66.SmallImage")));
             this.ribbonButton66.Text = "Clase de Activo Fijo";
             this.ribbonButton66.Click += new System.EventHandler(this.ribbonButton66_Click);
@@ -234,6 +225,7 @@
             // ribbonButton67
             // 
             this.ribbonButton67.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton67.Image")));
+            this.ribbonButton67.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton67.SmallImage")));
             this.ribbonButton67.Text = "Clases de Documento";
             this.ribbonButton67.Click += new System.EventHandler(this.ribbonButton67_Click);
             // 
@@ -533,7 +525,7 @@
             // 
             this.ribbonButton12.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton12.Image")));
             this.ribbonButton12.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton12.SmallImage")));
-            this.ribbonButton12.Text = "Altas";
+            this.ribbonButton12.Text = "Activo Fijo";
             this.ribbonButton12.Click += new System.EventHandler(this.ribbonButton12_Click);
             // 
             // ribbonButton13
@@ -556,6 +548,7 @@
             this.ribbonButton11.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton11.Image")));
             this.ribbonButton11.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton11.SmallImage")));
             this.ribbonButton11.Text = "SOLICITUD DE MOVIMIENTO DE TRANSFERENCIA";
+            this.ribbonButton11.Click += new System.EventHandler(this.ribbonButton11_Click);
             // 
             // ribbonButton14
             // 
@@ -779,19 +772,19 @@
             this.panelContenedor.BackColor = System.Drawing.Color.Gainsboro;
             this.panelContenedor.Controls.Add(this.kryptonBorderEdge1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(0, 132);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(2);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 162);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(945, 460);
+            this.panelContenedor.Size = new System.Drawing.Size(1260, 567);
             this.panelContenedor.TabIndex = 1;
             // 
             // kryptonBorderEdge1
             // 
             this.kryptonBorderEdge1.BorderStyle = ComponentFactory.Krypton.Toolkit.PaletteBorderStyle.TabDock;
-            this.kryptonBorderEdge1.Location = new System.Drawing.Point(538, 28);
-            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonBorderEdge1.Location = new System.Drawing.Point(717, 34);
+            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
-            this.kryptonBorderEdge1.Size = new System.Drawing.Size(38, 1);
+            this.kryptonBorderEdge1.Size = new System.Drawing.Size(51, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
             // ribbonButton48
@@ -807,12 +800,12 @@
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(945, 592);
+            this.ClientSize = new System.Drawing.Size(1260, 729);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.ribbon1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".:. Sistema de Gestión v1.0 de Activos Fijos .:.";
@@ -918,7 +911,6 @@
         private System.Windows.Forms.RibbonButton ribbonButton55;
         private System.Windows.Forms.RibbonButton ribbonButton56;
         private System.Windows.Forms.RibbonButton ribbonButton57;
-        private System.Windows.Forms.RibbonButton ribbonButton64;
         private System.Windows.Forms.RibbonButton ribbonButton65;
         private System.Windows.Forms.RibbonButton ribbonButton66;
         private System.Windows.Forms.RibbonButton ribbonButton67;

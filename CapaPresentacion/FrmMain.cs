@@ -97,6 +97,16 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
             Form FrmacfCSTt_Costo = new FrmacfCSTt_Costo();
             FrmacfCSTt_Costo.ShowDialog();
         }
+        private void ribbonButton11_Click(object sender, EventArgs e)
+        {
+            Form FrmMovimiento_Transferencia_Activo = new FrmMovimiento_Transferencia_Activo();
+            FrmMovimiento_Transferencia_Activo.ShowDialog();
+        }
+        private void ribbonButton12_Click(object sender, EventArgs e)
+        {
+            Form FrmacfACFp_Activo_Fijo = new FrmacfACFp_Activo_Fijo();
+            FrmacfACFp_Activo_Fijo.ShowDialog();
+        }
 
 
         private void ribbonButton35_Click(object sender, EventArgs e)
@@ -200,11 +210,7 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
             Form FrmacfVNRt_VNR = new FrmacfVNRt_VNR();
             FrmacfVNRt_VNR.ShowDialog();
         }
-        private void ribbonButton12_Click(object sender, EventArgs e)
-        {
-            Form FrmacfMVMt_MotivoMovimiento = new FrmacfMVMt_MotivoMovimiento();
-            FrmacfMVMt_MotivoMovimiento.ShowDialog();
-        }
+        
         private void ribbonButton64_Click(object sender, EventArgs e)
         {
             Form FrmacfACFp_Activo_Fijo = new FrmacfACFp_Activo_Fijo();
