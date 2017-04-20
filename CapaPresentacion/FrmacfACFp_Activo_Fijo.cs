@@ -227,57 +227,57 @@ namespace CapaPresentacion
             this.cboBUKRS.DataSource    = NbdiSOCpSociedades.Mostrar(); //BURKS
             this.cboBUKRS.ValueMember = "BUTXT";
             this.cboBUKRS.SelectedIndex = 0;
-
-           this.cboSEGMENT.DataSource = NbdiSEGpSegmento.Mostrar(); //SEGMENT
-           this.cboSEGMENT.ValueMember = "NAME";
-           this.cboSEGMENT.SelectedIndex = 0;
-
-           this.cboANLKL.DataSource = NbdiCAFpClaseDeActivoFijo.Mostrar(); //ANLKL
-           this.cboANLKL.ValueMember = "TXK50";
-           this.cboANLKL.SelectedIndex = 0;
-
-           this.cboPERNR.DataSource = NbdiXPEpExtraccionSAP_Personal.Mostrar(); //PERNR
-           this.cboPERNR.ValueMember = "PERNR";
-           this.cboPERNR.SelectedIndex = 0;
-
-           this.cboCSTid.DataSource = NacfCSTt_Costo.Mostrar(); //CSTid
-           this.cboCSTid.ValueMember = "CSTdescripcion";
-           this.cboCSTid.SelectedIndex = 0;
-
-           this.cboMVMid.DataSource = NacfMVMt_MotivoMovimiento.Mostrar();  //MVMid
-           this.cboMVMid.ValueMember = "MVMmotivomovimiento";
-           this.cboMVMid.SelectedIndex = 0;
-
-           this.cboVNRid.DataSource = NacfVNRt_VNR.Mostrar();   //VNRid
-           this.cboVNRid.ValueMember = "VNRvnr";
-           this.cboVNRid.SelectedIndex = 0;
-
-           this.cboCMPid.DataSource = NacfCMPt_Componente.Mostrar();    //CMPid
-           this.cboCMPid.ValueMember = "CMPcomponente";
-           this.cboCMPid.SelectedIndex = 0;
-
-           this.cboLIFNR.DataSource = NbdiPRVpProveedor.Mostrar();  //LIFNR
-           this.cboLIFNR.ValueMember = "ACFactivo";
-           this.cboLIFNR.SelectedIndex = 0;
-
-           this.cboBLART.DataSource = NbdiCDDpClasesDeDocumento.Mostrar();  //BLART
-           this.cboBLART.ValueMember = "LTEXT";
-           this.cboBLART.SelectedIndex = 0;
-
-           this.cboKOSTL.DataSource = NbdiXCCpExtraccionSAP_CentroCosto.Mostrar();  //KOSTL
-           this.cboKOSTL.ValueMember = "KTEXT";
-           this.cboKOSTL.SelectedIndex = 0;
-
-           this.cboAMBid.DataSource = NacfAMBt_Ambiente.Mostrar();  //AMBid
-           this.cboAMBid.ValueMember = "AMBambiente";
-           this.cboAMBid.SelectedIndex = 0;
-
-           this.cboUBEid.DataSource = NacfUBEt_UbicacionElectrica.Mostrar();    //UBEid
-           this.cboUBEid.ValueMember = "UBEid";
-           this.cboUBEid.SelectedIndex = 0;
-
-           this.cboV_T087U_ANLUE.DataSource = NacfSPNt_Supranumero.Mostrar();   //V_T087U_ANLUE
-           this.cboV_T087U_ANLUE.ValueMember = "V_T087U_ANLUE_TXT";
+            
+            this.cboSEGMENT.DataSource = NbdiSEGpSegmento.Mostrar(); //SEGMENT
+            this.cboSEGMENT.ValueMember = "NAME";
+            this.cboSEGMENT.SelectedIndex = 0;
+            
+            this.cboANLKL.DataSource = NbdiCAFpClaseDeActivoFijo.Mostrar(); //ANLKL
+            this.cboANLKL.ValueMember = "TXK50";
+            this.cboANLKL.SelectedIndex = 0;
+            
+            this.cboPERNR.DataSource = NbdiXPEpExtraccionSAP_Personal.Mostrar(); //PERNR
+            this.cboPERNR.ValueMember = "PERNR";
+            this.cboPERNR.SelectedIndex = 0;
+            
+            this.cboCSTid.DataSource = NacfCSTt_Costo.Mostrar(); //CSTid
+            this.cboCSTid.ValueMember = "CSTdescripcion";
+            this.cboCSTid.SelectedIndex = 0;
+            
+            this.cboMVMid.DataSource = NacfMVMt_MotivoMovimiento.Mostrar();  //MVMid
+            this.cboMVMid.ValueMember = "MVMmotivomovimiento";
+            this.cboMVMid.SelectedIndex = 0;
+            
+            this.cboVNRid.DataSource = NacfVNRt_VNR.Mostrar();   //VNRid
+            this.cboVNRid.ValueMember = "VNRvnr";
+            this.cboVNRid.SelectedIndex = 0;
+            
+            this.cboCMPid.DataSource = NacfCMPt_Componente.Mostrar();    //CMPid
+            this.cboCMPid.ValueMember = "CMPcomponente";
+            this.cboCMPid.SelectedIndex = 0;
+            
+            this.cboLIFNR.DataSource = NbdiPRVpProveedor.Mostrar();  //LIFNR
+            this.cboLIFNR.ValueMember = "Name1";
+            this.cboLIFNR.SelectedIndex = 0;
+            
+            this.cboBLART.DataSource = NbdiCDDpClasesDeDocumento.Mostrar();  //BLART
+            this.cboBLART.ValueMember = "LTEXT";
+            this.cboBLART.SelectedIndex = 0;
+            
+            this.cboKOSTL.DataSource = NbdiXCCpExtraccionSAP_CentroCosto.Mostrar();  //KOSTL
+            this.cboKOSTL.ValueMember = "KTEXT";
+            this.cboKOSTL.SelectedIndex = 0;
+            
+            this.cboAMBid.DataSource = NacfAMBt_Ambiente.Mostrar();  //AMBid
+            this.cboAMBid.ValueMember = "AMBambiente";
+            this.cboAMBid.SelectedIndex = 0;
+            
+            this.cboUBEid.DataSource = NacfUBEt_UbicacionElectrica.Mostrar();    //UBEid
+            this.cboUBEid.ValueMember = "UBEid";
+            this.cboUBEid.SelectedIndex = 0;
+            
+            this.cboV_T087U_ANLUE.DataSource = NacfSPNt_Supranumero.Mostrar();   //V_T087U_ANLUE
+            this.cboV_T087U_ANLUE.ValueMember = "V_T087U_ANLUE_TXT";
             this.cboV_T087U_ANLUE.SelectedIndex = 0;
 
         }
