@@ -224,60 +224,60 @@ namespace CapaPresentacion
             this.tomaTab();
             this.Botones(true);
             
-            this.cboBUKRS.DataSource    = NbdiSOCpSociedades.Mostrar();
-            this.cboBUKRS.ValueMember = "BUKRS";
+            this.cboBUKRS.DataSource    = NbdiSOCpSociedades.Mostrar(); //BURKS
+            this.cboBUKRS.ValueMember = "BUTXT";
             this.cboBUKRS.SelectedIndex = 0;
-
-           this.cboSEGMENT.DataSource = NbdiSEGpSegmento.Mostrar();
-           this.cboSEGMENT.ValueMember = "SEGMENT";
-           this.cboSEGMENT.SelectedIndex = 0;
-
-           this.cboANLKL.DataSource = NbdiCAFpClaseDeActivoFijo.Mostrar();
-           this.cboANLKL.ValueMember = "ANLKL";
-           this.cboANLKL.SelectedIndex = 0;
-
-           this.cboPERNR.DataSource = NbdiXPEpExtraccionSAP_Personal.Mostrar();
-           this.cboPERNR.ValueMember = "PERNR";
-           this.cboPERNR.SelectedIndex = 0;
-
-           this.cboCSTid.DataSource = NacfCSTt_Costo.Mostrar();
-           this.cboCSTid.ValueMember = "CSTid";
-           this.cboCSTid.SelectedIndex = 0;
-
-           this.cboMVMid.DataSource = NacfMVMt_MotivoMovimiento.Mostrar();
-           this.cboMVMid.ValueMember = "MVMid";
-           this.cboMVMid.SelectedIndex = 0;
-
-           this.cboVNRid.DataSource = NacfVNRt_VNR.Mostrar();
-           this.cboVNRid.ValueMember = "VNRid";
-           this.cboVNRid.SelectedIndex = 0;
-
-           this.cboCMPid.DataSource = NacfCMPt_Componente.Mostrar();
-           this.cboCMPid.ValueMember = "CMPid";
-           this.cboCMPid.SelectedIndex = 0;
-
-           this.cboLIFNR.DataSource = NbdiPRVpProveedor.Mostrar();
-           this.cboLIFNR.ValueMember = "LIFNR";
-           this.cboLIFNR.SelectedIndex = 0;
-
-           this.cboBLART.DataSource = NbdiCDDpClasesDeDocumento.Mostrar();
-           this.cboBLART.ValueMember = "BLART";
-           this.cboBLART.SelectedIndex = 0;
-
-           this.cboKOSTL.DataSource = NbdiXCCpExtraccionSAP_CentroCosto.Mostrar();
-           this.cboKOSTL.ValueMember = "KOSTL";
-           this.cboKOSTL.SelectedIndex = 0;
-
-           this.cboAMBid.DataSource = NacfAMBt_Ambiente.Mostrar();
-           this.cboAMBid.ValueMember = "AMBid";
-           this.cboAMBid.SelectedIndex = 0;
-
-           this.cboUBEid.DataSource = NacfUBEt_UbicacionElectrica.Mostrar();
-           this.cboUBEid.ValueMember = "UBEid";
-           this.cboUBEid.SelectedIndex = 0;
-
-            this.cboV_T087U_ANLUE.DataSource    = NacfSPNt_Supranumero.Mostrar();
-            this.cboV_T087U_ANLUE.ValueMember = "V_T087U_ANLUE";
+            
+            this.cboSEGMENT.DataSource = NbdiSEGpSegmento.Mostrar(); //SEGMENT
+            this.cboSEGMENT.ValueMember = "NAME";
+            this.cboSEGMENT.SelectedIndex = 0;
+            
+            this.cboANLKL.DataSource = NbdiCAFpClaseDeActivoFijo.Mostrar(); //ANLKL
+            this.cboANLKL.ValueMember = "TXK50";
+            this.cboANLKL.SelectedIndex = 0;
+            
+            this.cboPERNR.DataSource = NbdiXPEpExtraccionSAP_Personal.Mostrar(); //PERNR
+            this.cboPERNR.ValueMember = "PERNR";
+            this.cboPERNR.SelectedIndex = 0;
+            
+            this.cboCSTid.DataSource = NacfCSTt_Costo.Mostrar(); //CSTid
+            this.cboCSTid.ValueMember = "CSTdescripcion";
+            this.cboCSTid.SelectedIndex = 0;
+            
+            this.cboMVMid.DataSource = NacfMVMt_MotivoMovimiento.Mostrar();  //MVMid
+            this.cboMVMid.ValueMember = "MVMmotivomovimiento";
+            this.cboMVMid.SelectedIndex = 0;
+            
+            this.cboVNRid.DataSource = NacfVNRt_VNR.Mostrar();   //VNRid
+            this.cboVNRid.ValueMember = "VNRvnr";
+            this.cboVNRid.SelectedIndex = 0;
+            
+            this.cboCMPid.DataSource = NacfCMPt_Componente.Mostrar();    //CMPid
+            this.cboCMPid.ValueMember = "CMPcomponente";
+            this.cboCMPid.SelectedIndex = 0;
+            
+            this.cboLIFNR.DataSource = NbdiPRVpProveedor.Mostrar();  //LIFNR
+            this.cboLIFNR.ValueMember = "Name1";
+            this.cboLIFNR.SelectedIndex = 0;
+            
+            this.cboBLART.DataSource = NbdiCDDpClasesDeDocumento.Mostrar();  //BLART
+            this.cboBLART.ValueMember = "LTEXT";
+            this.cboBLART.SelectedIndex = 0;
+            
+            this.cboKOSTL.DataSource = NbdiXCCpExtraccionSAP_CentroCosto.Mostrar();  //KOSTL
+            this.cboKOSTL.ValueMember = "KTEXT";
+            this.cboKOSTL.SelectedIndex = 0;
+            
+            this.cboAMBid.DataSource = NacfAMBt_Ambiente.Mostrar();  //AMBid
+            this.cboAMBid.ValueMember = "AMBambiente";
+            this.cboAMBid.SelectedIndex = 0;
+            
+            this.cboUBEid.DataSource = NacfUBEt_UbicacionElectrica.Mostrar();    //UBEid
+            this.cboUBEid.ValueMember = "UBEid";
+            this.cboUBEid.SelectedIndex = 0;
+            
+            this.cboV_T087U_ANLUE.DataSource = NacfSPNt_Supranumero.Mostrar();   //V_T087U_ANLUE
+            this.cboV_T087U_ANLUE.ValueMember = "V_T087U_ANLUE_TXT";
             this.cboV_T087U_ANLUE.SelectedIndex = 0;
 
         }
@@ -294,6 +294,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    txtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                     cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
                     cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
                     cboANLKL.Text = Convert.ToString(row["ANLKL"]);
@@ -365,6 +366,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    txtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                     cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
                     cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
                     cboANLKL.Text = Convert.ToString(row["ANLKL"]);
@@ -437,6 +439,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    txtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                     cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
                     cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
                     cboANLKL.Text = Convert.ToString(row["ANLKL"]);
@@ -507,6 +510,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    txtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                     cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
                     cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
                     cboANLKL.Text = Convert.ToString(row["ANLKL"]);
@@ -655,6 +659,7 @@ namespace CapaPresentacion
             {
                 Rta = NacfACFp_Activo_Fijo.Insertar(
                       this.txtACFid.Text
+                    , this.txtACFtipo_activo.Text
                     , this.cboBUKRS.Text
                     , this.cboSEGMENT.Text
                     , this.cboANLKL.Text
@@ -726,6 +731,7 @@ namespace CapaPresentacion
             {                
                 Rta = NacfACFp_Activo_Fijo.Editar(
                       this.txtACFid.Text
+                    , this.txtACFtipo_activo.Text
                     , this.cboBUKRS.Text
                     , this.cboSEGMENT.Text
                     , this.cboANLKL.Text
@@ -880,6 +886,7 @@ namespace CapaPresentacion
                     cboUBEid.Text = Convert.ToString(row["UBEid"]);
                     dtpACFfechacomprobante.Text = Convert.ToString(row["ACFfechacomprobante"]);
                     cboV_T087U_ANLUE.Text = Convert.ToString(row["V_T087U_ANLUE"]);
+                    txtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                     //guardo datos en variables
                     //txtACFid.Text = Convert.ToString(row["ACFid"]);
                     //txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);

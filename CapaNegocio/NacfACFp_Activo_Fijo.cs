@@ -14,7 +14,7 @@ namespace CapaNegocio
         //M�todo Insertar que llama al m�todo Insertar de la clase DPostres
         //de la CapaDatos
         public static string Insertar(
-         string iACFid,
+         string iACFid,         
          string sBUKRS,                  
          string sSEGMENT,                 
          string sANLKL,                   
@@ -57,7 +57,9 @@ namespace CapaNegocio
          string iAMBid,                   
          string iUBEid,                   
          string dtACFfechacomprobante,    
-         string sV_T087U_ANLUE)         
+         string sV_T087U_ANLUE,
+         string sACFtipo_activo
+         )         
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
             Obj.ACFid = iACFid;
@@ -104,6 +106,7 @@ namespace CapaNegocio
             Obj.UBEid = iUBEid;
             Obj.ACFfechacomprobante = dtACFfechacomprobante;
             Obj.V_T087U_ANLUE = sV_T087U_ANLUE;
+            Obj.ACFtipo_activo = sACFtipo_activo;
             return Obj.Insertar(Obj);
         }
 
@@ -111,7 +114,7 @@ namespace CapaNegocio
         //Metodo Editar que llama al metodo Editar de la clase DPostres
         //de la CapaDatos
         public static string Editar(
-         string iACFid,
+         string iACFid,         
          string sBUKRS,
          string sSEGMENT,
          string sANLKL,
@@ -154,10 +157,12 @@ namespace CapaNegocio
          string iAMBid,
          string iUBEid,
          string dtACFfechacomprobante,
-         string sV_T087U_ANLUE)  
+         string sV_T087U_ANLUE,
+         string sACFtipo_activo
+         )  
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
-            Obj.ACFid = iACFid;
+            Obj.ACFid = iACFid;            
             Obj.BUKRS = sBUKRS;
             Obj.SEGMENT = sSEGMENT;
             Obj.ANLKL = sANLKL;
@@ -201,6 +206,7 @@ namespace CapaNegocio
             Obj.UBEid = iUBEid;
             Obj.ACFfechacomprobante = dtACFfechacomprobante;
             Obj.V_T087U_ANLUE = sV_T087U_ANLUE;
+            Obj.ACFtipo_activo = sACFtipo_activo;
             return Obj.Editar(Obj);
         }
         //------------------------------------------------------------------

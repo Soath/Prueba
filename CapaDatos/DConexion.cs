@@ -9,11 +9,8 @@ namespace CapaDatos
 {
     public class DConexion
     {
-        //public static String CnBDActivo = "Data Source=TOSHIBA-PC; Initial Catalog=BDActivos; Integrated Security=SSPI;";
-        //public static String CnBDActivo = "Data Source=TOSHIBA-PC; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
-        //public static String CnMaster = "Data Source=TOSHIBA-PC; Initial Catalog=master; Integrated Security=SSPI;";
-        //public static String CnBDActivo = "Data Source=TOSHIBA-PC; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
 
+<<<<<<< HEAD
         //public static String CnBDActivo = "Data Source=SAMAEL-PC; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
         //public static String CnBDActivo = "Data Source=192.168.0.18; Initial Catalog=ActivosFijos; User ID = sa;  Password = eg909090;";
         //public static String CnBDActivo = "Data Source=localhost; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
@@ -24,6 +21,11 @@ namespace CapaDatos
         public static String CnBDActivo = "Data Source=localhost; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
         //public static String CnBDActivo = "Data Source=192.168.0.18; Initial Catalog=ActivosFijosold; User ID = sa;  Password = eg909090;";
        // public static String CnBDActivo = "Data Source=. ; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
+=======
+        // public static String CnBDActivo = "Data Source=192.168.0.18; Initial Catalog=ActivosFijosold; User ID = sa;  Password = eg909090;";
+        public static String CnBDActivo = "Data Source=192.168.0.18; Initial Catalog=ActivosFijosold; User ID = sa;  Password = eg909090;";
+        //public static String CnBDActivo = "Data Source=. ; Initial Catalog=ActivosFijosOld; Integrated Security=SSPI;";
+>>>>>>> origin/master
 
         
         public String ChequearConexion()
