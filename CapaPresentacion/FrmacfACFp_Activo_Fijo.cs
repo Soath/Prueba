@@ -272,9 +272,9 @@ namespace CapaPresentacion
             this.cboAMBid.ValueMember = "AMBambiente";
             this.cboAMBid.SelectedIndex = 0;
             
-            this.cboUBEid.DataSource = NacfUBEt_UbicacionElectrica.Mostrar();    //UBEid
-            this.cboUBEid.ValueMember = "UBEid";
-            this.cboUBEid.SelectedIndex = 0;
+            //this.cboUBEid.DataSource = NacfUBEt_UbicacionElectrica.Mostrar();    //UBEid
+            //this.cboUBEid.ValueMember = "UBEid";
+            //this.cboUBEid.SelectedIndex = 0;
             
             this.cboV_T087U_ANLUE.DataSource = NacfSPNt_Supranumero.Mostrar();   //V_T087U_ANLUE
             this.cboV_T087U_ANLUE.ValueMember = "V_T087U_ANLUE_TXT";

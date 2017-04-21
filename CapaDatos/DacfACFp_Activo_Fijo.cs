@@ -548,7 +548,7 @@ namespace CapaDatos
                 ParACFid.Value = acfACFp_Activo_Fijo.ACFid;
                 SqlCmd.Parameters.Add(ParACFid);
                 //
-                                SqlParameter ParBUKRS = new SqlParameter();
+                SqlParameter ParBUKRS = new SqlParameter();
                 ParBUKRS.ParameterName = "@sBUKRS";
                 ParBUKRS.SqlDbType = SqlDbType.Char;
                 ParBUKRS.Value = acfACFp_Activo_Fijo.BUKRS;
@@ -855,7 +855,7 @@ namespace CapaDatos
                 ParACFid.Value = acfACFp_Activo_Fijo.ACFid;
                 SqlCmd.Parameters.Add(ParACFid);
                 //
-                                SqlParameter ParBUKRS = new SqlParameter();
+                SqlParameter ParBUKRS = new SqlParameter();
                 ParBUKRS.ParameterName = "@sBUKRS";
                 ParBUKRS.SqlDbType = SqlDbType.Char;
                 ParBUKRS.Value = acfACFp_Activo_Fijo.BUKRS;
