@@ -74,6 +74,8 @@ namespace CapaPresentacion {
         
         private DPersonalDataTable tableDPersonal;
         
+        private DActivosFijosDataTable tableDActivosFijos;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -176,6 +178,9 @@ namespace CapaPresentacion {
                 }
                 if ((ds.Tables["DPersonal"] != null)) {
                     base.Tables.Add(new DPersonalDataTable(ds.Tables["DPersonal"]));
+                }
+                if ((ds.Tables["DActivosFijos"] != null)) {
+                    base.Tables.Add(new DActivosFijosDataTable(ds.Tables["DActivosFijos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -447,6 +452,16 @@ namespace CapaPresentacion {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public DActivosFijosDataTable DActivosFijos {
+            get {
+                return this.tableDActivosFijos;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -586,6 +601,9 @@ namespace CapaPresentacion {
                 }
                 if ((ds.Tables["DPersonal"] != null)) {
                     base.Tables.Add(new DPersonalDataTable(ds.Tables["DPersonal"]));
+                }
+                if ((ds.Tables["DActivosFijos"] != null)) {
+                    base.Tables.Add(new DActivosFijosDataTable(ds.Tables["DActivosFijos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -770,6 +788,12 @@ namespace CapaPresentacion {
                     this.tableDPersonal.InitVars();
                 }
             }
+            this.tableDActivosFijos = ((DActivosFijosDataTable)(base.Tables["DActivosFijos"]));
+            if ((initTable == true)) {
+                if ((this.tableDActivosFijos != null)) {
+                    this.tableDActivosFijos.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -830,6 +854,8 @@ namespace CapaPresentacion {
             base.Tables.Add(this.tableDCentroCosto);
             this.tableDPersonal = new DPersonalDataTable();
             base.Tables.Add(this.tableDPersonal);
+            this.tableDActivosFijos = new DActivosFijosDataTable();
+            base.Tables.Add(this.tableDActivosFijos);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -984,6 +1010,12 @@ namespace CapaPresentacion {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeDActivosFijos() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -1111,6 +1143,9 @@ namespace CapaPresentacion {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void DPersonalRowChangeEventHandler(object sender, DPersonalRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void DActivosFijosRowChangeEventHandler(object sender, DActivosFijosRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -8268,6 +8303,509 @@ namespace CapaPresentacion {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class DActivosFijosDataTable : global::System.Data.TypedTableBase<DActivosFijosRow> {
+            
+            private global::System.Data.DataColumn columnACFCuenta;
+            
+            private global::System.Data.DataColumn columnACFid;
+            
+            private global::System.Data.DataColumn columnACFdescripcion;
+            
+            private global::System.Data.DataColumn columnCSTid;
+            
+            private global::System.Data.DataColumn columnCRScantidad;
+            
+            private global::System.Data.DataColumn columnACFincorporacion;
+            
+            private global::System.Data.DataColumn columnACFobra;
+            
+            private global::System.Data.DataColumn columnMARid;
+            
+            private global::System.Data.DataColumn columnCRSserie;
+            
+            private global::System.Data.DataColumn columnCRSmodelo;
+            
+            private global::System.Data.DataColumn columnESTid;
+            
+            private global::System.Data.DataColumn columnCRPDescripción;
+            
+            private global::System.Data.DataColumn columnRTRresponsable;
+            
+            private global::System.Data.DataColumn columnUBEid;
+            
+            private global::System.Data.DataColumn columnWERKS;
+            
+            private global::System.Data.DataColumn columnACTactividad;
+            
+            private global::System.Data.DataColumn columnSELsistemaelectrico;
+            
+            private global::System.Data.DataColumn columnUNMid;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DActivosFijosDataTable() {
+                this.TableName = "DActivosFijos";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal DActivosFijosDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected DActivosFijosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACFCuentaColumn {
+                get {
+                    return this.columnACFCuenta;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACFidColumn {
+                get {
+                    return this.columnACFid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACFdescripcionColumn {
+                get {
+                    return this.columnACFdescripcion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CSTidColumn {
+                get {
+                    return this.columnCSTid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CRScantidadColumn {
+                get {
+                    return this.columnCRScantidad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACFincorporacionColumn {
+                get {
+                    return this.columnACFincorporacion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACFobraColumn {
+                get {
+                    return this.columnACFobra;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MARidColumn {
+                get {
+                    return this.columnMARid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CRSserieColumn {
+                get {
+                    return this.columnCRSserie;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CRSmodeloColumn {
+                get {
+                    return this.columnCRSmodelo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ESTidColumn {
+                get {
+                    return this.columnESTid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CRPDescripciónColumn {
+                get {
+                    return this.columnCRPDescripción;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RTRresponsableColumn {
+                get {
+                    return this.columnRTRresponsable;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UBEidColumn {
+                get {
+                    return this.columnUBEid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn WERKSColumn {
+                get {
+                    return this.columnWERKS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACTactividadColumn {
+                get {
+                    return this.columnACTactividad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SELsistemaelectricoColumn {
+                get {
+                    return this.columnSELsistemaelectrico;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UNMidColumn {
+                get {
+                    return this.columnUNMid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DActivosFijosRow this[int index] {
+                get {
+                    return ((DActivosFijosRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DActivosFijosRowChangeEventHandler DActivosFijosRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DActivosFijosRowChangeEventHandler DActivosFijosRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DActivosFijosRowChangeEventHandler DActivosFijosRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DActivosFijosRowChangeEventHandler DActivosFijosRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddDActivosFijosRow(DActivosFijosRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DActivosFijosRow AddDActivosFijosRow(
+                        string ACFCuenta, 
+                        string ACFid, 
+                        string ACFdescripcion, 
+                        string CSTid, 
+                        string CRScantidad, 
+                        string ACFincorporacion, 
+                        string ACFobra, 
+                        string MARid, 
+                        string CRSserie, 
+                        string CRSmodelo, 
+                        string ESTid, 
+                        string CRPDescripción, 
+                        string RTRresponsable, 
+                        string UBEid, 
+                        string WERKS, 
+                        string ACTactividad, 
+                        string SELsistemaelectrico, 
+                        string UNMid) {
+                DActivosFijosRow rowDActivosFijosRow = ((DActivosFijosRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        ACFCuenta,
+                        ACFid,
+                        ACFdescripcion,
+                        CSTid,
+                        CRScantidad,
+                        ACFincorporacion,
+                        ACFobra,
+                        MARid,
+                        CRSserie,
+                        CRSmodelo,
+                        ESTid,
+                        CRPDescripción,
+                        RTRresponsable,
+                        UBEid,
+                        WERKS,
+                        ACTactividad,
+                        SELsistemaelectrico,
+                        UNMid};
+                rowDActivosFijosRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDActivosFijosRow);
+                return rowDActivosFijosRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                DActivosFijosDataTable cln = ((DActivosFijosDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new DActivosFijosDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnACFCuenta = base.Columns["ACFCuenta"];
+                this.columnACFid = base.Columns["ACFid"];
+                this.columnACFdescripcion = base.Columns["ACFdescripcion"];
+                this.columnCSTid = base.Columns["CSTid"];
+                this.columnCRScantidad = base.Columns["CRScantidad"];
+                this.columnACFincorporacion = base.Columns["ACFincorporacion"];
+                this.columnACFobra = base.Columns["ACFobra"];
+                this.columnMARid = base.Columns["MARid"];
+                this.columnCRSserie = base.Columns["CRSserie"];
+                this.columnCRSmodelo = base.Columns["CRSmodelo"];
+                this.columnESTid = base.Columns["ESTid"];
+                this.columnCRPDescripción = base.Columns["CRPDescripción"];
+                this.columnRTRresponsable = base.Columns["RTRresponsable"];
+                this.columnUBEid = base.Columns["UBEid"];
+                this.columnWERKS = base.Columns["WERKS"];
+                this.columnACTactividad = base.Columns["ACTactividad"];
+                this.columnSELsistemaelectrico = base.Columns["SELsistemaelectrico"];
+                this.columnUNMid = base.Columns["UNMid"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnACFCuenta = new global::System.Data.DataColumn("ACFCuenta", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACFCuenta);
+                this.columnACFid = new global::System.Data.DataColumn("ACFid", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACFid);
+                this.columnACFdescripcion = new global::System.Data.DataColumn("ACFdescripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACFdescripcion);
+                this.columnCSTid = new global::System.Data.DataColumn("CSTid", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCSTid);
+                this.columnCRScantidad = new global::System.Data.DataColumn("CRScantidad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCRScantidad);
+                this.columnACFincorporacion = new global::System.Data.DataColumn("ACFincorporacion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACFincorporacion);
+                this.columnACFobra = new global::System.Data.DataColumn("ACFobra", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACFobra);
+                this.columnMARid = new global::System.Data.DataColumn("MARid", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMARid);
+                this.columnCRSserie = new global::System.Data.DataColumn("CRSserie", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCRSserie);
+                this.columnCRSmodelo = new global::System.Data.DataColumn("CRSmodelo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCRSmodelo);
+                this.columnESTid = new global::System.Data.DataColumn("ESTid", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnESTid);
+                this.columnCRPDescripción = new global::System.Data.DataColumn("CRPDescripción", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCRPDescripción);
+                this.columnRTRresponsable = new global::System.Data.DataColumn("RTRresponsable", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRTRresponsable);
+                this.columnUBEid = new global::System.Data.DataColumn("UBEid", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUBEid);
+                this.columnWERKS = new global::System.Data.DataColumn("WERKS", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWERKS);
+                this.columnACTactividad = new global::System.Data.DataColumn("ACTactividad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACTactividad);
+                this.columnSELsistemaelectrico = new global::System.Data.DataColumn("SELsistemaelectrico", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSELsistemaelectrico);
+                this.columnUNMid = new global::System.Data.DataColumn("UNMid", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUNMid);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DActivosFijosRow NewDActivosFijosRow() {
+                return ((DActivosFijosRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new DActivosFijosRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(DActivosFijosRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.DActivosFijosRowChanged != null)) {
+                    this.DActivosFijosRowChanged(this, new DActivosFijosRowChangeEvent(((DActivosFijosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.DActivosFijosRowChanging != null)) {
+                    this.DActivosFijosRowChanging(this, new DActivosFijosRowChangeEvent(((DActivosFijosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.DActivosFijosRowDeleted != null)) {
+                    this.DActivosFijosRowDeleted(this, new DActivosFijosRowChangeEvent(((DActivosFijosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.DActivosFijosRowDeleting != null)) {
+                    this.DActivosFijosRowDeleting(this, new DActivosFijosRowChangeEvent(((DActivosFijosRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveDActivosFijosRow(DActivosFijosRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "DActivosFijosDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class DMotivoMovimientoRow : global::System.Data.DataRow {
@@ -11311,6 +11849,526 @@ namespace CapaPresentacion {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class DActivosFijosRow : global::System.Data.DataRow {
+            
+            private DActivosFijosDataTable tableDActivosFijos;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal DActivosFijosRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableDActivosFijos = ((DActivosFijosDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACFCuenta {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.ACFCuentaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACFCuenta\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.ACFCuentaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACFid {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.ACFidColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACFid\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.ACFidColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACFdescripcion {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.ACFdescripcionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACFdescripcion\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.ACFdescripcionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CSTid {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.CSTidColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CSTid\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.CSTidColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CRScantidad {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.CRScantidadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CRScantidad\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.CRScantidadColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACFincorporacion {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.ACFincorporacionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACFincorporacion\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.ACFincorporacionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACFobra {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.ACFobraColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACFobra\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.ACFobraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MARid {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.MARidColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MARid\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.MARidColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CRSserie {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.CRSserieColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CRSserie\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.CRSserieColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CRSmodelo {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.CRSmodeloColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CRSmodelo\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.CRSmodeloColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ESTid {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.ESTidColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ESTid\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.ESTidColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CRPDescripción {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.CRPDescripciónColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CRPDescripción\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.CRPDescripciónColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string RTRresponsable {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.RTRresponsableColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'RTRresponsable\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.RTRresponsableColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string UBEid {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.UBEidColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'UBEid\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.UBEidColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string WERKS {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.WERKSColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'WERKS\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.WERKSColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACTactividad {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.ACTactividadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACTactividad\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.ACTactividadColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string SELsistemaelectrico {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.SELsistemaelectricoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'SELsistemaelectrico\' de la tabla \'DActivosFijos\' es DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.SELsistemaelectricoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string UNMid {
+                get {
+                    try {
+                        return ((string)(this[this.tableDActivosFijos.UNMidColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'UNMid\' de la tabla \'DActivosFijos\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDActivosFijos.UNMidColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACFCuentaNull() {
+                return this.IsNull(this.tableDActivosFijos.ACFCuentaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACFCuentaNull() {
+                this[this.tableDActivosFijos.ACFCuentaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACFidNull() {
+                return this.IsNull(this.tableDActivosFijos.ACFidColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACFidNull() {
+                this[this.tableDActivosFijos.ACFidColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACFdescripcionNull() {
+                return this.IsNull(this.tableDActivosFijos.ACFdescripcionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACFdescripcionNull() {
+                this[this.tableDActivosFijos.ACFdescripcionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCSTidNull() {
+                return this.IsNull(this.tableDActivosFijos.CSTidColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCSTidNull() {
+                this[this.tableDActivosFijos.CSTidColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCRScantidadNull() {
+                return this.IsNull(this.tableDActivosFijos.CRScantidadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCRScantidadNull() {
+                this[this.tableDActivosFijos.CRScantidadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACFincorporacionNull() {
+                return this.IsNull(this.tableDActivosFijos.ACFincorporacionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACFincorporacionNull() {
+                this[this.tableDActivosFijos.ACFincorporacionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACFobraNull() {
+                return this.IsNull(this.tableDActivosFijos.ACFobraColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACFobraNull() {
+                this[this.tableDActivosFijos.ACFobraColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMARidNull() {
+                return this.IsNull(this.tableDActivosFijos.MARidColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMARidNull() {
+                this[this.tableDActivosFijos.MARidColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCRSserieNull() {
+                return this.IsNull(this.tableDActivosFijos.CRSserieColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCRSserieNull() {
+                this[this.tableDActivosFijos.CRSserieColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCRSmodeloNull() {
+                return this.IsNull(this.tableDActivosFijos.CRSmodeloColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCRSmodeloNull() {
+                this[this.tableDActivosFijos.CRSmodeloColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsESTidNull() {
+                return this.IsNull(this.tableDActivosFijos.ESTidColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetESTidNull() {
+                this[this.tableDActivosFijos.ESTidColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCRPDescripciónNull() {
+                return this.IsNull(this.tableDActivosFijos.CRPDescripciónColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCRPDescripciónNull() {
+                this[this.tableDActivosFijos.CRPDescripciónColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRTRresponsableNull() {
+                return this.IsNull(this.tableDActivosFijos.RTRresponsableColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRTRresponsableNull() {
+                this[this.tableDActivosFijos.RTRresponsableColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsUBEidNull() {
+                return this.IsNull(this.tableDActivosFijos.UBEidColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetUBEidNull() {
+                this[this.tableDActivosFijos.UBEidColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsWERKSNull() {
+                return this.IsNull(this.tableDActivosFijos.WERKSColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetWERKSNull() {
+                this[this.tableDActivosFijos.WERKSColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACTactividadNull() {
+                return this.IsNull(this.tableDActivosFijos.ACTactividadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACTactividadNull() {
+                this[this.tableDActivosFijos.ACTactividadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSELsistemaelectricoNull() {
+                return this.IsNull(this.tableDActivosFijos.SELsistemaelectricoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSELsistemaelectricoNull() {
+                this[this.tableDActivosFijos.SELsistemaelectricoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsUNMidNull() {
+                return this.IsNull(this.tableDActivosFijos.UNMidColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetUNMidNull() {
+                this[this.tableDActivosFijos.UNMidColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -12146,6 +13204,40 @@ namespace CapaPresentacion {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DPersonalRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class DActivosFijosRowChangeEvent : global::System.EventArgs {
+            
+            private DActivosFijosRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DActivosFijosRowChangeEvent(DActivosFijosRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DActivosFijosRow Row {
                 get {
                     return this.eventRow;
                 }

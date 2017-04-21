@@ -257,6 +257,30 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="DActivosFijos" msprop:Generator_TableClassName="DActivosFijosDataTable" msprop:Generator_TableVarName="tableDActivosFijos" msprop:Generator_RowChangedName="DActivosFijosRowChanged" msprop:Generator_TablePropName="DActivosFijos" msprop:Generator_RowDeletingName="DActivosFijosRowDeleting" msprop:Generator_RowChangingName="DActivosFijosRowChanging" msprop:Generator_RowEvHandlerName="DActivosFijosRowChangeEventHandler" msprop:Generator_RowDeletedName="DActivosFijosRowDeleted" msprop:Generator_RowClassName="DActivosFijosRow" msprop:Generator_UserTableName="DActivosFijos" msprop:Generator_RowEvArgName="DActivosFijosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACFCuenta" msprop:Generator_ColumnVarNameInTable="columnACFCuenta" msprop:Generator_ColumnPropNameInRow="ACFCuenta" msprop:Generator_ColumnPropNameInTable="ACFCuentaColumn" msprop:Generator_UserColumnName="ACFCuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="ACFid" msprop:Generator_ColumnVarNameInTable="columnACFid" msprop:Generator_ColumnPropNameInRow="ACFid" msprop:Generator_ColumnPropNameInTable="ACFidColumn" msprop:Generator_UserColumnName="ACFid" type="xs:string" minOccurs="0" />
+              <xs:element name="ACFdescripcion" msprop:Generator_ColumnVarNameInTable="columnACFdescripcion" msprop:Generator_ColumnPropNameInRow="ACFdescripcion" msprop:Generator_ColumnPropNameInTable="ACFdescripcionColumn" msprop:Generator_UserColumnName="ACFdescripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTid" msprop:Generator_ColumnVarNameInTable="columnCSTid" msprop:Generator_ColumnPropNameInRow="CSTid" msprop:Generator_ColumnPropNameInTable="CSTidColumn" msprop:Generator_UserColumnName="CSTid" type="xs:string" minOccurs="0" />
+              <xs:element name="CRScantidad" msprop:Generator_ColumnVarNameInTable="columnCRScantidad" msprop:Generator_ColumnPropNameInRow="CRScantidad" msprop:Generator_ColumnPropNameInTable="CRScantidadColumn" msprop:Generator_UserColumnName="CRScantidad" type="xs:string" minOccurs="0" />
+              <xs:element name="ACFincorporacion" msprop:Generator_ColumnVarNameInTable="columnACFincorporacion" msprop:Generator_ColumnPropNameInRow="ACFincorporacion" msprop:Generator_ColumnPropNameInTable="ACFincorporacionColumn" msprop:Generator_UserColumnName="ACFincorporacion" type="xs:string" minOccurs="0" />
+              <xs:element name="ACFobra" msprop:Generator_ColumnVarNameInTable="columnACFobra" msprop:Generator_ColumnPropNameInRow="ACFobra" msprop:Generator_ColumnPropNameInTable="ACFobraColumn" msprop:Generator_UserColumnName="ACFobra" type="xs:string" minOccurs="0" />
+              <xs:element name="MARid" msprop:Generator_ColumnVarNameInTable="columnMARid" msprop:Generator_ColumnPropNameInRow="MARid" msprop:Generator_ColumnPropNameInTable="MARidColumn" msprop:Generator_UserColumnName="MARid" type="xs:string" minOccurs="0" />
+              <xs:element name="CRSserie" msprop:Generator_ColumnVarNameInTable="columnCRSserie" msprop:Generator_ColumnPropNameInRow="CRSserie" msprop:Generator_ColumnPropNameInTable="CRSserieColumn" msprop:Generator_UserColumnName="CRSserie" type="xs:string" minOccurs="0" />
+              <xs:element name="CRSmodelo" msprop:Generator_ColumnVarNameInTable="columnCRSmodelo" msprop:Generator_ColumnPropNameInRow="CRSmodelo" msprop:Generator_ColumnPropNameInTable="CRSmodeloColumn" msprop:Generator_UserColumnName="CRSmodelo" type="xs:string" minOccurs="0" />
+              <xs:element name="ESTid" msprop:Generator_ColumnVarNameInTable="columnESTid" msprop:Generator_ColumnPropNameInRow="ESTid" msprop:Generator_ColumnPropNameInTable="ESTidColumn" msprop:Generator_UserColumnName="ESTid" type="xs:string" minOccurs="0" />
+              <xs:element name="CRPDescripción" msprop:Generator_ColumnVarNameInTable="columnCRPDescripción" msprop:Generator_ColumnPropNameInRow="CRPDescripción" msprop:Generator_ColumnPropNameInTable="CRPDescripciónColumn" msprop:Generator_UserColumnName="CRPDescripción" type="xs:string" minOccurs="0" />
+              <xs:element name="RTRresponsable" msprop:Generator_ColumnVarNameInTable="columnRTRresponsable" msprop:Generator_ColumnPropNameInRow="RTRresponsable" msprop:Generator_ColumnPropNameInTable="RTRresponsableColumn" msprop:Generator_UserColumnName="RTRresponsable" type="xs:string" minOccurs="0" />
+              <xs:element name="UBEid" msprop:Generator_ColumnVarNameInTable="columnUBEid" msprop:Generator_ColumnPropNameInRow="UBEid" msprop:Generator_ColumnPropNameInTable="UBEidColumn" msprop:Generator_UserColumnName="UBEid" type="xs:string" minOccurs="0" />
+              <xs:element name="WERKS" msprop:Generator_ColumnVarNameInTable="columnWERKS" msprop:Generator_ColumnPropNameInRow="WERKS" msprop:Generator_ColumnPropNameInTable="WERKSColumn" msprop:Generator_UserColumnName="WERKS" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTactividad" msprop:Generator_ColumnVarNameInTable="columnACTactividad" msprop:Generator_ColumnPropNameInRow="ACTactividad" msprop:Generator_ColumnPropNameInTable="ACTactividadColumn" msprop:Generator_UserColumnName="ACTactividad" type="xs:string" minOccurs="0" />
+              <xs:element name="SELsistemaelectrico" msprop:Generator_ColumnVarNameInTable="columnSELsistemaelectrico" msprop:Generator_ColumnPropNameInRow="SELsistemaelectrico" msprop:Generator_ColumnPropNameInTable="SELsistemaelectricoColumn" msprop:Generator_UserColumnName="SELsistemaelectrico" type="xs:string" minOccurs="0" />
+              <xs:element name="UNMid" msprop:Generator_ColumnVarNameInTable="columnUNMid" msprop:Generator_ColumnPropNameInRow="UNMid" msprop:Generator_ColumnPropNameInTable="UNMidColumn" msprop:Generator_UserColumnName="UNMid" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>
