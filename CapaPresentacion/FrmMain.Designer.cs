@@ -138,7 +138,7 @@
             this.ribbon1.CausesValidation = false;
             this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.ribbon1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ribbon1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ribbon1.Minimized = false;
             this.ribbon1.Name = "ribbon1";
             // 
@@ -157,7 +157,7 @@
             this.ribbon1.OrbStyle = System.Windows.Forms.RibbonOrbStyle.Office_2010;
             this.ribbon1.OrbText = "Inicio";
             this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.ribbon1.Size = new System.Drawing.Size(1260, 162);
+            this.ribbon1.Size = new System.Drawing.Size(945, 132);
             this.ribbon1.TabIndex = 0;
             this.ribbon1.Tabs.Add(this.ribbonTab1);
             this.ribbon1.Tabs.Add(this.ribbonTab2);
@@ -301,13 +301,15 @@
             this.ribbonButtonList1.Buttons.Add(this.ribbonButton56);
             this.ribbonButtonList1.Buttons.Add(this.ribbonButton57);
             this.ribbonButtonList1.ButtonsSizeMode = System.Windows.Forms.RibbonElementSizeMode.Large;
+            this.ribbonButtonList1.ControlButtonsWidth = 30;
+            this.ribbonButtonList1.FlashIntervall = 2000;
             this.ribbonButtonList1.FlowToBottom = false;
             this.ribbonButtonList1.ItemsSizeInDropwDownMode = new System.Drawing.Size(7, 5);
-            this.ribbonButtonList1.ItemsWideInLargeMode = 4;
-            this.ribbonButtonList1.ItemsWideInMediumMode = 2;
+            this.ribbonButtonList1.ItemsWideInMediumMode = 20;
             this.ribbonButtonList1.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Large;
             this.ribbonButtonList1.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
             this.ribbonButtonList1.Text = "Primario";
+            this.ribbonButtonList1.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
             // 
             // ribbonButton1
             // 
@@ -772,19 +774,19 @@
             this.panelContenedor.BackColor = System.Drawing.Color.Gainsboro;
             this.panelContenedor.Controls.Add(this.kryptonBorderEdge1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(0, 162);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 132);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1260, 567);
+            this.panelContenedor.Size = new System.Drawing.Size(945, 460);
             this.panelContenedor.TabIndex = 1;
             // 
             // kryptonBorderEdge1
             // 
             this.kryptonBorderEdge1.BorderStyle = ComponentFactory.Krypton.Toolkit.PaletteBorderStyle.TabDock;
-            this.kryptonBorderEdge1.Location = new System.Drawing.Point(717, 34);
-            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonBorderEdge1.Location = new System.Drawing.Point(538, 28);
+            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
-            this.kryptonBorderEdge1.Size = new System.Drawing.Size(51, 1);
+            this.kryptonBorderEdge1.Size = new System.Drawing.Size(38, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
             // ribbonButton48
@@ -800,12 +802,12 @@
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1260, 729);
+            this.ClientSize = new System.Drawing.Size(945, 592);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.ribbon1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".:. Sistema de Gestión v1.0 de Activos Fijos .:.";
