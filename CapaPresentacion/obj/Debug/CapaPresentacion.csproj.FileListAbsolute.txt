@@ -439,3 +439,7 @@ C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\Fakes\mrvc\o\f
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\Fakes\mrvc\o\f.csprojResolveAssemblyReference.cache
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\Fakes\mrvc\o\Microsoft.ReportViewer.Common.Fakes.dll
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\Fakes\mrvc\o\Microsoft.ReportViewer.Common.Fakes.pdb
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\MaterialSkin.dll
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_ConciliarInventario.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_InventarioG.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_RegistroInventario.resources

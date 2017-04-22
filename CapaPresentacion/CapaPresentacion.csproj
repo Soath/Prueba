@@ -49,6 +49,9 @@
     <Reference Include="ComponentFactory.Krypton.Workspace">
       <HintPath>..\..\dll\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>E:\TESIS pepelucho\Sigma\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="PresentationCore" />
@@ -79,10 +82,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ActivosFijosDataSet.xsd</DependentUpon>
     </Compile>
-
-   <Compile Include="DataSet2.cs">
-     <DependentUpon>DataSet2.xsd</DependentUpon>
-     <SubType>Component</SubType>
+    <Compile Include="DataSet2.cs">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -383,6 +385,24 @@
     <Compile Include="FrmReportes.Designer.cs">
       <DependentUpon>FrmReportes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_ConciliarInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConciliarInventario.Designer.cs">
+      <DependentUpon>Frm_ConciliarInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_InventarioG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_InventarioG.Designer.cs">
+      <DependentUpon>Frm_InventarioG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_RegistroInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_RegistroInventario.Designer.cs">
+      <DependentUpon>Frm_RegistroInventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Importar.cs" />
     <Compile Include="MDIParent1.cs">
       <SubType>Form</SubType>
@@ -579,6 +599,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConciliarInventario.resx">
+      <DependentUpon>Frm_ConciliarInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_InventarioG.resx">
+      <DependentUpon>Frm_InventarioG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_RegistroInventario.resx">
+      <DependentUpon>Frm_RegistroInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>

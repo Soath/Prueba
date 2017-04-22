@@ -249,5 +249,23 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
         {
             this.Dispose();
         }
+
+        private void ribbonButton41_Click(object sender, EventArgs e)
+        {
+            Form Frm_InventarioG = new Frm_InventarioG();
+            Frm_InventarioG.ShowDialog();
+        }
+
+        private void ribbonButton58_Click(object sender, EventArgs e)
+        {
+            Form Frm_RegistroInventario = new Frm_RegistroInventario();
+            Frm_RegistroInventario.ShowDialog();
+        }
+
+        private void ribbonButton59_Click(object sender, EventArgs e)
+        {
+            Form Frm_ConciliarInventario = new Frm_ConciliarInventario();
+            Frm_ConciliarInventario.ShowDialog();
+        }
     }
 }
