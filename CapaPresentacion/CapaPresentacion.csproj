@@ -109,6 +109,12 @@
     <Compile Include="FormImagen.Designer.cs">
       <DependentUpon>FormImagen.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfACFp_Activo_Fijo_Buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfACFp_Activo_Fijo_Buscar.designer.cs">
+      <DependentUpon>FrmacfACFp_Activo_Fijo_Buscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfACTt_Actividad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -464,6 +470,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormImagen.resx">
       <DependentUpon>FormImagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfACFp_Activo_Fijo_Buscar.resx">
+      <DependentUpon>FrmacfACFp_Activo_Fijo_Buscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfACTt_Actividad.resx">
       <DependentUpon>FrmacfACTt_Actividad.cs</DependentUpon>

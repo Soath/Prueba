@@ -572,6 +572,9 @@ namespace CapaPresentacion
         {
             this.toolStripComboBox1.Enabled = true;
             this.toolStripTextBox1.Enabled = true;
+            Form FrmBuscar = new FrmacfACFp_Activo_Fijo_Buscar();
+            FrmBuscar.Show();
+
         }
         private void BotonImportar()
         {
@@ -834,7 +837,7 @@ namespace CapaPresentacion
 
             try
             {
-                DataTable dat = NacfACFp_Activo_Fijo.Mostrar();
+                DataTable dat = NacfACFp_Activo_Fijo.MostrarRegistro();
 
                   //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
 
