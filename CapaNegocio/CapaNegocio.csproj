@@ -76,6 +76,7 @@
     <Compile Include="NbdiXCCpExtraccionSAP_CentroCosto.cs" />
     <Compile Include="NbdiXPEpExtraccionSAP_Personal.cs" />
     <Compile Include="NConexion.cs" />
+    <Compile Include="NMovimiento_Transferencia_Activo.cs" />
     <Compile Include="NNacfLOCt_Local.cs" />
     <Compile Include="NPostres.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
