@@ -391,9 +391,7 @@
     <Compile Include="Frm_ConciliarInventario.Designer.cs">
       <DependentUpon>Frm_ConciliarInventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_InventarioG.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Frm_InventarioG.cs" />
     <Compile Include="Frm_InventarioG.Designer.cs">
       <DependentUpon>Frm_InventarioG.cs</DependentUpon>
     </Compile>

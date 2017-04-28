@@ -443,3 +443,7 @@ C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\MaterialSkin.d
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_ConciliarInventario.resources
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_InventarioG.resources
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_RegistroInventario.resources
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMovimiento_Transferencia_Activo.resources
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_ConciliarInventario.resources
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_InventarioG.resources
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_RegistroInventario.resources
