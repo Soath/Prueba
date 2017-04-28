@@ -34,13 +34,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.TextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ACFid2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ACFdescripcion2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ACFid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ACFdescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonTextBox1
@@ -56,7 +52,7 @@
             this.kryptonDataGridView1.Location = new System.Drawing.Point(12, 63);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.RowTemplate.Height = 24;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(668, 160);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(953, 346);
             this.kryptonDataGridView1.TabIndex = 0;
             // 
             // button1
@@ -94,18 +90,6 @@
             this.TextBox1.TabIndex = 4;
             this.TextBox1.Text = "kryptonTextBox1";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ACFid,
-            this.ACFdescripcion});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 229);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(953, 150);
-            this.dataGridView1.TabIndex = 5;
-            // 
             // ACFid2
             // 
             this.ACFid2.DataPropertyName = "ACFid";
@@ -119,27 +103,13 @@
             this.ACFdescripcion2.HeaderText = "Descripcion";
             this.ACFdescripcion2.Name = "ACFdescripcion2";
             this.ACFdescripcion2.ReadOnly = true;
-            this.ACFdescripcion2.Width = 500;
-            // 
-            // ACFid
-            // 
-            this.ACFid.DataPropertyName = "ACFid";
-            this.ACFid.HeaderText = "id";
-            this.ACFid.Name = "ACFid";
-            // 
-            // ACFdescripcion
-            // 
-            this.ACFdescripcion.DataPropertyName = "ACFdescripcion";
-            this.ACFdescripcion.HeaderText = "Descripcion";
-            this.ACFdescripcion.Name = "ACFdescripcion";
-            this.ACFdescripcion.Width = 800;
+            this.ACFdescripcion2.Width = 700;
             // 
             // FrmacfACFp_Activo_Fijo_Buscar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(990, 471);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -148,7 +118,6 @@
             this.Name = "FrmacfACFp_Activo_Fijo_Buscar";
             this.Text = "FrmacfACFp_Activo_Fijo_Buscar";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,10 +131,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TextBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ACFid2;
         private System.Windows.Forms.DataGridViewTextBoxColumn ACFdescripcion2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ACFid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ACFdescripcion;
     }
 }
