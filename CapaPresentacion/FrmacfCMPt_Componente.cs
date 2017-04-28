@@ -8,13 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using CapaNegocio;
 
 namespace CapaPresentacion
 {
+    //
     public partial class FrmacfCMPt_Componente : KryptonForm
     {
-
         int Activo = 1;
         int Graba = 0;
         public int idEditar = 0;
@@ -33,7 +34,6 @@ namespace CapaPresentacion
         {
             InitializeComponent();
 
-
             this.toolStripRefrescar.Click += new System.EventHandler(this.Control_Click_Refrescar);
             this.toolStripAgregar.Click += new System.EventHandler(this.Control_Click_Agregar);
             this.toolStripEditar.Click += new System.EventHandler(this.Control_Click_Editar);
@@ -41,33 +41,85 @@ namespace CapaPresentacion
             this.toolStripImprimir.Click += new System.EventHandler(this.Control_Click_Imprimir);
             this.toolStripGuardar.Click += new System.EventHandler(this.Control_Click_Guardar);
             this.toolStripCancelar.Click += new System.EventHandler(this.Control_Click_Cancelar);
+            this.toolStripAnterior.Click += new System.EventHandler(this.Control_Click_Prev);
+            this.toolStripSiguiente.Click += new System.EventHandler(this.Control_Click_Next);
+            this.toolStripPrimero.Click += new System.EventHandler(this.Control_Click_Top);
+            this.toolStripUltimo.Click += new System.EventHandler(this.Control_Click_Last);
+            //this.toolStripBuscar.Click += new System.EventHandler(this.Control_Click_Serch);
 
+            EstadoText(this.Controls, true, false);
+            mostrar();
+            MostrarRegistro();
+            MostrarCombos();
 
-            this.chkEliminar.Click += new System.EventHandler(this.Control_Click_ChkEliminar);
-
-            this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(Control_Click_dataListado);
-            this.Load += new System.EventHandler(this.FrmacfCMPt_Componente_miLoad);
-            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
-            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
-            this.ttMensaje.SetToolTip(txtCMPid, "Ingrese el Valor de CMPid");
-            this.ttMensaje.SetToolTip(txtCMPcomponente, "Ingrese la descripción de componente");
-            this.ttMensaje.SetToolTip(txtCMPusoestimado, "Ingrese el uso estimado.");
-            this.ttMensaje.SetToolTip(txtCMPconservacion, "Ingrese la conservacion.");
-            this.ttMensaje.SetToolTip(txtCMPobsolecencia, "Ingrese la obsolecencia.");
-            this.ttMensaje.SetToolTip(txtCMPlimitelegal, "Ingrese el limite legal.");
-            this.ttMensaje.SetToolTip(txtCMPtotalfactores, "Ingrese el total factores.");
-            this.ttMensaje.SetToolTip(txtCMPfactorusoestimado, "Ingrese el factor de uso estimado.");
-            this.ttMensaje.SetToolTip(txtCMPvutilanio, "Ingrese la vida util por año.");
-            this.ttMensaje.SetToolTip(txtCMPvutildia, "Ingrese la vida util por dia .");
-            //this.ttMensaje.SetToolTip(txtStock, "Ingrese el Valor de Stock");
-            //this.txtAMBid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Control_KeyPress_Idpostre);
-            //this.txtLOCid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Control_KeyPress_Nombre);
-            //this.txtAMBambiente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Control_KeyPress_Precio);
-
+            CheckAll(this, true);
         }
         //--------------------------------------------------------------------------------------------------	
         // insertar aqui todos los procedimientos para ABC	
         //--------------------------------------------------------------------------------------------------	
+
+        private void CheckAll(Control parent, bool value)
+        {
+            foreach (Control currentControl in parent.Controls)
+            {
+                if (currentControl is TextBox)
+                {
+                    currentControl.Enter += Control_Enter;
+                    currentControl.Leave += Control_Leave;
+                    currentControl.KeyPress += MoverFoco;
+                }
+                // Recurse if control contains other controls
+                if (currentControl.Controls.Count > 0)
+                {
+                    CheckAll(currentControl, value);
+                }
+            }
+        }
+
+        void ctrl_LostFocus(object sender, EventArgs e)
+        {
+            var ctrl = sender as Control;
+            if (ctrl.Tag is Color)
+                ctrl.BackColor = (Color)ctrl.Tag;
+        }
+
+        void ctrl_GotFocus(object sender, EventArgs e)
+        {
+            var ctrl = sender as Control;
+            ctrl.Tag = ctrl.BackColor;
+            ctrl.BackColor = Color.Red;
+        }
+
+        public static void MoverFoco(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+
+        private void Control_Click_Prev(object sender, EventArgs e)
+        {
+            Prev(txtCMPid.Text);
+        }
+        private void Control_Click_Next(object sender, EventArgs e)
+        {
+            Next(txtCMPid.Text);
+        }
+        private void Control_Click_Top(object sender, EventArgs e)
+        {
+            Top();
+        }
+        private void Control_Click_Last(object sender, EventArgs e)
+        {
+            Last();
+        }
+
+        private void Control_Click_Serch(object sender, EventArgs e)
+        {
+            Serch();
+        }
         private void Control_Click_Refrescar(object sender, EventArgs e)
         {
             this.BotonRefrescar();
@@ -96,17 +148,9 @@ namespace CapaPresentacion
         {
             this.BotonRefrescar();
         }
-        private void Control_Click_ChkEliminar(object sender, EventArgs e)
+        private void Control_Click_Importar(object sender, EventArgs e)
         {
-            this.BotonChkEliminar();
-        }
-        private void Control_Click_dataListado(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex == dataListado.Columns["Eliminar"].Index)
-            {
-                DataGridViewCheckBoxCell ChkEliminar = (DataGridViewCheckBoxCell)dataListado.Rows[e.RowIndex].Cells["Eliminar"];
-                ChkEliminar.Value = !Convert.ToBoolean(ChkEliminar.Value);
-            }
+            this.BotonImportar();
         }
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
@@ -116,57 +160,7 @@ namespace CapaPresentacion
         {
             this.buscarNombre();
         }
-        //  --------------------------------------------------------------------
-        //private void Control_KeyPress_Idpostre(object sender, KeyPressEventArgs e)
-        //{
-        //    if (e.KeyChar == 13) this.GetNextControl(ActiveControl, true).Focus();
-        //    if (e.KeyChar == 27) this.BotonRefrescar();
-        //    if (((e.KeyChar) < 48 && e.KeyChar != 8 && e.KeyChar != 44) || e.KeyChar > 57) e.Handled = true;
-        //}
-        //private void Control_KeyPress_Nombre(object sender, KeyPressEventArgs e)
-        //{
-        //    if (e.KeyChar == 13) this.GetNextControl(ActiveControl, true).Focus();
-        //    if (e.KeyChar == 27) this.GetNextControl(ActiveControl, false).Focus();
-        //    string cadena = e.KeyChar.ToString().ToUpper();
-        //    e.KeyChar = Convert.ToChar(cadena);
-        //}
-        //private void Control_KeyPress_Precio(object sender, KeyPressEventArgs e)
-        //{
-        //    if (e.KeyChar == 13) this.GetNextControl(ActiveControl, true).Focus();
-        //    if (e.KeyChar == 27) this.GetNextControl(ActiveControl, false).Focus();
-        //    if (((e.KeyChar) < 48 && e.KeyChar != 8 && e.KeyChar != 46) || e.KeyChar > 57) e.Handled = true;
-        //    string cadena = this.txtAMBambiente.Text;
-        //    if (e.KeyChar == 46 && cadena.Contains(".")) e.Handled = true;
-        //    int i = 0;
-        //    int p = 0;
-        //    while (i < cadena.Length)
-        //    {
-        //        if (cadena[i] == '.') p = i;
-        //        i++;
-        //    }
-        //    if (cadena.Contains(".") && e.KeyChar != 8 && (cadena.Length - p) > 2) e.Handled = true;
-        //}
-        // private void Control_KeyPress_Stock(object sender, KeyPressEventArgs e)
-        // {
-        //     if (e.KeyChar == 13) this.GetNextControl(ActiveControl, true).Focus();
-        //     if (e.KeyChar == 27) this.GetNextControl(ActiveControl, false).Focus();
-        //     if (((e.KeyChar) < 48 && e.KeyChar != 8 && e.KeyChar != 46) || e.KeyChar > 57) e.Handled = true;
-        //     //string cadena = this.txtStock.Text;
-        //     if (e.KeyChar == 46 && cadena.Contains(".")) e.Handled = true;
-        //     int i = 0;
-        //     int p = 0;
-        //     while (i < cadena.Length)
-        //     {
-        //         if (cadena[i] == '.') p = i;
-        //         i++;
-        //     }
-        //     if (cadena.Contains(".") && e.KeyChar != 8 && (cadena.Length - p) > 2) e.Handled = true;
-        // }
-        private void Control_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //            if (e.KeyChar == (char)Keys.Return)
-            if (e.KeyChar == 27) this.Close();
-        }
+        // --------------------------------------------------------------------
         private void dataListado_Click(object sender, DataGridViewCellEventArgs e)
         {
             this.Close();
@@ -174,7 +168,6 @@ namespace CapaPresentacion
         private void MensajeOk(string mensaje)
         {
             MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
         }
         private void MensajeError(string mensaje)
         {
@@ -182,7 +175,6 @@ namespace CapaPresentacion
         }
         private void Botones(bool edo)
         {
-
             this.toolStripRefrescar.Visible = edo;
             this.toolStripAgregar.Visible = edo;
             this.toolStripEditar.Visible = edo;
@@ -191,38 +183,32 @@ namespace CapaPresentacion
 
             this.toolStripGuardar.Visible = !edo;
             this.toolStripCancelar.Visible = !edo;
-
-
+            this.toolStripPrimero.Visible = edo;
+            this.toolStripAnterior.Visible = edo;
+            this.toolStripSiguiente.Visible = edo;
+            this.toolStripUltimo.Visible = edo;
+            //this.toolStripBuscar.Visible = edo;
+            //this.toolStripComboBox1.Visible = edo;
+            //this.toolStripTextBox1.Visible = edo;
         }
 
         private void BotonesSinReg(bool edo)
         {
-
             this.toolStripRefrescar.Enabled = edo;
             this.toolStripAgregar.Enabled = !edo;
             this.toolStripEditar.Enabled = edo;
             this.toolStripEliminar.Enabled = edo;
             this.toolStripImprimir.Enabled = edo;
-
+            this.toolStripPrimero.Enabled = edo;
+            this.toolStripAnterior.Enabled = edo;
+            this.toolStripSiguiente.Enabled = edo;
+            this.toolStripUltimo.Enabled = edo;
+            //this.toolStripBuscar.Enabled = edo;
+            //this.toolStripComboBox1.Enabled = edo;
+            //this.toolStripTextBox1.Enabled = edo;
         }
 
-        private void OcultarColumnas()
-        {
-            this.dataListado.Columns[0].Visible = false;
-            this.dataListado.Columns[1].Visible = false;
-            this.dataListado.Columns[1].Width = 100;
-            this.dataListado.Columns[1].DefaultCellStyle.Format = "#,0";
-            this.dataListado.Columns[1].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.dataListado.Columns[2].Width = 250;
-            this.dataListado.Columns[3].Width = 100;
-            this.dataListado.Columns[3].DefaultCellStyle.Format = "#,0.00";
-            this.dataListado.Columns[3].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.dataListado.Columns[4].Width = 100;
-            this.dataListado.Columns[1].HeaderText = "Idpostre";
-            this.dataListado.Columns[2].HeaderText = "Nombre";
-            this.dataListado.Columns[3].HeaderText = "Precio";
-            //this.dataListado.Columns[4].HeaderText = "Stock";
-        }
+        private void OcultarColumnas() { }
 
         private void mostrar()
         {
@@ -230,37 +216,171 @@ namespace CapaPresentacion
             this.Activo = 1;
             this.tomaTab();
             this.Botones(true);
-            this.dataListado.DataSource = NacfCMPt_Componente.Mostrar();
+            this.Configura();
+            this.Activo = 1;
+            this.tomaTab();
+            this.Botones(true);
 
-            lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
-            if (dataListado.Rows.Count == 0)
+        }
+        private void Top()
+        {
+            try
             {
-                BotonesSinReg(false);
+                DataTable dat = NacfCMPt_Componente.Top();
+
+                //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
+
+                if (dat.Rows.Count > 0)
+                {
+                    DataRow row = dat.Rows[0];
+                    //guardo datos en variables
+
+                    txtCMPid.Text = Convert.ToString(row["CMPid"]);
+                    txtCMPcomponente.Text = Convert.ToString(row["CMPcomponente"]);
+                    txtCMPusoestimado.Text = Convert.ToString(row["CMPusoestimado"]);
+                    txtCMPconservacion.Text = Convert.ToString(row["CMPconservacion"]);
+                    txtCMPobsolecencia.Text = Convert.ToString(row["CMPobsolecencia"]);
+                    txtCMPlimitelegal.Text = Convert.ToString(row["CMPlimitelegal"]);
+                    txtCMPtotalfactores.Text = Convert.ToString(row["CMPtotalfactores"]);
+                    txtCMPfactorusoestimado.Text = Convert.ToString(row["CMPfactorusoestimado"]);
+                    txtCMPvutilanio.Text = Convert.ToString(row["CMPvutilanio"]);
+                    txtCMPvutildia.Text = Convert.ToString(row["CMPvutildia"]);
+                    txtCMPnivel.Text = Convert.ToString(row["CMPnivel"]);
+
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
             }
-            else
+            catch (Exception ex)
             {
-                BotonesSinReg(true);
-                this.toolStripAgregar.Enabled = true;
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void Next(String iACFid)
+        {
+            try
+            {
+                DataTable dat = NacfCMPt_Componente.Next(iACFid);
+
+                //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
+
+                if (dat.Rows.Count > 0)
+                {
+                    DataRow row = dat.Rows[0];
+                    //guardo datos en variables
+                    txtCMPid.Text = Convert.ToString(row["CMPid"]);
+                    txtCMPcomponente.Text = Convert.ToString(row["CMPcomponente"]);
+                    txtCMPusoestimado.Text = Convert.ToString(row["CMPusoestimado"]);
+                    txtCMPconservacion.Text = Convert.ToString(row["CMPconservacion"]);
+                    txtCMPobsolecencia.Text = Convert.ToString(row["CMPobsolecencia"]);
+                    txtCMPlimitelegal.Text = Convert.ToString(row["CMPlimitelegal"]);
+                    txtCMPtotalfactores.Text = Convert.ToString(row["CMPtotalfactores"]);
+                    txtCMPfactorusoestimado.Text = Convert.ToString(row["CMPfactorusoestimado"]);
+                    txtCMPvutilanio.Text = Convert.ToString(row["CMPvutilanio"]);
+                    txtCMPvutildia.Text = Convert.ToString(row["CMPvutildia"]);
+                    txtCMPnivel.Text = Convert.ToString(row["CMPnivel"]);
+
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
 
             }
-            this.dataListado.Select();
-            this.dataListado.Focus();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void Prev(String iACFid)
+        {
+            try
+            {
+                DataTable dat = NacfCMPt_Componente.Prev(iACFid);
+
+                //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
+
+                if (dat.Rows.Count > 0)
+                {
+                    DataRow row = dat.Rows[0];
+                    txtCMPid.Text = Convert.ToString(row["CMPid"]);
+                    txtCMPcomponente.Text = Convert.ToString(row["CMPcomponente"]);
+                    txtCMPusoestimado.Text = Convert.ToString(row["CMPusoestimado"]);
+                    txtCMPconservacion.Text = Convert.ToString(row["CMPconservacion"]);
+                    txtCMPobsolecencia.Text = Convert.ToString(row["CMPobsolecencia"]);
+                    txtCMPlimitelegal.Text = Convert.ToString(row["CMPlimitelegal"]);
+                    txtCMPtotalfactores.Text = Convert.ToString(row["CMPtotalfactores"]);
+                    txtCMPfactorusoestimado.Text = Convert.ToString(row["CMPfactorusoestimado"]);
+                    txtCMPvutilanio.Text = Convert.ToString(row["CMPvutilanio"]);
+                    txtCMPvutildia.Text = Convert.ToString(row["CMPvutildia"]);
+                    txtCMPnivel.Text = Convert.ToString(row["CMPnivel"]);
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void Last()
+        {
+            try
+            {
+                DataTable dat = NacfCMPt_Componente.Last();
+
+                //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
+
+                if (dat.Rows.Count > 0)
+                {
+                    DataRow row = dat.Rows[0];
+
+                    txtCMPid.Text = Convert.ToString(row["CMPid"]);
+                    txtCMPcomponente.Text = Convert.ToString(row["CMPcomponente"]);
+                    txtCMPusoestimado.Text = Convert.ToString(row["CMPusoestimado"]);
+                    txtCMPconservacion.Text = Convert.ToString(row["CMPconservacion"]);
+                    txtCMPobsolecencia.Text = Convert.ToString(row["CMPobsolecencia"]);
+                    txtCMPlimitelegal.Text = Convert.ToString(row["CMPlimitelegal"]);
+                    txtCMPtotalfactores.Text = Convert.ToString(row["CMPtotalfactores"]);
+                    txtCMPfactorusoestimado.Text = Convert.ToString(row["CMPfactorusoestimado"]);
+                    txtCMPvutilanio.Text = Convert.ToString(row["CMPvutilanio"]);
+                    txtCMPvutildia.Text = Convert.ToString(row["CMPvutildia"]);
+                    txtCMPnivel.Text = Convert.ToString(row["CMPnivel"]);
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void Serch()
+        {
+            //this.toolStripComboBox1.Enabled = true;
+            //this.toolStripTextBox1.Enabled = true;
+        }
+        private void BotonImportar()
+        {
+            //Form FrmExcel = new FrmExcel();
+            //FrmExcel.Show();
         }
         private void BotonRefrescar()
         {
-            this.txtBuscar.Text = "";
-            this.chkEliminar.Checked = false;
+            EstadoText(this.Controls, false, false);
             this.mostrar();
         }
         private void BotonAgregar()
         {
             Activo = 2;
             Graba = 1;
+            EstadoText(this.Controls, true, true);
             this.LimpiaCampos();
             this.Botones(false);
-            tabControl1.SelectedTab = tabPage2;
-            this.txtCMPid.Focus();
-
+            //tabControl1.SelectedTab = tabPage2;
         }
 
         private void BotonEditar()
@@ -268,23 +388,16 @@ namespace CapaPresentacion
             Activo = 2;
             Graba = 2;
             this.Botones(false);
-            tabControl1.SelectedTab = tabPage2;
+            EstadoText(this.Controls, false, true);
+            // tabControl1.SelectedTab = tabPage2;
             this.CargaDatos();
-            this.txtCMPid.Focus();
         }
         private void BotonEliminar()
         {
-            if (this.chkEliminar.Checked)
-                this.borramuchos();
-            else
-                this.borrauno();
+            this.borrauno();
             this.mostrar();
         }
-        private void BotonImprimir()
-        {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_CMPComponente.rdlc", NacfCMPt_Componente.Mostrar(),"ip");
-            rptalu.ShowDialog();
-        }
+        private void BotonImprimir() { }
 
         private void BotonGuardar()
         {
@@ -303,18 +416,8 @@ namespace CapaPresentacion
         {
             Activo = 1;
             this.Botones(true);
-            tabControl1.SelectedTab = tabPage1;
-        }
-        private void BotonChkEliminar()
-        {
-            if (chkEliminar.Checked)
-            {
-                this.dataListado.Columns[0].Visible = true;
-            }
-            else
-            {
-                this.dataListado.Columns[0].Visible = false;
-            }
+            EstadoText(this.Controls, false, false);
+            //tabControl1.SelectedTab = tabPage1;
         }
         private void BotonListado()
         {
@@ -326,112 +429,13 @@ namespace CapaPresentacion
 
         }
 
-        public void LimpiaCampos()
-        {
-            this.txtCMPid.Text = "0";
-            this.txtCMPcomponente.Text = string.Empty;
-            this.txtCMPusoestimado.Text = string.Empty;
-            // this.txtStock.Text = string.Empty;
-        }
-        public DataGridViewRow ObtenerSeleccion()
-        {
-            DataGridViewRow filaSeleccionada = this.dataListado.Rows[this.dataListado.CurrentRow.Index];
-            return filaSeleccionada;
-        }
+        public void LimpiaCampos() { }
         private void CargaDatos()
         {
             idEditar = 0;
-            //idEditar = Convert.ToInt32(this.ObtenerSeleccion().Cells[1].Value);
-            this.txtCMPid.Text = Convert.ToString(this.ObtenerSeleccion().Cells[1].Value);
-            this.txtCMPcomponente.Text = Convert.ToString(this.ObtenerSeleccion().Cells[2].Value);
-            this.txtCMPusoestimado.Text = Convert.ToString(this.ObtenerSeleccion().Cells[3].Value);
-            this.txtCMPconservacion.Text = Convert.ToString(this.ObtenerSeleccion().Cells[4].Value);
-            this.txtCMPobsolecencia.Text = Convert.ToString(this.ObtenerSeleccion().Cells[5].Value);
-            this.txtCMPlimitelegal.Text = Convert.ToString(this.ObtenerSeleccion().Cells[6].Value);
-            this.txtCMPtotalfactores.Text = Convert.ToString(this.ObtenerSeleccion().Cells[7].Value);
-            this.txtCMPfactorusoestimado.Text = Convert.ToString(this.ObtenerSeleccion().Cells[8].Value);
-            this.txtCMPvutilanio.Text = Convert.ToString(this.ObtenerSeleccion().Cells[9].Value);
-            this.txtCMPvutildia.Text = Convert.ToString(this.ObtenerSeleccion().Cells[10].Value);
         }
         private bool validaCampos()
         {
-            if (this.txtCMPid.Text == string.Empty)
-            {
-                errorIcono.SetError(txtCMPid, "Ingrese el dato por Favor..");
-                this.MensError = "Falta ingresar el Código de componentes.";
-                this.txtCMPid.Focus();
-                return false;
-            }
-            if (this.txtCMPcomponente.Text == string.Empty)
-            {
-                errorIcono.SetError(txtCMPcomponente, "Ingrese el dato por Favor..");
-                this.MensError = "Falta ingresar la descripción del componente.";
-                this.txtCMPcomponente.Focus();
-                return false;
-            }
-            if (this.txtCMPusoestimado.Text == string.Empty)
-            {
-                errorIcono.SetError(txtCMPusoestimado, "Ingrese el dato por Favor..");
-                this.MensError = "Falta ingresar el uso estimado.";
-                this.txtCMPusoestimado.Focus();
-                return false;
-            }
-            if (this.txtCMPconservacion.Text == string.Empty)
-            {
-                errorIcono.SetError(txtCMPconservacion, "Ingrese el dato por Favor..");
-                this.MensError = "Falta ingresar la conservacion";
-                this.txtCMPconservacion.Focus();
-                return false;
-            }
-            if (this.txtCMPobsolecencia.Text == string.Empty)
-            {
-                errorIcono.SetError(txtCMPobsolecencia, "Ingrese el dato por Favor..");
-                this.MensError = "Falta ingresar la obsolecencia";
-                this.txtCMPobsolecencia.Focus();
-                return false;
-            }
-            if (this.txtCMPlimitelegal.Text == string.Empty)
-            {
-                errorIcono.SetError(txtCMPlimitelegal, "Ingrese el dato por Favor..");
-                this.MensError = "Falta ingresar el limite legal";
-                this.txtCMPlimitelegal.Focus();
-                return false;
-            }
-            if (this.txtCMPtotalfactores.Text == string.Empty)
-            {
-                errorIcono.SetError(txtCMPtotalfactores, "Ingrese el dato por Favor..");
-                this.MensError = "Falta ingresar el total factores.";
-                this.txtCMPtotalfactores.Focus();
-                return false;
-            }
-            if (this.txtCMPfactorusoestimado.Text == string.Empty)
-            {
-                errorIcono.SetError(txtCMPfactorusoestimado, "Ingrese el dato por Favor..");
-                this.MensError = "Falta ingresar el factor de uso estimado.";
-                this.txtCMPfactorusoestimado.Focus();
-                return false;
-            }
-            if (this.txtCMPvutilanio.Text == string.Empty)
-            {
-                errorIcono.SetError(txtCMPvutilanio, "Ingrese el dato por Favor..");
-                this.MensError = "Falta ingresar la vida util por año.";
-                this.txtCMPvutilanio.Focus();
-                return false;
-            }
-            if (this.txtCMPvutildia.Text == string.Empty)
-            {
-                errorIcono.SetError(txtCMPvutildia, "Ingrese el dato por Favor..");
-                this.MensError = "Falta ingresar la vida util por día.";
-                this.txtCMPvutildia.Focus();
-                return false;
-            }
-            //if (this.txtStock.Text == string.Empty)
-            //{
-            //    errorIcono.SetError(txtStock, "Ingrese el dato por Favor..");
-            //    this.MensError = "Falta ingresar el valor de Stock";
-            //    this.txtStock.Focus();
-            //    return false;
-            //}
             return true;
         }
         //-----------------------------------------------------------------------------------	
@@ -440,17 +444,32 @@ namespace CapaPresentacion
         private void InsertaRegistro()
         {
             string Rta = string.Empty;
+            MessageBox.Show("insertar");
             try
             {
-                Rta = NacfCMPt_Componente.Insertar(this.txtCMPid.Text, this.txtCMPcomponente.Text, this.txtCMPusoestimado.Text, this.txtCMPconservacion.Text, this.txtCMPobsolecencia.Text, this.txtCMPlimitelegal.Text, this.txtCMPtotalfactores.Text, this.txtCMPfactorusoestimado.Text, this.txtCMPvutilanio.Text, this.txtCMPvutildia.Text);
+               Rta = NacfCMPt_Componente.Insertar(
+                     this.txtCMPid.Text
+                    , this.txtCMPcomponente.Text
+                    , this.txtCMPusoestimado.Text
+                    , this.txtCMPconservacion.Text
+                    , this.txtCMPobsolecencia.Text
+                    , this.txtCMPlimitelegal.Text
+                    , this.txtCMPtotalfactores.Text
+                    , this.txtCMPfactorusoestimado.Text
+                    , this.txtCMPvutilanio.Text
+                    , this.txtCMPvutildia.Text
+                    //, this.txtCMPnivel.Text
+
+                  );
+                //Rta = NacfCMPt_Componente.Insertar(this.txtCMPid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
 
                 if (Rta.Equals("OK"))
                 {
-                    this.MensajeOk("Regsitro Acgregado Correctamente");
+                    this.MensajeOk("Regsitro Agregado Correctamente");
                 }
                 else
                 {
-                    this.MensajeError("Error al Insertar Registro ");
+                    this.MensajeError("Error al Insertar Registro :" + Rta);
                 }
 
             }
@@ -467,22 +486,36 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfCMPt_Componente.Editar(this.txtCMPid.Text, this.txtCMPcomponente.Text, this.txtCMPusoestimado.Text,this.txtCMPconservacion.Text,this.txtCMPobsolecencia.Text,this.txtCMPlimitelegal.Text,this.txtCMPtotalfactores.Text,this.txtCMPfactorusoestimado.Text,this.txtCMPvutilanio.Text,this.txtCMPvutildia.Text);
+                Rta = NacfCMPt_Componente.Editar(
+                      this.txtCMPid.Text
+                    , this.txtCMPcomponente.Text
+                    , this.txtCMPusoestimado.Text
+                    , this.txtCMPconservacion.Text
+                    , this.txtCMPobsolecencia.Text
+                    , this.txtCMPlimitelegal.Text
+                    , this.txtCMPtotalfactores.Text
+                    , this.txtCMPfactorusoestimado.Text
+                    , this.txtCMPvutilanio.Text
+                    , this.txtCMPvutildia.Text
+                    //, this.txtCMPnivel.Text
+
+                    );
+
+                //Rta = NacfCMPt_Componente.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
+
                 if (Rta.Equals("OK"))
                 {
                     this.MensajeOk("Regsitro Actualizado Correctamente");
                 }
                 else
                 {
-                    this.MensajeError("Error al Actualizar Registro ");
+                    this.MensajeError("Error al Actualizar Registro " + Rta);
                 }
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
-
         }
 
         //-----------------------------------------------------------------------------------	
@@ -496,8 +529,8 @@ namespace CapaPresentacion
             if (Opcion == DialogResult.OK)
             {
                 string Codigo;
-                Codigo = Convert.ToString(this.dataListado.CurrentRow.Cells[1].Value);
-                Rta = NacfCMPt_Componente.Eliminar(Codigo);
+                Codigo = "2";
+                Rta = NPostres.Eliminar(Codigo);
 
                 if (Rta.Equals("OK"))
                 {
@@ -511,38 +544,42 @@ namespace CapaPresentacion
             }
         }
 
-        private void borramuchos()
+        private void buscarNombre()
         {
+            NacfCMPt_Componente.Buscar("1");
+        }
+
+        private void MostrarCombos()
+        {
+            NacfCMPt_Componente.Buscar("1");
+        }
+        private void MostrarRegistro()
+        {
+
             try
             {
-                DialogResult Opcion;
-                Opcion = MessageBox.Show("Realmente Desea Eliminar los Registros", "Sistema de escolar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                DataTable dat = NacfCMPt_Componente.Mostrar();
 
-                if (Opcion == DialogResult.OK)
+                //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
+
+                if (dat.Rows.Count > 0)
                 {
-                    string Codigo;
-                    string Rta = string.Empty;
+                    DataRow row = dat.Rows[0];
 
-                    foreach (DataGridViewRow row in dataListado.Rows)
-                    {
-                        if (Convert.ToBoolean(row.Cells[0].Value))
-                        {
-                            Codigo = Convert.ToString(row.Cells[1].Value);
-                            Rta = NacfCMPt_Componente.Eliminar(Codigo);
-
-                            if (Rta.Equals("OK"))
-                            {
-                                this.MensajeOk("Se Eliminó Correctamente el registro");
-                            }
-                            else
-                            {
-                                this.MensajeError("Error al Eliminar el Registro ...");
-                            }
-
-                        }
-                    }
-                    this.mostrar();
+                    txtCMPid.Text = Convert.ToString(row["CMPid"]);
+                    txtCMPcomponente.Text = Convert.ToString(row["CMPcomponente"]);
+                    txtCMPusoestimado.Text = Convert.ToString(row["CMPusoestimado"]);
+                    txtCMPconservacion.Text = Convert.ToString(row["CMPconservacion"]);
+                    txtCMPobsolecencia.Text = Convert.ToString(row["CMPobsolecencia"]);
+                    txtCMPlimitelegal.Text = Convert.ToString(row["CMPlimitelegal"]);
+                    txtCMPtotalfactores.Text = Convert.ToString(row["CMPtotalfactores"]);
+                    txtCMPfactorusoestimado.Text = Convert.ToString(row["CMPfactorusoestimado"]);
+                    txtCMPvutilanio.Text = Convert.ToString(row["CMPvutilanio"]);
+                    txtCMPvutildia.Text = Convert.ToString(row["CMPvutildia"]);
+                    txtCMPnivel.Text = Convert.ToString(row["CMPnivel"]);
                 }
+                else
+                    MessageBox.Show("No Existe", "Registro");
             }
             catch (Exception ex)
             {
@@ -550,33 +587,14 @@ namespace CapaPresentacion
             }
         }
 
-        private void buscarNombre()
-        {
-            if (this.txtBuscar.Text == "") this.mostrar();
-            else
-            {
-                this.dataListado.DataSource = NacfCMPt_Componente.Buscar(this.txtBuscar.Text);
-                this.OcultarColumnas();
-                lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
-            }
-        }
+
         private void tomaTab()
         {
-            if (Activo == 2) tabControl1.SelectedTab = tabPage2;
-            if (Activo == 1) tabControl1.SelectedTab = tabPage1;
+            //if (Activo == 2) tabControl1.SelectedTab = tabPage2;
+            //if (Activo == 1) tabControl1.SelectedTab = tabPage1;
         }
         private void Configura()
         {
-            this.MaximizeBox = false;
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            //this.dataListado.Dock = DockStyle.Fill;	
-            this.txtCMPid.TabIndex = 1;
-            this.txtCMPid.TextAlign = HorizontalAlignment.Right;
-            this.txtCMPcomponente.TabIndex = 2;
-            this.txtCMPusoestimado.TabIndex = 3;
-            this.txtCMPusoestimado.TextAlign = HorizontalAlignment.Right;
-            
-            this.groupBox2.Text = "Componentes";
         }
         //-------------------------------------------------------------------
         private void FrmacfCMPt_Componente_miLoad(object sender, EventArgs e)
@@ -584,19 +602,122 @@ namespace CapaPresentacion
             this.mostrar();
         }
 
-        private void FrmacfCMPt_Componente_Load(object sender, EventArgs e)
+        private void FrmacfCMPt_Componente_Load(object sender, EventArgs e) { }
+
+
+        public void Control_Enter(object sender, EventArgs e)
         {
 
+            ((Control)sender).BackColor = Color.FromArgb(201, 228, 247);
         }
 
-        private void FrmacfCMPt_Componente_Load_1(object sender, EventArgs e)
+        public void Control_Leave(object sender, EventArgs e)
         {
-
+            ((Control)sender).BackColor = Color.White;
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+        public static void EstadoText(Control.ControlCollection Controles, bool Limpiar, bool Enabled)
         {
+            foreach (Control c in Controles)
+            {
+                if (c.Parent.Enabled == true)
+                {
+                    c.Tag = (c.Tag == null ? "" : c.Tag);
+                    if (c is TextBox || c is ComboBox)
+                    {
+                        if (c is ComboBox && Limpiar)
+                        {
+                            //INICIALIZA COMBOS
+                            ComboBox cmb = (ComboBox)c;
+                            if (cmb.Items.Count >= 0)
+                            {
+                                cmb.Focus();
+                                //cmb.SelectedItem = cmb.Items[0];
+                            }
+                        }
 
+                        if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
+                            c.Text = string.Empty;
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("Z") != -1)
+                            c.Text = "0";
+
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+                    }
+                    else
+                    {
+                        EstadoText(c.Controls, Limpiar, Enabled);
+                    }
+
+                    if (c is CheckBox)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
+                            ((CheckBox)c).Checked = false;
+                    }
+
+                    if (c is RadioButton)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+                    }
+
+                    if (c is DateTimePicker)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
+                            ((DateTimePicker)c).Value = DateTime.Now.Date;
+                    }
+
+                    if (c is Button)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+                    }
+                }
+            }
         }
+
+        private void toolStripAgregar_Click(object sender, EventArgs e) { }
+
+        private void toolStripImportar_Click(object sender, EventArgs e) { }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form FrmacfTRNt_terrenodetallecs = new FrmacfTRNt_terrenodetallecs();
+            FrmacfTRNt_terrenodetallecs.ShowDialog();
+        }
+
+        private void btnUbicacion_electrica_Click(object sender, EventArgs e)
+        {
+            Form FrmacfCMPt_Componente = new FrmacfCMPt_Componente();
+            FrmacfCMPt_Componente.ShowDialog();
+        }
+
+
+
+
+
     }
 }
+//-------------------------------------------------------------------

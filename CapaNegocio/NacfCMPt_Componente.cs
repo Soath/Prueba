@@ -73,5 +73,24 @@ namespace CapaNegocio
             Obj.CMPid = iCMPid;
             return Obj.Buscar(Obj);
         }
+
+        // barra de navegacion
+        public static DataTable Top()
+        {
+            return new DacfACFp_Activo_Fijo().Top();
+        }
+        public static DataTable Last()
+        {
+            return new DacfACFp_Activo_Fijo().Last();
+        }
+        public static DataTable Next(String iACFid)
+        {
+            return new DacfACFp_Activo_Fijo().Next(iACFid);
+        }
+
+        public static DataTable Prev(String iACFid)
+        {
+            return new DacfACFp_Activo_Fijo().Prev(iACFid);
+        }
     }
 }

@@ -191,6 +191,126 @@ namespace CapaDatos
             return DtResultado;
         }
 
+
+        // barra de navegacion
+        public DataTable Top()
+        {
+
+            DataTable DtResultado = new DataTable("acfCMPt_Componente");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_T_acfCMPt_Componente";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+        public DataTable Prev(String ACFid)
+        {
+            DataTable DtResultado = new DataTable("acfCMPt_Componente");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_P_acfCMPt_Componente";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParCMPcomponente = new SqlParameter();
+                ParCMPcomponente.ParameterName = "@sCMPid";
+                ParCMPcomponente.SqlDbType = SqlDbType.Char;
+                ParCMPcomponente.Size = 50;
+                ParCMPcomponente.Value = CMPid;
+                SqlCmd.Parameters.Add(ParCMPcomponente);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+        public DataTable Next(String ACFid)
+        {
+            DataTable DtResultado = new DataTable("acfCMPt_Componente");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_N_acfCMPt_Componente";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParCMPcomponente = new SqlParameter();
+                ParCMPcomponente.ParameterName = "@sCMPid";
+                ParCMPcomponente.SqlDbType = SqlDbType.Char;
+                ParCMPcomponente.Size = 50;
+                ParCMPcomponente.Value = CMPid;
+                SqlCmd.Parameters.Add(ParCMPcomponente);
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+
+        public DataTable Last()
+        {
+            DataTable DtResultado = new DataTable("acfCMPt_Componente");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_L_acfCMPt_Componente";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
         //METODO INSERTAR 
         public string Insertar(DAcfCMPt_Componente acfCMPt_Componente)
         {
