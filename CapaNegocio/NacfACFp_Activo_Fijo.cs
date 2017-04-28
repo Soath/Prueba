@@ -242,6 +242,11 @@ namespace CapaNegocio
         //de la CapaDatos
         public static DataTable Mostrar()
         {
+            return new DacfACFp_Activo_Fijo().Mostrar();
+        }
+
+        public static DataTable MostrarRegistro()
+        {
             return new DacfACFp_Activo_Fijo().MostrarRegistro("1");
         }
 
