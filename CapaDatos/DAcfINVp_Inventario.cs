@@ -18,6 +18,8 @@ namespace CapaDatos
         private string mINVinicio;
         private string mINVcierre;
         private string mINVactivo;
+        private string mINVrespon;
+        private string mINVperiodo;
 
 
         public string INVid
@@ -75,6 +77,28 @@ namespace CapaDatos
                 mINVactivo = value;
             }
         }
+        public string INVrespon
+        {
+            get
+            {
+                return mINVrespon;
+            }
+            set
+            {
+                mINVrespon = value;
+            }
+        }
+        public string INVperiodo
+        {
+            get
+            {
+                return mINVperiodo;
+            }
+            set
+            {
+                mINVperiodo = value;
+            }
+        }
         //Constructor vacío
         public DAcfINVp_Inventario()
         {
@@ -82,7 +106,7 @@ namespace CapaDatos
 
          //Constructor con parámetros
 
-        public DAcfINVp_Inventario(string INVid, string INVdetalle, string INVinicio, string INVcierre, string INVactivo)
+        public DAcfINVp_Inventario(string INVid, string INVdetalle, string INVinicio, string INVcierre, string INVactivo, string INVrespon, string INVperiodo)
         {
         
 		this.mINVid = INVid;
@@ -90,6 +114,8 @@ namespace CapaDatos
         this.mINVinicio = INVinicio;
         this.mINVcierre = INVcierre;
         this.mINVactivo = INVactivo;
+        this.mINVrespon = INVrespon;
+        this.mINVperiodo = INVperiodo;
 	
 	}
         public DataTable Mostrar()
@@ -165,6 +191,18 @@ namespace CapaDatos
                 PartbINVactivo.Value = acfINVp_Inventario.INVactivo;
                 SqlCmd.Parameters.Add(PartdINVcierre);
                 //
+                //
+                SqlParameter ParsINVrespon = new SqlParameter();
+                ParsINVrespon.ParameterName = "@sINVrespon";
+                ParsINVrespon.SqlDbType = SqlDbType.Char;
+                ParsINVrespon.Value = acfINVp_Inventario.INVrespon;
+                SqlCmd.Parameters.Add(ParsINVrespon);
+                //
+                SqlParameter PardtINVperiodo = new SqlParameter();
+                PardtINVperiodo.ParameterName = "@dtINVperiodo";
+                PardtINVperiodo.SqlDbType = SqlDbType.DateTime;
+                PardtINVperiodo.Value = acfINVp_Inventario.INVperiodo;
+                SqlCmd.Parameters.Add(PardtINVperiodo);
                 //Ejecutamos nuestro comando
 
                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
@@ -228,6 +266,18 @@ namespace CapaDatos
                 PartbINVactivo.Value = acfINVp_Inventario.INVactivo;
                 SqlCmd.Parameters.Add(PartdINVcierre);
                 //
+                //
+                SqlParameter ParsINVrespon = new SqlParameter();
+                ParsINVrespon.ParameterName = "@sINVrespon";
+                ParsINVrespon.SqlDbType = SqlDbType.Char;
+                ParsINVrespon.Value = acfINVp_Inventario.INVrespon;
+                SqlCmd.Parameters.Add(ParsINVrespon);
+                //
+                SqlParameter PardtINVperiodo = new SqlParameter();
+                PardtINVperiodo.ParameterName = "@dtINVperiodo";
+                PardtINVperiodo.SqlDbType = SqlDbType.DateTime;
+                PardtINVperiodo.Value = acfINVp_Inventario.INVperiodo;
+                SqlCmd.Parameters.Add(PardtINVperiodo);
 
                 //Ejecutamos nuestro comando
 

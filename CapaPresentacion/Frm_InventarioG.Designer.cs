@@ -49,17 +49,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.txtdescripcion = new System.Windows.Forms.TextBox();
-            this.txtfechacierre = new System.Windows.Forms.TextBox();
-            this.txtResponsable = new System.Windows.Forms.TextBox();
+            this.txtINVid = new System.Windows.Forms.TextBox();
+            this.txtINVdescripcion = new System.Windows.Forms.TextBox();
+            this.txtINVfechacierre = new System.Windows.Forms.TextBox();
+            this.txtINVrespon = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dtfechainicio = new System.Windows.Forms.DateTimePicker();
+            this.txtINVtotal = new System.Windows.Forms.TextBox();
+            this.dtINVfechainicio = new System.Windows.Forms.DateTimePicker();
             this.rbtotal = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.dtperiodo = new System.Windows.Forms.DateTimePicker();
+            this.dtINVperiodo = new System.Windows.Forms.DateTimePicker();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.SuspendLayout();
@@ -116,7 +116,6 @@
             this.toolStripEditar.Text = "Editar";
             this.toolStripEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripEditar.Click += new System.EventHandler(this.toolStripEditar_Click);
             // 
             // toolStripCancelar
             // 
@@ -261,35 +260,35 @@
             this.label8.TabIndex = 133;
             this.label8.Text = "Periodo";
             // 
-            // txtid
+            // txtINVid
             // 
-            this.txtid.Location = new System.Drawing.Point(126, 103);
-            this.txtid.Name = "txtid";
-            this.txtid.ReadOnly = true;
-            this.txtid.Size = new System.Drawing.Size(34, 20);
-            this.txtid.TabIndex = 134;
+            this.txtINVid.Location = new System.Drawing.Point(126, 103);
+            this.txtINVid.Name = "txtINVid";
+            this.txtINVid.ReadOnly = true;
+            this.txtINVid.Size = new System.Drawing.Size(34, 20);
+            this.txtINVid.TabIndex = 134;
             // 
-            // txtdescripcion
+            // txtINVdescripcion
             // 
-            this.txtdescripcion.Location = new System.Drawing.Point(126, 130);
-            this.txtdescripcion.Name = "txtdescripcion";
-            this.txtdescripcion.Size = new System.Drawing.Size(379, 20);
-            this.txtdescripcion.TabIndex = 135;
+            this.txtINVdescripcion.Location = new System.Drawing.Point(126, 130);
+            this.txtINVdescripcion.Name = "txtINVdescripcion";
+            this.txtINVdescripcion.Size = new System.Drawing.Size(379, 20);
+            this.txtINVdescripcion.TabIndex = 135;
             // 
-            // txtfechacierre
+            // txtINVfechacierre
             // 
-            this.txtfechacierre.Location = new System.Drawing.Point(126, 196);
-            this.txtfechacierre.Name = "txtfechacierre";
-            this.txtfechacierre.ReadOnly = true;
-            this.txtfechacierre.Size = new System.Drawing.Size(211, 20);
-            this.txtfechacierre.TabIndex = 137;
+            this.txtINVfechacierre.Location = new System.Drawing.Point(126, 196);
+            this.txtINVfechacierre.Name = "txtINVfechacierre";
+            this.txtINVfechacierre.ReadOnly = true;
+            this.txtINVfechacierre.Size = new System.Drawing.Size(211, 20);
+            this.txtINVfechacierre.TabIndex = 137;
             // 
-            // txtResponsable
+            // txtINVrespon
             // 
-            this.txtResponsable.Location = new System.Drawing.Point(126, 262);
-            this.txtResponsable.Name = "txtResponsable";
-            this.txtResponsable.Size = new System.Drawing.Size(379, 20);
-            this.txtResponsable.TabIndex = 139;
+            this.txtINVrespon.Location = new System.Drawing.Point(126, 262);
+            this.txtINVrespon.Name = "txtINVrespon";
+            this.txtINVrespon.Size = new System.Drawing.Size(379, 20);
+            this.txtINVrespon.TabIndex = 139;
             // 
             // button1
             // 
@@ -299,6 +298,7 @@
             this.button1.TabIndex = 141;
             this.button1.Text = "Generar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -309,21 +309,22 @@
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtINVtotal
             // 
-            this.textBox5.Location = new System.Drawing.Point(255, 230);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(208, 20);
-            this.textBox5.TabIndex = 145;
+            this.txtINVtotal.Location = new System.Drawing.Point(255, 230);
+            this.txtINVtotal.Name = "txtINVtotal";
+            this.txtINVtotal.Size = new System.Drawing.Size(208, 20);
+            this.txtINVtotal.TabIndex = 145;
             // 
-            // dtfechainicio
+            // dtINVfechainicio
             // 
-            this.dtfechainicio.Enabled = false;
-            this.dtfechainicio.Location = new System.Drawing.Point(126, 158);
-            this.dtfechainicio.Name = "dtfechainicio";
-            this.dtfechainicio.Size = new System.Drawing.Size(211, 20);
-            this.dtfechainicio.TabIndex = 146;
-            this.dtfechainicio.Value = new System.DateTime(2017, 4, 25, 10, 9, 58, 0);
+            this.dtINVfechainicio.Checked = false;
+            this.dtINVfechainicio.Enabled = false;
+            this.dtINVfechainicio.Location = new System.Drawing.Point(126, 158);
+            this.dtINVfechainicio.Name = "dtINVfechainicio";
+            this.dtINVfechainicio.Size = new System.Drawing.Size(211, 20);
+            this.dtINVfechainicio.TabIndex = 146;
+            this.dtINVfechainicio.Value = new System.DateTime(2017, 4, 28, 8, 50, 2, 0);
             // 
             // rbtotal
             // 
@@ -346,29 +347,30 @@
             this.radioButton2.Text = "Por Área";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // dtperiodo
+            // dtINVperiodo
             // 
-            this.dtperiodo.Location = new System.Drawing.Point(126, 291);
-            this.dtperiodo.Name = "dtperiodo";
-            this.dtperiodo.Size = new System.Drawing.Size(211, 20);
-            this.dtperiodo.TabIndex = 151;
+            this.dtINVperiodo.Location = new System.Drawing.Point(126, 291);
+            this.dtINVperiodo.Name = "dtINVperiodo";
+            this.dtINVperiodo.Size = new System.Drawing.Size(211, 20);
+            this.dtINVperiodo.TabIndex = 151;
+            this.dtINVperiodo.ValueChanged += new System.EventHandler(this.dtperiodo_ValueChanged);
             // 
             // Frm_InventarioG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 382);
-            this.Controls.Add(this.dtperiodo);
+            this.Controls.Add(this.dtINVperiodo);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.rbtotal);
-            this.Controls.Add(this.dtfechainicio);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.dtINVfechainicio);
+            this.Controls.Add(this.txtINVtotal);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtResponsable);
-            this.Controls.Add(this.txtfechacierre);
-            this.Controls.Add(this.txtdescripcion);
-            this.Controls.Add(this.txtid);
+            this.Controls.Add(this.txtINVrespon);
+            this.Controls.Add(this.txtINVfechacierre);
+            this.Controls.Add(this.txtINVdescripcion);
+            this.Controls.Add(this.txtINVid);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -404,14 +406,14 @@
         private System.Windows.Forms.ToolStripButton toolStripUltimo;
         private System.Windows.Forms.ToolTip ttMensaje;
         private System.Windows.Forms.ErrorProvider errorIcono;
-        private System.Windows.Forms.DateTimePicker dtfechainicio;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.DateTimePicker dtINVfechainicio;
+        private System.Windows.Forms.TextBox txtINVtotal;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtResponsable;
-        private System.Windows.Forms.TextBox txtfechacierre;
-        private System.Windows.Forms.TextBox txtdescripcion;
-        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.TextBox txtINVrespon;
+        private System.Windows.Forms.TextBox txtINVfechacierre;
+        private System.Windows.Forms.TextBox txtINVdescripcion;
+        private System.Windows.Forms.TextBox txtINVid;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -422,6 +424,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton rbtotal;
-        private System.Windows.Forms.DateTimePicker dtperiodo;
+        private System.Windows.Forms.DateTimePicker dtINVperiodo;
     }
 }

@@ -395,7 +395,7 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfINVp_Inventario.Insertar(this.txtINVid.Text, this.txtINVdetalle.Text, this.txtINVinicio.Text, this.txtINVcierre.Text, this.txtINVactivo.Text);
+                Rta = NacfINVp_Inventario.Insertar(this.txtINVid.Text, this.txtINVdetalle.Text, this.txtINVinicio.Text, this.txtINVcierre.Text, this.txtINVactivo.Text, this.txtINVactivo.Text,this.txtINVactivo.Text);
 
                 if (Rta.Equals("OK"))
                 {
@@ -420,7 +420,7 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfINVp_Inventario.Editar(this.txtINVid.Text, this.txtINVdetalle.Text, this.txtINVinicio.Text,this.txtINVcierre.Text,this.txtINVactivo.Text);
+                Rta = NacfINVp_Inventario.Editar(this.txtINVid.Text, this.txtINVdetalle.Text, this.txtINVinicio.Text, this.txtINVcierre.Text, this.txtINVactivo.Text, this.txtINVactivo.Text, this.txtINVactivo.Text);
                 if (Rta.Equals("OK"))
                 {
                     this.MensajeOk("Regsitro Actualizado Correctamente");

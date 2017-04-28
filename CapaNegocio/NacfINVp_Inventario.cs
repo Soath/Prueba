@@ -15,7 +15,7 @@ namespace CapaNegocio
 
         //M�todo Insertar que llama al m�todo Insertar de la clase DPostres
         //de la CapaDatos
-        public static string Insertar(string mINVid, string mINVdetalle, string mINVinicio, string mINVcierre, string mINVactivo)
+        public static string Insertar(string mINVid, string mINVdetalle, string mINVinicio, string mINVcierre, string mINVactivo, string mINVrespon, string mINVperiodo)
         {
             DAcfINVp_Inventario Obj = new DAcfINVp_Inventario();
             Obj.INVid = mINVid;
@@ -23,12 +23,14 @@ namespace CapaNegocio
             Obj.INVinicio = mINVinicio;
             Obj.INVcierre = mINVcierre;
             Obj.INVactivo = mINVactivo;
+            Obj.INVrespon = mINVrespon;
+            Obj.INVperiodo = mINVperiodo;
             return Obj.Insertar(Obj);
         }
         //------------------------------------------------------------------
         //Metodo Editar que llama al metodo Editar de la clase DPostres
         //de la CapaDatos
-        public static string Editar(string mINVid, string mINVdetalle, string mINVinicio, string mINVcierre, string mINVactivo)
+        public static string Editar(string mINVid, string mINVdetalle, string mINVinicio, string mINVcierre, string mINVactivo, string mINVrespon, string mINVperiodo)
         {
             DAcfINVp_Inventario Obj = new DAcfINVp_Inventario();
             Obj.INVid = mINVid;
@@ -36,6 +38,8 @@ namespace CapaNegocio
             Obj.INVinicio = mINVinicio;
             Obj.INVcierre = mINVcierre;
             Obj.INVactivo = mINVactivo;
+            Obj.INVrespon = mINVrespon;
+            Obj.INVperiodo = mINVperiodo;
             return Obj.Editar(Obj);
         }
         //------------------------------------------------------------------
