@@ -34,9 +34,9 @@ namespace CapaPresentacion
         private void mostrar()
         {
 
-            bss.DataSource = NacfACFp_Activo_Fijo.Mostrar();
+            bss.DataSource = NacfINVp_Inventario.Mostrar();
             this.kryptonDataGridView1.DataSource = bss;
-            this.dataGridView1.DataSource = bss;
+            
         }
     }
 }
