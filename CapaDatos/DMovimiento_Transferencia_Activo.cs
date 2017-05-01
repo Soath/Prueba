@@ -1157,7 +1157,7 @@ namespace CapaDatos
             return DtResultado;
         }
 
-        public DataTable Prev(String ACFid)
+        public DataTable Prev(String MVPid_proceso)
         {
             DataTable DtResultado = new DataTable("acfCMVp_Cabecera_Movimiento");
             SqlConnection SqlCon = new SqlConnection();
@@ -1173,9 +1173,9 @@ namespace CapaDatos
 
                 SqlParameter ParMVPid_proceso = new SqlParameter();
                 ParMVPid_proceso.ParameterName = "@iMVPid_proceso";
-                ParMVPid_proceso.SqlDbType = SqlDbType.Char;
+                ParMVPid_proceso.SqlDbType = SqlDbType.Int;
                 ParMVPid_proceso.Size = 50;
-                ParMVPid_proceso.Value = ACFid;
+                ParMVPid_proceso.Value = MVPid_proceso;
                 SqlCmd.Parameters.Add(ParMVPid_proceso);
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
@@ -1189,7 +1189,7 @@ namespace CapaDatos
             return DtResultado;
         }
 
-        public DataTable Next(String ACFid)
+        public DataTable Next(String MVPid_proceso)
         {
             DataTable DtResultado = new DataTable("acfCMVp_Cabecera_Movimiento");
             SqlConnection SqlCon = new SqlConnection();
@@ -1205,9 +1205,9 @@ namespace CapaDatos
 
                 SqlParameter ParMVPid_proceso = new SqlParameter();
                 ParMVPid_proceso.ParameterName = "@iMVPid_proceso";
-                ParMVPid_proceso.SqlDbType = SqlDbType.Char;
+                ParMVPid_proceso.SqlDbType = SqlDbType.Int;
                 ParMVPid_proceso.Size = 50;
-                ParMVPid_proceso.Value = ACFid;
+                ParMVPid_proceso.Value = MVPid_proceso;
                 SqlCmd.Parameters.Add(ParMVPid_proceso);
 
 

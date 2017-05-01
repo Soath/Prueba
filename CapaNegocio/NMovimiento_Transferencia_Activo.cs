@@ -383,20 +383,20 @@ namespace CapaNegocio
         // barra de navegacion
         public static DataTable Top()
         {
-            return new DacfACFp_Activo_Fijo().Top();
+            return new DMovimiento_Transferencia_Activo().Top();
         }
         public static DataTable Last()
         {
-            return new DacfACFp_Activo_Fijo().Last();
+            return new DMovimiento_Transferencia_Activo().Last();
         }
-        public static DataTable Next(String iACFid)
+        public static DataTable Next(String iMVPid_proceso)
         {
-            return new DacfACFp_Activo_Fijo().Next(iACFid);
+            return new DMovimiento_Transferencia_Activo().Next(iMVPid_proceso);
         }
 
-        public static DataTable Prev(String iACFid)
+        public static DataTable Prev(String iMVPid_proceso)
         {
-            return new DacfACFp_Activo_Fijo().Prev(iACFid);
+            return new DMovimiento_Transferencia_Activo().Prev(iMVPid_proceso);
         }
 
         //------------------------------------------------------------------

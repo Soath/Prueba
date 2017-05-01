@@ -269,11 +269,11 @@ namespace CapaPresentacion
             }
         }
 
-        private void Next(String iACFid)
+        private void Next(String iMVPid_proceso)
         {
             try
             {
-                DataTable dat = NMovimiento_Transferencia_Activo.Next(iACFid);
+                DataTable dat = NMovimiento_Transferencia_Activo.Next(iMVPid_proceso);
 
                 //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
 
@@ -315,11 +315,11 @@ namespace CapaPresentacion
             }
         }
 
-        private void Prev(String iACFid)
+        private void Prev(String iMVPid_proceso)
         {
             try
             {
-                DataTable dat = NMovimiento_Transferencia_Activo.Prev(iACFid);
+                DataTable dat = NMovimiento_Transferencia_Activo.Prev(iMVPid_proceso);
 
                 //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
 
@@ -619,12 +619,12 @@ namespace CapaPresentacion
 
         private void buscarNombre()
         {
-            NMovimiento_Transferencia_Activo.Buscar("1");
+            //NMovimiento_Transferencia_Activo.Buscar("1");
         }
 
         private void MostrarCombos()
         {
-            NMovimiento_Transferencia_Activo.Buscar("1");
+            //NMovimiento_Transferencia_Activo.Buscar("1");
         }
         private void MostrarRegistro()
         {
