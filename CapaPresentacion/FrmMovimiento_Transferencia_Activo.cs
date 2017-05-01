@@ -216,10 +216,21 @@ namespace CapaPresentacion
             this.Activo = 1;
             this.tomaTab();
             this.Botones(true);
-            this.Configura();
-            this.Activo = 1;
-            this.tomaTab();
-            this.Botones(true);
+            this.dataListado.DataSource = NMovimiento_Transferencia_Activo.Mostrar();
+
+            lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
+            if (dataListado.Rows.Count == 0)
+            {
+                BotonesSinReg(false);
+            }
+            else
+            {
+                BotonesSinReg(true);
+                this.toolStripAgregar.Enabled = true;
+
+            }
+            this.dataListado.Select();
+            this.dataListado.Focus();
 
         }
         private void Top()
