@@ -60,8 +60,11 @@
             this.rbtotal = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.dtINVperiodo = new System.Windows.Forms.DateTimePicker();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.datalistado = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -80,7 +83,7 @@
             this.toolStripUltimo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(517, 67);
+            this.toolStrip1.Size = new System.Drawing.Size(850, 67);
             this.toolStrip1.TabIndex = 126;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -189,7 +192,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(143, 67);
+            this.label3.Location = new System.Drawing.Point(324, 67);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(229, 29);
@@ -209,7 +212,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 133);
+            this.label2.Location = new System.Drawing.Point(166, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 128;
@@ -218,7 +221,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 164);
+            this.label4.Location = new System.Drawing.Point(526, 109);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 129;
@@ -227,7 +230,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 199);
+            this.label5.Location = new System.Drawing.Point(525, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 130;
@@ -236,7 +239,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 233);
+            this.label6.Location = new System.Drawing.Point(179, 134);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 131;
@@ -245,7 +248,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 265);
+            this.label7.Location = new System.Drawing.Point(12, 160);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 13);
             this.label7.TabIndex = 132;
@@ -254,7 +257,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 297);
+            this.label8.Location = new System.Drawing.Point(526, 164);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 133;
@@ -264,35 +267,34 @@
             // 
             this.txtINVid.Location = new System.Drawing.Point(126, 103);
             this.txtINVid.Name = "txtINVid";
-            this.txtINVid.ReadOnly = true;
             this.txtINVid.Size = new System.Drawing.Size(34, 20);
             this.txtINVid.TabIndex = 134;
             // 
             // txtINVdescripcion
             // 
-            this.txtINVdescripcion.Location = new System.Drawing.Point(126, 130);
+            this.txtINVdescripcion.Location = new System.Drawing.Point(235, 103);
             this.txtINVdescripcion.Name = "txtINVdescripcion";
-            this.txtINVdescripcion.Size = new System.Drawing.Size(379, 20);
+            this.txtINVdescripcion.Size = new System.Drawing.Size(285, 20);
             this.txtINVdescripcion.TabIndex = 135;
             // 
             // txtINVfechacierre
             // 
-            this.txtINVfechacierre.Location = new System.Drawing.Point(126, 196);
+            this.txtINVfechacierre.Location = new System.Drawing.Point(597, 129);
             this.txtINVfechacierre.Name = "txtINVfechacierre";
             this.txtINVfechacierre.ReadOnly = true;
-            this.txtINVfechacierre.Size = new System.Drawing.Size(211, 20);
+            this.txtINVfechacierre.Size = new System.Drawing.Size(241, 20);
             this.txtINVfechacierre.TabIndex = 137;
             // 
             // txtINVrespon
             // 
-            this.txtINVrespon.Location = new System.Drawing.Point(126, 262);
+            this.txtINVrespon.Location = new System.Drawing.Point(87, 157);
             this.txtINVrespon.Name = "txtINVrespon";
-            this.txtINVrespon.Size = new System.Drawing.Size(379, 20);
+            this.txtINVrespon.Size = new System.Drawing.Size(432, 20);
             this.txtINVrespon.TabIndex = 139;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(148, 347);
+            this.button1.Location = new System.Drawing.Point(235, 194);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 141;
@@ -302,7 +304,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(297, 347);
+            this.button2.Location = new System.Drawing.Point(494, 194);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 142;
@@ -311,25 +313,25 @@
             // 
             // txtINVtotal
             // 
-            this.txtINVtotal.Location = new System.Drawing.Point(255, 230);
+            this.txtINVtotal.Location = new System.Drawing.Point(343, 129);
             this.txtINVtotal.Name = "txtINVtotal";
-            this.txtINVtotal.Size = new System.Drawing.Size(208, 20);
+            this.txtINVtotal.Size = new System.Drawing.Size(177, 20);
             this.txtINVtotal.TabIndex = 145;
             // 
             // dtINVfechainicio
             // 
             this.dtINVfechainicio.Checked = false;
             this.dtINVfechainicio.Enabled = false;
-            this.dtINVfechainicio.Location = new System.Drawing.Point(126, 158);
+            this.dtINVfechainicio.Location = new System.Drawing.Point(597, 103);
             this.dtINVfechainicio.Name = "dtINVfechainicio";
-            this.dtINVfechainicio.Size = new System.Drawing.Size(211, 20);
+            this.dtINVfechainicio.Size = new System.Drawing.Size(241, 20);
             this.dtINVfechainicio.TabIndex = 146;
             this.dtINVfechainicio.Value = new System.DateTime(2017, 4, 28, 8, 50, 2, 0);
             // 
             // rbtotal
             // 
             this.rbtotal.AutoSize = true;
-            this.rbtotal.Location = new System.Drawing.Point(126, 233);
+            this.rbtotal.Location = new System.Drawing.Point(216, 132);
             this.rbtotal.Name = "rbtotal";
             this.rbtotal.Size = new System.Drawing.Size(49, 17);
             this.rbtotal.TabIndex = 149;
@@ -339,7 +341,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(181, 233);
+            this.radioButton2.Location = new System.Drawing.Point(271, 132);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(66, 17);
             this.radioButton2.TabIndex = 150;
@@ -349,17 +351,37 @@
             // 
             // dtINVperiodo
             // 
-            this.dtINVperiodo.Location = new System.Drawing.Point(126, 291);
+            this.dtINVperiodo.Location = new System.Drawing.Point(597, 158);
             this.dtINVperiodo.Name = "dtINVperiodo";
-            this.dtINVperiodo.Size = new System.Drawing.Size(211, 20);
+            this.dtINVperiodo.Size = new System.Drawing.Size(241, 20);
             this.dtINVperiodo.TabIndex = 151;
             this.dtINVperiodo.ValueChanged += new System.EventHandler(this.dtperiodo_ValueChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(39, 133);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(56, 17);
+            this.checkBox1.TabIndex = 153;
+            this.checkBox1.Text = "Activo";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // datalistado
+            // 
+            this.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistado.Location = new System.Drawing.Point(15, 223);
+            this.datalistado.Name = "datalistado";
+            this.datalistado.Size = new System.Drawing.Size(826, 199);
+            this.datalistado.TabIndex = 154;
             // 
             // Frm_InventarioG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 382);
+            this.ClientSize = new System.Drawing.Size(850, 434);
+            this.Controls.Add(this.datalistado);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.dtINVperiodo);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.rbtotal);
@@ -388,6 +410,7 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,5 +448,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton rbtotal;
         private System.Windows.Forms.DateTimePicker dtINVperiodo;
+        private System.Windows.Forms.DataGridView datalistado;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
