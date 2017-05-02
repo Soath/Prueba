@@ -14,6 +14,8 @@ namespace CapaPresentacion
 {
     public partial class FrmacfACFp_Activo_Fijo_Buscar : KryptonForm
     {
+       
+
         private static FrmacfACFp_Activo_Fijo_Buscar _Instancia;
         BindingSource bss = new BindingSource();
 
@@ -28,15 +30,32 @@ namespace CapaPresentacion
         public FrmacfACFp_Activo_Fijo_Buscar()
         {
             InitializeComponent();
+           
             mostrar();
         }
-
+        public static int IdAct;
         private void mostrar()
         {
 
-            bss.DataSource = NacfINVp_Inventario.Mostrar();
-            this.kryptonDataGridView1.DataSource = bss;
+            bss.DataSource = NacfACFp_Activo_Fijo.Mostrar();
+            this.DataGridView1.DataSource = bss;
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bss.DataSource = NacfACFp_Activo_Fijo.MostrarRegistro(this.TextBox1.Text);
+            this.DataGridView1.DataSource = bss;
+        }
+
+        private void kryptonDataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (DataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString() != "")
+            {
+                IdAct = int.Parse(DataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                this.Dispose();
+
+            }
         }
     }
 }

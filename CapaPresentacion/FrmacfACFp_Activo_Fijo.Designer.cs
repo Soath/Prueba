@@ -792,7 +792,7 @@
             // btnTerreno_Edificaciones
             // 
             this.btnTerreno_Edificaciones.Location = new System.Drawing.Point(899, 231);
-            this.btnTerreno_Edificaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTerreno_Edificaciones.Margin = new System.Windows.Forms.Padding(4);
             this.btnTerreno_Edificaciones.Name = "btnTerreno_Edificaciones";
             this.btnTerreno_Edificaciones.Size = new System.Drawing.Size(155, 58);
             this.btnTerreno_Edificaciones.TabIndex = 71;
@@ -1234,7 +1234,7 @@
             this.tabPage3.Controls.Add(this.lblCRSutmy);
             this.tabPage3.Controls.Add(this.lblCRSutmx);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1224, 364);
             this.tabPage3.TabIndex = 2;
@@ -1244,7 +1244,7 @@
             // btnUbicacion_electrica
             // 
             this.btnUbicacion_electrica.Location = new System.Drawing.Point(671, 220);
-            this.btnUbicacion_electrica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUbicacion_electrica.Margin = new System.Windows.Forms.Padding(4);
             this.btnUbicacion_electrica.Name = "btnUbicacion_electrica";
             this.btnUbicacion_electrica.Size = new System.Drawing.Size(155, 46);
             this.btnUbicacion_electrica.TabIndex = 72;
@@ -1423,7 +1423,7 @@
             this.tabPage4.Controls.Add(this.txtCRSvehinscripcion);
             this.tabPage4.Controls.Add(this.txtCRSvehexpediente);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1224, 364);
             this.tabPage4.TabIndex = 3;
@@ -1672,7 +1672,7 @@
             this.tabPage5.Controls.Add(this.lblCRScapacidad);
             this.tabPage5.Controls.Add(this.lblCRSresolucion);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(1224, 364);
             this.tabPage5.TabIndex = 4;
@@ -1882,7 +1882,7 @@
             this.dtpACFfincorporacion.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpACFfincorporacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpACFfincorporacion.Location = new System.Drawing.Point(199, 223);
-            this.dtpACFfincorporacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpACFfincorporacion.Margin = new System.Windows.Forms.Padding(4);
             this.dtpACFfincorporacion.Name = "dtpACFfincorporacion";
             this.dtpACFfincorporacion.Size = new System.Drawing.Size(185, 22);
             this.dtpACFfincorporacion.TabIndex = 152;
@@ -1892,7 +1892,7 @@
             this.dtpACFfechaordencompra.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpACFfechaordencompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpACFfechaordencompra.Location = new System.Drawing.Point(199, 126);
-            this.dtpACFfechaordencompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpACFfechaordencompra.Margin = new System.Windows.Forms.Padding(4);
             this.dtpACFfechaordencompra.Name = "dtpACFfechaordencompra";
             this.dtpACFfechaordencompra.Size = new System.Drawing.Size(185, 22);
             this.dtpACFfechaordencompra.TabIndex = 151;
@@ -1902,7 +1902,7 @@
             this.dtpACFfechacomprobante.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpACFfechacomprobante.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpACFfechacomprobante.Location = new System.Drawing.Point(199, 89);
-            this.dtpACFfechacomprobante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpACFfechacomprobante.Margin = new System.Windows.Forms.Padding(4);
             this.dtpACFfechacomprobante.Name = "dtpACFfechacomprobante";
             this.dtpACFfechacomprobante.Size = new System.Drawing.Size(185, 22);
             this.dtpACFfechacomprobante.TabIndex = 149;
@@ -1912,7 +1912,7 @@
             this.dtpACFfmovimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpACFfmovimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpACFfmovimiento.Location = new System.Drawing.Point(625, 289);
-            this.dtpACFfmovimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpACFfmovimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpACFfmovimiento.Name = "dtpACFfmovimiento";
             this.dtpACFfmovimiento.Size = new System.Drawing.Size(185, 22);
             this.dtpACFfmovimiento.TabIndex = 148;
@@ -2044,7 +2044,7 @@
             // 
             this.cboAMBid.FormattingEnabled = true;
             this.cboAMBid.Location = new System.Drawing.Point(625, 212);
-            this.cboAMBid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboAMBid.Margin = new System.Windows.Forms.Padding(4);
             this.cboAMBid.Name = "cboAMBid";
             this.cboAMBid.Size = new System.Drawing.Size(185, 24);
             this.cboAMBid.TabIndex = 151;
@@ -2053,7 +2053,7 @@
             // 
             this.cboANLKL.FormattingEnabled = true;
             this.cboANLKL.Location = new System.Drawing.Point(625, 250);
-            this.cboANLKL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboANLKL.Margin = new System.Windows.Forms.Padding(4);
             this.cboANLKL.Name = "cboANLKL";
             this.cboANLKL.Size = new System.Drawing.Size(185, 24);
             this.cboANLKL.TabIndex = 150;
@@ -2172,7 +2172,7 @@
             // 
             this.cboUBEid.FormattingEnabled = true;
             this.cboUBEid.Location = new System.Drawing.Point(211, 59);
-            this.cboUBEid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboUBEid.Margin = new System.Windows.Forms.Padding(4);
             this.cboUBEid.Name = "cboUBEid";
             this.cboUBEid.Size = new System.Drawing.Size(169, 24);
             this.cboUBEid.TabIndex = 156;
@@ -2181,7 +2181,7 @@
             // 
             this.cboKOSTL.FormattingEnabled = true;
             this.cboKOSTL.Location = new System.Drawing.Point(1085, 535);
-            this.cboKOSTL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboKOSTL.Margin = new System.Windows.Forms.Padding(4);
             this.cboKOSTL.Name = "cboKOSTL";
             this.cboKOSTL.Size = new System.Drawing.Size(195, 24);
             this.cboKOSTL.TabIndex = 155;
@@ -2190,7 +2190,7 @@
             // 
             this.cboBLART.FormattingEnabled = true;
             this.cboBLART.Location = new System.Drawing.Point(625, 386);
-            this.cboBLART.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboBLART.Margin = new System.Windows.Forms.Padding(4);
             this.cboBLART.Name = "cboBLART";
             this.cboBLART.Size = new System.Drawing.Size(185, 24);
             this.cboBLART.TabIndex = 154;
@@ -2199,7 +2199,7 @@
             // 
             this.cboLIFNR.FormattingEnabled = true;
             this.cboLIFNR.Location = new System.Drawing.Point(199, 190);
-            this.cboLIFNR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboLIFNR.Margin = new System.Windows.Forms.Padding(4);
             this.cboLIFNR.Name = "cboLIFNR";
             this.cboLIFNR.Size = new System.Drawing.Size(185, 24);
             this.cboLIFNR.TabIndex = 153;
@@ -2208,7 +2208,7 @@
             // 
             this.cboCMPid.FormattingEnabled = true;
             this.cboCMPid.Location = new System.Drawing.Point(211, 126);
-            this.cboCMPid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCMPid.Margin = new System.Windows.Forms.Padding(4);
             this.cboCMPid.Name = "cboCMPid";
             this.cboCMPid.Size = new System.Drawing.Size(169, 24);
             this.cboCMPid.TabIndex = 152;
@@ -2217,7 +2217,7 @@
             // 
             this.cboMVMid.FormattingEnabled = true;
             this.cboMVMid.Location = new System.Drawing.Point(641, 316);
-            this.cboMVMid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboMVMid.Margin = new System.Windows.Forms.Padding(4);
             this.cboMVMid.Name = "cboMVMid";
             this.cboMVMid.Size = new System.Drawing.Size(169, 24);
             this.cboMVMid.TabIndex = 151;
@@ -2226,7 +2226,7 @@
             // 
             this.cboCSTid.FormattingEnabled = true;
             this.cboCSTid.Location = new System.Drawing.Point(1085, 502);
-            this.cboCSTid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCSTid.Margin = new System.Windows.Forms.Padding(4);
             this.cboCSTid.Name = "cboCSTid";
             this.cboCSTid.Size = new System.Drawing.Size(195, 24);
             this.cboCSTid.TabIndex = 150;
@@ -2235,7 +2235,7 @@
             // 
             this.cboPERNR.FormattingEnabled = true;
             this.cboPERNR.Location = new System.Drawing.Point(641, 353);
-            this.cboPERNR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboPERNR.Margin = new System.Windows.Forms.Padding(4);
             this.cboPERNR.Name = "cboPERNR";
             this.cboPERNR.Size = new System.Drawing.Size(169, 24);
             this.cboPERNR.TabIndex = 149;
@@ -2244,7 +2244,7 @@
             // 
             this.cboSEGMENT.FormattingEnabled = true;
             this.cboSEGMENT.Location = new System.Drawing.Point(211, 23);
-            this.cboSEGMENT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboSEGMENT.Margin = new System.Windows.Forms.Padding(4);
             this.cboSEGMENT.Name = "cboSEGMENT";
             this.cboSEGMENT.Size = new System.Drawing.Size(169, 24);
             this.cboSEGMENT.TabIndex = 148;
@@ -2254,7 +2254,7 @@
             this.cboBUKRS.Enabled = false;
             this.cboBUKRS.FormattingEnabled = true;
             this.cboBUKRS.Location = new System.Drawing.Point(215, 133);
-            this.cboBUKRS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboBUKRS.Margin = new System.Windows.Forms.Padding(4);
             this.cboBUKRS.Name = "cboBUKRS";
             this.cboBUKRS.Size = new System.Drawing.Size(185, 24);
             this.cboBUKRS.TabIndex = 147;
@@ -2363,7 +2363,7 @@
             // 
             this.cboVNRid.FormattingEnabled = true;
             this.cboVNRid.Location = new System.Drawing.Point(211, 92);
-            this.cboVNRid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboVNRid.Margin = new System.Windows.Forms.Padding(4);
             this.cboVNRid.Name = "cboVNRid";
             this.cboVNRid.Size = new System.Drawing.Size(169, 24);
             this.cboVNRid.TabIndex = 150;
@@ -2426,7 +2426,7 @@
             // 
             this.cboV_T087U_ANLUE.FormattingEnabled = true;
             this.cboV_T087U_ANLUE.Location = new System.Drawing.Point(209, 159);
-            this.cboV_T087U_ANLUE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboV_T087U_ANLUE.Margin = new System.Windows.Forms.Padding(4);
             this.cboV_T087U_ANLUE.Name = "cboV_T087U_ANLUE";
             this.cboV_T087U_ANLUE.Size = new System.Drawing.Size(171, 24);
             this.cboV_T087U_ANLUE.TabIndex = 155;
@@ -2632,9 +2632,9 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(905, 570);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(267, 52);
             this.groupBox1.TabIndex = 158;
             this.groupBox1.TabStop = false;
@@ -2661,9 +2661,9 @@
             this.groupBox2.Controls.Add(this.txtACFobra);
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Location = new System.Drawing.Point(16, 288);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(403, 331);
             this.groupBox2.TabIndex = 159;
             this.groupBox2.TabStop = false;
@@ -2700,9 +2700,9 @@
             this.groupBox3.Controls.Add(this.txtACFfcapitalizacion);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Location = new System.Drawing.Point(840, 135);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(771, 350);
             this.groupBox3.TabIndex = 160;
             this.groupBox3.TabStop = false;
@@ -2722,9 +2722,9 @@
             this.groupBox4.Controls.Add(this.cboV_T087U_ANLUE);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Location = new System.Drawing.Point(433, 411);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(399, 204);
             this.groupBox4.TabIndex = 161;
             this.groupBox4.TabStop = false;
@@ -2786,7 +2786,7 @@
             this.Controls.Add(this.txtACFid);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmacfACFp_Activo_Fijo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfACFp_Activo_Fijo";

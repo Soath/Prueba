@@ -245,9 +245,9 @@ namespace CapaNegocio
             return new DacfACFp_Activo_Fijo().Mostrar();
         }
 
-        public static DataTable MostrarRegistro()
+        public static DataTable MostrarRegistro(string ACFdescripcion)
         {
-            return new DacfACFp_Activo_Fijo().MostrarRegistro("1");
+            return new DacfACFp_Activo_Fijo().MostrarRegistro(ACFdescripcion);
         }
 
        

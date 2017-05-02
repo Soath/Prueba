@@ -1216,7 +1216,7 @@ namespace CapaDatos
 
 	}
 
-    public DataTable MostrarRegistro(String iACFid)
+    public DataTable MostrarRegistro(String ACFdescripcion)
     {
 
         DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
@@ -1234,12 +1234,12 @@ namespace CapaDatos
 
 
 
-            SqlParameter ParBUKRS = new SqlParameter();
-            ParBUKRS.ParameterName = "@iACFid";
-            ParBUKRS.SqlDbType = SqlDbType.Int;
-            ParBUKRS.Size = 50;
-            ParBUKRS.Value = iACFid;
-            SqlCmd.Parameters.Add(ParBUKRS);
+            SqlParameter ParACFdescripcion = new SqlParameter();
+            ParACFdescripcion.ParameterName = "@ACFdescripcion";
+            ParACFdescripcion.SqlDbType = SqlDbType.Char;
+            ParACFdescripcion.Size = 100;
+            ParACFdescripcion.Value = ACFdescripcion;
+            SqlCmd.Parameters.Add(ParACFdescripcion);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
             SqlDat.Fill(DtResultado);
