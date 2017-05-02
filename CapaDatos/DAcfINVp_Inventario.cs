@@ -17,7 +17,7 @@ namespace CapaDatos
         private string mINVdetalle;
         private string mINVinicio;
         private string mINVcierre;
-        private string mINVactivo;
+        private int mINVactivo;
         private string mINVrespon;
         private string mINVperiodo;
 
@@ -66,7 +66,7 @@ namespace CapaDatos
                 mINVcierre = value;
             }
         }
-        public string INVactivo
+        public int INVactivo
         {
             get
             {
@@ -106,7 +106,7 @@ namespace CapaDatos
 
          //Constructor con parámetros
 
-        public DAcfINVp_Inventario(string INVid, string INVdetalle, string INVinicio, string INVcierre, string INVactivo, string INVrespon, string INVperiodo)
+        public DAcfINVp_Inventario(string INVid, string INVdetalle, string INVinicio, string INVcierre, int INVactivo, string INVrespon, string INVperiodo)
         {
         
 		this.mINVid = INVid;
@@ -187,9 +187,9 @@ namespace CapaDatos
                 //
                 SqlParameter PartbINVactivo = new SqlParameter();
                 PartbINVactivo.ParameterName = "@bINVactivo";
-                PartbINVactivo.SqlDbType = SqlDbType.Bit;
+                PartbINVactivo.SqlDbType = SqlDbType.Int;
                 PartbINVactivo.Value = acfINVp_Inventario.INVactivo;
-                SqlCmd.Parameters.Add(PartdINVcierre);
+                SqlCmd.Parameters.Add(PartbINVactivo);
                 //
                 //
                 SqlParameter ParsINVrespon = new SqlParameter();
@@ -205,7 +205,7 @@ namespace CapaDatos
                 SqlCmd.Parameters.Add(PardtINVperiodo);
                 //Ejecutamos nuestro comando
 
-                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Ingreso el Registro";
 
 
 
@@ -262,7 +262,7 @@ namespace CapaDatos
                 //
                 SqlParameter PartbINVactivo = new SqlParameter();
                 PartbINVactivo.ParameterName = "@bINVactivo";
-                PartbINVactivo.SqlDbType = SqlDbType.Bit;
+                PartbINVactivo.SqlDbType = SqlDbType.Int;
                 PartbINVactivo.Value = acfINVp_Inventario.INVactivo;
                 SqlCmd.Parameters.Add(PartdINVcierre);
                 //

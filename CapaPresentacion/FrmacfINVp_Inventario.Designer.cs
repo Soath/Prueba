@@ -61,6 +61,7 @@
             this.txtINVid = new System.Windows.Forms.TextBox();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -288,6 +289,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkBox1);
             this.groupBox2.Controls.Add(this.labelX5);
             this.groupBox2.Controls.Add(this.labelX4);
             this.groupBox2.Controls.Add(this.labelX3);
@@ -421,6 +423,16 @@
             // 
             this.errorIcono.ContainerControl = this;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(141, 203);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // FrmacfINVp_Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,5 +494,6 @@
         private System.Windows.Forms.Label labelX3;
         private System.Windows.Forms.TextBox txtINVactivo;
         private System.Windows.Forms.TextBox txtINVcierre;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

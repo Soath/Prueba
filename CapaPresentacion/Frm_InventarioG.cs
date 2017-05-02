@@ -14,10 +14,25 @@ namespace CapaPresentacion
 {
     public partial class Frm_InventarioG : Form
     {
+        BindingSource bss = new BindingSource();
+
+        private static Frm_InventarioG _Instancia;
+
+        public static Frm_InventarioG GetInstancia()
+        {
+            if (_Instancia == null)
+            {
+                _Instancia = new Frm_InventarioG();
+            }
+            return _Instancia;
+        }
+
         public Frm_InventarioG()
         {
             
             InitializeComponent();
+            mostrar();
+            
         }
        
         private void dtperiodo_ValueChanged(object sender, EventArgs e)
@@ -33,7 +48,7 @@ namespace CapaPresentacion
         {
             MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
-        private void MostrarRegistro()
+       private void MostrarRegistro()
         {
 
             try
@@ -43,12 +58,12 @@ namespace CapaPresentacion
                 //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
 
                 if (dat.Rows.Count > 0)
-                {
+              {
                     DataRow row = dat.Rows[0];
                     txtINVid.Text = Convert.ToString(row["INVid"]);
                 }
                 else
-                    MessageBox.Show("No Existe", "Registro");
+                   MessageBox.Show("No Existe", "Registro");
             }
             catch (Exception ex)
             {
@@ -60,7 +75,7 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfINVp_Inventario.Insertar(this.txtINVid.Text, this.txtINVdescripcion.Text, this.dtINVfechainicio.Text, this.txtINVfechacierre.Text, this.txtINVtotal.Text, this.txtINVrespon.Text, this.dtINVperiodo.Text);
+                Rta = NacfINVp_Inventario.Insertar(this.txtINVid.Text, null, null,null,0, null, null);
 
                 if (Rta.Equals("OK"))
                 {
@@ -81,5 +96,11 @@ namespace CapaPresentacion
 
 
         }
+        private void mostrar()
+        {
+            bss.DataSource = NacfINBt_Inventariobienes.Mostrar();
+            this.datalistado.DataSource = bss;
+        }
     }
+
 }

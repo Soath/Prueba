@@ -21,8 +21,8 @@ namespace CapaPresentacion
 
         private void FormImagen_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("E:\\Dariel\\Sophie Turner\\Sophie" + numero + ".jpg");
-            label1.Text = "Sophie" + numero;
+            pictureBox1.Image = Image.FromFile("AF_3567_" + numero + ".jpg");
+            label1.Text = "AF_3567_" + numero;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -32,14 +32,14 @@ namespace CapaPresentacion
             {
                 if (numero > 1)
                 {
-                    pictureBox1.Image = Image.FromFile("E:\\Dariel\\Sophie Turner\\Sophie" + numero + ".jpg");
-                    label1.Text = "Sophie" + numero;
+                    pictureBox1.Image = Image.FromFile("AF_3567_" + numero + ".jpg");
+                    label1.Text = "AF_3567_" + numero;
                 }
             }
             catch (Exception ex)
             {
                 numero--;
-                label1.Text = "Sophie" + numero;
+                label1.Text = "AF_3567_" + numero;
             }
         }
 
@@ -48,8 +48,8 @@ namespace CapaPresentacion
             if (numero > 1)
             {
                 numero--;
-                pictureBox1.Image = Image.FromFile("E:\\Dariel\\Sophie Turner\\Sophie" + numero + ".jpg");
-                label1.Text = "Sophie" + numero;
+                pictureBox1.Image = Image.FromFile("AF_3567_" + numero + ".jpg");
+                label1.Text = "AF_3567_" + numero;
             }
         }
 
