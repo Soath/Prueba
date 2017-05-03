@@ -17,7 +17,7 @@ namespace CapaDatos
         private string mINVdetalle;
         private string mINVinicio;
         private string mINVcierre;
-        private int mINVactivo;
+        private bool mINVactivo;
         private string mINVrespon;
         private string mINVperiodo;
 
@@ -66,7 +66,7 @@ namespace CapaDatos
                 mINVcierre = value;
             }
         }
-        public int INVactivo
+        public bool INVactivo
         {
             get
             {
@@ -106,7 +106,7 @@ namespace CapaDatos
 
          //Constructor con parámetros
 
-        public DAcfINVp_Inventario(string INVid, string INVdetalle, string INVinicio, string INVcierre, int INVactivo, string INVrespon, string INVperiodo)
+        public DAcfINVp_Inventario(string INVid, string INVdetalle, string INVinicio, string INVcierre, bool INVactivo, string INVrespon, string INVperiodo)
         {
         
 		this.mINVid = INVid;
@@ -118,6 +118,70 @@ namespace CapaDatos
         this.mINVperiodo = INVperiodo;
 	
 	}
+        public DataTable Prev(String INVid)
+        {
+            DataTable DtResultado = new DataTable("acfINVp_Inventario");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_P_acfINVp_Inventario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParINVid = new SqlParameter();
+                ParINVid.ParameterName = "@INVid";
+                ParINVid.SqlDbType = SqlDbType.Int;
+                ParINVid.Size = 50;
+                ParINVid.Value = INVid;
+                SqlCmd.Parameters.Add(ParINVid);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+        public DataTable Next(String INVid)
+        {
+            DataTable DtResultado = new DataTable("acfINVp_Inventario");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_N_acfINVp_Inventario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParINVid = new SqlParameter();
+                ParINVid.ParameterName = "@INVid";
+                ParINVid.SqlDbType = SqlDbType.Int;
+                ParINVid.Size = 50;
+                ParINVid.Value = INVid;
+                SqlCmd.Parameters.Add(ParINVid);
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
         public DataTable Mostrar()
         {
             DataTable DtResultado = new DataTable("acfINVp_Inventario");
@@ -187,7 +251,7 @@ namespace CapaDatos
                 //
                 SqlParameter PartbINVactivo = new SqlParameter();
                 PartbINVactivo.ParameterName = "@bINVactivo";
-                PartbINVactivo.SqlDbType = SqlDbType.Int;
+                PartbINVactivo.SqlDbType = SqlDbType.Bit;
                 PartbINVactivo.Value = acfINVp_Inventario.INVactivo;
                 SqlCmd.Parameters.Add(PartbINVactivo);
                 //
@@ -212,7 +276,9 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
+               
                 rpta = ex.Message;
+              
             }
             finally
             {
@@ -262,9 +328,9 @@ namespace CapaDatos
                 //
                 SqlParameter PartbINVactivo = new SqlParameter();
                 PartbINVactivo.ParameterName = "@bINVactivo";
-                PartbINVactivo.SqlDbType = SqlDbType.Int;
+                PartbINVactivo.SqlDbType = SqlDbType.Bit;
                 PartbINVactivo.Value = acfINVp_Inventario.INVactivo;
-                SqlCmd.Parameters.Add(PartdINVcierre);
+                SqlCmd.Parameters.Add(PartbINVactivo);
                 //
                 //
                 SqlParameter ParsINVrespon = new SqlParameter();

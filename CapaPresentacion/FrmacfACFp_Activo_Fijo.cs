@@ -1043,6 +1043,11 @@ namespace CapaPresentacion
 
         }
 
+        private void toolStripSiguiente_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 
