@@ -200,7 +200,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtACFfcapitalizacion = new System.Windows.Forms.TextBox();
             this.cboAMBid = new System.Windows.Forms.ComboBox();
             this.cboANLKL = new System.Windows.Forms.ComboBox();
             this.txtACFvutiltribanio = new System.Windows.Forms.TextBox();
@@ -265,10 +264,11 @@
             this.txtACFvutilniifdia = new System.Windows.Forms.TextBox();
             this.txtACFfactorniif = new System.Windows.Forms.TextBox();
             this.txtACFfactortrib = new System.Windows.Forms.TextBox();
-            this.dtpACFfechanotaingreso = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dtpACFfechanotaingreso = new System.Windows.Forms.DateTimePicker();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dtpACFfcapitalizacion = new System.Windows.Forms.DateTimePicker();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
             this.txtACFtipo_activo = new System.Windows.Forms.TextBox();
@@ -309,7 +309,11 @@
             this.toolStripImagen});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
+<<<<<<< HEAD
             this.toolStrip1.Size = new System.Drawing.Size(963, 67);
+=======
+            this.toolStrip1.Size = new System.Drawing.Size(1552, 82);
+>>>>>>> origin/master
             this.toolStrip1.TabIndex = 124;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -1952,6 +1956,7 @@
             this.label13.TabIndex = 5;
             this.label13.Text = "Factor de capitalizacion";
             // 
+<<<<<<< HEAD
             // txtACFfcapitalizacion
             // 
             this.txtACFfcapitalizacion.Location = new System.Drawing.Point(439, 139);
@@ -1960,13 +1965,17 @@
             this.txtACFfcapitalizacion.Size = new System.Drawing.Size(132, 20);
             this.txtACFfcapitalizacion.TabIndex = 0;
             // 
+=======
+>>>>>>> origin/master
             // cboAMBid
             // 
+            this.cboAMBid.DisplayMember = "AMBid";
             this.cboAMBid.FormattingEnabled = true;
             this.cboAMBid.Location = new System.Drawing.Point(469, 172);
             this.cboAMBid.Name = "cboAMBid";
             this.cboAMBid.Size = new System.Drawing.Size(140, 21);
             this.cboAMBid.TabIndex = 151;
+            this.cboAMBid.ValueMember = "AMBid";
             // 
             // cboANLKL
             // 
@@ -1983,6 +1992,7 @@
             this.txtACFvutiltribanio.Name = "txtACFvutiltribanio";
             this.txtACFvutiltribanio.Size = new System.Drawing.Size(140, 20);
             this.txtACFvutiltribanio.TabIndex = 22;
+            this.txtACFvutiltribanio.TextChanged += new System.EventHandler(this.txtACFvutiltribanio_TextChanged);
             // 
             // txtACFvutiltribdia
             // 
@@ -1991,6 +2001,7 @@
             this.txtACFvutiltribdia.Name = "txtACFvutiltribdia";
             this.txtACFvutiltribdia.Size = new System.Drawing.Size(140, 20);
             this.txtACFvutiltribdia.TabIndex = 21;
+            this.txtACFvutiltribdia.TextChanged += new System.EventHandler(this.txtACFvutiltribdia_TextChanged);
             // 
             // txtACFvalortrib
             // 
@@ -1999,6 +2010,7 @@
             this.txtACFvalortrib.Name = "txtACFvalortrib";
             this.txtACFvalortrib.Size = new System.Drawing.Size(140, 20);
             this.txtACFvalortrib.TabIndex = 20;
+            this.txtACFvalortrib.TextChanged += new System.EventHandler(this.txtACFvalortrib_TextChanged);
             // 
             // txtACFvutilniifanio
             // 
@@ -2007,6 +2019,7 @@
             this.txtACFvutilniifanio.Name = "txtACFvutilniifanio";
             this.txtACFvutilniifanio.Size = new System.Drawing.Size(140, 20);
             this.txtACFvutilniifanio.TabIndex = 19;
+            this.txtACFvutilniifanio.TextChanged += new System.EventHandler(this.txtACFvutilniifanio_TextChanged);
             // 
             // txtACFordencompra
             // 
@@ -2265,6 +2278,7 @@
             this.txtACFdepacuniif.Name = "txtACFdepacuniif";
             this.txtACFdepacuniif.Size = new System.Drawing.Size(117, 20);
             this.txtACFdepacuniif.TabIndex = 17;
+            this.txtACFdepacuniif.TextChanged += new System.EventHandler(this.txtACFdepacuniif_TextChanged);
             // 
             // txtACFdepacutrib
             // 
@@ -2273,6 +2287,7 @@
             this.txtACFdepacutrib.Name = "txtACFdepacutrib";
             this.txtACFdepacutrib.Size = new System.Drawing.Size(117, 20);
             this.txtACFdepacutrib.TabIndex = 16;
+            this.txtACFdepacutrib.TextChanged += new System.EventHandler(this.txtACFdepacutrib_TextChanged);
             // 
             // label50
             // 
@@ -2471,6 +2486,7 @@
             this.txtACFvalorniif.Name = "txtACFvalorniif";
             this.txtACFvalorniif.Size = new System.Drawing.Size(140, 20);
             this.txtACFvalorniif.TabIndex = 143;
+            this.txtACFvalorniif.TextChanged += new System.EventHandler(this.txtACFvalorniif_TextChanged);
             // 
             // txtACFvutilniifdia
             // 
@@ -2479,6 +2495,7 @@
             this.txtACFvutilniifdia.Name = "txtACFvutilniifdia";
             this.txtACFvutilniifdia.Size = new System.Drawing.Size(140, 20);
             this.txtACFvutilniifdia.TabIndex = 144;
+            this.txtACFvutilniifdia.TextChanged += new System.EventHandler(this.txtACFvutilniifdia_TextChanged);
             // 
             // txtACFfactorniif
             // 
@@ -2487,6 +2504,7 @@
             this.txtACFfactorniif.Name = "txtACFfactorniif";
             this.txtACFfactorniif.Size = new System.Drawing.Size(140, 20);
             this.txtACFfactorniif.TabIndex = 145;
+            this.txtACFfactorniif.TextChanged += new System.EventHandler(this.txtACFfactorniif_TextChanged);
             // 
             // txtACFfactortrib
             // 
@@ -2495,6 +2513,7 @@
             this.txtACFfactortrib.Name = "txtACFfactortrib";
             this.txtACFfactortrib.Size = new System.Drawing.Size(140, 20);
             this.txtACFfactortrib.TabIndex = 146;
+<<<<<<< HEAD
             // 
             // dtpACFfechanotaingreso
             // 
@@ -2503,6 +2522,9 @@
             this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
             this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(140, 20);
             this.dtpACFfechanotaingreso.TabIndex = 157;
+=======
+            this.txtACFfactortrib.TextChanged += new System.EventHandler(this.txtACFfactortrib_TextChanged);
+>>>>>>> origin/master
             // 
             // groupBox1
             // 
@@ -2515,9 +2537,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.dtpACFfechanotaingreso);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.txtACFcomprobante);
-            this.groupBox2.Controls.Add(this.dtpACFfechanotaingreso);
             this.groupBox2.Controls.Add(this.txtACFordencompra);
             this.groupBox2.Controls.Add(this.label26);
             this.groupBox2.Controls.Add(this.dtpACFfechacomprobante);
@@ -2540,8 +2562,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Adquisición";
             // 
+            // dtpACFfechanotaingreso
+            // 
+            this.dtpACFfechanotaingreso.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfechanotaingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(199, 160);
+            this.dtpACFfechanotaingreso.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
+            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(185, 22);
+            this.dtpACFfechanotaingreso.TabIndex = 154;
+            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.dtpACFfcapitalizacion);
             this.groupBox3.Controls.Add(this.txtACFcuenta);
             this.groupBox3.Controls.Add(this.txtACFcuentadep);
             this.groupBox3.Controls.Add(this.label7);
@@ -2568,7 +2601,6 @@
             this.groupBox3.Controls.Add(this.label30);
             this.groupBox3.Controls.Add(this.txtACFvutiltribdia);
             this.groupBox3.Controls.Add(this.txtACFvutiltribanio);
-            this.groupBox3.Controls.Add(this.txtACFfcapitalizacion);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Location = new System.Drawing.Point(630, 110);
             this.groupBox3.Name = "groupBox3";
@@ -2577,6 +2609,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Contable";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // dtpACFfcapitalizacion
+            // 
+            this.dtpACFfcapitalizacion.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfcapitalizacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfcapitalizacion.Location = new System.Drawing.Point(578, 170);
+            this.dtpACFfcapitalizacion.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpACFfcapitalizacion.Name = "dtpACFfcapitalizacion";
+            this.dtpACFfcapitalizacion.Size = new System.Drawing.Size(185, 22);
+            this.dtpACFfcapitalizacion.TabIndex = 164;
             // 
             // groupBox4
             // 
@@ -2618,7 +2660,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(963, 602);
+=======
+            this.ClientSize = new System.Drawing.Size(1552, 741);
+>>>>>>> origin/master
             this.Controls.Add(this.label22);
             this.Controls.Add(this.txtACFtipo_activo);
             this.Controls.Add(this.groupBox4);
@@ -2702,7 +2748,6 @@
         private System.Windows.Forms.ToolStripButton toolStripAnterior;
         private System.Windows.Forms.ToolStripButton toolStripSiguiente;
         private System.Windows.Forms.ToolStripButton toolStripUltimo;
-        private System.Windows.Forms.TextBox txtACFfcapitalizacion;
         private System.Windows.Forms.TextBox txtACFcuenta;
         private System.Windows.Forms.TextBox txtACFcomprobante;
         private System.Windows.Forms.TextBox txtACFanlue;
@@ -2919,7 +2964,6 @@
         private System.Windows.Forms.Label lblCRSresolucion;
         private System.Windows.Forms.Button btnTerreno_Edificaciones;
         private System.Windows.Forms.Button btnUbicacion_electrica;
-        private System.Windows.Forms.TextBox dtpACFfechanotaingreso;
         private System.Windows.Forms.ToolStripButton toolStripImagen;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -2927,5 +2971,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox txtACFtipo_activo;
+        private System.Windows.Forms.DateTimePicker dtpACFfechanotaingreso;
+        private System.Windows.Forms.DateTimePicker dtpACFfcapitalizacion;
     }
 }
