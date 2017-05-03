@@ -232,6 +232,11 @@ namespace CapaPresentacion
             this.dataListado.Select();
             this.dataListado.Focus();
 
+            this.cboMVPtipo.DataSource = NacfTMVt_TipoMovimiento.Mostrar();  //TMVid
+            this.cboMVPtipo.ValueMember = "TMVid";
+            this.cboMVPtipo.DisplayMember = "TMVtipomovimiento";
+            this.cboMVPtipo.SelectedIndex = 0;
+
         }
         private void Top()
         {
