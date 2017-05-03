@@ -825,11 +825,11 @@ namespace CapaPresentacion
 
         }
 
-<<<<<<< HEAD
+
         private void toolStripSiguiente_Click(object sender, EventArgs e)
         {
+        }
 
-=======
         private void txtACFvutiltribanio_TextChanged(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(txtACFvutiltribanio.Text)) 
@@ -888,7 +888,7 @@ namespace CapaPresentacion
         {
             if (String.IsNullOrEmpty(txtACFvutilniifanio.Text))
                 txtACFvutilniifanio.Text = "0";
->>>>>>> origin/master
+
         }
 
 
