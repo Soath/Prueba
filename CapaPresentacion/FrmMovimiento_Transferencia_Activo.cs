@@ -102,10 +102,12 @@ namespace CapaPresentacion
         private void Control_Click_Prev(object sender, EventArgs e)
         {
             Prev(txtMVPid_proceso.Text);
+            PrevDataGRid(txtMVPid_proceso.Text);
         }
         private void Control_Click_Next(object sender, EventArgs e)
         {
             Next(txtMVPid_proceso.Text);
+            NextDataGRid(txtMVPid_proceso.Text);
         }
         private void Control_Click_Top(object sender, EventArgs e)
         {
@@ -210,27 +212,38 @@ namespace CapaPresentacion
 
         private void OcultarColumnas() { }
 
+        private void NextDataGRid(String iMVAid)
+        {
+            this.dataListado.DataSource = NacfMVAt_MovimientoActivo.Mostrar(iMVAid);
+        }
+
+        private void PrevDataGRid(String iMVAid)
+        {
+            this.dataListado.DataSource = NacfMVAt_MovimientoActivo.Mostrar(iMVAid);
+        }
+
+
         private void mostrar()
         {
             this.Configura();
             this.Activo = 1;
             this.tomaTab();
             this.Botones(true);
-            this.dataListado.DataSource = NMovimiento_Transferencia_Activo.Mostrar();
+            this.dataListado.DataSource = NacfMVAt_MovimientoActivo.Mostrar("1");
 
-            lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
-            if (dataListado.Rows.Count == 0)
-            {
-                BotonesSinReg(false);
-            }
-            else
-            {
-                BotonesSinReg(true);
-                this.toolStripAgregar.Enabled = true;
-
-            }
-            this.dataListado.Select();
-            this.dataListado.Focus();
+           //lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
+           //if (dataListado.Rows.Count == 0)
+           //{
+           //    BotonesSinReg(false);
+           //}
+           //else
+           //{
+           //    BotonesSinReg(true);
+           //    this.toolStripAgregar.Enabled = true;
+           //
+           //}
+           //this.dataListado.Select();
+           //this.dataListado.Focus();
 
             this.cboMVPtipo.DataSource = NacfTMVt_TipoMovimiento.Mostrar();  //TMVid
             this.cboMVPtipo.ValueMember = "TMVid";

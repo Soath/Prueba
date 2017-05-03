@@ -382,7 +382,7 @@ namespace CapaDatos
         }
 
         //METODO MOSTRAR
-        public DataTable Mostrar()
+        public DataTable Mostrar(string iMVAid)
         {
             DataTable DtResultado = new DataTable("acfMVAt_MovimientoActivo");
             SqlConnection SqlCon = new SqlConnection();
@@ -396,6 +396,18 @@ namespace CapaDatos
                 SqlCmd.CommandText = "usp_S_acfMVAt_MovimientoActivo";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
+                SqlParameter ParMVAid = new SqlParameter();
+                ParMVAid.ParameterName = "@iMVAid";
+                ParMVAid.SqlDbType = SqlDbType.Int;
+                ParMVAid.Size = 50;
+                ParMVAid.Value = iMVAid;
+                SqlCmd.Parameters.Add(ParMVAid);
+
+               //SqlParameter PariMVAid = new SqlParameter();
+               //PariMVAid.ParameterName = "@iMVAid";
+               //PariMVAid.SqlDbType = SqlDbType.Int;
+               //PariMVAid.Value = MVAid;
+               //SqlCmd.Parameters.Add(PariMVAid);
 
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
