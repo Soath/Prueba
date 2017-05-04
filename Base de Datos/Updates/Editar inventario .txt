@@ -1,0 +1,6 @@
+ALTER TABLE [dbo].[acfINVp_Inventario]
+ALTER COLUMN INVperiodo char(100) 
+
+ALTER TABLE [dbo].[acfINVp_Inventario]
+ALTER COLUMN INVactivo bit 
+

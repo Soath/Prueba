@@ -135,6 +135,26 @@ namespace CapaPresentacion
                 }
             }
         }
+        private void MostrarDatos(DataTable dat)
+        {
+            if (dat.Rows.Count > 0)
+            {
+                DataRow row = dat.Rows[0];
+                //guardo datos en variables
+                txtINVid.Text = Convert.ToString(row["INVid"]);
+                txtINVdescripcion.Text = Convert.ToString(row["INVdetalle"]);
+                dtINVfechainicio.Text = Convert.ToString(row["INVinicio"]);
+                txtINVfechacierre.Text = Convert.ToString(row["INVcierre"]);
+                cbActivo.Checked = Convert.ToBoolean(row["INVactivo"]);
+                txtINVrespon.Text = Convert.ToString(row["INVrespon"]);
+                txtINVperiodo.Text = Convert.ToString(row["INVperiodo"]);
+                //guardo datos en variables
+                //txtACFid.Text = Convert.ToString(row["ACFid"]);
+                //txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
+            }
+            else
+                MessageBox.Show("No Existe", "Registro");
+        }
        private void MostrarRegistro()
         {
 
@@ -153,8 +173,8 @@ namespace CapaPresentacion
                     txtINVfechacierre.Text = Convert.ToString(row["INVcierre"]);
                     cbActivo.Checked = Convert.ToBoolean(row["INVactivo"]);
                     txtINVrespon.Text = Convert.ToString(row["INVrespon"]);
-                    dtINVperiodo.Text = Convert.ToString(row["INVperiodo"]);
-                }
+                    txtINVperiodo.Text = Convert.ToString(row["INVperiodo"]);
+              }
                 else
                    MessageBox.Show("No Existe", "Registro");
             }
@@ -166,8 +186,9 @@ namespace CapaPresentacion
        private void BotonRefrescar()
        {
            EstadoText(this.Controls, false, false);
-           this.mostrar();
+           
            this.Botones(true);
+           this.MostrarRegistro();
        }
        //-----------------------------------------------------------------------------------	
        // Actualiza Registros	
@@ -184,7 +205,7 @@ namespace CapaPresentacion
                    , this.txtINVfechacierre.Text
                    , this.cbActivo.Checked
                    , this.txtINVrespon.Text
-                   , this.dtINVperiodo.Text
+                   , this.txtINVperiodo.Text
                    );
 
                //Rta = NacfACFp_Activo_Fijo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
@@ -197,6 +218,19 @@ namespace CapaPresentacion
                {
                    this.MensajeError("Error al Actualizar Registro " + Rta);
                }
+           }
+           catch (Exception ex)
+           {
+               MessageBox.Show(ex.Message + ex.StackTrace);
+           }
+
+       }
+       private void Top()
+       {
+           try
+           {
+               DataTable dat = NacfINVp_Inventario.Top();
+               MostrarDatos(dat);
            }
            catch (Exception ex)
            {
@@ -226,7 +260,7 @@ namespace CapaPresentacion
            string Rta = string.Empty;
            try
            {
-               Rta = NacfINVp_Inventario.Insertar(this.txtINVid.Text, this.txtINVdescripcion.Text, this.dtINVfechainicio.Text, this.txtINVfechacierre.Text, false, this.txtINVrespon.Text, this.dtINVperiodo.Text);
+               Rta = NacfINVp_Inventario.Insertar(this.txtINVid.Text, this.txtINVdescripcion.Text, this.dtINVfechainicio.Text, this.txtINVfechacierre.Text, false, this.txtINVrespon.Text, this.txtINVperiodo.Text);
 
                if (Rta.Equals("OK"))
                {
@@ -266,7 +300,7 @@ namespace CapaPresentacion
                     txtINVfechacierre.Text = Convert.ToString(row["INVcierre"]);
                     cbActivo.Checked = Convert.ToBoolean(row["INVactivo"]);
                     txtINVrespon.Text = Convert.ToString(row["INVrespon"]);
-                    dtINVperiodo.Text = Convert.ToString(row["INVperiodo"]);
+                    txtINVperiodo.Text = Convert.ToString(row["INVperiodo"]);
                   
 
                 }
@@ -305,7 +339,7 @@ namespace CapaPresentacion
                     txtINVfechacierre.Text = Convert.ToString(row["INVcierre"]);
                     cbActivo.Checked = Convert.ToBoolean(row["INVactivo"]); 
                     txtINVrespon.Text = Convert.ToString(row["INVrespon"]);
-                    dtINVperiodo.Text = Convert.ToString(row["INVperiodo"]);
+                    txtINVperiodo.Text = Convert.ToString(row["INVperiodo"]);
                   
                 }
                 else
@@ -323,10 +357,37 @@ namespace CapaPresentacion
         }
         private void mostrar()
         {
-            bss.DataSource = NacfINBt_Inventariobienes.Mostrar();
-            this.datalistado.DataSource = bss;
-        }
+            this.datalistado.DataSource = NacfINBt_Inventariobienes.Mostrar();
+            lblTotal.Text = "Total de Registros: " + Convert.ToString(datalistado.Rows.Count);
+            if (datalistado.Rows.Count == 0)
+            {
+                BotonesSinReg(false);
+            }
+            else
+            {
+                BotonesSinReg(true);
+                this.toolStripAgregar.Enabled = true;
 
+            }
+            this.datalistado.Select();
+            this.datalistado.Focus();
+
+           
+        }
+        private void BotonesSinReg(bool edo)
+        {
+            this.toolStripRefrescar.Enabled = edo;
+            this.toolStripAgregar.Enabled = !edo;
+            this.toolStripEditar.Enabled = edo;
+            this.toolStripEliminar.Enabled = edo;
+            this.toolStripPrimero.Enabled = edo;
+            this.toolStripAnterior.Enabled = edo;
+            this.toolStripSiguiente.Enabled = edo;
+            this.toolStripUltimo.Enabled = edo;
+            //this.toolStripBuscar.Enabled = edo;
+            //this.toolStripComboBox1.Enabled = edo;
+            //this.toolStripTextBox1.Enabled = edo;
+        }
         private void Botones(bool edo)
         {
             this.toolStripRefrescar.Visible = edo;
@@ -343,6 +404,18 @@ namespace CapaPresentacion
             this.toolStripUltimo.Visible = edo;
             this.toolStripBuscar.Visible = edo;
           
+        }
+        private void Last()
+        {
+            try
+            {
+                DataTable dat = NacfINVp_Inventario.Last();
+                MostrarDatos(dat);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
         }
         private void BotonCancelar()
         {
@@ -389,6 +462,17 @@ namespace CapaPresentacion
         {
             BotonAgregar();
         }
+
+        private void toolStripPrimero_Click(object sender, EventArgs e)
+        {
+            Top();
+        }
+
+        private void toolStripUltimo_Click(object sender, EventArgs e)
+        {
+            Last();
+        }
+
     }
 
 }
