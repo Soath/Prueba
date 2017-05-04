@@ -10,10 +10,10 @@ namespace CapaDatos
     public class DConexion
     {
 
-        // public static String CnBDActivo = "Data Source=192.168.0.18; Initial Catalog=ActivosFijosold; User ID = sa;  Password = eg909090;";
-        //public static String CnBDActivo = "Data Source=localhost ; Initial Catalog=ActivosFijosold; Integrated Security=SSPI;";
+         public static String CnBDActivo = "Data Source=192.168.0.18; Initial Catalog=ActivosFijos; User ID = sa;  Password = eg909090;";
+        // public static String CnBDActivo = "Data Source=localhost ; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
 
-        public static String CnBDActivo = "Data Source=localhost; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
+        // public static String CnBDActivo = "Data Source=localhost; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
 
 
         public String ChequearConexion()

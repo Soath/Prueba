@@ -33,7 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataListado = new System.Windows.Forms.DataGridView();
+            this.dataListado1 = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -41,10 +41,10 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataListado2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -94,24 +94,24 @@
             this.button2.Text = "Actualizar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // dataListado
+            // dataListado1
             // 
-            this.dataListado.AllowUserToAddRows = false;
-            this.dataListado.AllowUserToDeleteRows = false;
-            this.dataListado.AllowUserToOrderColumns = true;
-            this.dataListado.BackgroundColor = System.Drawing.Color.White;
-            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataListado1.AllowUserToAddRows = false;
+            this.dataListado1.AllowUserToDeleteRows = false;
+            this.dataListado1.AllowUserToOrderColumns = true;
+            this.dataListado1.BackgroundColor = System.Drawing.Color.White;
+            this.dataListado1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListado1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            this.dataListado.Location = new System.Drawing.Point(29, 42);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
-            this.dataListado.MultiSelect = false;
-            this.dataListado.Name = "dataListado";
-            this.dataListado.ReadOnly = true;
-            this.dataListado.RowTemplate.Height = 24;
-            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(860, 189);
-            this.dataListado.TabIndex = 10;
+            this.dataListado1.Location = new System.Drawing.Point(29, 42);
+            this.dataListado1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataListado1.MultiSelect = false;
+            this.dataListado1.Name = "dataListado1";
+            this.dataListado1.ReadOnly = true;
+            this.dataListado1.RowTemplate.Height = 24;
+            this.dataListado1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListado1.Size = new System.Drawing.Size(860, 189);
+            this.dataListado1.TabIndex = 10;
             // 
             // Eliminar
             // 
@@ -174,24 +174,24 @@
             this.button8.Text = "Procesos Aprobados";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataListado2
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataListado2.AllowUserToAddRows = false;
+            this.dataListado2.AllowUserToDeleteRows = false;
+            this.dataListado2.AllowUserToOrderColumns = true;
+            this.dataListado2.BackgroundColor = System.Drawing.Color.White;
+            this.dataListado2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListado2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewCheckBoxColumn1});
-            this.dataGridView1.Location = new System.Drawing.Point(29, 279);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(860, 189);
-            this.dataGridView1.TabIndex = 18;
+            this.dataListado2.Location = new System.Drawing.Point(29, 279);
+            this.dataListado2.Margin = new System.Windows.Forms.Padding(2);
+            this.dataListado2.MultiSelect = false;
+            this.dataListado2.Name = "dataListado2";
+            this.dataListado2.ReadOnly = true;
+            this.dataListado2.RowTemplate.Height = 24;
+            this.dataListado2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListado2.Size = new System.Drawing.Size(860, 189);
+            this.dataListado2.TabIndex = 18;
             // 
             // dataGridViewCheckBoxColumn1
             // 
@@ -205,23 +205,25 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 526);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataListado2);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.dataListado);
+            this.Controls.Add(this.dataListado1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmMovimientoTransferecnaiActivo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movimiento/Transferencia Activo";
-            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmMovimientoTransferecnaiActivo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,7 +236,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataListado;
+        private System.Windows.Forms.DataGridView dataListado1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -242,7 +244,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataListado2;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
     }
 }
