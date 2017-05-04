@@ -825,10 +825,6 @@ namespace CapaPresentacion
 
         }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
         private void toolStripSiguiente_Click(object sender, EventArgs e)
         {
         }

@@ -309,13 +309,8 @@
             this.toolStripImagen});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-<<<<<<< HEAD
-            this.toolStrip1.Size = new System.Drawing.Size(963, 67);
-=======
 
             this.toolStrip1.Size = new System.Drawing.Size(963, 67);
-
->>>>>>> origin/master
             this.toolStrip1.TabIndex = 124;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -1958,8 +1953,6 @@
             this.label13.TabIndex = 5;
             this.label13.Text = "Factor de capitalizacion";
             // 
-<<<<<<< HEAD
-=======
 
             // txtACFfcapitalizacion
             // 
@@ -1970,7 +1963,6 @@
             //this.txtACFfcapitalizacion.TabIndex = 0;
             // 
 
->>>>>>> origin/master
             // cboAMBid
             // 
             this.cboAMBid.DisplayMember = "AMBid";
@@ -2517,8 +2509,6 @@
             this.txtACFfactortrib.Name = "txtACFfactortrib";
             this.txtACFfactortrib.Size = new System.Drawing.Size(140, 20);
             this.txtACFfactortrib.TabIndex = 146;
-<<<<<<< HEAD
-=======
 
             // 
             // dtpACFfechanotaingreso
@@ -2531,7 +2521,7 @@
 
             this.txtACFfactortrib.TextChanged += new System.EventHandler(this.txtACFfactortrib_TextChanged);
 
->>>>>>> origin/master
+
             // 
             // groupBox1
             // 
@@ -2667,13 +2657,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(963, 602);
-=======
 
             this.ClientSize = new System.Drawing.Size(963, 602);
 
->>>>>>> origin/master
             this.Controls.Add(this.label22);
             this.Controls.Add(this.txtACFtipo_activo);
             this.Controls.Add(this.groupBox4);
