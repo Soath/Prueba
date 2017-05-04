@@ -351,15 +351,24 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
+        private void NextDataGRid(String iINVid)
+        {
+            this.datalistado.DataSource = NacfINBt_Inventariobienes.Mostrar(iINVid);
+        }
+
+        private void PrevDataGRid(String iINVid)
+        {
+            this.datalistado.DataSource = NacfINBt_Inventariobienes.Mostrar(iINVid);
+        }
         private void CargaDatos()
         {
             idEditar = 0;
         }
         private void mostrar()
         {
-            this.datalistado.DataSource = NacfINBt_Inventariobienes.Mostrar();
+            this.datalistado.DataSource = NacfINBt_Inventariobienes.Mostrar("1");
             lblTotal.Text = "Total de Registros: " + Convert.ToString(datalistado.Rows.Count);
-            if (datalistado.Rows.Count == 0)
+           /* if (datalistado.Rows.Count == 0)
             {
                 BotonesSinReg(false);
             }
@@ -370,7 +379,7 @@ namespace CapaPresentacion
 
             }
             this.datalistado.Select();
-            this.datalistado.Focus();
+            this.datalistado.Focus();*/
 
            
         }
@@ -436,11 +445,13 @@ namespace CapaPresentacion
         private void toolStripSiguiente_Click_1(object sender, EventArgs e)
         {
             Next(txtINVid.Text);
+            NextDataGRid(txtINVid.Text);
         }
 
         private void toolStripAnterior_Click_1(object sender, EventArgs e)
         {
             Prev(txtINVid.Text);
+            PrevDataGRid(txtINVid.Text);
         }
 
         private void toolStripEditar_Click(object sender, EventArgs e)
@@ -466,11 +477,14 @@ namespace CapaPresentacion
         private void toolStripPrimero_Click(object sender, EventArgs e)
         {
             Top();
+            PrevDataGRid(txtINVid.Text);
         }
 
         private void toolStripUltimo_Click(object sender, EventArgs e)
         {
             Last();
+            NextDataGRid(txtINVid.Text);
+
         }
 
     }

@@ -210,9 +210,9 @@ namespace CapaNegocio
         //------------------------------------------------------------------
         //M�todo Mostrar que llama al m�todo Mostrar de la clase DPostres
         //de la CapaDatos
-        public static DataTable Mostrar()
+        public static DataTable Mostrar(String iINVid)
         {
-            return new DAcfINBt_Inventariobienes().Mostrar();
+            return new DAcfINBt_Inventariobienes().Mostrar(iINVid);
         }
 
         //------------------------------------------------------------------
