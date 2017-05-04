@@ -264,7 +264,7 @@ namespace CapaDatos
                 //
                 SqlParameter PardtINVperiodo = new SqlParameter();
                 PardtINVperiodo.ParameterName = "@dtINVperiodo";
-                PardtINVperiodo.SqlDbType = SqlDbType.DateTime;
+                PardtINVperiodo.SqlDbType = SqlDbType.Char;
                 PardtINVperiodo.Value = acfINVp_Inventario.INVperiodo;
                 SqlCmd.Parameters.Add(PardtINVperiodo);
                 //Ejecutamos nuestro comando
@@ -341,7 +341,7 @@ namespace CapaDatos
                 //
                 SqlParameter PardtINVperiodo = new SqlParameter();
                 PardtINVperiodo.ParameterName = "@dtINVperiodo";
-                PardtINVperiodo.SqlDbType = SqlDbType.DateTime;
+                PardtINVperiodo.SqlDbType = SqlDbType.Char;
                 PardtINVperiodo.Value = acfINVp_Inventario.INVperiodo;
                 SqlCmd.Parameters.Add(PardtINVperiodo);
 
@@ -407,6 +407,31 @@ namespace CapaDatos
         }
 
 
+        public DataTable Top()
+        {
+
+            DataTable DtResultado = new DataTable("acfINVp_Inventario");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_T_acfINVp_Inventario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
         //METODO BUSCAR
         public DataTable Buscar(DAcfINVp_Inventario acfINVp_Inventario)
         {
@@ -444,6 +469,66 @@ namespace CapaDatos
             return DtResultado;
 
         }
+        public DataTable Last()
+        {
+            DataTable DtResultado = new DataTable("acfINVp_Inventario");
+            SqlConnection SqlCon = new SqlConnection();
 
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_L_acfINVp_Inventario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+        public DataTable MostrarRegistro(String INVdetalle)
+        {
+
+            DataTable DtResultado = new DataTable("acfINVp_Inventario");
+            SqlConnection SqlCon = new SqlConnection();
+
+
+            try
+            {
+
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_B_acfINVp_Inventario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+
+                SqlParameter ParINVdetalle = new SqlParameter();
+                ParINVdetalle.ParameterName = "@INVdetalle";
+                ParINVdetalle.SqlDbType = SqlDbType.Char;
+                ParINVdetalle.Size = 100;
+                ParINVdetalle.Value = INVdetalle;
+                SqlCmd.Parameters.Add(ParINVdetalle);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+
+            }
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+
+        }
     }
 }

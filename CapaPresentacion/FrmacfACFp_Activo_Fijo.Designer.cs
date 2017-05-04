@@ -311,7 +311,6 @@
             this.toolStrip1.Name = "toolStrip1";
 
             this.toolStrip1.Size = new System.Drawing.Size(963, 67);
-
             this.toolStrip1.TabIndex = 124;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -2522,6 +2521,7 @@
 
             this.txtACFfactortrib.TextChanged += new System.EventHandler(this.txtACFfactortrib_TextChanged);
 
+
             // 
             // groupBox1
             // 
@@ -2566,7 +2566,7 @@
             this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(199, 160);
             this.dtpACFfechanotaingreso.Margin = new System.Windows.Forms.Padding(4);
             this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
-            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(185, 22);
+            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(185, 20);
             this.dtpACFfechanotaingreso.TabIndex = 154;
             // 
             // groupBox3
@@ -2614,7 +2614,7 @@
             this.dtpACFfcapitalizacion.Location = new System.Drawing.Point(578, 170);
             this.dtpACFfcapitalizacion.Margin = new System.Windows.Forms.Padding(4);
             this.dtpACFfcapitalizacion.Name = "dtpACFfcapitalizacion";
-            this.dtpACFfcapitalizacion.Size = new System.Drawing.Size(185, 22);
+            this.dtpACFfcapitalizacion.Size = new System.Drawing.Size(185, 20);
             this.dtpACFfcapitalizacion.TabIndex = 164;
             // 
             // groupBox4

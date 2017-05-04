@@ -222,7 +222,7 @@ namespace CapaPresentacion
             this.Activo = 1;
             this.tomaTab();
             this.Botones(true);
-            this.dataListado.DataSource = NacfINBt_Inventariobienes.Mostrar();
+            this.dataListado.DataSource = NacfINBt_Inventariobienes.Mostrar("1");
 
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             if (dataListado.Rows.Count == 0)
