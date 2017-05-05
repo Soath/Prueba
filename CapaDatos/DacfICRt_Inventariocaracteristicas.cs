@@ -1466,42 +1466,43 @@ namespace CapaDatos
 	}
 
 
-    //METODO BUSCAR
-
-	public DataTable Buscar(DacfICRt_Inventariocaracteristicas acfICRt_Inventariocaracteristicas) {
-
+    public DataTable Buscar(string iACFid)
+    {
         DataTable DtResultado = new DataTable("acfICRt_Inventariocaracteristicas");
-            SqlConnection SqlCon = new SqlConnection();
+        SqlConnection SqlCon = new SqlConnection();
 
-
-		try {
-
+        try
+        {
+            //Codigo
             SqlCon.ConnectionString = DConexion.CnBDActivo;
             SqlCommand SqlCmd = new SqlCommand();
             SqlCmd.Connection = SqlCon;
             SqlCmd.CommandText = "usp_B_acfICRt_Inventariocaracteristicas";
             SqlCmd.CommandType = CommandType.StoredProcedure;
 
+            SqlParameter ParACFid = new SqlParameter();
+            ParACFid.ParameterName = "@ACFid";
+            ParACFid.SqlDbType = SqlDbType.Int;
+            ParACFid.Size = 50;
+            ParACFid.Value = iACFid;
+            SqlCmd.Parameters.Add(ParACFid);
 
+            //SqlParameter PariMVAid = new SqlParameter();
+            //PariMVAid.ParameterName = "@iMVAid";
+            //PariMVAid.SqlDbType = SqlDbType.Int;
+            //PariMVAid.Value = MVAid;
+            //SqlCmd.Parameters.Add(PariMVAid);
 
-            SqlParameter ParCRSserie = new SqlParameter();
-            ParCRSserie.ParameterName = "@sCRSserie";
-            ParCRSserie.SqlDbType = SqlDbType.VarChar;
-            ParCRSserie.Size = 50;
-            ParCRSserie.Value = acfICRt_Inventariocaracteristicas.CRSserie;
-            SqlCmd.Parameters.Add(ParCRSserie);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
             SqlDat.Fill(DtResultado);
-
-		}
+        }
         catch (Exception ex)
         {
             DtResultado = null;
         }
         return DtResultado;
-
-	}
+    }
 
 }
 }
