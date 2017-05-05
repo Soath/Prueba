@@ -331,11 +331,9 @@
             this.toolStripImagen});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-<<<<<<< HEAD
+
             this.toolStrip1.Size = new System.Drawing.Size(963, 67);
-=======
-            this.toolStrip1.Size = new System.Drawing.Size(1377, 67);
->>>>>>> origin/master
+
             this.toolStrip1.TabIndex = 124;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -2569,9 +2567,10 @@
             this.label50.TabIndex = 7;
             this.label50.Text = "Depreciacion Acumulada NIIF";
             // 
-<<<<<<< HEAD
+
+
             // cboAMBid
-=======
+
             // txtACFvalorniif
             // 
             this.txtACFvalorniif.Location = new System.Drawing.Point(575, 26);
@@ -2582,7 +2581,7 @@
             this.txtACFvalorniif.TextChanged += new System.EventHandler(this.txtACFvalorniif_TextChanged);
             // 
             // txtACFvutilniifdia
->>>>>>> origin/master
+
             // 
             this.txtACFvutilniifdia.Location = new System.Drawing.Point(575, 63);
             this.txtACFvutilniifdia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -2896,8 +2895,7 @@
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // dtpACFfechacomprobante
-            // 
-<<<<<<< HEAD
+
             this.txtACFfactortrib.Location = new System.Drawing.Point(160, 99);
             this.txtACFfactortrib.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFfactortrib.Name = "txtACFfactortrib";
@@ -2913,7 +2911,7 @@
             this.groupBox1.TabIndex = 158;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-=======
+
             this.dtpACFfechacomprobante.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpACFfechacomprobante.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpACFfechacomprobante.Location = new System.Drawing.Point(202, 142);
@@ -2931,7 +2929,7 @@
             this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
             this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(185, 22);
             this.dtpACFfechanotaingreso.TabIndex = 154;
->>>>>>> origin/master
+
             // 
             // groupBox2
             // 
@@ -3186,10 +3184,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(963, 602);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.txtACFtipo_activo);
+            this.Controls.Add(this.label22);            
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -3198,9 +3195,9 @@
             this.Controls.Add(this.cboMVMid);
             this.Controls.Add(this.cboPERNR);
             this.Controls.Add(this.label32);
-=======
+
             this.ClientSize = new System.Drawing.Size(1377, 671);
->>>>>>> origin/master
+
             this.Controls.Add(this.cboKOSTL);
             this.Controls.Add(this.cboCSTid);
             this.Controls.Add(this.cboBUKRS);
