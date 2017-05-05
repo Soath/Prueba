@@ -10,7 +10,7 @@ using System.Data;
 
 namespace CapaNegocio
 {
-    public class NacfTRNt_terrenodetallecs
+    public class NacfTRNt_terrenodetalle
     {
 
          public static string Insertar(
@@ -135,16 +135,15 @@ namespace CapaNegocio
          {
              return new DAcfTRNt_terrenodetalle().Mostrar();
          }
+
+         public static DataTable Buscar(string ACFid)
+         {
+             return new DAcfTRNt_terrenodetalle().Buscar(ACFid);
+         }
          //------------------------------------------------------------------
          //M�todo Buscar que llama al m�todo BuscarNombre
          //de la clase DPostresa de la CapaDatos
 
-         public static DataTable Buscar(string sRVAcodigo)
-         {
-             DAcfTRNt_terrenodetalle Obj = new DAcfTRNt_terrenodetalle();
-             Obj.RVAcodigo = sRVAcodigo;
-             return Obj.Buscar(Obj);
-         }
 
     }
 }

@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using CapaDatos;
 using System.Data;
 
-namespace CapaDatos
+namespace CapaNegocio
 {
     public class NacfCRSt_Caracteristicas
     {
@@ -308,9 +307,7 @@ namespace CapaDatos
 
         public static DataTable Buscar(string sCRSserie)
         {
-            DacfCRSt_Caracteristicas Obj = new DacfCRSt_Caracteristicas();
-            Obj.CRSserie = sCRSserie;
-            return Obj.Buscar(Obj);
+            return new DacfCRSt_Caracteristicas().Buscar(sCRSserie);
         }
 
     }

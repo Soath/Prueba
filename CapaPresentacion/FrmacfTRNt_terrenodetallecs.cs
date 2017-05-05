@@ -21,7 +21,9 @@ namespace CapaPresentacion
         public int idEditar = 0;
         public string MensError;
         private static FrmacfTRNt_terrenodetallecs _Instancia;
-
+        public string Con;
+        //public static string AFCidex;
+        //public string AFCidex { get; set; }
         public static FrmacfTRNt_terrenodetallecs GetInstancia()
         {
             if (_Instancia == null)
@@ -30,10 +32,12 @@ namespace CapaPresentacion
             }
             return _Instancia;
         }
+
+        public string AFCidex = "22";   
         public FrmacfTRNt_terrenodetallecs()
         {
             InitializeComponent();
-
+        
             this.toolStripRefrescar.Click += new System.EventHandler(this.Control_Click_Refrescar);
             this.toolStripAgregar.Click += new System.EventHandler(this.Control_Click_Agregar);
             this.toolStripEditar.Click += new System.EventHandler(this.Control_Click_Editar);
@@ -49,15 +53,16 @@ namespace CapaPresentacion
 
             EstadoText(this.Controls, true, false);
             mostrar();
-            MostrarRegistro();
-            MostrarCombos();            
+            MessageBox.Show(AFCidex);
+            MostrarRegistro(AFCidex);
+            // MostrarCombos();            
           
             CheckAll(this,true);
         }
         //--------------------------------------------------------------------------------------------------	
         // insertar aqui todos los procedimientos para ABC	
         //--------------------------------------------------------------------------------------------------	
-        
+
         private void CheckAll(Control parent, bool value)
         {           
             foreach (Control currentControl in parent.Controls)
@@ -101,11 +106,11 @@ namespace CapaPresentacion
 
         private void Control_Click_Prev(object sender, EventArgs e)
             {
-                Prev(txtACFid.Text);
+                Prev("txtACFid.Text");
             }
         private void Control_Click_Next(object sender, EventArgs e)
             {
-                Next(txtACFid.Text);
+                Next("txtACFid.Text");
             }
         private void Control_Click_Top(object sender, EventArgs e)
             {
@@ -182,7 +187,7 @@ namespace CapaPresentacion
             this.toolStripEliminar.Visible  = !edo;
             this.toolStripImprimir.Visible  = !edo;
                                               
-            this.toolStripGuardar.Visible   = !edo;
+            this.toolStripGuardar.Visible   = edo;
             this.toolStripCancelar.Visible  = edo;
             this.toolStripPrimero.Visible   = !edo;
             this.toolStripAnterior.Visible  = !edo;
@@ -235,7 +240,7 @@ namespace CapaPresentacion
                 {
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
-                    txtACFid.Text = Convert.ToString(row["ACFid"]);
+                    txtACFArea.Text = Convert.ToString(row["ACFArea"]);
                     
 
                     //guardo datos en variables
@@ -508,19 +513,19 @@ namespace CapaPresentacion
         {
             NacfACFp_Activo_Fijo.Buscar("1");
         }
-        private void MostrarRegistro()
+        private void MostrarRegistro(string ACFid)
         {
-
+            MessageBox.Show(ACFid);
             try
             {
-                DataTable dat = NacfACFp_Activo_Fijo.Mostrar();
+                DataTable dat = NacfTRNt_terrenodetalle.Buscar(ACFid);
 
                   //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
-
+                    
                 if (dat.Rows.Count > 0)
                 {
                     DataRow row = dat.Rows[0];
-                    
+                    txtRVAcodigo.Text = Convert.ToString(row["RVAcodigo"]);
                     //guardo datos en variables
                     //txtACFid.Text = Convert.ToString(row["ACFid"]);
                     //txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
@@ -659,6 +664,11 @@ namespace CapaPresentacion
         {
             Form FrmacfTRNt_terrenodetallecs = new FrmacfTRNt_terrenodetallecs();
             FrmacfTRNt_terrenodetallecs.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
 

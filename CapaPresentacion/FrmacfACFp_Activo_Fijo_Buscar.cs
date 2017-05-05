@@ -50,7 +50,7 @@ namespace CapaPresentacion
 
         private void kryptonDataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (DataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString() != "")
+            if (DataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString() != "")
             {
                 IdAct = int.Parse(DataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
                 this.Dispose();

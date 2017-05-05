@@ -623,7 +623,7 @@ namespace CapaDatos
     }
     //METODO BUSCAR
 
-    public DataTable Buscar(DAcfTRNt_terrenodetalle acfTRNt_terrenodetalle)
+    public DataTable Buscar(string ACFid)
     {
 
         DataTable DtResultado = new DataTable("acfTRNt_terrenodetalle");
@@ -642,9 +642,9 @@ namespace CapaDatos
 
 
             SqlParameter ParRVAcodigo = new SqlParameter();
-            ParRVAcodigo.ParameterName = "@sRVAcodigo";
+            ParRVAcodigo.ParameterName = "@sACFid";
             ParRVAcodigo.SqlDbType = SqlDbType.Char;
-            ParRVAcodigo.Value = acfTRNt_terrenodetalle.RVAcodigo;
+            ParRVAcodigo.Value = ACFid;
             SqlCmd.Parameters.Add(ParRVAcodigo);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
