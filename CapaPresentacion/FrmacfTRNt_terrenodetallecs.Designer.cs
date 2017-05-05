@@ -787,7 +787,7 @@
             this.Controls.Add(this.txtCRSkilometro);
             this.Controls.Add(this.txtCRScarretera);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmacfTRNt_terrenodetallecs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfTRNt_terrenodetallecs";

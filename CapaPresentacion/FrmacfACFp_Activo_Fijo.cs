@@ -846,7 +846,7 @@ namespace CapaPresentacion
         {
             MessageBox.Show(Convert.ToString(txtACFid.Text));
             FrmacfTRNt_terrenodetallecs FrmacfTRNt_terrenodetallecs = new FrmacfTRNt_terrenodetallecs();
-            FrmacfTRNt_terrenodetallecs.AFCidex = "22";
+            FrmacfTRNt_terrenodetallecs.AFCidex = Convert.ToString(txtACFid.Text);
                 //Convert.ToString(txtACFid.Text);
             FrmacfTRNt_terrenodetallecs.ShowDialog();
         }

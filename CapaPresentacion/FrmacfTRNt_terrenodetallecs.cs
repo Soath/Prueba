@@ -20,20 +20,11 @@ namespace CapaPresentacion
         int Graba = 0;
         public int idEditar = 0;
         public string MensError;
-        private static FrmacfTRNt_terrenodetallecs _Instancia;
         public string Con;
         //public static string AFCidex;
         //public string AFCidex { get; set; }
-        public static FrmacfTRNt_terrenodetallecs GetInstancia()
-        {
-            if (_Instancia == null)
-            {
-                _Instancia = new FrmacfTRNt_terrenodetallecs();
-            }
-            return _Instancia;
-        }
-
-        public string AFCidex = "22";   
+       
+        public string AFCidex ;   
         public FrmacfTRNt_terrenodetallecs()
         {
             InitializeComponent();
@@ -63,7 +54,7 @@ namespace CapaPresentacion
         // insertar aqui todos los procedimientos para ABC	
         //--------------------------------------------------------------------------------------------------	
 
-        private void CheckAll(Control parent, bool value)
+        public void CheckAll(Control parent, bool value)
         {           
             foreach (Control currentControl in parent.Controls)
             {
