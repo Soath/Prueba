@@ -1029,44 +1029,42 @@ namespace CapaDatos
 	}
          //METODO BUSCAR
 
-	public DataTable Buscar(DAcfINBt_Inventariobienes acfINBt_Inventariobienes) {
-
+    public DataTable Buscar(string iACFid)
+    {
         DataTable DtResultado = new DataTable("acfINBt_Inventariobienes");
-            SqlConnection SqlCon = new SqlConnection();
+        SqlConnection SqlCon = new SqlConnection();
 
-
-		try {
-
+        try
+        {
+            //Codigo
             SqlCon.ConnectionString = DConexion.CnBDActivo;
             SqlCommand SqlCmd = new SqlCommand();
             SqlCmd.Connection = SqlCon;
             SqlCmd.CommandText = "usp_B_acfINBt_Inventariobienes";
             SqlCmd.CommandType = CommandType.StoredProcedure;
 
+            SqlParameter ParACFid = new SqlParameter();
+            ParACFid.ParameterName = "@ACFid";
+            ParACFid.SqlDbType = SqlDbType.Int;
+            ParACFid.Size = 50;
+            ParACFid.Value = iACFid;
+            SqlCmd.Parameters.Add(ParACFid);
 
+            //SqlParameter PariMVAid = new SqlParameter();
+            //PariMVAid.ParameterName = "@iMVAid";
+            //PariMVAid.SqlDbType = SqlDbType.Int;
+            //PariMVAid.Value = MVAid;
+            //SqlCmd.Parameters.Add(PariMVAid);
 
-             SqlParameter PariINVid = new SqlParameter();
-                PariINVid.ParameterName = "@iINVid";
-                PariINVid.SqlDbType = SqlDbType.Int;
-                PariINVid.Value = acfINBt_Inventariobienes.INVid;
-                SqlCmd.Parameters.Add(PariINVid);
-                //
-                 SqlParameter PariACFid = new SqlParameter();
-                PariACFid.ParameterName = "@iACFid";
-                PariACFid.SqlDbType = SqlDbType.Int;
-                PariACFid.Value = acfINBt_Inventariobienes.ACFid;
-                SqlCmd.Parameters.Add(PariACFid);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
             SqlDat.Fill(DtResultado);
-
-		}
+        }
         catch (Exception ex)
         {
             DtResultado = null;
         }
         return DtResultado;
-
-	}
+    }
     }
 }

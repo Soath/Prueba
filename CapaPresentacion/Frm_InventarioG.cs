@@ -18,6 +18,7 @@ namespace CapaPresentacion
         int Graba = 0;
         public int idEditar = 0;
         public string MensError;
+        
         BindingSource bss = new BindingSource();
 
         private static Frm_InventarioG _Instancia;
@@ -40,7 +41,7 @@ namespace CapaPresentacion
             mostrar();
             MostrarRegistro();
         }
-       
+        public static int IdAct;
         private void dtperiodo_ValueChanged(object sender, EventArgs e)
         {
 
@@ -134,6 +135,7 @@ namespace CapaPresentacion
                     }
                 }
             }
+            
         }
         private void MostrarDatos(DataTable dat)
         {
@@ -485,6 +487,26 @@ namespace CapaPresentacion
             Last();
             NextDataGRid(txtINVid.Text);
 
+        }
+
+     
+
+        private void datalistado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (datalistado.Rows[e.RowIndex].Cells[1].Value.ToString() != "")
+            {
+                IdAct = int.Parse(datalistado.Rows[e.RowIndex].Cells[0].Value.ToString());
+                Form Frm_RegistroInventario = new Frm_RegistroInventario();
+                Frm_RegistroInventario.ShowDialog();
+
+            }
+            
+        }
+
+        private void btINBbuscar_Click(object sender, EventArgs e)
+        {
+            //bss.DataSource = NacfINBt_Inventariobienes.Buscar(this.txtINBacf.Text);
+            //this.datalistado.DataSource = bss;
         }
 
     }

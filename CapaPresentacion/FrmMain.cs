@@ -253,7 +253,7 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
         private void ribbonButton41_Click(object sender, EventArgs e)
         {
             Form Frm_InventarioG = new Frm_InventarioG();
-            Frm_InventarioG.ShowDialog();
+            Frm_InventarioG.Show();
         }
 
         private void ribbonButton58_Click(object sender, EventArgs e)

@@ -249,8 +249,9 @@
             this.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datalistado.Location = new System.Drawing.Point(15, 223);
             this.datalistado.Name = "datalistado";
-            this.datalistado.Size = new System.Drawing.Size(826, 199);
+            this.datalistado.Size = new System.Drawing.Size(823, 199);
             this.datalistado.TabIndex = 154;
+            this.datalistado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellDoubleClick);
             // 
             // toolStrip1
             // 
@@ -429,7 +430,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(731, 204);
+            this.lblTotal.Location = new System.Drawing.Point(36, 204);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(41, 13);
             this.lblTotal.TabIndex = 158;
@@ -439,6 +440,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(850, 434);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.txtINVperiodo);
@@ -465,9 +467,9 @@
             this.Controls.Add(this.label3);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_InventarioG";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_InventarioG";
-            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).EndInit();
             this.toolStrip1.ResumeLayout(false);

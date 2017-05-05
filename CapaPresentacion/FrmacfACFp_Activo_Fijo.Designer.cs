@@ -309,7 +309,6 @@
             this.toolStripImagen});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-
             this.toolStrip1.Size = new System.Drawing.Size(963, 67);
             this.toolStrip1.TabIndex = 124;
             this.toolStrip1.Text = "toolStrip1";
@@ -1953,16 +1952,6 @@
             this.label13.TabIndex = 5;
             this.label13.Text = "Factor de capitalizacion";
             // 
-
-            // txtACFfcapitalizacion
-            // 
-            //this.txtACFfcapitalizacion.Location = new System.Drawing.Point(439, 139);
-            //this.txtACFfcapitalizacion.Margin = new System.Windows.Forms.Padding(2);
-            //this.txtACFfcapitalizacion.Name = "txtACFfcapitalizacion";
-            //this.txtACFfcapitalizacion.Size = new System.Drawing.Size(132, 20);
-            //this.txtACFfcapitalizacion.TabIndex = 0;
-            // 
-
             // cboAMBid
             // 
             this.cboAMBid.DisplayMember = "AMBid";
@@ -2509,19 +2498,7 @@
             this.txtACFfactortrib.Name = "txtACFfactortrib";
             this.txtACFfactortrib.Size = new System.Drawing.Size(140, 20);
             this.txtACFfactortrib.TabIndex = 146;
-
-            // 
-            // dtpACFfechanotaingreso
-            // 
-            this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(149, 126);
-            this.dtpACFfechanotaingreso.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
-            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(140, 20);
-            this.dtpACFfechanotaingreso.TabIndex = 157;
-
             this.txtACFfactortrib.TextChanged += new System.EventHandler(this.txtACFfactortrib_TextChanged);
-
-
             // 
             // groupBox1
             // 
@@ -2657,9 +2634,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
             this.ClientSize = new System.Drawing.Size(963, 602);
-
             this.Controls.Add(this.label22);
             this.Controls.Add(this.txtACFtipo_activo);
             this.Controls.Add(this.groupBox4);

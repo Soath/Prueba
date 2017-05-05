@@ -9,7 +9,7 @@ using System.Data;
 
 namespace CapaNegocio
 {
-    class NacfICRt_Inventariocaracteristicas
+    public class NacfICRt_Inventariocaracteristicas
     {
         //M�todo Insertar que llama al m�todo Insertar de la clase DPostres
         //de la CapaDatos
@@ -310,11 +310,9 @@ namespace CapaNegocio
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
 
-        public static DataTable Buscar(string sCRSserie)
+        public static DataTable Buscar(String iACFid)
         {
-            DacfICRt_Inventariocaracteristicas Obj = new DacfICRt_Inventariocaracteristicas();
-            Obj.CRSserie = sCRSserie;
-            return Obj.Buscar(Obj);
+            return new DacfICRt_Inventariocaracteristicas().Buscar(iACFid);
         }
 
     }
