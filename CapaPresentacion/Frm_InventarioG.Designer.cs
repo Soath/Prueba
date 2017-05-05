@@ -49,7 +49,6 @@
             this.dtINVfechainicio = new System.Windows.Forms.DateTimePicker();
             this.rbtotal = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.dtINVperiodo = new System.Windows.Forms.DateTimePicker();
             this.cbActivo = new System.Windows.Forms.CheckBox();
             this.datalistado = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -60,11 +59,13 @@
             this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
             this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
             this.toolStripPrimero = new System.Windows.Forms.ToolStripButton();
+            this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
-            this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
             this.toolStripBuscar = new System.Windows.Forms.ToolStripButton();
             this.txtINVfechacierre = new System.Windows.Forms.DateTimePicker();
+            this.txtINVperiodo = new System.Windows.Forms.TextBox();
+            this.lblTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -232,14 +233,6 @@
             this.radioButton2.Text = "Por Área";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // dtINVperiodo
-            // 
-            this.dtINVperiodo.Location = new System.Drawing.Point(597, 158);
-            this.dtINVperiodo.Name = "dtINVperiodo";
-            this.dtINVperiodo.Size = new System.Drawing.Size(241, 20);
-            this.dtINVperiodo.TabIndex = 151;
-            this.dtINVperiodo.ValueChanged += new System.EventHandler(this.dtperiodo_ValueChanged);
-            // 
             // cbActivo
             // 
             this.cbActivo.AutoSize = true;
@@ -366,6 +359,19 @@
             this.toolStripPrimero.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripPrimero.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.toolStripPrimero.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripPrimero.Click += new System.EventHandler(this.toolStripPrimero_Click);
+            // 
+            // toolStripUltimo
+            // 
+            this.toolStripUltimo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripUltimo.Image")));
+            this.toolStripUltimo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripUltimo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripUltimo.Name = "toolStripUltimo";
+            this.toolStripUltimo.Size = new System.Drawing.Size(47, 64);
+            this.toolStripUltimo.Text = "Ultimo";
+            this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripUltimo.Click += new System.EventHandler(this.toolStripUltimo_Click);
             // 
             // toolStripAnterior
             // 
@@ -392,17 +398,6 @@
             this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripSiguiente.Click += new System.EventHandler(this.toolStripSiguiente_Click_1);
             // 
-            // toolStripUltimo
-            // 
-            this.toolStripUltimo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripUltimo.Image")));
-            this.toolStripUltimo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripUltimo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripUltimo.Name = "toolStripUltimo";
-            this.toolStripUltimo.Size = new System.Drawing.Size(47, 64);
-            this.toolStripUltimo.Text = "Ultimo";
-            this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
             // toolStripBuscar
             // 
             this.toolStripBuscar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBuscar.Image")));
@@ -424,16 +419,33 @@
             this.txtINVfechacierre.TabIndex = 156;
             this.txtINVfechacierre.Value = new System.DateTime(2017, 4, 28, 8, 50, 2, 0);
             // 
+            // txtINVperiodo
+            // 
+            this.txtINVperiodo.Location = new System.Drawing.Point(597, 160);
+            this.txtINVperiodo.Name = "txtINVperiodo";
+            this.txtINVperiodo.Size = new System.Drawing.Size(241, 20);
+            this.txtINVperiodo.TabIndex = 157;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(731, 204);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(41, 13);
+            this.lblTotal.TabIndex = 158;
+            this.lblTotal.Text = "lblTotal";
+            // 
             // Frm_InventarioG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(850, 434);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.txtINVperiodo);
             this.Controls.Add(this.txtINVfechacierre);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.datalistado);
             this.Controls.Add(this.cbActivo);
-            this.Controls.Add(this.dtINVperiodo);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.rbtotal);
             this.Controls.Add(this.dtINVfechainicio);
@@ -487,7 +499,6 @@
         private System.Windows.Forms.RadioButton rbtotal;
         private System.Windows.Forms.DataGridView datalistado;
         private System.Windows.Forms.CheckBox cbActivo;
-        protected System.Windows.Forms.DateTimePicker dtINVperiodo;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripRefrescar;
         private System.Windows.Forms.ToolStripButton toolStripAgregar;
@@ -502,5 +513,7 @@
         private System.Windows.Forms.ToolStripButton toolStripBuscar;
         private System.Windows.Forms.DateTimePicker dtINVfechainicio;
         private System.Windows.Forms.DateTimePicker txtINVfechacierre;
+        private System.Windows.Forms.TextBox txtINVperiodo;
+        private System.Windows.Forms.Label lblTotal;
     }
 }

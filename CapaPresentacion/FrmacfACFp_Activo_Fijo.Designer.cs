@@ -331,7 +331,12 @@
             this.toolStripImagen});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
+<<<<<<< HEAD
             this.toolStrip1.Size = new System.Drawing.Size(1377, 82);
+=======
+
+            this.toolStrip1.Size = new System.Drawing.Size(963, 67);
+>>>>>>> origin/master
             this.toolStrip1.TabIndex = 124;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -2986,6 +2991,7 @@
             // 
             // cboANLKL
             // 
+<<<<<<< HEAD
             this.cboANLKL.AutoComplete = true;
             this.cboANLKL.AutoDropdown = true;
             this.cboANLKL.BackColorEven = System.Drawing.Color.Lavender;
@@ -3002,6 +3008,17 @@
             this.cboANLKL.Name = "cboANLKL";
             this.cboANLKL.Size = new System.Drawing.Size(185, 23);
             this.cboANLKL.TabIndex = 174;
+=======
+            this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(149, 126);
+            this.dtpACFfechanotaingreso.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
+            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(140, 20);
+            this.dtpACFfechanotaingreso.TabIndex = 157;
+
+            this.txtACFfactortrib.TextChanged += new System.EventHandler(this.txtACFfactortrib_TextChanged);
+
+
+>>>>>>> origin/master
             // 
             // cboPERNR
             // 
@@ -3044,6 +3061,7 @@
             // 
             // cboAMBid
             // 
+<<<<<<< HEAD
             this.cboAMBid.AutoComplete = true;
             this.cboAMBid.AutoDropdown = true;
             this.cboAMBid.BackColorEven = System.Drawing.Color.Lavender;
@@ -3060,6 +3078,15 @@
             this.cboAMBid.Name = "cboAMBid";
             this.cboAMBid.Size = new System.Drawing.Size(185, 23);
             this.cboAMBid.TabIndex = 177;
+=======
+            this.dtpACFfechanotaingreso.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfechanotaingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(199, 160);
+            this.dtpACFfechanotaingreso.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
+            this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(185, 20);
+            this.dtpACFfechanotaingreso.TabIndex = 154;
+>>>>>>> origin/master
             // 
             // cboVNRid
             // 
@@ -3082,6 +3109,7 @@
             // 
             // cboV_T087U_ANLUE
             // 
+<<<<<<< HEAD
             this.cboV_T087U_ANLUE.AutoComplete = true;
             this.cboV_T087U_ANLUE.AutoDropdown = true;
             this.cboV_T087U_ANLUE.BackColorEven = System.Drawing.Color.Lavender;
@@ -3098,6 +3126,15 @@
             this.cboV_T087U_ANLUE.Name = "cboV_T087U_ANLUE";
             this.cboV_T087U_ANLUE.Size = new System.Drawing.Size(171, 23);
             this.cboV_T087U_ANLUE.TabIndex = 183;
+=======
+            this.dtpACFfcapitalizacion.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfcapitalizacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfcapitalizacion.Location = new System.Drawing.Point(578, 170);
+            this.dtpACFfcapitalizacion.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpACFfcapitalizacion.Name = "dtpACFfcapitalizacion";
+            this.dtpACFfcapitalizacion.Size = new System.Drawing.Size(185, 20);
+            this.dtpACFfcapitalizacion.TabIndex = 164;
+>>>>>>> origin/master
             // 
             // cboCMPid
             // 

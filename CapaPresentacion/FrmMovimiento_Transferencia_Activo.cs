@@ -102,20 +102,23 @@ namespace CapaPresentacion
         private void Control_Click_Prev(object sender, EventArgs e)
         {
             Prev(txtMVPid_proceso.Text);
-            PrevDataGRid(txtMVPid_proceso.Text);
+            DataGRid(txtMVPid_proceso.Text);
         }
         private void Control_Click_Next(object sender, EventArgs e)
         {
             Next(txtMVPid_proceso.Text);
-            NextDataGRid(txtMVPid_proceso.Text);
+            DataGRid(txtMVPid_proceso.Text);
         }
         private void Control_Click_Top(object sender, EventArgs e)
         {
             Top();
+            DataGRid(txtMVPid_proceso.Text);
+
         }
         private void Control_Click_Last(object sender, EventArgs e)
         {
             Last();
+            DataGRid(txtMVPid_proceso.Text);
         }
 
         private void Control_Click_Serch(object sender, EventArgs e)
@@ -212,12 +215,9 @@ namespace CapaPresentacion
 
         private void OcultarColumnas() { }
 
-        private void NextDataGRid(String iMVAid)
-        {
-            this.dataListado.DataSource = NacfMVAt_MovimientoActivo.Mostrar(iMVAid);
-        }
 
-        private void PrevDataGRid(String iMVAid)
+
+        private void DataGRid(String iMVAid)
         {
             this.dataListado.DataSource = NacfMVAt_MovimientoActivo.Mostrar(iMVAid);
         }

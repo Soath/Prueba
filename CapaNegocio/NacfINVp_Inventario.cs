@@ -66,6 +66,18 @@ namespace CapaNegocio
         {
             return new DAcfINVp_Inventario().Prev(iINVid);
         }
+          public static DataTable Top()
+        {
+            return new DAcfINVp_Inventario().Top();
+        }
+          public static DataTable MostrarRegistro(string INVdetalle)
+          {
+              return new DAcfINVp_Inventario().MostrarRegistro(INVdetalle);
+          }
+          public static DataTable Last()
+          {
+              return new DAcfINVp_Inventario().Last();
+          }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
