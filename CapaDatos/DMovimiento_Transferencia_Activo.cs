@@ -704,19 +704,21 @@ namespace CapaDatos
         this.mMVPfecha_registro = MVPfecha_registro;
 	}
 
-/*	public object Clone() {
-//		return base.MemberwiseClone();
-//	}
-*/
+        /*	public object Clone() {
+        //		return base.MemberwiseClone();
+        //	}
+        */
 
-    //METODO MOSTRAR 
-        public DataTable Mostrar() {
-           DataTable DtResultado = new DataTable("acfCMVp_Cabecera_Movimiento");
+        //METODO MOSTRAR 
+        public DataTable Mostrar()
+        {
+            DataTable DtResultado = new DataTable("acfCMVp_Cabecera_Movimiento");
             SqlConnection SqlCon = new SqlConnection();
 
-		try {
-            //Codigo
-             SqlCon.ConnectionString = DConexion.CnBDActivo;
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "usp_S_acfCMVp_Cabecera_Movimiento";
@@ -726,17 +728,45 @@ namespace CapaDatos
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
-        }
-				
-	        catch (Exception ex)
+            }
+
+            catch (Exception ex)
             {
                 DtResultado = null;
             }
             return DtResultado;
-	}
+        }
+
+        //METODO MOSTRAR 2
+        public DataTable Mostrar2()
+        {
+            DataTable DtResultado = new DataTable("acfCMVp_Cabecera_Movimiento");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S_acfCMVp_Cabecera_Movimiento2";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
 
         //METODO INSERTAR 
-	public string Insertar(DMovimiento_Transferencia_Activo acfCMVp_Cabecera_Movimiento)
+        public string Insertar(DMovimiento_Transferencia_Activo acfCMVp_Cabecera_Movimiento)
     {
         string rpta = "";
         SqlConnection SqlCon = new SqlConnection();

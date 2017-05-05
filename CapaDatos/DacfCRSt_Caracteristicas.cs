@@ -1447,7 +1447,7 @@ namespace CapaDatos
 
     //METODO BUSCAR
 
-	public DataTable Buscar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas) {
+	public DataTable Buscar(string ACFid) {
 
         DataTable DtResultado = new DataTable("acfCRSt_Caracteristicas");
             SqlConnection SqlCon = new SqlConnection();
@@ -1464,10 +1464,10 @@ namespace CapaDatos
 
 
             SqlParameter ParCRSserie = new SqlParameter();
-            ParCRSserie.ParameterName = "@sCRSserie";
-            ParCRSserie.SqlDbType = SqlDbType.VarChar;
-            ParCRSserie.Size = 50;
-            ParCRSserie.Value = acfCRSt_Caracteristicas.CRSserie;
+            ParCRSserie.ParameterName = "@iACFid";
+            ParCRSserie.SqlDbType = SqlDbType.Char;
+            ParCRSserie.Size = 10;
+            ParCRSserie.Value = Convert.ToInt32(ACFid);
             SqlCmd.Parameters.Add(ParCRSserie);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);

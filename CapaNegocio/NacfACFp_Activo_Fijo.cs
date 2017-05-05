@@ -25,7 +25,7 @@ namespace CapaNegocio
          string sVNRid,                   
          string sACFdescripcion,          
          string dtACFfincorporacion,      
-         string dtACFfcapitalizacion,     
+         string decACFfcapitalizacion,     
          string iACFvutiltribanio,        
          string iACFvutiltribdia,         
          string decACFvalortrib,          
@@ -73,7 +73,7 @@ namespace CapaNegocio
             Obj.VNRid = sVNRid;
             Obj.ACFdescripcion = sACFdescripcion;
             Obj.ACFfincorporacion = dtACFfincorporacion;
-            Obj.ACFfcapitalizacion = dtACFfcapitalizacion;
+            Obj.ACFfcapitalizacion = decACFfcapitalizacion;
             Obj.ACFvutiltribanio = iACFvutiltribanio;
             Obj.ACFvutiltribdia = iACFvutiltribdia;
             Obj.ACFvalortrib = decACFvalortrib;
@@ -125,7 +125,7 @@ namespace CapaNegocio
          string sVNRid,
          string sACFdescripcion,
          string dtACFfincorporacion,
-         string dtACFfcapitalizacion,
+         string decACFfcapitalizacion,
          string iACFvutiltribanio,
          string iACFvutiltribdia,
          string decACFvalortrib,
@@ -173,7 +173,7 @@ namespace CapaNegocio
             Obj.VNRid = sVNRid;
             Obj.ACFdescripcion = sACFdescripcion;
             Obj.ACFfincorporacion = dtACFfincorporacion;
-            Obj.ACFfcapitalizacion = dtACFfcapitalizacion;
+            Obj.ACFfcapitalizacion = decACFfcapitalizacion;
             Obj.ACFvutiltribanio = iACFvutiltribanio;
             Obj.ACFvutiltribdia = iACFvutiltribdia;
             Obj.ACFvalortrib = decACFvalortrib;

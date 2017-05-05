@@ -406,6 +406,11 @@ namespace CapaNegocio
         {
             return new DMovimiento_Transferencia_Activo().Mostrar();
         }
+        //M�todo Mostrar que llama al m�todo Mostrar2
+        public static DataTable Mostrar2()
+        {
+            return new DMovimiento_Transferencia_Activo().Mostrar2();
+        }
 
 
         //------------------------------------------------------------------
