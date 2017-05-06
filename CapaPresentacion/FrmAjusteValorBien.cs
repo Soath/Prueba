@@ -31,39 +31,6 @@ namespace CapaPresentacion
                                 
                 DataTable tabla = NacfACFp_Activo_Fijo.Mostrar2(iACFid);
                 
-                // DataTable ss = NacfACFp_Activo_Fijo.Mostrar2(iACFid);
-                // DataTable ss = New DataTable();
-                // ss.Columns.Add("ACFid");
-                // ss.Columns.Add("ACFdescripcion");
-                // ss.Columns.Add("ACFvutilniifanio");
-                // ss.Columns.Add("ACFvutilniifdia");
-                // ss.Columns.Add("VidaUtilNiffanioMOD");
-                // ss.Columns.Add("VidaUtilNiffdiaMOD");
-                // ss.Columns.Add("ACFvutiltribanio");
-                // ss.Columns.Add("ACFvutiltribdia");
-                // ss.Columns.Add("VUtilTribAnioMOD");
-                // ss.Columns.Add("VUtilTribDiaMOD");
-                // ss.Columns.Add("ACFdepacutrib");
-                // ss.Columns.Add("ACFdepacuniif");
-                // ss.Columns.Add("CMPid");
-                // 
-                 DataRow row = tabla.NewRow();
-                //row["ACFid"] = Convert.ToString(row["ACFid"]);
-                //row["ACFdescripcion"] = Convert.ToString(row["ACFdescripcion"]);
-                //row["ACFvutilniifanio"] = Convert.ToString(row["ACFvutilniifanio"]);
-                //row["ACFvutilniifdia"] = Convert.ToString(row["ACFvutilniifdia"]);
-                //row["VidaUtilNiffanioMOD"] = Convert.ToString(row["VidaUtilNiffanioMOD"]);
-                //row["VidaUtilNiffdiaMOD"] = Convert.ToString(row["VidaUtilNiffdiaMOD"]);
-                //row["ACFvutiltribanio"] = Convert.ToString(row["ACFvutiltribanio"]);
-                //row["ACFvutiltribdia"] = Convert.ToString(row["ACFvutiltribdia"]);
-                //row["VUtilTribAnioMOD"] = Convert.ToString(row["VUtilTribAnioMOD"]);
-                //row["VUtilTribDiaMOD"] = Convert.ToString(row["VUtilTribDiaMOD"]);
-                //row["ACFdepacutrib"] = Convert.ToString(row["ACFdepacutrib"]);
-                //row["ACFdepacuniif"] = Convert.ToString(row["ACFdepacuniif"]);
-                //row["CMPid"] = Convert.ToString(row["CMPid"]);
-                 
-                 tabla.Rows.Add(row);
-                 
                  foreach (DataRow Drow in tabla.Rows)
                  {
                      int num = dataListado.Rows.Add();
