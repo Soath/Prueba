@@ -526,6 +526,38 @@ namespace CapaDatos
             return DtResultado;
 	}
 
+        //METODO MOSTRAR2
+        public DataTable Mostrar2(string iACFid)
+        {
+            DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "[usp_S_AjusteValorBien]";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = iACFid;
+                SqlCmd.Parameters.Add(ParACFid);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
 
         //METODO INSERTAR 
 	public string Insertar(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
