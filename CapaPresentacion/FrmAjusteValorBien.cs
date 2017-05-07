@@ -53,20 +53,50 @@ namespace CapaPresentacion
 
         }
 
-        private void FrmAjusteValorBien_Load(object sender, EventArgs e)
+        private void FrmAjusteValorBien_Load(object sender, EventArgs e)    
         {
-            
+            dataListado.AllowUserToAddRows = false;
         }
 
-        private void dataListado_ColumnAdded(object sender, DataGridViewColumnEventArgs e)
-        {
-            
-        }
+        private void dataListado_ColumnAdded(object sender, DataGridViewColumnEventArgs e) {}
 
         private void button5_Click(object sender, EventArgs e)
         {
             int fil = dataListado.CurrentRow.Index;
             dataListado.Rows.RemoveAt(fil);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         //  string Rta = string.Empty;
+         //  MessageBox.Show("insertar");
+         //  try
+         //  {
+         //      Rta = NacfCMPt_Componente.Insertar(
+         //            this.dataListado.CurrentRow.Cells[1].Value.ToString()
+         //           , this.dataListado.CurrentRow.Cells[5].Value.ToString()
+         //           , this.dataListado.CurrentRow.Cells[6].Value.ToString()
+         //           , this.dataListado.CurrentRow.Cells[9].Value.ToString()
+         //           , this.dataListado.CurrentRow.Cells[10].Value.ToString()                     
+         //          //, this.txtCMPnivel.Text
+         //
+         //         );
+         //      
+         //      if (Rta.Equals("OK"))
+         //      {
+         //          //this.MensajeOk("Regsitro Agregado Correctamente");
+         //      }
+         //      else
+         //      {
+         //          //this.MensajeError("Error al Insertar Registro :" + Rta);
+         //      }
+         //
+         //  }
+         //  catch (Exception ex)
+         //  {
+         //      MessageBox.Show(ex.Message + ex.StackTrace);
+         //  }
+         //
         }
     }
 }
