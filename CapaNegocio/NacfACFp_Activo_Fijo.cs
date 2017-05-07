@@ -209,6 +209,27 @@ namespace CapaNegocio
             Obj.ACFtipo_activo = sACFtipo_activo;
             return Obj.Editar(Obj);
         }
+
+        //Metodo Editar que llama al metodo Editar de la clase DPostres
+        //de la CapaDatos
+        public static string Editar2(
+         string iACFid,
+         string iACFvutilniifanio,
+         string iACFvutilniifdia,
+         string iACFvutiltribanio,
+         string iACFvutiltribdia         
+         )
+        {
+            DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
+            Obj.ACFid = iACFid;
+            Obj.ACFvutilniifanio = iACFvutilniifanio;
+            Obj.ACFvutilniifdia = iACFvutilniifdia;
+            Obj.ACFvutiltribanio = iACFvutiltribanio;
+            Obj.ACFvutiltribdia = iACFvutiltribdia;
+            return Obj.Editar2(Obj);
+        }
+
+
         //------------------------------------------------------------------
         //M�todo Eliminar que llama al m�todo Eliminar de la clase DPostres
         //de la CapaDatos

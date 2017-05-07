@@ -1171,9 +1171,74 @@ namespace CapaDatos
             return rpta; 
 	}
 
+        //METODO EDITAR
+        public string Editar2(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
+        {
+            string rpta = "";
+
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_U_AjusteVidaUtil";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFid);
+                SqlCmd.Parameters.Add(ParACFid);
+                //
+                SqlParameter ParACFvutilniifanio = new SqlParameter();
+                ParACFvutilniifanio.ParameterName = "@iACFvutilniifanio";
+                ParACFvutilniifanio.SqlDbType = SqlDbType.Int;
+                ParACFvutilniifanio.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFvutilniifanio);
+                SqlCmd.Parameters.Add(ParACFvutilniifanio);
+                //
+                SqlParameter ParACFvutilniifdia = new SqlParameter();
+                ParACFvutilniifdia.ParameterName = "@iACFvutilniifdia";
+                ParACFvutilniifdia.SqlDbType = SqlDbType.Int;
+                ParACFvutilniifdia.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFvutilniifdia);
+                SqlCmd.Parameters.Add(ParACFvutilniifdia);
+                //
+                SqlParameter ParACFvutiltribanio = new SqlParameter();
+                ParACFvutiltribanio.ParameterName = "@iACFvutiltribanio";
+                ParACFvutiltribanio.SqlDbType = SqlDbType.Int;
+                ParACFvutiltribanio.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFvutiltribanio);
+                SqlCmd.Parameters.Add(ParACFvutiltribanio);
+                //
+                SqlParameter ParACFvutiltribdia = new SqlParameter();
+                ParACFvutiltribdia.ParameterName = "@iACFvutiltribdia";
+                ParACFvutiltribdia.SqlDbType = SqlDbType.Int;
+                ParACFvutiltribdia.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFvutiltribdia);
+                SqlCmd.Parameters.Add(ParACFvutiltribdia);
+                
+                
+                //Ejecutamos nuestro comando
+
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Modifico el Registro";
+
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
+        }
+
 
         //METODO ELIMINAR
-	public string Eliminar(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo) {
+        public string Eliminar(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo) {
 		
 			string rpta = "";
             SqlConnection SqlCon = new SqlConnection();

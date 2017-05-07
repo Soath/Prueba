@@ -66,37 +66,52 @@ namespace CapaPresentacion
             dataListado.Rows.RemoveAt(fil);
         }
 
+        private void MensajeOk(string mensaje)
+        {
+            MessageBox.Show(mensaje, "Control", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+        private void MensajeError(string mensaje)
+        {
+            MessageBox.Show(mensaje, "Control", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-         //  string Rta = string.Empty;
-         //  MessageBox.Show("insertar");
-         //  try
-         //  {
-         //      Rta = NacfCMPt_Componente.Insertar(
-         //            this.dataListado.CurrentRow.Cells[1].Value.ToString()
-         //           , this.dataListado.CurrentRow.Cells[5].Value.ToString()
-         //           , this.dataListado.CurrentRow.Cells[6].Value.ToString()
-         //           , this.dataListado.CurrentRow.Cells[9].Value.ToString()
-         //           , this.dataListado.CurrentRow.Cells[10].Value.ToString()                     
-         //          //, this.txtCMPnivel.Text
-         //
-         //         );
-         //      
-         //      if (Rta.Equals("OK"))
-         //      {
-         //          //this.MensajeOk("Regsitro Agregado Correctamente");
-         //      }
-         //      else
-         //      {
-         //          //this.MensajeError("Error al Insertar Registro :" + Rta);
-         //      }
-         //
-         //  }
-         //  catch (Exception ex)
-         //  {
-         //      MessageBox.Show(ex.Message + ex.StackTrace);
-         //  }
-         //
+           string Rta = string.Empty;
+           MessageBox.Show("insertar");
+           try
+           {
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    Rta = NacfACFp_Activo_Fijo.Editar2(
+                     this.dataListado.CurrentRow.Cells[0].Value.ToString()
+                    , this.dataListado.CurrentRow.Cells[4].Value.ToString()
+                    , this.dataListado.CurrentRow.Cells[5].Value.ToString()
+                    , this.dataListado.CurrentRow.Cells[8].Value.ToString()
+                    , this.dataListado.CurrentRow.Cells[9].Value.ToString()     
+         
+                  );
+               
+               if (Rta.Equals("OK"))
+               {
+                   this.MensajeOk("Regsitro Agregado Correctamente");
+               }
+               else
+               {
+                   this.MensajeError("Error al Insertar Registro :" + Rta);
+               }
+             }
+            }
+           catch (Exception ex)
+           {
+               MessageBox.Show(ex.Message + ex.StackTrace);
+           }
+         
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
