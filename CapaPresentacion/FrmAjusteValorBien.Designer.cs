@@ -32,11 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataListado = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.Int = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Char = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +45,11 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,52 +109,6 @@
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataListado.Size = new System.Drawing.Size(646, 166);
             this.dataListado.TabIndex = 10;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(57, 260);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Procesar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(167, 260);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Archivo Envio SAP";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(311, 260);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Salir";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(502, 239);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 27);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Agregar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(607, 239);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 27);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Eliminar";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // Int
             // 
@@ -233,6 +187,53 @@
             this.Column11.HeaderText = "Column11";
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(57, 260);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Procesar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(167, 260);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(116, 23);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Archivo Envio SAP";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(311, 260);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Salir";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(502, 239);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(84, 27);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Agregar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(607, 239);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(84, 27);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "Eliminar";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // FrmAjusteValorBien
             // 

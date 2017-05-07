@@ -62,5 +62,11 @@ namespace CapaPresentacion
         {
             
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int fil = dataListado.CurrentRow.Index;
+            dataListado.Rows.RemoveAt(fil);
+        }
     }
 }
