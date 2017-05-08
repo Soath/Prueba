@@ -268,7 +268,7 @@ namespace CapaPresentacion
                if (Rta.Equals("OK"))
                {
                    this.MensajeOk("Regsitro Agregado Correctamente");
-                   NacfINBt_Inventariobienes.Copiar();
+                  
                }
                else
                {
@@ -285,6 +285,28 @@ namespace CapaPresentacion
         {
             
 
+        }
+        private void CopiarRegistro()
+        {
+            string Rta = string.Empty;
+            try
+            {
+                Rta = NacfINBt_Inventariobienes.Copiar();
+
+                if (Rta.Equals("OK"))
+                {
+                    this.MensajeOk("Regsitro Agregado Correctamente");
+                }
+                else
+                {
+                    this.MensajeError(Rta);
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
         }
         private void Next(String iINVid)
         {
