@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
+using ComponentFactory.Krypton.Toolkit;
 
 
 namespace CapaPresentacion
 {
-    public partial class Frm_InventarioG : Form
+    public partial class Frm_InventarioG : KryptonForm
     {
         int Activo = 1;
         int Graba = 0;
@@ -267,6 +268,7 @@ namespace CapaPresentacion
                if (Rta.Equals("OK"))
                {
                    this.MensajeOk("Regsitro Agregado Correctamente");
+                   NacfINBt_Inventariobienes.Copiar();
                }
                else
                {
