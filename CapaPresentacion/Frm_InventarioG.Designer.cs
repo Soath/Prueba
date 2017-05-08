@@ -293,8 +293,8 @@
             this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAgregar.Name = "toolStripAgregar";
-            this.toolStripAgregar.Size = new System.Drawing.Size(53, 64);
-            this.toolStripAgregar.Text = "Agregar";
+            this.toolStripAgregar.Size = new System.Drawing.Size(99, 64);
+            this.toolStripAgregar.Text = "Agregar/Generar";
             this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripAgregar.Click += new System.EventHandler(this.toolStripAgregar_Click);

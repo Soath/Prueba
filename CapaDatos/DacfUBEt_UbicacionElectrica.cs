@@ -544,7 +544,7 @@ namespace CapaDatos
 
     //METODO BUSCAR
 
-	public DataTable Buscar(string sACFid) {
+	public DataTable Buscar(string iACFid) {
 
         DataTable DtResultado = new DataTable("acfUBEt_UbicacionElectrica");
             SqlConnection SqlCon = new SqlConnection();
@@ -564,7 +564,7 @@ namespace CapaDatos
             ParUBEobra.ParameterName = "@iACFid";
             ParUBEobra.SqlDbType = SqlDbType.Int;
             ParUBEobra.Size = 50;
-            ParUBEobra.Value = Convert.ToInt32(sACFid);
+            ParUBEobra.Value = Convert.ToInt32(iACFid);
             SqlCmd.Parameters.Add(ParUBEobra);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
