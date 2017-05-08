@@ -17,19 +17,11 @@ namespace CapaPresentacion
     public partial class FrmacfUBEt_UbicacionElectrica : KryptonForm
     {
         int Activo = 1;
-        int Graba = 0;
+        public int Graba ;
         public int idEditar = 0;
         public string MensError;
-        private static FrmacfUBEt_UbicacionElectrica _Instancia;
+       
 
-        public static FrmacfUBEt_UbicacionElectrica GetInstancia()
-        {
-            if (_Instancia == null)
-            {
-                _Instancia = new FrmacfUBEt_UbicacionElectrica();
-            }
-            return _Instancia;
-        }
         public FrmacfUBEt_UbicacionElectrica()
         {
             InitializeComponent();
@@ -49,7 +41,7 @@ namespace CapaPresentacion
 
             EstadoText(this.Controls, true, false);
             mostrar();
-            MostrarRegistro();
+            
             MostrarCombos();            
           
             CheckAll(this,true);
@@ -192,7 +184,12 @@ namespace CapaPresentacion
             this.toolStripComboBox1.Visible = !edo;
             this.toolStripTextBox1.Visible  = !edo;
         }
+        private void Botoneseditar()
+        {
 
+            this.toolStripGuardar.Visible = true;
+            this.toolStripCancelar.Visible =true;
+        }
         private void BotonesSinReg(bool edo)
         {
             this.toolStripRefrescar.Enabled = edo;
@@ -351,7 +348,8 @@ namespace CapaPresentacion
             Graba = 1;
             EstadoText(this.Controls, true, true);
             this.LimpiaCampos();
-            this.Botones(false);
+            this.Botoneseditar();
+
             //tabControl1.SelectedTab = tabPage2;
         }
 
@@ -359,7 +357,7 @@ namespace CapaPresentacion
         {
             Activo = 2;
             Graba = 2;
-            this.Botones(false);
+            this.Botoneseditar();
             EstadoText(this.Controls, false, true);
            // tabControl1.SelectedTab = tabPage2;
             this.CargaDatos();           
@@ -508,25 +506,25 @@ namespace CapaPresentacion
         {
             NacfACFp_Activo_Fijo.Buscar("1");
         }
-        private void MostrarRegistro()
+        private void MostrarRegistro(string ACFid)
         {
 
             try
             {
-                DataTable dat = NacfACFp_Activo_Fijo.Mostrar();
+                DataTable dat = NacfUBEt_UbicacionElectrica.Buscar(ACFid);
 
                   //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
 
                 if (dat.Rows.Count > 0)
                 {
                     DataRow row = dat.Rows[0];
-                    
+                    txtUBEid.Text = Convert.ToString(row["UBEid"]);
                     //guardo datos en variables
                     //txtACFid.Text = Convert.ToString(row["ACFid"]);
                     //txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
                 }
                 else
-                    MessageBox.Show("No Existe", "Registro");
+                    MessageBox.Show("Registro Nuevo", " Nuevo");
             }
             catch (Exception ex)
             {
@@ -549,7 +547,15 @@ namespace CapaPresentacion
             this.mostrar();
         }
 
-        private void FrmacfUBEt_UbicacionElectrica_Load(object sender, EventArgs e) { }
+        private void FrmacfUBEt_UbicacionElectrica_Load(object sender, EventArgs e) {
+
+            string ACFidx = this.txtACFid.Text;
+            MostrarRegistro(this.txtACFid.Text);
+
+            if (Graba == 1) this.BotonAgregar();;
+            if (Graba == 2) this.BotonEditar(); ;
+            this.txtACFid.Text = Convert.ToString(ACFidx);
+        }
 
         
         public void Control_Enter(object sender, EventArgs e)

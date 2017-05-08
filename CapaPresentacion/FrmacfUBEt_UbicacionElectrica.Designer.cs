@@ -30,36 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmacfUBEt_UbicacionElectrica));
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.txtACFid = new System.Windows.Forms.TextBox();
-            this.txtUBEpuntofetq = new System.Windows.Forms.TextBox();
-            this.txtUBEpuntof = new System.Windows.Forms.TextBox();
-            this.lblACFid = new System.Windows.Forms.Label();
-            this.lblUBEpuntofetq = new System.Windows.Forms.Label();
-            this.lblUBEpuntof = new System.Windows.Forms.Label();
-            this.lblUBEpuntoietq = new System.Windows.Forms.Label();
-            this.lblUBEpuntoi = new System.Windows.Forms.Label();
-            this.lblUBEcircuitoetq = new System.Windows.Forms.Label();
-            this.lblUBEcircuito = new System.Windows.Forms.Label();
-            this.lblUBEsedetq = new System.Windows.Forms.Label();
-            this.txtUBEpuntoietq = new System.Windows.Forms.TextBox();
-            this.txtUBEpuntoi = new System.Windows.Forms.TextBox();
-            this.txtUBEcircuitoetq = new System.Windows.Forms.TextBox();
-            this.txtUBEcircuito = new System.Windows.Forms.TextBox();
-            this.txtUBEsedetq = new System.Windows.Forms.TextBox();
             this.kryptonGroupBox8 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.lblUBEobra = new System.Windows.Forms.Label();
             this.lblUBEcodigogis = new System.Windows.Forms.Label();
+            this.txtACFid = new System.Windows.Forms.TextBox();
             this.lblKOSTL = new System.Windows.Forms.Label();
             this.lblVNRid = new System.Windows.Forms.Label();
+            this.lblACFid = new System.Windows.Forms.Label();
             this.lblUBEid = new System.Windows.Forms.Label();
-            this.txtUBEobra = new System.Windows.Forms.TextBox();
             this.txtUBEcodigogis = new System.Windows.Forms.TextBox();
             this.txtKOSTL = new System.Windows.Forms.TextBox();
             this.txtVNRid = new System.Windows.Forms.TextBox();
             this.txtUBEid = new System.Windows.Forms.TextBox();
+            this.lblUBEobra = new System.Windows.Forms.Label();
+            this.txtUBEobra = new System.Windows.Forms.TextBox();
             this.txtUBEalimentadoretq = new System.Windows.Forms.TextBox();
             this.txtUBEalimentador = new System.Windows.Forms.TextBox();
             this.txtUBEsetetq = new System.Windows.Forms.TextBox();
@@ -90,220 +73,47 @@
             this.label1 = new System.Windows.Forms.Label();
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
-            this.tabControl2.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
-            this.kryptonGroupBox1.Panel.SuspendLayout();
-            this.kryptonGroupBox1.SuspendLayout();
+            this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.txtUBEpuntofetq = new System.Windows.Forms.TextBox();
+            this.txtUBEpuntof = new System.Windows.Forms.TextBox();
+            this.lblUBEpuntofetq = new System.Windows.Forms.Label();
+            this.lblUBEpuntof = new System.Windows.Forms.Label();
+            this.lblUBEpuntoietq = new System.Windows.Forms.Label();
+            this.lblUBEpuntoi = new System.Windows.Forms.Label();
+            this.lblUBEcircuitoetq = new System.Windows.Forms.Label();
+            this.lblUBEcircuito = new System.Windows.Forms.Label();
+            this.lblUBEsedetq = new System.Windows.Forms.Label();
+            this.txtUBEpuntoietq = new System.Windows.Forms.TextBox();
+            this.txtUBEpuntoi = new System.Windows.Forms.TextBox();
+            this.txtUBEcircuitoetq = new System.Windows.Forms.TextBox();
+            this.txtUBEcircuito = new System.Windows.Forms.TextBox();
+            this.txtUBEsedetq = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox8.Panel)).BeginInit();
             this.kryptonGroupBox8.Panel.SuspendLayout();
             this.kryptonGroupBox8.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
+            this.kryptonGroupBox1.Panel.SuspendLayout();
+            this.kryptonGroupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Location = new System.Drawing.Point(13, 322);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(729, 249);
-            this.tabControl2.TabIndex = 235;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tabPage7.Controls.Add(this.kryptonGroupBox1);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage7.Size = new System.Drawing.Size(721, 223);
-            this.tabPage7.TabIndex = 0;
-            this.tabPage7.Text = "Listado";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // kryptonGroupBox1
-            // 
-            this.kryptonGroupBox1.Location = new System.Drawing.Point(25, 23);
-            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
-            // 
-            // kryptonGroupBox1.Panel
-            // 
-            this.kryptonGroupBox1.Panel.Controls.Add(this.txtACFid);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEpuntofetq);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEpuntof);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.lblACFid);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEpuntofetq);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEpuntof);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEpuntoietq);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEpuntoi);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEcircuitoetq);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEcircuito);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEsedetq);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEpuntoietq);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEpuntoi);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEcircuitoetq);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEcircuito);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEsedetq);
-            this.kryptonGroupBox1.Size = new System.Drawing.Size(692, 186);
-            this.kryptonGroupBox1.TabIndex = 134;
-            // 
-            // txtACFid
-            // 
-            this.txtACFid.Location = new System.Drawing.Point(507, 76);
-            this.txtACFid.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFid.Name = "txtACFid";
-            this.txtACFid.Size = new System.Drawing.Size(171, 20);
-            this.txtACFid.TabIndex = 17;
-            // 
-            // txtUBEpuntofetq
-            // 
-            this.txtUBEpuntofetq.Location = new System.Drawing.Point(507, 46);
-            this.txtUBEpuntofetq.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUBEpuntofetq.Name = "txtUBEpuntofetq";
-            this.txtUBEpuntofetq.Size = new System.Drawing.Size(171, 20);
-            this.txtUBEpuntofetq.TabIndex = 16;
-            // 
-            // txtUBEpuntof
-            // 
-            this.txtUBEpuntof.Location = new System.Drawing.Point(507, 13);
-            this.txtUBEpuntof.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUBEpuntof.Name = "txtUBEpuntof";
-            this.txtUBEpuntof.Size = new System.Drawing.Size(171, 20);
-            this.txtUBEpuntof.TabIndex = 15;
-            // 
-            // lblACFid
-            // 
-            this.lblACFid.AutoSize = true;
-            this.lblACFid.Location = new System.Drawing.Point(355, 82);
-            this.lblACFid.Name = "lblACFid";
-            this.lblACFid.Size = new System.Drawing.Size(87, 13);
-            this.lblACFid.TabIndex = 12;
-            this.lblACFid.Text = "Codigo de activo";
-            // 
-            // lblUBEpuntofetq
-            // 
-            this.lblUBEpuntofetq.AutoSize = true;
-            this.lblUBEpuntofetq.Location = new System.Drawing.Point(355, 50);
-            this.lblUBEpuntofetq.Name = "lblUBEpuntofetq";
-            this.lblUBEpuntofetq.Size = new System.Drawing.Size(102, 13);
-            this.lblUBEpuntofetq.TabIndex = 11;
-            this.lblUBEpuntofetq.Text = "Punto Final Etiqueta";
-            // 
-            // lblUBEpuntof
-            // 
-            this.lblUBEpuntof.AutoSize = true;
-            this.lblUBEpuntof.Location = new System.Drawing.Point(355, 19);
-            this.lblUBEpuntof.Name = "lblUBEpuntof";
-            this.lblUBEpuntof.Size = new System.Drawing.Size(60, 13);
-            this.lblUBEpuntof.TabIndex = 10;
-            this.lblUBEpuntof.Text = "Punto Final";
-            // 
-            // lblUBEpuntoietq
-            // 
-            this.lblUBEpuntoietq.AutoSize = true;
-            this.lblUBEpuntoietq.Location = new System.Drawing.Point(13, 139);
-            this.lblUBEpuntoietq.Name = "lblUBEpuntoietq";
-            this.lblUBEpuntoietq.Size = new System.Drawing.Size(118, 13);
-            this.lblUBEpuntoietq.TabIndex = 9;
-            this.lblUBEpuntoietq.Text = "Punto de inicio etiqueta";
-            // 
-            // lblUBEpuntoi
-            // 
-            this.lblUBEpuntoi.AutoSize = true;
-            this.lblUBEpuntoi.Location = new System.Drawing.Point(13, 112);
-            this.lblUBEpuntoi.Name = "lblUBEpuntoi";
-            this.lblUBEpuntoi.Size = new System.Drawing.Size(76, 13);
-            this.lblUBEpuntoi.TabIndex = 8;
-            this.lblUBEpuntoi.Text = "punto de inicio";
-            // 
-            // lblUBEcircuitoetq
-            // 
-            this.lblUBEcircuitoetq.AutoSize = true;
-            this.lblUBEcircuitoetq.Location = new System.Drawing.Point(13, 82);
-            this.lblUBEcircuitoetq.Name = "lblUBEcircuitoetq";
-            this.lblUBEcircuitoetq.Size = new System.Drawing.Size(83, 13);
-            this.lblUBEcircuitoetq.TabIndex = 7;
-            this.lblUBEcircuitoetq.Text = "Circuito etiqueta";
-            // 
-            // lblUBEcircuito
-            // 
-            this.lblUBEcircuito.AutoSize = true;
-            this.lblUBEcircuito.Location = new System.Drawing.Point(13, 48);
-            this.lblUBEcircuito.Name = "lblUBEcircuito";
-            this.lblUBEcircuito.Size = new System.Drawing.Size(42, 13);
-            this.lblUBEcircuito.TabIndex = 6;
-            this.lblUBEcircuito.Text = "Circuito";
-            // 
-            // lblUBEsedetq
-            // 
-            this.lblUBEsedetq.AutoSize = true;
-            this.lblUBEsedetq.Location = new System.Drawing.Point(13, 16);
-            this.lblUBEsedetq.Name = "lblUBEsedetq";
-            this.lblUBEsedetq.Size = new System.Drawing.Size(70, 13);
-            this.lblUBEsedetq.TabIndex = 5;
-            this.lblUBEsedetq.Text = "SED etiqueta";
-            // 
-            // txtUBEpuntoietq
-            // 
-            this.txtUBEpuntoietq.Location = new System.Drawing.Point(156, 132);
-            this.txtUBEpuntoietq.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUBEpuntoietq.Name = "txtUBEpuntoietq";
-            this.txtUBEpuntoietq.Size = new System.Drawing.Size(171, 20);
-            this.txtUBEpuntoietq.TabIndex = 4;
-            // 
-            // txtUBEpuntoi
-            // 
-            this.txtUBEpuntoi.Location = new System.Drawing.Point(156, 105);
-            this.txtUBEpuntoi.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUBEpuntoi.Name = "txtUBEpuntoi";
-            this.txtUBEpuntoi.Size = new System.Drawing.Size(171, 20);
-            this.txtUBEpuntoi.TabIndex = 3;
-            // 
-            // txtUBEcircuitoetq
-            // 
-            this.txtUBEcircuitoetq.Location = new System.Drawing.Point(156, 75);
-            this.txtUBEcircuitoetq.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUBEcircuitoetq.Name = "txtUBEcircuitoetq";
-            this.txtUBEcircuitoetq.Size = new System.Drawing.Size(171, 20);
-            this.txtUBEcircuitoetq.TabIndex = 2;
-            // 
-            // txtUBEcircuito
-            // 
-            this.txtUBEcircuito.Location = new System.Drawing.Point(156, 45);
-            this.txtUBEcircuito.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUBEcircuito.Name = "txtUBEcircuito";
-            this.txtUBEcircuito.Size = new System.Drawing.Size(171, 20);
-            this.txtUBEcircuito.TabIndex = 1;
-            // 
-            // txtUBEsedetq
-            // 
-            this.txtUBEsedetq.Location = new System.Drawing.Point(156, 12);
-            this.txtUBEsedetq.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUBEsedetq.Name = "txtUBEsedetq";
-            this.txtUBEsedetq.Size = new System.Drawing.Size(171, 20);
-            this.txtUBEsedetq.TabIndex = 0;
             // 
             // kryptonGroupBox8
             // 
             this.kryptonGroupBox8.Location = new System.Drawing.Point(13, 115);
-            this.kryptonGroupBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonGroupBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonGroupBox8.Name = "kryptonGroupBox8";
             // 
             // kryptonGroupBox8.Panel
             // 
-            this.kryptonGroupBox8.Panel.Controls.Add(this.lblUBEobra);
             this.kryptonGroupBox8.Panel.Controls.Add(this.lblUBEcodigogis);
+            this.kryptonGroupBox8.Panel.Controls.Add(this.txtACFid);
             this.kryptonGroupBox8.Panel.Controls.Add(this.lblKOSTL);
             this.kryptonGroupBox8.Panel.Controls.Add(this.lblVNRid);
+            this.kryptonGroupBox8.Panel.Controls.Add(this.lblACFid);
             this.kryptonGroupBox8.Panel.Controls.Add(this.lblUBEid);
-            this.kryptonGroupBox8.Panel.Controls.Add(this.txtUBEobra);
             this.kryptonGroupBox8.Panel.Controls.Add(this.txtUBEcodigogis);
             this.kryptonGroupBox8.Panel.Controls.Add(this.txtKOSTL);
             this.kryptonGroupBox8.Panel.Controls.Add(this.txtVNRid);
@@ -311,28 +121,27 @@
             this.kryptonGroupBox8.Size = new System.Drawing.Size(392, 186);
             this.kryptonGroupBox8.TabIndex = 234;
             // 
-            // lblUBEobra
-            // 
-            this.lblUBEobra.AutoSize = true;
-            this.lblUBEobra.Location = new System.Drawing.Point(9, 134);
-            this.lblUBEobra.Name = "lblUBEobra";
-            this.lblUBEobra.Size = new System.Drawing.Size(30, 13);
-            this.lblUBEobra.TabIndex = 9;
-            this.lblUBEobra.Text = "Obra";
-            // 
             // lblUBEcodigogis
             // 
             this.lblUBEcodigogis.AutoSize = true;
-            this.lblUBEcodigogis.Location = new System.Drawing.Point(9, 112);
+            this.lblUBEcodigogis.Location = new System.Drawing.Point(9, 137);
             this.lblUBEcodigogis.Name = "lblUBEcodigogis";
             this.lblUBEcodigogis.Size = new System.Drawing.Size(184, 13);
             this.lblUBEcodigogis.TabIndex = 8;
             this.lblUBEcodigogis.Text = "Codigo de ubicacion GIS - Smallworld";
             // 
+            // txtACFid
+            // 
+            this.txtACFid.Location = new System.Drawing.Point(198, 8);
+            this.txtACFid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFid.Name = "txtACFid";
+            this.txtACFid.Size = new System.Drawing.Size(171, 20);
+            this.txtACFid.TabIndex = 17;
+            // 
             // lblKOSTL
             // 
             this.lblKOSTL.AutoSize = true;
-            this.lblKOSTL.Location = new System.Drawing.Point(9, 83);
+            this.lblKOSTL.Location = new System.Drawing.Point(9, 108);
             this.lblKOSTL.Name = "lblKOSTL";
             this.lblKOSTL.Size = new System.Drawing.Size(157, 13);
             this.lblKOSTL.TabIndex = 7;
@@ -341,65 +150,83 @@
             // lblVNRid
             // 
             this.lblVNRid.AutoSize = true;
-            this.lblVNRid.Location = new System.Drawing.Point(9, 45);
+            this.lblVNRid.Location = new System.Drawing.Point(9, 72);
             this.lblVNRid.Name = "lblVNRid";
             this.lblVNRid.Size = new System.Drawing.Size(66, 13);
             this.lblVNRid.TabIndex = 6;
             this.lblVNRid.Text = "Codigo VNR";
             // 
+            // lblACFid
+            // 
+            this.lblACFid.AutoSize = true;
+            this.lblACFid.Location = new System.Drawing.Point(9, 12);
+            this.lblACFid.Name = "lblACFid";
+            this.lblACFid.Size = new System.Drawing.Size(87, 13);
+            this.lblACFid.TabIndex = 12;
+            this.lblACFid.Text = "Codigo de activo";
+            // 
             // lblUBEid
             // 
             this.lblUBEid.AutoSize = true;
-            this.lblUBEid.Location = new System.Drawing.Point(9, 13);
+            this.lblUBEid.Location = new System.Drawing.Point(9, 38);
             this.lblUBEid.Name = "lblUBEid";
             this.lblUBEid.Size = new System.Drawing.Size(147, 13);
             this.lblUBEid.TabIndex = 5;
             this.lblUBEid.Text = "Codigo de ubicacion electrica";
             // 
-            // txtUBEobra
-            // 
-            this.txtUBEobra.Location = new System.Drawing.Point(198, 133);
-            this.txtUBEobra.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUBEobra.Name = "txtUBEobra";
-            this.txtUBEobra.Size = new System.Drawing.Size(179, 20);
-            this.txtUBEobra.TabIndex = 4;
-            // 
             // txtUBEcodigogis
             // 
-            this.txtUBEcodigogis.Location = new System.Drawing.Point(198, 107);
-            this.txtUBEcodigogis.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUBEcodigogis.Location = new System.Drawing.Point(198, 132);
+            this.txtUBEcodigogis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUBEcodigogis.Name = "txtUBEcodigogis";
             this.txtUBEcodigogis.Size = new System.Drawing.Size(179, 20);
             this.txtUBEcodigogis.TabIndex = 3;
             // 
             // txtKOSTL
             // 
-            this.txtKOSTL.Location = new System.Drawing.Point(198, 76);
-            this.txtKOSTL.Margin = new System.Windows.Forms.Padding(2);
+            this.txtKOSTL.Location = new System.Drawing.Point(198, 102);
+            this.txtKOSTL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtKOSTL.Name = "txtKOSTL";
             this.txtKOSTL.Size = new System.Drawing.Size(179, 20);
             this.txtKOSTL.TabIndex = 2;
             // 
             // txtVNRid
             // 
-            this.txtVNRid.Location = new System.Drawing.Point(198, 42);
-            this.txtVNRid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtVNRid.Location = new System.Drawing.Point(198, 67);
+            this.txtVNRid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtVNRid.Name = "txtVNRid";
             this.txtVNRid.Size = new System.Drawing.Size(179, 20);
             this.txtVNRid.TabIndex = 1;
             // 
             // txtUBEid
             // 
-            this.txtUBEid.Location = new System.Drawing.Point(198, 13);
-            this.txtUBEid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUBEid.Location = new System.Drawing.Point(198, 38);
+            this.txtUBEid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUBEid.Name = "txtUBEid";
             this.txtUBEid.Size = new System.Drawing.Size(103, 20);
             this.txtUBEid.TabIndex = 0;
             // 
+            // lblUBEobra
+            // 
+            this.lblUBEobra.AutoSize = true;
+            this.lblUBEobra.Location = new System.Drawing.Point(355, 132);
+            this.lblUBEobra.Name = "lblUBEobra";
+            this.lblUBEobra.Size = new System.Drawing.Size(30, 13);
+            this.lblUBEobra.TabIndex = 9;
+            this.lblUBEobra.Text = "Obra";
+            // 
+            // txtUBEobra
+            // 
+            this.txtUBEobra.Location = new System.Drawing.Point(507, 132);
+            this.txtUBEobra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUBEobra.Name = "txtUBEobra";
+            this.txtUBEobra.Size = new System.Drawing.Size(179, 20);
+            this.txtUBEobra.TabIndex = 4;
+            // 
             // txtUBEalimentadoretq
             // 
             this.txtUBEalimentadoretq.Location = new System.Drawing.Point(573, 240);
-            this.txtUBEalimentadoretq.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUBEalimentadoretq.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUBEalimentadoretq.Name = "txtUBEalimentadoretq";
             this.txtUBEalimentadoretq.Size = new System.Drawing.Size(187, 20);
             this.txtUBEalimentadoretq.TabIndex = 233;
@@ -407,7 +234,7 @@
             // txtUBEalimentador
             // 
             this.txtUBEalimentador.Location = new System.Drawing.Point(573, 213);
-            this.txtUBEalimentador.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUBEalimentador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUBEalimentador.Name = "txtUBEalimentador";
             this.txtUBEalimentador.Size = new System.Drawing.Size(187, 20);
             this.txtUBEalimentador.TabIndex = 232;
@@ -415,7 +242,7 @@
             // txtUBEsetetq
             // 
             this.txtUBEsetetq.Location = new System.Drawing.Point(573, 181);
-            this.txtUBEsetetq.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUBEsetetq.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUBEsetetq.Name = "txtUBEsetetq";
             this.txtUBEsetetq.Size = new System.Drawing.Size(187, 20);
             this.txtUBEsetetq.TabIndex = 231;
@@ -478,7 +305,7 @@
             // 
             this.cboUBEsed.FormattingEnabled = true;
             this.cboUBEsed.Location = new System.Drawing.Point(573, 266);
-            this.cboUBEsed.Margin = new System.Windows.Forms.Padding(2);
+            this.cboUBEsed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboUBEsed.Name = "cboUBEsed";
             this.cboUBEsed.Size = new System.Drawing.Size(187, 21);
             this.cboUBEsed.TabIndex = 224;
@@ -486,7 +313,7 @@
             // txtUBEset
             // 
             this.txtUBEset.Location = new System.Drawing.Point(573, 154);
-            this.txtUBEset.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUBEset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUBEset.Name = "txtUBEset";
             this.txtUBEset.Size = new System.Drawing.Size(187, 20);
             this.txtUBEset.TabIndex = 223;
@@ -494,7 +321,7 @@
             // txtSELid
             // 
             this.txtSELid.Location = new System.Drawing.Point(573, 126);
-            this.txtSELid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSELid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSELid.Name = "txtSELid";
             this.txtSELid.Size = new System.Drawing.Size(187, 20);
             this.txtSELid.TabIndex = 222;
@@ -677,7 +504,7 @@
             // toolStripTextBox1
             // 
             this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(58, 67);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(44, 67);
             this.toolStripTextBox1.Text = "Expresion";
             // 
             // label1
@@ -701,12 +528,158 @@
             // 
             this.ttMensaje.IsBalloon = true;
             // 
+            // kryptonGroupBox1
+            // 
+            this.kryptonGroupBox1.Location = new System.Drawing.Point(13, 323);
+            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
+            // 
+            // kryptonGroupBox1.Panel
+            // 
+            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEobra);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEpuntofetq);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEpuntof);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEpuntofetq);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEobra);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEpuntof);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEpuntoietq);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEpuntoi);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEcircuitoetq);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEcircuito);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.lblUBEsedetq);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEpuntoietq);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEpuntoi);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEcircuitoetq);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEcircuito);
+            this.kryptonGroupBox1.Panel.Controls.Add(this.txtUBEsedetq);
+            this.kryptonGroupBox1.Size = new System.Drawing.Size(692, 186);
+            this.kryptonGroupBox1.TabIndex = 235;
+            // 
+            // txtUBEpuntofetq
+            // 
+            this.txtUBEpuntofetq.Location = new System.Drawing.Point(507, 46);
+            this.txtUBEpuntofetq.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUBEpuntofetq.Name = "txtUBEpuntofetq";
+            this.txtUBEpuntofetq.Size = new System.Drawing.Size(171, 20);
+            this.txtUBEpuntofetq.TabIndex = 16;
+            // 
+            // txtUBEpuntof
+            // 
+            this.txtUBEpuntof.Location = new System.Drawing.Point(507, 13);
+            this.txtUBEpuntof.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUBEpuntof.Name = "txtUBEpuntof";
+            this.txtUBEpuntof.Size = new System.Drawing.Size(171, 20);
+            this.txtUBEpuntof.TabIndex = 15;
+            // 
+            // lblUBEpuntofetq
+            // 
+            this.lblUBEpuntofetq.AutoSize = true;
+            this.lblUBEpuntofetq.Location = new System.Drawing.Point(355, 50);
+            this.lblUBEpuntofetq.Name = "lblUBEpuntofetq";
+            this.lblUBEpuntofetq.Size = new System.Drawing.Size(102, 13);
+            this.lblUBEpuntofetq.TabIndex = 11;
+            this.lblUBEpuntofetq.Text = "Punto Final Etiqueta";
+            // 
+            // lblUBEpuntof
+            // 
+            this.lblUBEpuntof.AutoSize = true;
+            this.lblUBEpuntof.Location = new System.Drawing.Point(355, 19);
+            this.lblUBEpuntof.Name = "lblUBEpuntof";
+            this.lblUBEpuntof.Size = new System.Drawing.Size(60, 13);
+            this.lblUBEpuntof.TabIndex = 10;
+            this.lblUBEpuntof.Text = "Punto Final";
+            // 
+            // lblUBEpuntoietq
+            // 
+            this.lblUBEpuntoietq.AutoSize = true;
+            this.lblUBEpuntoietq.Location = new System.Drawing.Point(13, 139);
+            this.lblUBEpuntoietq.Name = "lblUBEpuntoietq";
+            this.lblUBEpuntoietq.Size = new System.Drawing.Size(118, 13);
+            this.lblUBEpuntoietq.TabIndex = 9;
+            this.lblUBEpuntoietq.Text = "Punto de inicio etiqueta";
+            // 
+            // lblUBEpuntoi
+            // 
+            this.lblUBEpuntoi.AutoSize = true;
+            this.lblUBEpuntoi.Location = new System.Drawing.Point(13, 112);
+            this.lblUBEpuntoi.Name = "lblUBEpuntoi";
+            this.lblUBEpuntoi.Size = new System.Drawing.Size(76, 13);
+            this.lblUBEpuntoi.TabIndex = 8;
+            this.lblUBEpuntoi.Text = "punto de inicio";
+            // 
+            // lblUBEcircuitoetq
+            // 
+            this.lblUBEcircuitoetq.AutoSize = true;
+            this.lblUBEcircuitoetq.Location = new System.Drawing.Point(13, 82);
+            this.lblUBEcircuitoetq.Name = "lblUBEcircuitoetq";
+            this.lblUBEcircuitoetq.Size = new System.Drawing.Size(83, 13);
+            this.lblUBEcircuitoetq.TabIndex = 7;
+            this.lblUBEcircuitoetq.Text = "Circuito etiqueta";
+            // 
+            // lblUBEcircuito
+            // 
+            this.lblUBEcircuito.AutoSize = true;
+            this.lblUBEcircuito.Location = new System.Drawing.Point(13, 48);
+            this.lblUBEcircuito.Name = "lblUBEcircuito";
+            this.lblUBEcircuito.Size = new System.Drawing.Size(42, 13);
+            this.lblUBEcircuito.TabIndex = 6;
+            this.lblUBEcircuito.Text = "Circuito";
+            // 
+            // lblUBEsedetq
+            // 
+            this.lblUBEsedetq.AutoSize = true;
+            this.lblUBEsedetq.Location = new System.Drawing.Point(13, 16);
+            this.lblUBEsedetq.Name = "lblUBEsedetq";
+            this.lblUBEsedetq.Size = new System.Drawing.Size(70, 13);
+            this.lblUBEsedetq.TabIndex = 5;
+            this.lblUBEsedetq.Text = "SED etiqueta";
+            // 
+            // txtUBEpuntoietq
+            // 
+            this.txtUBEpuntoietq.Location = new System.Drawing.Point(156, 132);
+            this.txtUBEpuntoietq.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUBEpuntoietq.Name = "txtUBEpuntoietq";
+            this.txtUBEpuntoietq.Size = new System.Drawing.Size(171, 20);
+            this.txtUBEpuntoietq.TabIndex = 4;
+            // 
+            // txtUBEpuntoi
+            // 
+            this.txtUBEpuntoi.Location = new System.Drawing.Point(156, 105);
+            this.txtUBEpuntoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUBEpuntoi.Name = "txtUBEpuntoi";
+            this.txtUBEpuntoi.Size = new System.Drawing.Size(171, 20);
+            this.txtUBEpuntoi.TabIndex = 3;
+            // 
+            // txtUBEcircuitoetq
+            // 
+            this.txtUBEcircuitoetq.Location = new System.Drawing.Point(156, 75);
+            this.txtUBEcircuitoetq.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUBEcircuitoetq.Name = "txtUBEcircuitoetq";
+            this.txtUBEcircuitoetq.Size = new System.Drawing.Size(171, 20);
+            this.txtUBEcircuitoetq.TabIndex = 2;
+            // 
+            // txtUBEcircuito
+            // 
+            this.txtUBEcircuito.Location = new System.Drawing.Point(156, 45);
+            this.txtUBEcircuito.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUBEcircuito.Name = "txtUBEcircuito";
+            this.txtUBEcircuito.Size = new System.Drawing.Size(171, 20);
+            this.txtUBEcircuito.TabIndex = 1;
+            // 
+            // txtUBEsedetq
+            // 
+            this.txtUBEsedetq.Location = new System.Drawing.Point(156, 12);
+            this.txtUBEsedetq.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUBEsedetq.Name = "txtUBEsedetq";
+            this.txtUBEsedetq.Size = new System.Drawing.Size(171, 20);
+            this.txtUBEsedetq.TabIndex = 0;
+            // 
             // FrmacfUBEt_UbicacionElectrica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 561);
-            this.Controls.Add(this.tabControl2);
+            this.Controls.Add(this.kryptonGroupBox1);
             this.Controls.Add(this.kryptonGroupBox8);
             this.Controls.Add(this.txtUBEalimentadoretq);
             this.Controls.Add(this.txtUBEalimentador);
@@ -723,15 +696,9 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
             this.Name = "FrmacfUBEt_UbicacionElectrica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfUBEt_UbicacionElectrica";
             this.Load += new System.EventHandler(this.FrmacfUBEt_UbicacionElectrica_Load);
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
-            this.kryptonGroupBox1.Panel.ResumeLayout(false);
-            this.kryptonGroupBox1.Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
-            this.kryptonGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox8.Panel)).EndInit();
             this.kryptonGroupBox8.Panel.ResumeLayout(false);
             this.kryptonGroupBox8.Panel.PerformLayout();
@@ -740,6 +707,11 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
+            this.kryptonGroupBox1.Panel.ResumeLayout(false);
+            this.kryptonGroupBox1.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
+            this.kryptonGroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -747,25 +719,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage7;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
-        private System.Windows.Forms.TextBox txtACFid;
-        private System.Windows.Forms.TextBox txtUBEpuntofetq;
-        private System.Windows.Forms.TextBox txtUBEpuntof;
-        private System.Windows.Forms.Label lblACFid;
-        private System.Windows.Forms.Label lblUBEpuntofetq;
-        private System.Windows.Forms.Label lblUBEpuntof;
-        private System.Windows.Forms.Label lblUBEpuntoietq;
-        private System.Windows.Forms.Label lblUBEpuntoi;
-        private System.Windows.Forms.Label lblUBEcircuitoetq;
-        private System.Windows.Forms.Label lblUBEcircuito;
-        private System.Windows.Forms.Label lblUBEsedetq;
-        private System.Windows.Forms.TextBox txtUBEpuntoietq;
-        private System.Windows.Forms.TextBox txtUBEpuntoi;
-        private System.Windows.Forms.TextBox txtUBEcircuitoetq;
-        private System.Windows.Forms.TextBox txtUBEcircuito;
-        private System.Windows.Forms.TextBox txtUBEsedetq;
         private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox8;
         private System.Windows.Forms.Label lblUBEobra;
         private System.Windows.Forms.Label lblUBEcodigogis;
@@ -807,5 +760,22 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider errorIcono;
         private System.Windows.Forms.ToolTip ttMensaje;
+        public System.Windows.Forms.TextBox txtACFid;
+        private System.Windows.Forms.Label lblACFid;
+        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
+        private System.Windows.Forms.TextBox txtUBEpuntofetq;
+        private System.Windows.Forms.TextBox txtUBEpuntof;
+        private System.Windows.Forms.Label lblUBEpuntofetq;
+        private System.Windows.Forms.Label lblUBEpuntof;
+        private System.Windows.Forms.Label lblUBEpuntoietq;
+        private System.Windows.Forms.Label lblUBEpuntoi;
+        private System.Windows.Forms.Label lblUBEcircuitoetq;
+        private System.Windows.Forms.Label lblUBEcircuito;
+        private System.Windows.Forms.Label lblUBEsedetq;
+        private System.Windows.Forms.TextBox txtUBEpuntoietq;
+        private System.Windows.Forms.TextBox txtUBEpuntoi;
+        private System.Windows.Forms.TextBox txtUBEcircuitoetq;
+        private System.Windows.Forms.TextBox txtUBEcircuito;
+        private System.Windows.Forms.TextBox txtUBEsedetq;
     }
 }

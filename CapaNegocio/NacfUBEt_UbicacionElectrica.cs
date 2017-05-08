@@ -126,11 +126,9 @@ namespace CapaNegocio
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
 
-        public static DataTable Buscar(string sUBEobra)
+        public static DataTable Buscar(string sACFid)
         {
-            DacfUBEt_UbicacionElectrica Obj = new DacfUBEt_UbicacionElectrica();
-            Obj.UBEobra = sUBEobra;
-            return Obj.Buscar(Obj);
+            return new DacfUBEt_UbicacionElectrica().Buscar(sACFid);
         }
 
     }

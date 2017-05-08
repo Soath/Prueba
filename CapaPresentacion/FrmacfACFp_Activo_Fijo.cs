@@ -18,8 +18,10 @@ namespace CapaPresentacion
     {
         int Activo = 1;
         int Graba = 0;
+        int Data1 = 0;
         public int idEditar = 0;
         public string MensError;
+        public string mACFid;
         private static FrmacfACFp_Activo_Fijo _Instancia;
 
         public static FrmacfACFp_Activo_Fijo GetInstancia()
@@ -148,7 +150,7 @@ namespace CapaPresentacion
         }
         private void Control_Click_Cancelar(object sender, EventArgs e)
         {
-            this.BotonRefrescar();
+            this.BotonCancelar();
         }
         private void Control_Click_Importar(object sender, EventArgs e)
         {
@@ -311,6 +313,7 @@ namespace CapaPresentacion
             {
                 DataTable dat = NacfACFp_Activo_Fijo.Top();
                 MostrarDatos(dat);
+                tomaTab();
             }
             catch (Exception ex)
             {
@@ -324,6 +327,7 @@ namespace CapaPresentacion
             {
                 DataTable dat = NacfACFp_Activo_Fijo.Next(iACFid);
                 MostrarDatos(dat);
+                tomaTab();
             }
             catch (Exception ex)
             {
@@ -337,6 +341,7 @@ namespace CapaPresentacion
             {
                 DataTable dat = NacfACFp_Activo_Fijo.Prev(iACFid);
                 MostrarDatos(dat);
+                tomaTab();
             }
             catch (Exception ex)
             {
@@ -350,6 +355,7 @@ namespace CapaPresentacion
             {
                 DataTable dat = NacfACFp_Activo_Fijo.Last();
                 MostrarDatos(dat);
+                tomaTab();
             }
             catch (Exception ex)
             {
@@ -376,14 +382,22 @@ namespace CapaPresentacion
         {
             EstadoText(this.Controls, false, false);
             this.mostrar();
+            Data1 = 0;
         }
         private void BotonAgregar()
         {
             Activo = 2;
             Graba = 1;
             EstadoText(this.Controls, true, true);
+            Last();
             this.LimpiaCampos();
             this.Botones(false);
+            Data1 = 0;
+            cboBUKRS.Text = "0300";
+            txtACFid.Text = Convert.ToString(Convert.ToInt32(mACFid) + 1);
+            cboBUKRS.Enabled = false;
+            textEmpresa.Enabled = false;
+
             //tabControl1.SelectedTab = tabPage2;
         }
 
@@ -393,8 +407,13 @@ namespace CapaPresentacion
             Graba = 2;
             this.Botones(false);
             EstadoText(this.Controls, false, true);
+            txtACFid.Enabled=false;
+            cboBUKRS.Enabled = false;
+            textEmpresa.Enabled = false;
            // tabControl1.SelectedTab = tabPage2;
-            this.CargaDatos();           
+            this.CargaDatos();
+            Data1 = 0;
+
         }
         private void BotonEliminar()
         {
@@ -410,18 +429,21 @@ namespace CapaPresentacion
                 if (Graba == 1) this.InsertaRegistro();
                 if (Graba == 2) this.ActualizaRegistro();
                 Graba = 0;
-                this.BotonCancelar();
                 this.BotonRefrescar();
+                Data1 = 0;
+
             }
             else
                 this.MensajeOk(MensError);
         }
         private void BotonCancelar()
         {
-            Activo = 1;
+            Activo = 0;
             this.Botones(true);
             EstadoText(this.Controls, false, false);
             //tabControl1.SelectedTab = tabPage1;
+            Last();
+            Data1 = 0;
         }
         private void BotonListado()
         {
@@ -628,6 +650,7 @@ namespace CapaPresentacion
             {
                 DataRow row = dat.Rows[0];
                 //guardo datos en variables
+                mACFid = Convert.ToString(row["ACFid"]);
                 txtACFid.Text = Convert.ToString(row["ACFid"]);
                 cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
                 cboSEGMENT.Text = Convert.ToString(row["SEGMENT"]);
@@ -679,6 +702,10 @@ namespace CapaPresentacion
             }
             else
                 MessageBox.Show("No Existe", "Registro");
+
+            btnTerreno_Edificaciones.Enabled = true;
+            btnUbicacion_electrica.Enabled = true; 
+
         }
 
     
@@ -731,7 +758,7 @@ namespace CapaPresentacion
             //if (Activo == 1) tabControl1.SelectedTab = tabPage2;
 
             tabControl1.SelectedTab = tabPage0;
-
+            Data1 = 0;
         }
         private void Configura()
         {
@@ -844,16 +871,18 @@ namespace CapaPresentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Convert.ToString(txtACFid.Text));
+            
             FrmacfTRNt_terrenodetallecs FrmacfTRNt_terrenodetallecs = new FrmacfTRNt_terrenodetallecs();
-            FrmacfTRNt_terrenodetallecs.AFCidex = Convert.ToString(txtACFid.Text);
-                //Convert.ToString(txtACFid.Text);
+            FrmacfTRNt_terrenodetallecs.txtACFid.Text = Convert.ToString(txtACFid.Text);
+            FrmacfTRNt_terrenodetallecs.Graba = Graba;
             FrmacfTRNt_terrenodetallecs.ShowDialog();
         }
 
         private void btnUbicacion_electrica_Click(object sender, EventArgs e)
         {
-            Form FrmacfUBEt_UbicacionElectrica = new FrmacfUBEt_UbicacionElectrica();
+            FrmacfUBEt_UbicacionElectrica FrmacfUBEt_UbicacionElectrica = new FrmacfUBEt_UbicacionElectrica();
+            FrmacfUBEt_UbicacionElectrica.txtACFid.Text = Convert.ToString(this.txtACFid.Text);
+            FrmacfUBEt_UbicacionElectrica.Graba = Graba;
             FrmacfUBEt_UbicacionElectrica.ShowDialog();
         }
 
@@ -867,6 +896,7 @@ namespace CapaPresentacion
         {
 
         }
+
 
         private void toolStripSiguiente_Click(object sender, EventArgs e)
         {
@@ -955,11 +985,23 @@ namespace CapaPresentacion
         private void tabControl1_Click(object sender, EventArgs e)
         {
 
+            if (Data1==0)  
+            {
+                textACFidC.Text = txtACFid.Text;
+
             this.dataGridView1.DataSource = NacfCRSt_Caracteristicas.Buscar(txtACFid.Text);
             MostrarRegistro1();
+            Data1 = 1;
+
+             }
         }
 
         private void txtCRScodigoagua_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
         {
 
         }
