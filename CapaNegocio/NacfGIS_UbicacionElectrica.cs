@@ -47,16 +47,24 @@ namespace CapaNegocio
        {
            return new DacfGIS_UbicacionElectrica().Mostrar(UBEestado);
        }
-       //------------------------------------------------------------------
-    //   //M�todo Buscar que llama al m�todo BuscarNombre
-    //   //de la clase a de la CapaDatos
-    //
-    //   public static DataTable Buscar(string iACTid)
-    //   {
-    //       DacfGIS_UbicacionElectrica Obj = new DacfGIS_UbicacionElectrica();
-    //       Obj.ACTid = iACTid;
-    //       return Obj.Buscar(Obj);
-    //   }
+
+        //------------------------------------------------------------------
+        //M�todo Mostrar que llama al m�todo Mostrar de la clase 
+        //de la CapaDatos
+        public static DataTable Last()
+        {
+            return new DacfGIS_UbicacionElectrica().Last();
+        }
+        //------------------------------------------------------------------
+        //   //M�todo Buscar que llama al m�todo BuscarNombre
+        //   //de la clase a de la CapaDatos
+        //
+        //   public static DataTable Buscar(string iACTid)
+        //   {
+        //       DacfGIS_UbicacionElectrica Obj = new DacfGIS_UbicacionElectrica();
+        //       Obj.ACTid = iACTid;
+        //       return Obj.Buscar(Obj);
+        //   }
 
     }
 }

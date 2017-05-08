@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.dataListado = new System.Windows.Forms.DataGridView();
-            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,8 +42,6 @@
             this.dataListado.AllowUserToOrderColumns = true;
             this.dataListado.BackgroundColor = System.Drawing.Color.White;
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Eliminar});
             this.dataListado.Location = new System.Drawing.Point(22, 58);
             this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
@@ -53,14 +51,7 @@
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataListado.Size = new System.Drawing.Size(594, 474);
             this.dataListado.TabIndex = 12;
-            this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListado_CellContentClick);
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            this.Eliminar.Width = 50;
+            this.dataListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListado_CellDoubleClick);
             // 
             // button1
             // 
@@ -82,16 +73,28 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Edite los Campos Antes de Continuar";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(401, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(211, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "[Doble clic para editar la Fila Seleccionada]";
+            // 
             // FrmacfGIS_UbicacionElectricaImportar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 598);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataListado);
             this.Controls.Add(this.button1);
             this.Name = "FrmacfGIS_UbicacionElectricaImportar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfGIS_UbicacionElectricaImportar";
+            this.Load += new System.EventHandler(this.FrmacfGIS_UbicacionElectricaImportar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -101,8 +104,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataListado;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

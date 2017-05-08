@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using CapaNegocio;
+
 namespace CapaPresentacion
 {
     public partial class FrmacfGIS_UbicacionElectricaImportar : Form
@@ -17,7 +19,12 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        private void dataListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void FrmacfGIS_UbicacionElectricaImportar_Load(object sender, EventArgs e)
+        {
+            dataListado.DataSource = NacfGIS_UbicacionElectrica.Mostrar("0");
+        }
+
+        private void dataListado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

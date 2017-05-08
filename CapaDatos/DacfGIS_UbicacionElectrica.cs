@@ -276,6 +276,32 @@ namespace CapaDatos
             return DtResultado;
         }
 
+        //METODO LAST
+        public DataTable Last()
+        {
+            DataTable DtResultado = new DataTable("acfGIS_UbicacionElectrica");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_L_acfGIS_UbicacionElectrica";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
         //METODO INSERTAR 
         public string Insertar(DacfGIS_UbicacionElectrica acfGIS_UbicacionElectrica)
         {
