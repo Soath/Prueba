@@ -1,11 +1,3 @@
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaNegocio.dll
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaNegocio.pdb
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.dll
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.pdb
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.dll
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.pdb
-<<<<<<< HEAD
 C:\Users\jacho\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaNegocio.dll
 C:\Users\jacho\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaNegocio.pdb
 C:\Users\jacho\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.dll
@@ -13,19 +5,3 @@ C:\Users\jacho\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.pdb
 C:\Users\jacho\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\jacho\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\jacho\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.pdb
-=======
-C:\Users\Samael\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaNegocio.dll
-C:\Users\Samael\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaNegocio.pdb
-C:\Users\Samael\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.dll
-C:\Users\Samael\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.pdb
-C:\Users\Samael\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
-C:\Users\Samael\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.dll
-C:\Users\Samael\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.pdb
-C:\Users\avatec\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaNegocio.dll
-C:\Users\avatec\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaNegocio.pdb
-C:\Users\avatec\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.dll
-C:\Users\avatec\Documents\GitHub\Prueba\CapaNegocio\bin\Debug\CapaDatos.pdb
-C:\Users\avatec\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
-C:\Users\avatec\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.dll
-C:\Users\avatec\Documents\GitHub\Prueba\CapaNegocio\obj\Debug\CapaNegocio.pdb
->>>>>>> origin/master
