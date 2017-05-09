@@ -49,6 +49,7 @@
     <Compile Include="DAcfDRTt_detallereparotributario.cs" />
     <Compile Include="DacfEDIt_edificaciondetalle.cs" />
     <Compile Include="DacfESTt_Estado.cs" />
+    <Compile Include="DacfGIS_UbicacionElectrica.cs" />
     <Compile Include="DacfICRt_Inventariocaracteristicas.cs" />
     <Compile Include="DAcfINBt_Inventariobienes.cs" />
     <Compile Include="DAcfINVp_Inventario.cs" />

@@ -182,6 +182,8 @@
             this.lblCRStomopredio = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox7 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.txtCRSobservacion = new System.Windows.Forms.TextBox();
+            this.lblCRSobservacion = new System.Windows.Forms.Label();
             this.txtCRSfadqpredio = new System.Windows.Forms.TextBox();
             this.txtCRScodigoagua = new System.Windows.Forms.TextBox();
             this.txtCRScodigoluz = new System.Windows.Forms.TextBox();
@@ -190,8 +192,6 @@
             this.lblCRScodigoluz = new System.Windows.Forms.Label();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtCRSobservacion = new System.Windows.Forms.TextBox();
-            this.lblCRSobservacion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
             this.kryptonGroupBox1.Panel.SuspendLayout();
@@ -1744,6 +1744,23 @@
             this.kryptonGroupBox7.Size = new System.Drawing.Size(693, 186);
             this.kryptonGroupBox7.TabIndex = 136;
             // 
+            // txtCRSobservacion
+            // 
+            this.txtCRSobservacion.Location = new System.Drawing.Point(180, 109);
+            this.txtCRSobservacion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCRSobservacion.Name = "txtCRSobservacion";
+            this.txtCRSobservacion.Size = new System.Drawing.Size(171, 20);
+            this.txtCRSobservacion.TabIndex = 19;
+            // 
+            // lblCRSobservacion
+            // 
+            this.lblCRSobservacion.AutoSize = true;
+            this.lblCRSobservacion.Location = new System.Drawing.Point(14, 109);
+            this.lblCRSobservacion.Name = "lblCRSobservacion";
+            this.lblCRSobservacion.Size = new System.Drawing.Size(65, 13);
+            this.lblCRSobservacion.TabIndex = 18;
+            this.lblCRSobservacion.Text = "observacion";
+            // 
             // txtCRSfadqpredio
             // 
             this.txtCRSfadqpredio.Location = new System.Drawing.Point(180, 76);
@@ -1802,23 +1819,6 @@
             // errorIcono
             // 
             this.errorIcono.ContainerControl = this;
-            // 
-            // txtCRSobservacion
-            // 
-            this.txtCRSobservacion.Location = new System.Drawing.Point(180, 109);
-            this.txtCRSobservacion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCRSobservacion.Name = "txtCRSobservacion";
-            this.txtCRSobservacion.Size = new System.Drawing.Size(171, 20);
-            this.txtCRSobservacion.TabIndex = 19;
-            // 
-            // lblCRSobservacion
-            // 
-            this.lblCRSobservacion.AutoSize = true;
-            this.lblCRSobservacion.Location = new System.Drawing.Point(14, 109);
-            this.lblCRSobservacion.Name = "lblCRSobservacion";
-            this.lblCRSobservacion.Size = new System.Drawing.Size(65, 13);
-            this.lblCRSobservacion.TabIndex = 18;
-            this.lblCRSobservacion.Text = "observacion";
             // 
             // FrmacfICRt_Inventariocaracteristicas
             // 

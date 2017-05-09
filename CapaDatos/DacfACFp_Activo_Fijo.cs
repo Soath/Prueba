@@ -538,7 +538,7 @@ namespace CapaDatos
                 SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "[usp_S_AjusteValorBien]";
+                SqlCmd.CommandText = "usp_S_AjusteValorBien";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParACFid = new SqlParameter();

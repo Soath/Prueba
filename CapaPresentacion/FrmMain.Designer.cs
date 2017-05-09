@@ -703,6 +703,7 @@
             this.ribbonButton22.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton22.Image")));
             this.ribbonButton22.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton22.SmallImage")));
             this.ribbonButton22.Text = "SINCRONIZAR GIS";
+            this.ribbonButton22.Click += new System.EventHandler(this.ribbonButton22_Click);
             // 
             // ribbonButton23
             // 

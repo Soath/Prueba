@@ -1080,7 +1080,7 @@ namespace CapaDatos
             //Establecer el Comando
             SqlCommand SqlCmd = new SqlCommand();
             SqlCmd.Connection = SqlCon;
-            SqlCmd.CommandText = "usp_C_acfINBt_Inventariobienes";
+            SqlCmd.CommandText = "usp_C_acfINVp_Inventariobienes";
             SqlCmd.CommandType = CommandType.StoredProcedure;
             //
           

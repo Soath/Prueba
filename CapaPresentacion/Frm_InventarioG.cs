@@ -248,7 +248,7 @@ namespace CapaPresentacion
        {
            if (this.validaCampos())
            {
-               if (Graba == 1) this.InsertaRegistro();
+               if (Graba == 1) { this.InsertaRegistro(); this.CopiarRegistro(); this.CopiarRegistro2(); }
                if (Graba == 2) this.ActualizaRegistro();
                Graba = 0;
                this.BotonCancelar();
@@ -267,7 +267,7 @@ namespace CapaPresentacion
 
                if (Rta.Equals("OK"))
                {
-                   this.MensajeOk("Regsitro Agregado Correctamente");
+                   this.MensajeOk("Registro Agregado Correctamente");
                   
                }
                else
@@ -295,7 +295,29 @@ namespace CapaPresentacion
 
                 if (Rta.Equals("OK"))
                 {
-                    this.MensajeOk("Regsitro Agregado Correctamente");
+                    this.MensajeOk("Inventario generado correctamente.");
+                }
+                else
+                {
+                    this.MensajeError(Rta);
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+        private void CopiarRegistro2()
+        {
+            string Rta = string.Empty;
+            try
+            {
+                Rta = NacfICRt_Inventariocaracteristicas.Copiar();
+
+                if (Rta.Equals("OK"))
+                {
+                    this.MensajeOk("Inventario características generado correctamente.");
                 }
                 else
                 {

@@ -67,6 +67,11 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
             Form FrmMovimientoTransferecnaiActivo = new FrmMovimientoTransferecnaiActivo();
             FrmMovimientoTransferecnaiActivo.ShowDialog();
         }
+        private void ribbonButton22_Click(object sender, EventArgs e)
+        {
+            Form FrmacfGIS_UbicacionElectrica = new FrmacfGIS_UbicacionElectrica();
+            FrmacfGIS_UbicacionElectrica.ShowDialog();
+        }
         private void ribbonButton62_Click(object sender, EventArgs e)
         {
             Form FrmAjusteVidaUtil = new FrmAjusteVidaUtil();
