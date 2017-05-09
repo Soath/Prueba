@@ -20,5 +20,13 @@ UBEid int primary key
 ,UBEpuntofetq varchar(10)
 ,UBEobra char(10)
 ,KOSTL char(10)
-,VNRid char(7)
+,Zona char(8)
+,VNRid char(20)
+,CodNiff char(30)
+,ValAct int
+,VidUtilTrib int
+,VidUtilFinan int
+,UBEestado char(1)
+-- ,FOREIGN KEY (KOSTL) REFERENCES bdiXCCpExtraccionSAP_CentroCosto(KOSTL)
+-- ,FOREIGN KEY (VNRid) REFERENCES acfVNRt_VNR(VNRid)
 )

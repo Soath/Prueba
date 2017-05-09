@@ -85,7 +85,6 @@
     </Compile>
     <Compile Include="DataSet2.cs">
       <DependentUpon>DataSet2.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -169,6 +168,18 @@
     </Compile>
     <Compile Include="FrmacfESTt_Estado.Designer.cs">
       <DependentUpon>FrmacfESTt_Estado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfGIS_UbicacionElectrica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfGIS_UbicacionElectrica.Designer.cs">
+      <DependentUpon>FrmacfGIS_UbicacionElectrica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmacfGIS_UbicacionElectricaImportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfGIS_UbicacionElectricaImportar.Designer.cs">
+      <DependentUpon>FrmacfGIS_UbicacionElectricaImportar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmacfICRt_Inventariocaracteristicas.cs">
       <SubType>Form</SubType>
@@ -516,6 +527,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfESTt_Estado.resx">
       <DependentUpon>FrmacfESTt_Estado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfGIS_UbicacionElectrica.resx">
+      <DependentUpon>FrmacfGIS_UbicacionElectrica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfGIS_UbicacionElectricaImportar.resx">
+      <DependentUpon>FrmacfGIS_UbicacionElectricaImportar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfICRt_Inventariocaracteristicas.resx">
       <DependentUpon>FrmacfICRt_Inventariocaracteristicas.cs</DependentUpon>
