@@ -239,6 +239,89 @@ namespace CapaPresentacion
             this.dataListado.Select();
             this.dataListado.Focus();
         }
+
+        public static void EstadoText(Control.ControlCollection Controles, bool Limpiar, bool Enabled)
+        {
+            foreach (Control c in Controles)
+            {
+                if (c.Parent.Enabled == true)
+                {
+                    c.Tag = (c.Tag == null ? "" : c.Tag);
+                    if (c is TextBox || c is ComboBox)
+                    {
+                        if (c is ComboBox && Limpiar)
+                        {
+                            //INICIALIZA COMBOS
+                            ComboBox cmb = (ComboBox)c;
+                            if (cmb.Items.Count >= 0)
+                            {
+                                cmb.Focus();
+                                //cmb.SelectedItem = cmb.Items[0];
+                            }
+                        }
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
+                            c.Text = string.Empty;
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("Z") != -1)
+                            c.Text = "0";
+
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+                    }
+                    else
+                    {
+                        EstadoText(c.Controls, Limpiar, Enabled);
+                    }
+
+                    if (c is CheckBox)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
+                            ((CheckBox)c).Checked = false;
+                    }
+
+                    if (c is RadioButton)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+                    }
+
+                    if (c is DateTimePicker)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
+                            ((DateTimePicker)c).Value = DateTime.Now.Date;
+                    }
+
+                    if (c is Button)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+                    }
+                }
+            }
+        }
+
         private void BotonRefrescar()
         {
             this.txtBuscar.Text = "";
@@ -497,7 +580,7 @@ namespace CapaPresentacion
         }
         private void Configura()
         {
-            this.label1.Text = "Actividad ";
+
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             //this.dataListado.Dock = DockStyle.Fill;	

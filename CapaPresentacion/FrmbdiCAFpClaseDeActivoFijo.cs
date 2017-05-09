@@ -130,7 +130,7 @@ namespace CapaPresentacion
             this.toolStripRefrescar.Visible = edo;
             this.toolStripAgregar.Visible = edo;
             this.toolStripEditar.Visible = edo;
-            this.toolStripEliminar.Visible = edo;
+            this.toolStripEliminar.Visible = false;
             this.toolStripImprimir.Visible = edo;
 
             this.toolStripGuardar.Visible = !edo;
@@ -150,13 +150,13 @@ namespace CapaPresentacion
         private void OcultarColumnas()
         {
             this.dataListado.Columns[0].Visible = false;
-            this.dataListado.Columns[1].Visible = false;
+            this.dataListado.Columns[1].Visible = true;
             this.dataListado.Columns[1].Width = 100;
             this.dataListado.Columns[1].DefaultCellStyle.Format = "#,0";
             this.dataListado.Columns[1].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.dataListado.Columns[2].Width = 250;
-            this.dataListado.Columns[1].HeaderText = "ESTid";
-            this.dataListado.Columns[2].HeaderText = "ESTestado";
+            this.dataListado.Columns[2].Width = 450;
+            this.dataListado.Columns[1].HeaderText = "Clase";
+            this.dataListado.Columns[2].HeaderText = "Descripcion";
             
         }
 
@@ -167,7 +167,7 @@ namespace CapaPresentacion
             this.tomaTab();
             this.Botones(true);
             this.dataListado.DataSource = NbdiCAFpClaseDeActivoFijo.Mostrar();
-
+            OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             if (dataListado.Rows.Count == 0)
             {

@@ -547,7 +547,8 @@ namespace CapaPresentacion
             string Rta = string.Empty;
 
             try
-            {                
+            {     
+
                 Rta = NacfACFp_Activo_Fijo.Editar(
                       this.txtACFid.Text
                     , cboBUKRS.SelectedValue.ToString()
@@ -988,8 +989,6 @@ namespace CapaPresentacion
             if (Data1==0)  
             {
                 textACFidC.Text = txtACFid.Text;
-
-            this.dataGridView1.DataSource = NacfCRSt_Caracteristicas.Buscar(txtACFid.Text);
             MostrarRegistro1();
             Data1 = 1;
 

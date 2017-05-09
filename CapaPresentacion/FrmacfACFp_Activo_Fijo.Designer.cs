@@ -86,17 +86,7 @@
             this.label40 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtCRScantidad = new System.Windows.Forms.TextBox();
-            this.txtUNMid = new System.Windows.Forms.TextBox();
-            this.txtCRStipo = new System.Windows.Forms.TextBox();
-            this.lblCRScantidad = new System.Windows.Forms.Label();
-            this.lblUNMid = new System.Windows.Forms.Label();
-            this.lblCRStipo = new System.Windows.Forms.Label();
-            this.lblMATid = new System.Windows.Forms.Label();
-            this.lblCRScolor = new System.Windows.Forms.Label();
-            this.txtMATid = new System.Windows.Forms.TextBox();
-            this.txtCRScolor = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.lblCRSmodelo = new System.Windows.Forms.Label();
             this.lblCRSserie = new System.Windows.Forms.Label();
             this.lblESTid = new System.Windows.Forms.Label();
@@ -107,6 +97,16 @@
             this.txtESTid = new System.Windows.Forms.TextBox();
             this.txtMARid = new System.Windows.Forms.TextBox();
             this.textACFidC = new System.Windows.Forms.TextBox();
+            this.txtCRScantidad = new System.Windows.Forms.TextBox();
+            this.txtUNMid = new System.Windows.Forms.TextBox();
+            this.txtCRStipo = new System.Windows.Forms.TextBox();
+            this.lblCRScantidad = new System.Windows.Forms.Label();
+            this.lblUNMid = new System.Windows.Forms.Label();
+            this.lblCRStipo = new System.Windows.Forms.Label();
+            this.lblMATid = new System.Windows.Forms.Label();
+            this.lblCRScolor = new System.Windows.Forms.Label();
+            this.txtMATid = new System.Windows.Forms.TextBox();
+            this.txtCRScolor = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnTerreno_Edificaciones = new System.Windows.Forms.Button();
             this.txtCRSobservacion = new System.Windows.Forms.TextBox();
@@ -296,7 +296,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox6.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -1047,7 +1047,7 @@
             // tabPage1
             // 
             this.tabPage1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.groupBox6);
             this.tabPage1.Controls.Add(this.txtCRScantidad);
             this.tabPage1.Controls.Add(this.txtUNMid);
             this.tabPage1.Controls.Add(this.txtCRStipo);
@@ -1058,16 +1058,6 @@
             this.tabPage1.Controls.Add(this.lblCRScolor);
             this.tabPage1.Controls.Add(this.txtMATid);
             this.tabPage1.Controls.Add(this.txtCRScolor);
-            this.tabPage1.Controls.Add(this.lblCRSmodelo);
-            this.tabPage1.Controls.Add(this.lblCRSserie);
-            this.tabPage1.Controls.Add(this.lblESTid);
-            this.tabPage1.Controls.Add(this.lblMARid);
-            this.tabPage1.Controls.Add(this.lblACFid);
-            this.tabPage1.Controls.Add(this.txtCRSmodelo);
-            this.tabPage1.Controls.Add(this.txtCRSserie);
-            this.tabPage1.Controls.Add(this.txtESTid);
-            this.tabPage1.Controls.Add(this.txtMARid);
-            this.tabPage1.Controls.Add(this.textACFidC);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
@@ -1077,19 +1067,118 @@
             this.tabPage1.Text = "Características Generales";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // groupBox6
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 282);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(637, 181);
-            this.dataGridView1.TabIndex = 172;
+            this.groupBox6.Controls.Add(this.lblCRSmodelo);
+            this.groupBox6.Controls.Add(this.lblCRSserie);
+            this.groupBox6.Controls.Add(this.lblESTid);
+            this.groupBox6.Controls.Add(this.lblMARid);
+            this.groupBox6.Controls.Add(this.lblACFid);
+            this.groupBox6.Controls.Add(this.txtCRSmodelo);
+            this.groupBox6.Controls.Add(this.txtCRSserie);
+            this.groupBox6.Controls.Add(this.txtESTid);
+            this.groupBox6.Controls.Add(this.txtMARid);
+            this.groupBox6.Controls.Add(this.textACFidC);
+            this.groupBox6.Location = new System.Drawing.Point(26, 20);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(480, 448);
+            this.groupBox6.TabIndex = 172;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "groupBox6";
+            // 
+            // lblCRSmodelo
+            // 
+            this.lblCRSmodelo.AutoSize = true;
+            this.lblCRSmodelo.Location = new System.Drawing.Point(29, 145);
+            this.lblCRSmodelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCRSmodelo.Name = "lblCRSmodelo";
+            this.lblCRSmodelo.Size = new System.Drawing.Size(54, 17);
+            this.lblCRSmodelo.TabIndex = 29;
+            this.lblCRSmodelo.Text = "Modelo";
+            // 
+            // lblCRSserie
+            // 
+            this.lblCRSserie.AutoSize = true;
+            this.lblCRSserie.Location = new System.Drawing.Point(29, 118);
+            this.lblCRSserie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCRSserie.Name = "lblCRSserie";
+            this.lblCRSserie.Size = new System.Drawing.Size(41, 17);
+            this.lblCRSserie.TabIndex = 28;
+            this.lblCRSserie.Text = "Serie";
+            // 
+            // lblESTid
+            // 
+            this.lblESTid.AutoSize = true;
+            this.lblESTid.Location = new System.Drawing.Point(29, 91);
+            this.lblESTid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblESTid.Name = "lblESTid";
+            this.lblESTid.Size = new System.Drawing.Size(170, 17);
+            this.lblESTid.TabIndex = 27;
+            this.lblESTid.Text = "Codigo de estado de bien";
+            // 
+            // lblMARid
+            // 
+            this.lblMARid.AutoSize = true;
+            this.lblMARid.Location = new System.Drawing.Point(29, 63);
+            this.lblMARid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMARid.Name = "lblMARid";
+            this.lblMARid.Size = new System.Drawing.Size(115, 17);
+            this.lblMARid.TabIndex = 26;
+            this.lblMARid.Text = "Codigo de marca";
+            // 
+            // lblACFid
+            // 
+            this.lblACFid.AutoSize = true;
+            this.lblACFid.Location = new System.Drawing.Point(29, 37);
+            this.lblACFid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblACFid.Name = "lblACFid";
+            this.lblACFid.Size = new System.Drawing.Size(113, 17);
+            this.lblACFid.TabIndex = 25;
+            this.lblACFid.Text = "Codigo de activo";
+            // 
+            // txtCRSmodelo
+            // 
+            this.txtCRSmodelo.Location = new System.Drawing.Point(212, 144);
+            this.txtCRSmodelo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCRSmodelo.Name = "txtCRSmodelo";
+            this.txtCRSmodelo.Size = new System.Drawing.Size(237, 22);
+            this.txtCRSmodelo.TabIndex = 24;
+            // 
+            // txtCRSserie
+            // 
+            this.txtCRSserie.Location = new System.Drawing.Point(212, 115);
+            this.txtCRSserie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCRSserie.Name = "txtCRSserie";
+            this.txtCRSserie.Size = new System.Drawing.Size(237, 22);
+            this.txtCRSserie.TabIndex = 23;
+            // 
+            // txtESTid
+            // 
+            this.txtESTid.Location = new System.Drawing.Point(212, 85);
+            this.txtESTid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtESTid.Name = "txtESTid";
+            this.txtESTid.Size = new System.Drawing.Size(237, 22);
+            this.txtESTid.TabIndex = 22;
+            // 
+            // txtMARid
+            // 
+            this.txtMARid.Location = new System.Drawing.Point(212, 59);
+            this.txtMARid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMARid.Name = "txtMARid";
+            this.txtMARid.Size = new System.Drawing.Size(237, 22);
+            this.txtMARid.TabIndex = 21;
+            // 
+            // textACFidC
+            // 
+            this.textACFidC.Location = new System.Drawing.Point(212, 34);
+            this.textACFidC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textACFidC.Name = "textACFidC";
+            this.textACFidC.Size = new System.Drawing.Size(136, 22);
+            this.textACFidC.TabIndex = 20;
             // 
             // txtCRScantidad
             // 
-            this.txtCRScantidad.Location = new System.Drawing.Point(748, 215);
+            this.txtCRScantidad.Location = new System.Drawing.Point(692, 165);
             this.txtCRScantidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCRScantidad.Name = "txtCRScantidad";
             this.txtCRScantidad.Size = new System.Drawing.Size(248, 22);
@@ -1097,7 +1186,7 @@
             // 
             // txtUNMid
             // 
-            this.txtUNMid.Location = new System.Drawing.Point(748, 182);
+            this.txtUNMid.Location = new System.Drawing.Point(716, 130);
             this.txtUNMid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUNMid.Name = "txtUNMid";
             this.txtUNMid.Size = new System.Drawing.Size(248, 22);
@@ -1105,7 +1194,7 @@
             // 
             // txtCRStipo
             // 
-            this.txtCRStipo.Location = new System.Drawing.Point(748, 143);
+            this.txtCRStipo.Location = new System.Drawing.Point(716, 91);
             this.txtCRStipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCRStipo.Name = "txtCRStipo";
             this.txtCRStipo.Size = new System.Drawing.Size(248, 22);
@@ -1114,7 +1203,7 @@
             // lblCRScantidad
             // 
             this.lblCRScantidad.AutoSize = true;
-            this.lblCRScantidad.Location = new System.Drawing.Point(547, 219);
+            this.lblCRScantidad.Location = new System.Drawing.Point(515, 167);
             this.lblCRScantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCRScantidad.Name = "lblCRScantidad";
             this.lblCRScantidad.Size = new System.Drawing.Size(64, 17);
@@ -1124,7 +1213,7 @@
             // lblUNMid
             // 
             this.lblUNMid.AutoSize = true;
-            this.lblUNMid.Location = new System.Drawing.Point(547, 182);
+            this.lblUNMid.Location = new System.Drawing.Point(515, 130);
             this.lblUNMid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUNMid.Name = "lblUNMid";
             this.lblUNMid.Size = new System.Drawing.Size(189, 17);
@@ -1134,7 +1223,7 @@
             // lblCRStipo
             // 
             this.lblCRStipo.AutoSize = true;
-            this.lblCRStipo.Location = new System.Drawing.Point(545, 146);
+            this.lblCRStipo.Location = new System.Drawing.Point(513, 94);
             this.lblCRStipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCRStipo.Name = "lblCRStipo";
             this.lblCRStipo.Size = new System.Drawing.Size(36, 17);
@@ -1144,7 +1233,7 @@
             // lblMATid
             // 
             this.lblMATid.AutoSize = true;
-            this.lblMATid.Location = new System.Drawing.Point(545, 113);
+            this.lblMATid.Location = new System.Drawing.Point(513, 61);
             this.lblMATid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMATid.Name = "lblMATid";
             this.lblMATid.Size = new System.Drawing.Size(126, 17);
@@ -1154,7 +1243,7 @@
             // lblCRScolor
             // 
             this.lblCRScolor.AutoSize = true;
-            this.lblCRScolor.Location = new System.Drawing.Point(545, 84);
+            this.lblCRScolor.Location = new System.Drawing.Point(513, 32);
             this.lblCRScolor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCRScolor.Name = "lblCRScolor";
             this.lblCRScolor.Size = new System.Drawing.Size(41, 17);
@@ -1163,7 +1252,7 @@
             // 
             // txtMATid
             // 
-            this.txtMATid.Location = new System.Drawing.Point(748, 110);
+            this.txtMATid.Location = new System.Drawing.Point(716, 58);
             this.txtMATid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMATid.Name = "txtMATid";
             this.txtMATid.Size = new System.Drawing.Size(248, 22);
@@ -1171,101 +1260,11 @@
             // 
             // txtCRScolor
             // 
-            this.txtCRScolor.Location = new System.Drawing.Point(748, 75);
+            this.txtCRScolor.Location = new System.Drawing.Point(716, 23);
             this.txtCRScolor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCRScolor.Name = "txtCRScolor";
             this.txtCRScolor.Size = new System.Drawing.Size(248, 22);
             this.txtCRScolor.TabIndex = 162;
-            // 
-            // lblCRSmodelo
-            // 
-            this.lblCRSmodelo.AutoSize = true;
-            this.lblCRSmodelo.Location = new System.Drawing.Point(40, 228);
-            this.lblCRSmodelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCRSmodelo.Name = "lblCRSmodelo";
-            this.lblCRSmodelo.Size = new System.Drawing.Size(54, 17);
-            this.lblCRSmodelo.TabIndex = 19;
-            this.lblCRSmodelo.Text = "Modelo";
-            // 
-            // lblCRSserie
-            // 
-            this.lblCRSserie.AutoSize = true;
-            this.lblCRSserie.Location = new System.Drawing.Point(40, 201);
-            this.lblCRSserie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCRSserie.Name = "lblCRSserie";
-            this.lblCRSserie.Size = new System.Drawing.Size(41, 17);
-            this.lblCRSserie.TabIndex = 18;
-            this.lblCRSserie.Text = "Serie";
-            // 
-            // lblESTid
-            // 
-            this.lblESTid.AutoSize = true;
-            this.lblESTid.Location = new System.Drawing.Point(40, 165);
-            this.lblESTid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblESTid.Name = "lblESTid";
-            this.lblESTid.Size = new System.Drawing.Size(170, 17);
-            this.lblESTid.TabIndex = 17;
-            this.lblESTid.Text = "Codigo de estado de bien";
-            // 
-            // lblMARid
-            // 
-            this.lblMARid.AutoSize = true;
-            this.lblMARid.Location = new System.Drawing.Point(40, 118);
-            this.lblMARid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblMARid.Name = "lblMARid";
-            this.lblMARid.Size = new System.Drawing.Size(115, 17);
-            this.lblMARid.TabIndex = 16;
-            this.lblMARid.Text = "Codigo de marca";
-            // 
-            // lblACFid
-            // 
-            this.lblACFid.AutoSize = true;
-            this.lblACFid.Location = new System.Drawing.Point(40, 79);
-            this.lblACFid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblACFid.Name = "lblACFid";
-            this.lblACFid.Size = new System.Drawing.Size(113, 17);
-            this.lblACFid.TabIndex = 15;
-            this.lblACFid.Text = "Codigo de activo";
-            // 
-            // txtCRSmodelo
-            // 
-            this.txtCRSmodelo.Location = new System.Drawing.Point(243, 226);
-            this.txtCRSmodelo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCRSmodelo.Name = "txtCRSmodelo";
-            this.txtCRSmodelo.Size = new System.Drawing.Size(237, 22);
-            this.txtCRSmodelo.TabIndex = 14;
-            // 
-            // txtCRSserie
-            // 
-            this.txtCRSserie.Location = new System.Drawing.Point(243, 194);
-            this.txtCRSserie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCRSserie.Name = "txtCRSserie";
-            this.txtCRSserie.Size = new System.Drawing.Size(237, 22);
-            this.txtCRSserie.TabIndex = 13;
-            // 
-            // txtESTid
-            // 
-            this.txtESTid.Location = new System.Drawing.Point(243, 156);
-            this.txtESTid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtESTid.Name = "txtESTid";
-            this.txtESTid.Size = new System.Drawing.Size(237, 22);
-            this.txtESTid.TabIndex = 12;
-            // 
-            // txtMARid
-            // 
-            this.txtMARid.Location = new System.Drawing.Point(243, 114);
-            this.txtMARid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMARid.Name = "txtMARid";
-            this.txtMARid.Size = new System.Drawing.Size(237, 22);
-            this.txtMARid.TabIndex = 11;
-            // 
-            // textACFidC
-            // 
-            this.textACFidC.Location = new System.Drawing.Point(243, 79);
-            this.textACFidC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textACFidC.Name = "textACFidC";
-            this.textACFidC.Size = new System.Drawing.Size(136, 22);
-            this.textACFidC.TabIndex = 10;
             // 
             // tabPage2
             // 
@@ -3198,7 +3197,8 @@
             this.groupBox4.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -3251,16 +3251,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripButton toolStripImportar;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Label lblCRSmodelo;
-        private System.Windows.Forms.Label lblCRSserie;
-        private System.Windows.Forms.Label lblESTid;
-        private System.Windows.Forms.Label lblMARid;
-        private System.Windows.Forms.Label lblACFid;
-        private System.Windows.Forms.TextBox txtCRSmodelo;
-        private System.Windows.Forms.TextBox txtCRSserie;
-        private System.Windows.Forms.TextBox txtESTid;
-        private System.Windows.Forms.TextBox txtMARid;
-        private System.Windows.Forms.TextBox textACFidC;
         private System.Windows.Forms.TextBox txtCRScantidad;
         private System.Windows.Forms.TextBox txtUNMid;
         private System.Windows.Forms.TextBox txtCRStipo;
@@ -3478,6 +3468,16 @@
         private System.Windows.Forms.TextBox textVNRdes;
         private MultiColumnComboBoxDemo.MultiColumnComboBox CtxtACFtipo_activo;
         private MultiColumnComboBoxDemo.MultiColumnComboBox cboVNRid;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label lblCRSmodelo;
+        private System.Windows.Forms.Label lblCRSserie;
+        private System.Windows.Forms.Label lblESTid;
+        private System.Windows.Forms.Label lblMARid;
+        private System.Windows.Forms.Label lblACFid;
+        private System.Windows.Forms.TextBox txtCRSmodelo;
+        private System.Windows.Forms.TextBox txtCRSserie;
+        private System.Windows.Forms.TextBox txtESTid;
+        private System.Windows.Forms.TextBox txtMARid;
+        private System.Windows.Forms.TextBox textACFidC;
     }
 }

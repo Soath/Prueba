@@ -130,7 +130,7 @@ namespace CapaPresentacion
             this.toolStripRefrescar.Visible = edo;
             this.toolStripAgregar.Visible = edo;
             this.toolStripEditar.Visible = edo;
-            this.toolStripEliminar.Visible = edo;
+            this.toolStripEliminar.Visible = false;
             this.toolStripImprimir.Visible = edo;
 
             this.toolStripGuardar.Visible = !edo;
@@ -149,19 +149,19 @@ namespace CapaPresentacion
         private void OcultarColumnas()
         {
             this.dataListado.Columns[0].Visible = false;
-            this.dataListado.Columns[1].Visible = false;
+            this.dataListado.Columns[1].Visible = true;
             this.dataListado.Columns[1].Width = 100;
             this.dataListado.Columns[1].DefaultCellStyle.Format = "#,0";
             this.dataListado.Columns[1].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataListado.Columns[2].Width = 250;
-            this.dataListado.Columns[3].Width = 100;
+            this.dataListado.Columns[3].Width = 250;
             //this.dataListado.Columns[3].DefaultCellStyle.Format = "#,0.00";
             this.dataListado.Columns[3].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataListado.Columns[4].Width = 100;
-            this.dataListado.Columns[1].HeaderText = "LIFNR";
-            this.dataListado.Columns[2].HeaderText = "Name1";
-            this.dataListado.Columns[3].HeaderText = "Stras";
-            this.dataListado.Columns[4].HeaderText = "STCD1";
+            this.dataListado.Columns[1].HeaderText = "Codigo";
+            this.dataListado.Columns[2].HeaderText = "Nombre";
+            this.dataListado.Columns[3].HeaderText = "direccion";
+            this.dataListado.Columns[4].HeaderText = "Dni/RUC";
         }
 
         private void mostrar()
@@ -171,7 +171,7 @@ namespace CapaPresentacion
             this.tomaTab();
             this.Botones(true);
             this.dataListado.DataSource = NbdiPRVpProveedor.Mostrar();
-
+            OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             if (dataListado.Rows.Count == 0)
             {
