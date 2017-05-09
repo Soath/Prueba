@@ -86,6 +86,11 @@
             this.label28 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox29 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -538,25 +543,26 @@
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(516, 350);
+            this.textBox28.Location = new System.Drawing.Point(123, 39);
             this.textBox28.Name = "textBox28";
             this.textBox28.ReadOnly = true;
-            this.textBox28.Size = new System.Drawing.Size(100, 20);
+            this.textBox28.Size = new System.Drawing.Size(39, 20);
             this.textBox28.TabIndex = 55;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(398, 357);
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(8, 42);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(54, 13);
+            this.label28.Size = new System.Drawing.Size(71, 15);
             this.label28.TabIndex = 54;
             this.label28.Text = "Indicador ";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(284, 410);
+            this.button1.Location = new System.Drawing.Point(235, 398);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 43);
             this.button1.TabIndex = 56;
@@ -566,20 +572,60 @@
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(132, 423);
+            this.textBox29.Location = new System.Drawing.Point(125, 461);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(100, 20);
             this.textBox29.TabIndex = 57;
+            this.textBox29.Visible = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label31);
+            this.groupBox1.Controls.Add(this.label30);
+            this.groupBox1.Controls.Add(this.textBox28);
+            this.groupBox1.Controls.Add(this.label29);
+            this.groupBox1.Controls.Add(this.label28);
+            this.groupBox1.Location = new System.Drawing.Point(395, 347);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(285, 94);
+            this.groupBox1.TabIndex = 58;
+            this.groupBox1.TabStop = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(176, 16);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(93, 13);
+            this.label29.TabIndex = 59;
+            this.label29.Text = "0 = No Procesado";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(176, 31);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(76, 13);
+            this.label30.TabIndex = 60;
+            this.label30.Text = "1 = Procesado";
+            // 
+            // label31
+            // 
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(176, 48);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(105, 40);
+            this.label31.TabIndex = 59;
+            this.label31.Text = "Una vez Editado el Indicador Cambia Automáticamente";
             // 
             // FrmacfGIS_UbicacionElectricaProcesar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 493);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBox29);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.label28);
             this.Controls.Add(this.textBox27);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.textBox26);
@@ -637,6 +683,8 @@
             this.Name = "FrmacfGIS_UbicacionElectricaProcesar";
             this.Text = "FrmacfGIS_UbicacionElectricaProcesar";
             this.Load += new System.EventHandler(this.FrmacfGIS_UbicacionElectricaProcesar_Load_1);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -702,5 +750,9 @@
         public System.Windows.Forms.TextBox textBox28;
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
     }
 }

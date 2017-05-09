@@ -66,35 +66,59 @@ namespace CapaPresentacion
             form.ShowDialog();
             dataListado.Rows[NumFila].Cells[0].Value =  form.var1 ;
             dataListado.Rows[NumFila].Cells[1].Value =  form.var2 ;
-           // dataListado.Rows[NumFila].Cells[2].Value =  form.var3 ;
-           // dataListado.Rows[NumFila].Cells[3].Value =  form.var4 ;
-           // dataListado.Rows[NumFila].Cells[4].Value =  form.var5 ;
-           // dataListado.Rows[NumFila].Cells[5].Value =  form.var6 ;
-           // dataListado.Rows[NumFila].Cells[6].Value =  form.var7 ;
-           // dataListado.Rows[NumFila].Cells[7].Value =  form.var8 ;
-           // dataListado.Rows[NumFila].Cells[8].Value =  form.var9 ;
-           // dataListado.Rows[NumFila].Cells[9].Value =  form.var10;
-           // dataListado.Rows[NumFila].Cells[10].Value = form.var11;
-           // dataListado.Rows[NumFila].Cells[11].Value = form.var12;
-           // dataListado.Rows[NumFila].Cells[12].Value = form.var13;
-           // dataListado.Rows[NumFila].Cells[13].Value = form.var14;
-           // dataListado.Rows[NumFila].Cells[14].Value = form.var15;
-           // dataListado.Rows[NumFila].Cells[15].Value = form.var16;
-           // dataListado.Rows[NumFila].Cells[16].Value = form.var17;
-           // dataListado.Rows[NumFila].Cells[17].Value = form.var18;
-           // dataListado.Rows[NumFila].Cells[18].Value = form.var19;
-           // dataListado.Rows[NumFila].Cells[19].Value = form.var20;
-           // dataListado.Rows[NumFila].Cells[20].Value = form.var21;
-           // dataListado.Rows[NumFila].Cells[21].Value = form.var22;
-           // dataListado.Rows[NumFila].Cells[22].Value = form.var23;
-           // dataListado.Rows[NumFila].Cells[23].Value = form.var24;
-           // dataListado.Rows[NumFila].Cells[24].Value = form.var25;
-           // dataListado.Rows[NumFila].Cells[25].Value = form.var26;
-           // dataListado.Rows[NumFila].Cells[26].Value = form.var27;
-           // dataListado.Rows[NumFila].Cells[27].Value = form.var28;
+            dataListado.Rows[NumFila].Cells[2].Value =  form.var3 ;
+            dataListado.Rows[NumFila].Cells[3].Value =  form.var4 ;
+            dataListado.Rows[NumFila].Cells[4].Value =  form.var5 ;
+            dataListado.Rows[NumFila].Cells[5].Value =  form.var6 ;
+            dataListado.Rows[NumFila].Cells[6].Value =  form.var7 ;
+            dataListado.Rows[NumFila].Cells[7].Value =  form.var8 ;
+            dataListado.Rows[NumFila].Cells[8].Value =  form.var9 ;
+            dataListado.Rows[NumFila].Cells[9].Value =  form.var10;
+            dataListado.Rows[NumFila].Cells[10].Value = form.var11;
+            dataListado.Rows[NumFila].Cells[11].Value = form.var12;
+            dataListado.Rows[NumFila].Cells[12].Value = form.var13;
+            dataListado.Rows[NumFila].Cells[13].Value = form.var14;
+            dataListado.Rows[NumFila].Cells[14].Value = form.var15;
+            dataListado.Rows[NumFila].Cells[15].Value = form.var16;
+            dataListado.Rows[NumFila].Cells[16].Value = form.var17;
+            dataListado.Rows[NumFila].Cells[17].Value = form.var18;
+            dataListado.Rows[NumFila].Cells[18].Value = form.var19;
+            dataListado.Rows[NumFila].Cells[19].Value = form.var20;
+            dataListado.Rows[NumFila].Cells[20].Value = form.var21;
+            dataListado.Rows[NumFila].Cells[21].Value = form.var22;
+            dataListado.Rows[NumFila].Cells[22].Value = form.var23;
+            dataListado.Rows[NumFila].Cells[23].Value = form.var24;
+            dataListado.Rows[NumFila].Cells[24].Value = form.var25;
+            dataListado.Rows[NumFila].Cells[25].Value = form.var26;
+            dataListado.Rows[NumFila].Cells[26].Value = form.var27;
+            dataListado.Rows[NumFila].Cells[27].Value = form.var28;
 
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           string Rta = string.Empty;
+           MessageBox.Show("Espere Por favor....");
+           try
+           {
+               foreach (DataGridViewRow row in dataListado.Rows)
+               {
+                   Rta = NacfACFp_Activo_Fijo.Editar2(
+                    this.dataListado.CurrentRow.Cells[0].Value.ToString()
+                   , this.dataListado.CurrentRow.Cells[4].Value.ToString()
+                   , this.dataListado.CurrentRow.Cells[5].Value.ToString()
+                   , this.dataListado.CurrentRow.Cells[8].Value.ToString()
+                   , this.dataListado.CurrentRow.Cells[9].Value.ToString()
+        
+                 );
+               }
+           }
+           catch (Exception ex)
+           {
+               MessageBox.Show(ex.Message + ex.StackTrace);
+           }
         }
     }
 }
