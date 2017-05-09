@@ -94,6 +94,7 @@ namespace CapaPresentacion
                     txtUBEcircuito.Text = Convert.ToString(row["UBEcircuito"]);
                     txtUBEpuntoi.Text = Convert.ToString(row["UBEpuntoi"]);
                     txtUBEpuntoi.Text = Convert.ToString(row["UBEpuntof"]);
+                    //Agregar tabla detalle
                 }
             }
             catch (Exception ex)
