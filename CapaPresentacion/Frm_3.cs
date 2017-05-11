@@ -53,7 +53,7 @@ namespace CapaPresentacion
         {
             try
             {
-                
+                //falta mostrar el ACFid
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
                    string Rta = string.Empty;
