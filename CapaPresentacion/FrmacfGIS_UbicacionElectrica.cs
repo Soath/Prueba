@@ -14,6 +14,7 @@ namespace CapaPresentacion
 {
     public partial class FrmacfGIS_UbicacionElectrica : Form
     {
+        public string ACFidNum;
         public FrmacfGIS_UbicacionElectrica()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace CapaPresentacion
                  DataRow row = dat.Rows[0];
                  //guardo datos en variables
                  lbltultimoid.Text = Convert.ToString(row["ACFid"]);
+                ACFidNum = lbltultimoid.Text;
              }
              else
              { lbltultimoid.Text = "No Existe Registro"; }

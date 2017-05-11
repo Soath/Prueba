@@ -35,6 +35,7 @@ namespace CapaDatos
         private string mVNRid;
         private string mCodNiff;
         private string mValAct;
+        private string mFactor;
         private string mVidUtilTrib;
         private string mVidUtilFinan;
         private string mUBEestado;
@@ -159,6 +160,11 @@ namespace CapaDatos
             get { return mValAct; }
             set { mValAct = value; }
         }
+        public string Factor
+        {
+            get { return mFactor; }
+            set { mFactor = value; }
+        }
         public string VidUtilTrib
         {
             get { return mVidUtilTrib; }
@@ -201,6 +207,7 @@ namespace CapaDatos
             string VNRid,
             string CodNiff,
             string ValAct,
+            string Factor,
             string VidUtilTrib,
             string VidUtilFinan,
             string UBEestado
@@ -231,6 +238,7 @@ namespace CapaDatos
             this.VNRid = mVNRid;
             this.CodNiff = mCodNiff;
             this.ValAct = mValAct;
+            this.Factor = mFactor;
             this.VidUtilTrib = mVidUtilTrib;
             this.VidUtilFinan = mVidUtilFinan;
             this.UBEestado = mUBEestado;
@@ -461,6 +469,12 @@ namespace CapaDatos
                 ParValAct.SqlDbType = SqlDbType.Int;
                 ParValAct.Value = acfGIS_UbicacionElectrica.ValAct;
                 SqlCmd.Parameters.Add(ParValAct);
+                //
+                SqlParameter ParFactor = new SqlParameter();
+                ParFactor.ParameterName = "@mFactor";
+                ParFactor.SqlDbType = SqlDbType.Int;
+                ParFactor.Value = acfGIS_UbicacionElectrica.Factor;
+                SqlCmd.Parameters.Add(ParFactor);
                 //     
                 SqlParameter ParVidUtilTrib = new SqlParameter();
                 ParVidUtilTrib.ParameterName = "@mVidUtilTrib";
