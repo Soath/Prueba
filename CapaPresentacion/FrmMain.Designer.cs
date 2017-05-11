@@ -85,6 +85,8 @@
             this.ribbonButton15 = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel5 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButton16 = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton62 = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton63 = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel6 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButton17 = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel7 = new System.Windows.Forms.RibbonPanel();
@@ -164,8 +166,6 @@
             this.ribbonButton57 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton48 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton49 = new System.Windows.Forms.RibbonButton();
-            this.ribbonButton62 = new System.Windows.Forms.RibbonButton();
-            this.ribbonButton63 = new System.Windows.Forms.RibbonButton();
             this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,7 +175,7 @@
             this.ribbon1.CausesValidation = false;
             this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.ribbon1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ribbon1.Margin = new System.Windows.Forms.Padding(2);
             this.ribbon1.Minimized = false;
             this.ribbon1.Name = "ribbon1";
             // 
@@ -630,6 +630,20 @@
             this.ribbonButton16.Style = System.Windows.Forms.RibbonButtonStyle.SplitDropDown;
             this.ribbonButton16.Text = "Ajustes";
             // 
+            // ribbonButton62
+            // 
+            this.ribbonButton62.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton62.Image")));
+            this.ribbonButton62.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton62.SmallImage")));
+            this.ribbonButton62.Text = "Ajustes de Vida Útil";
+            this.ribbonButton62.Click += new System.EventHandler(this.ribbonButton62_Click);
+            // 
+            // ribbonButton63
+            // 
+            this.ribbonButton63.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton63.Image")));
+            this.ribbonButton63.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton63.SmallImage")));
+            this.ribbonButton63.Text = "Ajustes de Valor Bien";
+            this.ribbonButton63.Click += new System.EventHandler(this.ribbonButton63_Click);
+            // 
             // ribbonPanel6
             // 
             this.ribbonPanel6.Items.Add(this.ribbonButton17);
@@ -778,6 +792,7 @@
             this.ribbonButton60.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton60.Image")));
             this.ribbonButton60.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton60.SmallImage")));
             this.ribbonButton60.Text = "Cerrar inventario";
+            this.ribbonButton60.Click += new System.EventHandler(this.ribbonButton60_Click);
             // 
             // ribbonButton61
             // 
@@ -884,7 +899,7 @@
             this.panelContenedor.Controls.Add(this.kryptonBorderEdge1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(0, 132);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(2);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(945, 460);
             this.panelContenedor.TabIndex = 1;
@@ -893,7 +908,7 @@
             // 
             this.kryptonBorderEdge1.BorderStyle = ComponentFactory.Krypton.Toolkit.PaletteBorderStyle.TabDock;
             this.kryptonBorderEdge1.Location = new System.Drawing.Point(538, 28);
-            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
             this.kryptonBorderEdge1.Size = new System.Drawing.Size(38, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
@@ -1118,20 +1133,6 @@
             this.ribbonButton49.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton49.SmallImage")));
             this.ribbonButton49.Text = "tresce";
             // 
-            // ribbonButton62
-            // 
-            this.ribbonButton62.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton62.Image")));
-            this.ribbonButton62.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton62.SmallImage")));
-            this.ribbonButton62.Text = "Ajustes de Vida Útil";
-            this.ribbonButton62.Click += new System.EventHandler(this.ribbonButton62_Click);
-            // 
-            // ribbonButton63
-            // 
-            this.ribbonButton63.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton63.Image")));
-            this.ribbonButton63.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton63.SmallImage")));
-            this.ribbonButton63.Text = "Ajustes de Valor Bien";
-            this.ribbonButton63.Click += new System.EventHandler(this.ribbonButton63_Click);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1139,7 +1140,7 @@
             this.ClientSize = new System.Drawing.Size(945, 592);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.ribbon1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".:. Sistema de Gestión v1.0 de Activos Fijos .:.";

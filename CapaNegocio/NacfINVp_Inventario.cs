@@ -78,6 +78,11 @@ namespace CapaNegocio
           {
               return new DAcfINVp_Inventario().Last();
           }
+          public static string Cerrar()
+          {
+              DAcfINVp_Inventario Obj = new DAcfINVp_Inventario();
+              return Obj.Cerrar();
+          }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos

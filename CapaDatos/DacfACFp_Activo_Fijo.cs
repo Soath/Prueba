@@ -865,7 +865,54 @@ namespace CapaDatos
             return rpta;
 	}
 
-   
+    //METODO INSERTAR 
+    public string Insertar2(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
+    {
+        string rpta = "";
+        SqlConnection SqlCon = new SqlConnection();
+        try
+        {
+            //Código
+            SqlCon.ConnectionString = DConexion.CnBDActivo;
+            SqlCon.Open();
+            //Establecer el Comando
+            SqlCommand SqlCmd = new SqlCommand();
+            SqlCmd.Connection = SqlCon;
+            SqlCmd.CommandText = "usp_I2_acfACFp_Activo_Fijo";
+            SqlCmd.CommandType = CommandType.StoredProcedure;
+            //
+
+            SqlParameter ParACFid = new SqlParameter();
+            ParACFid.ParameterName = "@iACFid";
+            ParACFid.SqlDbType = SqlDbType.Int;
+            ParACFid.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFid);
+            SqlCmd.Parameters.Add(ParACFid);
+
+            SqlParameter ParACFdescripcion = new SqlParameter();
+            ParACFdescripcion.ParameterName = "@sACFdescripcion";
+            ParACFdescripcion.SqlDbType = SqlDbType.Char;
+            ParACFdescripcion.Value = acfACFp_Activo_Fijo.ACFdescripcion;
+            SqlCmd.Parameters.Add(ParACFdescripcion);
+            //
+
+
+            //Ejecutamos nuestro comando
+
+            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Inserto el Registro";
+
+
+
+        }
+        catch (Exception ex)
+        {
+            rpta = ex.Message;
+        }
+        finally
+        {
+            if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+        }
+        return rpta;
+    }
         //METODO EDITAR
 	public string Editar(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo) {
 		string rpta = "";

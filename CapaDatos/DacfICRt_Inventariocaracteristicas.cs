@@ -1538,5 +1538,91 @@ namespace CapaDatos
         }
         return rpta;
     }
+
+    //METODO EDITAR
+    public string Editar2(DacfICRt_Inventariocaracteristicas acfICRt_Inventariocaracteristicas)
+    {
+        string rpta = "";
+        SqlConnection SqlCon = new SqlConnection();
+        try
+        {
+            //Código
+            SqlCon.ConnectionString = DConexion.CnBDActivo;
+            SqlCon.Open();
+            //Establecer el Comando
+            SqlCommand SqlCmd = new SqlCommand();
+            SqlCmd.Connection = SqlCon;
+            SqlCmd.CommandText = "usp_U2_acfICRt_Inventariocaracteristicas";
+            SqlCmd.CommandType = CommandType.StoredProcedure;
+            //
+            SqlParameter ParACFid = new SqlParameter();
+            ParACFid.ParameterName = "@iACFid";
+            ParACFid.SqlDbType = SqlDbType.Int;
+            ParACFid.Value = acfICRt_Inventariocaracteristicas.ACFid;
+            SqlCmd.Parameters.Add(ParACFid);
+            //
+            SqlParameter ParMARid = new SqlParameter();
+            ParMARid.ParameterName = "@iMARid";
+            ParMARid.SqlDbType = SqlDbType.Int;
+            ParMARid.Value = acfICRt_Inventariocaracteristicas.MARid;
+            SqlCmd.Parameters.Add(ParMARid);
+          
+      
+            SqlParameter ParCRSserie = new SqlParameter();
+            ParCRSserie.ParameterName = "@sCRSserie";
+            ParCRSserie.SqlDbType = SqlDbType.VarChar;
+            ParCRSserie.Value = acfICRt_Inventariocaracteristicas.CRSserie;
+            SqlCmd.Parameters.Add(ParCRSserie);
+           
+            //Ejecutamos nuestro comando
+
+            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Actualizo el Registro";
+
+
+        }
+        catch (Exception ex)
+        {
+            rpta = ex.Message;
+        }
+        finally
+        {
+            if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+        }
+        return rpta;
+    }
+    public string Copiar2()
+    {
+
+        string rpta = "";
+        SqlConnection SqlCon = new SqlConnection();
+        try
+        {
+            //Código
+            SqlCon.ConnectionString = DConexion.CnBDActivo;
+            SqlCon.Open();
+            //Establecer el Comando
+            SqlCommand SqlCmd = new SqlCommand();
+            SqlCmd.Connection = SqlCon;
+            SqlCmd.CommandText = "usp_C2_acfICRt_Inventariocaracteristicas";
+            SqlCmd.CommandType = CommandType.StoredProcedure;
+            //
+
+
+            //Ejecutamos nuestro comando
+
+            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+
+
+        }
+        catch (Exception ex)
+        {
+            rpta = ex.Message;
+        }
+        finally
+        {
+            if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+        }
+        return rpta;
+    }
 }
 }

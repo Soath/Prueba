@@ -286,5 +286,63 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
             Form Frm_ConciliarInventario = new Frm_ConciliarInventario();
             Frm_ConciliarInventario.ShowDialog();
         }
+        private void MensajeOk(string mensaje)
+        {
+            MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+        private void MensajeError(string mensaje)
+        {
+            MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        private void Copiar()
+        {
+            string Rta = string.Empty;
+            try
+            {
+                Rta = NacfICRt_Inventariocaracteristicas.Copiar2();
+
+                if (Rta.Equals("OK"))
+                {
+                    this.MensajeOk("Cambios copiados correctamente.");
+                }
+                else
+                {
+                    this.MensajeError(Rta);
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+        private void Cerrar()
+        {
+            string Rta = string.Empty;
+            try
+            {
+                Rta = NacfINVp_Inventario.Cerrar();
+
+                if (Rta.Equals("OK"))
+                {
+                    this.MensajeOk("Inventario cerrado correctamente.");
+                }
+                else
+                {
+                    this.MensajeError(Rta);
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+        private void ribbonButton60_Click(object sender, EventArgs e)
+        {
+            Copiar();
+            Cerrar();
+        }
     }
 }

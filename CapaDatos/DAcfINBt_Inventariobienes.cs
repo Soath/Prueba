@@ -1101,5 +1101,36 @@ namespace CapaDatos
         }
         return rpta;
     }
+    public DataTable Mostrar2()
+    {
+        DataTable DtResultado = new DataTable("acfINBt_Inventariobienes");
+        SqlConnection SqlCon = new SqlConnection();
+
+        try
+        {
+            //Codigo
+            SqlCon.ConnectionString = DConexion.CnBDActivo;
+            SqlCommand SqlCmd = new SqlCommand();
+            SqlCmd.Connection = SqlCon;
+            SqlCmd.CommandText = "usp_S2_acfINBt_Inventariobienes";
+            SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+            //SqlParameter PariMVAid = new SqlParameter();
+            //PariMVAid.ParameterName = "@iMVAid";
+            //PariMVAid.SqlDbType = SqlDbType.Int;
+            //PariMVAid.Value = MVAid;
+            //SqlCmd.Parameters.Add(PariMVAid);
+
+
+            SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+            SqlDat.Fill(DtResultado);
+        }
+        catch (Exception ex)
+        {
+            DtResultado = null;
+        }
+        return DtResultado;
+    }
     }
 }
