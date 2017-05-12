@@ -50,19 +50,65 @@ namespace CapaPresentacion
         private void ribbonButton1_DoubleClick(object sender, EventArgs e)
         {
             MessageBox.Show("Prueba 1", "Prueba 1xxx",
-MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
-        }        
+            MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+        }
+        private void ribbonButton3_Click(object sender, EventArgs e)
+        {
+            Form FrmacfUNMt_Unimed = new FrmacfUNMt_Unimed();
+            FrmacfUNMt_Unimed.ShowDialog();
+        }
         private void ribbonButton11_Click(object sender, EventArgs e)
         {
             Form FrmMovimiento_Transferencia_Activo = new FrmMovimiento_Transferencia_Activo();
             FrmMovimiento_Transferencia_Activo.ShowDialog();
-        }        
+        }
         private void ribbonButton12_Click(object sender, EventArgs e)
         {
             Form FrmacfACFp_Activo_Fijo = new FrmacfACFp_Activo_Fijo();
             FrmacfACFp_Activo_Fijo.ShowDialog();
         }
-                
+        private void ribbonButton19_Click(object sender, EventArgs e)
+        {
+            Form FrmacfTMVt_TipoMovimiento = new FrmacfTMVt_TipoMovimiento();
+            FrmacfTMVt_TipoMovimiento.ShowDialog();
+        }
+        private void ribbonButton20_Click(object sender, EventArgs e)
+        {
+            Form FrmacfSPNt_Supranumero = new FrmacfSPNt_Supranumero();
+            FrmacfSPNt_Supranumero.ShowDialog();
+        }
+        private void ribbonButton21_Click(object sender, EventArgs e)
+        {
+            Form FrmacfSELt_SistemaElectrico = new FrmacfSELt_SistemaElectrico();
+            FrmacfSELt_SistemaElectrico.ShowDialog();
+        }
+        private void ribbonButton22_Click(object sender, EventArgs e)
+        {
+            Form FrmacfPDFt_procesodiferido = new FrmacfPDFt_procesodiferido();
+            FrmacfPDFt_procesodiferido.ShowDialog();
+        }
+        private void ribbonButton23_Click(object sender, EventArgs e)
+        {
+            Form FrmacfMATt_Material = new FrmacfMATt_Material();
+            FrmacfMATt_Material.ShowDialog();
+        }
+        private void ribbonButton25_Click(object sender, EventArgs e)
+        {
+            Form FrmacfMARt_Marca = new FrmacfMARt_Marca();
+            FrmacfMARt_Marca.ShowDialog();
+        }
+        private void ribbonButton26_Click(object sender, EventArgs e)
+        {
+            Form FrmacfLOCt_Local = new FrmacfLOCt_Local();
+            FrmacfLOCt_Local.ShowDialog();
+        }
+        private void ribbonButton27_Click(object sender, EventArgs e)
+        {
+            Form FrmacfESTt_Estado = new FrmacfESTt_Estado();
+            FrmacfESTt_Estado.ShowDialog();
+        }
+       
+        
         private void ribbonButton65_Click(object sender, EventArgs e)
         {
             Form FrmacfINVp_Inventario = new FrmacfINVp_Inventario();
@@ -267,63 +313,83 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
             Form Frm_ConciliarInventario = new Frm_ConciliarInventario();
             Frm_ConciliarInventario.ShowDialog();
         }
-        private void MensajeOk(string mensaje)
+
+        private void ribbonButton41_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            Form FrmacfCSTt_Costo = new FrmacfCSTt_Costo();
+            FrmacfCSTt_Costo.ShowDialog();
         }
-        private void MensajeError(string mensaje)
+
+        private void ribbonButton58_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Form FrmacfCMPt_Componente = new FrmacfCMPt_Componente();
+            FrmacfCMPt_Componente.ShowDialog();
         }
-        private void Copiar()
+
+        private void ribbonButton59_Click_1(object sender, EventArgs e)
         {
-            string Rta = string.Empty;
-            try
-            {
-                Rta = NacfICRt_Inventariocaracteristicas.Copiar2();
-
-                if (Rta.Equals("OK"))
-                {
-                    this.MensajeOk("Cambios copiados correctamente.");
-                }
-                else
-                {
-                    this.MensajeError(Rta);
-                }
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
+            Form FrmacfAMBt_Ambiente = new FrmacfAMBt_Ambiente();
+            FrmacfAMBt_Ambiente.ShowDialog();
         }
-        private void Cerrar()
-        {
-            string Rta = string.Empty;
-            try
-            {
-                Rta = NacfINVp_Inventario.Cerrar();
 
-                if (Rta.Equals("OK"))
-                {
-                    this.MensajeOk("Inventario cerrado correctamente.");
-                }
-                else
-                {
-                    this.MensajeError(Rta);
-                }
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-        }
         private void ribbonButton60_Click(object sender, EventArgs e)
         {
-            Copiar();
-            Cerrar();
+            Form FrmacfACTt_Actividad = new FramcfACTt_Actividad();
+            FrmacfACTt_Actividad.ShowDialog();
+        }
+
+        private void ribbonButton61_Click(object sender, EventArgs e)
+        {
+            Form FrmbdiCAFpClaseDeActivoFijo = new FrmbdiCAFpClaseDeActivoFijo();
+            FrmbdiCAFpClaseDeActivoFijo.ShowDialog();
+        }
+
+        private void ribbonButton96_Click(object sender, EventArgs e)
+        {
+            Form FrmbdiCDDpClasesDeDocumento = new FrmbdiCDDpClasesDeDocumento();
+            FrmbdiCDDpClasesDeDocumento.ShowDialog();
+        }
+
+        private void ribbonButton97_Click(object sender, EventArgs e)
+        {
+            Form FrmbdiPRVpProveedor = new FrmbdiPRVpProveedor();
+            FrmbdiPRVpProveedor.ShowDialog();
+        }
+
+        private void ribbonButton98_Click(object sender, EventArgs e)
+        {
+            Form FrmbdiSEGpSegmento = new FrmbdiSEGpSegmento();
+            FrmbdiSEGpSegmento.ShowDialog();
+        }
+
+        private void ribbonButton99_Click(object sender, EventArgs e)
+        {
+            Form FrmbdiSOCpSociedades = new FrmbdiSOCpSociedades();
+            FrmbdiSOCpSociedades.ShowDialog();
+        }
+
+        private void ribbonButton100_Click(object sender, EventArgs e)
+        {
+            Form FrmbdiXCCpExtraccionSAP_CentroCosto = new FrmbdiXCCpExtraccionSAP_CentroCosto();
+            FrmbdiXCCpExtraccionSAP_CentroCosto.ShowDialog();
+        }
+
+        private void ribbonButton101_Click(object sender, EventArgs e)
+        {
+            Form FrmbdiXPEpExtraccionSAP_Personal = new FrmbdiXPEpExtraccionSAP_Personal();
+            FrmbdiXPEpExtraccionSAP_Personal.ShowDialog();
+        }
+
+        private void ribbonButton64_Click(object sender, EventArgs e)
+        {
+            Form FrmacfACFp_Activo_Fijo = new FrmacfACFp_Activo_Fijo();
+            FrmacfACFp_Activo_Fijo.ShowDialog();
+        }
+
+        private void ribbonButton5_Click(object sender, EventArgs e)
+        {
+            Form FrmacfGIS_UbicacionElectrica = new FrmacfGIS_UbicacionElectrica();
+            FrmacfGIS_UbicacionElectrica.ShowDialog();
         }
     }
 }

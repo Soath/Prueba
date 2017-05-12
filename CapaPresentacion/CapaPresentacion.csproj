@@ -658,6 +658,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMovimientoTransferecnaiActivo.resx">
       <DependentUpon>FrmMovimientoTransferecnaiActivo.cs</DependentUpon>
