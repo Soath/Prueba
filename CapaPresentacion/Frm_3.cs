@@ -58,7 +58,6 @@ namespace CapaPresentacion
                 {
                    string Rta = string.Empty;
                    Rta = NacfACFp_Activo_Fijo.Insertar2(
-       Convert.ToString(row.Cells[1].Value), //ACFid
        Convert.ToString(row.Cells[2].Value) //ACFdescripcion
          );
                     if (Rta.Equals("OK"))

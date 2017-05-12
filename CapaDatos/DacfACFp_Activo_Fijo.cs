@@ -891,12 +891,6 @@ namespace CapaDatos
             SqlCmd.CommandType = CommandType.StoredProcedure;
             //
 
-            SqlParameter ParACFid = new SqlParameter();
-            ParACFid.ParameterName = "@iACFid";
-            ParACFid.SqlDbType = SqlDbType.Int;
-            ParACFid.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFid);
-            SqlCmd.Parameters.Add(ParACFid);
-
             SqlParameter ParACFdescripcion = new SqlParameter();
             ParACFdescripcion.ParameterName = "@sACFdescripcion";
             ParACFdescripcion.SqlDbType = SqlDbType.Char;

@@ -33,15 +33,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHoja = new System.Windows.Forms.TextBox();
-            this.ACFid = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ACFid});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(601, 276);
@@ -84,12 +81,6 @@
             this.txtHoja.Size = new System.Drawing.Size(268, 20);
             this.txtHoja.TabIndex = 5;
             // 
-            // ACFid
-            // 
-            this.ACFid.HeaderText = "ACFid";
-            this.ACFid.Name = "ACFid";
-            this.ACFid.Width = 100;
-            // 
             // Frm_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,6 +107,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHoja;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn ACFid;
     }
 }
