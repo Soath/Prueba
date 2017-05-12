@@ -310,6 +310,11 @@ namespace CapaNegocio
             DacfICRt_Inventariocaracteristicas Obj = new DacfICRt_Inventariocaracteristicas();
             return Obj.Copiar();
         }
+        public static string Copiar2()
+        {
+            DacfICRt_Inventariocaracteristicas Obj = new DacfICRt_Inventariocaracteristicas();
+            return Obj.Copiar2();
+        }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
@@ -318,6 +323,19 @@ namespace CapaNegocio
         {
             return new DacfICRt_Inventariocaracteristicas().Buscar(iACFid);
         }
-
+       
+        
+        public static string Editar2(
+        string iACFid,
+        string iMARid,
+        string sCRSserie)
+        {
+            DacfICRt_Inventariocaracteristicas Obj = new DacfICRt_Inventariocaracteristicas();
+            Obj.ACFid = iACFid;
+            Obj.MARid = iMARid;
+            Obj.CRSserie = sCRSserie;
+       
+            return Obj.Editar2(Obj);
+        }
     }
 }

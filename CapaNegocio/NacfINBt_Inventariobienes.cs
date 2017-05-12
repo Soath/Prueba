@@ -219,6 +219,10 @@ namespace CapaNegocio
             DAcfINBt_Inventariobienes Obj = new DAcfINBt_Inventariobienes();
             return Obj.Copiar();
         }
+        public static DataTable Mostrar2()
+        {
+            return new DAcfINBt_Inventariobienes().Mostrar2();
+        }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos

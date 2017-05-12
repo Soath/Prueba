@@ -186,6 +186,12 @@
     <Compile Include="FrmacfGIS_UbicacionElectricaImportar.Designer.cs">
       <DependentUpon>FrmacfGIS_UbicacionElectricaImportar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmacfGIS_UbicacionElectricaProcesar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmacfGIS_UbicacionElectricaProcesar.Designer.cs">
+      <DependentUpon>FrmacfGIS_UbicacionElectricaProcesar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfICRt_Inventariocaracteristicas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -426,6 +432,12 @@
     <Compile Include="FrmReportes.Designer.cs">
       <DependentUpon>FrmReportes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_3.Designer.cs">
+      <DependentUpon>Frm_3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_ConciliarInventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -538,6 +550,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfGIS_UbicacionElectricaImportar.resx">
       <DependentUpon>FrmacfGIS_UbicacionElectricaImportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmacfGIS_UbicacionElectricaProcesar.resx">
+      <DependentUpon>FrmacfGIS_UbicacionElectricaProcesar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfICRt_Inventariocaracteristicas.resx">
       <DependentUpon>FrmacfICRt_Inventariocaracteristicas.cs</DependentUpon>
@@ -655,6 +670,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_3.resx">
+      <DependentUpon>Frm_3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ConciliarInventario.resx">
       <DependentUpon>Frm_ConciliarInventario.cs</DependentUpon>

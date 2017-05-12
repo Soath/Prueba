@@ -494,6 +494,40 @@ namespace CapaDatos
             }
             return DtResultado;
         }
+        public string Cerrar()
+        {
+
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_U2_acfINVp_Inventario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+
+
+                //Ejecutamos nuestro comando
+
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+
+
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
+        }
         public DataTable MostrarRegistro(String INVdetalle)
         {
 

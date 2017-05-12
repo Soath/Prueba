@@ -24,6 +24,7 @@ UBEid int primary key
 ,VNRid char(20)
 ,CodNiff char(30)
 ,ValAct int
+,Factor varchar(30)
 ,VidUtilTrib int
 ,VidUtilFinan int
 ,UBEestado char(1)

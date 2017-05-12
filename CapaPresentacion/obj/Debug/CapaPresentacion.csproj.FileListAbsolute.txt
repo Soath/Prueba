@@ -1,8 +1,3 @@
-C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojFakesResolveAssemblyReference.cache
-C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\View1.g.cs
-C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\ViewModel1.g.cs
-C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
-C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.lref
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.dll.config
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.dll
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
@@ -13,7 +8,11 @@ C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\Microsoft.Rep
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaDatos.dll
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaNegocio.pdb
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaDatos.pdb
-C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojFakesResolveAssemblyReference.cache
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\View1.g.cs
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\ViewModel1.g.cs
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.lref
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\View1.baml
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\ViewModel1.baml
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.g.resources
@@ -33,6 +32,7 @@ C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfESTt_Estado.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfGIS_UbicacionElectrica.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfGIS_UbicacionElectricaImportar.resources
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfGIS_UbicacionElectricaProcesar.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfICRt_Inventariocaracteristicas.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfINBt_Inventariobienes.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmacfINVp_Inventario.resources
@@ -72,6 +72,7 @@ C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMovimiento_Transferencia_Activo.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMVMReporteD.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmReportes.resources
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_3.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_ConciliarInventario.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_InventarioG.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_RegistroInventario.resources
@@ -85,6 +86,7 @@ C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+<<<<<<< HEAD
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.dll.config
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.dll
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
@@ -174,3 +176,5 @@ C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\RdlCompile.com
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\BarcodeLib.dll
+=======
+>>>>>>> origin/master
