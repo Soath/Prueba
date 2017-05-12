@@ -1218,7 +1218,7 @@ namespace CapaDatos
             return rpta; 
 	}
 
-        //METODO EDITAR
+        //METODO EDITAR2
         public string Editar2(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
         {
             string rpta = "";
@@ -1283,6 +1283,88 @@ namespace CapaDatos
             return rpta;
         }
 
+        //METODO EDITAR2
+        public string Editar3(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
+        {
+            string rpta = "";
+
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_I_acfGIS_UbicacionElectrica";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFid);
+                SqlCmd.Parameters.Add(ParACFid);
+                //
+                SqlParameter ParACFobra = new SqlParameter();
+                ParACFobra.ParameterName = "@sACFobra";
+                ParACFobra.SqlDbType = SqlDbType.Char;
+                ParACFobra.Value = acfACFp_Activo_Fijo.ACFobra;
+                SqlCmd.Parameters.Add(ParACFobra);
+                //
+                SqlParameter ParKOSTL = new SqlParameter();
+                ParKOSTL.ParameterName = "@sKOSTL";
+                ParKOSTL.SqlDbType = SqlDbType.Char;
+                ParKOSTL.Value = acfACFp_Activo_Fijo.KOSTL;
+                SqlCmd.Parameters.Add(ParKOSTL);
+                //
+                SqlParameter ParVNRid = new SqlParameter();
+                ParVNRid.ParameterName = "@sVNRid";
+                ParVNRid.SqlDbType = SqlDbType.Char;
+                ParVNRid.Value = acfACFp_Activo_Fijo.VNRid;
+                SqlCmd.Parameters.Add(ParVNRid);
+                //
+                SqlParameter ParACFvalorniif = new SqlParameter();
+                ParACFvalorniif.ParameterName = "@decACFvalorniif";
+                ParACFvalorniif.SqlDbType = SqlDbType.Decimal;
+                ParACFvalorniif.Value = Convert.ToDecimal(acfACFp_Activo_Fijo.ACFvalorniif);
+                SqlCmd.Parameters.Add(ParACFvalorniif);
+                //
+                SqlParameter ParACFvalortrib = new SqlParameter();
+                ParACFvalortrib.ParameterName = "@decACFvalortrib";
+                ParACFvalortrib.SqlDbType = SqlDbType.Decimal;
+                ParACFvalortrib.Value = Convert.ToDecimal(acfACFp_Activo_Fijo.ACFvalortrib);
+                SqlCmd.Parameters.Add(ParACFvalortrib);
+                //
+                SqlParameter ParUBEid = new SqlParameter();
+                ParUBEid.ParameterName = "@iUBEid";
+                ParUBEid.SqlDbType = SqlDbType.Int;
+                ParUBEid.Value = Convert.ToInt32(acfACFp_Activo_Fijo.UBEid);
+                SqlCmd.Parameters.Add(ParUBEid);
+                //
+                SqlParameter ParV_T087U_ANLUE = new SqlParameter();
+                ParV_T087U_ANLUE.ParameterName = "@sV_T087U_ANLUE";
+                ParV_T087U_ANLUE.SqlDbType = SqlDbType.Char;
+                ParV_T087U_ANLUE.Value = acfACFp_Activo_Fijo.V_T087U_ANLUE;
+                SqlCmd.Parameters.Add(ParV_T087U_ANLUE);
+                //
+
+
+
+                //Ejecutamos nuestro comando
+
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Modifico el Registro";
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
+        }
 
         //METODO ELIMINAR
         public string Eliminar(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo) {

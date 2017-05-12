@@ -21,16 +21,71 @@ namespace CapaNegocio
     //       //Obj.ACTactividad = mACTactividad;
     //       //return Obj.Insertar(Obj);
     //   }
-    //   //------------------------------------------------------------------
-    //   //Metodo Editar que llama al metodo Editar de la clase 
-    //   //de la CapaDatos
-    //   public static string Editar(string mACTid, string mACTactividad)
-    //   {
-    //       DacfGIS_UbicacionElectrica Obj = new DacfGIS_UbicacionElectrica();
-    //       Obj.ACTid = mACTid;
-    //       Obj.ACTactividad = mACTactividad;
-    //       return Obj.Editar(Obj);
-    //   }
+       //------------------------------------------------------------------
+       //Metodo Editar que llama al metodo Editar de la clase 
+       //de la CapaDatos
+       public static string Editar(
+              string iUBEid
+            , string mUBEcodigogis
+            , string mACFid
+            , string mSELid
+            , string mUBEset
+            , string mUBEsetetq
+            , string mUBEalimentador
+            , string mUBEalimetiquetadoretq
+            , string mUBEsed
+            , string mUBEsedetq
+            , string mUBcircuito
+            , string mUBEcircuitoetq
+            , string mUBEtipoPuntoi
+            , string mUBEpuntoi
+            , string mUBEpuntoietq
+            , string mUBEtipoPuntof
+            , string mUBEpuntof
+            , string mUBEpuntofetq
+            , string mUBEobra
+            , string mKOSTL
+            , string mZona
+            , string mVNRid
+            , string mCodNiff
+            , string mValAct
+            , string mFactor
+            , string mVidUtilTrib
+            , string mVidUtilFinan
+            , string mUBEestado
+           )
+       {
+           DacfGIS_UbicacionElectrica Obj = new DacfGIS_UbicacionElectrica();
+            Obj.UBEid = iUBEid;
+            Obj.UBEcodigogis = mUBEcodigogis;
+            Obj.ACFid = mACFid;
+            Obj.SELid = mSELid;
+            Obj.UBEset = mUBEset;
+            Obj.UBEsetetq = mUBEsetetq;
+            Obj.UBEalimentador = mUBEalimentador;
+            Obj.UBEalimetiquetadoretq = mUBEalimetiquetadoretq;
+            Obj.UBEsed = mUBEsed;
+            Obj.UBEsedetq = mUBEsedetq;
+            Obj.UBcircuito = mUBcircuito;
+            Obj.UBEcircuitoetq = mUBEcircuitoetq;
+            Obj.UBEtipoPuntoi = mUBEtipoPuntoi;
+            Obj.UBEpuntoi = mUBEpuntoi;
+            Obj.UBEpuntoietq = mUBEpuntoietq;
+            Obj.UBEtipoPuntof = mUBEtipoPuntof;
+            Obj.UBEpuntof = mUBEpuntof;
+            Obj.UBEpuntofetq = mUBEpuntofetq;
+            Obj.UBEobra = mUBEobra;
+            Obj.KOSTL = mKOSTL;
+            Obj.Zona = mZona;
+            Obj.VNRid = mVNRid;
+            Obj.CodNiff = mCodNiff;
+            Obj.ValAct = mValAct;
+            Obj.Factor = mFactor;
+            Obj.VidUtilTrib = mVidUtilTrib;
+            Obj.VidUtilFinan = mVidUtilFinan;
+            Obj.UBEestado = mUBEestado;
+            return Obj.Editar(Obj);
+       }
     //   //------------------------------------------------------------------
     //   //M�todo Eliminar que llama al m�todo Eliminar de la clase 
     //   //de la CapaDatos

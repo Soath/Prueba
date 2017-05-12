@@ -222,12 +222,37 @@ namespace CapaNegocio
 
         //Metodo Editar que llama al metodo Editar de la clase DPostres
         //de la CapaDatos
+        public static string Editar3(
+         string iACFid,
+         string sACFobra,
+         string sKOSTL,
+         string sVNRid,
+         string decACFvalorniif,
+         string decACFvalortrib,
+         string iUBEid,
+         string sV_T087U_ANLUE
+         )
+        {
+            DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
+            Obj.ACFid = iACFid;
+            Obj.ACFobra = sACFobra;
+            Obj.KOSTL = sKOSTL;
+            Obj.VNRid = sVNRid;
+            Obj.ACFvalorniif = decACFvalorniif;
+            Obj.ACFvalortrib = decACFvalortrib;
+            Obj.UBEid = iUBEid;
+            Obj.V_T087U_ANLUE = sV_T087U_ANLUE;
+            return Obj.Editar3(Obj);
+        }
+
+        //Metodo Editar que llama al metodo Editar de la clase 
+        //de la CapaDatos
         public static string Editar2(
          string iACFid,
          string iACFvutilniifanio,
          string iACFvutilniifdia,
          string iACFvutiltribanio,
-         string iACFvutiltribdia         
+         string iACFvutiltribdia
          )
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
@@ -238,7 +263,6 @@ namespace CapaNegocio
             Obj.ACFvutiltribdia = iACFvutiltribdia;
             return Obj.Editar2(Obj);
         }
-
 
         //------------------------------------------------------------------
         //M�todo Eliminar que llama al m�todo Eliminar de la clase DPostres

@@ -92,33 +92,77 @@ namespace CapaPresentacion
             dataListado.Rows[NumFila].Cells[25].Value = form.var26;
             dataListado.Rows[NumFila].Cells[26].Value = form.var27;
             dataListado.Rows[NumFila].Cells[27].Value = form.var28;
-
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           string Rta = string.Empty;
-           MessageBox.Show("Espere Por favor....");
-           try
-           {
-               foreach (DataGridViewRow row in dataListado.Rows)
-               {
-                   Rta = NacfACFp_Activo_Fijo.Editar2(
-                    this.dataListado.CurrentRow.Cells[0].Value.ToString()
-                   , this.dataListado.CurrentRow.Cells[4].Value.ToString()
-                   , this.dataListado.CurrentRow.Cells[5].Value.ToString()
-                   , this.dataListado.CurrentRow.Cells[8].Value.ToString()
-                   , this.dataListado.CurrentRow.Cells[9].Value.ToString()
-        
-                 );
-               }
-           }
-           catch (Exception ex)
-           {
-               MessageBox.Show(ex.Message + ex.StackTrace);
-           }
+            string val1 = "0";
+            string val2 = "0";
+            string Rta = string.Empty;
+            MessageBox.Show("Espere Por favor....");
+                      try
+                      {
+                          foreach (DataGridViewRow row in dataListado.Rows)
+                          {    // capturar ultimo Id Activo Fijo
+                               string ACFidNum;
+
+                               DataTable dat = NacfGIS_UbicacionElectrica.Last();
+                               DataRow rows = dat.Rows[0];
+                               ACFidNum = Convert.ToString(rows["ACFid"]);
+                               int NumId = Convert.ToInt32(ACFidNum);
+                               NumId = NumId + 1;
+                               ACFidNum = Convert.ToString(NumId);
+                               MessageBox.Show(ACFidNum);
+                    // -----------------------------
+
+                                 Rta = NacfACFp_Activo_Fijo.Editar3(
+                                  ACFidNum
+                                , this.dataListado.CurrentRow.Cells[18].Value.ToString()
+                                , this.dataListado.CurrentRow.Cells[19].Value.ToString()
+                                , this.dataListado.CurrentRow.Cells[21].Value.ToString()
+                                , this.dataListado.CurrentRow.Cells[23].Value.ToString()
+                                , this.dataListado.CurrentRow.Cells[25].Value.ToString()
+                                , val1
+                                , val2
+                                );
+
+                               Rta = NacfGIS_UbicacionElectrica.Editar(
+                                this.dataListado.CurrentRow.Cells[0].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[1].Value.ToString()
+                              , ACFidNum
+                              , this.dataListado.CurrentRow.Cells[3].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[4].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[5].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[6].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[7].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[8].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[9].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[10].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[11].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[12].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[13].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[14].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[15].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[16].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[17].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[18].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[19].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[20].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[21].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[22].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[23].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[24].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[25].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[26].Value.ToString()
+                              , this.dataListado.CurrentRow.Cells[27].Value.ToString()
+                            );
+                          }
+                      }
+                      catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message + ex.StackTrace);
+                        }      
+            this.Dispose();
         }
     }
 }

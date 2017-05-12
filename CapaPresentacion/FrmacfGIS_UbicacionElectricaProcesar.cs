@@ -115,7 +115,7 @@ namespace CapaPresentacion
             else { var19 = textBox19.Text; }
 
             if (textBox20.Text == "")
-                { var20 = "NULL"; }
+                { var20 = "0"; }
             else { var20 = textBox20.Text; }
 
             if (textBox21.Text == "")
@@ -123,7 +123,7 @@ namespace CapaPresentacion
             else { var21 = textBox21.Text; }
 
             if (textBox22.Text == "")
-                { var22 = "NULL"; }
+                { var22 = "0"; }
             else { var22 = textBox22.Text; }
 
             if (textBox23.Text == "")

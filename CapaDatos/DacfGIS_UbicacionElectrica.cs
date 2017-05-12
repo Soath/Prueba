@@ -517,28 +517,190 @@ namespace CapaDatos
             SqlConnection SqlCon = new SqlConnection();
             try
             {
-          //    //Código
-          //    SqlCon.ConnectionString = DConexion.CnBDActivo;
-          //    SqlCon.Open();
-          //    //Establecer el Comando
-          //    SqlCommand SqlCmd = new SqlCommand();
-          //    SqlCmd.Connection = SqlCon;
-          //    SqlCmd.CommandText = "usp_U_acfGIS_UbicacionElectrica";
-          //    SqlCmd.CommandType = CommandType.StoredProcedure;
-          //
-          //    SqlParameter ParCSTid = new SqlParameter();
-          //    ParCSTid.ParameterName = "@sCSTid";
-          //    ParCSTid.SqlDbType = SqlDbType.VarChar;
-          //    ParCSTid.Value = acfGIS_UbicacionElectrica.CSTid;
-          //    SqlCmd.Parameters.Add(ParCSTid);
-          //    //
-          //   
-          //
-          //    //Ejecutamos nuestro comando
-          //
-          //    rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Actualizo el Registro";
-          //
-          //
+              //Código
+              SqlCon.ConnectionString = DConexion.CnBDActivo;
+              SqlCon.Open();
+              //Establecer el Comando
+              SqlCommand SqlCmd = new SqlCommand();
+              SqlCmd.Connection = SqlCon;
+              SqlCmd.CommandText = "usp_U_acfGIS_UbicacionElectrica";
+              SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParUBEid = new SqlParameter();
+                ParUBEid.ParameterName = "@iUBEid";
+                ParUBEid.SqlDbType = SqlDbType.Int;
+                ParUBEid.Value = acfGIS_UbicacionElectrica.UBEid;
+                SqlCmd.Parameters.Add(ParUBEid);
+                //   
+                SqlParameter ParUBEcodigogis = new SqlParameter();
+                ParUBEcodigogis.ParameterName = "@mUBEcodigogis";
+                ParUBEcodigogis.SqlDbType = SqlDbType.BigInt;
+                ParUBEcodigogis.Value = acfGIS_UbicacionElectrica.UBEcodigogis;
+                SqlCmd.Parameters.Add(ParUBEcodigogis);
+                //     
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@mACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = acfGIS_UbicacionElectrica.ACFid;
+                SqlCmd.Parameters.Add(ParACFid);
+                //
+                SqlParameter ParSELid = new SqlParameter();
+                ParSELid.ParameterName = "@mSELid";
+                ParSELid.SqlDbType = SqlDbType.BigInt;
+                ParSELid.Value = acfGIS_UbicacionElectrica.SELid;
+                SqlCmd.Parameters.Add(ParSELid);
+                //     
+                SqlParameter ParUBEset = new SqlParameter();
+                ParUBEset.ParameterName = "@mUBEset";
+                ParUBEset.SqlDbType = SqlDbType.BigInt;
+                ParUBEset.Value = acfGIS_UbicacionElectrica.UBEset;
+                SqlCmd.Parameters.Add(ParUBEset);
+                //   
+                SqlParameter ParUBEsetetq = new SqlParameter();
+                ParUBEsetetq.ParameterName = "@mUBEsetetq";
+                ParUBEsetetq.SqlDbType = SqlDbType.VarChar;
+                ParUBEsetetq.Value = acfGIS_UbicacionElectrica.UBEsetetq;
+                SqlCmd.Parameters.Add(ParUBEsetetq);
+                //    
+                SqlParameter ParUBEalimentador = new SqlParameter();
+                ParUBEalimentador.ParameterName = "@mUBEalimentador";
+                ParUBEalimentador.SqlDbType = SqlDbType.BigInt;
+                ParUBEalimentador.Value = acfGIS_UbicacionElectrica.UBEalimentador;
+                SqlCmd.Parameters.Add(ParUBEalimentador);
+                //    
+                SqlParameter ParUBEalimetiquetadoretq = new SqlParameter();
+                ParUBEalimetiquetadoretq.ParameterName = "@mUBEalimetiquetadoretq";
+                ParUBEalimetiquetadoretq.SqlDbType = SqlDbType.VarChar;
+                ParUBEalimetiquetadoretq.Value = acfGIS_UbicacionElectrica.UBEalimetiquetadoretq;
+                SqlCmd.Parameters.Add(ParUBEalimetiquetadoretq);
+                //     
+                SqlParameter ParUBEsed = new SqlParameter();
+                ParUBEsed.ParameterName = "@mUBEsed";
+                ParUBEsed.SqlDbType = SqlDbType.BigInt;
+                ParUBEsed.Value = acfGIS_UbicacionElectrica.UBEsed;
+                SqlCmd.Parameters.Add(ParUBEsed);
+                //     
+                SqlParameter ParUBEsedetq = new SqlParameter();
+                ParUBEsedetq.ParameterName = "@mUBEsedetq";
+                ParUBEsedetq.SqlDbType = SqlDbType.VarChar;
+                ParUBEsedetq.Value = acfGIS_UbicacionElectrica.UBEsedetq;
+                SqlCmd.Parameters.Add(ParUBEsedetq);
+                //     
+                SqlParameter ParUBcircuito = new SqlParameter();
+                ParUBcircuito.ParameterName = "@mUBcircuito";
+                ParUBcircuito.SqlDbType = SqlDbType.BigInt;
+                ParUBcircuito.Value = acfGIS_UbicacionElectrica.UBcircuito;
+                SqlCmd.Parameters.Add(ParUBcircuito);
+                //  
+                SqlParameter ParUBEcircuitoetq = new SqlParameter();
+                ParUBEcircuitoetq.ParameterName = "@mUBEcircuitoetq";
+                ParUBEcircuitoetq.SqlDbType = SqlDbType.VarChar;
+                ParUBEcircuitoetq.Value = acfGIS_UbicacionElectrica.UBEcircuitoetq;
+                SqlCmd.Parameters.Add(ParUBEcircuitoetq);
+                //   
+                SqlParameter ParUBEtipoPuntoi = new SqlParameter();
+                ParUBEtipoPuntoi.ParameterName = "@mUBEtipoPuntoi";
+                ParUBEtipoPuntoi.SqlDbType = SqlDbType.BigInt;
+                ParUBEtipoPuntoi.Value = acfGIS_UbicacionElectrica.UBEtipoPuntoi;
+                SqlCmd.Parameters.Add(ParUBEtipoPuntoi);
+                //     
+                SqlParameter ParUBEpuntoi = new SqlParameter();
+                ParUBEpuntoi.ParameterName = "@mUBEpuntoi";
+                ParUBEpuntoi.SqlDbType = SqlDbType.BigInt;
+                ParUBEpuntoi.Value = acfGIS_UbicacionElectrica.UBEpuntoi;
+                SqlCmd.Parameters.Add(ParUBEpuntoi);
+                //     
+                SqlParameter ParUBEpuntoietq = new SqlParameter();
+                ParUBEpuntoietq.ParameterName = "@mUBEpuntoietq";
+                ParUBEpuntoietq.SqlDbType = SqlDbType.VarChar;
+                ParUBEpuntoietq.Value = acfGIS_UbicacionElectrica.UBEpuntoietq;
+                SqlCmd.Parameters.Add(ParUBEpuntoietq);
+                // 
+                SqlParameter ParUBEtipoPuntof = new SqlParameter();
+                ParUBEtipoPuntof.ParameterName = "@mUBEtipoPuntof";
+                ParUBEtipoPuntof.SqlDbType = SqlDbType.BigInt;
+                ParUBEtipoPuntof.Value = acfGIS_UbicacionElectrica.UBEtipoPuntof;
+                SqlCmd.Parameters.Add(ParUBEtipoPuntof);
+                //  
+                SqlParameter ParUBEpuntof = new SqlParameter();
+                ParUBEpuntof.ParameterName = "@mUBEpuntof";
+                ParUBEpuntof.SqlDbType = SqlDbType.BigInt;
+                ParUBEpuntof.Value = acfGIS_UbicacionElectrica.UBEpuntof;
+                SqlCmd.Parameters.Add(ParUBEpuntof);
+                //     
+                SqlParameter ParUBEpuntofetq = new SqlParameter();
+                ParUBEpuntofetq.ParameterName = "@mUBEpuntofetq";
+                ParUBEpuntofetq.SqlDbType = SqlDbType.VarChar;
+                ParUBEpuntofetq.Value = acfGIS_UbicacionElectrica.UBEpuntofetq;
+                SqlCmd.Parameters.Add(ParUBEpuntofetq);
+                //   
+                SqlParameter ParUBEobra = new SqlParameter();
+                ParUBEobra.ParameterName = "@mUBEobra";
+                ParUBEobra.SqlDbType = SqlDbType.Char;
+                ParUBEobra.Value = acfGIS_UbicacionElectrica.UBEobra;
+                SqlCmd.Parameters.Add(ParUBEobra);
+                //     
+                SqlParameter ParKOSTL = new SqlParameter();
+                ParKOSTL.ParameterName = "@mKOSTL";
+                ParKOSTL.SqlDbType = SqlDbType.Char;
+                ParKOSTL.Value = acfGIS_UbicacionElectrica.KOSTL;
+                SqlCmd.Parameters.Add(ParKOSTL);
+                //     
+                SqlParameter ParZona = new SqlParameter();
+                ParZona.ParameterName = "@mZona";
+                ParZona.SqlDbType = SqlDbType.Char;
+                ParZona.Value = acfGIS_UbicacionElectrica.Zona;
+                SqlCmd.Parameters.Add(ParZona);
+                //     
+                SqlParameter ParVNRid = new SqlParameter();
+                ParVNRid.ParameterName = "@mVNRid";
+                ParVNRid.SqlDbType = SqlDbType.Char;
+                ParVNRid.Value = acfGIS_UbicacionElectrica.VNRid;
+                SqlCmd.Parameters.Add(ParVNRid);
+                //     
+                SqlParameter ParCodNiff = new SqlParameter();
+                ParCodNiff.ParameterName = "@mCodNiff";
+                ParCodNiff.SqlDbType = SqlDbType.Char;
+                ParCodNiff.Value = acfGIS_UbicacionElectrica.CodNiff;
+                SqlCmd.Parameters.Add(ParCodNiff);
+                //     
+                SqlParameter ParValAct = new SqlParameter();
+                ParValAct.ParameterName = "@mValAct";
+                ParValAct.SqlDbType = SqlDbType.Int;
+                ParValAct.Value = acfGIS_UbicacionElectrica.ValAct;
+                SqlCmd.Parameters.Add(ParValAct);
+                //
+                SqlParameter ParFactor = new SqlParameter();
+                ParFactor.ParameterName = "@mFactor";
+                ParFactor.SqlDbType = SqlDbType.VarChar;
+                ParFactor.Value = acfGIS_UbicacionElectrica.Factor;
+                SqlCmd.Parameters.Add(ParFactor);
+                //     
+                SqlParameter ParVidUtilTrib = new SqlParameter();
+                ParVidUtilTrib.ParameterName = "@mVidUtilTrib";
+                ParVidUtilTrib.SqlDbType = SqlDbType.Int;
+                ParVidUtilTrib.Value = acfGIS_UbicacionElectrica.VidUtilTrib;
+                SqlCmd.Parameters.Add(ParVidUtilTrib);
+                // 
+                SqlParameter ParVidUtilFinan = new SqlParameter();
+                ParVidUtilFinan.ParameterName = "@mVidUtilFinan";
+                ParVidUtilFinan.SqlDbType = SqlDbType.Int;
+                ParVidUtilFinan.Value = acfGIS_UbicacionElectrica.VidUtilFinan;
+                SqlCmd.Parameters.Add(ParVidUtilFinan);
+                //    
+                SqlParameter ParUBEestado = new SqlParameter();
+                ParUBEestado.ParameterName = "@mUBEestado";
+                ParUBEestado.SqlDbType = SqlDbType.Char;
+                ParUBEestado.Value = acfGIS_UbicacionElectrica.UBEestado;
+                SqlCmd.Parameters.Add(ParUBEestado);
+                // 
+
+
+                //Ejecutamos nuestro comando
+
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Actualizo el Registro";
+          
+          
             }
             catch (Exception ex)
             {
