@@ -499,12 +499,12 @@ namespace CapaPresentacion
         
         private void buscarNombre()
         {
-            NacfACFp_Activo_Fijo.Buscar("1");
+            NacfACFp_Activo_Fijo.Actual("1");
         }
 
         private void MostrarCombos()
         {
-            NacfACFp_Activo_Fijo.Buscar("1");
+            NacfACFp_Activo_Fijo.Actual("1");
         }
         private void MostrarRegistro(string ACFid)
         {

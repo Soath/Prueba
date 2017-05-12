@@ -95,3 +95,4 @@ C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmp
 C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
 C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
 C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\BarcodeLib.dll

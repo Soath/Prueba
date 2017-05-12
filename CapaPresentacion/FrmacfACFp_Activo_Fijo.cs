@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 using CapaNegocio;
 
@@ -22,6 +23,9 @@ namespace CapaPresentacion
         public int idEditar = 0;
         public string MensError;
         public string mACFid;
+        public string Canul;
+        public static Control anulado = new Control();
+        public static BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
         private static FrmacfACFp_Activo_Fijo _Instancia;
 
         public static FrmacfACFp_Activo_Fijo GetInstancia()
@@ -35,7 +39,7 @@ namespace CapaPresentacion
         public FrmacfACFp_Activo_Fijo()
         {
             InitializeComponent();
-
+            
             this.toolStripRefrescar.Click += new System.EventHandler(this.Control_Click_Refrescar);
             this.toolStripAgregar.Click += new System.EventHandler(this.Control_Click_Agregar);
             this.toolStripEditar.Click += new System.EventHandler(this.Control_Click_Editar);
@@ -53,6 +57,7 @@ namespace CapaPresentacion
             EstadoText(this.Controls, true, false);
             mostrar();
             CargarCombos();
+            Anulado();
             MostrarRegistro();
                
           
@@ -216,7 +221,29 @@ namespace CapaPresentacion
             this.toolStripTextBox1.Enabled = edo;
         }
 
-        private void OcultarColumnas()        {}
+        private void CodigodeBarra()        {
+            
+            Codigo.IncludeLabel = true;
+            panelResultado.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128, txtACFid.Text, Color.Black, Color.White, 400, 100);
+        }
+        private void Anulado()
+            {
+
+            anulado.Size = new Size(400, 400);
+            anulado.BackColor = Color.Red;
+            GraphicsPath contorno = new GraphicsPath();
+            Matrix rotacion = new Matrix();
+            contorno.AddString("Anulado", FontFamily.GenericSansSerif,
+            (int)FontStyle.Regular, 70, new Point(40, 0),
+            StringFormat.GenericDefault);
+            rotacion.Translate(0, 380);
+            rotacion.Rotate(-45);
+            contorno.Transform(rotacion);
+            anulado.Region = new Region(contorno);
+            this.Controls.Add(anulado);
+            anulado.BringToFront();
+            anulado.Visible=false;
+            }
 
         private void mostrar()
         {
@@ -349,6 +376,21 @@ namespace CapaPresentacion
             }
         }
 
+        private void Actual(string AFCid)
+        {
+            try
+            {
+                DataTable dat = NacfACFp_Activo_Fijo.Actual(AFCid);
+                MostrarDatos(dat);
+                tomaTab();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+
         private void Last()
         {
             try
@@ -363,6 +405,8 @@ namespace CapaPresentacion
             }
         }
 
+
+
         private void Serch()
         {
             this.toolStripComboBox1.Enabled = true;
@@ -370,8 +414,10 @@ namespace CapaPresentacion
             Form FrmBuscar = new FrmacfACFp_Activo_Fijo_Buscar();
             FrmBuscar.ShowDialog();
 
-            int IdActi = FrmacfACFp_Activo_Fijo_Buscar.IdAct;
-            MessageBox.Show("ID :"+IdActi);
+            string IdActi = FrmacfACFp_Activo_Fijo_Buscar.IdAct;
+           
+            Actual(IdActi);
+
         }
         private void BotonImportar()
         {
@@ -442,7 +488,7 @@ namespace CapaPresentacion
             this.Botones(true);
             EstadoText(this.Controls, false, false);
             //tabControl1.SelectedTab = tabPage1;
-            Last();
+            Actual(txtACFid.Text);
             Data1 = 0;
         }
         private void BotonListado()
@@ -521,6 +567,7 @@ namespace CapaPresentacion
                     , this.dtpACFfechacomprobante.Text
                     , cboV_T087U_ANLUE.SelectedValue.ToString()
                     , this.CtxtACFtipo_activo.Text
+                    , ""
                     );
                 // Rta = NacfACFp_Activo_Fijo.Insertar(this.txtACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
                 
@@ -595,6 +642,7 @@ namespace CapaPresentacion
                     , this.dtpACFfechacomprobante.Text
                     , cboV_T087U_ANLUE.SelectedValue.ToString()
                     , this.CtxtACFtipo_activo.Text
+                    , ""
                     );
 
                 //Rta = NacfACFp_Activo_Fijo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
@@ -621,20 +669,22 @@ namespace CapaPresentacion
         {
             string Rta = string.Empty;
             DialogResult Opcion;
-            Opcion = MessageBox.Show("Realmente Desea Eliminar los Registros", "Sistema de escolar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            Opcion = MessageBox.Show("Realmente Desea Anular los Registros", "Sistema de escolar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (Opcion == DialogResult.OK)
             {
-                string Codigo;
-                Codigo = "2";
-                Rta = NPostres.Eliminar(Codigo);
+                if (Canul=="1")
+                    Rta = NacfACFp_Activo_Fijo.Eliminar(txtACFid.Text,"0");
+                else
+                    Rta = NacfACFp_Activo_Fijo.Eliminar(txtACFid.Text, "1");
 
+                MostrarRegistro(); 
                 if (Rta.Equals("OK"))
                 {
-                    this.MensajeOk("Se Eliminó Correctamente el registro");
+                    this.MensajeOk("Se Anulo Correctamente el registro");
                 }
                 else
                 {
-                    this.MensajeError("Error al Eliminar el Registro ");
+                    this.MensajeError("Error al Anular el Registro ");
                 }
 
             }
@@ -642,7 +692,7 @@ namespace CapaPresentacion
         
         private void buscarNombre()
         {
-            NacfACFp_Activo_Fijo.Buscar("1");
+            NacfACFp_Activo_Fijo.Actual("1");
         }
 
         private void MostrarDatos(DataTable dat)
@@ -697,10 +747,16 @@ namespace CapaPresentacion
                 dtpACFfechacomprobante.Text = Convert.ToString(row["ACFfechacomprobante"]);
                 cboV_T087U_ANLUE.Text = Convert.ToString(row["V_T087U_ANLUE"]);
                 CtxtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
-                //guardo datos en variables
-                //txtACFid.Text = Convert.ToString(row["ACFid"]);
-                //txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
+                Canul = Convert.ToString(row["ACFAnulado"]);
+                CodigodeBarra();
+                if (String.IsNullOrEmpty(Canul))
+                     {
+                       anulado.Visible=false;
+                     }
+                else
+                    if (Canul == "1") anulado.Visible = true; 
             }
+
             else
                 MessageBox.Show("No Existe", "Registro");
 
@@ -765,12 +821,6 @@ namespace CapaPresentacion
         {
         }
         //-------------------------------------------------------------------
-        private void FrmPostres_miLoad(object sender, EventArgs e)
-        {
-            this.mostrar();
-        }
-
-        private void FrmPostres_Load(object sender, EventArgs e) {}
 
         
         public void Control_Enter(object sender, EventArgs e)
@@ -1005,9 +1055,12 @@ namespace CapaPresentacion
 
         }
 
+        private void FrmacfACFp_Activo_Fijo_Load(object sender, EventArgs e)
+        {
 
+        }
 
-
+        
 
     }
 }

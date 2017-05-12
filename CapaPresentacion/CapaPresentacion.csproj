@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BarcodeLib, Version=1.0.0.19, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\ELECTROSUR\vnetvfoxgrilla\ASESORIAS-gh-pages\Ejercicios\Barcode_Generator_Project_DLL_Only\BarcodeLib.dll</HintPath>
+    </Reference>
     <Reference Include="ComponentFactory.Krypton.Design">
       <HintPath>..\..\dll\ComponentFactory.Krypton.Design.dll</HintPath>
     </Reference>
@@ -386,17 +390,17 @@
     <Compile Include="FrmExcel2.Designer.cs">
       <DependentUpon>FrmExcel2.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMain.Designer.cs">
-      <DependentUpon>FrmMain.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmacfACFp_Activo_Fijo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmacfACFp_Activo_Fijo.Designer.cs">
       <DependentUpon>FrmacfACFp_Activo_Fijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMovimientoTransferecnaiActivo.cs">
       <SubType>Form</SubType>
@@ -634,11 +638,11 @@
     <EmbeddedResource Include="FrmExcel2.resx">
       <DependentUpon>FrmExcel2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMain.resx">
-      <DependentUpon>FrmMain.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmacfACFp_Activo_Fijo.resx">
       <DependentUpon>FrmacfACFp_Activo_Fijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMovimientoTransferecnaiActivo.resx">
       <DependentUpon>FrmMovimientoTransferecnaiActivo.cs</DependentUpon>

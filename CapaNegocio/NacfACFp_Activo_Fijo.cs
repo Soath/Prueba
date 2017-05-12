@@ -58,7 +58,8 @@ namespace CapaNegocio
          string iUBEid,                   
          string dtACFfechacomprobante,    
          string sV_T087U_ANLUE,
-         string sACFtipo_activo
+         string sACFtipo_activo,
+         string cACFAnulado
          )         
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
@@ -107,6 +108,7 @@ namespace CapaNegocio
             Obj.ACFfechacomprobante = dtACFfechacomprobante;
             Obj.V_T087U_ANLUE = sV_T087U_ANLUE;
             Obj.ACFtipo_activo = sACFtipo_activo;
+            Obj.ACFAnulado = cACFAnulado;
             return Obj.Insertar(Obj);
         }
 
@@ -158,7 +160,8 @@ namespace CapaNegocio
          string iUBEid,
          string dtACFfechacomprobante,
          string sV_T087U_ANLUE,
-         string sACFtipo_activo
+         string sACFtipo_activo,
+         string cACFAnulado
          )  
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
@@ -207,6 +210,7 @@ namespace CapaNegocio
             Obj.ACFfechacomprobante = dtACFfechacomprobante;
             Obj.V_T087U_ANLUE = sV_T087U_ANLUE;
             Obj.ACFtipo_activo = sACFtipo_activo;
+            Obj.ACFAnulado = cACFAnulado;
             return Obj.Editar(Obj);
         }
 
@@ -233,11 +237,9 @@ namespace CapaNegocio
         //------------------------------------------------------------------
         //M�todo Eliminar que llama al m�todo Eliminar de la clase DPostres
         //de la CapaDatos
-        public static string Eliminar(string iACFid)
+        public static string Eliminar(string iACFid,string cACFAnulado)
         {
-            DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
-            Obj.ACFid = iACFid;
-            return Obj.Eliminar(Obj);
+            return new DacfACFp_Activo_Fijo().Eliminar(iACFid,cACFAnulado);
         }
         public static DataTable Top()
         {
@@ -283,11 +285,11 @@ namespace CapaNegocio
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
 
-        public static DataTable Buscar(string sBUKRS)
+        public static DataTable Actual(string ACFid)
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
-            Obj.BUKRS = sBUKRS;
-            return Obj.Buscar(Obj);
+            Obj.ACFid = ACFid;
+            return Obj.Actual(Obj);
         }
 
     }

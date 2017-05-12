@@ -33,26 +33,44 @@ namespace CapaPresentacion
            
             mostrar();
         }
-        public static int IdAct;
+        public static string IdAct;
         private void mostrar()
         {
 
             bss.DataSource = NacfACFp_Activo_Fijo.Mostrar();
-            this.DataGridView1.DataSource = bss;
-            
+            dataListado.DataSource = NacfACFp_Activo_Fijo.Mostrar();
+            OcultarColumnas();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bss.DataSource = NacfACFp_Activo_Fijo.MostrarRegistro(this.TextBox1.Text);
-            this.DataGridView1.DataSource = bss;
+           
+         
+            dataListado.DataSource = NacfACFp_Activo_Fijo.MostrarRegistro(this.TextBox1.Text);
+            OcultarColumnas();
         }
 
-        private void kryptonDataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+
+        private void OcultarColumnas()
         {
-            if (DataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString() != "")
+            this.dataListado.Columns[0].Visible = false;
+            this.dataListado.Columns[1].Visible = true;
+            this.dataListado.Columns[1].Width = 100;
+            this.dataListado.Columns[1].DefaultCellStyle.Format = "#,0";
+            this.dataListado.Columns[1].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.dataListado.Columns[2].Width = 450;
+            this.dataListado.Columns[1].HeaderText = "IdActivo";
+            this.dataListado.Columns[2].HeaderText = "Descripcion";
+
+        }
+
+       
+
+        private void dataListado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataListado.Rows[e.RowIndex].Cells[1].Value.ToString() != "")
             {
-                IdAct = int.Parse(DataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                IdAct = dataListado.Rows[e.RowIndex].Cells[1].Value.ToString();
                 this.Dispose();
 
             }

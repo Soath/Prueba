@@ -56,32 +56,13 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
         {
             Form FrmMovimiento_Transferencia_Activo = new FrmMovimiento_Transferencia_Activo();
             FrmMovimiento_Transferencia_Activo.ShowDialog();
-        }
+        }        
         private void ribbonButton12_Click(object sender, EventArgs e)
         {
             Form FrmacfACFp_Activo_Fijo = new FrmacfACFp_Activo_Fijo();
             FrmacfACFp_Activo_Fijo.ShowDialog();
         }
-        private void ribbonButton14_Click(object sender, EventArgs e)
-        {
-            Form FrmMovimientoTransferecnaiActivo = new FrmMovimientoTransferecnaiActivo();
-            FrmMovimientoTransferecnaiActivo.ShowDialog();
-        }
-        private void ribbonButton22_Click(object sender, EventArgs e)
-        {
-            Form FrmacfGIS_UbicacionElectrica = new FrmacfGIS_UbicacionElectrica();
-            FrmacfGIS_UbicacionElectrica.ShowDialog();
-        }
-        private void ribbonButton62_Click(object sender, EventArgs e)
-        {
-            Form FrmAjusteVidaUtil = new FrmAjusteVidaUtil();
-            FrmAjusteVidaUtil.ShowDialog();
-        }
-        private void ribbonButton63_Click(object sender, EventArgs e)
-        {
-            Form FrmAjusteValorBien = new FrmAjusteValorBien();
-            FrmAjusteValorBien.ShowDialog();
-        }
+                
         private void ribbonButton65_Click(object sender, EventArgs e)
         {
             Form FrmacfINVp_Inventario = new FrmacfINVp_Inventario();
@@ -272,7 +253,7 @@ MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
         private void ribbonButton41_Click(object sender, EventArgs e)
         {
             Form Frm_InventarioG = new Frm_InventarioG();
-            Frm_InventarioG.Show();
+            Frm_InventarioG.ShowDialog();
         }
 
         private void ribbonButton58_Click(object sender, EventArgs e)
