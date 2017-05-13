@@ -96,6 +96,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Fom_Barra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fom_Barra.Designer.cs">
+      <DependentUpon>Fom_Barra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -505,6 +511,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ACFLOCT_LOCAL.resx">
       <DependentUpon>ACFLOCT_LOCAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fom_Barra.resx">
+      <DependentUpon>Fom_Barra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
