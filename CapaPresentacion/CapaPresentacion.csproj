@@ -711,6 +711,7 @@
     <EmbeddedResource Include="Reportes\Rpt_ACF_ActivoFijo.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_ACTActividad.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_AMBAmbiente.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Barra.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_CAFClaseDeActivoFijo.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_CDDClasesDeDocumento.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_CMPComponente.rdlc" />

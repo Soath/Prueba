@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio;
 
 namespace CapaPresentacion
 {
@@ -15,6 +16,12 @@ namespace CapaPresentacion
         public Fom_Barra()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_ACTactividad.rdlc", NacfACFp_Activo_Fijo.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
     }
 }
