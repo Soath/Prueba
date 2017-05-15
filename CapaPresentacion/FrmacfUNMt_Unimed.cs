@@ -44,7 +44,7 @@ namespace CapaPresentacion
             this.toolStripCancelar.Click += new System.EventHandler(this.Control_Click_Cancelar);
 
 
-            this.chkEliminar.Click += new System.EventHandler(this.Control_Click_ChkEliminar);
+           
 
             this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(Control_Click_dataListado);
             this.Load += new System.EventHandler(this.FrmacfUNMt_Unimed_miLoad);
@@ -85,10 +85,7 @@ namespace CapaPresentacion
         {
             this.BotonRefrescar();
         }
-        private void Control_Click_ChkEliminar(object sender, EventArgs e)
-        {
-            this.BotonChkEliminar();
-        }
+   
         private void Control_Click_dataListado(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == dataListado.Columns["Eliminar"].Index)
@@ -130,7 +127,7 @@ namespace CapaPresentacion
             this.toolStripRefrescar.Visible = edo;
             this.toolStripAgregar.Visible = edo;
             this.toolStripEditar.Visible = edo;
-            this.toolStripEliminar.Visible = edo;
+            this.toolStripEliminar.Visible = false;
             this.toolStripImprimir.Visible = edo;
 
             this.toolStripGuardar.Visible = !edo;
@@ -153,18 +150,16 @@ namespace CapaPresentacion
         private void OcultarColumnas()
         {
             this.dataListado.Columns[0].Visible = false;
-            this.dataListado.Columns[1].Visible = false;
+            this.dataListado.Columns[1].Visible = true;
             this.dataListado.Columns[1].Width = 100;
             this.dataListado.Columns[1].DefaultCellStyle.Format = "#,0";
-            this.dataListado.Columns[1].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.dataListado.Columns[2].Width = 250;
-            this.dataListado.Columns[3].Width = 100;
+            this.dataListado.Columns[2].Width = 100;
+            this.dataListado.Columns[3].Width = 150;
             //this.dataListado.Columns[3].DefaultCellStyle.Format = "#,0.00";
-            this.dataListado.Columns[3].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             //this.dataListado.Columns[4].Width = 100;
-            this.dataListado.Columns[1].HeaderText = "UNMid";
-            this.dataListado.Columns[2].HeaderText = "UNMunidad";
-            this.dataListado.Columns[3].HeaderText = "UNMdetalle";
+            this.dataListado.Columns[1].HeaderText = "id";
+            this.dataListado.Columns[2].HeaderText = "Unidad";
+            this.dataListado.Columns[3].HeaderText = "Detalle";
         }
 
         private void mostrar()
@@ -174,7 +169,7 @@ namespace CapaPresentacion
             this.tomaTab();
             this.Botones(true);
             this.dataListado.DataSource = NacfUNMt_Unimed.Mostrar();
-
+            OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             if (dataListado.Rows.Count == 0)
             {
@@ -192,7 +187,7 @@ namespace CapaPresentacion
         private void BotonRefrescar()
         {
             this.txtBuscar.Text = "";
-            this.chkEliminar.Checked = false;
+    
             this.mostrar();
         }
         private void BotonAgregar()
@@ -217,9 +212,8 @@ namespace CapaPresentacion
         }
         private void BotonEliminar()
         {
-            if (this.chkEliminar.Checked)
-                this.borramuchos();
-            else
+           
+
                 this.borrauno();
             this.mostrar();
         }
@@ -248,17 +242,7 @@ namespace CapaPresentacion
             this.Botones(true);
             tabControl1.SelectedTab = tabPage1;
         }
-        private void BotonChkEliminar()
-        {
-            if (chkEliminar.Checked)
-            {
-                this.dataListado.Columns[0].Visible = true;
-            }
-            else
-            {
-                this.dataListado.Columns[0].Visible = false;
-            }
-        }
+ 
         private void BotonListado()
         {
             //        if (e.ColumnIndex == dataListado.Columns["Eliminar"].Index)	
@@ -453,7 +437,7 @@ namespace CapaPresentacion
             this.txtUNMid.TextAlign = HorizontalAlignment.Right;
             this.txtUNMunidad.TabIndex = 2;
             this.txtUNMdetalle.TabIndex = 3;
-            this.txtUNMdetalle.TextAlign = HorizontalAlignment.Right;
+
             
             this.groupBox2.Text = "Unidad de Medida";
         }
