@@ -391,5 +391,41 @@ namespace CapaPresentacion
             Form FrmacfGIS_UbicacionElectrica = new FrmacfGIS_UbicacionElectrica();
             FrmacfGIS_UbicacionElectrica.ShowDialog();
         }
+
+        private void ribbonButton65_Click_1(object sender, EventArgs e)
+        {
+            Form FrmMovimientoTransferecnaiActivo = new FrmMovimientoTransferecnaiActivo();
+            FrmMovimientoTransferecnaiActivo.ShowDialog();
+        }
+
+        private void ribbonButton76_Click(object sender, EventArgs e)
+        {
+            Form FrmAjusteVidaUtil = new FrmAjusteVidaUtil();
+            FrmAjusteVidaUtil.ShowDialog();
+        }
+
+        private void ribbonButton77_Click(object sender, EventArgs e)
+        {
+            Form FrmAjusteValorBien = new FrmAjusteValorBien();
+            FrmAjusteValorBien.ShowDialog();
+        }
+
+        private void ribbonButton91_Click(object sender, EventArgs e)
+        {
+            Form Frm_InventarioG = new Frm_InventarioG();
+            Frm_InventarioG.ShowDialog();
+        }
+
+        private void ribbonButton92_Click(object sender, EventArgs e)
+        {
+            Form Frm_RegistroInventario = new Frm_RegistroInventario();
+            Frm_RegistroInventario.ShowDialog();
+        }
+
+        private void ribbonButton93_Click(object sender, EventArgs e)
+        {
+            Form Frm_ConciliarInventario = new Frm_ConciliarInventario();
+            Frm_ConciliarInventario.ShowDialog();
+        }
     }
 }
