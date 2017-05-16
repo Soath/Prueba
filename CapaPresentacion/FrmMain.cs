@@ -141,8 +141,11 @@ namespace CapaPresentacion
         }
         private void ribbonButton71_Click(object sender, EventArgs e)
         {
-            Form FrmbdiXCCpExtraccionSAP_CentroCosto = new FrmbdiXCCpExtraccionSAP_CentroCosto();
-            FrmbdiXCCpExtraccionSAP_CentroCosto.ShowDialog();
+          //  Form FrmbdiXCCpExtraccionSAP_CentroCosto = new FrmbdiXCCpExtraccionSAP_CentroCosto();
+           // FrmbdiXCCpExtraccionSAP_CentroCosto.ShowDialog();
+
+            Form Fom_Barra = new Fom_Barra();
+            Fom_Barra.ShowDialog();
         }
         private void ribbonButton72_Click(object sender, EventArgs e)
         {
