@@ -41,24 +41,22 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataListado = new System.Windows.Forms.DataGridView();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.chkEliminar = new System.Windows.Forms.CheckBox();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtACTactividad = new System.Windows.Forms.TextBox();
+            this.txtACTid = new System.Windows.Forms.TextBox();
+            this.labelX1 = new System.Windows.Forms.Label();
             this.labelX2 = new System.Windows.Forms.Label();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.labelX1 = new System.Windows.Forms.Label();
-            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.txtACTid = new System.Windows.Forms.TextBox();
-            this.txtACTactividad = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
@@ -177,10 +175,9 @@
             // tabPage1
             // 
             this.tabPage1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.dataListado);
-            this.tabPage1.Controls.Add(this.pictureBox2);
             this.tabPage1.Controls.Add(this.lblTotal);
-            this.tabPage1.Controls.Add(this.chkEliminar);
             this.tabPage1.Controls.Add(this.txtBuscar);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -201,25 +198,22 @@
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            this.dataListado.Location = new System.Drawing.Point(13, 105);
+            this.dataListado.Location = new System.Drawing.Point(13, 104);
             this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(813, 204);
+            this.dataListado.Size = new System.Drawing.Size(751, 204);
             this.dataListado.TabIndex = 9;
             // 
-            // pictureBox2
+            // Eliminar
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(20, 20);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(53, 39);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.Eliminar.HeaderText = "Seleccionar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            this.Eliminar.Width = 50;
             // 
             // lblTotal
             // 
@@ -229,17 +223,6 @@
             this.lblTotal.Size = new System.Drawing.Size(54, 17);
             this.lblTotal.TabIndex = 6;
             this.lblTotal.Text = "lblTotal";
-            // 
-            // chkEliminar
-            // 
-            this.chkEliminar.AutoSize = true;
-            this.chkEliminar.Location = new System.Drawing.Point(13, 79);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chkEliminar.Name = "chkEliminar";
-            this.chkEliminar.Size = new System.Drawing.Size(80, 21);
-            this.chkEliminar.TabIndex = 5;
-            this.chkEliminar.Text = "Eliminar";
-            this.chkEliminar.UseVisualStyleBackColor = true;
             // 
             // txtBuscar
             // 
@@ -276,6 +259,29 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Usuarios";
             // 
+            // txtACTactividad
+            // 
+            this.txtACTactividad.Location = new System.Drawing.Point(267, 118);
+            this.txtACTactividad.Name = "txtACTactividad";
+            this.txtACTactividad.Size = new System.Drawing.Size(332, 22);
+            this.txtACTactividad.TabIndex = 117;
+            // 
+            // txtACTid
+            // 
+            this.txtACTid.Location = new System.Drawing.Point(267, 62);
+            this.txtACTid.Name = "txtACTid";
+            this.txtACTid.Size = new System.Drawing.Size(65, 22);
+            this.txtACTid.TabIndex = 116;
+            // 
+            // labelX1
+            // 
+            this.labelX1.AutoSize = true;
+            this.labelX1.Location = new System.Drawing.Point(53, 65);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(133, 17);
+            this.labelX1.TabIndex = 115;
+            this.labelX1.Text = "Código de Actividad";
+            // 
             // labelX2
             // 
             this.labelX2.AutoSize = true;
@@ -293,35 +299,14 @@
             // 
             this.errorIcono.ContainerControl = this;
             // 
-            // labelX1
+            // label1
             // 
-            this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(53, 65);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(133, 17);
-            this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Código de Actividad";
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Seleccionar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            this.Eliminar.Width = 50;
-            // 
-            // txtACTid
-            // 
-            this.txtACTid.Location = new System.Drawing.Point(267, 62);
-            this.txtACTid.Name = "txtACTid";
-            this.txtACTid.Size = new System.Drawing.Size(332, 22);
-            this.txtACTid.TabIndex = 116;
-            // 
-            // txtACTactividad
-            // 
-            this.txtACTactividad.Location = new System.Drawing.Point(267, 118);
-            this.txtACTactividad.Name = "txtACTactividad";
-            this.txtACTactividad.Size = new System.Drawing.Size(332, 22);
-            this.txtACTactividad.TabIndex = 117;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 17);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Buscar:";
             // 
             // FramcfACTt_Actividad
             // 
@@ -330,7 +315,7 @@
             this.ClientSize = new System.Drawing.Size(812, 462);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FramcfACTt_Actividad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfACTt_Actividad";
@@ -341,7 +326,6 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -363,9 +347,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataListado;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.CheckBox chkEliminar;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -376,5 +358,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
         private System.Windows.Forms.TextBox txtACTactividad;
         private System.Windows.Forms.TextBox txtACTid;
+        private System.Windows.Forms.Label label1;
     }
 }

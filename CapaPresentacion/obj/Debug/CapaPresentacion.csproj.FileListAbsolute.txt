@@ -9,7 +9,6 @@ C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaDatos.dll
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaNegocio.pdb
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaDatos.pdb
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojFakesResolveAssemblyReference.cache
-C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\View1.g.cs
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\ViewModel1.g.cs
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
@@ -74,7 +73,6 @@ C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentaci
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMovimiento_Transferencia_Activo.resources
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMVMReporteD.resources
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmReportes.resources
-C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_3.resources
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_ConciliarInventario.resources
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_InventarioG.resources
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_RegistroInventario.resources
@@ -192,3 +190,16 @@ C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_ReparoTributario_Exportar.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_BajaEvaluacionTecnica.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_BajaLiquidacionObra.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_BajaEvaluacionTecnica.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_BajaLiquidacionObra.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_CalculoDiferido.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_CalculoDiferido_Exportar.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_CalculoDiferido_Procesar.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_Depreciacion.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_ReparoTributario.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_ReparoTributario_Exportar.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_ReparoTributario_Procesar.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_SustituacionMejora.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_TransferenciaDonacion.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAFNo_Capitalizables.resources
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_LiquidacionObra.resources

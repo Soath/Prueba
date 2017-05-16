@@ -43,9 +43,6 @@ namespace CapaPresentacion
             this.toolStripGuardar.Click += new System.EventHandler(this.Control_Click_Guardar);
             this.toolStripCancelar.Click += new System.EventHandler(this.Control_Click_Cancelar);
 
-
-            this.chkEliminar.Click += new System.EventHandler(this.Control_Click_ChkEliminar);
-
             this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(Control_Click_dataListado);
             this.Load += new System.EventHandler(this.FrmacfLOCt_Local_miLoad);
             this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
@@ -86,10 +83,6 @@ namespace CapaPresentacion
         private void Control_Click_Cancelar(object sender, EventArgs e)
         {
             this.BotonRefrescar();
-        }
-        private void Control_Click_ChkEliminar(object sender, EventArgs e)
-        {
-            this.BotonChkEliminar();
         }
         private void Control_Click_dataListado(object sender, DataGridViewCellEventArgs e)
         {
@@ -132,7 +125,7 @@ namespace CapaPresentacion
             this.toolStripRefrescar.Visible = edo;
             this.toolStripAgregar.Visible = edo;
             this.toolStripEditar.Visible = edo;
-            this.toolStripEliminar.Visible = edo;
+            this.toolStripEliminar.Visible = false;
             this.toolStripImprimir.Visible = edo;
 
             this.toolStripGuardar.Visible = !edo;
@@ -147,7 +140,7 @@ namespace CapaPresentacion
             this.toolStripRefrescar.Enabled = edo;
             this.toolStripAgregar.Enabled = !edo;
             this.toolStripEditar.Enabled = edo;
-            this.toolStripEliminar.Enabled = edo;
+            this.toolStripEliminar.Enabled = false;
             this.toolStripImprimir.Enabled = edo;
 
         }
@@ -155,7 +148,7 @@ namespace CapaPresentacion
         private void OcultarColumnas()
         {
             this.dataListado.Columns[0].Visible = false;
-            this.dataListado.Columns[1].Visible = false;
+            this.dataListado.Columns[1].Visible = true;
             this.dataListado.Columns[1].Width = 100;
             this.dataListado.Columns[1].DefaultCellStyle.Format = "#,0";
             this.dataListado.Columns[1].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
@@ -164,10 +157,10 @@ namespace CapaPresentacion
             this.dataListado.Columns[3].DefaultCellStyle.Format = "#,0.00";
             this.dataListado.Columns[3].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataListado.Columns[4].Width = 100;
-            this.dataListado.Columns[1].HeaderText = "LOCid";
-            this.dataListado.Columns[2].HeaderText = "LOClocal";
-            this.dataListado.Columns[3].HeaderText = "LOCdireccion";
-            this.dataListado.Columns[4].HeaderText = "SEGMENT";
+            this.dataListado.Columns[1].HeaderText = "Id";
+            this.dataListado.Columns[2].HeaderText = "Local";
+            this.dataListado.Columns[3].HeaderText = "Direccion";
+            this.dataListado.Columns[4].HeaderText = "Segmento";
         }
 
         private void mostrar()
@@ -177,7 +170,7 @@ namespace CapaPresentacion
             this.tomaTab();
             this.Botones(true);
             this.dataListado.DataSource = NNacfLOCt_Local.Mostrar();
-
+            OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             if (dataListado.Rows.Count == 0)
             {
@@ -195,7 +188,6 @@ namespace CapaPresentacion
         private void BotonRefrescar()
         {
             this.txtBuscar.Text = "";
-            this.chkEliminar.Checked = false;
             this.mostrar();
         }
         private void BotonAgregar()
@@ -220,9 +212,6 @@ namespace CapaPresentacion
         }
         private void BotonEliminar()
         {
-            if (this.chkEliminar.Checked)
-                this.borramuchos();
-            else
                 this.borrauno();
             this.mostrar();
         }
@@ -250,17 +239,6 @@ namespace CapaPresentacion
             Activo = 1;
             this.Botones(true);
             tabControl1.SelectedTab = tabPage1;
-        }
-        private void BotonChkEliminar()
-        {
-            if (chkEliminar.Checked)
-            {
-                this.dataListado.Columns[0].Visible = true;
-            }
-            else
-            {
-                this.dataListado.Columns[0].Visible = false;
-            }
         }
         private void BotonListado()
         {
