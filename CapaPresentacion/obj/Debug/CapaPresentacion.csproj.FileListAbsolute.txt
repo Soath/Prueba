@@ -190,3 +190,5 @@ C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_ReparoTributario.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_ReparoTributario_Procesar.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_ReparoTributario_Exportar.resources
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_BajaEvaluacionTecnica.resources
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_BajaLiquidacionObra.resources

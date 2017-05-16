@@ -73,34 +73,34 @@
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox3 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.lblACFirdpA = new System.Windows.Forms.Label();
-            this.lblACFirdaF = new System.Windows.Forms.Label();
-            this.lblACFirdpF = new System.Windows.Forms.Label();
-            this.txtACFirdpA = new System.Windows.Forms.TextBox();
-            this.txtACFirdaF = new System.Windows.Forms.TextBox();
             this.txtACFirdpF = new System.Windows.Forms.TextBox();
+            this.txtACFirdaF = new System.Windows.Forms.TextBox();
+            this.txtACFirdpA = new System.Windows.Forms.TextBox();
+            this.lblACFirdpF = new System.Windows.Forms.Label();
+            this.lblACFirdaF = new System.Windows.Forms.Label();
+            this.lblACFirdpA = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.kryptonGroupBox2 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.txtACFimponible = new System.Windows.Forms.TextBox();
-            this.txtACFirda = new System.Windows.Forms.TextBox();
-            this.txtACFirdp = new System.Windows.Forms.TextBox();
-            this.txtACFculdep = new System.Windows.Forms.TextBox();
-            this.txtACFrecper1 = new System.Windows.Forms.TextBox();
-            this.lblACFimponible = new System.Windows.Forms.Label();
-            this.lblACFirda = new System.Windows.Forms.Label();
-            this.lblACFirdp = new System.Windows.Forms.Label();
-            this.lblACFculdep = new System.Windows.Forms.Label();
-            this.lblACFrecper1 = new System.Windows.Forms.Label();
-            this.lblACFrecper2 = new System.Windows.Forms.Label();
-            this.lblACFrecper3 = new System.Windows.Forms.Label();
-            this.lblACFrecper4 = new System.Windows.Forms.Label();
-            this.lblACFtotales = new System.Windows.Forms.Label();
-            this.lblACFirdaA = new System.Windows.Forms.Label();
-            this.txtACFrecper2 = new System.Windows.Forms.TextBox();
-            this.txtACFrecper3 = new System.Windows.Forms.TextBox();
-            this.txtACFrecper4 = new System.Windows.Forms.TextBox();
-            this.txtACFtotales = new System.Windows.Forms.TextBox();
             this.txtACFirdaA = new System.Windows.Forms.TextBox();
+            this.txtACFtotales = new System.Windows.Forms.TextBox();
+            this.txtACFrecper4 = new System.Windows.Forms.TextBox();
+            this.txtACFrecper3 = new System.Windows.Forms.TextBox();
+            this.txtACFrecper2 = new System.Windows.Forms.TextBox();
+            this.lblACFirdaA = new System.Windows.Forms.Label();
+            this.lblACFtotales = new System.Windows.Forms.Label();
+            this.lblACFrecper4 = new System.Windows.Forms.Label();
+            this.lblACFrecper3 = new System.Windows.Forms.Label();
+            this.lblACFrecper2 = new System.Windows.Forms.Label();
+            this.lblACFrecper1 = new System.Windows.Forms.Label();
+            this.lblACFculdep = new System.Windows.Forms.Label();
+            this.lblACFirdp = new System.Windows.Forms.Label();
+            this.lblACFirda = new System.Windows.Forms.Label();
+            this.lblACFimponible = new System.Windows.Forms.Label();
+            this.txtACFrecper1 = new System.Windows.Forms.TextBox();
+            this.txtACFculdep = new System.Windows.Forms.TextBox();
+            this.txtACFirdp = new System.Windows.Forms.TextBox();
+            this.txtACFirda = new System.Windows.Forms.TextBox();
+            this.txtACFimponible = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
@@ -561,23 +561,29 @@
             this.kryptonGroupBox3.Size = new System.Drawing.Size(693, 186);
             this.kryptonGroupBox3.TabIndex = 134;
             // 
-            // lblACFirdpA
+            // txtACFirdpF
             // 
-            this.lblACFirdpA.AutoSize = true;
-            this.lblACFirdpA.Location = new System.Drawing.Point(14, 16);
-            this.lblACFirdpA.Name = "lblACFirdpA";
-            this.lblACFirdpA.Size = new System.Drawing.Size(168, 13);
-            this.lblACFirdpA.TabIndex = 5;
-            this.lblACFirdpA.Text = "Impuesto a la renta diferido pasivo";
+            this.txtACFirdpF.Location = new System.Drawing.Point(206, 76);
+            this.txtACFirdpF.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFirdpF.Name = "txtACFirdpF";
+            this.txtACFirdpF.Size = new System.Drawing.Size(126, 20);
+            this.txtACFirdpF.TabIndex = 17;
             // 
-            // lblACFirdaF
+            // txtACFirdaF
             // 
-            this.lblACFirdaF.AutoSize = true;
-            this.lblACFirdaF.Location = new System.Drawing.Point(14, 46);
-            this.lblACFirdaF.Name = "lblACFirdaF";
-            this.lblACFirdaF.Size = new System.Drawing.Size(167, 13);
-            this.lblACFirdaF.TabIndex = 6;
-            this.lblACFirdaF.Text = "Impuesto a la renta diferido Activo";
+            this.txtACFirdaF.Location = new System.Drawing.Point(206, 46);
+            this.txtACFirdaF.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFirdaF.Name = "txtACFirdaF";
+            this.txtACFirdaF.Size = new System.Drawing.Size(126, 20);
+            this.txtACFirdaF.TabIndex = 16;
+            // 
+            // txtACFirdpA
+            // 
+            this.txtACFirdpA.Location = new System.Drawing.Point(206, 13);
+            this.txtACFirdpA.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFirdpA.Name = "txtACFirdpA";
+            this.txtACFirdpA.Size = new System.Drawing.Size(126, 20);
+            this.txtACFirdpA.TabIndex = 15;
             // 
             // lblACFirdpF
             // 
@@ -588,29 +594,23 @@
             this.lblACFirdpF.TabIndex = 7;
             this.lblACFirdpF.Text = "Impuesto a la renta diferido pasivo";
             // 
-            // txtACFirdpA
+            // lblACFirdaF
             // 
-            this.txtACFirdpA.Location = new System.Drawing.Point(206, 13);
-            this.txtACFirdpA.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFirdpA.Name = "txtACFirdpA";
-            this.txtACFirdpA.Size = new System.Drawing.Size(126, 20);
-            this.txtACFirdpA.TabIndex = 15;
+            this.lblACFirdaF.AutoSize = true;
+            this.lblACFirdaF.Location = new System.Drawing.Point(14, 46);
+            this.lblACFirdaF.Name = "lblACFirdaF";
+            this.lblACFirdaF.Size = new System.Drawing.Size(167, 13);
+            this.lblACFirdaF.TabIndex = 6;
+            this.lblACFirdaF.Text = "Impuesto a la renta diferido Activo";
             // 
-            // txtACFirdaF
+            // lblACFirdpA
             // 
-            this.txtACFirdaF.Location = new System.Drawing.Point(206, 46);
-            this.txtACFirdaF.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFirdaF.Name = "txtACFirdaF";
-            this.txtACFirdaF.Size = new System.Drawing.Size(126, 20);
-            this.txtACFirdaF.TabIndex = 16;
-            // 
-            // txtACFirdpF
-            // 
-            this.txtACFirdpF.Location = new System.Drawing.Point(206, 76);
-            this.txtACFirdpF.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFirdpF.Name = "txtACFirdpF";
-            this.txtACFirdpF.Size = new System.Drawing.Size(126, 20);
-            this.txtACFirdpF.TabIndex = 17;
+            this.lblACFirdpA.AutoSize = true;
+            this.lblACFirdpA.Location = new System.Drawing.Point(14, 16);
+            this.lblACFirdpA.Name = "lblACFirdpA";
+            this.lblACFirdpA.Size = new System.Drawing.Size(168, 13);
+            this.lblACFirdpA.TabIndex = 5;
+            this.lblACFirdpA.Text = "Impuesto a la renta diferido pasivo";
             // 
             // tabPage1
             // 
@@ -656,159 +656,13 @@
             this.kryptonGroupBox2.Size = new System.Drawing.Size(692, 186);
             this.kryptonGroupBox2.TabIndex = 134;
             // 
-            // txtACFimponible
+            // txtACFirdaA
             // 
-            this.txtACFimponible.Location = new System.Drawing.Point(211, 12);
-            this.txtACFimponible.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFimponible.Name = "txtACFimponible";
-            this.txtACFimponible.Size = new System.Drawing.Size(116, 20);
-            this.txtACFimponible.TabIndex = 0;
-            // 
-            // txtACFirda
-            // 
-            this.txtACFirda.Location = new System.Drawing.Point(211, 45);
-            this.txtACFirda.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFirda.Name = "txtACFirda";
-            this.txtACFirda.Size = new System.Drawing.Size(116, 20);
-            this.txtACFirda.TabIndex = 1;
-            // 
-            // txtACFirdp
-            // 
-            this.txtACFirdp.Location = new System.Drawing.Point(211, 75);
-            this.txtACFirdp.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFirdp.Name = "txtACFirdp";
-            this.txtACFirdp.Size = new System.Drawing.Size(116, 20);
-            this.txtACFirdp.TabIndex = 2;
-            // 
-            // txtACFculdep
-            // 
-            this.txtACFculdep.Location = new System.Drawing.Point(211, 105);
-            this.txtACFculdep.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFculdep.Name = "txtACFculdep";
-            this.txtACFculdep.Size = new System.Drawing.Size(116, 20);
-            this.txtACFculdep.TabIndex = 3;
-            // 
-            // txtACFrecper1
-            // 
-            this.txtACFrecper1.Location = new System.Drawing.Point(211, 132);
-            this.txtACFrecper1.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFrecper1.Name = "txtACFrecper1";
-            this.txtACFrecper1.Size = new System.Drawing.Size(116, 20);
-            this.txtACFrecper1.TabIndex = 4;
-            // 
-            // lblACFimponible
-            // 
-            this.lblACFimponible.AutoSize = true;
-            this.lblACFimponible.Location = new System.Drawing.Point(13, 16);
-            this.lblACFimponible.Name = "lblACFimponible";
-            this.lblACFimponible.Size = new System.Drawing.Size(52, 13);
-            this.lblACFimponible.TabIndex = 5;
-            this.lblACFimponible.Text = "Imponible";
-            // 
-            // lblACFirda
-            // 
-            this.lblACFirda.AutoSize = true;
-            this.lblACFirda.Location = new System.Drawing.Point(13, 48);
-            this.lblACFirda.Name = "lblACFirda";
-            this.lblACFirda.Size = new System.Drawing.Size(166, 13);
-            this.lblACFirda.TabIndex = 6;
-            this.lblACFirda.Text = "Impuesto a la renta diferido activo";
-            // 
-            // lblACFirdp
-            // 
-            this.lblACFirdp.AutoSize = true;
-            this.lblACFirdp.Location = new System.Drawing.Point(13, 82);
-            this.lblACFirdp.Name = "lblACFirdp";
-            this.lblACFirdp.Size = new System.Drawing.Size(168, 13);
-            this.lblACFirdp.TabIndex = 7;
-            this.lblACFirdp.Text = "Impuesto a al renta diferido pasivo";
-            // 
-            // lblACFculdep
-            // 
-            this.lblACFculdep.AutoSize = true;
-            this.lblACFculdep.Location = new System.Drawing.Point(13, 112);
-            this.lblACFculdep.Name = "lblACFculdep";
-            this.lblACFculdep.Size = new System.Drawing.Size(189, 13);
-            this.lblACFculdep.TabIndex = 8;
-            this.lblACFculdep.Text = "año de culminacion de la depreciacion";
-            // 
-            // lblACFrecper1
-            // 
-            this.lblACFrecper1.AutoSize = true;
-            this.lblACFrecper1.Location = new System.Drawing.Point(13, 139);
-            this.lblACFrecper1.Name = "lblACFrecper1";
-            this.lblACFrecper1.Size = new System.Drawing.Size(184, 13);
-            this.lblACFrecper1.TabIndex = 9;
-            this.lblACFrecper1.Text = "Impuesto a la renta Diferido Periodo 1";
-            // 
-            // lblACFrecper2
-            // 
-            this.lblACFrecper2.AutoSize = true;
-            this.lblACFrecper2.Location = new System.Drawing.Point(355, 19);
-            this.lblACFrecper2.Name = "lblACFrecper2";
-            this.lblACFrecper2.Size = new System.Drawing.Size(184, 13);
-            this.lblACFrecper2.TabIndex = 10;
-            this.lblACFrecper2.Text = "Impuesto a la renta Diferido Periodo 2";
-            // 
-            // lblACFrecper3
-            // 
-            this.lblACFrecper3.AutoSize = true;
-            this.lblACFrecper3.Location = new System.Drawing.Point(355, 50);
-            this.lblACFrecper3.Name = "lblACFrecper3";
-            this.lblACFrecper3.Size = new System.Drawing.Size(184, 13);
-            this.lblACFrecper3.TabIndex = 11;
-            this.lblACFrecper3.Text = "Impuesto a la renta Diferido Periodo 3";
-            // 
-            // lblACFrecper4
-            // 
-            this.lblACFrecper4.AutoSize = true;
-            this.lblACFrecper4.Location = new System.Drawing.Point(355, 82);
-            this.lblACFrecper4.Name = "lblACFrecper4";
-            this.lblACFrecper4.Size = new System.Drawing.Size(184, 13);
-            this.lblACFrecper4.TabIndex = 12;
-            this.lblACFrecper4.Text = "Impuesto a la renta Diferido Periodo 4";
-            // 
-            // lblACFtotales
-            // 
-            this.lblACFtotales.AutoSize = true;
-            this.lblACFtotales.Location = new System.Drawing.Point(355, 112);
-            this.lblACFtotales.Name = "lblACFtotales";
-            this.lblACFtotales.Size = new System.Drawing.Size(175, 13);
-            this.lblACFtotales.TabIndex = 13;
-            this.lblACFtotales.Text = "Total de impuesto a la renta diferido";
-            // 
-            // lblACFirdaA
-            // 
-            this.lblACFirdaA.AutoSize = true;
-            this.lblACFirdaA.Location = new System.Drawing.Point(356, 139);
-            this.lblACFirdaA.Name = "lblACFirdaA";
-            this.lblACFirdaA.Size = new System.Drawing.Size(167, 13);
-            this.lblACFirdaA.TabIndex = 14;
-            this.lblACFirdaA.Text = "Impuesto a la renta diferido Activo";
-            // 
-            // txtACFrecper2
-            // 
-            this.txtACFrecper2.Location = new System.Drawing.Point(568, 13);
-            this.txtACFrecper2.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFrecper2.Name = "txtACFrecper2";
-            this.txtACFrecper2.Size = new System.Drawing.Size(110, 20);
-            this.txtACFrecper2.TabIndex = 15;
-            // 
-            // txtACFrecper3
-            // 
-            this.txtACFrecper3.Location = new System.Drawing.Point(568, 46);
-            this.txtACFrecper3.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFrecper3.Name = "txtACFrecper3";
-            this.txtACFrecper3.Size = new System.Drawing.Size(110, 20);
-            this.txtACFrecper3.TabIndex = 16;
-            // 
-            // txtACFrecper4
-            // 
-            this.txtACFrecper4.Location = new System.Drawing.Point(568, 76);
-            this.txtACFrecper4.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFrecper4.Name = "txtACFrecper4";
-            this.txtACFrecper4.Size = new System.Drawing.Size(110, 20);
-            this.txtACFrecper4.TabIndex = 17;
+            this.txtACFirdaA.Location = new System.Drawing.Point(568, 133);
+            this.txtACFirdaA.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFirdaA.Name = "txtACFirdaA";
+            this.txtACFirdaA.Size = new System.Drawing.Size(110, 20);
+            this.txtACFirdaA.TabIndex = 19;
             // 
             // txtACFtotales
             // 
@@ -819,13 +673,159 @@
             this.txtACFtotales.TabIndex = 18;
             this.txtACFtotales.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
-            // txtACFirdaA
+            // txtACFrecper4
             // 
-            this.txtACFirdaA.Location = new System.Drawing.Point(568, 133);
-            this.txtACFirdaA.Margin = new System.Windows.Forms.Padding(2);
-            this.txtACFirdaA.Name = "txtACFirdaA";
-            this.txtACFirdaA.Size = new System.Drawing.Size(110, 20);
-            this.txtACFirdaA.TabIndex = 19;
+            this.txtACFrecper4.Location = new System.Drawing.Point(568, 76);
+            this.txtACFrecper4.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFrecper4.Name = "txtACFrecper4";
+            this.txtACFrecper4.Size = new System.Drawing.Size(110, 20);
+            this.txtACFrecper4.TabIndex = 17;
+            // 
+            // txtACFrecper3
+            // 
+            this.txtACFrecper3.Location = new System.Drawing.Point(568, 46);
+            this.txtACFrecper3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFrecper3.Name = "txtACFrecper3";
+            this.txtACFrecper3.Size = new System.Drawing.Size(110, 20);
+            this.txtACFrecper3.TabIndex = 16;
+            // 
+            // txtACFrecper2
+            // 
+            this.txtACFrecper2.Location = new System.Drawing.Point(568, 13);
+            this.txtACFrecper2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFrecper2.Name = "txtACFrecper2";
+            this.txtACFrecper2.Size = new System.Drawing.Size(110, 20);
+            this.txtACFrecper2.TabIndex = 15;
+            // 
+            // lblACFirdaA
+            // 
+            this.lblACFirdaA.AutoSize = true;
+            this.lblACFirdaA.Location = new System.Drawing.Point(356, 139);
+            this.lblACFirdaA.Name = "lblACFirdaA";
+            this.lblACFirdaA.Size = new System.Drawing.Size(167, 13);
+            this.lblACFirdaA.TabIndex = 14;
+            this.lblACFirdaA.Text = "Impuesto a la renta diferido Activo";
+            // 
+            // lblACFtotales
+            // 
+            this.lblACFtotales.AutoSize = true;
+            this.lblACFtotales.Location = new System.Drawing.Point(355, 112);
+            this.lblACFtotales.Name = "lblACFtotales";
+            this.lblACFtotales.Size = new System.Drawing.Size(175, 13);
+            this.lblACFtotales.TabIndex = 13;
+            this.lblACFtotales.Text = "Total de impuesto a la renta diferido";
+            // 
+            // lblACFrecper4
+            // 
+            this.lblACFrecper4.AutoSize = true;
+            this.lblACFrecper4.Location = new System.Drawing.Point(355, 82);
+            this.lblACFrecper4.Name = "lblACFrecper4";
+            this.lblACFrecper4.Size = new System.Drawing.Size(184, 13);
+            this.lblACFrecper4.TabIndex = 12;
+            this.lblACFrecper4.Text = "Impuesto a la renta Diferido Periodo 4";
+            // 
+            // lblACFrecper3
+            // 
+            this.lblACFrecper3.AutoSize = true;
+            this.lblACFrecper3.Location = new System.Drawing.Point(355, 50);
+            this.lblACFrecper3.Name = "lblACFrecper3";
+            this.lblACFrecper3.Size = new System.Drawing.Size(184, 13);
+            this.lblACFrecper3.TabIndex = 11;
+            this.lblACFrecper3.Text = "Impuesto a la renta Diferido Periodo 3";
+            // 
+            // lblACFrecper2
+            // 
+            this.lblACFrecper2.AutoSize = true;
+            this.lblACFrecper2.Location = new System.Drawing.Point(355, 19);
+            this.lblACFrecper2.Name = "lblACFrecper2";
+            this.lblACFrecper2.Size = new System.Drawing.Size(184, 13);
+            this.lblACFrecper2.TabIndex = 10;
+            this.lblACFrecper2.Text = "Impuesto a la renta Diferido Periodo 2";
+            // 
+            // lblACFrecper1
+            // 
+            this.lblACFrecper1.AutoSize = true;
+            this.lblACFrecper1.Location = new System.Drawing.Point(13, 139);
+            this.lblACFrecper1.Name = "lblACFrecper1";
+            this.lblACFrecper1.Size = new System.Drawing.Size(184, 13);
+            this.lblACFrecper1.TabIndex = 9;
+            this.lblACFrecper1.Text = "Impuesto a la renta Diferido Periodo 1";
+            // 
+            // lblACFculdep
+            // 
+            this.lblACFculdep.AutoSize = true;
+            this.lblACFculdep.Location = new System.Drawing.Point(13, 112);
+            this.lblACFculdep.Name = "lblACFculdep";
+            this.lblACFculdep.Size = new System.Drawing.Size(189, 13);
+            this.lblACFculdep.TabIndex = 8;
+            this.lblACFculdep.Text = "año de culminacion de la depreciacion";
+            // 
+            // lblACFirdp
+            // 
+            this.lblACFirdp.AutoSize = true;
+            this.lblACFirdp.Location = new System.Drawing.Point(13, 82);
+            this.lblACFirdp.Name = "lblACFirdp";
+            this.lblACFirdp.Size = new System.Drawing.Size(168, 13);
+            this.lblACFirdp.TabIndex = 7;
+            this.lblACFirdp.Text = "Impuesto a al renta diferido pasivo";
+            // 
+            // lblACFirda
+            // 
+            this.lblACFirda.AutoSize = true;
+            this.lblACFirda.Location = new System.Drawing.Point(13, 48);
+            this.lblACFirda.Name = "lblACFirda";
+            this.lblACFirda.Size = new System.Drawing.Size(166, 13);
+            this.lblACFirda.TabIndex = 6;
+            this.lblACFirda.Text = "Impuesto a la renta diferido activo";
+            // 
+            // lblACFimponible
+            // 
+            this.lblACFimponible.AutoSize = true;
+            this.lblACFimponible.Location = new System.Drawing.Point(13, 16);
+            this.lblACFimponible.Name = "lblACFimponible";
+            this.lblACFimponible.Size = new System.Drawing.Size(52, 13);
+            this.lblACFimponible.TabIndex = 5;
+            this.lblACFimponible.Text = "Imponible";
+            // 
+            // txtACFrecper1
+            // 
+            this.txtACFrecper1.Location = new System.Drawing.Point(211, 132);
+            this.txtACFrecper1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFrecper1.Name = "txtACFrecper1";
+            this.txtACFrecper1.Size = new System.Drawing.Size(116, 20);
+            this.txtACFrecper1.TabIndex = 4;
+            // 
+            // txtACFculdep
+            // 
+            this.txtACFculdep.Location = new System.Drawing.Point(211, 105);
+            this.txtACFculdep.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFculdep.Name = "txtACFculdep";
+            this.txtACFculdep.Size = new System.Drawing.Size(116, 20);
+            this.txtACFculdep.TabIndex = 3;
+            // 
+            // txtACFirdp
+            // 
+            this.txtACFirdp.Location = new System.Drawing.Point(211, 75);
+            this.txtACFirdp.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFirdp.Name = "txtACFirdp";
+            this.txtACFirdp.Size = new System.Drawing.Size(116, 20);
+            this.txtACFirdp.TabIndex = 2;
+            // 
+            // txtACFirda
+            // 
+            this.txtACFirda.Location = new System.Drawing.Point(211, 45);
+            this.txtACFirda.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFirda.Name = "txtACFirda";
+            this.txtACFirda.Size = new System.Drawing.Size(116, 20);
+            this.txtACFirda.TabIndex = 1;
+            // 
+            // txtACFimponible
+            // 
+            this.txtACFimponible.Location = new System.Drawing.Point(211, 12);
+            this.txtACFimponible.Margin = new System.Windows.Forms.Padding(2);
+            this.txtACFimponible.Name = "txtACFimponible";
+            this.txtACFimponible.Size = new System.Drawing.Size(116, 20);
+            this.txtACFimponible.TabIndex = 0;
             // 
             // tabControl1
             // 
@@ -860,6 +860,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Name = "FrmacfDDFt_detalledediferido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfDDFt_detalledediferido";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
             this.kryptonGroupBox1.Panel.ResumeLayout(false);

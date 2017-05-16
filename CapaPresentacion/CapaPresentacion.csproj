@@ -311,6 +311,18 @@
     <Compile Include="FrmacfVNRt_VNR.Designer.cs">
       <DependentUpon>FrmacfVNRt_VNR.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmACF_BajaEvaluacionTecnica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_BajaEvaluacionTecnica.Designer.cs">
+      <DependentUpon>FrmACF_BajaEvaluacionTecnica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACF_BajaLiquidacionObra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_BajaLiquidacionObra.Designer.cs">
+      <DependentUpon>FrmACF_BajaLiquidacionObra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmACF_CalculoDiferido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -678,6 +690,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfVNRt_VNR.resx">
       <DependentUpon>FrmacfVNRt_VNR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_BajaEvaluacionTecnica.resx">
+      <DependentUpon>FrmACF_BajaEvaluacionTecnica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_BajaLiquidacionObra.resx">
+      <DependentUpon>FrmACF_BajaLiquidacionObra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmACF_CalculoDiferido.resx">
       <DependentUpon>FrmACF_CalculoDiferido.cs</DependentUpon>

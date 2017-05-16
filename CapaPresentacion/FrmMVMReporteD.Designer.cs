@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.ActivosFijosDataSet = new CapaPresentacion.ActivosFijosDataSet();
             this.acfMVMt_MotivoMovimientoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ActivosFijosDataSet = new CapaPresentacion.ActivosFijosDataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.acfMVMt_MotivoMovimientoTableAdapter = new CapaPresentacion.ActivosFijosDataSetTableAdapters.acfMVMt_MotivoMovimientoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.ActivosFijosDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acfMVMt_MotivoMovimientoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ActivosFijosDataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // acfMVMt_MotivoMovimientoBindingSource
+            // 
+            this.acfMVMt_MotivoMovimientoBindingSource.DataMember = "acfMVMt_MotivoMovimiento";
+            this.acfMVMt_MotivoMovimientoBindingSource.DataSource = this.ActivosFijosDataSet;
+            // 
+            // ActivosFijosDataSet
+            // 
+            this.ActivosFijosDataSet.DataSetName = "ActivosFijosDataSet";
+            this.ActivosFijosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -49,16 +59,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(745, 552);
             this.reportViewer1.TabIndex = 0;
             // 
-            // ActivosFijosDataSet
-            // 
-            this.ActivosFijosDataSet.DataSetName = "ActivosFijosDataSet";
-            this.ActivosFijosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // acfMVMt_MotivoMovimientoBindingSource
-            // 
-            this.acfMVMt_MotivoMovimientoBindingSource.DataMember = "acfMVMt_MotivoMovimiento";
-            this.acfMVMt_MotivoMovimientoBindingSource.DataSource = this.ActivosFijosDataSet;
-            // 
             // acfMVMt_MotivoMovimientoTableAdapter
             // 
             this.acfMVMt_MotivoMovimientoTableAdapter.ClearBeforeFill = true;
@@ -70,10 +70,11 @@
             this.ClientSize = new System.Drawing.Size(746, 552);
             this.Controls.Add(this.reportViewer1);
             this.Name = "FrmMVMReporteD";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMVMReporteD";
             this.Load += new System.EventHandler(this.FrmMVMReporteD_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ActivosFijosDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acfMVMt_MotivoMovimientoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ActivosFijosDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

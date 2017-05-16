@@ -457,5 +457,17 @@ namespace CapaPresentacion
             Form FrmACF_ReparoTributario_Procesar = new FrmACF_ReparoTributario_Procesar();
             FrmACF_ReparoTributario_Procesar.ShowDialog();
         }
+
+        private void ribbonButton73_Click(object sender, EventArgs e)
+        {
+            Form FrmACF_BajaLiquidacionObra = new FrmACF_BajaLiquidacionObra();
+            FrmACF_BajaLiquidacionObra.ShowDialog();
+        }
+
+        private void ribbonButton15_Click(object sender, EventArgs e)
+        {
+            Form FrmACF_BajaEvaluacionTecnica = new FrmACF_BajaEvaluacionTecnica();
+            FrmACF_BajaEvaluacionTecnica.ShowDialog();
+        }
     }
 }
