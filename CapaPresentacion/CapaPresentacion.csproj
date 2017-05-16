@@ -311,6 +311,24 @@
     <Compile Include="FrmacfVNRt_VNR.Designer.cs">
       <DependentUpon>FrmacfVNRt_VNR.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmACF_SustituacionMejora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_SustituacionMejora.Designer.cs">
+      <DependentUpon>FrmACF_SustituacionMejora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACF_TransferenciaDonacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_TransferenciaDonacion.Designer.cs">
+      <DependentUpon>FrmACF_TransferenciaDonacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAFNo_Capitalizables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAFNo_Capitalizables.Designer.cs">
+      <DependentUpon>FrmAFNo_Capitalizables.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAgregarLocales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -437,11 +455,11 @@
     <Compile Include="FrmReportes.Designer.cs">
       <DependentUpon>FrmReportes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_3.cs">
+    <Compile Include="Frm_LiquidacionObra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_3.Designer.cs">
-      <DependentUpon>Frm_3.cs</DependentUpon>
+    <Compile Include="Frm_LiquidacionObra.Designer.cs">
+      <DependentUpon>Frm_LiquidacionObra.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_ConciliarInventario.cs">
       <SubType>Form</SubType>
@@ -619,6 +637,15 @@
     <EmbeddedResource Include="FrmacfVNRt_VNR.resx">
       <DependentUpon>FrmacfVNRt_VNR.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_SustituacionMejora.resx">
+      <DependentUpon>FrmACF_SustituacionMejora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_TransferenciaDonacion.resx">
+      <DependentUpon>FrmACF_TransferenciaDonacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAFNo_Capitalizables.resx">
+      <DependentUpon>FrmAFNo_Capitalizables.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarLocales.resx">
       <DependentUpon>FrmAgregarLocales.cs</DependentUpon>
     </EmbeddedResource>
@@ -680,8 +707,8 @@
     <EmbeddedResource Include="FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_3.resx">
-      <DependentUpon>Frm_3.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_LiquidacionObra.resx">
+      <DependentUpon>Frm_LiquidacionObra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ConciliarInventario.resx">
       <DependentUpon>Frm_ConciliarInventario.cs</DependentUpon>

@@ -462,6 +462,7 @@
             this.Controls.Add(this.multiColumnComboBox1);
             this.Controls.Add(this.label1);
             this.Name = "Fom_Barra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empresa";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

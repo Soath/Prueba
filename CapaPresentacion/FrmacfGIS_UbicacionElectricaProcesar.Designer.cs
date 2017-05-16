@@ -87,9 +87,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -591,14 +591,14 @@
             this.groupBox1.TabIndex = 58;
             this.groupBox1.TabStop = false;
             // 
-            // label29
+            // label31
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(176, 16);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(93, 13);
-            this.label29.TabIndex = 59;
-            this.label29.Text = "0 = No Procesado";
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(176, 48);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(105, 40);
+            this.label31.TabIndex = 59;
+            this.label31.Text = "Una vez Editado el Indicador Cambia Automáticamente";
             // 
             // label30
             // 
@@ -609,14 +609,14 @@
             this.label30.TabIndex = 60;
             this.label30.Text = "1 = Procesado";
             // 
-            // label31
+            // label29
             // 
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(176, 48);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(105, 40);
-            this.label31.TabIndex = 59;
-            this.label31.Text = "Una vez Editado el Indicador Cambia Automáticamente";
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(176, 16);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(93, 13);
+            this.label29.TabIndex = 59;
+            this.label29.Text = "0 = No Procesado";
             // 
             // FrmacfGIS_UbicacionElectricaProcesar
             // 
@@ -681,6 +681,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "FrmacfGIS_UbicacionElectricaProcesar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfGIS_UbicacionElectricaProcesar";
             this.Load += new System.EventHandler(this.FrmacfGIS_UbicacionElectricaProcesar_Load_1);
             this.groupBox1.ResumeLayout(false);

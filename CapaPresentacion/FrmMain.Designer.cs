@@ -272,6 +272,7 @@
             this.ribbonButton72.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton72.Image")));
             this.ribbonButton72.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton72.SmallImage")));
             this.ribbonButton72.Text = "Componentizacion de Af Eletricos";
+            this.ribbonButton72.Click += new System.EventHandler(this.ribbonButton72_Click);
             // 
             // ribbonPanel2
             // 

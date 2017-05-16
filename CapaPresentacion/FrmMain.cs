@@ -121,36 +121,33 @@ namespace CapaPresentacion
         }
         private void ribbonButton67_Click(object sender, EventArgs e)
         {
-            Form FrmbdiCDDpClasesDeDocumento = new FrmbdiCDDpClasesDeDocumento();
-            FrmbdiCDDpClasesDeDocumento.ShowDialog();
+            Form FrmAFNo_Capitalizables = new FrmAFNo_Capitalizables();
+            FrmAFNo_Capitalizables.ShowDialog();
         }
         private void ribbonButton68_Click(object sender, EventArgs e)
         {
-            Form FrmbdiPRVpProveedor = new FrmbdiPRVpProveedor();
-            FrmbdiPRVpProveedor.ShowDialog();
+            Form FrmACF_TransferenciaDonacion = new FrmACF_TransferenciaDonacion();
+            FrmACF_TransferenciaDonacion.ShowDialog();
         }
         private void ribbonButton69_Click(object sender, EventArgs e)
         {
-            Form FrmbdiSEGpSegmento = new FrmbdiSEGpSegmento();
-            FrmbdiSEGpSegmento.ShowDialog();
+            Form FrmACF_SustituacionMejora = new FrmACF_SustituacionMejora();
+            FrmACF_SustituacionMejora.ShowDialog();
         }
         private void ribbonButton70_Click(object sender, EventArgs e)
         {
-            Form FrmbdiSOCpSociedades = new FrmbdiSOCpSociedades();
-            FrmbdiSOCpSociedades.ShowDialog();
+            Form Frm_LiquidacionObra = new Frm_LiquidacionObra();
+            Frm_LiquidacionObra.ShowDialog();
         }
         private void ribbonButton71_Click(object sender, EventArgs e)
         {
-          //  Form FrmbdiXCCpExtraccionSAP_CentroCosto = new FrmbdiXCCpExtraccionSAP_CentroCosto();
-           // FrmbdiXCCpExtraccionSAP_CentroCosto.ShowDialog();
-
             Form Fom_Barra = new Fom_Barra();
             Fom_Barra.ShowDialog();
         }
         private void ribbonButton72_Click(object sender, EventArgs e)
         {
-            Form FrmbdiXPEpExtraccionSAP_Personal = new FrmbdiXPEpExtraccionSAP_Personal();
-            FrmbdiXPEpExtraccionSAP_Personal.ShowDialog();
+            Form FrmacfCMPt_Componente = new FrmacfCMPt_Componente();
+            FrmacfCMPt_Componente.ShowDialog();
         }
 
         private void rbtn1_Click(object sender, EventArgs e)

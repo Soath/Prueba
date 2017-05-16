@@ -166,7 +166,6 @@ C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMovimiento_Transferencia_Activo.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMVMReporteD.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmReportes.resources
-C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_3.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_ConciliarInventario.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_InventarioG.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_RegistroInventario.resources
@@ -180,3 +179,7 @@ C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmAFNo_Capitalizables.resources
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_SustituacionMejora.resources
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmACF_TransferenciaDonacion.resources
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_LiquidacionObra.resources
