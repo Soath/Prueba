@@ -427,5 +427,35 @@ namespace CapaPresentacion
             Form Frm_ConciliarInventario = new Frm_ConciliarInventario();
             Frm_ConciliarInventario.ShowDialog();
         }
+
+        private void ribbonButton74_Click(object sender, EventArgs e)
+        {
+            Form FrmACF_Depreciacion = new FrmACF_Depreciacion();
+            FrmACF_Depreciacion.ShowDialog();            
+        }
+
+        private void ribbonButton79_Click(object sender, EventArgs e)
+        {
+            Form FrmACF_CalculoDiferido = new FrmACF_CalculoDiferido();
+            FrmACF_CalculoDiferido.ShowDialog();            
+        }
+
+        private void ribbonButton80_Click(object sender, EventArgs e)
+        {
+            Form FrmACF_CalculoDiferido_Procesar = new FrmACF_CalculoDiferido_Procesar();
+            FrmACF_CalculoDiferido_Procesar.ShowDialog();            
+        }
+
+        private void ribbonButton83_Click(object sender, EventArgs e)
+        {
+            Form FrmACF_ReparoTributario = new FrmACF_ReparoTributario();
+            FrmACF_ReparoTributario.ShowDialog();
+        }
+
+        private void ribbonButton84_Click(object sender, EventArgs e)
+        {
+            Form FrmACF_ReparoTributario_Procesar = new FrmACF_ReparoTributario_Procesar();
+            FrmACF_ReparoTributario_Procesar.ShowDialog();
+        }
     }
 }

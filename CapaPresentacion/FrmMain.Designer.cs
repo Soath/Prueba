@@ -168,13 +168,13 @@
             this.ribbonButton55 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton56 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton57 = new System.Windows.Forms.RibbonButton();
+            this.ribbonSeparator9 = new System.Windows.Forms.RibbonSeparator();
+            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonButton12 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton48 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton49 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton62 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton63 = new System.Windows.Forms.RibbonButton();
-            this.ribbonSeparator9 = new System.Windows.Forms.RibbonSeparator();
-            this.ribbonButton12 = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButton13 = new System.Windows.Forms.RibbonButton();
             this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
@@ -430,6 +430,7 @@
             this.ribbonButton74.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton74.Image")));
             this.ribbonButton74.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton74.SmallImage")));
             this.ribbonButton74.Text = "Calculo de Depreciación";
+            this.ribbonButton74.Click += new System.EventHandler(this.ribbonButton74_Click);
             // 
             // ribbonButton75
             // 
@@ -489,6 +490,7 @@
             this.ribbonButton79.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton79.Image")));
             this.ribbonButton79.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton79.SmallImage")));
             this.ribbonButton79.Text = "Generar / Cargar BD por diferido";
+            this.ribbonButton79.Click += new System.EventHandler(this.ribbonButton79_Click);
             // 
             // ribbonButton80
             // 
@@ -496,6 +498,7 @@
             this.ribbonButton80.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton80.Image")));
             this.ribbonButton80.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton80.SmallImage")));
             this.ribbonButton80.Text = "Procesar Diferido";
+            this.ribbonButton80.Click += new System.EventHandler(this.ribbonButton80_Click);
             // 
             // ribbonButton81
             // 
@@ -525,6 +528,7 @@
             this.ribbonButton83.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton83.Image")));
             this.ribbonButton83.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton83.SmallImage")));
             this.ribbonButton83.Text = "Generar / Cargar BD para Reparo";
+            this.ribbonButton83.Click += new System.EventHandler(this.ribbonButton83_Click);
             // 
             // ribbonButton84
             // 
@@ -532,6 +536,7 @@
             this.ribbonButton84.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton84.Image")));
             this.ribbonButton84.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton84.SmallImage")));
             this.ribbonButton84.Text = "Procesar Reparo";
+            this.ribbonButton84.Click += new System.EventHandler(this.ribbonButton84_Click);
             // 
             // ribbonButton85
             // 
@@ -1146,6 +1151,19 @@
             this.ribbonButton57.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton57.SmallImage")));
             this.ribbonButton57.Text = "VNR";
             // 
+            // ribbonPanel3
+            // 
+            this.ribbonPanel3.Items.Add(this.ribbonButton12);
+            this.ribbonPanel3.Items.Add(this.ribbonSeparator9);
+            this.ribbonPanel3.Text = "Altas /Edicion (BNC,BC)";
+            // 
+            // ribbonButton12
+            // 
+            this.ribbonButton12.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton12.Image")));
+            this.ribbonButton12.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton12.SmallImage")));
+            this.ribbonButton12.Text = "Activo Fijo";
+            this.ribbonButton12.Click += new System.EventHandler(this.ribbonButton12_Click);
+            // 
             // ribbonButton48
             // 
             this.ribbonButton48.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton48.Image")));
@@ -1174,19 +1192,6 @@
             this.ribbonButton63.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton63.Image")));
             this.ribbonButton63.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton63.SmallImage")));
             this.ribbonButton63.Text = "Incorporacion de Activos No capitalizables";
-            // 
-            // ribbonButton12
-            // 
-            this.ribbonButton12.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton12.Image")));
-            this.ribbonButton12.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton12.SmallImage")));
-            this.ribbonButton12.Text = "Activo Fijo";
-            this.ribbonButton12.Click += new System.EventHandler(this.ribbonButton12_Click);
-            // 
-            // ribbonPanel3
-            // 
-            this.ribbonPanel3.Items.Add(this.ribbonButton12);
-            this.ribbonPanel3.Items.Add(this.ribbonSeparator9);
-            this.ribbonPanel3.Text = "Altas /Edicion (BNC,BC)";
             // 
             // ribbonButton13
             // 

@@ -311,6 +311,48 @@
     <Compile Include="FrmacfVNRt_VNR.Designer.cs">
       <DependentUpon>FrmacfVNRt_VNR.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmACF_CalculoDiferido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_CalculoDiferido.Designer.cs">
+      <DependentUpon>FrmACF_CalculoDiferido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACF_CalculoDiferido_Exportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_CalculoDiferido_Exportar.Designer.cs">
+      <DependentUpon>FrmACF_CalculoDiferido_Exportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACF_CalculoDiferido_Procesar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_CalculoDiferido_Procesar.Designer.cs">
+      <DependentUpon>FrmACF_CalculoDiferido_Procesar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACF_Depreciacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_Depreciacion.Designer.cs">
+      <DependentUpon>FrmACF_Depreciacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACF_ReparoTributario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_ReparoTributario.Designer.cs">
+      <DependentUpon>FrmACF_ReparoTributario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACF_ReparoTributario_Exportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_ReparoTributario_Exportar.Designer.cs">
+      <DependentUpon>FrmACF_ReparoTributario_Exportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACF_ReparoTributario_Procesar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_ReparoTributario_Procesar.Designer.cs">
+      <DependentUpon>FrmACF_ReparoTributario_Procesar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmACF_SustituacionMejora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -636,6 +678,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfVNRt_VNR.resx">
       <DependentUpon>FrmacfVNRt_VNR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_CalculoDiferido.resx">
+      <DependentUpon>FrmACF_CalculoDiferido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_CalculoDiferido_Exportar.resx">
+      <DependentUpon>FrmACF_CalculoDiferido_Exportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_CalculoDiferido_Procesar.resx">
+      <DependentUpon>FrmACF_CalculoDiferido_Procesar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_Depreciacion.resx">
+      <DependentUpon>FrmACF_Depreciacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_ReparoTributario.resx">
+      <DependentUpon>FrmACF_ReparoTributario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_ReparoTributario_Exportar.resx">
+      <DependentUpon>FrmACF_ReparoTributario_Exportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_ReparoTributario_Procesar.resx">
+      <DependentUpon>FrmACF_ReparoTributario_Procesar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmACF_SustituacionMejora.resx">
       <DependentUpon>FrmACF_SustituacionMejora.cs</DependentUpon>
