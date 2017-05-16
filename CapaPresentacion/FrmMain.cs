@@ -403,13 +403,13 @@ namespace CapaPresentacion
 
         private void ribbonButton76_Click(object sender, EventArgs e)
         {
-            Form FrmAjusteVidaUtil = new FrmAjusteVidaUtil();
+            Form FrmAjusteVidaUtil = new FrmAjusteValorBien();
             FrmAjusteVidaUtil.ShowDialog();
         }
 
         private void ribbonButton77_Click(object sender, EventArgs e)
         {
-            Form FrmAjusteValorBien = new FrmAjusteValorBien();
+            Form FrmAjusteValorBien = new FrmAjusteVidaUtil();
             FrmAjusteValorBien.ShowDialog();
         }
 

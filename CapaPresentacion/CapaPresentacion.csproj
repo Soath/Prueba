@@ -89,7 +89,6 @@
     </Compile>
     <Compile Include="DataSet2.cs">
       <DependentUpon>DataSet2.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -330,17 +329,17 @@
     <Compile Include="ACFLOCT_LOCAL.Designer.cs">
       <DependentUpon>ACFLOCT_LOCAL.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAjusteValorBien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAjusteValorBien.Designer.cs">
-      <DependentUpon>FrmAjusteValorBien.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmAjusteVidaUtil.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAjusteVidaUtil.Designer.cs">
       <DependentUpon>FrmAjusteVidaUtil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjusteValorBien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjusteValorBien.Designer.cs">
+      <DependentUpon>FrmAjusteValorBien.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmbdiCAFpClaseDeActivoFijo.cs">
       <SubType>Form</SubType>
@@ -626,11 +625,11 @@
     <EmbeddedResource Include="FrmAgregarNuevLocal.resx">
       <DependentUpon>FrmAgregarNuevLocal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAjusteValorBien.resx">
-      <DependentUpon>FrmAjusteValorBien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmAjusteVidaUtil.resx">
       <DependentUpon>FrmAjusteVidaUtil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjusteValorBien.resx">
+      <DependentUpon>FrmAjusteValorBien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmbdiCAFpClaseDeActivoFijo.resx">
       <DependentUpon>FrmbdiCAFpClaseDeActivoFijo.cs</DependentUpon>

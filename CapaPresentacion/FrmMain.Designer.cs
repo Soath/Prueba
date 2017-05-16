@@ -456,7 +456,7 @@
             this.ribbonButton76.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
             this.ribbonButton76.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton76.Image")));
             this.ribbonButton76.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton76.SmallImage")));
-            this.ribbonButton76.Text = "Ajustes Vida Util";
+            this.ribbonButton76.Text = "Ajustes Valor del Bien";
             this.ribbonButton76.Click += new System.EventHandler(this.ribbonButton76_Click);
             // 
             // ribbonButton77
@@ -464,7 +464,7 @@
             this.ribbonButton77.DropDownArrowDirection = System.Windows.Forms.RibbonArrowDirection.Left;
             this.ribbonButton77.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton77.Image")));
             this.ribbonButton77.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton77.SmallImage")));
-            this.ribbonButton77.Text = "Ajustes Valor del Bien";
+            this.ribbonButton77.Text = "Ajustes Vida Util";
             this.ribbonButton77.Click += new System.EventHandler(this.ribbonButton77_Click);
             // 
             // ribbonPanel16
