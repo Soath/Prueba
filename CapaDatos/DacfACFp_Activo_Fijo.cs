@@ -855,12 +855,9 @@ namespace CapaDatos
             ParACFtipo_activo.Value = acfACFp_Activo_Fijo.ACFtipo_activo;
             SqlCmd.Parameters.Add(ParACFtipo_activo);
             //
+            //Ejecutamos nuestro comando
 
-                //Ejecutamos nuestro comando
-
-                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Inserto el Registro";
-
-			
+            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Inserto el Registro";		
 			
 		}
 	catch (Exception ex)
@@ -897,14 +894,9 @@ namespace CapaDatos
             ParACFdescripcion.Value = acfACFp_Activo_Fijo.ACFdescripcion;
             SqlCmd.Parameters.Add(ParACFdescripcion);
             //
-
-
             //Ejecutamos nuestro comando
 
             rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Inserto el Registro";
-
-
-
         }
         catch (Exception ex)
         {
@@ -1286,7 +1278,7 @@ namespace CapaDatos
             return rpta;
         }
 
-        //METODO EDITAR2
+        //METODO EDITAR3
         public string Editar3(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
         {
             string rpta = "";
@@ -1351,11 +1343,49 @@ namespace CapaDatos
                 ParV_T087U_ANLUE.Value = acfACFp_Activo_Fijo.V_T087U_ANLUE;
                 SqlCmd.Parameters.Add(ParV_T087U_ANLUE);
                 //
-
-
-
                 //Ejecutamos nuestro comando
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Modifico el Registro";
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
+        }
+        //METODO EDITAR - DEPRECIACION
+        public string depreciacion(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
+        {
+            string rpta = "";
 
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_U_acfACFp_Activo_Fijo_Depreciacion";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+                SqlParameter ParACFfincorporacion = new SqlParameter();
+                ParACFfincorporacion.ParameterName = "@dtACFfincorporacion";
+                ParACFfincorporacion.SqlDbType = SqlDbType.DateTime;
+                ParACFfincorporacion.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfincorporacion);
+                SqlCmd.Parameters.Add(ParACFfincorporacion);
+                // sACFfechanotaingreso - se usa porque no podemos tomar 2veces la fecha de incorporacion
+                SqlParameter ParACFfechanotaingreso = new SqlParameter();
+                ParACFfechanotaingreso.ParameterName = "@sACFfechanotaingreso";
+                ParACFfechanotaingreso.SqlDbType = SqlDbType.DateTime;
+                ParACFfechanotaingreso.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfechanotaingreso);
+                SqlCmd.Parameters.Add(ParACFfechanotaingreso);
+                //
+                //Ejecutamos nuestro comando
                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Modifico el Registro";
             }
             catch (Exception ex)
