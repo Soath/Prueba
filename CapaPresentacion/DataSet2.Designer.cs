@@ -8855,6 +8855,10 @@ namespace CapaPresentacion {
             
             private global::System.Data.DataColumn columnCRSmodelo;
             
+            private global::System.Data.DataColumn columnACFtipo_activo;
+            
+            private global::System.Data.DataColumn columnUNMid;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DBarraDataTable() {
@@ -8922,6 +8926,22 @@ namespace CapaPresentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACFtipo_activoColumn {
+                get {
+                    return this.columnACFtipo_activo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UNMidColumn {
+                get {
+                    return this.columnUNMid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -8957,13 +8977,15 @@ namespace CapaPresentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DBarraRow AddDBarraRow(string ACFid, string ACFdescripcion, string CRSserie, string CRSmodelo) {
+            public DBarraRow AddDBarraRow(string ACFid, string ACFdescripcion, string CRSserie, string CRSmodelo, string ACFtipo_activo, string UNMid) {
                 DBarraRow rowDBarraRow = ((DBarraRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ACFid,
                         ACFdescripcion,
                         CRSserie,
-                        CRSmodelo};
+                        CRSmodelo,
+                        ACFtipo_activo,
+                        UNMid};
                 rowDBarraRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDBarraRow);
                 return rowDBarraRow;
@@ -8990,6 +9012,8 @@ namespace CapaPresentacion {
                 this.columnACFdescripcion = base.Columns["ACFdescripcion"];
                 this.columnCRSserie = base.Columns["CRSserie"];
                 this.columnCRSmodelo = base.Columns["CRSmodelo"];
+                this.columnACFtipo_activo = base.Columns["ACFtipo_activo"];
+                this.columnUNMid = base.Columns["UNMid"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9003,6 +9027,10 @@ namespace CapaPresentacion {
                 base.Columns.Add(this.columnCRSserie);
                 this.columnCRSmodelo = new global::System.Data.DataColumn("CRSmodelo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCRSmodelo);
+                this.columnACFtipo_activo = new global::System.Data.DataColumn("ACFtipo_activo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACFtipo_activo);
+                this.columnUNMid = new global::System.Data.DataColumn("UNMid", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUNMid);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12772,6 +12800,38 @@ namespace CapaPresentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACFtipo_activo {
+                get {
+                    try {
+                        return ((string)(this[this.tableDBarra.ACFtipo_activoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACFtipo_activo\' de la tabla \'DBarra\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDBarra.ACFtipo_activoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string UNMid {
+                get {
+                    try {
+                        return ((string)(this[this.tableDBarra.UNMidColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'UNMid\' de la tabla \'DBarra\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDBarra.UNMidColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsACFidNull() {
                 return this.IsNull(this.tableDBarra.ACFidColumn);
             }
@@ -12816,6 +12876,30 @@ namespace CapaPresentacion {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetCRSmodeloNull() {
                 this[this.tableDBarra.CRSmodeloColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACFtipo_activoNull() {
+                return this.IsNull(this.tableDBarra.ACFtipo_activoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACFtipo_activoNull() {
+                this[this.tableDBarra.ACFtipo_activoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsUNMidNull() {
+                return this.IsNull(this.tableDBarra.UNMidColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetUNMidNull() {
+                this[this.tableDBarra.UNMidColumn] = global::System.Convert.DBNull;
             }
         }
         

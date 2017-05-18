@@ -298,7 +298,10 @@ namespace CapaNegocio
         {
             return new DacfACFp_Activo_Fijo().Next(iACFid);
         }
-
+        public static DataTable Mostrar3()
+        {
+            return new DacfACFp_Activo_Fijo().Mostrar3();
+        }
         public static DataTable Prev(String iACFid)
         {
             return new DacfACFp_Activo_Fijo().Prev(iACFid);
