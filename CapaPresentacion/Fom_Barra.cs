@@ -20,7 +20,7 @@ namespace CapaPresentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Reportes
+            //Reportes de codigo de barra
             FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar3(), "ip");
             rptalu.ShowDialog();
         }
