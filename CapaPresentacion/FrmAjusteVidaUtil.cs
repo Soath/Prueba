@@ -30,9 +30,10 @@ namespace CapaPresentacion
                 //dataListado.DataSource = NacfACFp_Activo_Fijo.Mostrar2(iACFid);
                                 
                 DataTable tabla = NacfACFp_Activo_Fijo.Mostrar2(iACFid);
-                
-                 foreach (DataRow Drow in tabla.Rows)
-                 {
+                if (tabla.Rows.Count > 0)
+                {
+                    foreach (DataRow Drow in tabla.Rows)
+                     {
                      int num = dataListado.Rows.Add();
                      dataListado.Rows[num].Cells[0].Value = Drow["ACFid"].ToString();
                      dataListado.Rows[num].Cells[1].Value = Drow["ACFdescripcion"].ToString();
@@ -47,7 +48,10 @@ namespace CapaPresentacion
                      dataListado.Rows[num].Cells[10].Value = Drow["ACFdepacutrib"].ToString();
                      dataListado.Rows[num].Cells[11].Value = Drow["ACFdepacuniif"].ToString();
                      dataListado.Rows[num].Cells[12].Value = Drow["CMPid"].ToString();
-                 }
+                    }
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
 
             }
 

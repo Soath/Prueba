@@ -537,19 +537,21 @@ namespace CapaDatos
 
 	}
 
-/*	public object Clone() {
-//		return base.MemberwiseClone();
-//	}
-*/
+        /*	public object Clone() {
+        //		return base.MemberwiseClone();
+        //	}
+        */
 
-    //METODO MOSTRAR
-        public DataTable Mostrar() {
-           DataTable DtResultado = new DataTable("acfCRSt_Caracteristicas");
+        //METODO MOSTRAR
+        public DataTable Mostrar()
+        {
+            DataTable DtResultado = new DataTable("acfCRSt_Caracteristicas");
             SqlConnection SqlCon = new SqlConnection();
 
-		try {
-            //Codigo
-             SqlCon.ConnectionString = DConexion.CnBDActivo;
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "usp_S_acfCRSt_Caracteristicas";
@@ -559,17 +561,49 @@ namespace CapaDatos
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
-        }
-				
-	        catch (Exception ex)
+            }
+
+            catch (Exception ex)
             {
                 DtResultado = null;
             }
             return DtResultado;
-	}
+        }
+
+        //METODO MostrarSustitucionMejora
+        public DataTable MostrarSustitucionMejora(string iACFid)
+        {
+            DataTable DtResultado = new DataTable("acfCRSt_Caracteristicas");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S_acfCRSt_Caracteristicas_SustitucionMejora";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = iACFid;
+                SqlCmd.Parameters.Add(ParACFid);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
 
         //METODO INSERTAR 
-	public string Insertar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)
+        public string Insertar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)
     {
         string rpta = "";
         SqlConnection SqlCon = new SqlConnection();
@@ -1403,9 +1437,135 @@ namespace CapaDatos
             return rpta; 
 	}
 
+        //METODO Editar Sustitucion Mejora
+        public string EditarSustitucionMejora(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)
+        {
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_U_acfCRSt_Caracteristicas_SustitucionMejora";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = acfCRSt_Caracteristicas.ACFid;
+                SqlCmd.Parameters.Add(ParACFid);
+                //
+                SqlParameter ParMARid = new SqlParameter();
+                ParMARid.ParameterName = "@iMARid";
+                ParMARid.SqlDbType = SqlDbType.Int;
+                ParMARid.Value = acfCRSt_Caracteristicas.MARid;
+                SqlCmd.Parameters.Add(ParMARid);
+                //
+                SqlParameter ParCRSserie = new SqlParameter();
+                ParCRSserie.ParameterName = "@sCRSserie";
+                ParCRSserie.SqlDbType = SqlDbType.VarChar;
+                ParCRSserie.Value = acfCRSt_Caracteristicas.CRSserie;
+                SqlCmd.Parameters.Add(ParCRSserie);
+                //
+                SqlParameter ParCRSmodelo = new SqlParameter();
+                ParCRSmodelo.ParameterName = "@sCRSmodelo";
+                ParCRSmodelo.SqlDbType = SqlDbType.VarChar;
+                ParCRSmodelo.Value = acfCRSt_Caracteristicas.CRSmodelo;
+                SqlCmd.Parameters.Add(ParCRSmodelo);
+                //
+                SqlParameter ParCRScolor = new SqlParameter();
+                ParCRScolor.ParameterName = "@sCRScolor";
+                ParCRScolor.SqlDbType = SqlDbType.VarChar;
+                ParCRScolor.Value = acfCRSt_Caracteristicas.CRScolor;
+                SqlCmd.Parameters.Add(ParCRScolor);
+                //
+                SqlParameter ParCRSresolucion = new SqlParameter();
+                ParCRSresolucion.ParameterName = "@sCRSresolucion";
+                ParCRSresolucion.SqlDbType = SqlDbType.VarChar;
+                ParCRSresolucion.Value = acfCRSt_Caracteristicas.CRSresolucion;
+                SqlCmd.Parameters.Add(ParCRSresolucion);
+                //
+                SqlParameter ParCRScapacidad = new SqlParameter();
+                ParCRScapacidad.ParameterName = "@sCRScapacidad";
+                ParCRScapacidad.SqlDbType = SqlDbType.VarChar;
+                ParCRScapacidad.Value = acfCRSt_Caracteristicas.CRScapacidad;
+                SqlCmd.Parameters.Add(ParCRScapacidad);
+                //
+                SqlParameter ParCRSpotencia = new SqlParameter();
+                ParCRSpotencia.ParameterName = "@sCRSpotencia";
+                ParCRSpotencia.SqlDbType = SqlDbType.VarChar;
+                ParCRSpotencia.Value = acfCRSt_Caracteristicas.CRSpotencia;
+                SqlCmd.Parameters.Add(ParCRSpotencia);
+                //
+                SqlParameter ParCRSvnominal = new SqlParameter();
+                ParCRSvnominal.ParameterName = "@sCRSvnominal";
+                ParCRSvnominal.SqlDbType = SqlDbType.VarChar;
+                ParCRSvnominal.Value = acfCRSt_Caracteristicas.CRSvnominal;
+                SqlCmd.Parameters.Add(ParCRSvnominal);
+                //
+                SqlParameter ParCRSventrada = new SqlParameter();
+                ParCRSventrada.ParameterName = "@sCRSventrada";
+                ParCRSventrada.SqlDbType = SqlDbType.VarChar;
+                ParCRSventrada.Value = acfCRSt_Caracteristicas.CRSventrada;
+                SqlCmd.Parameters.Add(ParCRSventrada);
+                //
+                SqlParameter ParCRSvsalida = new SqlParameter();
+                ParCRSvsalida.ParameterName = "@sCRSvsalida";
+                ParCRSvsalida.SqlDbType = SqlDbType.VarChar;
+                ParCRSvsalida.Value = acfCRSt_Caracteristicas.CRSvsalida;
+                SqlCmd.Parameters.Add(ParCRSvsalida);
+                //
+                SqlParameter ParCRSfrecuencia = new SqlParameter();
+                ParCRSfrecuencia.ParameterName = "@sCRSfrecuencia";
+                ParCRSfrecuencia.SqlDbType = SqlDbType.VarChar;
+                ParCRSfrecuencia.Value = acfCRSt_Caracteristicas.CRSfrecuencia;
+                SqlCmd.Parameters.Add(ParCRSfrecuencia);
+                //
+                SqlParameter ParCRStemperatura = new SqlParameter();
+                ParCRStemperatura.ParameterName = "@sCRStemperatura";
+                ParCRStemperatura.SqlDbType = SqlDbType.VarChar;
+                ParCRStemperatura.Value = acfCRSt_Caracteristicas.CRStemperatura;
+                SqlCmd.Parameters.Add(ParCRStemperatura);
+                //
+                SqlParameter ParCRSprocesador = new SqlParameter();
+                ParCRSprocesador.ParameterName = "@sCRSprocesador";
+                ParCRSprocesador.SqlDbType = SqlDbType.VarChar;
+                ParCRSprocesador.Value = acfCRSt_Caracteristicas.CRSprocesador;
+                SqlCmd.Parameters.Add(ParCRSprocesador);
+                //
+                SqlParameter ParCRSpuertos = new SqlParameter();
+                ParCRSpuertos.ParameterName = "@sCRSpuertos";
+                ParCRSpuertos.SqlDbType = SqlDbType.VarChar;
+                ParCRSpuertos.Value = acfCRSt_Caracteristicas.CRSpuertos;
+                SqlCmd.Parameters.Add(ParCRSpuertos);
+                //
+                SqlParameter ParCRSobservacion = new SqlParameter();
+                ParCRSobservacion.ParameterName = "@sCRSobservacion";
+                ParCRSobservacion.SqlDbType = SqlDbType.VarChar;
+                ParCRSobservacion.Value = acfCRSt_Caracteristicas.CRSobservacion;
+                SqlCmd.Parameters.Add(ParCRSobservacion);
+                //
+                //Ejecutamos nuestro comando
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Actualizo el Registro";
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
+        }
+
 
         //METODO ELIMINAR
-	public string Eliminar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas) {
+        public string Eliminar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas) {
 		
 			string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
