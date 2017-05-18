@@ -41,11 +41,11 @@ namespace CapaPresentacion
                 case 1:
                     MessageBox.Show("Proceso de Depreciaciación - Contable NIIF");
                     fecha1 = dateTimePicker1.Text;
-                    fecha2 = "00/00/0000";
+                    fecha2 = "";
                     break;
                 case 2:
                     MessageBox.Show("Proceso de Depreciaciación - Tributaria LIR");
-                    fecha1 = "00/00/0000";
+                    fecha1 = "";
                     fecha2 = dateTimePicker1.Text;
                     break;
                 case 3:
@@ -55,8 +55,8 @@ namespace CapaPresentacion
                     break;
                 default:
                     MessageBox.Show("Debe Elegir el Tipo Proceso de Depreciaciación");
-                    fecha1 = "00/00/0000";
-                    fecha2 = "00/00/0000";
+                    fecha1 = "";
+                    fecha2 = "";
                     break;
             };
             //ejecutamos el procedimiento almacenado
@@ -70,6 +70,7 @@ namespace CapaPresentacion
 
                 if (Rta.Equals("OK"))
                 {
+                    this.timer1.Start();
                     this.MensajeOk("Regsitro Actualizado Correctamente");
                 }
                 else
@@ -86,6 +87,11 @@ namespace CapaPresentacion
         private void button2_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {            
+            this.progressBar1.Increment(1);
         }
     }
 }
