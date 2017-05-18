@@ -270,12 +270,12 @@ namespace CapaNegocio
         //de la CapaDatos
         public static string depreciacion(
          string dtACFfincorporacion,  // Depreciacion contable NIFF
-         string decACFfcapitalizacion // Depreciacion tributaria LIR -- Se esta usando porque solo habia una fecha de incorporacion
+         string sACFfechanotaingreso // Depreciacion tributaria LIR -- Se esta usando porque solo habia una fecha de incorporacion
          )
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
             Obj.ACFfincorporacion = dtACFfincorporacion;
-            Obj.ACFfcapitalizacion = decACFfcapitalizacion;
+            Obj.ACFfechanotaingreso = sACFfechanotaingreso;
             return Obj.depreciacion(Obj);
         }
 

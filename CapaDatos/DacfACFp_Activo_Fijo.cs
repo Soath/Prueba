@@ -1404,12 +1404,14 @@ namespace CapaDatos
                 ParACFfincorporacion.ParameterName = "@dtACFfincorporacion";
                 ParACFfincorporacion.SqlDbType = SqlDbType.DateTime;
                 ParACFfincorporacion.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfincorporacion);
+                //ParACFfincorporacion.Value = acfACFp_Activo_Fijo.ACFfincorporacion;
                 SqlCmd.Parameters.Add(ParACFfincorporacion);
                 // sACFfechanotaingreso - se usa porque no podemos tomar 2veces la fecha de incorporacion
                 SqlParameter ParACFfechanotaingreso = new SqlParameter();
                 ParACFfechanotaingreso.ParameterName = "@sACFfechanotaingreso";
                 ParACFfechanotaingreso.SqlDbType = SqlDbType.DateTime;
                 ParACFfechanotaingreso.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfechanotaingreso);
+                //ParACFfechanotaingreso.Value = acfACFp_Activo_Fijo.ACFfechanotaingreso;
                 SqlCmd.Parameters.Add(ParACFfechanotaingreso);
                 //
                 //Ejecutamos nuestro comando
