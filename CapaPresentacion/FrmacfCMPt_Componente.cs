@@ -217,17 +217,17 @@ namespace CapaPresentacion
             this.tomaTab();
             this.Botones(true);
 
-            this.dataListado.DataSource = NacfCMPt_Componente.Mostrar();
+            this.dataListado.DataSource = NacfACFp_Activo_Fijo.Mostrar4("12010101");
 
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             if (dataListado.Rows.Count == 0)
             {
-                BotonesSinReg(false);
+              //  BotonesSinReg(false);
             }
             else
             {
-                BotonesSinReg(true);
-                this.toolStripAgregar.Enabled = true;
+              //  BotonesSinReg(true);
+              //  this.toolStripAgregar.Enabled = true;
 
             }
             this.dataListado.Select();
@@ -269,11 +269,11 @@ namespace CapaPresentacion
             }
         }
 
-        private void Next(String iACFid)
+        private void Next(String CMPid)
         {
             try
             {
-                DataTable dat = NacfCMPt_Componente.Next(iACFid);
+                DataTable dat = NacfCMPt_Componente.Next(CMPid);
 
                 //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
 
@@ -724,6 +724,11 @@ namespace CapaPresentacion
         {
             Form FrmacfCMPt_Componente = new FrmacfCMPt_Componente();
             FrmacfCMPt_Componente.ShowDialog();
+        }
+
+        private void toolStripSiguiente_Click(object sender, EventArgs e)
+        {
+
         }
 
 

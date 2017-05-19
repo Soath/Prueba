@@ -124,7 +124,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(685, 300);
+            this.tabPage1.Size = new System.Drawing.Size(685, 259);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -215,7 +215,6 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Usuarios";
-            //this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // labelX10
             // 
@@ -572,6 +571,7 @@
             this.toolStripSiguiente.Size = new System.Drawing.Size(60, 59);
             this.toolStripSiguiente.Text = "Siguiente";
             this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripSiguiente.Click += new System.EventHandler(this.toolStripSiguiente_Click);
             // 
             // toolStripUltimo
             // 
@@ -648,7 +648,6 @@
             this.Name = "FrmacfCMPt_Componente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfCMPt_Componente";
-            //this.Load += new System.EventHandler(this.FrmacfCMPt_Componente_Load_1);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
