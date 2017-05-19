@@ -160,7 +160,7 @@ namespace CapaPresentacion
             this.Activo = 1;
             this.tomaTab();
             this.Botones(true);
-            this.dataListado.DataSource = NacfESTt_Estado.Mostrar();
+            this.dataListado.DataSource = NbdiSOCpSociedades.Mostrar();
 
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             if (dataListado.Rows.Count == 0)
@@ -288,7 +288,7 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfESTt_Estado.Insertar(
+                Rta = NbdiSOCpSociedades.Insertar(
                     this.txtBUKRS.Text,
                     this.txtBUTXT.Text);                    
 
@@ -315,7 +315,7 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfESTt_Estado.Editar(
+                Rta = NbdiSOCpSociedades.Editar(
                     this.txtBUKRS.Text,
                     this.txtBUTXT.Text);
                 if (Rta.Equals("OK"))
@@ -347,7 +347,7 @@ namespace CapaPresentacion
             {
                 string Codigo;
                 Codigo = Convert.ToString(this.dataListado.CurrentRow.Cells[1].Value);
-                Rta = NacfESTt_Estado.Eliminar(Codigo);
+                Rta = NbdiSOCpSociedades.Eliminar(Codigo);
 
                 if (Rta.Equals("OK"))
                 {
@@ -378,7 +378,7 @@ namespace CapaPresentacion
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             Codigo = Convert.ToString(row.Cells[1].Value);
-                            Rta = NacfESTt_Estado.Eliminar(Codigo);
+                            Rta = NbdiSOCpSociedades.Eliminar(Codigo);
 
                             if (Rta.Equals("OK"))
                             {
@@ -405,7 +405,7 @@ namespace CapaPresentacion
             if (this.txtBuscar.Text == "") this.mostrar();
             else
             {
-                this.dataListado.DataSource = NacfESTt_Estado.Buscar(this.txtBuscar.Text);
+                this.dataListado.DataSource = NbdiSOCpSociedades.Buscar(this.txtBuscar.Text);
                 this.OcultarColumnas();
                 lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             }
