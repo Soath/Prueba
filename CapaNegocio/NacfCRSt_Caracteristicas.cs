@@ -282,6 +282,47 @@ namespace CapaNegocio
             Obj.CRSobservacion = sCRSobservacion;
             return Obj.Editar(Obj);
         }
+
+        //------------------------------------------------------------------
+        //Metodo EditarSustitucionMejora que llama al metodo Editar
+        //de la CapaDatos
+        public static string EditarSustitucionMejora(
+         string iACFid,
+         string iMARid,
+         string sCRSserie,
+         string sCRSmodelo,
+         string sCRScolor,
+         string sCRSresolucion,
+         string sCRScapacidad,
+         string sCRSpotencia,
+         string sCRSvnominal,
+         string sCRSventrada,
+         string sCRSvsalida,
+         string sCRSfrecuencia,
+         string sCRStemperatura,
+         string sCRSprocesador,
+         string sCRSpuertos,         
+         string sCRSobservacion)
+        {
+            DacfCRSt_Caracteristicas Obj = new DacfCRSt_Caracteristicas();
+            Obj.ACFid = iACFid;
+            Obj.MARid = iMARid;
+            Obj.CRSserie = sCRSserie;
+            Obj.CRSmodelo = sCRSmodelo;
+            Obj.CRScolor = sCRScolor;
+            Obj.CRSresolucion = sCRSresolucion;
+            Obj.CRScapacidad = sCRScapacidad;
+            Obj.CRSpotencia = sCRSpotencia;
+            Obj.CRSvnominal = sCRSvnominal;
+            Obj.CRSventrada = sCRSventrada;
+            Obj.CRSvsalida = sCRSvsalida;
+            Obj.CRSfrecuencia = sCRSfrecuencia;
+            Obj.CRStemperatura = sCRStemperatura;
+            Obj.CRSprocesador = sCRSprocesador;
+            Obj.CRSpuertos = sCRSpuertos;
+            Obj.CRSobservacion = sCRSobservacion;
+            return Obj.EditarSustitucionMejora(Obj);
+        }
         //------------------------------------------------------------------
         //M�todo Eliminar que llama al m�todo Eliminar de la clase DPostres
         //de la CapaDatos
@@ -298,6 +339,13 @@ namespace CapaNegocio
         public static DataTable Mostrar()
         {
             return new DacfCRSt_Caracteristicas().Mostrar();
+        }
+        //------------------------------------------------------------------
+        //M�todo Mostrar que llama al m�todo Mostrar de la clase 
+        //de la CapaDatos
+        public static DataTable MostrarSustitucionMejora(string iACFid)
+        {
+            return new DacfCRSt_Caracteristicas().MostrarSustitucionMejora(iACFid);
         }
 
 

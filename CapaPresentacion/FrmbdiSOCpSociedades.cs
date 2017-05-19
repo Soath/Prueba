@@ -44,11 +44,9 @@ namespace CapaPresentacion
             this.toolStripCancelar.Click += new System.EventHandler(this.Control_Click_Cancelar);
 
 
-            this.chkEliminar.Click += new System.EventHandler(this.Control_Click_ChkEliminar);
 
             this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(Control_Click_dataListado);
             this.Load += new System.EventHandler(this.FrmbdiSOCpSociedades_miLoad);
-            this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             this.ttMensaje.SetToolTip(txtBUKRS, "Ingrese el Valor");
             this.ttMensaje.SetToolTip(txtBUTXT, "Ingrese el Valor");          
@@ -84,10 +82,6 @@ namespace CapaPresentacion
         private void Control_Click_Cancelar(object sender, EventArgs e)
         {
             this.BotonRefrescar();
-        }
-        private void Control_Click_ChkEliminar(object sender, EventArgs e)
-        {
-            this.BotonChkEliminar();
         }
         private void Control_Click_dataListado(object sender, DataGridViewCellEventArgs e)
         {
@@ -185,7 +179,6 @@ namespace CapaPresentacion
         private void BotonRefrescar()
         {
             this.txtBuscar.Text = "";
-            this.chkEliminar.Checked = false;
             this.mostrar();
         }
         private void BotonAgregar()
@@ -210,9 +203,6 @@ namespace CapaPresentacion
         }
         private void BotonEliminar()
         {
-            if (this.chkEliminar.Checked)
-                this.borramuchos();
-            else
                 this.borrauno();
             this.mostrar();
         }
@@ -240,17 +230,6 @@ namespace CapaPresentacion
             Activo = 1;
             this.Botones(true);
             tabControl1.SelectedTab = tabPage1;
-        }
-        private void BotonChkEliminar()
-        {
-            if (chkEliminar.Checked)
-            {
-                this.dataListado.Columns[0].Visible = true;
-            }
-            else
-            {
-                this.dataListado.Columns[0].Visible = false;
-            }
         }
         private void BotonListado()
         {

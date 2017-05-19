@@ -44,8 +44,7 @@ namespace CapaPresentacion
             this.toolStripCancelar.Click += new System.EventHandler(this.Control_Click_Cancelar);
 
 
-            this.chkEliminar.Click += new System.EventHandler(this.Control_Click_ChkEliminar);
-
+           
             this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(Control_Click_dataListado);
             this.Load += new System.EventHandler(this.FrmbdiXPEpExtraccionSAP_Personal_miLoad);
             this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
@@ -90,10 +89,7 @@ namespace CapaPresentacion
         {
             this.BotonRefrescar();
         }
-        private void Control_Click_ChkEliminar(object sender, EventArgs e)
-        {
-            this.BotonChkEliminar();
-        }
+       
         private void Control_Click_dataListado(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == dataListado.Columns["Eliminar"].Index)
@@ -153,19 +149,18 @@ namespace CapaPresentacion
         private void OcultarColumnas()
         {
             this.dataListado.Columns[0].Visible = false;
-            this.dataListado.Columns[1].Visible = false;
-            this.dataListado.Columns[1].Width = 100;
+            this.dataListado.Columns[1].Visible = true;
+            this.dataListado.Columns[1].Width = 70;
             this.dataListado.Columns[1].DefaultCellStyle.Format = "#,0";
             this.dataListado.Columns[1].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.dataListado.Columns[2].Width = 250;
+            this.dataListado.Columns[2].Width = 100;
             this.dataListado.Columns[3].Width = 100;
             //this.dataListado.Columns[3].DefaultCellStyle.Format = "#,0.00";
-            this.dataListado.Columns[3].DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.dataListado.Columns[4].Width = 100;
-            this.dataListado.Columns[1].HeaderText = "PERNR";
-            this.dataListado.Columns[2].HeaderText = "Nachn";
-            this.dataListado.Columns[3].HeaderText = "Name2";
-            this.dataListado.Columns[4].HeaderText = "Vorna";
+            this.dataListado.Columns[4].Width = 250;
+            this.dataListado.Columns[1].HeaderText = "Codigo";
+            this.dataListado.Columns[2].HeaderText = "APellido";
+            this.dataListado.Columns[3].HeaderText = "Apellido";
+            this.dataListado.Columns[4].HeaderText = "Nombre";
             this.dataListado.Columns[5].HeaderText = "DNI";
             this.dataListado.Columns[6].HeaderText = "WERKS";
             this.dataListado.Columns[7].HeaderText = "Persg";
@@ -179,7 +174,7 @@ namespace CapaPresentacion
             this.tomaTab();
             this.Botones(true);
             this.dataListado.DataSource = NbdiXPEpExtraccionSAP_Personal.Mostrar();
-
+            OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             if (dataListado.Rows.Count == 0)
             {
@@ -197,8 +192,7 @@ namespace CapaPresentacion
         private void BotonRefrescar()
         {
             this.txtBuscar.Text = "";
-            this.chkEliminar.Checked = false;
-            this.mostrar();
+               this.mostrar();
         }
         private void BotonAgregar()
         {
@@ -221,9 +215,7 @@ namespace CapaPresentacion
         }
         private void BotonEliminar()
         {
-            if (this.chkEliminar.Checked)
-                this.borramuchos();
-            else
+           
                 this.borrauno();
             this.mostrar();
         }
@@ -252,17 +244,7 @@ namespace CapaPresentacion
             this.Botones(true);
             tabControl1.SelectedTab = tabPage1;
         }
-        private void BotonChkEliminar()
-        {
-            if (chkEliminar.Checked)
-            {
-                this.dataListado.Columns[0].Visible = true;
-            }
-            else
-            {
-                this.dataListado.Columns[0].Visible = false;
-            }
-        }
+    
         private void BotonListado()
         {
             //        if (e.ColumnIndex == dataListado.Columns["Eliminar"].Index)	
