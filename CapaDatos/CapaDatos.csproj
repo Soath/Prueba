@@ -68,6 +68,7 @@
     <Compile Include="DacfUBEt_UbicacionElectrica.cs" />
     <Compile Include="DacfUNMt_Unimed.cs" />
     <Compile Include="DAcfVNRt_VNR.cs" />
+    <Compile Include="DAFNo_Capitalizables.cs" />
     <Compile Include="DbdiCAFpClaseDeActivoFijo.cs" />
     <Compile Include="DBdiCDDpClasesDeDocumento.cs" />
     <Compile Include="DbdiPRVpProveedor.cs" />

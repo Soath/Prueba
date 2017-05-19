@@ -69,6 +69,7 @@
     <Compile Include="NacfUBEt_UbicacionElectrica.cs" />
     <Compile Include="NacfUNMt_Unimed.cs" />
     <Compile Include="NacfVNRt_VNR.cs" />
+    <Compile Include="NAFNo_Capitalizables.cs" />
     <Compile Include="NbdiCAFpClaseDeActivoFijo.cs" />
     <Compile Include="NbdiCDDpClasesDeDocumento.cs" />
     <Compile Include="NbdiPRVpProveedor.cs" />
