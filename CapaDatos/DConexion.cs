@@ -21,12 +21,33 @@ namespace CapaDatos
         {
             String mensaje = "";
             SqlConnection SqlConexion = new SqlConnection();
-            SqlConnection SqlConexion1 = new SqlConnection();
 
             try
             {
                 SqlConexion.ConnectionString = DConexion.CnBDActivo;
                 SqlConexion.Open();
+
+                mensaje = "Y";
+            }
+            catch (Exception ex)
+            {
+                mensaje = ex.Message;
+            }
+            finally
+            {
+                SqlConexion.Close();
+            }
+
+            return mensaje;
+
+        }
+        public String ChequearConexion1()
+        {
+            String mensaje = "";
+            SqlConnection SqlConexion1 = new SqlConnection();
+
+            try
+            {
 
                 SqlConexion1.ConnectionString = DConexion.CnBDI;
                 SqlConexion1.Open();
@@ -39,7 +60,7 @@ namespace CapaDatos
             }
             finally
             {
-                SqlConexion.Close();
+                SqlConexion1.Open();
             }
 
             return mensaje;

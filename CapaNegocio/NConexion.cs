@@ -13,5 +13,11 @@ namespace CapaNegocio
         {
             return new DConexion().ChequearConexion();
         }
+
+        public static String ChequearConexion1()
+        {
+            return new DConexion().ChequearConexion1();
+        }
+
     }
 }
