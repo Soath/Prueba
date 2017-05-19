@@ -238,7 +238,7 @@
             // 
             // txtCMPvutildia
             // 
-            this.txtCMPvutildia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPvutildia.BackColor = System.Drawing.Color.White;
             this.txtCMPvutildia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPvutildia.Location = new System.Drawing.Point(470, 122);
             this.txtCMPvutildia.Margin = new System.Windows.Forms.Padding(2);
@@ -249,7 +249,7 @@
             // 
             // txtCMPvutilanio
             // 
-            this.txtCMPvutilanio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPvutilanio.BackColor = System.Drawing.Color.White;
             this.txtCMPvutilanio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPvutilanio.Location = new System.Drawing.Point(470, 87);
             this.txtCMPvutilanio.Margin = new System.Windows.Forms.Padding(2);
@@ -310,7 +310,7 @@
             // 
             // txtCMPfactorusoestimado
             // 
-            this.txtCMPfactorusoestimado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPfactorusoestimado.BackColor = System.Drawing.Color.White;
             this.txtCMPfactorusoestimado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPfactorusoestimado.Location = new System.Drawing.Point(470, 53);
             this.txtCMPfactorusoestimado.Margin = new System.Windows.Forms.Padding(2);
@@ -321,7 +321,7 @@
             // 
             // txtCMPtotalfactores
             // 
-            this.txtCMPtotalfactores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPtotalfactores.BackColor = System.Drawing.Color.White;
             this.txtCMPtotalfactores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPtotalfactores.Location = new System.Drawing.Point(470, 22);
             this.txtCMPtotalfactores.Margin = new System.Windows.Forms.Padding(2);
@@ -332,7 +332,7 @@
             // 
             // txtCMPlimitelegal
             // 
-            this.txtCMPlimitelegal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPlimitelegal.BackColor = System.Drawing.Color.White;
             this.txtCMPlimitelegal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPlimitelegal.Location = new System.Drawing.Point(158, 117);
             this.txtCMPlimitelegal.Margin = new System.Windows.Forms.Padding(2);
@@ -343,7 +343,7 @@
             // 
             // txtCMPobsolecencia
             // 
-            this.txtCMPobsolecencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPobsolecencia.BackColor = System.Drawing.Color.White;
             this.txtCMPobsolecencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPobsolecencia.Location = new System.Drawing.Point(158, 87);
             this.txtCMPobsolecencia.Margin = new System.Windows.Forms.Padding(2);
@@ -354,7 +354,7 @@
             // 
             // txtCMPconservacion
             // 
-            this.txtCMPconservacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPconservacion.BackColor = System.Drawing.Color.White;
             this.txtCMPconservacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPconservacion.Location = new System.Drawing.Point(158, 57);
             this.txtCMPconservacion.Margin = new System.Windows.Forms.Padding(2);
@@ -395,7 +395,7 @@
             // 
             // txtCMPusoestimado
             // 
-            this.txtCMPusoestimado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPusoestimado.BackColor = System.Drawing.Color.White;
             this.txtCMPusoestimado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPusoestimado.Location = new System.Drawing.Point(158, 27);
             this.txtCMPusoestimado.Margin = new System.Windows.Forms.Padding(2);
@@ -406,7 +406,7 @@
             // 
             // txtCMPcomponente
             // 
-            this.txtCMPcomponente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPcomponente.BackColor = System.Drawing.Color.White;
             this.txtCMPcomponente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPcomponente.Location = new System.Drawing.Point(210, 144);
             this.txtCMPcomponente.Margin = new System.Windows.Forms.Padding(2);
@@ -417,7 +417,7 @@
             // 
             // txtCMPid
             // 
-            this.txtCMPid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPid.BackColor = System.Drawing.Color.White;
             this.txtCMPid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPid.Location = new System.Drawing.Point(210, 109);
             this.txtCMPid.Margin = new System.Windows.Forms.Padding(2);
@@ -611,7 +611,7 @@
             // 
             // txtCMPnivel
             // 
-            this.txtCMPnivel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtCMPnivel.BackColor = System.Drawing.Color.White;
             this.txtCMPnivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMPnivel.Location = new System.Drawing.Point(493, 109);
             this.txtCMPnivel.Margin = new System.Windows.Forms.Padding(2);
@@ -648,6 +648,7 @@
             this.Name = "FrmacfCMPt_Componente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfCMPt_Componente";
+            this.Load += new System.EventHandler(this.FrmacfCMPt_Componente_Load_1);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

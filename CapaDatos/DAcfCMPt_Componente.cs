@@ -219,7 +219,7 @@ namespace CapaDatos
             return DtResultado;
         }
 
-        public DataTable Prev(String ACFid)
+        public DataTable Prev(String CMPid)
         {
             DataTable DtResultado = new DataTable("acfCMPt_Componente");
             SqlConnection SqlCon = new SqlConnection();
@@ -233,12 +233,12 @@ namespace CapaDatos
                 SqlCmd.CommandText = "usp_P_acfCMPt_Componente";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParCMPcomponente = new SqlParameter();
-                ParCMPcomponente.ParameterName = "@sCMPid";
-                ParCMPcomponente.SqlDbType = SqlDbType.Char;
-                ParCMPcomponente.Size = 50;
-                ParCMPcomponente.Value = CMPid;
-                SqlCmd.Parameters.Add(ParCMPcomponente);
+                SqlParameter ParCMPid = new SqlParameter();
+                ParCMPid.ParameterName = "@CMPid";
+                ParCMPid.SqlDbType = SqlDbType.Int;
+                ParCMPid.Size = 50;
+                ParCMPid.Value = CMPid;
+                SqlCmd.Parameters.Add(ParCMPid);
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
@@ -251,6 +251,32 @@ namespace CapaDatos
             return DtResultado;
         }
 
+           
+        public DataTable Last()
+        {
+            DataTable DtResultado = new DataTable("acfCMPt_Componente");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_L_acfCMPt_Componente";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
         public DataTable Next(String CMPid)
         {
             DataTable DtResultado = new DataTable("acfCMPt_Componente");
@@ -285,31 +311,7 @@ namespace CapaDatos
         }
 
 
-        public DataTable Last()
-        {
-            DataTable DtResultado = new DataTable("acfCMPt_Componente");
-            SqlConnection SqlCon = new SqlConnection();
-
-            try
-            {
-                //Codigo
-                SqlCon.ConnectionString = DConexion.CnBDActivo;
-                SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "usp_L_acfCMPt_Componente";
-                SqlCmd.CommandType = CommandType.StoredProcedure;
-
-
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
-                SqlDat.Fill(DtResultado);
-            }
-
-            catch (Exception ex)
-            {
-                DtResultado = null;
-            }
-            return DtResultado;
-        }
+        
 
         //METODO INSERTAR 
         public string Insertar(DAcfCMPt_Componente acfCMPt_Componente)

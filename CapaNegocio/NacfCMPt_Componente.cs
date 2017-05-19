@@ -77,20 +77,20 @@ namespace CapaNegocio
         // barra de navegacion
         public static DataTable Top()
         {
-            return new DacfACFp_Activo_Fijo().Top();
+            return new DAcfCMPt_Componente().Top();
         }
         public static DataTable Last()
         {
-            return new DacfACFp_Activo_Fijo().Last();
+            return new DAcfCMPt_Componente().Last();
         }
         public static DataTable Next(String CMPid)
         {
             return new DAcfCMPt_Componente().Next(CMPid);
         }
 
-        public static DataTable Prev(String iACFid)
+        public static DataTable Prev(String CMPid)
         {
-            return new DacfACFp_Activo_Fijo().Prev(iACFid);
+            return new DAcfCMPt_Componente().Prev(CMPid);
         }
     }
 }

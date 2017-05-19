@@ -102,18 +102,22 @@ namespace CapaPresentacion
         private void Control_Click_Prev(object sender, EventArgs e)
         {
             Prev(txtCMPid.Text);
+            PrevDataGRid(txtCMPid.Text);
         }
         private void Control_Click_Next(object sender, EventArgs e)
         {
             Next(txtCMPid.Text);
+            NextDataGRid(txtCMPid.Text);
         }
         private void Control_Click_Top(object sender, EventArgs e)
         {
             Top();
+            PrevDataGRid(txtCMPid.Text);
         }
         private void Control_Click_Last(object sender, EventArgs e)
         {
             Last();
+            NextDataGRid(txtCMPid.Text);
         }
 
         private void Control_Click_Serch(object sender, EventArgs e)
@@ -294,8 +298,8 @@ namespace CapaPresentacion
                     txtCMPnivel.Text = Convert.ToString(row["CMPnivel"]);
 
                 }
-                else
-                    MessageBox.Show("No Existe", "Registro");
+               // else
+                //    MessageBox.Show("No Existe", "Registro");
 
             }
             catch (Exception ex)
@@ -304,11 +308,11 @@ namespace CapaPresentacion
             }
         }
 
-        private void Prev(String iACFid)
+        private void Prev(String CMPid)
         {
             try
             {
-                DataTable dat = NacfCMPt_Componente.Prev(iACFid);
+                DataTable dat = NacfCMPt_Componente.Prev(CMPid);
 
                 //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
 
@@ -327,8 +331,8 @@ namespace CapaPresentacion
                     txtCMPvutildia.Text = Convert.ToString(row["CMPvutildia"]);
                     txtCMPnivel.Text = Convert.ToString(row["CMPnivel"]);
                 }
-                else
-                    MessageBox.Show("No Existe", "Registro");
+              //  else
+                   // MessageBox.Show("No Existe", "Registro");
 
             }
             catch (Exception ex)
@@ -731,6 +735,19 @@ namespace CapaPresentacion
 
         }
 
+        private void FrmacfCMPt_Componente_Load_1(object sender, EventArgs e)
+        {
+
+        }
+        private void NextDataGRid(String CMPid)
+        {
+            this.dataListado.DataSource = NacfACFp_Activo_Fijo.Mostrar4(CMPid);
+        }
+
+        private void PrevDataGRid(String CMPid)
+        {
+            this.dataListado.DataSource = NacfACFp_Activo_Fijo.Mostrar4(CMPid);
+        }
 
 
 
