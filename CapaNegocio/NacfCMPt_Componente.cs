@@ -83,9 +83,9 @@ namespace CapaNegocio
         {
             return new DacfACFp_Activo_Fijo().Last();
         }
-        public static DataTable Next(String iACFid)
+        public static DataTable Next(String CMPid)
         {
-            return new DacfACFp_Activo_Fijo().Next(iACFid);
+            return new DAcfCMPt_Componente().Next(CMPid);
         }
 
         public static DataTable Prev(String iACFid)

@@ -302,6 +302,7 @@ namespace CapaNegocio
         {
             return new DacfACFp_Activo_Fijo().Mostrar3();
         }
+   
         public static DataTable Prev(String iACFid)
         {
             return new DacfACFp_Activo_Fijo().Prev(iACFid);
@@ -328,7 +329,10 @@ namespace CapaNegocio
         }
 
 
-       
+        public static DataTable Mostrar4(string CMPid)
+        {
+            return new DacfACFp_Activo_Fijo().Mostrar4(CMPid);
+        }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos

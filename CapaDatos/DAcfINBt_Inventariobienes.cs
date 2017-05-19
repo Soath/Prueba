@@ -371,7 +371,7 @@ namespace CapaDatos
 
 
        //METODO MOSTRAR
-        public DataTable Mostrar(string iINVid)
+        public DataTable    Mostrar(string iINVid)
         {
             DataTable DtResultado = new DataTable("acfINBt_Inventariobienes");
             SqlConnection SqlCon = new SqlConnection();

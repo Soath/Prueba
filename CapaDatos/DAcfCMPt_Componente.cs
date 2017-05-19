@@ -175,7 +175,7 @@ namespace CapaDatos
                 SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "usp_S_acfCMPt_Componente";
+                SqlCmd.CommandText = "usp_S2_acfCMPt_Componente";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
 
@@ -251,7 +251,7 @@ namespace CapaDatos
             return DtResultado;
         }
 
-        public DataTable Next(String ACFid)
+        public DataTable Next(String CMPid)
         {
             DataTable DtResultado = new DataTable("acfCMPt_Componente");
             SqlConnection SqlCon = new SqlConnection();
@@ -262,15 +262,15 @@ namespace CapaDatos
                 SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "usp_N_acfCMPt_Componente";
+                SqlCmd.CommandText = "usp_N_AcfCMPt_Componente";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParCMPcomponente = new SqlParameter();
-                ParCMPcomponente.ParameterName = "@sCMPid";
-                ParCMPcomponente.SqlDbType = SqlDbType.Char;
-                ParCMPcomponente.Size = 50;
-                ParCMPcomponente.Value = CMPid;
-                SqlCmd.Parameters.Add(ParCMPcomponente);
+                SqlParameter ParCMPid = new SqlParameter();
+                ParCMPid.ParameterName = "@CMPid";
+                ParCMPid.SqlDbType = SqlDbType.Int;
+                ParCMPid.Size = 50;
+                ParCMPid.Value = CMPid;
+                SqlCmd.Parameters.Add(ParCMPid);
 
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
