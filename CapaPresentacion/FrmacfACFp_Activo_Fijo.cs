@@ -569,8 +569,10 @@ namespace CapaPresentacion
                     , this.CtxtACFtipo_activo.Text
                     , ""
                     );
+
                 // Rta = NacfACFp_Activo_Fijo.Insertar(this.txtACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
-                
+                                  
+
                 if (Rta.Equals("OK"))
                 {
                     this.MensajeOk("Regsitro Agregado Correctamente");
@@ -585,7 +587,100 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+
+            //InsertaRegistro1();
         }
+
+        // Insertar Datos en la tabla de Características.
+        private void InsertaRegistro1()
+        {
+            string Rta = string.Empty;
+
+            try
+            {
+                Rta = NacfCRSt_Caracteristicas.Insertar(
+                          this.txtACFid.Text
+                        , this.cboMARid.Text
+                        , this.cboESTid.Text
+                        , this.txtCRSserie.Text
+                        , this.txtCRSmodelo.Text
+                        , this.txtCRScolor.Text
+                        , this.cboMATid.Text
+                        , this.txtCRStipo.Text
+                        , this.cboUNMid.Text
+                        , this.txtCRScantidad.Text
+                        , this.cboCRSvehplaca.Text
+                        , this.txtCRSvehexpediente.Text
+                        , this.dtpCRSvehinscripcion.Text
+                        , this.txtCRSvehclase.Text
+                        , this.txtCRSvehcombustible.Text
+                        , this.txtCRSvehejes.Text
+                        , this.txtCRSvehpasajeros.Text
+                        , this.txtCRSvehasientos.Text
+                        , this.txtCRSvehpesoseco.Text
+                        , this.txtCRSvehcargautil.Text
+                        , this.txtCRSaltura.Text
+                        , this.txtCRSancho.Text
+                        , this.txtCRSvelocidad.Text
+                        , this.txtCRSresolucion.Text
+                        , this.txtCRScapacidad.Text
+                        , this.txtCRSpotencia.Text
+                        , this.txtCRSvnominal.Text
+                        , this.txtCRSventrada.Text
+                        , this.txtCRSvsalida.Text
+                        , this.txtCRSfrecuencia.Text
+                        , this.txtCRStemperatura.Text
+                        , this.txtCRSprocesador.Text
+                        , this.txtCRSpuertos.Text
+                        , this.txtCRSutmx.Text
+                        , this.txtCRSutmy.Text
+                        , this.txtCRSesfuerzopunta.Text
+                        , this.txtCRScajaderivadora.Text
+                        , this.txtCRSalquilacable.Text
+                        , this.txtCRScentropoblado.Text
+                        , this.txtCRSurbanizacion.Text
+                        , this.txtCRScalle.Text
+                        , this.txtCRSlote.Text
+                        , this.txtCRSnumeropredio.Text
+                        , this.txtCRSdepartamento.Text
+                        , this.txtCRSinterior.Text
+                        , this.txtCRScarretera.Text
+                        , this.txtCRSkilometro.Text
+                        , this.txtCRSnombrepredio.Text
+                        , this.txtCRSpisospredio.Text
+                        , this.txtCRSpartidapredio.Text
+                        , this.txtCRStomopredio.Text
+                        , this.txtCRSfolioinipredio.Text
+                        , this.txtCRSfoliofinpredio.Text
+                        , this.txtCRSasientopredio.Text
+                        , this.dtpCRSfinscpredio.Text
+                        , this.txtCRSficharegistral.Text
+                        , this.txtCRSareaconstruida.Text
+                        , this.txtCRSperimetro.Text
+                        , this.txtCRSusopredio.Text
+                        , this.txtCRSvalorautovaluo.Text
+                        , this.txtCRScodigoluz.Text
+                        , this.txtCRScodigoagua.Text
+                        , this.dtpCRSfadqpredio.Text
+                        , this.txtCRSobservacion.Text
+                        );
+                
+                if (Rta.Equals("OK"))
+                {
+                    this.MensajeOk("Regsitro Agregado Correctamente");
+                }
+                else
+                {
+                    this.MensajeError("Error al Insertar Registro :" + Rta);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }            
+        }
+
         //-----------------------------------------------------------------------------------	
         // Actualiza Registros	
         //-----------------------------------------------------------------------------------	
@@ -654,6 +749,96 @@ namespace CapaPresentacion
                 else
                 {
                     this.MensajeError("Error al Actualizar Registro " + Rta);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+            //ActualizarRegistros1()
+        }
+
+        // Actualizar Datos en la tabla de Características.
+        private void ActualizarRegistros1()
+        {
+            string Rta = string.Empty;
+
+            try
+            {
+                Rta = NacfCRSt_Caracteristicas.Editar(
+                          this.txtACFid.Text
+                        , this.cboMARid.Text
+                        , this.cboESTid.Text
+                        , this.txtCRSserie.Text
+                        , this.txtCRSmodelo.Text
+                        , this.txtCRScolor.Text
+                        , this.cboMATid.Text
+                        , this.txtCRStipo.Text
+                        , this.cboUNMid.Text
+                        , this.txtCRScantidad.Text
+                        , this.cboCRSvehplaca.Text
+                        , this.txtCRSvehexpediente.Text
+                        , this.dtpCRSvehinscripcion.Text
+                        , this.txtCRSvehclase.Text
+                        , this.txtCRSvehcombustible.Text
+                        , this.txtCRSvehejes.Text
+                        , this.txtCRSvehpasajeros.Text
+                        , this.txtCRSvehasientos.Text
+                        , this.txtCRSvehpesoseco.Text
+                        , this.txtCRSvehcargautil.Text
+                        , this.txtCRSaltura.Text
+                        , this.txtCRSancho.Text
+                        , this.txtCRSvelocidad.Text
+                        , this.txtCRSresolucion.Text
+                        , this.txtCRScapacidad.Text
+                        , this.txtCRSpotencia.Text
+                        , this.txtCRSvnominal.Text
+                        , this.txtCRSventrada.Text
+                        , this.txtCRSvsalida.Text
+                        , this.txtCRSfrecuencia.Text
+                        , this.txtCRStemperatura.Text
+                        , this.txtCRSprocesador.Text
+                        , this.txtCRSpuertos.Text
+                        , this.txtCRSutmx.Text
+                        , this.txtCRSutmy.Text
+                        , this.txtCRSesfuerzopunta.Text
+                        , this.txtCRScajaderivadora.Text
+                        , this.txtCRSalquilacable.Text
+                        , this.txtCRScentropoblado.Text
+                        , this.txtCRSurbanizacion.Text
+                        , this.txtCRScalle.Text
+                        , this.txtCRSlote.Text
+                        , this.txtCRSnumeropredio.Text
+                        , this.txtCRSdepartamento.Text
+                        , this.txtCRSinterior.Text
+                        , this.txtCRScarretera.Text
+                        , this.txtCRSkilometro.Text
+                        , this.txtCRSnombrepredio.Text
+                        , this.txtCRSpisospredio.Text
+                        , this.txtCRSpartidapredio.Text
+                        , this.txtCRStomopredio.Text
+                        , this.txtCRSfolioinipredio.Text
+                        , this.txtCRSfoliofinpredio.Text
+                        , this.txtCRSasientopredio.Text
+                        , this.dtpCRSfinscpredio.Text
+                        , this.txtCRSficharegistral.Text
+                        , this.txtCRSareaconstruida.Text
+                        , this.txtCRSperimetro.Text
+                        , this.txtCRSusopredio.Text
+                        , this.txtCRSvalorautovaluo.Text
+                        , this.txtCRScodigoluz.Text
+                        , this.txtCRScodigoagua.Text
+                        , this.dtpCRSfadqpredio.Text
+                        , this.txtCRSobservacion.Text
+                        );
+
+                if (Rta.Equals("OK"))
+                {
+                    this.MensajeOk("Registro Actualizado Correctamente");
+                }
+                else
+                {
+                    this.MensajeError("Error al Insertar Registro :" + Rta);
                 }
             }
             catch (Exception ex)
@@ -774,11 +959,139 @@ namespace CapaPresentacion
             {
                 DataRow row = dat.Rows[0];
                 //guardo datos en variables
+                //txtCRSserie.Text = Convert.ToString(row["CRSserie"]);
+                //txtCRSvelocidad.Text = Convert.ToString(row["CRSvelocidad"]);
+                cboMARid.Text = Convert.ToString(row["MARid"]);
+                cboESTid.Text = Convert.ToString(row["ESTid"]);
                 txtCRSserie.Text = Convert.ToString(row["CRSserie"]);
+                txtCRSmodelo.Text = Convert.ToString(row["CRSmodelo"]);
+                txtCRScolor.Text = Convert.ToString(row["CRScolor"]);
+                cboMATid.Text = Convert.ToString(row["MATid"]);
+                txtCRStipo.Text = Convert.ToString(row["CRStipo"]);
+                cboUNMid.Text = Convert.ToString(row["UNMid"]);
+                txtCRScantidad.Text = Convert.ToString(row["CRScantidad"]);
+                cboCRSvehplaca.Text = Convert.ToString(row["CRSvehplaca"]);
+                txtCRSvehexpediente.Text = Convert.ToString(row["CRSvehexpediente"]);
+                dtpCRSvehinscripcion.Text = Convert.ToString(row["CRSvehinscripcion"]);
+                txtCRSvehclase.Text = Convert.ToString(row["CRSvehclase"]);
+                txtCRSvehcombustible.Text = Convert.ToString(row["CRSvehcombustible"]);
+                txtCRSvehejes.Text = Convert.ToString(row["CRSvehejes"]);
+                txtCRSvehpasajeros.Text = Convert.ToString(row["CRSvehpasajeros"]);
+                txtCRSvehasientos.Text = Convert.ToString(row["CRSvehasientos"]);
+                txtCRSvehpesoseco.Text = Convert.ToString(row["CRSvehpesoseco"]);
+                txtCRSvehcargautil.Text = Convert.ToString(row["CRSvehcargautil"]);
+                txtCRSaltura.Text = Convert.ToString(row["CRSaltura"]);
+                txtCRSancho.Text = Convert.ToString(row["CRSancho"]);
                 txtCRSvelocidad.Text = Convert.ToString(row["CRSvelocidad"]);
+                txtCRSresolucion.Text = Convert.ToString(row["CRSresolucion"]);
+                txtCRScapacidad.Text = Convert.ToString(row["CRScapacidad"]);
+                txtCRSpotencia.Text = Convert.ToString(row["CRSpotencia"]);
+                txtCRSvnominal.Text = Convert.ToString(row["CRSvnominal"]);
+                txtCRSventrada.Text = Convert.ToString(row["CRSventrada"]);
+                txtCRSvsalida.Text = Convert.ToString(row["CRSvsalida"]);
+                txtCRSfrecuencia.Text = Convert.ToString(row["CRSfrecuencia"]);
+                txtCRStemperatura.Text = Convert.ToString(row["CRStemperatura"]);
+                txtCRSprocesador.Text = Convert.ToString(row["CRSprocesador"]);
+                txtCRSpuertos.Text = Convert.ToString(row["CRSpuertos"]);
+                txtCRSutmx.Text = Convert.ToString(row["CRSutmx"]);
+                txtCRSutmy.Text = Convert.ToString(row["CRSutmy"]);
+                txtCRSesfuerzopunta.Text = Convert.ToString(row["CRSesfuerzopunta"]);
+                txtCRScajaderivadora.Text = Convert.ToString(row["CRScajaderivadora"]);
+                txtCRSalquilacable.Text = Convert.ToString(row["CRSalquilacable"]);
+                txtCRScentropoblado.Text = Convert.ToString(row["CRScentropoblado"]);
+                txtCRSurbanizacion.Text = Convert.ToString(row["CRSurbanizacion"]);
+                txtCRScalle.Text = Convert.ToString(row["CRScalle"]);
+                txtCRSlote.Text = Convert.ToString(row["CRSlote"]);
+                txtCRSnumeropredio.Text = Convert.ToString(row["CRSnumeropredio"]);
+                txtCRSdepartamento.Text = Convert.ToString(row["CRSdepartamento"]);
+                txtCRSinterior.Text = Convert.ToString(row["CRSinterior"]);
+                txtCRScarretera.Text = Convert.ToString(row["CRScarretera"]);
+                txtCRSkilometro.Text = Convert.ToString(row["CRSkilometro"]);
+                txtCRSnombrepredio.Text = Convert.ToString(row["CRSnombrepredio"]);
+                txtCRSpisospredio.Text = Convert.ToString(row["CRSpisospredio"]);
+                txtCRSpartidapredio.Text = Convert.ToString(row["CRSpartidapredio"]);
+                txtCRStomopredio.Text = Convert.ToString(row["CRStomopredio"]);
+                txtCRSfolioinipredio.Text = Convert.ToString(row["CRSfolioinipredio"]);
+                txtCRSfoliofinpredio.Text = Convert.ToString(row["CRSfoliofinpredio"]);
+                txtCRSasientopredio.Text = Convert.ToString(row["CRSasientopredio"]);
+                dtpCRSfinscpredio.Text = Convert.ToString(row["CRSfinscpredio"]);
+                txtCRSficharegistral.Text = Convert.ToString(row["CRSficharegistral"]);
+                txtCRSareaconstruida.Text = Convert.ToString(row["CRSareaconstruida"]);
+                txtCRSperimetro.Text = Convert.ToString(row["CRSperimetro"]);
+                txtCRSusopredio.Text = Convert.ToString(row["CRSusopredio"]);
+                txtCRSvalorautovaluo.Text = Convert.ToString(row["CRSvalorautovaluo"]);
+                txtCRScodigoluz.Text = Convert.ToString(row["CRScodigoluz"]);
+                txtCRScodigoagua.Text = Convert.ToString(row["CRScodigoagua"]);
+                dtpCRSfadqpredio.Text = Convert.ToString(row["CRSfadqpredio"]);
+                txtCRSobservacion.Text = Convert.ToString(row["CRSobservacion"]);
             }
             else
-                MessageBox.Show("No Existe", "Registro");
+                { MessageBox.Show("No Existe", "Registro");
+
+                cboMARid.Text = "";
+                cboESTid.Text = "";
+                txtCRSserie.Text = "";
+                txtCRSmodelo.Text = "";
+                txtCRScolor.Text = "";
+                cboMATid.Text = "";
+                txtCRStipo.Text = "";
+                cboUNMid.Text = "";
+                txtCRScantidad.Text = "0";
+                cboCRSvehplaca.Text = "";
+                txtCRSvehexpediente.Text = "";
+                dtpCRSvehinscripcion.Text = "";
+                txtCRSvehclase.Text = "";
+                txtCRSvehcombustible.Text = "";
+                txtCRSvehejes.Text = "0";
+                txtCRSvehpasajeros.Text = "0";
+                txtCRSvehasientos.Text = "0";
+                txtCRSvehpesoseco.Text = "0";
+                txtCRSvehcargautil.Text = "0";
+                txtCRSaltura.Text = "0";
+                txtCRSancho.Text = "0";
+                txtCRSvelocidad.Text = "";
+                txtCRSresolucion.Text = "";
+                txtCRScapacidad.Text = "";
+                txtCRSpotencia.Text = "";
+                txtCRSvnominal.Text = "";
+                txtCRSventrada.Text = "";
+                txtCRSvsalida.Text = "";
+                txtCRSfrecuencia.Text = "";
+                txtCRStemperatura.Text = "";
+                txtCRSprocesador.Text = "";
+                txtCRSpuertos.Text = "";
+                txtCRSutmx.Text = "0";
+                txtCRSutmy.Text = "0";
+                txtCRSesfuerzopunta.Text = "";
+                txtCRScajaderivadora.Text = "";
+                txtCRSalquilacable.Text = "0";
+                txtCRScentropoblado.Text = "";
+                txtCRSurbanizacion.Text = "";
+                txtCRScalle.Text = "";
+                txtCRSlote.Text = "";
+                txtCRSnumeropredio.Text = "";
+                txtCRSdepartamento.Text = "";
+                txtCRSinterior.Text = "";
+                txtCRScarretera.Text = "";
+                txtCRSkilometro.Text = "0";
+                txtCRSnombrepredio.Text = "";
+                txtCRSpisospredio.Text = "0";
+                txtCRSpartidapredio.Text = "";
+                txtCRStomopredio.Text = "";
+                txtCRSfolioinipredio.Text = "";
+                txtCRSfoliofinpredio.Text = "";
+                txtCRSasientopredio.Text = "";
+                dtpCRSfinscpredio.Text = "";
+                txtCRSficharegistral.Text = "";
+                txtCRSareaconstruida.Text = "0";
+                txtCRSperimetro.Text = "0";
+                txtCRSusopredio.Text = "";
+                txtCRSvalorautovaluo.Text = "0";
+                txtCRScodigoluz.Text = "";
+                txtCRScodigoagua.Text = "";
+                dtpCRSfadqpredio.Text = "";
+                txtCRSobservacion.Text = "";
+                }
         }
 
         private void MostrarRegistro()
@@ -1060,8 +1373,71 @@ namespace CapaPresentacion
 
         }
 
-        
+        private void txtCRScantidad_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRScantidad.Text))
+                txtACFdepacuniif.Text = "0";
+        }
 
+        private void txtCRSvehpesoseco_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRSvehpesoseco.Text))
+                txtACFdepacuniif.Text = "0";
+        }
+
+        private void txtCRSvehcargautil_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRSvehcargautil.Text))
+                txtACFdepacuniif.Text = "0";
+        }
+
+        private void txtCRSaltura_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRSaltura.Text))
+                txtACFdepacuniif.Text = "0";
+        }
+
+        private void txtCRSancho_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRSancho.Text))
+                txtACFdepacuniif.Text = "0";
+        }
+
+        private void txtCRSutmx_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRSutmx.Text))
+                txtACFdepacuniif.Text = "0";
+        }
+
+        private void txtCRSutmy_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRSutmy.Text))
+                txtACFdepacuniif.Text = "0";
+        }
+
+        private void txtCRSkilometro_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRSkilometro.Text))
+                txtACFdepacuniif.Text = "0";
+        }
+
+        private void txtCRSareaconstruida_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRSareaconstruida.Text))
+                txtACFdepacuniif.Text = "0";
+        }
+
+        private void txtCRSperimetro_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRSperimetro.Text))
+                txtACFdepacuniif.Text = "0";
+        }
+
+        private void txtCRSvalorautovaluo_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtCRSvalorautovaluo.Text))
+                txtACFdepacuniif.Text = "0";
+        }
     }
 }
 //-------------------------------------------------------------------

@@ -403,139 +403,139 @@ namespace CapaDatos
 	}
         //Constructor con parámetros
     public DacfCRSt_Caracteristicas(
-         string ACFid,
-         string MARid,               
-         string ESTid,                 
-         string CRSserie,                   
-         string CRSmodelo,                   
-         string CRScolor,                   
-         string MATid,                   
-         string CRStipo,         
-         string UNMid,                   
-         string CRScantidad,          
-         string CRSvehplaca,      
-         string CRSvehexpediente,     
-         string CRSvehinscripcion,        
-         string CRSvehclase,         
-         string CRSvehcombustible,          
-         string CRSvehejes,        
-         string CRSvehpasajeros,         
-         string CRSvehasientos,          
-         string CRSvehpesoseco,           
-         string CRSvehcargautil,         
-         string CRSaltura,                 
-         string CRSancho,                
-         string CRSvelocidad,                
-         string CRSresolucion,                
-         string CRScapacidad,                
-         string CRSpotencia,                
-         string CRSvnominal,         
-         string CRSventrada,         
-         string CRSvsalida,               
-         string CRSfrecuencia,            
-         string CRStemperatura,                   
-         string CRSprocesador,          
-         string CRSpuertos,                   
-         string CRSutmx,          
-         string CRSutmy,     
-         string CRSesfuerzopunta,          
-         string CRScajaderivadora,    
-         string CRSalquilacable,                   
-         string CRScentropoblado,          
-         string CRSurbanizacion,                   
-         string CRScalle,                   
-         string CRSlote,                   
-         string CRSnumeropredio,    
-         string CRSdepartamento,
-         string CRSinterior,						
-         string CRScarretera,						
-         string CRSkilometro,				
-         string CRSnombrepredio,					
-         string CRSpisospredio,			
-         string CRSpartidapredio,				
-         string CRStomopredio,		
-         string CRSfolioinipredio,			
-         string CRSfoliofinpredio,			
-         string CRSasientopredio,				
-         string CRSfinscpredio,			
-         string CRSficharegistral,			
-         string CRSareaconstruida,			
-         string CRSperimetro,			
-         string CRSusopredio,				
-         string CRSvalorautovaluo,			
-         string CRScodigoluz,				
-         string CRScodigoagua,			
-         string CRSfadqpredio,			
-         string CRSobservacion       
+                          string ACFid
+                        , string MARid
+                        , string ESTid
+                        , string CRSserie
+                        , string CRSmodelo
+                        , string CRScolor
+                        , string MATid
+                        , string CRStipo
+                        , string UNMid
+                        , string CRScantidad
+                        , string CRSvehplaca
+                        , string CRSvehexpediente
+                        , string CRSvehinscripcion
+                        , string CRSvehclase
+                        , string CRSvehcombustible
+                        , string CRSvehejes
+                        , string CRSvehpasajeros
+                        , string CRSvehasientos
+                        , string CRSvehpesoseco
+                        , string CRSvehcargautil
+                        , string CRSaltura
+                        , string CRSancho
+                        , string CRSvelocidad
+                        , string CRSresolucion
+                        , string CRScapacidad
+                        , string CRSpotencia
+                        , string CRSvnominal
+                        , string CRSventrada
+                        , string CRSvsalida
+                        , string CRSfrecuencia
+                        , string CRStemperatura
+                        , string CRSprocesador
+                        , string CRSpuertos
+                        , string CRSutmx
+                        , string CRSutmy
+                        , string CRSesfuerzopunta
+                        , string CRScajaderivadora
+                        , string CRSalquilacable
+                        , string CRScentropoblado
+                        , string CRSurbanizacion
+                        , string CRScalle
+                        , string CRSlote
+                        , string CRSnumeropredio
+                        , string CRSdepartamento
+                        , string CRSinterior
+                        , string CRScarretera
+                        , string CRSkilometro
+                        , string CRSnombrepredio
+                        , string CRSpisospredio
+                        , string CRSpartidapredio
+                        , string CRStomopredio
+                        , string CRSfolioinipredio
+                        , string CRSfoliofinpredio
+                        , string CRSasientopredio
+                        , string CRSfinscpredio
+                        , string CRSficharegistral
+                        , string CRSareaconstruida
+                        , string CRSperimetro
+                        , string CRSusopredio
+                        , string CRSvalorautovaluo
+                        , string CRScodigoluz
+                        , string CRScodigoagua
+                        , string CRSfadqpredio
+                        , string CRSobservacion
         )         
     {
 
-        this.ACFid = iACFid;
-        this.MARid = iMARid;
-        this.ESTid = iESTid;
-        this.CRSserie = sCRSserie;
-        this.CRSmodelo = sCRSmodelo;
-        this.CRScolor = sCRScolor;
-        this.MATid = iMATid;
-        this.CRStipo = sCRStipo;
-        this.UNMid = decCRScantidad;
-        this.CRScantidad = sCRSvehplaca;
-        this.CRSvehplaca = sCRSvehexpediente;
-        this.CRSvehexpediente = dtCRSvehinscripcion;
-        this.CRSvehinscripcion = sCRSvehclase;
-        this.CRSvehclase = sCRSvehcombustible;
-        this.CRSvehcombustible = iCRSvehejes;
-        this.CRSvehejes = iCRSvehpasajeros;
-        this.CRSvehpasajeros = iCRSvehasientos;
-        this.CRSvehasientos = decCRSvehpesoseco;
-        this.CRSvehpesoseco = decCRSvehcargautil;
-        this.CRSvehcargautil = decCRSaltura;
-        this.CRSaltura = decCRSancho;
-        this.CRSancho = sCRSvelocidad;
-        this.CRSvelocidad = sCRSresolucion;
-        this.CRSresolucion = sCRScapacidad;
-        this.CRScapacidad = sCRSpotencia;
-        this.CRSpotencia = sCRSvnominal;
-        this.CRSvnominal = sCRSventrada;
-        this.CRSventrada = sCRSvsalida;
-        this.CRSvsalida = sCRSfrecuencia;
-        this.CRSfrecuencia = sCRStemperatura;
-        this.CRStemperatura = sCRSprocesador;
-        this.CRSprocesador = sCRSpuertos;
-        this.CRSpuertos = decCRSutmx;
-        this.CRSutmx = decCRSutmy;
-        this.CRSutmy = decCRSutmx;
-        this.CRSesfuerzopunta = sCRSesfuerzopunta;
-        this.CRScajaderivadora = sCRScajaderivadora;
-        this.CRSalquilacable = sCRScajaderivadora;
-        this.CRScentropoblado = sCRSalquilacable;
-        this.CRSurbanizacion = sCRScentropoblado;
-        this.CRScalle = sCRSurbanizacion;
-        this.CRSlote = sCRScalle;
-        this.CRSnumeropredio = sCRSlote;
-        this.CRSdepartamento = sCRSnumeropredio;
-        this.CRSinterior = sCRSinterior;
-        this.CRScarretera = sCRScarretera;
-        this.CRSkilometro = decCRSkilometro;
-        this.CRSnombrepredio = sCRSnombrepredio;
-        this.CRSpisospredio = iCRSpisospredio;
-        this.CRSpartidapredio = sCRSpartidapredio;
-        this.CRStomopredio = sCRStomopredio;
-        this.CRSfolioinipredio = sCRSfolioinipredio;
-        this.CRSfoliofinpredio = sCRSfoliofinpredio;
-        this.CRSasientopredio = sCRSasientopredio;
-        this.CRSfinscpredio = dtCRSfinscpredio;
-        this.CRSficharegistral = sCRSficharegistral;
-        this.CRSareaconstruida = decCRSareaconstruida;
-        this.CRSperimetro = decCRSperimetro;
-        this.CRSusopredio = sCRSusopredio;
-        this.CRSvalorautovaluo = decCRSvalorautovaluo;
-        this.CRScodigoluz = sCRScodigoluz;
-        this.CRScodigoagua = sCRScodigoagua;
-        this.CRSfadqpredio = dtCRSfadqpredio;
-        this.CRSobservacion = sCRSobservacion;
+            this.ACFid = iACFid;
+            this.MARid = iMARid;
+            this.ESTid = iESTid;
+            this.CRSserie = sCRSserie;
+            this.CRSmodelo = sCRSmodelo;
+            this.CRScolor = sCRScolor;
+            this.MATid = iMATid;
+            this.CRStipo = sCRStipo;
+            this.UNMid = iUNMid;
+            this.CRScantidad = decCRScantidad;
+            this.CRSvehplaca = sCRSvehplaca;
+            this.CRSvehexpediente = sCRSvehexpediente;
+            this.CRSvehinscripcion = dtCRSvehinscripcion;
+            this.CRSvehclase = sCRSvehclase;
+            this.CRSvehcombustible = sCRSvehcombustible;
+            this.CRSvehejes = iCRSvehejes;
+            this.CRSvehpasajeros = iCRSvehpasajeros;
+            this.CRSvehasientos = iCRSvehasientos;
+            this.CRSvehpesoseco = decCRSvehpesoseco;
+            this.CRSvehcargautil = decCRSvehcargautil;
+            this.CRSaltura = decCRSaltura;
+            this.CRSancho = decCRSancho;
+            this.CRSvelocidad = sCRSvelocidad;
+            this.CRSresolucion = sCRSresolucion;
+            this.CRScapacidad = sCRScapacidad;
+            this.CRSpotencia = sCRSpotencia;
+            this.CRSvnominal = sCRSvnominal;
+            this.CRSventrada = sCRSventrada;
+            this.CRSvsalida = sCRSvsalida;
+            this.CRSfrecuencia = sCRSfrecuencia;
+            this.CRStemperatura = sCRStemperatura;
+            this.CRSprocesador = sCRSprocesador;
+            this.CRSpuertos = sCRSpuertos;
+            this.CRSutmx = decCRSutmx;
+            this.CRSutmy = decCRSutmy;
+            this.CRSesfuerzopunta = sCRSesfuerzopunta;
+            this.CRScajaderivadora = sCRScajaderivadora;
+            this.CRSalquilacable = sCRSalquilacable;
+            this.CRScentropoblado = sCRScentropoblado;
+            this.CRSurbanizacion = sCRSurbanizacion;
+            this.CRScalle = sCRScalle;
+            this.CRSlote = sCRSlote;
+            this.CRSnumeropredio = sCRSnumeropredio;
+            this.CRSdepartamento = sCRSdepartamento;
+            this.CRSinterior = sCRSinterior;
+            this.CRScarretera = sCRScarretera;
+            this.CRSkilometro = decCRSkilometro;
+            this.CRSnombrepredio = sCRSnombrepredio;
+            this.CRSpisospredio = iCRSpisospredio;
+            this.CRSpartidapredio = sCRSpartidapredio;
+            this.CRStomopredio = sCRStomopredio;
+            this.CRSfolioinipredio = sCRSfolioinipredio;
+            this.CRSfoliofinpredio = sCRSfoliofinpredio;
+            this.CRSasientopredio = sCRSasientopredio;
+            this.CRSfinscpredio = dtCRSfinscpredio;
+            this.CRSficharegistral = sCRSficharegistral;
+            this.CRSareaconstruida = decCRSareaconstruida;
+            this.CRSperimetro = decCRSperimetro;
+            this.CRSusopredio = sCRSusopredio;
+            this.CRSvalorautovaluo = decCRSvalorautovaluo;
+            this.CRScodigoluz = sCRScodigoluz;
+            this.CRScodigoagua = sCRScodigoagua;
+            this.CRSfadqpredio = dtCRSfadqpredio;
+            this.CRSobservacion = sCRSobservacion;
 
-	}
+        }
 
         /*	public object Clone() {
         //		return base.MemberwiseClone();
@@ -620,19 +620,19 @@ namespace CapaDatos
                 SqlParameter ParACFid = new SqlParameter();
                 ParACFid.ParameterName = "@iACFid";
                 ParACFid.SqlDbType = SqlDbType.Int;
-                ParACFid.Value = acfCRSt_Caracteristicas.ACFid;
+                ParACFid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.ACFid);
                 SqlCmd.Parameters.Add(ParACFid);
                 //
                 SqlParameter ParMARid = new SqlParameter();
                 ParMARid.ParameterName = "@iMARid";
                 ParMARid.SqlDbType = SqlDbType.Int;
-                ParMARid.Value = acfCRSt_Caracteristicas.MARid;
+                ParMARid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.MARid);
                 SqlCmd.Parameters.Add(ParMARid);
                 //
                 SqlParameter ParESTid = new SqlParameter();
-                ParESTid.ParameterName = "@sESTid";
+                ParESTid.ParameterName = "@iESTid";
                 ParESTid.SqlDbType = SqlDbType.Int;
-                ParESTid.Value = acfCRSt_Caracteristicas.ESTid;
+                ParESTid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.ESTid);
                 SqlCmd.Parameters.Add(ParESTid);
                 //
                 SqlParameter ParCRSserie = new SqlParameter();
@@ -654,7 +654,7 @@ namespace CapaDatos
                 SqlCmd.Parameters.Add(ParCRScolor);
                 //
                 SqlParameter ParMATid = new SqlParameter();
-                ParMATid.ParameterName = "@sMATid";
+                ParMATid.ParameterName = "@iMATid";
                 ParMATid.SqlDbType = SqlDbType.Char;
                 ParMATid.Value = acfCRSt_Caracteristicas.MATid;
                 SqlCmd.Parameters.Add(ParMATid);
@@ -668,13 +668,13 @@ namespace CapaDatos
                 SqlParameter ParUNMid = new SqlParameter();
                 ParUNMid.ParameterName = "@iUNMid";
                 ParUNMid.SqlDbType = SqlDbType.Int;
-                ParUNMid.Value = acfCRSt_Caracteristicas.UNMid;
+                ParUNMid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.UNMid);
                 SqlCmd.Parameters.Add(ParUNMid);
                 //
                 SqlParameter ParCRScantidad = new SqlParameter();
                 ParCRScantidad.ParameterName = "@decCRScantidad";
                 ParCRScantidad.SqlDbType = SqlDbType.Decimal;
-                ParCRScantidad.Value = acfCRSt_Caracteristicas.CRScantidad;
+                ParCRScantidad.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRScantidad);
                 SqlCmd.Parameters.Add(ParCRScantidad);
                 //
                 SqlParameter ParCRSvehplaca = new SqlParameter();
@@ -692,7 +692,7 @@ namespace CapaDatos
                 SqlParameter ParCRSvehinscripcion = new SqlParameter();
                 ParCRSvehinscripcion.ParameterName = "@dtCRSvehinscripcion";
                 ParCRSvehinscripcion.SqlDbType = SqlDbType.DateTime;
-                ParCRSvehinscripcion.Value = acfCRSt_Caracteristicas.CRSvehinscripcion;
+                ParCRSvehinscripcion.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSvehinscripcion);
                 SqlCmd.Parameters.Add(ParCRSvehinscripcion);
                 //
                 SqlParameter ParCRSvehclase = new SqlParameter();
@@ -710,43 +710,43 @@ namespace CapaDatos
                 SqlParameter ParCRSvehejes = new SqlParameter();
                 ParCRSvehejes.ParameterName = "@iCRSvehejes";
                 ParCRSvehejes.SqlDbType = SqlDbType.Int;
-                ParCRSvehejes.Value = acfCRSt_Caracteristicas.CRSvehejes;
+                ParCRSvehejes.Value = Convert.ToInt32(acfCRSt_Caracteristicas.CRSvehejes);
                 SqlCmd.Parameters.Add(ParCRSvehejes);
                 //
                 SqlParameter ParCRSvehpasajeros = new SqlParameter();
                 ParCRSvehpasajeros.ParameterName = "@iCRSvehpasajeros";
                 ParCRSvehpasajeros.SqlDbType = SqlDbType.Int;
-                ParCRSvehpasajeros.Value = acfCRSt_Caracteristicas.CRSvehpasajeros;
+                ParCRSvehpasajeros.Value = Convert.ToInt32(acfCRSt_Caracteristicas.CRSvehpasajeros);
                 SqlCmd.Parameters.Add(ParCRSvehpasajeros);
                 //
                 SqlParameter ParCRSvehasientos = new SqlParameter();
                 ParCRSvehasientos.ParameterName = "@iCRSvehasientos";
                 ParCRSvehasientos.SqlDbType = SqlDbType.Int;
-                ParCRSvehasientos.Value = acfCRSt_Caracteristicas.CRSvehasientos;
+                ParCRSvehasientos.Value = Convert.ToInt32(acfCRSt_Caracteristicas.CRSvehasientos);
                 SqlCmd.Parameters.Add(ParCRSvehasientos);
                 //
                 SqlParameter ParCRSvehpesoseco = new SqlParameter();
                 ParCRSvehpesoseco.ParameterName = "@decCRSvehpesoseco";
                 ParCRSvehpesoseco.SqlDbType = SqlDbType.Decimal;
-                ParCRSvehpesoseco.Value = acfCRSt_Caracteristicas.CRSvehpesoseco;
+                ParCRSvehpesoseco.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSvehpesoseco);
                 SqlCmd.Parameters.Add(ParCRSvehpesoseco);
                 //
                 SqlParameter ParCRSvehcargautil = new SqlParameter();
                 ParCRSvehcargautil.ParameterName = "@decCRSvehcargautil";
                 ParCRSvehcargautil.SqlDbType = SqlDbType.Decimal;
-                ParCRSvehcargautil.Value = acfCRSt_Caracteristicas.CRSvehcargautil;
+                ParCRSvehcargautil.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSvehcargautil);
                 SqlCmd.Parameters.Add(ParCRSvehcargautil);
                 //
                 SqlParameter ParCRSaltura = new SqlParameter();
                 ParCRSaltura.ParameterName = "@decCRSaltura";
                 ParCRSaltura.SqlDbType = SqlDbType.Decimal;
-                ParCRSaltura.Value = acfCRSt_Caracteristicas.CRSaltura;
+                ParCRSaltura.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSaltura);
                 SqlCmd.Parameters.Add(ParCRSaltura);
                 //
                 SqlParameter ParCRSancho = new SqlParameter();
                 ParCRSancho.ParameterName = "@decCRSancho";
                 ParCRSancho.SqlDbType = SqlDbType.Decimal;
-                ParCRSancho.Value = acfCRSt_Caracteristicas.CRSancho;
+                ParCRSancho.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSancho);
                 SqlCmd.Parameters.Add(ParCRSancho);
                 //
                 SqlParameter ParCRSvelocidad = new SqlParameter();
@@ -818,13 +818,13 @@ namespace CapaDatos
                 SqlParameter ParCRSutmx = new SqlParameter();
                 ParCRSutmx.ParameterName = "@decCRSutmx";
                 ParCRSutmx.SqlDbType = SqlDbType.Decimal;
-                ParCRSutmx.Value = acfCRSt_Caracteristicas.CRSutmx;
+                ParCRSutmx.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSutmx);
                 SqlCmd.Parameters.Add(ParCRSutmx);
                 //
                 SqlParameter ParCRSutmy = new SqlParameter();
                 ParCRSutmy.ParameterName = "@decCRSutmy";
                 ParCRSutmy.SqlDbType = SqlDbType.Decimal;
-                ParCRSutmy.Value = acfCRSt_Caracteristicas.CRSutmy;
+                ParCRSutmy.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSutmy);
                 SqlCmd.Parameters.Add(ParCRSutmy);
                 //
                 SqlParameter ParCRSesfuerzopunta = new SqlParameter();
@@ -896,7 +896,7 @@ namespace CapaDatos
                 SqlParameter ParCRSkilometro = new SqlParameter();
                 ParCRSkilometro.ParameterName = "@decCRSkilometro";
                 ParCRSkilometro.SqlDbType = SqlDbType.Decimal;
-                ParCRSkilometro.Value = acfCRSt_Caracteristicas.CRSkilometro;
+                ParCRSkilometro.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSkilometro);
                 SqlCmd.Parameters.Add(ParCRSkilometro);
                 //
                 SqlParameter ParCRSnombrepredio = new SqlParameter();
@@ -908,7 +908,7 @@ namespace CapaDatos
                 SqlParameter ParCRSpisospredio = new SqlParameter();
                 ParCRSpisospredio.ParameterName = "@iCRSpisospredio";
                 ParCRSpisospredio.SqlDbType = SqlDbType.Int;
-                ParCRSpisospredio.Value = acfCRSt_Caracteristicas.CRSpisospredio;
+                ParCRSpisospredio.Value = Convert.ToInt32(acfCRSt_Caracteristicas.CRSpisospredio);
                 SqlCmd.Parameters.Add(ParCRSpisospredio);
                 //
                 SqlParameter ParCRSpartidapredio = new SqlParameter();
@@ -944,7 +944,7 @@ namespace CapaDatos
                 SqlParameter ParCRSfinscpredio = new SqlParameter();
                 ParCRSfinscpredio.ParameterName = "@dtCRSfinscpredio";
                 ParCRSfinscpredio.SqlDbType = SqlDbType.DateTime;
-                ParCRSfinscpredio.Value = acfCRSt_Caracteristicas.CRSfinscpredio;
+                ParCRSfinscpredio.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfinscpredio);
                 SqlCmd.Parameters.Add(ParCRSfinscpredio);
                 //
                 SqlParameter ParCRSficharegistral = new SqlParameter();
@@ -956,13 +956,13 @@ namespace CapaDatos
                 SqlParameter ParCRSareaconstruida = new SqlParameter();
                 ParCRSareaconstruida.ParameterName = "@decCRSareaconstruida";
                 ParCRSareaconstruida.SqlDbType = SqlDbType.Decimal;
-                ParCRSareaconstruida.Value = acfCRSt_Caracteristicas.CRSareaconstruida;
+                ParCRSareaconstruida.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSareaconstruida);
                 SqlCmd.Parameters.Add(ParCRSareaconstruida);
                 //
                 SqlParameter ParCRSperimetro = new SqlParameter();
                 ParCRSperimetro.ParameterName = "@decCRSperimetro";
                 ParCRSperimetro.SqlDbType = SqlDbType.Decimal;
-                ParCRSperimetro.Value = acfCRSt_Caracteristicas.CRSperimetro;
+                ParCRSperimetro.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSperimetro);
                 SqlCmd.Parameters.Add(ParCRSperimetro);
                 //
                 SqlParameter ParCRSusopredio = new SqlParameter();
@@ -974,7 +974,7 @@ namespace CapaDatos
                 SqlParameter ParCRSvalorautovaluo = new SqlParameter();
                 ParCRSvalorautovaluo.ParameterName = "@decCRSvalorautovaluo";
                 ParCRSvalorautovaluo.SqlDbType = SqlDbType.Decimal;
-                ParCRSvalorautovaluo.Value = acfCRSt_Caracteristicas.CRSvalorautovaluo;
+                ParCRSvalorautovaluo.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSvalorautovaluo);
                 SqlCmd.Parameters.Add(ParCRSvalorautovaluo);
                 //
                 SqlParameter ParCRScodigoluz = new SqlParameter();
@@ -992,7 +992,7 @@ namespace CapaDatos
                 SqlParameter ParCRSfadqpredio = new SqlParameter();
                 ParCRSfadqpredio.ParameterName = "@dtCRSfadqpredio";
                 ParCRSfadqpredio.SqlDbType = SqlDbType.DateTime;
-                ParCRSfadqpredio.Value = acfCRSt_Caracteristicas.CRSfadqpredio;
+                ParCRSfadqpredio.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfadqpredio);
                 SqlCmd.Parameters.Add(ParCRSfadqpredio);
                 //
                 SqlParameter ParCRSobservacion = new SqlParameter();
@@ -1038,19 +1038,19 @@ namespace CapaDatos
                 SqlParameter ParACFid = new SqlParameter();
                 ParACFid.ParameterName = "@iACFid";
                 ParACFid.SqlDbType = SqlDbType.Int;
-                ParACFid.Value = acfCRSt_Caracteristicas.ACFid;
+                ParACFid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.ACFid);
                 SqlCmd.Parameters.Add(ParACFid);
                 //
                 SqlParameter ParMARid = new SqlParameter();
                 ParMARid.ParameterName = "@iMARid";
                 ParMARid.SqlDbType = SqlDbType.Int;
-                ParMARid.Value = acfCRSt_Caracteristicas.MARid;
+                ParMARid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.MARid);
                 SqlCmd.Parameters.Add(ParMARid);
                 //
                 SqlParameter ParESTid = new SqlParameter();
-                ParESTid.ParameterName = "@sESTid";
+                ParESTid.ParameterName = "@iESTid";
                 ParESTid.SqlDbType = SqlDbType.Int;
-                ParESTid.Value = acfCRSt_Caracteristicas.ESTid;
+                ParESTid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.ESTid);
                 SqlCmd.Parameters.Add(ParESTid);
                 //
                 SqlParameter ParCRSserie = new SqlParameter();
@@ -1072,7 +1072,7 @@ namespace CapaDatos
                 SqlCmd.Parameters.Add(ParCRScolor);
                 //
                 SqlParameter ParMATid = new SqlParameter();
-                ParMATid.ParameterName = "@sMATid";
+                ParMATid.ParameterName = "@iMATid";
                 ParMATid.SqlDbType = SqlDbType.Char;
                 ParMATid.Value = acfCRSt_Caracteristicas.MATid;
                 SqlCmd.Parameters.Add(ParMATid);
@@ -1086,13 +1086,13 @@ namespace CapaDatos
                 SqlParameter ParUNMid = new SqlParameter();
                 ParUNMid.ParameterName = "@iUNMid";
                 ParUNMid.SqlDbType = SqlDbType.Int;
-                ParUNMid.Value = acfCRSt_Caracteristicas.UNMid;
+                ParUNMid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.UNMid);
                 SqlCmd.Parameters.Add(ParUNMid);
                 //
                 SqlParameter ParCRScantidad = new SqlParameter();
                 ParCRScantidad.ParameterName = "@decCRScantidad";
                 ParCRScantidad.SqlDbType = SqlDbType.Decimal;
-                ParCRScantidad.Value = acfCRSt_Caracteristicas.CRScantidad;
+                ParCRScantidad.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRScantidad);
                 SqlCmd.Parameters.Add(ParCRScantidad);
                 //
                 SqlParameter ParCRSvehplaca = new SqlParameter();
@@ -1110,7 +1110,7 @@ namespace CapaDatos
                 SqlParameter ParCRSvehinscripcion = new SqlParameter();
                 ParCRSvehinscripcion.ParameterName = "@dtCRSvehinscripcion";
                 ParCRSvehinscripcion.SqlDbType = SqlDbType.DateTime;
-                ParCRSvehinscripcion.Value = acfCRSt_Caracteristicas.CRSvehinscripcion;
+                ParCRSvehinscripcion.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSvehinscripcion);
                 SqlCmd.Parameters.Add(ParCRSvehinscripcion);
                 //
                 SqlParameter ParCRSvehclase = new SqlParameter();
@@ -1128,43 +1128,43 @@ namespace CapaDatos
                 SqlParameter ParCRSvehejes = new SqlParameter();
                 ParCRSvehejes.ParameterName = "@iCRSvehejes";
                 ParCRSvehejes.SqlDbType = SqlDbType.Int;
-                ParCRSvehejes.Value = acfCRSt_Caracteristicas.CRSvehejes;
+                ParCRSvehejes.Value = Convert.ToInt32(acfCRSt_Caracteristicas.CRSvehejes);
                 SqlCmd.Parameters.Add(ParCRSvehejes);
                 //
                 SqlParameter ParCRSvehpasajeros = new SqlParameter();
                 ParCRSvehpasajeros.ParameterName = "@iCRSvehpasajeros";
                 ParCRSvehpasajeros.SqlDbType = SqlDbType.Int;
-                ParCRSvehpasajeros.Value = acfCRSt_Caracteristicas.CRSvehpasajeros;
+                ParCRSvehpasajeros.Value = Convert.ToInt32(acfCRSt_Caracteristicas.CRSvehpasajeros);
                 SqlCmd.Parameters.Add(ParCRSvehpasajeros);
                 //
                 SqlParameter ParCRSvehasientos = new SqlParameter();
                 ParCRSvehasientos.ParameterName = "@iCRSvehasientos";
                 ParCRSvehasientos.SqlDbType = SqlDbType.Int;
-                ParCRSvehasientos.Value = acfCRSt_Caracteristicas.CRSvehasientos;
+                ParCRSvehasientos.Value = Convert.ToInt32(acfCRSt_Caracteristicas.CRSvehasientos);
                 SqlCmd.Parameters.Add(ParCRSvehasientos);
                 //
                 SqlParameter ParCRSvehpesoseco = new SqlParameter();
                 ParCRSvehpesoseco.ParameterName = "@decCRSvehpesoseco";
                 ParCRSvehpesoseco.SqlDbType = SqlDbType.Decimal;
-                ParCRSvehpesoseco.Value = acfCRSt_Caracteristicas.CRSvehpesoseco;
+                ParCRSvehpesoseco.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSvehpesoseco);
                 SqlCmd.Parameters.Add(ParCRSvehpesoseco);
                 //
                 SqlParameter ParCRSvehcargautil = new SqlParameter();
                 ParCRSvehcargautil.ParameterName = "@decCRSvehcargautil";
                 ParCRSvehcargautil.SqlDbType = SqlDbType.Decimal;
-                ParCRSvehcargautil.Value = acfCRSt_Caracteristicas.CRSvehcargautil;
+                ParCRSvehcargautil.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSvehcargautil);
                 SqlCmd.Parameters.Add(ParCRSvehcargautil);
                 //
                 SqlParameter ParCRSaltura = new SqlParameter();
                 ParCRSaltura.ParameterName = "@decCRSaltura";
                 ParCRSaltura.SqlDbType = SqlDbType.Decimal;
-                ParCRSaltura.Value = acfCRSt_Caracteristicas.CRSaltura;
+                ParCRSaltura.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSaltura);
                 SqlCmd.Parameters.Add(ParCRSaltura);
                 //
                 SqlParameter ParCRSancho = new SqlParameter();
                 ParCRSancho.ParameterName = "@decCRSancho";
                 ParCRSancho.SqlDbType = SqlDbType.Decimal;
-                ParCRSancho.Value = acfCRSt_Caracteristicas.CRSancho;
+                ParCRSancho.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSancho);
                 SqlCmd.Parameters.Add(ParCRSancho);
                 //
                 SqlParameter ParCRSvelocidad = new SqlParameter();
@@ -1236,13 +1236,13 @@ namespace CapaDatos
                 SqlParameter ParCRSutmx = new SqlParameter();
                 ParCRSutmx.ParameterName = "@decCRSutmx";
                 ParCRSutmx.SqlDbType = SqlDbType.Decimal;
-                ParCRSutmx.Value = acfCRSt_Caracteristicas.CRSutmx;
+                ParCRSutmx.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSutmx);
                 SqlCmd.Parameters.Add(ParCRSutmx);
                 //
                 SqlParameter ParCRSutmy = new SqlParameter();
                 ParCRSutmy.ParameterName = "@decCRSutmy";
                 ParCRSutmy.SqlDbType = SqlDbType.Decimal;
-                ParCRSutmy.Value = acfCRSt_Caracteristicas.CRSutmy;
+                ParCRSutmy.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSutmy);
                 SqlCmd.Parameters.Add(ParCRSutmy);
                 //
                 SqlParameter ParCRSesfuerzopunta = new SqlParameter();
@@ -1314,7 +1314,7 @@ namespace CapaDatos
                 SqlParameter ParCRSkilometro = new SqlParameter();
                 ParCRSkilometro.ParameterName = "@decCRSkilometro";
                 ParCRSkilometro.SqlDbType = SqlDbType.Decimal;
-                ParCRSkilometro.Value = acfCRSt_Caracteristicas.CRSkilometro;
+                ParCRSkilometro.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSkilometro);
                 SqlCmd.Parameters.Add(ParCRSkilometro);
                 //
                 SqlParameter ParCRSnombrepredio = new SqlParameter();
@@ -1326,7 +1326,7 @@ namespace CapaDatos
                 SqlParameter ParCRSpisospredio = new SqlParameter();
                 ParCRSpisospredio.ParameterName = "@iCRSpisospredio";
                 ParCRSpisospredio.SqlDbType = SqlDbType.Int;
-                ParCRSpisospredio.Value = acfCRSt_Caracteristicas.CRSpisospredio;
+                ParCRSpisospredio.Value = Convert.ToInt32(acfCRSt_Caracteristicas.CRSpisospredio);
                 SqlCmd.Parameters.Add(ParCRSpisospredio);
                 //
                 SqlParameter ParCRSpartidapredio = new SqlParameter();
@@ -1362,7 +1362,7 @@ namespace CapaDatos
                 SqlParameter ParCRSfinscpredio = new SqlParameter();
                 ParCRSfinscpredio.ParameterName = "@dtCRSfinscpredio";
                 ParCRSfinscpredio.SqlDbType = SqlDbType.DateTime;
-                ParCRSfinscpredio.Value = acfCRSt_Caracteristicas.CRSfinscpredio;
+                ParCRSfinscpredio.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfinscpredio);
                 SqlCmd.Parameters.Add(ParCRSfinscpredio);
                 //
                 SqlParameter ParCRSficharegistral = new SqlParameter();
@@ -1374,13 +1374,13 @@ namespace CapaDatos
                 SqlParameter ParCRSareaconstruida = new SqlParameter();
                 ParCRSareaconstruida.ParameterName = "@decCRSareaconstruida";
                 ParCRSareaconstruida.SqlDbType = SqlDbType.Decimal;
-                ParCRSareaconstruida.Value = acfCRSt_Caracteristicas.CRSareaconstruida;
+                ParCRSareaconstruida.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSareaconstruida);
                 SqlCmd.Parameters.Add(ParCRSareaconstruida);
                 //
                 SqlParameter ParCRSperimetro = new SqlParameter();
                 ParCRSperimetro.ParameterName = "@decCRSperimetro";
                 ParCRSperimetro.SqlDbType = SqlDbType.Decimal;
-                ParCRSperimetro.Value = acfCRSt_Caracteristicas.CRSperimetro;
+                ParCRSperimetro.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSperimetro);
                 SqlCmd.Parameters.Add(ParCRSperimetro);
                 //
                 SqlParameter ParCRSusopredio = new SqlParameter();
@@ -1392,7 +1392,7 @@ namespace CapaDatos
                 SqlParameter ParCRSvalorautovaluo = new SqlParameter();
                 ParCRSvalorautovaluo.ParameterName = "@decCRSvalorautovaluo";
                 ParCRSvalorautovaluo.SqlDbType = SqlDbType.Decimal;
-                ParCRSvalorautovaluo.Value = acfCRSt_Caracteristicas.CRSvalorautovaluo;
+                ParCRSvalorautovaluo.Value = Convert.ToDecimal(acfCRSt_Caracteristicas.CRSvalorautovaluo);
                 SqlCmd.Parameters.Add(ParCRSvalorautovaluo);
                 //
                 SqlParameter ParCRScodigoluz = new SqlParameter();
@@ -1410,7 +1410,7 @@ namespace CapaDatos
                 SqlParameter ParCRSfadqpredio = new SqlParameter();
                 ParCRSfadqpredio.ParameterName = "@dtCRSfadqpredio";
                 ParCRSfadqpredio.SqlDbType = SqlDbType.DateTime;
-                ParCRSfadqpredio.Value = acfCRSt_Caracteristicas.CRSfadqpredio;
+                ParCRSfadqpredio.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfadqpredio);
                 SqlCmd.Parameters.Add(ParCRSfadqpredio);
                 //
                 SqlParameter ParCRSobservacion = new SqlParameter();
@@ -1418,7 +1418,6 @@ namespace CapaDatos
                 ParCRSobservacion.SqlDbType = SqlDbType.VarChar;
                 ParCRSobservacion.Value = acfCRSt_Caracteristicas.CRSobservacion;
                 SqlCmd.Parameters.Add(ParCRSobservacion);
-                //
 
                 //Ejecutamos nuestro comando
 
