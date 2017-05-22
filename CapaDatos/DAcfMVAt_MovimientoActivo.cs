@@ -421,7 +421,35 @@ namespace CapaDatos
             return DtResultado;
         }
 
+       
+        //METODO MOSTRAR
+        public DataTable Mostrar2()
+        {
+            DataTable DtResultado = new DataTable("acfMVAt_MovimientoActivo");
+            SqlConnection SqlCon = new SqlConnection();
 
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S2_acfMVAt_MovimientoActivo";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+    
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
         //METODO INSERTAR 
         public string Insertar(DAcfMVAt_MovimientoActivo acfMVAt_MovimientoActivo)
         {

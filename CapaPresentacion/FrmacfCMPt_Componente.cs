@@ -502,20 +502,7 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfCMPt_Componente.Editar(
-                      this.txtCMPid.Text
-                    , this.txtCMPcomponente.Text
-                    , this.txtCMPusoestimado.Text
-                    , this.txtCMPconservacion.Text
-                    , this.txtCMPobsolecencia.Text
-                    , this.txtCMPlimitelegal.Text
-                    , this.txtCMPtotalfactores.Text
-                    , this.txtCMPfactorusoestimado.Text
-                    , this.txtCMPvutilanio.Text
-                    , this.txtCMPvutildia.Text
-                    //, this.txtCMPnivel.Text
-
-                    );
+                Rta = NacfACFp_Activo_Fijo.Editar4(txtCMPvutilanio.Text, txtCMPvutildia.Text, txtCMPvutilanio.Text, txtCMPvutildia.Text, txtCMPid.Text);
 
                 //Rta = NacfCMPt_Componente.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
 
