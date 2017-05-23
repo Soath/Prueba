@@ -213,7 +213,8 @@ namespace CapaNegocio
          string sCRScodigoluz,
          string sCRScodigoagua,
          string dtCRSfadqpredio,
-         string sCRSobservacion)
+         string sCRSobservacion
+            )
         {
             DacfCRSt_Caracteristicas Obj = new DacfCRSt_Caracteristicas();
             Obj.ACFid = iACFid;

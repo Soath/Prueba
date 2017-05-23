@@ -117,7 +117,6 @@
             this.ribbonButton19 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton20 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton21 = new System.Windows.Forms.RibbonButton();
-            this.ribbonButton22 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton23 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton24 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton25 = new System.Windows.Forms.RibbonButton();
@@ -756,7 +755,6 @@
             this.ribbonPanel8.Items.Add(this.ribbonButton19);
             this.ribbonPanel8.Items.Add(this.ribbonButton20);
             this.ribbonPanel8.Items.Add(this.ribbonButton21);
-            this.ribbonPanel8.Items.Add(this.ribbonButton22);
             this.ribbonPanel8.Items.Add(this.ribbonButton23);
             this.ribbonPanel8.Items.Add(this.ribbonButton25);
             this.ribbonPanel8.Items.Add(this.ribbonButton26);
@@ -794,13 +792,6 @@
             this.ribbonButton21.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton21.SmallImage")));
             this.ribbonButton21.Text = "Sístema Eléctrico";
             this.ribbonButton21.Click += new System.EventHandler(this.ribbonButton21_Click);
-            // 
-            // ribbonButton22
-            // 
-            this.ribbonButton22.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton22.Image")));
-            this.ribbonButton22.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton22.SmallImage")));
-            this.ribbonButton22.Text = "Proceso Diferido";
-            this.ribbonButton22.Click += new System.EventHandler(this.ribbonButton22_Click);
             // 
             // ribbonButton23
             // 
@@ -1353,7 +1344,6 @@
         private System.Windows.Forms.RibbonButton ribbonButton19;
         private System.Windows.Forms.RibbonButton ribbonButton20;
         private System.Windows.Forms.RibbonButton ribbonButton21;
-        private System.Windows.Forms.RibbonButton ribbonButton22;
         private System.Windows.Forms.RibbonButton ribbonButton23;
         private System.Windows.Forms.RibbonButton ribbonButton24;
         private System.Windows.Forms.RibbonButton ribbonButton25;
