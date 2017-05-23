@@ -246,10 +246,7 @@ namespace CapaPresentacion
            //this.dataListado.Select();
            //this.dataListado.Focus();
 
-            this.cboMVPtipo.DataSource = NacfTMVt_TipoMovimiento.Mostrar();  //TMVid
-            this.cboMVPtipo.ValueMember = "TMVid";
-            this.cboMVPtipo.DisplayMember = "TMVtipomovimiento";
-            this.cboMVPtipo.SelectedIndex = 0;
+       
 
         }
         private void Top()
@@ -274,7 +271,7 @@ namespace CapaPresentacion
                     txtORGds_zona.Text = Convert.ToString(row["ORGds_zona"]);
                     txtORGcrp.Text = Convert.ToString(row["ORGcrp"]);
                     txtORGds_crp.Text = Convert.ToString(row["ORGds_crp"]);
-                    txtORGid_usuario.Text = Convert.ToString(row["ORGid_usuario"]);
+                    cboPERNR3.Text = Convert.ToString(row["ORGid_usuario"]);
                     txtORGds_usuario.Text = Convert.ToString(row["ORGds_usuario"]);
                    // txtORGid_ambiente.Text = Convert.ToString(row["ORGid_ambiente"]);
                     txtORGds_ambiente.Text = Convert.ToString(row["ORGds_ambiente"]);
@@ -284,7 +281,7 @@ namespace CapaPresentacion
                     txtDSTds_zona.Text = Convert.ToString(row["DSTds_zona"]);
                     txtDSTcrp.Text = Convert.ToString(row["DSTcrp"]);
                     txtDSTds_crp.Text = Convert.ToString(row["DSTds_crp"]);
-                    txtDSTid_usuario.Text = Convert.ToString(row["DSTid_usuario"]);
+                    cboPERNR4.Text = Convert.ToString(row["DSTid_usuario"]);
                     txtDSTds_usuario.Text = Convert.ToString(row["DSTds_usuario"]);
                    // txtDSTid_ambiente.Text = Convert.ToString(row["DSTid_ambiente"]);
                     txtDSTds_ambiente.Text = Convert.ToString(row["DSTds_ambiente"]);
@@ -320,7 +317,7 @@ namespace CapaPresentacion
                     txtORGds_zona.Text = Convert.ToString(row["ORGds_zona"]);
                     txtORGcrp.Text = Convert.ToString(row["ORGcrp"]);
                     txtORGds_crp.Text = Convert.ToString(row["ORGds_crp"]);
-                    txtORGid_usuario.Text = Convert.ToString(row["ORGid_usuario"]);
+                    cboPERNR3.Text = Convert.ToString(row["ORGid_usuario"]);
                     txtORGds_usuario.Text = Convert.ToString(row["ORGds_usuario"]);
                     cboAMB1.Text = Convert.ToString(row["ORGid_ambiente"]);
                     txtORGds_ambiente.Text = Convert.ToString(row["ORGds_ambiente"]);
@@ -330,7 +327,7 @@ namespace CapaPresentacion
                     txtDSTds_zona.Text = Convert.ToString(row["DSTds_zona"]);
                     txtDSTcrp.Text = Convert.ToString(row["DSTcrp"]);
                     txtDSTds_crp.Text = Convert.ToString(row["DSTds_crp"]);
-                    txtDSTid_usuario.Text = Convert.ToString(row["DSTid_usuario"]);
+                    cboPERNR4.Text = Convert.ToString(row["DSTid_usuario"]);
                     txtDSTds_usuario.Text = Convert.ToString(row["DSTds_usuario"]);
                     cboAMB2.Text = Convert.ToString(row["DSTid_ambiente"]);
                     txtDSTds_ambiente.Text = Convert.ToString(row["DSTds_ambiente"]);
@@ -366,7 +363,7 @@ namespace CapaPresentacion
                     txtORGds_zona.Text = Convert.ToString(row["ORGds_zona"]);
                     txtORGcrp.Text = Convert.ToString(row["ORGcrp"]);
                     txtORGds_crp.Text = Convert.ToString(row["ORGds_crp"]);
-                    txtORGid_usuario.Text = Convert.ToString(row["ORGid_usuario"]);
+                    cboPERNR3.Text = Convert.ToString(row["ORGid_usuario"]);
                     txtORGds_usuario.Text = Convert.ToString(row["ORGds_usuario"]);
                    // txtORGid_ambiente.Text = Convert.ToString(row["ORGid_ambiente"]);
                     txtORGds_ambiente.Text = Convert.ToString(row["ORGds_ambiente"]);
@@ -376,7 +373,7 @@ namespace CapaPresentacion
                     txtDSTds_zona.Text = Convert.ToString(row["DSTds_zona"]);
                     txtDSTcrp.Text = Convert.ToString(row["DSTcrp"]);
                     txtDSTds_crp.Text = Convert.ToString(row["DSTds_crp"]);
-                    txtDSTid_usuario.Text = Convert.ToString(row["DSTid_usuario"]);
+                    cboPERNR4.Text = Convert.ToString(row["DSTid_usuario"]);
                     txtDSTds_usuario.Text = Convert.ToString(row["DSTds_usuario"]);
                   //  txtDSTid_ambiente.Text = Convert.ToString(row["DSTid_ambiente"]);
                     txtDSTds_ambiente.Text = Convert.ToString(row["DSTds_ambiente"]);
@@ -414,7 +411,7 @@ namespace CapaPresentacion
                     txtORGds_zona.Text = Convert.ToString(row["ORGds_zona"]);
                     txtORGcrp.Text = Convert.ToString(row["ORGcrp"]);
                     txtORGds_crp.Text = Convert.ToString(row["ORGds_crp"]);
-                    txtORGid_usuario.Text = Convert.ToString(row["ORGid_usuario"]);
+                    cboPERNR3.Text = Convert.ToString(row["ORGid_usuario"]);
                     txtORGds_usuario.Text = Convert.ToString(row["ORGds_usuario"]);
                     cboAMB1.Text = Convert.ToString(row["ORGid_ambiente"]);
                     txtORGds_ambiente.Text = Convert.ToString(row["ORGds_ambiente"]);
@@ -424,7 +421,7 @@ namespace CapaPresentacion
                     txtDSTds_zona.Text = Convert.ToString(row["DSTds_zona"]);
                     txtDSTcrp.Text = Convert.ToString(row["DSTcrp"]);
                     txtDSTds_crp.Text = Convert.ToString(row["DSTds_crp"]);
-                    txtDSTid_usuario.Text = Convert.ToString(row["DSTid_usuario"]);
+                    cboPERNR4.Text = Convert.ToString(row["DSTid_usuario"]);
                     txtDSTds_usuario.Text = Convert.ToString(row["DSTds_usuario"]);
                     cboAMB2.Text = Convert.ToString(row["DSTid_ambiente"]);
                     txtDSTds_ambiente.Text = Convert.ToString(row["DSTds_ambiente"]);
@@ -538,7 +535,7 @@ namespace CapaPresentacion
                 , this.txtORGds_zona.Text
                 , this.txtORGcrp.Text
                 , this.txtORGds_crp.Text
-                , this.txtORGid_usuario.Text
+                , this.cboPERNR3.Text
                 , this.txtORGds_usuario.Text
                 , this.cboAMB1.Text
                 , this.txtORGds_ambiente.Text
@@ -548,7 +545,7 @@ namespace CapaPresentacion
                 , this.txtDSTds_zona.Text
                 , this.txtDSTcrp.Text
                 , this.txtDSTds_crp.Text
-                , this.txtDSTid_usuario.Text
+                , this.cboPERNR4.Text
                 , this.txtDSTds_usuario.Text
                 , this.cboAMB2.Text
                 , this.txtDSTds_ambiente.Text
@@ -589,7 +586,7 @@ namespace CapaPresentacion
                     , this.txtORGds_zona.Text
                     , this.txtORGcrp.Text
                     , this.txtORGds_crp.Text
-                    , this.txtORGid_usuario.Text
+                    , this.cboPERNR3.Text
                     , this.txtORGds_usuario.Text
                     , this.cboAMB1.Text
                     , this.txtORGds_ambiente.Text
@@ -599,7 +596,7 @@ namespace CapaPresentacion
                     , this.txtDSTds_zona.Text
                     , this.txtDSTcrp.Text
                     , this.txtDSTds_crp.Text
-                    , this.txtDSTid_usuario.Text
+                    , this.cboPERNR4.Text
                     , this.txtDSTds_usuario.Text
                     , this.cboAMB2.Text
                     , this.txtDSTds_ambiente.Text
@@ -679,7 +676,7 @@ namespace CapaPresentacion
                     txtORGds_zona.Text = Convert.ToString(row["ORGds_zona"]);
                     txtORGcrp.Text = Convert.ToString(row["ORGcrp"]);
                     txtORGds_crp.Text = Convert.ToString(row["ORGds_crp"]);
-                    txtORGid_usuario.Text = Convert.ToString(row["ORGid_usuario"]);
+                    cboPERNR3.Text = Convert.ToString(row["ORGid_usuario"]);
                     txtORGds_usuario.Text = Convert.ToString(row["ORGds_usuario"]);
                     cboAMB1.Text = Convert.ToString(row["ORGid_ambiente"]);
                     txtORGds_ambiente.Text = Convert.ToString(row["ORGds_ambiente"]);
@@ -689,7 +686,7 @@ namespace CapaPresentacion
                     txtDSTds_zona.Text = Convert.ToString(row["DSTds_zona"]);
                     txtDSTcrp.Text = Convert.ToString(row["DSTcrp"]);
                     txtDSTds_crp.Text = Convert.ToString(row["DSTds_crp"]);
-                    txtDSTid_usuario.Text = Convert.ToString(row["DSTid_usuario"]);
+                    cboPERNR4.Text = Convert.ToString(row["DSTid_usuario"]);
                     txtDSTds_usuario.Text = Convert.ToString(row["DSTds_usuario"]);
                     cboAMB2.Text = Convert.ToString(row["DSTid_ambiente"]);
                     txtDSTds_ambiente.Text = Convert.ToString(row["DSTds_ambiente"]);
@@ -828,6 +825,16 @@ namespace CapaPresentacion
             this.cboPERNR2.DisplayMember = "PERNR";
             this.cboPERNR2.SelectedIndex = -1;
 
+            this.cboPERNR3.DataSource = NbdiXPEpExtraccionSAP_Personal.Mostrar();//
+            this.cboPERNR3.ValueMember = "PERNR";
+            this.cboPERNR3.DisplayMember = "PERNR";
+            this.cboPERNR3.SelectedIndex = -1;
+
+            this.cboPERNR4.DataSource = NbdiXPEpExtraccionSAP_Personal.Mostrar();//
+            this.cboPERNR4.ValueMember = "PERNR";
+            this.cboPERNR4.DisplayMember = "PERNR";
+            this.cboPERNR4.SelectedIndex = -1;
+
             this.cboAMB1.DataSource = NacfAMBt_Ambiente.Mostrar();//
             this.cboAMB1.ValueMember = "AMBid";
             this.cboAMB1.DisplayMember = "AMBid";
@@ -837,6 +844,16 @@ namespace CapaPresentacion
             this.cboAMB2.ValueMember = "AMBid";
             this.cboAMB2.DisplayMember = "AMBid";
             this.cboAMB2.SelectedIndex = -1;
+
+            this.cboZONA1.DataSource = NbdiSEGpSegmento.Mostrar();//
+            this.cboZONA1.ValueMember = "id_zona";
+            this.cboZONA1.DisplayMember = "id_zona";
+            this.cboZONA1.SelectedIndex = -1;
+
+            this.cboMVPtipo1.DataSource = NacfTMVt_TipoMovimiento.Mostrar();//
+            this.cboMVPtipo1.ValueMember = "TMVid";
+            this.cboMVPtipo1.DisplayMember = "TMVid";
+            this.cboMVPtipo1.SelectedIndex = -1;
         }
         private void toolStripAgregar_Click(object sender, EventArgs e) { }
 
