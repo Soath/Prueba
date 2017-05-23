@@ -21,21 +21,36 @@ namespace CapaPresentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void Frm_3_Load(object sender, EventArgs e)
+        {
+            dataListado.AllowUserToAddRows = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void toolStripActivos_Click(object sender, EventArgs e)
+        {
             if (txtHoja.Text == string.Empty)
             {
                 MessageBox.Show("Inserte el nombre de la HOJA");
             }
             else
             {
-
-
-
                 try
                 {
                     string hoja;
                     hoja = txtHoja.Text;
 
-                    new Importar().importarExcel(dataGridView1, hoja);
+                    BotonesIE(true);
+                    new Importar().importarExcelLiqui(dataListado, hoja, true);
+                    //Columnas();
+                    
                 }
                 catch (Exception ex)
                 {
@@ -44,31 +59,31 @@ namespace CapaPresentacion
             }
         }
 
-        private void Frm_3_Load(object sender, EventArgs e)
+        private void toolStripGuardar_Click(object sender, EventArgs e)
         {
-            dataGridView1.AllowUserToAddRows = false;
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
             try
             {
                 //falta mostrar el ACFid
-                foreach (DataGridViewRow row in dataGridView1.Rows)
+                Int32 total = 0;
+                foreach (DataGridViewRow row in dataListado.Rows)
                 {
-                   string Rta = string.Empty;
-                   Rta = NacfACFp_Activo_Fijo.Insertar2(
-       Convert.ToString(row.Cells[2].Value) //ACFdescripcion
-         );
+                    string Rta = string.Empty;
+
+                    total = total + Convert.ToInt32(row.Cells[2].Value); 
+
+                    Rta = NacfACFp_Activo_Fijo.Insertar2(
+                    Convert.ToString(row.Cells[0].Value) //ACFdescripcion
+          );
                     if (Rta.Equals("OK"))
                     {
                     }
                     else
                     {
                         break;
-         
+
                     }
-         
+
                 }
                 MessageBox.Show("Datos agregados");
             }
@@ -79,5 +94,37 @@ namespace CapaPresentacion
             
         
         }
+
+        private void BotonesIE(bool edo)
+        {
+            
+            this.toolStripActivos.Visible   =  !edo;
+            this.toolStripRefrescar.Visible =   edo;
+            this.toolStripGuardar.Visible   =  edo;
+            this.toolStripCancelar.Visible  =  edo;
+            this.toolStripSiguiente.Visible =  edo;
+        }
+
+        private void toolStripSiguiente_Click(object sender, EventArgs e)
+        {
+            new Importar().ExportarDataGridViewExcel(dataListado);
+        }
+
+        private void toolStripRefrescar_Click(object sender, EventArgs e)
+        {
+
+                    decimal total = 0;
+                    foreach (DataGridViewRow row in dataListado.Rows)
+                    {
+                        total = total + Convert.ToDecimal(row.Cells[2].Value);
+                    }
+
+                    this.textBox1.Text = Convert.ToString(total);
+                    this.textBox2.Text = Convert.ToString(total);
+                    MessageBox.Show("Datos Procesados");
+
+        }
+
+
     }
 }

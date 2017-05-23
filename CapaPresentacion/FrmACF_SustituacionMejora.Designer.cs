@@ -28,15 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmACF_SustituacionMejora));
             this.dataListado = new System.Windows.Forms.DataGridView();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,68 +46,16 @@
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripActivos = new System.Windows.Forms.ToolStripButton();
+            this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripEliminar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(550, 277);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 23);
-            this.button3.TabIndex = 39;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(255, 25);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(150, 34);
-            this.button6.TabIndex = 36;
-            this.button6.Text = "Importar desde GIS";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(514, 319);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 27);
-            this.button5.TabIndex = 35;
-            this.button5.Text = "Salir";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(390, 319);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 27);
-            this.button4.TabIndex = 34;
-            this.button4.Text = "Actualizar Registro";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(428, 277);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 23);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Adicionar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(318, 277);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 23);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Editar Registro";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // dataListado
             // 
@@ -140,36 +81,14 @@
             this.Column14,
             this.Column15,
             this.Column16});
-            this.dataListado.Location = new System.Drawing.Point(20, 84);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
+            this.dataListado.Location = new System.Drawing.Point(12, 97);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(646, 166);
+            this.dataListado.Size = new System.Drawing.Size(999, 383);
             this.dataListado.TabIndex = 31;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(85, 17);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(109, 17);
-            this.radioButton1.TabIndex = 40;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Activos Eléctricos";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(85, 48);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(126, 17);
-            this.radioButton2.TabIndex = 41;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Activos No Eléctricos";
-            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // Column1
             // 
@@ -251,41 +170,121 @@
             this.Column16.HeaderText = "Column16";
             this.Column16.Name = "Column16";
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.AutoSize = false;
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripActivos,
+            this.toolStripRefrescar,
+            this.toolStripAgregar,
+            this.toolStripEliminar,
+            this.toolStripGuardar,
+            this.toolStripCancelar});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1023, 82);
+            this.toolStrip1.TabIndex = 157;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripActivos
+            // 
+            this.toolStripActivos.Image = ((System.Drawing.Image)(resources.GetObject("toolStripActivos.Image")));
+            this.toolStripActivos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripActivos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripActivos.Name = "toolStripActivos";
+            this.toolStripActivos.Size = new System.Drawing.Size(123, 79);
+            this.toolStripActivos.Text = "Importar Activos";
+            this.toolStripActivos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripActivos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripActivos.Click += new System.EventHandler(this.toolStripActivos_Click);
+            // 
+            // toolStripRefrescar
+            // 
+            this.toolStripRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripRefrescar.Image")));
+            this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripRefrescar.Name = "toolStripRefrescar";
+            this.toolStripRefrescar.Size = new System.Drawing.Size(118, 79);
+            this.toolStripRefrescar.Text = "Importar AF GIS";
+            this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripAgregar
+            // 
+            this.toolStripAgregar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAgregar.Image")));
+            this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripAgregar.Name = "toolStripAgregar";
+            this.toolStripAgregar.Size = new System.Drawing.Size(67, 79);
+            this.toolStripAgregar.Text = "Agregar";
+            this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripAgregar.Visible = false;
+            this.toolStripAgregar.Click += new System.EventHandler(this.toolStripAgregar_Click);
+            // 
+            // toolStripEliminar
+            // 
+            this.toolStripEliminar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEliminar.Image")));
+            this.toolStripEliminar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripEliminar.Name = "toolStripEliminar";
+            this.toolStripEliminar.Size = new System.Drawing.Size(67, 79);
+            this.toolStripEliminar.Text = "Eliminar";
+            this.toolStripEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripEliminar.Visible = false;
+            this.toolStripEliminar.Click += new System.EventHandler(this.toolStripEliminar_Click);
+            // 
+            // toolStripGuardar
+            // 
+            this.toolStripGuardar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripGuardar.Image")));
+            this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripGuardar.Name = "toolStripGuardar";
+            this.toolStripGuardar.Size = new System.Drawing.Size(66, 79);
+            this.toolStripGuardar.Text = "Guardar";
+            this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripGuardar.Visible = false;
+            this.toolStripGuardar.Click += new System.EventHandler(this.toolStripGuardar_Click);
+            // 
+            // toolStripCancelar
+            // 
+            this.toolStripCancelar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCancelar.Image")));
+            this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripCancelar.Name = "toolStripCancelar";
+            this.toolStripCancelar.Size = new System.Drawing.Size(70, 79);
+            this.toolStripCancelar.Text = "Cancelar";
+            this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripCancelar.Visible = false;
+            this.toolStripCancelar.Click += new System.EventHandler(this.toolStripCancelar_Click);
+            // 
             // FrmACF_SustituacionMejora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 369);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1023, 570);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dataListado);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmACF_SustituacionMejora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmACF_SustituacionMejora";
             this.Load += new System.EventHandler(this.FrmACF_SustituacionMejora_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataListado;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -302,5 +301,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripActivos;
+        private System.Windows.Forms.ToolStripButton toolStripRefrescar;
+        private System.Windows.Forms.ToolStripButton toolStripAgregar;
+        private System.Windows.Forms.ToolStripButton toolStripCancelar;
+        private System.Windows.Forms.ToolStripButton toolStripEliminar;
+        private System.Windows.Forms.ToolStripButton toolStripGuardar;
     }
 }

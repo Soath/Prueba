@@ -111,10 +111,7 @@ namespace CapaNegocio
             Obj.ACFAnulado = cACFAnulado;
             return Obj.Insertar(Obj);
         }
-        public static string Insertar2(
-        string sACFdescripcion
-       
-        )
+        public static string Insertar2(string sACFdescripcion)
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
             Obj.ACFdescripcion = sACFdescripcion;

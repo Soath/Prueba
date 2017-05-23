@@ -85,6 +85,44 @@ namespace CapaPresentacion
             }
         }
 
+
+        public void importarExcelLiqui(DataGridView dgv, String nombreHoja, bool hasHeaders)
+        {
+            String ruta = "";
+            string conn;
+            string HDR = hasHeaders ? "Yes" : "No";
+            try
+            {
+                OpenFileDialog openfile1 = new OpenFileDialog();
+                openfile1.Filter = "Excel Files |*.*";
+                openfile1.Title = "Seleccione el archivo de Excel";
+                if (openfile1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    if (openfile1.FileName.Equals("") == false)
+                    {
+                        ruta = openfile1.FileName;
+                    }
+                }
+
+                if (ruta.Substring(ruta.LastIndexOf('.')).ToLower() == ".xlsx")
+                    conn = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + ruta + ";Extended Properties=\"Excel 12.0;HDR=" + HDR + ";IMEX=0\"";
+                else
+                    conn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + ruta + ";Extended Properties=\"Excel 8.0;HDR=" + HDR + ";IMEX=0\"";
+
+                //conn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;data source=" + ruta + ";Extended Properties='Excel 12.0 Xml;HDR="+ HDR +";IMEX=0\"");
+
+                MyDataAdapter = new OleDbDataAdapter("Select [F2], [F3], [F7]  from [" + nombreHoja + "$] where F3 IS NOT NULL", conn);
+                dt = new DataTable();
+                MyDataAdapter.Fill(dt);
+                dgv.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hoja no existente.");
+            }
+        }
+
         public void ExportarDataGridViewExcel(DataGridView grd)
         {
             SaveFileDialog fichero = new SaveFileDialog();

@@ -67,15 +67,12 @@ namespace CapaPresentacion
 
         private void BotonesIE(bool edo)
         {
-
             this.toolStripRefrescar.Visible = !edo;
             this.toolStripAnterior.Visible = !edo;
             this.toolStripAgregar.Visible = edo;
             this.toolStripEditar.Visible = edo;
             this.toolStripCancelar.Visible = edo;
             this.toolStripSiguiente.Visible = edo;
-
-
         }
         private void button6_Click(object sender, EventArgs e)
         {

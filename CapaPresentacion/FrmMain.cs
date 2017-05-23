@@ -469,5 +469,10 @@ namespace CapaPresentacion
             Form FrmACF_BajaEvaluacionTecnica = new FrmACF_BajaEvaluacionTecnica();
             FrmACF_BajaEvaluacionTecnica.ShowDialog();
         }
+
+        private void ribbonButton71_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
