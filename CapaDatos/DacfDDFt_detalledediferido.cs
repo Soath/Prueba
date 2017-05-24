@@ -220,7 +220,8 @@ namespace CapaDatos
 */
 
     //METODO MOSTRAR
-        public DataTable Mostrar() {
+    public DataTable Mostrar(string PDFcodigo)
+    {
            DataTable DtResultado = new DataTable("acfDDFt_detalledediferido");
             SqlConnection SqlCon = new SqlConnection();
 
@@ -232,7 +233,12 @@ namespace CapaDatos
                 SqlCmd.CommandText = "usp_S_acfDDFt_detalledediferido";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-
+                SqlParameter ParPDFcodigo = new SqlParameter();
+                ParPDFcodigo.ParameterName = "@iPDFcodigo";
+                ParPDFcodigo.SqlDbType = SqlDbType.Int;
+                ParPDFcodigo.Size = 50;
+                ParPDFcodigo.Value = PDFcodigo;
+                SqlCmd.Parameters.Add(ParPDFcodigo);
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);

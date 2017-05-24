@@ -14,7 +14,7 @@ namespace CapaDatos
 
         private string iPDFcodigo;
         private string sPDFperiodo;
-        private string dtPDFfecha;
+        private string dPDFfecha;
         private string sPDFreponsable;
         private string bPDFestado;
 
@@ -30,10 +30,10 @@ namespace CapaDatos
         set { sPDFperiodo = value; }
 	    }
 
-        public String tPDFfecha
+        public String PDFfecha
         {
-        get { return dtPDFfecha; }
-        set { dtPDFfecha = value; }
+        get { return dPDFfecha; }
+        set { dPDFfecha = value; }
         }
 
         public String PDFreponsable
@@ -55,7 +55,7 @@ namespace CapaDatos
     public DacfPDFt_procesodiferido(
         string PDFcodigo,
         string PDFperiodo,
-        string tPDFfecha,
+        string PDFfecha,
         string PDFreponsable,
         string PDFestado)
         
@@ -63,7 +63,7 @@ namespace CapaDatos
 
         this.PDFcodigo = iPDFcodigo;
         this.PDFperiodo = sPDFperiodo;
-        this.tPDFfecha = dtPDFfecha;
+        this.PDFfecha = dPDFfecha;
         this.PDFreponsable = sPDFreponsable;
         this.PDFestado = bPDFestado;
 	}
@@ -99,6 +99,126 @@ namespace CapaDatos
             return DtResultado;
 	}
 
+
+        // barra de navegacion
+        public DataTable Top()
+        {
+
+            DataTable DtResultado = new DataTable("acfPDFt_procesodiferido");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_T_acfPDFt_procesodiferido";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+        public DataTable Prev(String CMPid)
+        {
+            DataTable DtResultado = new DataTable("acfPDFt_procesodiferido");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_P_acfPDFt_procesodiferido";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParPDFcodigo = new SqlParameter();
+                ParPDFcodigo.ParameterName = "@iPDFcodigo";
+                ParPDFcodigo.SqlDbType = SqlDbType.Int;
+                ParPDFcodigo.Size = 50;
+                ParPDFcodigo.Value = PDFcodigo;
+                SqlCmd.Parameters.Add(ParPDFcodigo);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+
+        public DataTable Last()
+        {
+            DataTable DtResultado = new DataTable("acfPDFt_procesodiferido");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_L_acfPDFt_procesodiferido";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+        public DataTable Next(String CMPid)
+        {
+            DataTable DtResultado = new DataTable("acfPDFt_procesodiferido");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_N_acfPDFt_procesodiferido";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParPDFcodigo = new SqlParameter();
+                ParPDFcodigo.ParameterName = "@iPDFcodigo";
+                ParPDFcodigo.SqlDbType = SqlDbType.Int;
+                ParPDFcodigo.Size = 50;
+                ParPDFcodigo.Value = PDFcodigo;
+                SqlCmd.Parameters.Add(ParPDFcodigo);
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+
         //METODO INSERTAR 
 	public string Insertar(DacfPDFt_procesodiferido acfPDFt_procesodiferido)
     {
@@ -126,11 +246,11 @@ namespace CapaDatos
                 ParPDFperiodo.Value = acfPDFt_procesodiferido.PDFperiodo;
                 SqlCmd.Parameters.Add(ParPDFperiodo);
 //
-                SqlParameter PartPDFfecha = new SqlParameter();
-                PartPDFfecha.ParameterName = "@dtPDFfecha";
-                PartPDFfecha.SqlDbType = SqlDbType.DateTime;
-                PartPDFfecha.Value = acfPDFt_procesodiferido.tPDFfecha;
-                SqlCmd.Parameters.Add(PartPDFfecha);
+                SqlParameter ParPDFfecha = new SqlParameter();
+                ParPDFfecha.ParameterName = "@dPDFfecha";
+                ParPDFfecha.SqlDbType = SqlDbType.DateTime;
+                ParPDFfecha.Value = acfPDFt_procesodiferido.PDFfecha;
+                SqlCmd.Parameters.Add(ParPDFfecha);
 //
                 //
                 SqlParameter ParPDFreponsable = new SqlParameter();
@@ -192,11 +312,11 @@ namespace CapaDatos
                 ParPDFperiodo.Value = acfPDFt_procesodiferido.PDFperiodo;
                 SqlCmd.Parameters.Add(ParPDFperiodo);
                 //
-                SqlParameter PartPDFfecha = new SqlParameter();
-                PartPDFfecha.ParameterName = "@dtPDFfecha";
-                PartPDFfecha.SqlDbType = SqlDbType.DateTime;
-                PartPDFfecha.Value = acfPDFt_procesodiferido.tPDFfecha;
-                SqlCmd.Parameters.Add(PartPDFfecha);
+                SqlParameter ParPDFfecha = new SqlParameter();
+                ParPDFfecha.ParameterName = "@dPDFfecha";
+                ParPDFfecha.SqlDbType = SqlDbType.DateTime;
+                ParPDFfecha.Value = acfPDFt_procesodiferido.PDFfecha;
+                SqlCmd.Parameters.Add(ParPDFfecha);
                 //
                 //
                 SqlParameter PartPDFreponsable = new SqlParameter();

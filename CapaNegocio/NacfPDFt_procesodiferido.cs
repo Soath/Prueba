@@ -77,6 +77,23 @@ namespace CapaNegocio
             Obj.PDFreponsable = sPDFreponsable;
             return Obj.Buscar(Obj);
         }
+        // barra de navegacion
+        public static DataTable Top()
+        {
+            return new DacfPDFt_procesodiferido().Top();
+        }
+        public static DataTable Last()
+        {
+            return new DacfPDFt_procesodiferido().Last();
+        }
+        public static DataTable Next(String CMPid)
+        {
+            return new DacfPDFt_procesodiferido().Next(CMPid);
+        }
 
+        public static DataTable Prev(String CMPid)
+        {
+            return new DacfPDFt_procesodiferido().Prev(CMPid);
+        }
     }
 }
