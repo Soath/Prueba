@@ -41,8 +41,6 @@
             this.txtPDFcodigo = new System.Windows.Forms.TextBox();
             this.txtPDFperiodo = new System.Windows.Forms.TextBox();
             this.txtPDFreponsable = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.dtpPDFfecha = new System.Windows.Forms.DateTimePicker();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
@@ -79,7 +77,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(89, 79);
+            this.checkBox1.Location = new System.Drawing.Point(158, 90);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(125, 17);
             this.checkBox1.TabIndex = 0;
@@ -89,7 +87,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(89, 114);
+            this.checkBox2.Location = new System.Drawing.Point(158, 125);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(169, 17);
             this.checkBox2.TabIndex = 1;
@@ -98,7 +96,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(291, 79);
+            this.textBox1.Location = new System.Drawing.Point(360, 90);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(204, 20);
             this.textBox1.TabIndex = 2;
@@ -106,7 +104,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(121, 164);
+            this.label1.Location = new System.Drawing.Point(190, 175);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 3;
@@ -115,7 +113,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(121, 196);
+            this.label2.Location = new System.Drawing.Point(190, 207);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 4;
@@ -124,7 +122,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(121, 229);
+            this.label3.Location = new System.Drawing.Point(190, 240);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 13);
             this.label3.TabIndex = 5;
@@ -133,7 +131,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(121, 265);
+            this.label4.Location = new System.Drawing.Point(190, 276);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 6;
@@ -142,7 +140,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(121, 302);
+            this.label5.Location = new System.Drawing.Point(190, 313);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 7;
@@ -150,47 +148,29 @@
             // 
             // txtPDFcodigo
             // 
-            this.txtPDFcodigo.Location = new System.Drawing.Point(213, 161);
+            this.txtPDFcodigo.Location = new System.Drawing.Point(282, 172);
             this.txtPDFcodigo.Name = "txtPDFcodigo";
             this.txtPDFcodigo.Size = new System.Drawing.Size(109, 20);
             this.txtPDFcodigo.TabIndex = 8;
             // 
             // txtPDFperiodo
             // 
-            this.txtPDFperiodo.Location = new System.Drawing.Point(213, 193);
+            this.txtPDFperiodo.Location = new System.Drawing.Point(282, 204);
             this.txtPDFperiodo.Name = "txtPDFperiodo";
             this.txtPDFperiodo.Size = new System.Drawing.Size(180, 20);
             this.txtPDFperiodo.TabIndex = 9;
             // 
             // txtPDFreponsable
             // 
-            this.txtPDFreponsable.Location = new System.Drawing.Point(213, 262);
+            this.txtPDFreponsable.Location = new System.Drawing.Point(282, 273);
             this.txtPDFreponsable.Name = "txtPDFreponsable";
             this.txtPDFreponsable.Size = new System.Drawing.Size(274, 20);
             this.txtPDFreponsable.TabIndex = 11;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(548, 163);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 45);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Generar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(548, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 45);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // dtpPDFfecha
             // 
             this.dtpPDFfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPDFfecha.Location = new System.Drawing.Point(213, 223);
+            this.dtpPDFfecha.Location = new System.Drawing.Point(282, 234);
             this.dtpPDFfecha.Name = "dtpPDFfecha";
             this.dtpPDFfecha.Size = new System.Drawing.Size(97, 20);
             this.dtpPDFfecha.TabIndex = 15;
@@ -378,8 +358,8 @@
             this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripGuardar.Name = "toolStripGuardar";
-            this.toolStripGuardar.Size = new System.Drawing.Size(53, 59);
-            this.toolStripGuardar.Text = "Guardar";
+            this.toolStripGuardar.Size = new System.Drawing.Size(110, 59);
+            this.toolStripGuardar.Text = "Guardar y Procesar";
             this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripGuardar.Visible = false;
@@ -452,7 +432,7 @@
             this.txtPDFestado.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.txtPDFestado.Location = new System.Drawing.Point(213, 299);
+            this.txtPDFestado.Location = new System.Drawing.Point(282, 310);
             this.txtPDFestado.Name = "txtPDFestado";
             this.txtPDFestado.Size = new System.Drawing.Size(39, 21);
             this.txtPDFestado.TabIndex = 211;
@@ -461,7 +441,7 @@
             // label6
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(270, 296);
+            this.label6.Location = new System.Drawing.Point(339, 307);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 29);
             this.label6.TabIndex = 212;
@@ -477,8 +457,6 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.dtpPDFfecha);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPDFreponsable);
             this.Controls.Add(this.txtPDFperiodo);
             this.Controls.Add(this.txtPDFcodigo);
@@ -519,8 +497,6 @@
         private System.Windows.Forms.TextBox txtPDFcodigo;
         private System.Windows.Forms.TextBox txtPDFperiodo;
         private System.Windows.Forms.TextBox txtPDFreponsable;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dtpPDFfecha;
         private System.Windows.Forms.ToolTip ttMensaje;
         private System.Windows.Forms.ErrorProvider errorIcono;
