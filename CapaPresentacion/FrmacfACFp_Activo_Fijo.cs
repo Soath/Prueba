@@ -756,6 +756,7 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
             //ActualizarRegistros1()
+            ActualizarRegistros1();
         }
 
         // Actualizar Datos en la tabla de Características.

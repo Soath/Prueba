@@ -912,6 +912,15 @@ namespace CapaDatos
             ParACFtipo_activo.SqlDbType = SqlDbType.Char;
             ParACFtipo_activo.Value = acfACFp_Activo_Fijo.ACFtipo_activo;
             SqlCmd.Parameters.Add(ParACFtipo_activo);
+
+            SqlParameter ParACFAnulado = new SqlParameter();
+            ParACFAnulado.ParameterName = "@cACFAnulado";
+            ParACFAnulado.SqlDbType = SqlDbType.Char;
+            ParACFAnulado.Value = cACFAnulado;
+            SqlCmd.Parameters.Add(ParACFAnulado);
+
+
+
             //
             //Ejecutamos nuestro comando
 
@@ -1254,6 +1263,12 @@ namespace CapaDatos
                 ParACFtipo_activo.Value = acfACFp_Activo_Fijo.ACFtipo_activo;
                 SqlCmd.Parameters.Add(ParACFtipo_activo);
                 //
+                SqlParameter ParACFAnulado = new SqlParameter();
+                ParACFAnulado.ParameterName = "@cACFAnulado";
+                ParACFAnulado.SqlDbType = SqlDbType.Char;
+                ParACFAnulado.Value = cACFAnulado;
+                SqlCmd.Parameters.Add(ParACFAnulado);
+
 
                 //Ejecutamos nuestro comando
 
