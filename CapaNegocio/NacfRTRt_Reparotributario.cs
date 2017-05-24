@@ -57,7 +57,23 @@ namespace CapaNegocio
         {
             return new DAcfRTRt_Reparotributario().Mostrar();
         }
-
+        public static DataTable Next(String RTRcodigo)
+        {
+            return new DAcfRTRt_Reparotributario().Next(RTRcodigo);
+        }
+        public static DataTable Prev(String RTRcodigo)
+        {
+            return new DAcfRTRt_Reparotributario().Prev(RTRcodigo);
+        }
+        public static DataTable Top()
+        {
+            return new DAcfRTRt_Reparotributario().Top();
+        }
+       
+        public static DataTable Last()
+        {
+            return new DAcfRTRt_Reparotributario().Last();
+        }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos

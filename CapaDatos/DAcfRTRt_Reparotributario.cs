@@ -123,7 +123,119 @@ namespace CapaDatos
             }
             return DtResultado;
         }
+        public DataTable Top()
+        {
 
+            DataTable DtResultado = new DataTable("acfRTRt_Reparotributario");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_T_acfRTRt_Reparotributario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+        public DataTable Last()
+        {
+            DataTable DtResultado = new DataTable("acfRTRt_Reparotributario");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_L_acfRTRt_Reparotributario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+        public DataTable Next(String RTRcodigo)
+        {
+            DataTable DtResultado = new DataTable("acfRTRt_Reparotributario");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_N_acfRTRt_Reparotributario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParRTRcodigo = new SqlParameter();
+                ParRTRcodigo.ParameterName = "@RTRcodigo";
+                ParRTRcodigo.SqlDbType = SqlDbType.Int;
+                ParRTRcodigo.Value = Convert.ToInt32(RTRcodigo);
+                ParRTRcodigo.Size = 50;
+                SqlCmd.Parameters.Add(ParRTRcodigo);
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+        public DataTable Prev(String RTRcodigo)
+        {
+            DataTable DtResultado = new DataTable("acfRTRt_Reparotributario");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_P_acfRTRt_Reparotributario";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParRTRcodigo = new SqlParameter();
+                ParRTRcodigo.ParameterName = "@RTRcodigo";
+                ParRTRcodigo.SqlDbType = SqlDbType.Int;
+                ParRTRcodigo.Size = 50;
+                ParRTRcodigo.Value = RTRcodigo;
+                SqlCmd.Parameters.Add(ParRTRcodigo);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
         //METODO INSERTAR 
         public string Insertar(DAcfRTRt_Reparotributario acfRTRt_Reparotributario)
         {
@@ -201,7 +313,7 @@ namespace CapaDatos
                 //Establecer el Comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "usp_I_acfRTRt_Reparotributario";
+                SqlCmd.CommandText = "usp_U_acfRTRt_Reparotributario";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParRTRperiodo = new SqlParameter();
