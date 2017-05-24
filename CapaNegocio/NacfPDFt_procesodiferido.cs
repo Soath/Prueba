@@ -24,7 +24,7 @@ namespace CapaNegocio
             DacfPDFt_procesodiferido Obj = new DacfPDFt_procesodiferido();
             Obj.PDFcodigo = iPDFcodigo;
             Obj.PDFperiodo = sPDFperiodo;
-            Obj.tPDFfecha = dtPDFfecha;
+            Obj.PDFfecha = dtPDFfecha;
             Obj.PDFreponsable = sPDFreponsable;
             Obj.PDFestado = bPDFestado;
             return Obj.Insertar(Obj);
@@ -43,7 +43,7 @@ namespace CapaNegocio
             DacfPDFt_procesodiferido Obj = new DacfPDFt_procesodiferido();
             Obj.PDFcodigo = iPDFcodigo;
             Obj.PDFperiodo = sPDFperiodo;
-            Obj.tPDFfecha = dtPDFfecha;
+            Obj.PDFfecha = dtPDFfecha;
             Obj.PDFreponsable = sPDFreponsable;
             Obj.PDFestado = bPDFestado;
             return Obj.Editar(Obj);
@@ -86,14 +86,14 @@ namespace CapaNegocio
         {
             return new DacfPDFt_procesodiferido().Last();
         }
-        public static DataTable Next(String CMPid)
+        public static DataTable Next(String PDFcodigo)
         {
-            return new DacfPDFt_procesodiferido().Next(CMPid);
+            return new DacfPDFt_procesodiferido().Next(PDFcodigo);
         }
 
-        public static DataTable Prev(String CMPid)
+        public static DataTable Prev(String PDFcodigo)
         {
-            return new DacfPDFt_procesodiferido().Prev(CMPid);
+            return new DacfPDFt_procesodiferido().Prev(PDFcodigo);
         }
     }
 }

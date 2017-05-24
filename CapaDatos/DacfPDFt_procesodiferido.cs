@@ -14,7 +14,7 @@ namespace CapaDatos
 
         private string iPDFcodigo;
         private string sPDFperiodo;
-        private string dPDFfecha;
+        private string dtPDFfecha;
         private string sPDFreponsable;
         private string bPDFestado;
 
@@ -32,8 +32,8 @@ namespace CapaDatos
 
         public String PDFfecha
         {
-        get { return dPDFfecha; }
-        set { dPDFfecha = value; }
+        get { return dtPDFfecha; }
+        set { dtPDFfecha = value; }
         }
 
         public String PDFreponsable
@@ -63,7 +63,7 @@ namespace CapaDatos
 
         this.PDFcodigo = iPDFcodigo;
         this.PDFperiodo = sPDFperiodo;
-        this.PDFfecha = dPDFfecha;
+        this.PDFfecha = dtPDFfecha;
         this.PDFreponsable = sPDFreponsable;
         this.PDFestado = bPDFestado;
 	}
@@ -127,7 +127,7 @@ namespace CapaDatos
             return DtResultado;
         }
 
-        public DataTable Prev(String CMPid)
+        public DataTable Prev(String PDFcodigo)
         {
             DataTable DtResultado = new DataTable("acfPDFt_procesodiferido");
             SqlConnection SqlCon = new SqlConnection();
@@ -185,7 +185,7 @@ namespace CapaDatos
             }
             return DtResultado;
         }
-        public DataTable Next(String CMPid)
+        public DataTable Next(String PDFcodigo)
         {
             DataTable DtResultado = new DataTable("acfPDFt_procesodiferido");
             SqlConnection SqlCon = new SqlConnection();
@@ -247,7 +247,7 @@ namespace CapaDatos
                 SqlCmd.Parameters.Add(ParPDFperiodo);
 //
                 SqlParameter ParPDFfecha = new SqlParameter();
-                ParPDFfecha.ParameterName = "@dPDFfecha";
+                ParPDFfecha.ParameterName = "@dtPDFfecha";
                 ParPDFfecha.SqlDbType = SqlDbType.DateTime;
                 ParPDFfecha.Value = acfPDFt_procesodiferido.PDFfecha;
                 SqlCmd.Parameters.Add(ParPDFfecha);
@@ -262,7 +262,7 @@ namespace CapaDatos
                 //
                 SqlParameter ParPDFestado = new SqlParameter();
                 ParPDFestado.ParameterName = "@bPDFestado";
-                ParPDFestado.SqlDbType = SqlDbType.Bit;
+                ParPDFestado.SqlDbType = SqlDbType.Char;
                 ParPDFestado.Value = acfPDFt_procesodiferido.PDFestado;
                 SqlCmd.Parameters.Add(ParPDFestado);
                 //
@@ -313,7 +313,7 @@ namespace CapaDatos
                 SqlCmd.Parameters.Add(ParPDFperiodo);
                 //
                 SqlParameter ParPDFfecha = new SqlParameter();
-                ParPDFfecha.ParameterName = "@dPDFfecha";
+                ParPDFfecha.ParameterName = "@dtPDFfecha";
                 ParPDFfecha.SqlDbType = SqlDbType.DateTime;
                 ParPDFfecha.Value = acfPDFt_procesodiferido.PDFfecha;
                 SqlCmd.Parameters.Add(ParPDFfecha);
@@ -328,7 +328,7 @@ namespace CapaDatos
                 //
                 SqlParameter ParPDFestado = new SqlParameter();
                 ParPDFestado.ParameterName = "@bPDFestado";
-                ParPDFestado.SqlDbType = SqlDbType.Bit;
+                ParPDFestado.SqlDbType = SqlDbType.Char;
                 ParPDFestado.Value = acfPDFt_procesodiferido.PDFestado;
                 SqlCmd.Parameters.Add(ParPDFestado);
                 //

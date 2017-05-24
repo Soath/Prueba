@@ -149,6 +149,7 @@ namespace CapaPresentacion
         }
         private void Control_Click_Cancelar(object sender, EventArgs e)
         {
+            this.MostrarRegistro();
             this.BotonRefrescar();
         }
         private void Control_Click_Importar(object sender, EventArgs e)
@@ -243,7 +244,7 @@ namespace CapaPresentacion
                     //guardo datos en variables
                     txtPDFcodigo.Text = Convert.ToString(row["PDFcodigo"]);
                     txtPDFperiodo.Text = Convert.ToString(row["PDFperiodo"]);
-                    dtpPDFfecha.Text = Convert.ToString(row["PDFfecha;"]);
+                    dtpPDFfecha.Text = Convert.ToString(row["PDFfecha"]);
                     txtPDFreponsable.Text = Convert.ToString(row["PDFreponsable"]);
                     txtPDFestado.Text = Convert.ToString(row["PDFestado"]);
 
@@ -261,15 +262,14 @@ namespace CapaPresentacion
         {
             try
             {
-                DataTable dat = NacfPDFt_procesodiferido.Next(PDFcodigo);
-                
+                DataTable dat = NacfPDFt_procesodiferido.Next(PDFcodigo);                
                 if (dat.Rows.Count > 0)
                 {
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtPDFcodigo.Text = Convert.ToString(row["PDFcodigo"]);
                     txtPDFperiodo.Text = Convert.ToString(row["PDFperiodo"]);
-                    dtpPDFfecha.Text = Convert.ToString(row["PDFfecha;"]);
+                    dtpPDFfecha.Text = Convert.ToString(row["PDFfecha"]);
                     txtPDFreponsable.Text = Convert.ToString(row["PDFreponsable"]);
                     txtPDFestado.Text = Convert.ToString(row["PDFestado"]);
 
@@ -295,7 +295,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     txtPDFcodigo.Text = Convert.ToString(row["PDFcodigo"]);
                     txtPDFperiodo.Text = Convert.ToString(row["PDFperiodo"]);
-                    dtpPDFfecha.Text = Convert.ToString(row["PDFfecha;"]);
+                    dtpPDFfecha.Text = Convert.ToString(row["PDFfecha"]);
                     txtPDFreponsable.Text = Convert.ToString(row["PDFreponsable"]);
                     txtPDFestado.Text = Convert.ToString(row["PDFestado"]);
                 }
@@ -321,7 +321,7 @@ namespace CapaPresentacion
 
                     txtPDFcodigo.Text = Convert.ToString(row["PDFcodigo"]);
                     txtPDFperiodo.Text = Convert.ToString(row["PDFperiodo"]);
-                    dtpPDFfecha.Text = Convert.ToString(row["PDFfecha;"]);
+                    dtpPDFfecha.Text = Convert.ToString(row["PDFfecha"]);
                     txtPDFreponsable.Text = Convert.ToString(row["PDFreponsable"]);
                     txtPDFestado.Text = Convert.ToString(row["PDFestado"]);
                 }
@@ -522,7 +522,7 @@ namespace CapaPresentacion
 
                     txtPDFcodigo.Text = Convert.ToString(row["PDFcodigo"]);
                     txtPDFperiodo.Text = Convert.ToString(row["PDFperiodo"]);
-                    dtpPDFfecha.Text = Convert.ToString(row["PDFfecha;"]);
+                    dtpPDFfecha.Text = Convert.ToString(row["PDFfecha"]);
                     txtPDFreponsable.Text = Convert.ToString(row["PDFreponsable"]);
                     txtPDFestado.Text = Convert.ToString(row["PDFestado"]);
                 }

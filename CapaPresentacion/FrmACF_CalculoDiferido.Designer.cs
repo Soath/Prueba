@@ -41,7 +41,6 @@
             this.txtPDFcodigo = new System.Windows.Forms.TextBox();
             this.txtPDFperiodo = new System.Windows.Forms.TextBox();
             this.txtPDFreponsable = new System.Windows.Forms.TextBox();
-            this.txtPDFestado = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dtpPDFfecha = new System.Windows.Forms.DateTimePicker();
@@ -67,6 +66,8 @@
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
+            this.txtPDFestado = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -167,13 +168,6 @@
             this.txtPDFreponsable.Name = "txtPDFreponsable";
             this.txtPDFreponsable.Size = new System.Drawing.Size(274, 20);
             this.txtPDFreponsable.TabIndex = 11;
-            // 
-            // txtPDFestado
-            // 
-            this.txtPDFestado.Location = new System.Drawing.Point(213, 299);
-            this.txtPDFestado.Name = "txtPDFestado";
-            this.txtPDFestado.Size = new System.Drawing.Size(126, 20);
-            this.txtPDFestado.TabIndex = 12;
             // 
             // button1
             // 
@@ -449,17 +443,42 @@
             this.toolStripUltimo.Text = "Ultimo";
             this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // txtPDFestado
+            // 
+            this.txtPDFestado.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2"});
+            this.txtPDFestado.FormattingEnabled = true;
+            this.txtPDFestado.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.txtPDFestado.Location = new System.Drawing.Point(213, 299);
+            this.txtPDFestado.Name = "txtPDFestado";
+            this.txtPDFestado.Size = new System.Drawing.Size(39, 21);
+            this.txtPDFestado.TabIndex = 211;
+            this.txtPDFestado.Text = "1";
+            // 
+            // label6
+            // 
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.Location = new System.Drawing.Point(270, 296);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 29);
+            this.label6.TabIndex = 212;
+            this.label6.Text = "1 = Baja         2 = Anulado";
+            // 
             // FrmACF_CalculoDiferido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 641);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtPDFestado);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.dtpPDFfecha);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtPDFestado);
             this.Controls.Add(this.txtPDFreponsable);
             this.Controls.Add(this.txtPDFperiodo);
             this.Controls.Add(this.txtPDFcodigo);
@@ -500,7 +519,6 @@
         private System.Windows.Forms.TextBox txtPDFcodigo;
         private System.Windows.Forms.TextBox txtPDFperiodo;
         private System.Windows.Forms.TextBox txtPDFreponsable;
-        private System.Windows.Forms.TextBox txtPDFestado;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dtpPDFfecha;
@@ -526,5 +544,7 @@
         private System.Windows.Forms.ToolStripButton toolStripAnterior;
         private System.Windows.Forms.ToolStripButton toolStripSiguiente;
         private System.Windows.Forms.ToolStripButton toolStripUltimo;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox txtPDFestado;
     }
 }
