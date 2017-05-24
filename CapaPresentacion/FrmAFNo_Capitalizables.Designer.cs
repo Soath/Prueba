@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAFNo_Capitalizables));
-            this.dataListado = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -42,25 +40,12 @@
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.lblTotal = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
+            this.chkEliminar = new System.Windows.Forms.CheckBox();
+            this.dataListado = new System.Windows.Forms.DataGridView();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataListado
-            // 
-            this.dataListado.AllowUserToAddRows = false;
-            this.dataListado.AllowUserToDeleteRows = false;
-            this.dataListado.AllowUserToOrderColumns = true;
-            this.dataListado.BackgroundColor = System.Drawing.Color.White;
-            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListado.Location = new System.Drawing.Point(16, 172);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataListado.MultiSelect = false;
-            this.dataListado.Name = "dataListado";
-            this.dataListado.RowTemplate.Height = 24;
-            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(931, 275);
-            this.dataListado.TabIndex = 19;
             // 
             // label1
             // 
@@ -116,7 +101,7 @@
             // 
             // toolStripRefrescar
             // 
-            this.toolStripRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripRefrescar.Image")));
+            this.toolStripRefrescar.Image = global::CapaPresentacion.Properties.Resources.download;
             this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripRefrescar.Name = "toolStripRefrescar";
@@ -128,7 +113,7 @@
             // 
             // toolStripAgregar
             // 
-            this.toolStripAgregar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAgregar.Image")));
+            this.toolStripAgregar.Image = global::CapaPresentacion.Properties.Resources.add_folder;
             this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAgregar.Name = "toolStripAgregar";
@@ -140,7 +125,7 @@
             // 
             // toolStripEditar
             // 
-            this.toolStripEditar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEditar.Image")));
+            this.toolStripEditar.Image = global::CapaPresentacion.Properties.Resources.edit;
             this.toolStripEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripEditar.Name = "toolStripEditar";
@@ -152,7 +137,7 @@
             // 
             // toolStripCancelar
             // 
-            this.toolStripCancelar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCancelar.Image")));
+            this.toolStripCancelar.Image = global::CapaPresentacion.Properties.Resources.stop;
             this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripCancelar.Name = "toolStripCancelar";
@@ -166,7 +151,7 @@
             // toolStripAnterior
             // 
             this.toolStripAnterior.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toolStripAnterior.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAnterior.Image")));
+            this.toolStripAnterior.Image = global::CapaPresentacion.Properties.Resources.down_;
             this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAnterior.Name = "toolStripAnterior";
@@ -178,7 +163,7 @@
             // 
             // toolStripSiguiente
             // 
-            this.toolStripSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSiguiente.Image")));
+            this.toolStripSiguiente.Image = global::CapaPresentacion.Properties.Resources.up_;
             this.toolStripSiguiente.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -199,26 +184,65 @@
             this.lblTotal.TabIndex = 157;
             this.lblTotal.Text = "Registro:";
             // 
+            // chkEliminar
+            // 
+            this.chkEliminar.AutoSize = true;
+            this.chkEliminar.Location = new System.Drawing.Point(16, 138);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkEliminar.Name = "chkEliminar";
+            this.chkEliminar.Size = new System.Drawing.Size(104, 21);
+            this.chkEliminar.TabIndex = 158;
+            this.chkEliminar.Text = "Seleccionar";
+            this.chkEliminar.UseVisualStyleBackColor = true;
+            // 
+            // dataListado
+            // 
+            this.dataListado.AllowUserToAddRows = false;
+            this.dataListado.AllowUserToDeleteRows = false;
+            this.dataListado.AllowUserToOrderColumns = true;
+            this.dataListado.BackgroundColor = System.Drawing.Color.White;
+            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Seleccionar});
+            this.dataListado.Location = new System.Drawing.Point(16, 176);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataListado.MultiSelect = false;
+            this.dataListado.Name = "dataListado";
+            this.dataListado.ReadOnly = true;
+            this.dataListado.RowTemplate.Height = 24;
+            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListado.Size = new System.Drawing.Size(931, 271);
+            this.dataListado.TabIndex = 159;
+            // 
+            // Seleccionar
+            // 
+            this.Seleccionar.HeaderText = "Seleccionar";
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.ReadOnly = true;
+            this.Seleccionar.Visible = false;
+            this.Seleccionar.Width = 50;
+            // 
             // FrmAFNo_Capitalizables
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 458);
+            this.Controls.Add(this.dataListado);
+            this.Controls.Add(this.chkEliminar);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataListado);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAFNo_Capitalizables";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAFNo_Capitalizables";
             this.Load += new System.EventHandler(this.FrmAFNo_Capitalizables_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,7 +250,6 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataListado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -239,5 +262,8 @@
         private System.Windows.Forms.ToolStripButton toolStripAnterior;
         private System.Windows.Forms.ToolStripButton toolStripSiguiente;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.CheckBox chkEliminar;
+        private System.Windows.Forms.DataGridView dataListado;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
     }
 }

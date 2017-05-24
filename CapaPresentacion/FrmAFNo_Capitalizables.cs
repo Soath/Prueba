@@ -19,6 +19,9 @@ namespace CapaPresentacion
         public FrmAFNo_Capitalizables()
         {
             InitializeComponent();
+            this.chkEliminar.Click += new System.EventHandler(this.Control_Click_ChkEliminar);
+            this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(Control_Click_dataListado);
+            this.Load += new System.EventHandler(this.FrmAFNo_Capitalizables_miLoad);
         }
 
 
@@ -45,24 +48,26 @@ namespace CapaPresentacion
 
         private void Columnas()
         {
-            
-            this.dataListado.Columns[0].Width = 70;
-            this.dataListado.Columns[1].Width = 200;
-            this.dataListado.Columns[2].Width = 50;
-            this.dataListado.Columns[3].Width = 50;
-            this.dataListado.Columns[4].Width = 100;
-            this.dataListado.Columns[5].Width = 100;
-            this.dataListado.Columns[6].Width = 80;
-            this.dataListado.Columns[7].Width = 200;
 
-            this.dataListado.Columns[0].HeaderText = "Clase";
-            this.dataListado.Columns[1].HeaderText = "Descripcion";
-            this.dataListado.Columns[2].HeaderText = "Cantidad";
-            this.dataListado.Columns[3].HeaderText = "Unidad";
-            this.dataListado.Columns[4].HeaderText = "Precio";
-            this.dataListado.Columns[5].HeaderText = "Total";
-            this.dataListado.Columns[6].HeaderText = "RUC";
-            this.dataListado.Columns[7].HeaderText = "Proveedor";
+            this.dataListado.Columns[0].Width = 70;
+            this.dataListado.Columns[1].Width = 70;
+            this.dataListado.Columns[2].Width = 200;
+            this.dataListado.Columns[3].Width = 50;
+            this.dataListado.Columns[4].Width = 50;
+            this.dataListado.Columns[5].Width = 100;
+            this.dataListado.Columns[6].Width = 100;
+            this.dataListado.Columns[7].Width = 80;
+            this.dataListado.Columns[8].Width = 200;
+
+            this.dataListado.Columns[1].HeaderText = "Clase";
+            
+            this.dataListado.Columns[2].HeaderText = "Descripcion";
+            this.dataListado.Columns[3].HeaderText = "Cantidad";
+            this.dataListado.Columns[4].HeaderText = "Unidad";
+            this.dataListado.Columns[5].HeaderText = "Precio";
+            this.dataListado.Columns[6].HeaderText = "Total";
+            this.dataListado.Columns[7].HeaderText = "RUC";
+            this.dataListado.Columns[8].HeaderText = "Proveedor";
         }
 
         private void BotonesIE(bool edo)
@@ -73,6 +78,31 @@ namespace CapaPresentacion
             this.toolStripEditar.Visible = edo;
             this.toolStripCancelar.Visible = edo;
             this.toolStripSiguiente.Visible = edo;
+        }
+
+        private void Control_Click_dataListado(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dataListado.Columns["Seleccionar"].Index)
+            {
+                DataGridViewCheckBoxCell ChkEliminar = (DataGridViewCheckBoxCell)dataListado.Rows[e.RowIndex].Cells["Seleccionar"];
+                ChkEliminar.Value = !Convert.ToBoolean(ChkEliminar.Value);
+            }
+        }
+        private void Control_Click_ChkEliminar(object sender, EventArgs e)
+        {
+            this.BotonChkEliminar();
+        }
+
+        private void BotonChkEliminar()
+        {
+            if (chkEliminar.Checked)
+            {
+                this.dataListado.Columns[0].Visible = true;
+            }
+            else
+            {
+                this.dataListado.Columns[0].Visible = false;
+            }
         }
         private void button6_Click(object sender, EventArgs e)
         {
@@ -123,6 +153,11 @@ namespace CapaPresentacion
         {
             
             new Importar().ExportarDataGridViewExcel(dataListado);
+        }
+
+        private void FrmAFNo_Capitalizables_miLoad(object sender, EventArgs e)
+        {
+            //this.mostrar();
         }
 
     }

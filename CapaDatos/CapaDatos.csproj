@@ -70,6 +70,7 @@
     <Compile Include="DAcfVNRt_VNR.cs" />
     <Compile Include="DACF_BajaEvaluacionTecnica.cs" />
     <Compile Include="DACF_BajaLiquidacionObra.cs" />
+    <Compile Include="DACF_TransferenciaDonacion.cs" />
     <Compile Include="DAFNo_Capitalizables.cs" />
     <Compile Include="DbdiCAFpClaseDeActivoFijo.cs" />
     <Compile Include="DBdiCDDpClasesDeDocumento.cs" />

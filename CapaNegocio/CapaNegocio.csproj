@@ -71,6 +71,7 @@
     <Compile Include="NacfVNRt_VNR.cs" />
     <Compile Include="NACF_BajaEvaluacionTecnica.cs" />
     <Compile Include="NACF_BajaLiquidacionObra.cs" />
+    <Compile Include="NACF_TransferenciaDonacion.cs" />
     <Compile Include="NAFNo_Capitalizables.cs" />
     <Compile Include="NbdiCAFpClaseDeActivoFijo.cs" />
     <Compile Include="NbdiCDDpClasesDeDocumento.cs" />

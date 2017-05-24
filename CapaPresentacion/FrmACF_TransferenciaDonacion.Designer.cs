@@ -28,59 +28,124 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmACF_TransferenciaDonacion));
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.dataListado = new System.Windows.Forms.DataGridView();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.chkEliminar = new System.Windows.Forms.CheckBox();
+            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
             // 
-            // button6
+            // toolStrip1
             // 
-            this.button6.Location = new System.Drawing.Point(208, 17);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(219, 23);
-            this.button6.TabIndex = 36;
-            this.button6.Text = "Obtener Registro SAP";
-            this.button6.UseVisualStyleBackColor = true;
+            this.toolStrip1.AutoSize = false;
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripRefrescar,
+            this.toolStripAgregar,
+            this.toolStripEditar,
+            this.toolStripCancelar,
+            this.toolStripAnterior,
+            this.toolStripSiguiente});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1133, 82);
+            this.toolStrip1.TabIndex = 156;
+            this.toolStrip1.Text = "toolStrip1";
             // 
-            // button5
+            // lblTotal
             // 
-            this.button5.Location = new System.Drawing.Point(562, 240);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 27);
-            this.button5.TabIndex = 35;
-            this.button5.Text = "Salir";
-            this.button5.UseVisualStyleBackColor = true;
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(551, 138);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(65, 17);
+            this.lblTotal.TabIndex = 157;
+            this.lblTotal.Text = "Registro:";
             // 
-            // button4
+            // toolStripRefrescar
             // 
-            this.button4.Location = new System.Drawing.Point(458, 240);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 27);
-            this.button4.TabIndex = 34;
-            this.button4.Text = "Grabar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.toolStripRefrescar.Image = global::CapaPresentacion.Properties.Resources.download;
+            this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripRefrescar.Name = "toolStripRefrescar";
+            this.toolStripRefrescar.Size = new System.Drawing.Size(159, 79);
+            this.toolStripRefrescar.Text = "Obtener. Registro SAP";
+            this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripRefrescar.Click += new System.EventHandler(this.toolStripRefrescar_Click);
             // 
-            // button2
+            // toolStripAgregar
             // 
-            this.button2.Location = new System.Drawing.Point(174, 244);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 23);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Exportar Excel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.toolStripAgregar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAgregar.Image")));
+            this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripAgregar.Name = "toolStripAgregar";
+            this.toolStripAgregar.Size = new System.Drawing.Size(125, 79);
+            this.toolStripAgregar.Text = "Agregar/Generar";
+            this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripAgregar.Visible = false;
             // 
-            // button1
+            // toolStripEditar
             // 
-            this.button1.Location = new System.Drawing.Point(64, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 23);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Editar Registro";
-            this.button1.UseVisualStyleBackColor = true;
+            this.toolStripEditar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEditar.Image")));
+            this.toolStripEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripEditar.Name = "toolStripEditar";
+            this.toolStripEditar.Size = new System.Drawing.Size(52, 79);
+            this.toolStripEditar.Text = "Editar";
+            this.toolStripEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripEditar.Visible = false;
+            // 
+            // toolStripCancelar
+            // 
+            this.toolStripCancelar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCancelar.Image")));
+            this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripCancelar.Name = "toolStripCancelar";
+            this.toolStripCancelar.Size = new System.Drawing.Size(70, 79);
+            this.toolStripCancelar.Text = "Cancelar";
+            this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripCancelar.Visible = false;
+            this.toolStripCancelar.Click += new System.EventHandler(this.toolStripCancelar_Click);
+            // 
+            // toolStripAnterior
+            // 
+            this.toolStripAnterior.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.toolStripAnterior.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAnterior.Image")));
+            this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripAnterior.Name = "toolStripAnterior";
+            this.toolStripAnterior.Size = new System.Drawing.Size(109, 79);
+            this.toolStripAnterior.Text = "Importar Excel";
+            this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripAnterior.Click += new System.EventHandler(this.toolStripAnterior_Click);
+            // 
+            // toolStripSiguiente
+            // 
+            this.toolStripSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSiguiente.Image")));
+            this.toolStripSiguiente.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripSiguiente.Name = "toolStripSiguiente";
+            this.toolStripSiguiente.Size = new System.Drawing.Size(107, 79);
+            this.toolStripSiguiente.Text = "Exportar Excel";
+            this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripSiguiente.Visible = false;
+            this.toolStripSiguiente.Click += new System.EventHandler(this.toolStripSiguiente_Click);
             // 
             // dataListado
             // 
@@ -89,41 +154,70 @@
             this.dataListado.AllowUserToOrderColumns = true;
             this.dataListado.BackgroundColor = System.Drawing.Color.White;
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListado.Location = new System.Drawing.Point(11, 56);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
+            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Seleccionar});
+            this.dataListado.Location = new System.Drawing.Point(12, 157);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
+            this.dataListado.ReadOnly = true;
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(646, 166);
-            this.dataListado.TabIndex = 31;
+            this.dataListado.Size = new System.Drawing.Size(1109, 271);
+            this.dataListado.TabIndex = 161;
+            // 
+            // Seleccionar
+            // 
+            this.Seleccionar.HeaderText = "Seleccionar";
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.ReadOnly = true;
+            this.Seleccionar.Visible = false;
+            this.Seleccionar.Width = 50;
+            // 
+            // chkEliminar
+            // 
+            this.chkEliminar.AutoSize = true;
+            this.chkEliminar.Location = new System.Drawing.Point(12, 119);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkEliminar.Name = "chkEliminar";
+            this.chkEliminar.Size = new System.Drawing.Size(104, 21);
+            this.chkEliminar.TabIndex = 160;
+            this.chkEliminar.Text = "Seleccionar";
+            this.chkEliminar.UseVisualStyleBackColor = true;
             // 
             // FrmACF_TransferenciaDonacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 285);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1133, 458);
             this.Controls.Add(this.dataListado);
+            this.Controls.Add(this.chkEliminar);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.toolStrip1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmACF_TransferenciaDonacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmACF_TransferenciaDonacion";
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripRefrescar;
+        private System.Windows.Forms.ToolStripButton toolStripAgregar;
+        private System.Windows.Forms.ToolStripButton toolStripEditar;
+        private System.Windows.Forms.ToolStripButton toolStripCancelar;
+        private System.Windows.Forms.ToolStripButton toolStripAnterior;
+        private System.Windows.Forms.ToolStripButton toolStripSiguiente;
+        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.DataGridView dataListado;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
+        private System.Windows.Forms.CheckBox chkEliminar;
     }
 }
