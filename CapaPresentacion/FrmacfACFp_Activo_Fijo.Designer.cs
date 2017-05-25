@@ -333,11 +333,8 @@
             this.toolStripImagen});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-<<<<<<< HEAD
-            this.toolStrip1.Size = new System.Drawing.Size(1100, 67);
-=======
+
             this.toolStrip1.Size = new System.Drawing.Size(1017, 67);
->>>>>>> origin/master
             this.toolStrip1.TabIndex = 124;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -722,8 +719,7 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Adquisición";
             // 
-<<<<<<< HEAD
-=======
+
             // cboBLART
             // 
             this.cboBLART.AutoComplete = true;
@@ -742,7 +738,6 @@
             this.cboBLART.Size = new System.Drawing.Size(53, 21);
             this.cboBLART.TabIndex = 173;
             // 
->>>>>>> origin/master
             // textDoc
             // 
             this.textDoc.BackColor = System.Drawing.Color.Lavender;
@@ -809,8 +804,7 @@
             this.txtACFcomprobante.Size = new System.Drawing.Size(140, 20);
             this.txtACFcomprobante.TabIndex = 165;
             // 
-<<<<<<< HEAD
-=======
+
             // cboLIFNR
             // 
             this.cboLIFNR.AutoComplete = true;
@@ -829,7 +823,6 @@
             this.cboLIFNR.Size = new System.Drawing.Size(140, 21);
             this.cboLIFNR.TabIndex = 164;
             // 
->>>>>>> origin/master
             // txtACFordencompra
             // 
             this.txtACFordencompra.Location = new System.Drawing.Point(152, 17);
@@ -2540,8 +2533,7 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Estado Actual";
             // 
-<<<<<<< HEAD
-=======
+
             // CtxtACFtipo_activo
             // 
             this.CtxtACFtipo_activo.AutoComplete = true;
@@ -2563,7 +2555,6 @@
             this.CtxtACFtipo_activo.Size = new System.Drawing.Size(53, 21);
             this.CtxtACFtipo_activo.TabIndex = 175;
             // 
->>>>>>> origin/master
             // textClase
             // 
             this.textClase.BackColor = System.Drawing.Color.Lavender;
@@ -2575,8 +2566,7 @@
             this.textClase.TabIndex = 173;
             this.textClase.TabStop = false;
             // 
-<<<<<<< HEAD
-=======
+
             // cboANLKL
             // 
             this.cboANLKL.AutoComplete = true;
@@ -2595,7 +2585,6 @@
             this.cboANLKL.Size = new System.Drawing.Size(140, 21);
             this.cboANLKL.TabIndex = 174;
             // 
->>>>>>> origin/master
             // label22
             // 
             this.label22.AutoSize = true;
@@ -2652,8 +2641,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ubicación";
             // 
-<<<<<<< HEAD
-=======
             // cboPERNR
             // 
             this.cboPERNR.AutoComplete = true;
@@ -2672,7 +2659,6 @@
             this.cboPERNR.Size = new System.Drawing.Size(140, 21);
             this.cboPERNR.TabIndex = 181;
             // 
->>>>>>> origin/master
             // textPersonal
             // 
             this.textPersonal.BackColor = System.Drawing.Color.Lavender;
@@ -2695,8 +2681,6 @@
             this.textMotivoM.TabIndex = 179;
             this.textMotivoM.TabStop = false;
             // 
-<<<<<<< HEAD
-=======
             // cboMVMid
             // 
             this.cboMVMid.AutoComplete = true;
@@ -2734,7 +2718,6 @@
             this.cboAMBid.Size = new System.Drawing.Size(140, 21);
             this.cboAMBid.TabIndex = 177;
             // 
->>>>>>> origin/master
             // textAmbiente
             // 
             this.textAmbiente.BackColor = System.Drawing.Color.Lavender;
@@ -2815,8 +2798,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ubicación Electrica";
             // 
-<<<<<<< HEAD
-=======
             // cboVNRid
             // 
             this.cboVNRid.AutoComplete = true;
@@ -2835,7 +2816,6 @@
             this.cboVNRid.Size = new System.Drawing.Size(129, 21);
             this.cboVNRid.TabIndex = 185;
             // 
->>>>>>> origin/master
             // textVNRdes
             // 
             this.textVNRdes.BackColor = System.Drawing.Color.Lavender;
@@ -2847,8 +2827,6 @@
             this.textVNRdes.TabIndex = 184;
             this.textVNRdes.TabStop = false;
             // 
-<<<<<<< HEAD
-=======
             // cboV_T087U_ANLUE
             // 
             this.cboV_T087U_ANLUE.AutoComplete = true;
@@ -2867,7 +2845,6 @@
             this.cboV_T087U_ANLUE.Size = new System.Drawing.Size(129, 21);
             this.cboV_T087U_ANLUE.TabIndex = 183;
             // 
->>>>>>> origin/master
             // textSupranumero
             // 
             this.textSupranumero.BackColor = System.Drawing.Color.Lavender;
@@ -2879,8 +2856,6 @@
             this.textSupranumero.TabIndex = 178;
             this.textSupranumero.TabStop = false;
             // 
-<<<<<<< HEAD
-=======
             // cboCMPid
             // 
             this.cboCMPid.AutoComplete = true;
@@ -2899,7 +2874,6 @@
             this.cboCMPid.Size = new System.Drawing.Size(129, 21);
             this.cboCMPid.TabIndex = 182;
             // 
->>>>>>> origin/master
             // textComponente
             // 
             this.textComponente.BackColor = System.Drawing.Color.Lavender;
@@ -2911,8 +2885,6 @@
             this.textComponente.TabIndex = 177;
             this.textComponente.TabStop = false;
             // 
-<<<<<<< HEAD
-=======
             // cboUBEid
             // 
             this.cboUBEid.AutoComplete = true;
@@ -2931,7 +2903,6 @@
             this.cboUBEid.Size = new System.Drawing.Size(129, 21);
             this.cboUBEid.TabIndex = 180;
             // 
->>>>>>> origin/master
             // textUbiElec
             // 
             this.textUbiElec.BackColor = System.Drawing.Color.Lavender;
@@ -2943,8 +2914,6 @@
             this.textUbiElec.TabIndex = 175;
             this.textUbiElec.TabStop = false;
             // 
-<<<<<<< HEAD
-=======
             // cboSEGMENT
             // 
             this.cboSEGMENT.AutoComplete = true;
@@ -2963,7 +2932,6 @@
             this.cboSEGMENT.Size = new System.Drawing.Size(129, 21);
             this.cboSEGMENT.TabIndex = 179;
             // 
->>>>>>> origin/master
             // textSegmento
             // 
             this.textSegmento.BackColor = System.Drawing.Color.Lavender;
@@ -3314,11 +3282,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1100, 545);
-=======
+
             this.ClientSize = new System.Drawing.Size(1017, 545);
->>>>>>> origin/master
             this.Controls.Add(this.cboKOSTL);
             this.Controls.Add(this.cboCSTid);
             this.Controls.Add(this.cboBUKRS);
