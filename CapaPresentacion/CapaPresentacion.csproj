@@ -66,6 +66,12 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="SegNetAdapter">
+      <HintPath>..\docs\Librerias\SegNetAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="ServicioUtilitarios">
+      <HintPath>..\docs\Librerias\ServicioUtilitarios.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />

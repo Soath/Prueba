@@ -25,6 +25,7 @@ namespace CapaPresentacion
         public string mACFid;
         public string Canul;
         public static Control anulado = new Control();
+        public static Control baja = new Control();
         public static BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
         private static FrmacfACFp_Activo_Fijo _Instancia;
 
@@ -58,6 +59,8 @@ namespace CapaPresentacion
             mostrar();
             CargarCombos();
             Anulado();
+            Baja();
+
             MostrarRegistro();
                
           
@@ -244,6 +247,27 @@ namespace CapaPresentacion
             anulado.BringToFront();
             anulado.Visible=false;
             }
+
+        private void Baja()
+        {
+
+            baja.Size = new Size(400, 400);
+            baja.BackColor = Color.Red;
+            GraphicsPath contorno = new GraphicsPath();
+            Matrix rotacion = new Matrix();
+            contorno.AddString("Baja", FontFamily.GenericSansSerif,
+            (int)FontStyle.Regular, 70, new Point(40, 0),
+            StringFormat.GenericDefault);
+            rotacion.Translate(0, 380);
+            rotacion.Rotate(-45);
+            contorno.Transform(rotacion);
+            baja.Region = new Region(contorno);
+            this.Controls.Add(baja);
+            baja.BringToFront();
+            baja.Visible = false;
+        }
+
+
 
         private void mostrar()
         {
@@ -935,12 +959,14 @@ namespace CapaPresentacion
                 CtxtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                 Canul = Convert.ToString(row["ACFAnulado"]);
                 CodigodeBarra();
+
                 if (String.IsNullOrEmpty(Canul))
                      {
                        anulado.Visible=false;
                      }
                 else
-                    if (Canul == "1") anulado.Visible = true; 
+                    if (Canul == "1") anulado.Visible = true;
+                    if (Canul == "2") baja.Visible = true; 
             }
 
             else
