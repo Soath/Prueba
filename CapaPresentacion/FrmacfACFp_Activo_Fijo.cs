@@ -443,6 +443,11 @@ namespace CapaPresentacion
             Actual(IdActi);
 
         }
+        private void FormularioImagen()
+        {
+            FormImagen.idacf = txtACFid.Text;
+            FormImagen.tipoacf = CtxtACFtipo_activo.Text;
+        }
         private void BotonImportar()
         {
             Form FrmExcel = new FrmExcel();
@@ -1280,7 +1285,9 @@ namespace CapaPresentacion
         private void toolStripImagen_Click(object sender, EventArgs e)
         {
             Form FormImagen = new FormImagen();
+            FormularioImagen();
             FormImagen.ShowDialog();
+            
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)

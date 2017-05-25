@@ -12,17 +12,26 @@ namespace CapaPresentacion
 {
     public partial class FormImagen : Form
     {
-        int numero = 1; 
+        int numero = 1;
+
         public FormImagen()
         {
             InitializeComponent();
 
         }
-
+        public static string idacf;
+        public static string tipoacf;
         private void FormImagen_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("AF_3567_" + numero + ".jpg");
-            label1.Text = "AF_3567_" + numero;
+            try
+            {
+                pictureBox1.Image = Image.FromFile(tipoacf + "_" + idacf + "_" + numero + ".jpg");
+                label1.Text = tipoacf + "_" + idacf + "_" + numero;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No existe Imagen");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -32,14 +41,14 @@ namespace CapaPresentacion
             {
                 if (numero > 1)
                 {
-                    pictureBox1.Image = Image.FromFile("AF_3567_" + numero + ".jpg");
-                    label1.Text = "AF_3567_" + numero;
+                    pictureBox1.Image = Image.FromFile(tipoacf + "_" + idacf + "_" + numero + ".jpg");
+                    label1.Text = tipoacf + "_" + idacf + "_" + numero;
                 }
             }
             catch (Exception ex)
             {
                 numero--;
-                label1.Text = "AF_3567_" + numero;
+                label1.Text = tipoacf + "_" + idacf + "_" + numero;
             }
         }
 
@@ -48,8 +57,8 @@ namespace CapaPresentacion
             if (numero > 1)
             {
                 numero--;
-                pictureBox1.Image = Image.FromFile("AF_3567_" + numero + ".jpg");
-                label1.Text = "AF_3567_" + numero;
+                pictureBox1.Image = Image.FromFile(tipoacf + "_" + idacf + "_" + numero + ".jpg");
+                label1.Text = tipoacf + "_" + idacf + "_" + numero;
             }
         }
 
