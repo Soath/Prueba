@@ -102,6 +102,7 @@ C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\RdlCompile.com
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.dll.config
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.dll
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
@@ -204,3 +205,7 @@ C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+=======
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\SegNetAdapter.dll
+C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\ServicioUtilitarios.dll
+>>>>>>> origin/master

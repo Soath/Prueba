@@ -13,14 +13,18 @@ namespace CapaPresentacion
 {
     public partial class FrmMain : Form
     {
-        ACFLOCT_LOCAL aCFLOCT_LOCAL;
         UserControl1 User1;
+
+        //public static SegNetAdapter.clsSeguridadNet gobjSeguridad = new SegNetAdapter.clsSeguridadNet;  
+        public static SegNetAdapter.frmLogin formu = new SegNetAdapter.frmLogin();
         
         public FrmMain()
         {
             String mensaje = NConexion.ChequearConexion();
+
             if (mensaje == "Y")
             {
+                formu.ShowDialog();
                 InitializeComponent();
                 Iniciar();
             }
