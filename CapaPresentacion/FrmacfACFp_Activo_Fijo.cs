@@ -333,6 +333,24 @@ namespace CapaPresentacion
             this.cboV_T087U_ANLUE.ValueMember = "V_T087U_ANLUE";
             this.cboV_T087U_ANLUE.DisplayMember = "V_T087U_ANLUE";
             this.cboV_T087U_ANLUE.SelectedIndex = -1;
+
+
+            // combos de Detalle
+            this.cboMARid.DataSource = NacfMARt_Marca.Mostrar();
+            this.cboMARid.ValueMember = "MARid";
+            this.cboMARid.SelectedIndex = 0;
+
+            this.cboESTid.DataSource = NacfESTt_Estado.Mostrar();
+            this.cboESTid.ValueMember = "ESTid";
+            this.cboESTid.SelectedIndex = 0;
+
+            this.cboMATid.DataSource = NacfMATt_Material.Mostrar();
+            this.cboMATid.ValueMember = "MATid";
+            this.cboMATid.SelectedIndex = 0;
+
+            this.cboUNMid.DataSource = NacfUNMt_Unimed.Mostrar();
+            this.cboUNMid.ValueMember = "UNMid";
+            this.cboUNMid.SelectedIndex = 0;
         }
         private void Top()
         {
