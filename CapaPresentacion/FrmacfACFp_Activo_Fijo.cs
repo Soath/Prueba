@@ -492,6 +492,22 @@ namespace CapaPresentacion
             textEmpresa.Enabled = false;
 
             //tabControl1.SelectedTab = tabPage2;
+
+            limpiar1();
+        }
+        private void limpiar1()
+        {
+            txtACFdepacuniif.Text = "0";
+            txtACFdepacutrib.Text = "0";
+            txtACFfcapitalizacion.Text = "0";
+            txtACFvutilniifanio.Text = "0";
+            txtACFfactorniif.Text = "0";
+            txtACFvutilniifdia.Text = "0";
+            txtACFvalorniif.Text = "0";
+            txtACFvutiltribanio.Text = "0";
+            txtACFvutiltribdia.Text = "0";
+            txtACFvalortrib.Text = "0";
+            txtACFfactortrib.Text = "0";
         }
 
         private void BotonEditar()
