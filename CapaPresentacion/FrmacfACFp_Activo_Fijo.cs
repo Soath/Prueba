@@ -651,7 +651,7 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
 
-            //InsertaRegistro1();
+            InsertaRegistro1();
         }
 
         // Insertar Datos en la tabla de Características.
