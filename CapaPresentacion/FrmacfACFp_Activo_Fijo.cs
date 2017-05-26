@@ -357,6 +357,24 @@ namespace CapaPresentacion
             this.cboV_T087U_ANLUE.ValueMember = "V_T087U_ANLUE";
             this.cboV_T087U_ANLUE.DisplayMember = "V_T087U_ANLUE";
             this.cboV_T087U_ANLUE.SelectedIndex = -1;
+
+
+            // combos de Detalle
+            this.cboMARid.DataSource = NacfMARt_Marca.Mostrar();
+            this.cboMARid.ValueMember = "MARid";
+            this.cboMARid.SelectedIndex = 0;
+
+            this.cboESTid.DataSource = NacfESTt_Estado.Mostrar();
+            this.cboESTid.ValueMember = "ESTid";
+            this.cboESTid.SelectedIndex = 0;
+
+            this.cboMATid.DataSource = NacfMATt_Material.Mostrar();
+            this.cboMATid.ValueMember = "MATid";
+            this.cboMATid.SelectedIndex = 0;
+
+            this.cboUNMid.DataSource = NacfUNMt_Unimed.Mostrar();
+            this.cboUNMid.ValueMember = "UNMid";
+            this.cboUNMid.SelectedIndex = 0;
         }
         private void Top()
         {
@@ -443,6 +461,11 @@ namespace CapaPresentacion
             Actual(IdActi);
 
         }
+        private void FormularioImagen()
+        {
+            FormImagen.idacf = txtACFid.Text;
+            FormImagen.tipoacf = CtxtACFtipo_activo.Text;
+        }
         private void BotonImportar()
         {
             Form FrmExcel = new FrmExcel();
@@ -469,6 +492,22 @@ namespace CapaPresentacion
             textEmpresa.Enabled = false;
 
             //tabControl1.SelectedTab = tabPage2;
+
+            limpiar1();
+        }
+        private void limpiar1()
+        {
+            txtACFdepacuniif.Text = "0";
+            txtACFdepacutrib.Text = "0";
+            txtACFfcapitalizacion.Text = "0";
+            txtACFvutilniifanio.Text = "0";
+            txtACFfactorniif.Text = "0";
+            txtACFvutilniifdia.Text = "0";
+            txtACFvalorniif.Text = "0";
+            txtACFvutiltribanio.Text = "0";
+            txtACFvutiltribdia.Text = "0";
+            txtACFvalortrib.Text = "0";
+            txtACFfactortrib.Text = "0";
         }
 
         private void BotonEditar()
@@ -1280,7 +1319,9 @@ namespace CapaPresentacion
         private void toolStripImagen_Click(object sender, EventArgs e)
         {
             Form FormImagen = new FormImagen();
+            FormularioImagen();
             FormImagen.ShowDialog();
+            
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
