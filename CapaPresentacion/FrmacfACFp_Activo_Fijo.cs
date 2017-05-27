@@ -362,19 +362,30 @@ namespace CapaPresentacion
             // combos de Detalle
             this.cboMARid.DataSource = NacfMARt_Marca.Mostrar();
             this.cboMARid.ValueMember = "MARid";
-            this.cboMARid.SelectedIndex = 0;
+            this.cboMARid.DisplayMember = "MARid";
+            this.cboMARid.SelectedIndex = -1;
 
             this.cboESTid.DataSource = NacfESTt_Estado.Mostrar();
             this.cboESTid.ValueMember = "ESTid";
-            this.cboESTid.SelectedIndex = 0;
+            this.cboESTid.DisplayMember = "ESTid";
+            this.cboESTid.SelectedIndex = -1;
 
             this.cboMATid.DataSource = NacfMATt_Material.Mostrar();
             this.cboMATid.ValueMember = "MATid";
-            this.cboMATid.SelectedIndex = 0;
+            this.cboMATid.DisplayMember = "MATid";
+            this.cboMATid.SelectedIndex = -1;
 
             this.cboUNMid.DataSource = NacfUNMt_Unimed.Mostrar();
             this.cboUNMid.ValueMember = "UNMid";
-            this.cboUNMid.SelectedIndex = 0;
+            this.cboUNMid.DisplayMember = "UNMid";
+            this.cboUNMid.SelectedIndex = -1;
+
+            this.cmbACFid_Padre.DataSource = NacfACFp_Activo_Fijo.Mostrar3();
+            this.cmbACFid_Padre.ValueMember = "ACFid";
+            this.cmbACFid_Padre.DisplayMember = "ACFid";
+            this.cmbACFid_Padre.SelectedIndex = -1;
+
+
         }
         private void Top()
         {
@@ -631,6 +642,7 @@ namespace CapaPresentacion
                     , cboV_T087U_ANLUE.SelectedValue.ToString()
                     , this.CtxtACFtipo_activo.Text
                     , ""
+                    , this.txtACFid.Text 
                     );
 
                 // Rta = NacfACFp_Activo_Fijo.Insertar(this.txtACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
@@ -801,6 +813,7 @@ namespace CapaPresentacion
                     , cboV_T087U_ANLUE.SelectedValue.ToString()
                     , this.CtxtACFtipo_activo.Text
                     , ""
+                    , this.txtACFid_Padre.Text 
                     );
 
                 //Rta = NacfACFp_Activo_Fijo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
@@ -997,11 +1010,14 @@ namespace CapaPresentacion
                 cboV_T087U_ANLUE.Text = Convert.ToString(row["V_T087U_ANLUE"]);
                 CtxtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                 Canul = Convert.ToString(row["ACFAnulado"]);
+                cmbACFid_Padre.Text = Convert.ToString(row["ACFid_Padre"]);
+
                 CodigodeBarra();
 
                 if (String.IsNullOrEmpty(Canul))
                      {
                        anulado.Visible=false;
+                       baja.Visible = false;
                      }
                 else
                     if (Canul == "1") anulado.Visible = true;
@@ -1505,6 +1521,23 @@ namespace CapaPresentacion
         {
             if (String.IsNullOrEmpty(txtCRSvalorautovaluo.Text))
                 txtACFdepacuniif.Text = "0";
+        }
+
+        private void tabPage7_Click(object sender, EventArgs e)
+        {
+
+            dataGridView1.DataSource=NacfACFp_Activo_Fijo.MostrarPadre(txtACFid.Text);
+
+        }
+
+        private void panelResultado_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

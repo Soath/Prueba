@@ -56,6 +56,7 @@ namespace CapaDatos
         private string sV_T087U_ANLUE;
         private string sACFtipo_activo;
         private string cACFAnulado;
+        private string cACFid_Padre;
 
         public string ACFid
         {
@@ -286,7 +287,14 @@ namespace CapaDatos
         {
             get { return cACFAnulado; }
             set { cACFAnulado = value; }
+        }
+
+        public string ACFid_Padre
+        {
+            get { return cACFid_Padre; }
+            set { cACFid_Padre = value; }
         }	
+
 
 
         //Constructor vacío
@@ -919,6 +927,12 @@ namespace CapaDatos
             ParACFAnulado.Value = cACFAnulado;
             SqlCmd.Parameters.Add(ParACFAnulado);
 
+            SqlParameter ParACFid_Padre = new SqlParameter();
+            ParACFid_Padre.ParameterName = "@cACFid_Padre";
+            ParACFid_Padre.SqlDbType = SqlDbType.Int;
+            ParACFid_Padre.Value = Convert.ToInt32(cACFid_Padre);
+            SqlCmd.Parameters.Add(ParACFid_Padre);
+
 
 
             //
@@ -1268,6 +1282,12 @@ namespace CapaDatos
                 ParACFAnulado.SqlDbType = SqlDbType.Char;
                 ParACFAnulado.Value = cACFAnulado;
                 SqlCmd.Parameters.Add(ParACFAnulado);
+
+                SqlParameter ParACFid_Padre = new SqlParameter();
+                ParACFid_Padre.ParameterName = "@cACFid_Padre";
+                ParACFid_Padre.SqlDbType = SqlDbType.Int;
+                ParACFid_Padre.Value = Convert.ToInt32(cACFid_Padre);
+                SqlCmd.Parameters.Add(ParACFid_Padre);
 
 
                 //Ejecutamos nuestro comando
@@ -1621,6 +1641,40 @@ namespace CapaDatos
         return DtResultado;
 
 	}
+
+    public DataTable MostrarPadre(string CMPid)
+    {
+        DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
+        SqlConnection SqlCon = new SqlConnection();
+
+        try
+        {
+            //Codigo
+            SqlCon.ConnectionString = DConexion.CnBDActivo;
+            SqlCommand SqlCmd = new SqlCommand();
+            SqlCmd.Connection = SqlCon;
+            SqlCmd.CommandText = "usp_S_acfACFp_Activo_FijoPadre";
+            SqlCmd.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter ParCMPid = new SqlParameter();
+            ParCMPid.ParameterName = "@ACFid_Padre";
+            ParCMPid.SqlDbType = SqlDbType.Int;
+            ParCMPid.Value = CMPid;
+            SqlCmd.Parameters.Add(ParCMPid);
+
+            SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+            SqlDat.Fill(DtResultado);
+        }
+
+        catch (Exception ex)
+        {
+            DtResultado = null;
+        }
+        return DtResultado;
+    }
+
+
+
 
     public DataTable MostrarRegistro(String ACFdescripcion)
     {

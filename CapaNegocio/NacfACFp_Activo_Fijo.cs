@@ -59,7 +59,8 @@ namespace CapaNegocio
          string dtACFfechacomprobante,    
          string sV_T087U_ANLUE,
          string sACFtipo_activo,
-         string cACFAnulado
+         string cACFAnulado,
+         string cACFid_Padre
          )         
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
@@ -109,6 +110,7 @@ namespace CapaNegocio
             Obj.V_T087U_ANLUE = sV_T087U_ANLUE;
             Obj.ACFtipo_activo = sACFtipo_activo;
             Obj.ACFAnulado = cACFAnulado;
+            Obj.ACFid_Padre = cACFid_Padre;
             return Obj.Insertar(Obj);
         }
         public static string Insertar2(string sACFdescripcion)
@@ -166,7 +168,8 @@ namespace CapaNegocio
          string dtACFfechacomprobante,
          string sV_T087U_ANLUE,
          string sACFtipo_activo,
-         string cACFAnulado
+         string cACFAnulado,
+         string cACFid_Padre
          )  
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
@@ -216,6 +219,7 @@ namespace CapaNegocio
             Obj.V_T087U_ANLUE = sV_T087U_ANLUE;
             Obj.ACFtipo_activo = sACFtipo_activo;
             Obj.ACFAnulado = cACFAnulado;
+            Obj.ACFid_Padre = cACFid_Padre;
             return Obj.Editar(Obj);
         }
 
@@ -349,6 +353,12 @@ namespace CapaNegocio
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
+
+        public static DataTable MostrarPadre(string CMPid)
+        {
+            return new DacfACFp_Activo_Fijo().MostrarPadre(CMPid);
+        }
+
 
         public static DataTable Actual(string ACFid)
         {

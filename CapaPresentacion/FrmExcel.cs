@@ -103,7 +103,8 @@ namespace CapaPresentacion
        Convert.ToString(row.Cells[34].Value)  ,//ACFfechacomprobante
        Convert.ToString(row.Cells[135].Value) ,  //Se trajo del excel de la tabla de SAP V_T087U_ANLUE
        Convert.ToString(row.Cells[2].Value),  //Tipo Activo  
-       Convert.ToString(row.Cells[1].Value)  
+       Convert.ToString(row.Cells[1].Value),
+       " "
 
          );
                     if (Rta.Equals("OK"))
