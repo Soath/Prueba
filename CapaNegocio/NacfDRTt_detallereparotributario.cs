@@ -116,6 +116,12 @@ namespace CapaNegocio
              Obj.RTRcodigo = mRTRcodigo;
              return Obj.Eliminar(Obj);
          }
+         public static string Copiar(string RTRcodigo)
+         {
+             DAcfDRTt_detallereparotributario Obj = new DAcfDRTt_detallereparotributario();
+             Obj.RTRcodigo = RTRcodigo;
+             return Obj.Copiar(Obj);
+         }
          //------------------------------------------------------------------
          //M�todo Mostrar que llama al m�todo Mostrar de la clase DPostres
          //de la CapaDatos

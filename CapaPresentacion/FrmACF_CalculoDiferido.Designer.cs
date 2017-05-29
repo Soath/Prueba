@@ -66,6 +66,7 @@
             this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
             this.txtPDFestado = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.tsProcesar = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -290,7 +291,8 @@
             this.toolStripPrimero,
             this.toolStripAnterior,
             this.toolStripSiguiente,
-            this.toolStripUltimo});
+            this.toolStripUltimo,
+            this.tsProcesar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(714, 62);
@@ -447,6 +449,19 @@
             this.label6.TabIndex = 212;
             this.label6.Text = "1 = Baja         2 = Anulado";
             // 
+            // tsProcesar
+            // 
+            this.tsProcesar.Image = ((System.Drawing.Image)(resources.GetObject("tsProcesar.Image")));
+            this.tsProcesar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tsProcesar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsProcesar.Name = "tsProcesar";
+            this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsProcesar.Size = new System.Drawing.Size(56, 35);
+            this.tsProcesar.Text = "Procesar";
+            this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsProcesar.Click += new System.EventHandler(this.tsProcesar_Click);
+            // 
             // FrmACF_CalculoDiferido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -522,5 +537,6 @@
         private System.Windows.Forms.ToolStripButton toolStripUltimo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox txtPDFestado;
+        private System.Windows.Forms.ToolStripButton tsProcesar;
     }
 }

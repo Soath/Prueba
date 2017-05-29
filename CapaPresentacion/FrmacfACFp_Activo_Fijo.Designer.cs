@@ -68,6 +68,7 @@
             this.dtpACFfechacomprobante = new System.Windows.Forms.DateTimePicker();
             this.dtpACFfechanotaingreso = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cboBLART = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textDoc = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.textProveedor = new System.Windows.Forms.TextBox();
@@ -75,6 +76,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtACFcomprobante = new System.Windows.Forms.TextBox();
+            this.cboLIFNR = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtACFordencompra = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.textEmpresa = new System.Windows.Forms.TextBox();
@@ -225,7 +227,15 @@
             this.lblCRSnumeropredio = new System.Windows.Forms.Label();
             this.lblCRSlote = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cboUNMid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.textUnidad = new System.Windows.Forms.TextBox();
+            this.cboMATid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.textMaterial = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.cboESTid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.textEstado = new System.Windows.Forms.TextBox();
+            this.cboMARid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.textMarca = new System.Windows.Forms.TextBox();
             this.lblCRSmodelo = new System.Windows.Forms.Label();
             this.lblCRSserie = new System.Windows.Forms.Label();
             this.lblESTid = new System.Windows.Forms.Label();
@@ -243,17 +253,25 @@
             this.lblMATid = new System.Windows.Forms.Label();
             this.lblCRScolor = new System.Windows.Forms.Label();
             this.tabPage0 = new System.Windows.Forms.TabPage();
+            this.cmbACFid_Padre = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.txtACFid_Padre = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelResultado = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.CtxtACFtipo_activo = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textClase = new System.Windows.Forms.TextBox();
+            this.cboANLKL = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.txtACFobservacion = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboPERNR = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textPersonal = new System.Windows.Forms.TextBox();
             this.textMotivoM = new System.Windows.Forms.TextBox();
+            this.cboMVMid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.cboAMBid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textAmbiente = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -261,10 +279,15 @@
             this.dtpACFfmovimiento = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.cboVNRid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textVNRdes = new System.Windows.Forms.TextBox();
+            this.cboV_T087U_ANLUE = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textSupranumero = new System.Windows.Forms.TextBox();
+            this.cboCMPid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textComponente = new System.Windows.Forms.TextBox();
+            this.cboUBEid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textUbiElec = new System.Windows.Forms.TextBox();
+            this.cboSEGMENT = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textSegmento = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -274,38 +297,15 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtACFid_Padre = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TIpo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaIncorp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Anula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Padre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textEstado = new System.Windows.Forms.TextBox();
-            this.textMarca = new System.Windows.Forms.TextBox();
-            this.textUnidad = new System.Windows.Forms.TextBox();
-            this.textMaterial = new System.Windows.Forms.TextBox();
             this.cboKOSTL = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboCSTid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboBUKRS = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboBLART = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboLIFNR = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cmbACFid_Padre = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.CtxtACFtipo_activo = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboANLKL = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboPERNR = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboMVMid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboAMBid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboVNRid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboV_T087U_ANLUE = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboCMPid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboUBEid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboSEGMENT = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboUNMid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboMATid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboESTid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboMARid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -350,7 +350,7 @@
             this.toolStripImagen});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1433, 82);
+            this.toolStrip1.Size = new System.Drawing.Size(1356, 82);
             this.toolStrip1.TabIndex = 124;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -630,10 +630,10 @@
             // 
             // txtACFnotaingreso
             // 
+            this.txtACFnotaingreso.BackColor = System.Drawing.SystemColors.Window;
             this.txtACFnotaingreso.Location = new System.Drawing.Point(203, 170);
             this.txtACFnotaingreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtACFnotaingreso.Name = "txtACFnotaingreso";
-            this.txtACFnotaingreso.ReadOnly = true;
             this.txtACFnotaingreso.Size = new System.Drawing.Size(185, 22);
             this.txtACFnotaingreso.TabIndex = 16;
             this.txtACFnotaingreso.TabStop = false;
@@ -663,7 +663,7 @@
             this.dtpACFfincorporacion.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpACFfincorporacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpACFfincorporacion.Location = new System.Drawing.Point(203, 229);
-            this.dtpACFfincorporacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpACFfincorporacion.Margin = new System.Windows.Forms.Padding(4);
             this.dtpACFfincorporacion.Name = "dtpACFfincorporacion";
             this.dtpACFfincorporacion.Size = new System.Drawing.Size(185, 22);
             this.dtpACFfincorporacion.TabIndex = 152;
@@ -704,7 +704,7 @@
             this.dtpACFfechacomprobante.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpACFfechacomprobante.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpACFfechacomprobante.Location = new System.Drawing.Point(203, 142);
-            this.dtpACFfechacomprobante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpACFfechacomprobante.Margin = new System.Windows.Forms.Padding(4);
             this.dtpACFfechacomprobante.Name = "dtpACFfechacomprobante";
             this.dtpACFfechacomprobante.Size = new System.Drawing.Size(185, 22);
             this.dtpACFfechacomprobante.TabIndex = 149;
@@ -714,7 +714,7 @@
             this.dtpACFfechanotaingreso.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpACFfechanotaingreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpACFfechanotaingreso.Location = new System.Drawing.Point(203, 198);
-            this.dtpACFfechanotaingreso.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dtpACFfechanotaingreso.Margin = new System.Windows.Forms.Padding(5);
             this.dtpACFfechanotaingreso.Name = "dtpACFfechanotaingreso";
             this.dtpACFfechanotaingreso.Size = new System.Drawing.Size(185, 22);
             this.dtpACFfechanotaingreso.TabIndex = 154;
@@ -744,13 +744,32 @@
             this.groupBox2.Controls.Add(this.txtACFobra);
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Location = new System.Drawing.Point(12, 204);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(400, 351);
             this.groupBox2.TabIndex = 159;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Adquisición";
+            // 
+            // cboBLART
+            // 
+            this.cboBLART.AutoComplete = true;
+            this.cboBLART.AutoDropdown = true;
+            this.cboBLART.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboBLART.BackColorOdd = System.Drawing.Color.White;
+            this.cboBLART.ColumnNames = "";
+            this.cboBLART.ColumnWidthDefault = 75;
+            this.cboBLART.ColumnWidths = "100;150;200";
+            this.cboBLART.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboBLART.FormattingEnabled = true;
+            this.cboBLART.LinkedColumnIndex = 1;
+            this.cboBLART.LinkedTextBox = this.textDoc;
+            this.cboBLART.Location = new System.Drawing.Point(147, 79);
+            this.cboBLART.Margin = new System.Windows.Forms.Padding(4);
+            this.cboBLART.Name = "cboBLART";
+            this.cboBLART.Size = new System.Drawing.Size(69, 23);
+            this.cboBLART.TabIndex = 173;
             // 
             // textDoc
             // 
@@ -789,7 +808,7 @@
             this.dtpACFfechaordencompra.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpACFfechaordencompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpACFfechaordencompra.Location = new System.Drawing.Point(203, 49);
-            this.dtpACFfechaordencompra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpACFfechaordencompra.Margin = new System.Windows.Forms.Padding(4);
             this.dtpACFfechaordencompra.Name = "dtpACFfechaordencompra";
             this.dtpACFfechaordencompra.Size = new System.Drawing.Size(185, 22);
             this.dtpACFfechaordencompra.TabIndex = 168;
@@ -821,6 +840,25 @@
             this.txtACFcomprobante.Name = "txtACFcomprobante";
             this.txtACFcomprobante.Size = new System.Drawing.Size(185, 22);
             this.txtACFcomprobante.TabIndex = 165;
+            // 
+            // cboLIFNR
+            // 
+            this.cboLIFNR.AutoComplete = true;
+            this.cboLIFNR.AutoDropdown = true;
+            this.cboLIFNR.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboLIFNR.BackColorOdd = System.Drawing.Color.White;
+            this.cboLIFNR.ColumnNames = "";
+            this.cboLIFNR.ColumnWidthDefault = 75;
+            this.cboLIFNR.ColumnWidths = "100;150;200";
+            this.cboLIFNR.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboLIFNR.FormattingEnabled = true;
+            this.cboLIFNR.LinkedColumnIndex = 1;
+            this.cboLIFNR.LinkedTextBox = this.textProveedor;
+            this.cboLIFNR.Location = new System.Drawing.Point(203, 286);
+            this.cboLIFNR.Margin = new System.Windows.Forms.Padding(4);
+            this.cboLIFNR.Name = "cboLIFNR";
+            this.cboLIFNR.Size = new System.Drawing.Size(185, 23);
+            this.cboLIFNR.TabIndex = 164;
             // 
             // txtACFordencompra
             // 
@@ -916,9 +954,9 @@
             this.groupBox3.Controls.Add(this.txtACFvutiltribanio);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Location = new System.Drawing.Point(7, 10);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(861, 350);
             this.groupBox3.TabIndex = 161;
             this.groupBox3.TabStop = false;
@@ -1212,7 +1250,7 @@
             this.tabPage5.Controls.Add(this.lblCRScapacidad);
             this.tabPage5.Controls.Add(this.lblCRSresolucion);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(995, 514);
             this.tabPage5.TabIndex = 4;
@@ -1444,7 +1482,7 @@
             this.tabPage4.Controls.Add(this.lblCRSvehinscripcion);
             this.tabPage4.Controls.Add(this.lblCRSvehexpediente);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(995, 514);
             this.tabPage4.TabIndex = 3;
@@ -1455,7 +1493,7 @@
             // 
             this.dtpCRSvehinscripcion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpCRSvehinscripcion.Location = new System.Drawing.Point(233, 144);
-            this.dtpCRSvehinscripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpCRSvehinscripcion.Margin = new System.Windows.Forms.Padding(4);
             this.dtpCRSvehinscripcion.Name = "dtpCRSvehinscripcion";
             this.dtpCRSvehinscripcion.Size = new System.Drawing.Size(227, 22);
             this.dtpCRSvehinscripcion.TabIndex = 183;
@@ -1693,7 +1731,7 @@
             this.tabPage3.Controls.Add(this.lblCRSutmy);
             this.tabPage3.Controls.Add(this.lblCRSutmx);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(995, 514);
             this.tabPage3.TabIndex = 2;
@@ -1703,7 +1741,7 @@
             // btnUbicacion_electrica
             // 
             this.btnUbicacion_electrica.Location = new System.Drawing.Point(671, 220);
-            this.btnUbicacion_electrica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUbicacion_electrica.Margin = new System.Windows.Forms.Padding(4);
             this.btnUbicacion_electrica.Name = "btnUbicacion_electrica";
             this.btnUbicacion_electrica.Size = new System.Drawing.Size(155, 46);
             this.btnUbicacion_electrica.TabIndex = 72;
@@ -1920,7 +1958,7 @@
             // 
             this.dtpCRSfadqpredio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpCRSfadqpredio.Location = new System.Drawing.Point(815, 47);
-            this.dtpCRSfadqpredio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpCRSfadqpredio.Margin = new System.Windows.Forms.Padding(4);
             this.dtpCRSfadqpredio.Name = "dtpCRSfadqpredio";
             this.dtpCRSfadqpredio.Size = new System.Drawing.Size(120, 22);
             this.dtpCRSfadqpredio.TabIndex = 176;
@@ -1929,7 +1967,7 @@
             // 
             this.dtpCRSfinscpredio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpCRSfinscpredio.Location = new System.Drawing.Point(452, 124);
-            this.dtpCRSfinscpredio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpCRSfinscpredio.Margin = new System.Windows.Forms.Padding(4);
             this.dtpCRSfinscpredio.Name = "dtpCRSfinscpredio";
             this.dtpCRSfinscpredio.Size = new System.Drawing.Size(111, 22);
             this.dtpCRSfinscpredio.TabIndex = 177;
@@ -1937,7 +1975,7 @@
             // btnTerreno_Edificaciones
             // 
             this.btnTerreno_Edificaciones.Location = new System.Drawing.Point(611, 272);
-            this.btnTerreno_Edificaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTerreno_Edificaciones.Margin = new System.Windows.Forms.Padding(4);
             this.btnTerreno_Edificaciones.Name = "btnTerreno_Edificaciones";
             this.btnTerreno_Edificaciones.Size = new System.Drawing.Size(155, 58);
             this.btnTerreno_Edificaciones.TabIndex = 71;
@@ -2373,6 +2411,66 @@
             this.tabPage1.Text = "Características Generales";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // cboUNMid
+            // 
+            this.cboUNMid.AutoComplete = false;
+            this.cboUNMid.AutoDropdown = false;
+            this.cboUNMid.BackColorEven = System.Drawing.Color.White;
+            this.cboUNMid.BackColorOdd = System.Drawing.Color.White;
+            this.cboUNMid.ColumnNames = "";
+            this.cboUNMid.ColumnWidthDefault = 75;
+            this.cboUNMid.ColumnWidths = "";
+            this.cboUNMid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboUNMid.FormattingEnabled = true;
+            this.cboUNMid.LinkedColumnIndex = 1;
+            this.cboUNMid.LinkedTextBox = this.textUnidad;
+            this.cboUNMid.Location = new System.Drawing.Point(716, 155);
+            this.cboUNMid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboUNMid.Name = "cboUNMid";
+            this.cboUNMid.Size = new System.Drawing.Size(65, 23);
+            this.cboUNMid.TabIndex = 182;
+            // 
+            // textUnidad
+            // 
+            this.textUnidad.BackColor = System.Drawing.Color.Lavender;
+            this.textUnidad.Location = new System.Drawing.Point(801, 155);
+            this.textUnidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textUnidad.Name = "textUnidad";
+            this.textUnidad.ReadOnly = true;
+            this.textUnidad.Size = new System.Drawing.Size(163, 22);
+            this.textUnidad.TabIndex = 179;
+            this.textUnidad.TabStop = false;
+            // 
+            // cboMATid
+            // 
+            this.cboMATid.AutoComplete = false;
+            this.cboMATid.AutoDropdown = false;
+            this.cboMATid.BackColorEven = System.Drawing.Color.White;
+            this.cboMATid.BackColorOdd = System.Drawing.Color.White;
+            this.cboMATid.ColumnNames = "";
+            this.cboMATid.ColumnWidthDefault = 75;
+            this.cboMATid.ColumnWidths = "";
+            this.cboMATid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboMATid.FormattingEnabled = true;
+            this.cboMATid.LinkedColumnIndex = 1;
+            this.cboMATid.LinkedTextBox = this.textMaterial;
+            this.cboMATid.Location = new System.Drawing.Point(716, 59);
+            this.cboMATid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboMATid.Name = "cboMATid";
+            this.cboMATid.Size = new System.Drawing.Size(65, 23);
+            this.cboMATid.TabIndex = 181;
+            // 
+            // textMaterial
+            // 
+            this.textMaterial.BackColor = System.Drawing.Color.Lavender;
+            this.textMaterial.Location = new System.Drawing.Point(801, 57);
+            this.textMaterial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textMaterial.Name = "textMaterial";
+            this.textMaterial.ReadOnly = true;
+            this.textMaterial.Size = new System.Drawing.Size(163, 22);
+            this.textMaterial.TabIndex = 180;
+            this.textMaterial.TabStop = false;
+            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.cboESTid);
@@ -2395,10 +2493,71 @@
             this.groupBox6.TabIndex = 172;
             this.groupBox6.TabStop = false;
             // 
+            // cboESTid
+            // 
+            this.cboESTid.AutoComplete = false;
+            this.cboESTid.AutoDropdown = false;
+            this.cboESTid.BackColorEven = System.Drawing.Color.White;
+            this.cboESTid.BackColorOdd = System.Drawing.Color.White;
+            this.cboESTid.ColumnNames = "";
+            this.cboESTid.ColumnWidthDefault = 75;
+            this.cboESTid.ColumnWidths = "";
+            this.cboESTid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboESTid.FormattingEnabled = true;
+            this.cboESTid.LinkedColumnIndex = 1;
+            this.cboESTid.LinkedTextBox = this.textEstado;
+            this.cboESTid.Location = new System.Drawing.Point(212, 116);
+            this.cboESTid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboESTid.Name = "cboESTid";
+            this.cboESTid.Size = new System.Drawing.Size(55, 23);
+            this.cboESTid.TabIndex = 180;
+            // 
+            // textEstado
+            // 
+            this.textEstado.BackColor = System.Drawing.Color.Lavender;
+            this.textEstado.Location = new System.Drawing.Point(285, 118);
+            this.textEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textEstado.Name = "textEstado";
+            this.textEstado.ReadOnly = true;
+            this.textEstado.Size = new System.Drawing.Size(163, 22);
+            this.textEstado.TabIndex = 177;
+            this.textEstado.TabStop = false;
+            this.textEstado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // cboMARid
+            // 
+            this.cboMARid.AutoComplete = false;
+            this.cboMARid.AutoDropdown = false;
+            this.cboMARid.BackColorEven = System.Drawing.Color.White;
+            this.cboMARid.BackColorOdd = System.Drawing.Color.White;
+            this.cboMARid.ColumnNames = "";
+            this.cboMARid.ColumnWidthDefault = 75;
+            this.cboMARid.ColumnWidths = "";
+            this.cboMARid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboMARid.FormattingEnabled = true;
+            this.cboMARid.LinkedColumnIndex = 1;
+            this.cboMARid.LinkedTextBox = this.textMarca;
+            this.cboMARid.Location = new System.Drawing.Point(212, 63);
+            this.cboMARid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboMARid.Name = "cboMARid";
+            this.cboMARid.Size = new System.Drawing.Size(55, 23);
+            this.cboMARid.TabIndex = 179;
+            // 
+            // textMarca
+            // 
+            this.textMarca.BackColor = System.Drawing.Color.Lavender;
+            this.textMarca.Location = new System.Drawing.Point(285, 62);
+            this.textMarca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textMarca.Name = "textMarca";
+            this.textMarca.ReadOnly = true;
+            this.textMarca.Size = new System.Drawing.Size(163, 22);
+            this.textMarca.TabIndex = 178;
+            this.textMarca.TabStop = false;
+            // 
             // lblCRSmodelo
             // 
             this.lblCRSmodelo.AutoSize = true;
-            this.lblCRSmodelo.Location = new System.Drawing.Point(29, 195);
+            this.lblCRSmodelo.Location = new System.Drawing.Point(29, 194);
             this.lblCRSmodelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCRSmodelo.Name = "lblCRSmodelo";
             this.lblCRSmodelo.Size = new System.Drawing.Size(54, 17);
@@ -2408,7 +2567,7 @@
             // lblCRSserie
             // 
             this.lblCRSserie.AutoSize = true;
-            this.lblCRSserie.Location = new System.Drawing.Point(29, 168);
+            this.lblCRSserie.Location = new System.Drawing.Point(29, 167);
             this.lblCRSserie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCRSserie.Name = "lblCRSserie";
             this.lblCRSserie.Size = new System.Drawing.Size(41, 17);
@@ -2563,10 +2722,52 @@
             this.tabPage0.Text = "Ubicacion Actual";
             this.tabPage0.UseVisualStyleBackColor = true;
             // 
+            // cmbACFid_Padre
+            // 
+            this.cmbACFid_Padre.AutoComplete = false;
+            this.cmbACFid_Padre.AutoDropdown = false;
+            this.cmbACFid_Padre.BackColorEven = System.Drawing.Color.White;
+            this.cmbACFid_Padre.BackColorOdd = System.Drawing.Color.White;
+            this.cmbACFid_Padre.ColumnNames = "";
+            this.cmbACFid_Padre.ColumnWidthDefault = 75;
+            this.cmbACFid_Padre.ColumnWidths = "";
+            this.cmbACFid_Padre.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbACFid_Padre.FormattingEnabled = true;
+            this.cmbACFid_Padre.LinkedColumnIndex = 1;
+            this.cmbACFid_Padre.LinkedTextBox = this.txtACFid_Padre;
+            this.cmbACFid_Padre.Location = new System.Drawing.Point(475, 423);
+            this.cmbACFid_Padre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbACFid_Padre.Name = "cmbACFid_Padre";
+            this.cmbACFid_Padre.Size = new System.Drawing.Size(121, 23);
+            this.cmbACFid_Padre.TabIndex = 169;
+            this.cmbACFid_Padre.Visible = false;
+            // 
+            // txtACFid_Padre
+            // 
+            this.txtACFid_Padre.Location = new System.Drawing.Point(475, 452);
+            this.txtACFid_Padre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtACFid_Padre.Name = "txtACFid_Padre";
+            this.txtACFid_Padre.ReadOnly = true;
+            this.txtACFid_Padre.Size = new System.Drawing.Size(399, 22);
+            this.txtACFid_Padre.TabIndex = 167;
+            this.txtACFid_Padre.TabStop = false;
+            this.txtACFid_Padre.Visible = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(473, 406);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(88, 17);
+            this.label23.TabIndex = 168;
+            this.label23.Text = "Activo Padre";
+            this.label23.Visible = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(762, 406);
+            this.label1.Location = new System.Drawing.Point(763, 406);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 17);
@@ -2592,13 +2793,37 @@
             this.groupBox5.Controls.Add(this.txtACFobservacion);
             this.groupBox5.Controls.Add(this.label21);
             this.groupBox5.Location = new System.Drawing.Point(4, 28);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(436, 190);
             this.groupBox5.TabIndex = 164;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Estado Actual";
+            // 
+            // CtxtACFtipo_activo
+            // 
+            this.CtxtACFtipo_activo.AutoComplete = true;
+            this.CtxtACFtipo_activo.AutoDropdown = true;
+            this.CtxtACFtipo_activo.BackColorEven = System.Drawing.Color.Lavender;
+            this.CtxtACFtipo_activo.BackColorOdd = System.Drawing.Color.White;
+            this.CtxtACFtipo_activo.ColumnNames = "";
+            this.CtxtACFtipo_activo.ColumnWidthDefault = 75;
+            this.CtxtACFtipo_activo.ColumnWidths = "100;150;200";
+            this.CtxtACFtipo_activo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.CtxtACFtipo_activo.FormattingEnabled = true;
+            this.CtxtACFtipo_activo.Items.AddRange(new object[] {
+            "NC",
+            "AF",
+            "NC",
+            "AF"});
+            this.CtxtACFtipo_activo.LinkedColumnIndex = 1;
+            this.CtxtACFtipo_activo.LinkedTextBox = this.textClase;
+            this.CtxtACFtipo_activo.Location = new System.Drawing.Point(215, 20);
+            this.CtxtACFtipo_activo.Margin = new System.Windows.Forms.Padding(4);
+            this.CtxtACFtipo_activo.Name = "CtxtACFtipo_activo";
+            this.CtxtACFtipo_activo.Size = new System.Drawing.Size(69, 23);
+            this.CtxtACFtipo_activo.TabIndex = 175;
             // 
             // textClase
             // 
@@ -2610,6 +2835,25 @@
             this.textClase.Size = new System.Drawing.Size(380, 22);
             this.textClase.TabIndex = 173;
             this.textClase.TabStop = false;
+            // 
+            // cboANLKL
+            // 
+            this.cboANLKL.AutoComplete = true;
+            this.cboANLKL.AutoDropdown = true;
+            this.cboANLKL.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboANLKL.BackColorOdd = System.Drawing.Color.White;
+            this.cboANLKL.ColumnNames = "";
+            this.cboANLKL.ColumnWidthDefault = 75;
+            this.cboANLKL.ColumnWidths = "100;150;200";
+            this.cboANLKL.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboANLKL.FormattingEnabled = true;
+            this.cboANLKL.LinkedColumnIndex = 1;
+            this.cboANLKL.LinkedTextBox = this.textClase;
+            this.cboANLKL.Location = new System.Drawing.Point(213, 52);
+            this.cboANLKL.Margin = new System.Windows.Forms.Padding(4);
+            this.cboANLKL.Name = "cboANLKL";
+            this.cboANLKL.Size = new System.Drawing.Size(185, 23);
+            this.cboANLKL.TabIndex = 174;
             // 
             // label22
             // 
@@ -2664,13 +2908,32 @@
             this.groupBox1.Controls.Add(this.dtpACFfmovimiento);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Location = new System.Drawing.Point(7, 231);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(433, 255);
             this.groupBox1.TabIndex = 163;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ubicación";
+            // 
+            // cboPERNR
+            // 
+            this.cboPERNR.AutoComplete = true;
+            this.cboPERNR.AutoDropdown = true;
+            this.cboPERNR.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboPERNR.BackColorOdd = System.Drawing.Color.White;
+            this.cboPERNR.ColumnNames = "";
+            this.cboPERNR.ColumnWidthDefault = 75;
+            this.cboPERNR.ColumnWidths = "100;150;200";
+            this.cboPERNR.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboPERNR.FormattingEnabled = true;
+            this.cboPERNR.LinkedColumnIndex = 1;
+            this.cboPERNR.LinkedTextBox = this.textPersonal;
+            this.cboPERNR.Location = new System.Drawing.Point(211, 175);
+            this.cboPERNR.Margin = new System.Windows.Forms.Padding(4);
+            this.cboPERNR.Name = "cboPERNR";
+            this.cboPERNR.Size = new System.Drawing.Size(185, 23);
+            this.cboPERNR.TabIndex = 181;
             // 
             // textPersonal
             // 
@@ -2693,6 +2956,45 @@
             this.textMotivoM.Size = new System.Drawing.Size(380, 22);
             this.textMotivoM.TabIndex = 179;
             this.textMotivoM.TabStop = false;
+            // 
+            // cboMVMid
+            // 
+            this.cboMVMid.AutoComplete = true;
+            this.cboMVMid.AutoDropdown = true;
+            this.cboMVMid.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboMVMid.BackColorOdd = System.Drawing.Color.White;
+            this.cboMVMid.ColumnNames = "";
+            this.cboMVMid.ColumnWidthDefault = 75;
+            this.cboMVMid.ColumnWidths = "100;150;200";
+            this.cboMVMid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboMVMid.FormattingEnabled = true;
+            this.cboMVMid.LinkedColumnIndex = 2;
+            this.cboMVMid.LinkedTextBox = this.textMotivoM;
+            this.cboMVMid.Location = new System.Drawing.Point(212, 118);
+            this.cboMVMid.Margin = new System.Windows.Forms.Padding(4);
+            this.cboMVMid.MaxDropDownItems = 10;
+            this.cboMVMid.Name = "cboMVMid";
+            this.cboMVMid.Size = new System.Drawing.Size(185, 23);
+            this.cboMVMid.TabIndex = 178;
+            // 
+            // cboAMBid
+            // 
+            this.cboAMBid.AutoComplete = true;
+            this.cboAMBid.AutoDropdown = true;
+            this.cboAMBid.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboAMBid.BackColorOdd = System.Drawing.Color.White;
+            this.cboAMBid.ColumnNames = "";
+            this.cboAMBid.ColumnWidthDefault = 75;
+            this.cboAMBid.ColumnWidths = "100;150;200";
+            this.cboAMBid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboAMBid.FormattingEnabled = true;
+            this.cboAMBid.LinkedColumnIndex = 2;
+            this.cboAMBid.LinkedTextBox = this.textAmbiente;
+            this.cboAMBid.Location = new System.Drawing.Point(211, 23);
+            this.cboAMBid.Margin = new System.Windows.Forms.Padding(4);
+            this.cboAMBid.Name = "cboAMBid";
+            this.cboAMBid.Size = new System.Drawing.Size(185, 23);
+            this.cboAMBid.TabIndex = 177;
             // 
             // textAmbiente
             // 
@@ -2740,7 +3042,7 @@
             this.dtpACFfmovimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpACFfmovimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpACFfmovimiento.Location = new System.Drawing.Point(211, 87);
-            this.dtpACFfmovimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpACFfmovimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtpACFfmovimiento.Name = "dtpACFfmovimiento";
             this.dtpACFfmovimiento.Size = new System.Drawing.Size(185, 22);
             this.dtpACFfmovimiento.TabIndex = 156;
@@ -2773,13 +3075,32 @@
             this.groupBox4.Controls.Add(this.label40);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Location = new System.Drawing.Point(464, 28);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(409, 370);
             this.groupBox4.TabIndex = 162;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ubicación Electrica";
+            // 
+            // cboVNRid
+            // 
+            this.cboVNRid.AutoComplete = true;
+            this.cboVNRid.AutoDropdown = true;
+            this.cboVNRid.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboVNRid.BackColorOdd = System.Drawing.Color.White;
+            this.cboVNRid.ColumnNames = "";
+            this.cboVNRid.ColumnWidthDefault = 75;
+            this.cboVNRid.ColumnWidths = "50;400;200";
+            this.cboVNRid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboVNRid.FormattingEnabled = true;
+            this.cboVNRid.LinkedColumnIndex = 1;
+            this.cboVNRid.LinkedTextBox = this.textVNRdes;
+            this.cboVNRid.Location = new System.Drawing.Point(209, 154);
+            this.cboVNRid.Margin = new System.Windows.Forms.Padding(4);
+            this.cboVNRid.Name = "cboVNRid";
+            this.cboVNRid.Size = new System.Drawing.Size(171, 23);
+            this.cboVNRid.TabIndex = 185;
             // 
             // textVNRdes
             // 
@@ -2792,6 +3113,25 @@
             this.textVNRdes.TabIndex = 184;
             this.textVNRdes.TabStop = false;
             // 
+            // cboV_T087U_ANLUE
+            // 
+            this.cboV_T087U_ANLUE.AutoComplete = true;
+            this.cboV_T087U_ANLUE.AutoDropdown = true;
+            this.cboV_T087U_ANLUE.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboV_T087U_ANLUE.BackColorOdd = System.Drawing.Color.White;
+            this.cboV_T087U_ANLUE.ColumnNames = "";
+            this.cboV_T087U_ANLUE.ColumnWidthDefault = 75;
+            this.cboV_T087U_ANLUE.ColumnWidths = "100;150;200";
+            this.cboV_T087U_ANLUE.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboV_T087U_ANLUE.FormattingEnabled = true;
+            this.cboV_T087U_ANLUE.LinkedColumnIndex = 1;
+            this.cboV_T087U_ANLUE.LinkedTextBox = this.textSupranumero;
+            this.cboV_T087U_ANLUE.Location = new System.Drawing.Point(209, 303);
+            this.cboV_T087U_ANLUE.Margin = new System.Windows.Forms.Padding(4);
+            this.cboV_T087U_ANLUE.Name = "cboV_T087U_ANLUE";
+            this.cboV_T087U_ANLUE.Size = new System.Drawing.Size(171, 23);
+            this.cboV_T087U_ANLUE.TabIndex = 183;
+            // 
             // textSupranumero
             // 
             this.textSupranumero.BackColor = System.Drawing.Color.Lavender;
@@ -2802,6 +3142,25 @@
             this.textSupranumero.Size = new System.Drawing.Size(369, 22);
             this.textSupranumero.TabIndex = 178;
             this.textSupranumero.TabStop = false;
+            // 
+            // cboCMPid
+            // 
+            this.cboCMPid.AutoComplete = true;
+            this.cboCMPid.AutoDropdown = true;
+            this.cboCMPid.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboCMPid.BackColorOdd = System.Drawing.Color.White;
+            this.cboCMPid.ColumnNames = "";
+            this.cboCMPid.ColumnWidthDefault = 75;
+            this.cboCMPid.ColumnWidths = "100;150;200";
+            this.cboCMPid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboCMPid.FormattingEnabled = true;
+            this.cboCMPid.LinkedColumnIndex = 1;
+            this.cboCMPid.LinkedTextBox = this.textComponente;
+            this.cboCMPid.Location = new System.Drawing.Point(209, 224);
+            this.cboCMPid.Margin = new System.Windows.Forms.Padding(4);
+            this.cboCMPid.Name = "cboCMPid";
+            this.cboCMPid.Size = new System.Drawing.Size(171, 23);
+            this.cboCMPid.TabIndex = 182;
             // 
             // textComponente
             // 
@@ -2814,6 +3173,25 @@
             this.textComponente.TabIndex = 177;
             this.textComponente.TabStop = false;
             // 
+            // cboUBEid
+            // 
+            this.cboUBEid.AutoComplete = true;
+            this.cboUBEid.AutoDropdown = true;
+            this.cboUBEid.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboUBEid.BackColorOdd = System.Drawing.Color.White;
+            this.cboUBEid.ColumnNames = "";
+            this.cboUBEid.ColumnWidthDefault = 75;
+            this.cboUBEid.ColumnWidths = "100;150;200";
+            this.cboUBEid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboUBEid.FormattingEnabled = true;
+            this.cboUBEid.LinkedColumnIndex = 1;
+            this.cboUBEid.LinkedTextBox = this.textUbiElec;
+            this.cboUBEid.Location = new System.Drawing.Point(209, 91);
+            this.cboUBEid.Margin = new System.Windows.Forms.Padding(4);
+            this.cboUBEid.Name = "cboUBEid";
+            this.cboUBEid.Size = new System.Drawing.Size(171, 23);
+            this.cboUBEid.TabIndex = 180;
+            // 
             // textUbiElec
             // 
             this.textUbiElec.BackColor = System.Drawing.Color.Lavender;
@@ -2824,6 +3202,25 @@
             this.textUbiElec.Size = new System.Drawing.Size(369, 22);
             this.textUbiElec.TabIndex = 175;
             this.textUbiElec.TabStop = false;
+            // 
+            // cboSEGMENT
+            // 
+            this.cboSEGMENT.AutoComplete = true;
+            this.cboSEGMENT.AutoDropdown = true;
+            this.cboSEGMENT.BackColorEven = System.Drawing.Color.Lavender;
+            this.cboSEGMENT.BackColorOdd = System.Drawing.Color.White;
+            this.cboSEGMENT.ColumnNames = "";
+            this.cboSEGMENT.ColumnWidthDefault = 75;
+            this.cboSEGMENT.ColumnWidths = "100;150;200";
+            this.cboSEGMENT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboSEGMENT.FormattingEnabled = true;
+            this.cboSEGMENT.LinkedColumnIndex = 1;
+            this.cboSEGMENT.LinkedTextBox = this.textSegmento;
+            this.cboSEGMENT.Location = new System.Drawing.Point(211, 22);
+            this.cboSEGMENT.Margin = new System.Windows.Forms.Padding(4);
+            this.cboSEGMENT.Name = "cboSEGMENT";
+            this.cboSEGMENT.Size = new System.Drawing.Size(171, 23);
+            this.cboSEGMENT.TabIndex = 179;
             // 
             // textSegmento
             // 
@@ -2907,8 +3304,9 @@
             // 
             this.tabPage7.Controls.Add(this.dataGridView1);
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage7.Size = new System.Drawing.Size(995, 514);
             this.tabPage7.TabIndex = 7;
             this.tabPage7.Text = "Componentes";
@@ -2926,30 +3324,12 @@
             this.Anula,
             this.Padre});
             this.dataGridView1.Location = new System.Drawing.Point(27, 63);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(841, 300);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // txtACFid_Padre
-            // 
-            this.txtACFid_Padre.Location = new System.Drawing.Point(474, 452);
-            this.txtACFid_Padre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtACFid_Padre.Name = "txtACFid_Padre";
-            this.txtACFid_Padre.ReadOnly = true;
-            this.txtACFid_Padre.Size = new System.Drawing.Size(399, 22);
-            this.txtACFid_Padre.TabIndex = 167;
-            this.txtACFid_Padre.TabStop = false;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(473, 406);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(88, 17);
-            this.label23.TabIndex = 168;
-            this.label23.Text = "Activo Padre";
+            this.dataGridView1.Visible = false;
             // 
             // Id
             // 
@@ -2990,51 +3370,6 @@
             this.Padre.DataPropertyName = "ACFid_Padre";
             this.Padre.HeaderText = "Padre";
             this.Padre.Name = "Padre";
-            // 
-            // textEstado
-            // 
-            this.textEstado.BackColor = System.Drawing.Color.Lavender;
-            this.textEstado.Location = new System.Drawing.Point(286, 118);
-            this.textEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textEstado.Name = "textEstado";
-            this.textEstado.ReadOnly = true;
-            this.textEstado.Size = new System.Drawing.Size(163, 22);
-            this.textEstado.TabIndex = 177;
-            this.textEstado.TabStop = false;
-            this.textEstado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textMarca
-            // 
-            this.textMarca.BackColor = System.Drawing.Color.Lavender;
-            this.textMarca.Location = new System.Drawing.Point(286, 62);
-            this.textMarca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textMarca.Name = "textMarca";
-            this.textMarca.ReadOnly = true;
-            this.textMarca.Size = new System.Drawing.Size(163, 22);
-            this.textMarca.TabIndex = 178;
-            this.textMarca.TabStop = false;
-            // 
-            // textUnidad
-            // 
-            this.textUnidad.BackColor = System.Drawing.Color.Lavender;
-            this.textUnidad.Location = new System.Drawing.Point(801, 155);
-            this.textUnidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textUnidad.Name = "textUnidad";
-            this.textUnidad.ReadOnly = true;
-            this.textUnidad.Size = new System.Drawing.Size(163, 22);
-            this.textUnidad.TabIndex = 179;
-            this.textUnidad.TabStop = false;
-            // 
-            // textMaterial
-            // 
-            this.textMaterial.BackColor = System.Drawing.Color.Lavender;
-            this.textMaterial.Location = new System.Drawing.Point(801, 57);
-            this.textMaterial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textMaterial.Name = "textMaterial";
-            this.textMaterial.ReadOnly = true;
-            this.textMaterial.Size = new System.Drawing.Size(163, 22);
-            this.textMaterial.TabIndex = 180;
-            this.textMaterial.TabStop = false;
             // 
             // cboKOSTL
             // 
@@ -3093,335 +3428,11 @@
             this.cboBUKRS.Size = new System.Drawing.Size(61, 23);
             this.cboBUKRS.TabIndex = 174;
             // 
-            // cboBLART
-            // 
-            this.cboBLART.AutoComplete = true;
-            this.cboBLART.AutoDropdown = true;
-            this.cboBLART.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboBLART.BackColorOdd = System.Drawing.Color.White;
-            this.cboBLART.ColumnNames = "";
-            this.cboBLART.ColumnWidthDefault = 75;
-            this.cboBLART.ColumnWidths = "100;150;200";
-            this.cboBLART.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboBLART.FormattingEnabled = true;
-            this.cboBLART.LinkedColumnIndex = 1;
-            this.cboBLART.LinkedTextBox = this.textDoc;
-            this.cboBLART.Location = new System.Drawing.Point(147, 79);
-            this.cboBLART.Margin = new System.Windows.Forms.Padding(4);
-            this.cboBLART.Name = "cboBLART";
-            this.cboBLART.Size = new System.Drawing.Size(69, 23);
-            this.cboBLART.TabIndex = 173;
-            // 
-            // cboLIFNR
-            // 
-            this.cboLIFNR.AutoComplete = true;
-            this.cboLIFNR.AutoDropdown = true;
-            this.cboLIFNR.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboLIFNR.BackColorOdd = System.Drawing.Color.White;
-            this.cboLIFNR.ColumnNames = "";
-            this.cboLIFNR.ColumnWidthDefault = 75;
-            this.cboLIFNR.ColumnWidths = "100;150;200";
-            this.cboLIFNR.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboLIFNR.FormattingEnabled = true;
-            this.cboLIFNR.LinkedColumnIndex = 1;
-            this.cboLIFNR.LinkedTextBox = this.textProveedor;
-            this.cboLIFNR.Location = new System.Drawing.Point(203, 286);
-            this.cboLIFNR.Margin = new System.Windows.Forms.Padding(4);
-            this.cboLIFNR.Name = "cboLIFNR";
-            this.cboLIFNR.Size = new System.Drawing.Size(185, 23);
-            this.cboLIFNR.TabIndex = 164;
-            // 
-            // cmbACFid_Padre
-            // 
-            this.cmbACFid_Padre.AutoComplete = false;
-            this.cmbACFid_Padre.AutoDropdown = false;
-            this.cmbACFid_Padre.BackColorEven = System.Drawing.Color.White;
-            this.cmbACFid_Padre.BackColorOdd = System.Drawing.Color.White;
-            this.cmbACFid_Padre.ColumnNames = "";
-            this.cmbACFid_Padre.ColumnWidthDefault = 75;
-            this.cmbACFid_Padre.ColumnWidths = "";
-            this.cmbACFid_Padre.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cmbACFid_Padre.FormattingEnabled = true;
-            this.cmbACFid_Padre.LinkedColumnIndex = 1;
-            this.cmbACFid_Padre.LinkedTextBox = this.txtACFid_Padre;
-            this.cmbACFid_Padre.Location = new System.Drawing.Point(474, 424);
-            this.cmbACFid_Padre.Name = "cmbACFid_Padre";
-            this.cmbACFid_Padre.Size = new System.Drawing.Size(121, 23);
-            this.cmbACFid_Padre.TabIndex = 169;
-            // 
-            // CtxtACFtipo_activo
-            // 
-            this.CtxtACFtipo_activo.AutoComplete = true;
-            this.CtxtACFtipo_activo.AutoDropdown = true;
-            this.CtxtACFtipo_activo.BackColorEven = System.Drawing.Color.Lavender;
-            this.CtxtACFtipo_activo.BackColorOdd = System.Drawing.Color.White;
-            this.CtxtACFtipo_activo.ColumnNames = "";
-            this.CtxtACFtipo_activo.ColumnWidthDefault = 75;
-            this.CtxtACFtipo_activo.ColumnWidths = "100;150;200";
-            this.CtxtACFtipo_activo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.CtxtACFtipo_activo.FormattingEnabled = true;
-            this.CtxtACFtipo_activo.Items.AddRange(new object[] {
-            "NC",
-            "AF",
-            "NC",
-            "AF"});
-            this.CtxtACFtipo_activo.LinkedColumnIndex = 1;
-            this.CtxtACFtipo_activo.LinkedTextBox = this.textClase;
-            this.CtxtACFtipo_activo.Location = new System.Drawing.Point(215, 20);
-            this.CtxtACFtipo_activo.Margin = new System.Windows.Forms.Padding(4);
-            this.CtxtACFtipo_activo.Name = "CtxtACFtipo_activo";
-            this.CtxtACFtipo_activo.Size = new System.Drawing.Size(69, 23);
-            this.CtxtACFtipo_activo.TabIndex = 175;
-            // 
-            // cboANLKL
-            // 
-            this.cboANLKL.AutoComplete = true;
-            this.cboANLKL.AutoDropdown = true;
-            this.cboANLKL.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboANLKL.BackColorOdd = System.Drawing.Color.White;
-            this.cboANLKL.ColumnNames = "";
-            this.cboANLKL.ColumnWidthDefault = 75;
-            this.cboANLKL.ColumnWidths = "100;150;200";
-            this.cboANLKL.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboANLKL.FormattingEnabled = true;
-            this.cboANLKL.LinkedColumnIndex = 1;
-            this.cboANLKL.LinkedTextBox = this.textClase;
-            this.cboANLKL.Location = new System.Drawing.Point(213, 52);
-            this.cboANLKL.Margin = new System.Windows.Forms.Padding(4);
-            this.cboANLKL.Name = "cboANLKL";
-            this.cboANLKL.Size = new System.Drawing.Size(185, 23);
-            this.cboANLKL.TabIndex = 174;
-            // 
-            // cboPERNR
-            // 
-            this.cboPERNR.AutoComplete = true;
-            this.cboPERNR.AutoDropdown = true;
-            this.cboPERNR.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboPERNR.BackColorOdd = System.Drawing.Color.White;
-            this.cboPERNR.ColumnNames = "";
-            this.cboPERNR.ColumnWidthDefault = 75;
-            this.cboPERNR.ColumnWidths = "100;150;200";
-            this.cboPERNR.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboPERNR.FormattingEnabled = true;
-            this.cboPERNR.LinkedColumnIndex = 1;
-            this.cboPERNR.LinkedTextBox = this.textPersonal;
-            this.cboPERNR.Location = new System.Drawing.Point(211, 175);
-            this.cboPERNR.Margin = new System.Windows.Forms.Padding(4);
-            this.cboPERNR.Name = "cboPERNR";
-            this.cboPERNR.Size = new System.Drawing.Size(185, 23);
-            this.cboPERNR.TabIndex = 181;
-            // 
-            // cboMVMid
-            // 
-            this.cboMVMid.AutoComplete = true;
-            this.cboMVMid.AutoDropdown = true;
-            this.cboMVMid.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboMVMid.BackColorOdd = System.Drawing.Color.White;
-            this.cboMVMid.ColumnNames = "";
-            this.cboMVMid.ColumnWidthDefault = 75;
-            this.cboMVMid.ColumnWidths = "100;150;200";
-            this.cboMVMid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboMVMid.FormattingEnabled = true;
-            this.cboMVMid.LinkedColumnIndex = 2;
-            this.cboMVMid.LinkedTextBox = this.textMotivoM;
-            this.cboMVMid.Location = new System.Drawing.Point(212, 118);
-            this.cboMVMid.Margin = new System.Windows.Forms.Padding(4);
-            this.cboMVMid.MaxDropDownItems = 10;
-            this.cboMVMid.Name = "cboMVMid";
-            this.cboMVMid.Size = new System.Drawing.Size(185, 23);
-            this.cboMVMid.TabIndex = 178;
-            // 
-            // cboAMBid
-            // 
-            this.cboAMBid.AutoComplete = true;
-            this.cboAMBid.AutoDropdown = true;
-            this.cboAMBid.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboAMBid.BackColorOdd = System.Drawing.Color.White;
-            this.cboAMBid.ColumnNames = "";
-            this.cboAMBid.ColumnWidthDefault = 75;
-            this.cboAMBid.ColumnWidths = "100;150;200";
-            this.cboAMBid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboAMBid.FormattingEnabled = true;
-            this.cboAMBid.LinkedColumnIndex = 2;
-            this.cboAMBid.LinkedTextBox = this.textAmbiente;
-            this.cboAMBid.Location = new System.Drawing.Point(211, 23);
-            this.cboAMBid.Margin = new System.Windows.Forms.Padding(4);
-            this.cboAMBid.Name = "cboAMBid";
-            this.cboAMBid.Size = new System.Drawing.Size(185, 23);
-            this.cboAMBid.TabIndex = 177;
-            // 
-            // cboVNRid
-            // 
-            this.cboVNRid.AutoComplete = true;
-            this.cboVNRid.AutoDropdown = true;
-            this.cboVNRid.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboVNRid.BackColorOdd = System.Drawing.Color.White;
-            this.cboVNRid.ColumnNames = "";
-            this.cboVNRid.ColumnWidthDefault = 75;
-            this.cboVNRid.ColumnWidths = "50;400;200";
-            this.cboVNRid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboVNRid.FormattingEnabled = true;
-            this.cboVNRid.LinkedColumnIndex = 1;
-            this.cboVNRid.LinkedTextBox = this.textVNRdes;
-            this.cboVNRid.Location = new System.Drawing.Point(209, 154);
-            this.cboVNRid.Margin = new System.Windows.Forms.Padding(4);
-            this.cboVNRid.Name = "cboVNRid";
-            this.cboVNRid.Size = new System.Drawing.Size(171, 23);
-            this.cboVNRid.TabIndex = 185;
-            // 
-            // cboV_T087U_ANLUE
-            // 
-            this.cboV_T087U_ANLUE.AutoComplete = true;
-            this.cboV_T087U_ANLUE.AutoDropdown = true;
-            this.cboV_T087U_ANLUE.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboV_T087U_ANLUE.BackColorOdd = System.Drawing.Color.White;
-            this.cboV_T087U_ANLUE.ColumnNames = "";
-            this.cboV_T087U_ANLUE.ColumnWidthDefault = 75;
-            this.cboV_T087U_ANLUE.ColumnWidths = "100;150;200";
-            this.cboV_T087U_ANLUE.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboV_T087U_ANLUE.FormattingEnabled = true;
-            this.cboV_T087U_ANLUE.LinkedColumnIndex = 1;
-            this.cboV_T087U_ANLUE.LinkedTextBox = this.textSupranumero;
-            this.cboV_T087U_ANLUE.Location = new System.Drawing.Point(209, 303);
-            this.cboV_T087U_ANLUE.Margin = new System.Windows.Forms.Padding(4);
-            this.cboV_T087U_ANLUE.Name = "cboV_T087U_ANLUE";
-            this.cboV_T087U_ANLUE.Size = new System.Drawing.Size(171, 23);
-            this.cboV_T087U_ANLUE.TabIndex = 183;
-            // 
-            // cboCMPid
-            // 
-            this.cboCMPid.AutoComplete = true;
-            this.cboCMPid.AutoDropdown = true;
-            this.cboCMPid.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboCMPid.BackColorOdd = System.Drawing.Color.White;
-            this.cboCMPid.ColumnNames = "";
-            this.cboCMPid.ColumnWidthDefault = 75;
-            this.cboCMPid.ColumnWidths = "100;150;200";
-            this.cboCMPid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboCMPid.FormattingEnabled = true;
-            this.cboCMPid.LinkedColumnIndex = 1;
-            this.cboCMPid.LinkedTextBox = this.textComponente;
-            this.cboCMPid.Location = new System.Drawing.Point(209, 224);
-            this.cboCMPid.Margin = new System.Windows.Forms.Padding(4);
-            this.cboCMPid.Name = "cboCMPid";
-            this.cboCMPid.Size = new System.Drawing.Size(171, 23);
-            this.cboCMPid.TabIndex = 182;
-            // 
-            // cboUBEid
-            // 
-            this.cboUBEid.AutoComplete = true;
-            this.cboUBEid.AutoDropdown = true;
-            this.cboUBEid.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboUBEid.BackColorOdd = System.Drawing.Color.White;
-            this.cboUBEid.ColumnNames = "";
-            this.cboUBEid.ColumnWidthDefault = 75;
-            this.cboUBEid.ColumnWidths = "100;150;200";
-            this.cboUBEid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboUBEid.FormattingEnabled = true;
-            this.cboUBEid.LinkedColumnIndex = 1;
-            this.cboUBEid.LinkedTextBox = this.textUbiElec;
-            this.cboUBEid.Location = new System.Drawing.Point(209, 91);
-            this.cboUBEid.Margin = new System.Windows.Forms.Padding(4);
-            this.cboUBEid.Name = "cboUBEid";
-            this.cboUBEid.Size = new System.Drawing.Size(171, 23);
-            this.cboUBEid.TabIndex = 180;
-            // 
-            // cboSEGMENT
-            // 
-            this.cboSEGMENT.AutoComplete = true;
-            this.cboSEGMENT.AutoDropdown = true;
-            this.cboSEGMENT.BackColorEven = System.Drawing.Color.Lavender;
-            this.cboSEGMENT.BackColorOdd = System.Drawing.Color.White;
-            this.cboSEGMENT.ColumnNames = "";
-            this.cboSEGMENT.ColumnWidthDefault = 75;
-            this.cboSEGMENT.ColumnWidths = "100;150;200";
-            this.cboSEGMENT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboSEGMENT.FormattingEnabled = true;
-            this.cboSEGMENT.LinkedColumnIndex = 1;
-            this.cboSEGMENT.LinkedTextBox = this.textSegmento;
-            this.cboSEGMENT.Location = new System.Drawing.Point(211, 22);
-            this.cboSEGMENT.Margin = new System.Windows.Forms.Padding(4);
-            this.cboSEGMENT.Name = "cboSEGMENT";
-            this.cboSEGMENT.Size = new System.Drawing.Size(171, 23);
-            this.cboSEGMENT.TabIndex = 179;
-            // 
-            // cboUNMid
-            // 
-            this.cboUNMid.AutoComplete = false;
-            this.cboUNMid.AutoDropdown = false;
-            this.cboUNMid.BackColorEven = System.Drawing.Color.White;
-            this.cboUNMid.BackColorOdd = System.Drawing.Color.White;
-            this.cboUNMid.ColumnNames = "";
-            this.cboUNMid.ColumnWidthDefault = 75;
-            this.cboUNMid.ColumnWidths = "";
-            this.cboUNMid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboUNMid.FormattingEnabled = true;
-            this.cboUNMid.LinkedColumnIndex = 1;
-            this.cboUNMid.LinkedTextBox = this.textUnidad;
-            this.cboUNMid.Location = new System.Drawing.Point(716, 155);
-            this.cboUNMid.Name = "cboUNMid";
-            this.cboUNMid.Size = new System.Drawing.Size(65, 23);
-            this.cboUNMid.TabIndex = 182;
-            // 
-            // cboMATid
-            // 
-            this.cboMATid.AutoComplete = false;
-            this.cboMATid.AutoDropdown = false;
-            this.cboMATid.BackColorEven = System.Drawing.Color.White;
-            this.cboMATid.BackColorOdd = System.Drawing.Color.White;
-            this.cboMATid.ColumnNames = "";
-            this.cboMATid.ColumnWidthDefault = 75;
-            this.cboMATid.ColumnWidths = "";
-            this.cboMATid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboMATid.FormattingEnabled = true;
-            this.cboMATid.LinkedColumnIndex = 1;
-            this.cboMATid.LinkedTextBox = this.textMaterial;
-            this.cboMATid.Location = new System.Drawing.Point(716, 59);
-            this.cboMATid.Name = "cboMATid";
-            this.cboMATid.Size = new System.Drawing.Size(65, 23);
-            this.cboMATid.TabIndex = 181;
-            // 
-            // cboESTid
-            // 
-            this.cboESTid.AutoComplete = false;
-            this.cboESTid.AutoDropdown = false;
-            this.cboESTid.BackColorEven = System.Drawing.Color.White;
-            this.cboESTid.BackColorOdd = System.Drawing.Color.White;
-            this.cboESTid.ColumnNames = "";
-            this.cboESTid.ColumnWidthDefault = 75;
-            this.cboESTid.ColumnWidths = "";
-            this.cboESTid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboESTid.FormattingEnabled = true;
-            this.cboESTid.LinkedColumnIndex = 1;
-            this.cboESTid.LinkedTextBox = this.textEstado;
-            this.cboESTid.Location = new System.Drawing.Point(212, 116);
-            this.cboESTid.Name = "cboESTid";
-            this.cboESTid.Size = new System.Drawing.Size(55, 23);
-            this.cboESTid.TabIndex = 180;
-            // 
-            // cboMARid
-            // 
-            this.cboMARid.AutoComplete = false;
-            this.cboMARid.AutoDropdown = false;
-            this.cboMARid.BackColorEven = System.Drawing.Color.White;
-            this.cboMARid.BackColorOdd = System.Drawing.Color.White;
-            this.cboMARid.ColumnNames = "";
-            this.cboMARid.ColumnWidthDefault = 75;
-            this.cboMARid.ColumnWidths = "";
-            this.cboMARid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboMARid.FormattingEnabled = true;
-            this.cboMARid.LinkedColumnIndex = 1;
-            this.cboMARid.LinkedTextBox = this.textMarca;
-            this.cboMARid.Location = new System.Drawing.Point(212, 63);
-            this.cboMARid.Name = "cboMARid";
-            this.cboMARid.Size = new System.Drawing.Size(55, 23);
-            this.cboMARid.TabIndex = 179;
-            // 
             // FrmacfACFp_Activo_Fijo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1433, 671);
+            this.ClientSize = new System.Drawing.Size(1356, 671);
             this.Controls.Add(this.cboKOSTL);
             this.Controls.Add(this.cboCSTid);
             this.Controls.Add(this.cboBUKRS);
@@ -3438,7 +3449,7 @@
             this.Controls.Add(this.txtACFid);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmacfACFp_Activo_Fijo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfACFp_Activo_Fijo";

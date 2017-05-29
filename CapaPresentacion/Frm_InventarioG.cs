@@ -367,6 +367,16 @@ namespace CapaPresentacion
             Graba = 1;
             EstadoText(this.Controls, true, true);
             this.Botones(false);
+            Last();
+            txtINVid.Text=Convert.ToString(Convert.ToInt32(txtINVid.Text) + 1);
+            txtINVdescripcion.Text = "";
+            txtINVfechacierre.Text = "";
+            txtINVperiodo.Text = "";
+            txtINVrespon.Text = "";
+            txtINVtotal.Text = "";
+             
+
+
             //tabControl1.SelectedTab = tabPage2;
         }
         private void Prev(String iINVid)

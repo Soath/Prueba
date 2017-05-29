@@ -642,7 +642,7 @@ namespace CapaPresentacion
                     , cboV_T087U_ANLUE.SelectedValue.ToString()
                     , this.CtxtACFtipo_activo.Text
                     , ""
-                    , this.txtACFid.Text 
+                    , "0"
                     );
 
                 // Rta = NacfACFp_Activo_Fijo.Insertar(this.txtACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
@@ -813,7 +813,7 @@ namespace CapaPresentacion
                     , cboV_T087U_ANLUE.SelectedValue.ToString()
                     , this.CtxtACFtipo_activo.Text
                     , ""
-                    , this.txtACFid_Padre.Text 
+                    , "0"
                     );
 
                 //Rta = NacfACFp_Activo_Fijo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");

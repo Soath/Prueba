@@ -250,6 +250,46 @@ namespace CapaDatos
             }
             return DtResultado;
 	}
+    //METODO COPIAR 
+    public string Copiar(DacfDDFt_detalledediferido acfDDFt_detalledediferido)
+    {
+
+        string rpta = "";
+        SqlConnection SqlCon = new SqlConnection();
+        try
+        {
+            //Código
+            SqlCon.ConnectionString = DConexion.CnBDActivo;
+            SqlCon.Open();
+            //Establecer el Comando
+            SqlCommand SqlCmd = new SqlCommand();
+            SqlCmd.Connection = SqlCon;
+            SqlCmd.CommandText = "usp_C_acfDDFt_detallediferido";
+            SqlCmd.CommandType = CommandType.StoredProcedure;
+            //
+            SqlParameter ParPDFcodigo = new SqlParameter();
+            ParPDFcodigo.ParameterName = "@PDFCodigo";
+            ParPDFcodigo.SqlDbType = SqlDbType.Int;
+            ParPDFcodigo.Value = PDFcodigo;
+            SqlCmd.Parameters.Add(ParPDFcodigo);
+            //
+
+            //Ejecutamos nuestro comando
+
+            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+
+
+        }
+        catch (Exception ex)
+        {
+            rpta = ex.Message;
+        }
+        finally
+        {
+            if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+        }
+        return rpta;
+    }
 
         //METODO INSERTAR 
 	public string Insertar(DacfDDFt_detalledediferido acfDDFt_detalledediferido)

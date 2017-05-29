@@ -23,9 +23,11 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             EstadoText(this.Controls, true, false);
-            mostrar();
+         
             MostrarRegistro();
+         
         }
+     
         private void MostrarRegistro()
         {
 
@@ -42,7 +44,7 @@ namespace CapaPresentacion
                     txtRTRperiodo.Text = Convert.ToString(row["RTRperiodo"]);
                     dtRTRfecha.Text = Convert.ToString(row["RTRfecha"]);
                     txtRTRresponsable.Text = Convert.ToString(row["RTRresponsable"]);
-                    txtRTRestado.Text = Convert.ToString(row["RTRestado"]);
+                    txtRTRestado.Checked = Convert.ToBoolean(row["RTRestado"]);
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
@@ -68,7 +70,7 @@ namespace CapaPresentacion
                     txtRTRperiodo.Text = Convert.ToString(row["RTRperiodo"]);
                     dtRTRfecha.Text = Convert.ToString(row["RTRfecha"]);
                     txtRTRresponsable.Text = Convert.ToString(row["RTRresponsable"]);
-                    txtRTRestado.Text = Convert.ToString(row["RTRestado"]);
+                    txtRTRestado.Checked = Convert.ToBoolean(row["RTRestado"]);
 
                 }
                 else
@@ -120,7 +122,7 @@ namespace CapaPresentacion
         }
         private void mostrar()
         {
-            this.datalistado1.DataSource = NacfDRTt_detallereparotributario.Buscar("123");
+            this.datalistado1.DataSource = NacfDRTt_detallereparotributario.Buscar(txtRTRcodigo.Text);
             /* if (datalistado.Rows.Count == 0)
              {
                  BotonesSinReg(false);
@@ -146,7 +148,7 @@ namespace CapaPresentacion
                 txtRTRperiodo.Text = Convert.ToString(row["RTRperiodo"]);
                 dtRTRfecha.Text = Convert.ToString(row["RTRfecha"]);
                 txtRTRresponsable.Text = Convert.ToString(row["RTRresponsable"]);
-                txtRTRestado.Text = Convert.ToString(row["RTRestado"]);
+                txtRTRestado.Checked = Convert.ToBoolean(row["RTRestado"]);
                 //guardo datos en variables
                 //txtACFid.Text = Convert.ToString(row["ACFid"]);
                 //txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
@@ -255,8 +257,13 @@ namespace CapaPresentacion
         {
             Activo = 2;
             Graba = 1;
+           
             EstadoText(this.Controls, true, true);
             this.Botones(false);
+            Last();
+            txtRTRcodigo.Text = Convert.ToString(Convert.ToInt32(txtRTRcodigo.Text) + 1);
+            txtRTRperiodo.Text = "";
+            txtRTRresponsable.Text = "";
             //tabControl1.SelectedTab = tabPage2;
         }
         private void MensajeOk(string mensaje)
@@ -431,6 +438,22 @@ namespace CapaPresentacion
         private void toolStripCancelar_Click(object sender, EventArgs e)
         {
             BotonRefrescar();
+        }
+
+        private void cboPERNR_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonProcesar_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void tsProcesar_Click(object sender, EventArgs e)
+        {
+            NacfDRTt_detallereparotributario.Copiar(txtRTRcodigo.Text);
+            mostrar();
         }
     }
 }
