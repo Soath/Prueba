@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmACF_ReparoTributario));
             this.dtRTRfecha = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtRTRestado = new System.Windows.Forms.TextBox();
-            this.txtRTRresponsable = new System.Windows.Forms.TextBox();
             this.txtRTRperiodo = new System.Windows.Forms.TextBox();
             this.txtRTRcodigo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,6 +54,9 @@
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.datalistado1 = new System.Windows.Forms.DataGridView();
+            this.txtRTRresponsable = new System.Windows.Forms.TextBox();
+            this.txtRTRestado = new System.Windows.Forms.CheckBox();
+            this.tsProcesar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado1)).BeginInit();
@@ -67,44 +67,21 @@
             this.dtRTRfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtRTRfecha.Location = new System.Drawing.Point(153, 224);
             this.dtRTRfecha.Name = "dtRTRfecha";
-            this.dtRTRfecha.Size = new System.Drawing.Size(97, 20);
+            this.dtRTRfecha.Size = new System.Drawing.Size(126, 20);
             this.dtRTRfecha.TabIndex = 30;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(469, 136);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // txtRTRestado
-            // 
-            this.txtRTRestado.Location = new System.Drawing.Point(153, 300);
-            this.txtRTRestado.Name = "txtRTRestado";
-            this.txtRTRestado.Size = new System.Drawing.Size(126, 20);
-            this.txtRTRestado.TabIndex = 27;
-            // 
-            // txtRTRresponsable
-            // 
-            this.txtRTRresponsable.Location = new System.Drawing.Point(153, 263);
-            this.txtRTRresponsable.Name = "txtRTRresponsable";
-            this.txtRTRresponsable.Size = new System.Drawing.Size(274, 20);
-            this.txtRTRresponsable.TabIndex = 26;
             // 
             // txtRTRperiodo
             // 
             this.txtRTRperiodo.Location = new System.Drawing.Point(153, 194);
             this.txtRTRperiodo.Name = "txtRTRperiodo";
-            this.txtRTRperiodo.Size = new System.Drawing.Size(180, 20);
+            this.txtRTRperiodo.Size = new System.Drawing.Size(126, 20);
             this.txtRTRperiodo.TabIndex = 25;
             // 
             // txtRTRcodigo
             // 
             this.txtRTRcodigo.Location = new System.Drawing.Point(153, 162);
             this.txtRTRcodigo.Name = "txtRTRcodigo";
-            this.txtRTRcodigo.Size = new System.Drawing.Size(109, 20);
+            this.txtRTRcodigo.Size = new System.Drawing.Size(126, 20);
             this.txtRTRcodigo.TabIndex = 24;
             // 
             // label5
@@ -193,7 +170,8 @@
             this.toolStripPrimero,
             this.toolStripUltimo,
             this.toolStripAnterior,
-            this.toolStripSiguiente});
+            this.toolStripSiguiente,
+            this.tsProcesar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(669, 67);
@@ -328,17 +306,47 @@
             this.datalistado1.Size = new System.Drawing.Size(645, 286);
             this.datalistado1.TabIndex = 157;
             // 
+            // txtRTRresponsable
+            // 
+            this.txtRTRresponsable.Location = new System.Drawing.Point(157, 266);
+            this.txtRTRresponsable.Name = "txtRTRresponsable";
+            this.txtRTRresponsable.Size = new System.Drawing.Size(122, 20);
+            this.txtRTRresponsable.TabIndex = 159;
+            this.txtRTRresponsable.TabStop = false;
+            // 
+            // txtRTRestado
+            // 
+            this.txtRTRestado.AutoSize = true;
+            this.txtRTRestado.Location = new System.Drawing.Point(157, 299);
+            this.txtRTRestado.Name = "txtRTRestado";
+            this.txtRTRestado.Size = new System.Drawing.Size(59, 17);
+            this.txtRTRestado.TabIndex = 160;
+            this.txtRTRestado.Text = "Estado";
+            this.txtRTRestado.UseVisualStyleBackColor = true;
+            // 
+            // tsProcesar
+            // 
+            this.tsProcesar.Image = ((System.Drawing.Image)(resources.GetObject("tsProcesar.Image")));
+            this.tsProcesar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tsProcesar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsProcesar.Name = "tsProcesar";
+            this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsProcesar.Size = new System.Drawing.Size(56, 64);
+            this.tsProcesar.Text = "Procesar";
+            this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsProcesar.Click += new System.EventHandler(this.tsProcesar_Click);
+            // 
             // FrmACF_ReparoTributario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 644);
+            this.Controls.Add(this.txtRTRestado);
+            this.Controls.Add(this.txtRTRresponsable);
             this.Controls.Add(this.datalistado1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dtRTRfecha);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.txtRTRestado);
-            this.Controls.Add(this.txtRTRresponsable);
             this.Controls.Add(this.txtRTRperiodo);
             this.Controls.Add(this.txtRTRcodigo);
             this.Controls.Add(this.label5);
@@ -364,9 +372,6 @@
         #endregion
 
         private System.Windows.Forms.DateTimePicker dtRTRfecha;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox txtRTRestado;
-        private System.Windows.Forms.TextBox txtRTRresponsable;
         private System.Windows.Forms.TextBox txtRTRperiodo;
         private System.Windows.Forms.TextBox txtRTRcodigo;
         private System.Windows.Forms.Label label5;
@@ -390,5 +395,8 @@
         private System.Windows.Forms.ErrorProvider errorIcono;
         private System.Windows.Forms.ToolTip ttMensaje;
         private System.Windows.Forms.DataGridView datalistado1;
+        private System.Windows.Forms.TextBox txtRTRresponsable;
+        private System.Windows.Forms.CheckBox txtRTRestado;
+        private System.Windows.Forms.ToolStripButton tsProcesar;
     }
 }

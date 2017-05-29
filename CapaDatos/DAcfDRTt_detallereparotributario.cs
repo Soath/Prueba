@@ -205,7 +205,46 @@ namespace CapaDatos
              }
              return DtResultado;
          }
+        //METODO COPIAR 
+         public string Copiar(DAcfDRTt_detallereparotributario acfDRTt_detallereparotributario)
+         {
 
+             string rpta = "";
+             SqlConnection SqlCon = new SqlConnection();
+             try
+             {
+                 //Código
+                 SqlCon.ConnectionString = DConexion.CnBDActivo;
+                 SqlCon.Open();
+                 //Establecer el Comando
+                 SqlCommand SqlCmd = new SqlCommand();
+                 SqlCmd.Connection = SqlCon;
+                 SqlCmd.CommandText = "usp_C_acfDRTt_detallereparotributario";
+                 SqlCmd.CommandType = CommandType.StoredProcedure;
+                 //
+                 SqlParameter ParRTRcodigo = new SqlParameter();
+                 ParRTRcodigo.ParameterName = "@RTRcodigo";
+                 ParRTRcodigo.SqlDbType = SqlDbType.Int;
+                 ParRTRcodigo.Value = RTRcodigo;
+                 SqlCmd.Parameters.Add(ParRTRcodigo);
+                 //
+
+                 //Ejecutamos nuestro comando
+
+                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+
+
+             }
+             catch (Exception ex)
+             {
+                 rpta = ex.Message;
+             }
+             finally
+             {
+                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+             }
+             return rpta;
+         }
          //METODO INSERTAR 
          public string Insertar(DAcfDRTt_detallereparotributario acfDRTt_detallereparotributario)
          {

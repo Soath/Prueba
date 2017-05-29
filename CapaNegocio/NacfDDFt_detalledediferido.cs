@@ -132,7 +132,12 @@ namespace CapaNegocio
             Obj.ACFcuenta = sACFcuenta;
             return Obj.Eliminar(Obj);
         }
-
+        public static string Copiar(string PDFcodigo)
+        {
+            DacfDDFt_detalledediferido Obj = new DacfDDFt_detalledediferido();
+            Obj.PDFcodigo = PDFcodigo;
+            return Obj.Copiar(Obj);
+        }
         //------------------------------------------------------------------
         //M�todo Mostrar que llama al m�todo Mostrar de la clase DPostres
         //de la CapaDatos

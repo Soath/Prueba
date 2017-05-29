@@ -681,6 +681,12 @@ namespace CapaPresentacion
             this.dataListado.DataSource = NacfDDFt_detalledediferido.Mostrar(PDFcodigo);
         }
 
+        private void tsProcesar_Click(object sender, EventArgs e)
+        {
+            NacfDDFt_detalledediferido.Copiar(txtPDFcodigo.Text);
+            mostrar();
+        }
+
 
 
 
