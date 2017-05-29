@@ -60,6 +60,8 @@ C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmp
 C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
 C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\SegNetAdapter.dll
 C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\ServicioUtilitarios.dll
+C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\SegNetAdapter.dll
+C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\ServicioUtilitarios.dll
 C:\Users\avatec\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
 C:\Users\avatec\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe
 C:\Users\avatec\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.pdb
@@ -84,5 +86,3 @@ C:\Users\avatec\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEm
 C:\Users\avatec\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
 C:\Users\avatec\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
 C:\Users\avatec\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
-C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\SegNetAdapter.dll
-C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\ServicioUtilitarios.dll
