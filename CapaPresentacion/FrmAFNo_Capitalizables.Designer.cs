@@ -122,6 +122,7 @@
             this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripAgregar.Visible = false;
+            this.toolStripAgregar.Click += new System.EventHandler(this.toolStripAgregar_Click);
             // 
             // toolStripEditar
             // 

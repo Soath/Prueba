@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmACF_TransferenciaDonacion));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.lblTotal = new System.Windows.Forms.Label();
             this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
             this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
             this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
             this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.dataListado = new System.Windows.Forms.DataGridView();
             this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.chkEliminar = new System.Windows.Forms.CheckBox();
@@ -62,16 +62,6 @@
             this.toolStrip1.TabIndex = 156;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(551, 138);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(65, 17);
-            this.lblTotal.TabIndex = 157;
-            this.lblTotal.Text = "Registro:";
-            // 
             // toolStripRefrescar
             // 
             this.toolStripRefrescar.Image = global::CapaPresentacion.Properties.Resources.download;
@@ -95,6 +85,7 @@
             this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripAgregar.Visible = false;
+            this.toolStripAgregar.Click += new System.EventHandler(this.toolStripAgregar_Click);
             // 
             // toolStripEditar
             // 
@@ -146,6 +137,16 @@
             this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripSiguiente.Visible = false;
             this.toolStripSiguiente.Click += new System.EventHandler(this.toolStripSiguiente_Click);
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(551, 124);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(65, 17);
+            this.lblTotal.TabIndex = 157;
+            this.lblTotal.Text = "Registro:";
             // 
             // dataListado
             // 

@@ -151,5 +151,80 @@ namespace CapaPresentacion
             new Importar().ExportarDataGridViewExcel(dataListado);
         }
 
+        private void toolStripAgregar_Click(object sender, EventArgs e)
+        {
+            if (this.chkEliminar.Checked)
+                this.grabarlote();
+            else
+                this.grabarsele();
+        }
+
+
+        private void grabarlote()
+        {
+            try
+            {
+                //falta mostrar el ACFid
+                Int32 total = 0;
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    string Rta = string.Empty;
+
+
+                    Rta = NacfACFp_Activo_Fijo.Insertar2(
+                    Convert.ToString(row.Cells[3].Value) //ACFdescripcion
+                    );
+                    if (Rta.Equals("OK"))
+                    {
+                    }
+                    else
+                    {
+                        break;
+
+                    }
+
+                }
+                MessageBox.Show("Datos agregados");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+
+        private void grabarsele()
+        {
+            try
+            {
+                //falta mostrar el ACFid
+                Int32 total = 0;
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    string Rta = string.Empty;
+
+                    if (Convert.ToBoolean(row.Cells[0].Value))
+                    {
+                        Rta = NacfACFp_Activo_Fijo.Insertar2(
+                        Convert.ToString(row.Cells[3].Value) //ACFdescripcion
+                        );
+                        if (Rta.Equals("OK"))
+                        {
+                        }
+                        else
+                        {
+                            break;
+
+                        }
+                    }
+                }
+                MessageBox.Show("Datos agregados");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
     }
 }
