@@ -133,6 +133,7 @@ namespace CapaPresentacion
         private void Control_Click_Agregar(object sender, EventArgs e)
         {
             this.BotonAgregar();
+            dataListado.DataSource = null;
         }
         private void Control_Click_Editar(object sender, EventArgs e)
         {
@@ -149,10 +150,13 @@ namespace CapaPresentacion
         private void Control_Click_Guardar(object sender, EventArgs e)
         {
             this.BotonGuardar();
+
+            // this.InsertarActivos();
         }
         private void Control_Click_Cancelar(object sender, EventArgs e)
         {
             this.BotonRefrescar();
+            this.MostrarRegistro();
         }
         private void Control_Click_Importar(object sender, EventArgs e)
         {
@@ -230,23 +234,23 @@ namespace CapaPresentacion
             this.Activo = 1;
             this.tomaTab();
             this.Botones(true);
-            this.dataListado.DataSource = NacfMVAt_MovimientoActivo.Mostrar("1");
+            this.MostrarRegistro();
 
-           //lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
-           //if (dataListado.Rows.Count == 0)
-           //{
-           //    BotonesSinReg(false);
-           //}
-           //else
-           //{
-           //    BotonesSinReg(true);
-           //    this.toolStripAgregar.Enabled = true;
-           //
-           //}
-           //this.dataListado.Select();
-           //this.dataListado.Focus();
+            //lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
+            //if (dataListado.Rows.Count == 0)
+            //{
+            //    BotonesSinReg(false);
+            //}
+            //else
+            //{
+            //    BotonesSinReg(true);
+            //    this.toolStripAgregar.Enabled = true;
+            //
+            //}
+            //this.dataListado.Select();
+            //this.dataListado.Focus();
 
-       
+
 
         }
         private void Top()
@@ -448,7 +452,9 @@ namespace CapaPresentacion
         private void BotonRefrescar()
         {
             EstadoText(this.Controls, false, false);
+            dataListado.DataSource = null;
             this.mostrar();
+            this.MostrarRegistro();
         }
         private void BotonAgregar()
         {
@@ -485,6 +491,7 @@ namespace CapaPresentacion
                 Graba = 0;
                 this.BotonCancelar();
                 this.BotonRefrescar();
+
             }
             else
                 this.MensajeOk(MensError);
@@ -494,6 +501,7 @@ namespace CapaPresentacion
             Activo = 1;
             this.Botones(true);
             EstadoText(this.Controls, false, false);
+
             //tabControl1.SelectedTab = tabPage1;
         }
         private void BotonListado()
@@ -566,6 +574,8 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+
+            
         }
         //-----------------------------------------------------------------------------------	
         // Actualiza Registros	
@@ -876,10 +886,83 @@ namespace CapaPresentacion
 
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            //dataListado.ColumnAdded
+            dataListado.Columns.Add("Column1", "ACFid");
+            dataListado.Columns.Add("Column2", "ACFdescripcion");
+            dataListado.Columns.Add("Column3", "ACFfincorporacion");
+            dataListado.Columns.Add("Column4", "ACFfechanotaingreso");
+            dataListado.Columns.Add("Column5", "ACFordencompra");
+            dataListado.Columns.Add("Column6", "ACFtipo_activo");
+                        
+            //     this.dataListado.Columns[0].HeaderText = "ID_Activo";
+            //     this.dataListado.Columns[1].HeaderText = "Descripcion";
+            //     this.dataListado.Columns[2].HeaderText = "Incorporacion";
+            //     this.dataListado.Columns[3].HeaderText = "Ingreso";
+            //     this.dataListado.Columns[4].HeaderText = "Orden_de_Compra";
+            //     this.dataListado.Columns[5].HeaderText = "Tipo";
+            //     
+                 string iACFid = Microsoft.VisualBasic.Interaction.InputBox(
+                                 "Ingrese el Id del Activo Fijo",
+                                 "Ajuste del Valor del Bien");
+                 if (iACFid != null)
+                 {               
+                     DataTable tabla = NacfACFp_Activo_Fijo.IngresarACF(iACFid);                    
+                     if (tabla.Rows.Count > 0)
+                     {
+                         foreach (DataRow Drow in tabla.Rows)
+                         {
+                             int num = dataListado.Rows.Add();
+                             dataListado.Rows[num].Cells[0].Value = Drow["ACFid"].ToString();
+                             dataListado.Rows[num].Cells[1].Value = Drow["ACFdescripcion"].ToString();
+                             dataListado.Rows[num].Cells[2].Value = Drow["ACFfincorporacion"].ToString();
+                             dataListado.Rows[num].Cells[3].Value = Drow["ACFfechanotaingreso"].ToString();
+                             dataListado.Rows[num].Cells[4].Value = Drow["ACFordencompra"].ToString();
+                             dataListado.Rows[num].Cells[5].Value = Drow["ACFtipo_activo"].ToString();
+                         }
+                     }
+                     else
+                         MessageBox.Show("No Existe", "Registro");
+                 }
+        }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            int fil = dataListado.CurrentRow.Index;
+            dataListado.Rows.RemoveAt(fil);
+        }
 
+        private void InsertarActivos()
+        {
+            string rta = string.Empty;
+            MessageBox.Show("insertar");
+            string activo = txtMVPid_proceso.Text;
+            try
+            {
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    rta = NacfMVAt_MovimientoActivo.IngresarACF(
+                     activo
+                     , dataListado.CurrentRow.Cells[18].Value.ToString()
+                  );
 
+                    if (rta.Equals("OK"))
+                    {
+                        this.MensajeOk("Regsitro Agregado Correctamente");
+                    }
+                    else
+                    {
+                        this.MensajeError("Error al Insertar Registro :" + rta);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
 
+        }
     }
 }
 //-------------------------------------------------------------------

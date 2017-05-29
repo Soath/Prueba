@@ -1314,5 +1314,44 @@ namespace CapaDatos
 
 	}
 
-}
+        // Recargar el Activo Fijo
+        public string RecargarACF(DMovimiento_Transferencia_Activo acfCMVp_Cabecera_Movimiento)
+        {
+
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_U3_acfCMVp_Cabecera_Movimiento";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter PariMVPid_proceso = new SqlParameter();
+                PariMVPid_proceso.ParameterName = "@iMVPid_proceso";
+                PariMVPid_proceso.SqlDbType = SqlDbType.Int;
+                PariMVPid_proceso.Value = acfCMVp_Cabecera_Movimiento.MVPid_proceso;
+                SqlCmd.Parameters.Add(PariMVPid_proceso);
+                
+                //Ejecutamos nuestro comando
+
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Actualizao el Registro";
+
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
+        }
+
+    }
 }

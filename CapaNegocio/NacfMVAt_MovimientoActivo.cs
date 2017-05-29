@@ -223,6 +223,11 @@ namespace CapaNegocio
         {
             return new DAcfMVAt_MovimientoActivo().Mostrar2();
         }
+        // Mostrar en FrmMovimientoTransferecnaiActivo
+        public static DataTable Mostrar3(string iMVAid)
+        {
+            return new DAcfMVAt_MovimientoActivo().Mostrar3(iMVAid);
+        }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
@@ -233,6 +238,16 @@ namespace CapaNegocio
             Obj.MVAid = iMVAid;
             Obj.ACFid = iACFid;
             return Obj.Buscar(Obj);
+        }
+        // Insertar Detalle de Frm Transferencia Activo(movimiento Activo) 
+        public static string IngresarACF(
+            string iMVAid
+            , string iACFid)
+        {
+            DAcfMVAt_MovimientoActivo Obj = new DAcfMVAt_MovimientoActivo();
+            Obj.MVAid = iMVAid;
+            Obj.ACFid = iACFid;
+            return Obj.IngresarACF(Obj);
         }
     }
 }

@@ -56,23 +56,18 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataListado = new System.Windows.Forms.DataGridView();
-            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.chkEliminar = new System.Windows.Forms.CheckBox();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.labelX1 = new System.Windows.Forms.Label();
-            this.labelX3 = new System.Windows.Forms.Label();
-            this.labelX2 = new System.Windows.Forms.Label();
-            this.txtAMBambiente = new System.Windows.Forms.TextBox();
-            this.txtLOCid = new System.Windows.Forms.TextBox();
-            this.txtAMBid = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtORGds_ambiente = new System.Windows.Forms.TextBox();
-            this.txtORGcrp = new System.Windows.Forms.TextBox();
+            this.cboPERNR3 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtORGds_usuario = new System.Windows.Forms.TextBox();
+            this.cboAMB1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.txtORGds_ambiente = new System.Windows.Forms.TextBox();
+            this.cboZONA1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.cboPERNR1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.txtORGcrp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtMVPds_movimiento = new System.Windows.Forms.TextBox();
@@ -89,37 +84,35 @@
             this.label15 = new System.Windows.Forms.Label();
             this.txtMVPid_proceso = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cboPERNR4 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.txtDSTds_usuario = new System.Windows.Forms.TextBox();
+            this.cboAMB2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtDSTds_ambiente = new System.Windows.Forms.TextBox();
+            this.cboZONA2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtDSTds_zona = new System.Windows.Forms.TextBox();
+            this.cboPERNR2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtDSTds_persona = new System.Windows.Forms.TextBox();
             this.txtDSTcrp = new System.Windows.Forms.TextBox();
-            this.txtDSTds_usuario = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtDSTds_crp = new System.Windows.Forms.TextBox();
-            this.cboPERNR4 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboAMB2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboZONA2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboPERNR2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboPERNR3 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboAMB1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboZONA1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboPERNR1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboMVPtipo1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboMVPtipo = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.cboMVPtipo1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -364,7 +357,6 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(14, 299);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
@@ -396,8 +388,6 @@
             this.dataListado.AllowUserToOrderColumns = true;
             this.dataListado.BackgroundColor = System.Drawing.Color.White;
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Eliminar});
             this.dataListado.Location = new System.Drawing.Point(15, 60);
             this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
@@ -407,13 +397,6 @@
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataListado.Size = new System.Drawing.Size(610, 166);
             this.dataListado.TabIndex = 9;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            this.Eliminar.Width = 50;
             // 
             // pictureBox2
             // 
@@ -433,6 +416,7 @@
             this.lblTotal.Size = new System.Drawing.Size(41, 13);
             this.lblTotal.TabIndex = 6;
             this.lblTotal.Text = "lblTotal";
+            this.lblTotal.Visible = false;
             // 
             // chkEliminar
             // 
@@ -444,6 +428,7 @@
             this.chkEliminar.TabIndex = 5;
             this.chkEliminar.Text = "Eliminar";
             this.chkEliminar.UseVisualStyleBackColor = true;
+            this.chkEliminar.Visible = false;
             // 
             // txtBuscar
             // 
@@ -452,100 +437,6 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(246, 20);
             this.txtBuscar.TabIndex = 2;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(634, 257);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Mantenimiento";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.labelX1);
-            this.groupBox2.Controls.Add(this.labelX3);
-            this.groupBox2.Controls.Add(this.labelX2);
-            this.groupBox2.Controls.Add(this.txtAMBambiente);
-            this.groupBox2.Controls.Add(this.txtLOCid);
-            this.groupBox2.Controls.Add(this.txtAMBid);
-            this.groupBox2.Location = new System.Drawing.Point(10, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(614, 259);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Usuarios";
-            // 
-            // labelX1
-            // 
-            this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(61, 54);
-            this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(102, 13);
-            this.labelX1.TabIndex = 115;
-            this.labelX1.Text = "Codigo de Ambiente";
-            // 
-            // labelX3
-            // 
-            this.labelX3.AutoSize = true;
-            this.labelX3.Location = new System.Drawing.Point(61, 131);
-            this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(124, 13);
-            this.labelX3.TabIndex = 113;
-            this.labelX3.Text = "Descripcion de ambiente";
-            // 
-            // labelX2
-            // 
-            this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(61, 94);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(80, 13);
-            this.labelX2.TabIndex = 112;
-            this.labelX2.Text = "Codigo de local";
-            // 
-            // txtAMBambiente
-            // 
-            this.txtAMBambiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtAMBambiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAMBambiente.Location = new System.Drawing.Point(196, 123);
-            this.txtAMBambiente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAMBambiente.MaxLength = 30;
-            this.txtAMBambiente.Name = "txtAMBambiente";
-            this.txtAMBambiente.Size = new System.Drawing.Size(250, 26);
-            this.txtAMBambiente.TabIndex = 110;
-            // 
-            // txtLOCid
-            // 
-            this.txtLOCid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtLOCid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLOCid.Location = new System.Drawing.Point(196, 85);
-            this.txtLOCid.Margin = new System.Windows.Forms.Padding(2);
-            this.txtLOCid.MaxLength = 30;
-            this.txtLOCid.Name = "txtLOCid";
-            this.txtLOCid.ReadOnly = true;
-            this.txtLOCid.Size = new System.Drawing.Size(250, 26);
-            this.txtLOCid.TabIndex = 108;
-            this.txtLOCid.TabStop = false;
-            // 
-            // txtAMBid
-            // 
-            this.txtAMBid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtAMBid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAMBid.Location = new System.Drawing.Point(196, 44);
-            this.txtAMBid.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAMBid.MaxLength = 50;
-            this.txtAMBid.Name = "txtAMBid";
-            this.txtAMBid.Size = new System.Drawing.Size(74, 26);
-            this.txtAMBid.TabIndex = 101;
             // 
             // groupBox1
             // 
@@ -573,23 +464,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS DE ORIGEN";
             // 
-            // txtORGds_ambiente
+            // cboPERNR3
             // 
-            this.txtORGds_ambiente.Location = new System.Drawing.Point(134, 102);
-            this.txtORGds_ambiente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtORGds_ambiente.Name = "txtORGds_ambiente";
-            this.txtORGds_ambiente.ReadOnly = true;
-            this.txtORGds_ambiente.Size = new System.Drawing.Size(186, 20);
-            this.txtORGds_ambiente.TabIndex = 233;
-            this.txtORGds_ambiente.TabStop = false;
-            // 
-            // txtORGcrp
-            // 
-            this.txtORGcrp.Location = new System.Drawing.Point(59, 58);
-            this.txtORGcrp.Margin = new System.Windows.Forms.Padding(2);
-            this.txtORGcrp.Name = "txtORGcrp";
-            this.txtORGcrp.Size = new System.Drawing.Size(56, 20);
-            this.txtORGcrp.TabIndex = 256;
+            this.cboPERNR3.AutoComplete = false;
+            this.cboPERNR3.AutoDropdown = false;
+            this.cboPERNR3.BackColorEven = System.Drawing.Color.White;
+            this.cboPERNR3.BackColorOdd = System.Drawing.Color.White;
+            this.cboPERNR3.ColumnNames = "";
+            this.cboPERNR3.ColumnWidthDefault = 75;
+            this.cboPERNR3.ColumnWidths = "";
+            this.cboPERNR3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboPERNR3.FormattingEnabled = true;
+            this.cboPERNR3.LinkedColumnIndex = 1;
+            this.cboPERNR3.LinkedTextBox = this.txtORGds_usuario;
+            this.cboPERNR3.Location = new System.Drawing.Point(100, 80);
+            this.cboPERNR3.Name = "cboPERNR3";
+            this.cboPERNR3.Size = new System.Drawing.Size(85, 21);
+            this.cboPERNR3.TabIndex = 261;
             // 
             // txtORGds_usuario
             // 
@@ -600,6 +491,78 @@
             this.txtORGds_usuario.Size = new System.Drawing.Size(130, 20);
             this.txtORGds_usuario.TabIndex = 234;
             this.txtORGds_usuario.TabStop = false;
+            // 
+            // cboAMB1
+            // 
+            this.cboAMB1.AutoComplete = false;
+            this.cboAMB1.AutoDropdown = false;
+            this.cboAMB1.BackColorEven = System.Drawing.Color.White;
+            this.cboAMB1.BackColorOdd = System.Drawing.Color.White;
+            this.cboAMB1.ColumnNames = "";
+            this.cboAMB1.ColumnWidthDefault = 75;
+            this.cboAMB1.ColumnWidths = "";
+            this.cboAMB1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboAMB1.FormattingEnabled = true;
+            this.cboAMB1.LinkedColumnIndex = 2;
+            this.cboAMB1.LinkedTextBox = this.txtORGds_ambiente;
+            this.cboAMB1.Location = new System.Drawing.Point(75, 102);
+            this.cboAMB1.Name = "cboAMB1";
+            this.cboAMB1.Size = new System.Drawing.Size(54, 21);
+            this.cboAMB1.TabIndex = 260;
+            // 
+            // txtORGds_ambiente
+            // 
+            this.txtORGds_ambiente.Location = new System.Drawing.Point(134, 102);
+            this.txtORGds_ambiente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtORGds_ambiente.Name = "txtORGds_ambiente";
+            this.txtORGds_ambiente.ReadOnly = true;
+            this.txtORGds_ambiente.Size = new System.Drawing.Size(186, 20);
+            this.txtORGds_ambiente.TabIndex = 233;
+            this.txtORGds_ambiente.TabStop = false;
+            // 
+            // cboZONA1
+            // 
+            this.cboZONA1.AutoComplete = false;
+            this.cboZONA1.AutoDropdown = false;
+            this.cboZONA1.BackColorEven = System.Drawing.Color.White;
+            this.cboZONA1.BackColorOdd = System.Drawing.Color.White;
+            this.cboZONA1.ColumnNames = "";
+            this.cboZONA1.ColumnWidthDefault = 75;
+            this.cboZONA1.ColumnWidths = "";
+            this.cboZONA1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboZONA1.FormattingEnabled = true;
+            this.cboZONA1.LinkedColumnIndex = 1;
+            this.cboZONA1.LinkedTextBox = this.txtORGds_zona;
+            this.cboZONA1.Location = new System.Drawing.Point(52, 36);
+            this.cboZONA1.Name = "cboZONA1";
+            this.cboZONA1.Size = new System.Drawing.Size(63, 21);
+            this.cboZONA1.TabIndex = 259;
+            // 
+            // cboPERNR1
+            // 
+            this.cboPERNR1.AutoComplete = false;
+            this.cboPERNR1.AutoDropdown = false;
+            this.cboPERNR1.BackColorEven = System.Drawing.Color.White;
+            this.cboPERNR1.BackColorOdd = System.Drawing.Color.White;
+            this.cboPERNR1.ColumnNames = "";
+            this.cboPERNR1.ColumnWidthDefault = 75;
+            this.cboPERNR1.ColumnWidths = "";
+            this.cboPERNR1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboPERNR1.FormattingEnabled = true;
+            this.cboPERNR1.LinkedColumnIndex = 1;
+            this.cboPERNR1.LinkedTextBox = this.txtORGds_persona;
+            this.cboPERNR1.Location = new System.Drawing.Point(102, 14);
+            this.cboPERNR1.Name = "cboPERNR1";
+            this.cboPERNR1.Size = new System.Drawing.Size(83, 21);
+            this.cboPERNR1.TabIndex = 253;
+            // 
+            // txtORGcrp
+            // 
+            this.txtORGcrp.Location = new System.Drawing.Point(59, 58);
+            this.txtORGcrp.Margin = new System.Windows.Forms.Padding(2);
+            this.txtORGcrp.Name = "txtORGcrp";
+            this.txtORGcrp.Size = new System.Drawing.Size(56, 20);
+            this.txtORGcrp.TabIndex = 256;
             // 
             // label1
             // 
@@ -651,7 +614,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(669, 319);
+            this.label14.Location = new System.Drawing.Point(663, 366);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(32, 13);
             this.label14.TabIndex = 241;
@@ -659,16 +622,16 @@
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(671, 336);
+            this.textBox14.Location = new System.Drawing.Point(664, 381);
             this.textBox14.Margin = new System.Windows.Forms.Padding(2);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(146, 79);
+            this.textBox14.Size = new System.Drawing.Size(146, 55);
             this.textBox14.TabIndex = 242;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(674, 425);
+            this.button3.Location = new System.Drawing.Point(667, 446);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(142, 19);
@@ -678,7 +641,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(674, 448);
+            this.button4.Location = new System.Drawing.Point(667, 469);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(142, 19);
@@ -688,7 +651,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(674, 472);
+            this.button5.Location = new System.Drawing.Point(667, 493);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(142, 40);
@@ -698,7 +661,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(674, 517);
+            this.button6.Location = new System.Drawing.Point(667, 538);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(142, 19);
@@ -708,7 +671,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(674, 540);
+            this.button7.Location = new System.Drawing.Point(667, 561);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(142, 19);
@@ -770,6 +733,53 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "DATOS DE DESTINO (MOVIMIENTO)";
             // 
+            // cboPERNR4
+            // 
+            this.cboPERNR4.AutoComplete = false;
+            this.cboPERNR4.AutoDropdown = false;
+            this.cboPERNR4.BackColorEven = System.Drawing.Color.White;
+            this.cboPERNR4.BackColorOdd = System.Drawing.Color.White;
+            this.cboPERNR4.ColumnNames = "";
+            this.cboPERNR4.ColumnWidthDefault = 75;
+            this.cboPERNR4.ColumnWidths = "";
+            this.cboPERNR4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboPERNR4.FormattingEnabled = true;
+            this.cboPERNR4.LinkedColumnIndex = 1;
+            this.cboPERNR4.LinkedTextBox = this.txtDSTds_usuario;
+            this.cboPERNR4.Location = new System.Drawing.Point(100, 79);
+            this.cboPERNR4.Name = "cboPERNR4";
+            this.cboPERNR4.Size = new System.Drawing.Size(74, 21);
+            this.cboPERNR4.TabIndex = 262;
+            // 
+            // txtDSTds_usuario
+            // 
+            this.txtDSTds_usuario.Location = new System.Drawing.Point(190, 80);
+            this.txtDSTds_usuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDSTds_usuario.Name = "txtDSTds_usuario";
+            this.txtDSTds_usuario.ReadOnly = true;
+            this.txtDSTds_usuario.Size = new System.Drawing.Size(130, 20);
+            this.txtDSTds_usuario.TabIndex = 234;
+            this.txtDSTds_usuario.TabStop = false;
+            // 
+            // cboAMB2
+            // 
+            this.cboAMB2.AutoComplete = false;
+            this.cboAMB2.AutoDropdown = false;
+            this.cboAMB2.BackColorEven = System.Drawing.Color.White;
+            this.cboAMB2.BackColorOdd = System.Drawing.Color.White;
+            this.cboAMB2.ColumnNames = "";
+            this.cboAMB2.ColumnWidthDefault = 75;
+            this.cboAMB2.ColumnWidths = "";
+            this.cboAMB2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboAMB2.FormattingEnabled = true;
+            this.cboAMB2.LinkedColumnIndex = 2;
+            this.cboAMB2.LinkedTextBox = this.txtDSTds_ambiente;
+            this.cboAMB2.Location = new System.Drawing.Point(75, 101);
+            this.cboAMB2.Name = "cboAMB2";
+            this.cboAMB2.Size = new System.Drawing.Size(54, 21);
+            this.cboAMB2.TabIndex = 261;
+            this.cboAMB2.SelectedIndexChanged += new System.EventHandler(this.multiColumnComboBox5_SelectedIndexChanged);
+            // 
             // txtDSTds_ambiente
             // 
             this.txtDSTds_ambiente.Location = new System.Drawing.Point(134, 102);
@@ -780,6 +790,24 @@
             this.txtDSTds_ambiente.TabIndex = 233;
             this.txtDSTds_ambiente.TabStop = false;
             // 
+            // cboZONA2
+            // 
+            this.cboZONA2.AutoComplete = false;
+            this.cboZONA2.AutoDropdown = false;
+            this.cboZONA2.BackColorEven = System.Drawing.Color.White;
+            this.cboZONA2.BackColorOdd = System.Drawing.Color.White;
+            this.cboZONA2.ColumnNames = "";
+            this.cboZONA2.ColumnWidthDefault = 75;
+            this.cboZONA2.ColumnWidths = "";
+            this.cboZONA2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboZONA2.FormattingEnabled = true;
+            this.cboZONA2.LinkedColumnIndex = 1;
+            this.cboZONA2.LinkedTextBox = this.txtDSTds_zona;
+            this.cboZONA2.Location = new System.Drawing.Point(52, 37);
+            this.cboZONA2.Name = "cboZONA2";
+            this.cboZONA2.Size = new System.Drawing.Size(63, 21);
+            this.cboZONA2.TabIndex = 260;
+            // 
             // txtDSTds_zona
             // 
             this.txtDSTds_zona.Location = new System.Drawing.Point(120, 37);
@@ -789,6 +817,24 @@
             this.txtDSTds_zona.Size = new System.Drawing.Size(200, 20);
             this.txtDSTds_zona.TabIndex = 228;
             this.txtDSTds_zona.TabStop = false;
+            // 
+            // cboPERNR2
+            // 
+            this.cboPERNR2.AutoComplete = false;
+            this.cboPERNR2.AutoDropdown = false;
+            this.cboPERNR2.BackColorEven = System.Drawing.Color.White;
+            this.cboPERNR2.BackColorOdd = System.Drawing.Color.White;
+            this.cboPERNR2.ColumnNames = "";
+            this.cboPERNR2.ColumnWidthDefault = 75;
+            this.cboPERNR2.ColumnWidths = "";
+            this.cboPERNR2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboPERNR2.FormattingEnabled = true;
+            this.cboPERNR2.LinkedColumnIndex = 1;
+            this.cboPERNR2.LinkedTextBox = this.txtDSTds_persona;
+            this.cboPERNR2.Location = new System.Drawing.Point(101, 14);
+            this.cboPERNR2.Name = "cboPERNR2";
+            this.cboPERNR2.Size = new System.Drawing.Size(84, 21);
+            this.cboPERNR2.TabIndex = 259;
             // 
             // txtDSTds_persona
             // 
@@ -807,16 +853,6 @@
             this.txtDSTcrp.Name = "txtDSTcrp";
             this.txtDSTcrp.Size = new System.Drawing.Size(64, 20);
             this.txtDSTcrp.TabIndex = 256;
-            // 
-            // txtDSTds_usuario
-            // 
-            this.txtDSTds_usuario.Location = new System.Drawing.Point(190, 80);
-            this.txtDSTds_usuario.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDSTds_usuario.Name = "txtDSTds_usuario";
-            this.txtDSTds_usuario.ReadOnly = true;
-            this.txtDSTds_usuario.Size = new System.Drawing.Size(130, 20);
-            this.txtDSTds_usuario.TabIndex = 234;
-            this.txtDSTds_usuario.TabStop = false;
             // 
             // label8
             // 
@@ -871,150 +907,47 @@
             this.txtDSTds_crp.Size = new System.Drawing.Size(200, 20);
             this.txtDSTds_crp.TabIndex = 229;
             // 
-            // cboPERNR4
+            // cboMVPtipo
             // 
-            this.cboPERNR4.AutoComplete = false;
-            this.cboPERNR4.AutoDropdown = false;
-            this.cboPERNR4.BackColorEven = System.Drawing.Color.White;
-            this.cboPERNR4.BackColorOdd = System.Drawing.Color.White;
-            this.cboPERNR4.ColumnNames = "";
-            this.cboPERNR4.ColumnWidthDefault = 75;
-            this.cboPERNR4.ColumnWidths = "";
-            this.cboPERNR4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboPERNR4.FormattingEnabled = true;
-            this.cboPERNR4.LinkedColumnIndex = 1;
-            this.cboPERNR4.LinkedTextBox = this.txtDSTds_usuario;
-            this.cboPERNR4.Location = new System.Drawing.Point(100, 79);
-            this.cboPERNR4.Name = "cboPERNR4";
-            this.cboPERNR4.Size = new System.Drawing.Size(74, 21);
-            this.cboPERNR4.TabIndex = 262;
+            this.cboMVPtipo.Location = new System.Drawing.Point(205, 76);
+            this.cboMVPtipo.Name = "cboMVPtipo";
+            this.cboMVPtipo.ReadOnly = true;
+            this.cboMVPtipo.Size = new System.Drawing.Size(145, 20);
+            this.cboMVPtipo.TabIndex = 263;
+            this.cboMVPtipo.TabStop = false;
             // 
-            // cboAMB2
+            // button8
             // 
-            this.cboAMB2.AutoComplete = false;
-            this.cboAMB2.AutoDropdown = false;
-            this.cboAMB2.BackColorEven = System.Drawing.Color.White;
-            this.cboAMB2.BackColorOdd = System.Drawing.Color.White;
-            this.cboAMB2.ColumnNames = "";
-            this.cboAMB2.ColumnWidthDefault = 75;
-            this.cboAMB2.ColumnWidths = "";
-            this.cboAMB2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboAMB2.FormattingEnabled = true;
-            this.cboAMB2.LinkedColumnIndex = 2;
-            this.cboAMB2.LinkedTextBox = this.txtDSTds_ambiente;
-            this.cboAMB2.Location = new System.Drawing.Point(75, 101);
-            this.cboAMB2.Name = "cboAMB2";
-            this.cboAMB2.Size = new System.Drawing.Size(54, 21);
-            this.cboAMB2.TabIndex = 261;
-            this.cboAMB2.SelectedIndexChanged += new System.EventHandler(this.multiColumnComboBox5_SelectedIndexChanged);
+            this.button8.Location = new System.Drawing.Point(8, 13);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(137, 19);
+            this.button8.TabIndex = 264;
+            this.button8.Text = "Agregar";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // cboZONA2
+            // groupBox2
             // 
-            this.cboZONA2.AutoComplete = false;
-            this.cboZONA2.AutoDropdown = false;
-            this.cboZONA2.BackColorEven = System.Drawing.Color.White;
-            this.cboZONA2.BackColorOdd = System.Drawing.Color.White;
-            this.cboZONA2.ColumnNames = "";
-            this.cboZONA2.ColumnWidthDefault = 75;
-            this.cboZONA2.ColumnWidths = "";
-            this.cboZONA2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboZONA2.FormattingEnabled = true;
-            this.cboZONA2.LinkedColumnIndex = 1;
-            this.cboZONA2.LinkedTextBox = this.txtDSTds_zona;
-            this.cboZONA2.Location = new System.Drawing.Point(52, 37);
-            this.cboZONA2.Name = "cboZONA2";
-            this.cboZONA2.Size = new System.Drawing.Size(63, 21);
-            this.cboZONA2.TabIndex = 260;
+            this.groupBox2.Controls.Add(this.button9);
+            this.groupBox2.Controls.Add(this.button8);
+            this.groupBox2.Location = new System.Drawing.Point(657, 299);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(152, 62);
+            this.groupBox2.TabIndex = 265;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Activos";
             // 
-            // cboPERNR2
+            // button9
             // 
-            this.cboPERNR2.AutoComplete = false;
-            this.cboPERNR2.AutoDropdown = false;
-            this.cboPERNR2.BackColorEven = System.Drawing.Color.White;
-            this.cboPERNR2.BackColorOdd = System.Drawing.Color.White;
-            this.cboPERNR2.ColumnNames = "";
-            this.cboPERNR2.ColumnWidthDefault = 75;
-            this.cboPERNR2.ColumnWidths = "";
-            this.cboPERNR2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboPERNR2.FormattingEnabled = true;
-            this.cboPERNR2.LinkedColumnIndex = 1;
-            this.cboPERNR2.LinkedTextBox = this.txtDSTds_persona;
-            this.cboPERNR2.Location = new System.Drawing.Point(101, 14);
-            this.cboPERNR2.Name = "cboPERNR2";
-            this.cboPERNR2.Size = new System.Drawing.Size(84, 21);
-            this.cboPERNR2.TabIndex = 259;
-            // 
-            // cboPERNR3
-            // 
-            this.cboPERNR3.AutoComplete = false;
-            this.cboPERNR3.AutoDropdown = false;
-            this.cboPERNR3.BackColorEven = System.Drawing.Color.White;
-            this.cboPERNR3.BackColorOdd = System.Drawing.Color.White;
-            this.cboPERNR3.ColumnNames = "";
-            this.cboPERNR3.ColumnWidthDefault = 75;
-            this.cboPERNR3.ColumnWidths = "";
-            this.cboPERNR3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboPERNR3.FormattingEnabled = true;
-            this.cboPERNR3.LinkedColumnIndex = 1;
-            this.cboPERNR3.LinkedTextBox = this.txtORGds_usuario;
-            this.cboPERNR3.Location = new System.Drawing.Point(100, 80);
-            this.cboPERNR3.Name = "cboPERNR3";
-            this.cboPERNR3.Size = new System.Drawing.Size(85, 21);
-            this.cboPERNR3.TabIndex = 261;
-            // 
-            // cboAMB1
-            // 
-            this.cboAMB1.AutoComplete = false;
-            this.cboAMB1.AutoDropdown = false;
-            this.cboAMB1.BackColorEven = System.Drawing.Color.White;
-            this.cboAMB1.BackColorOdd = System.Drawing.Color.White;
-            this.cboAMB1.ColumnNames = "";
-            this.cboAMB1.ColumnWidthDefault = 75;
-            this.cboAMB1.ColumnWidths = "";
-            this.cboAMB1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboAMB1.FormattingEnabled = true;
-            this.cboAMB1.LinkedColumnIndex = 2;
-            this.cboAMB1.LinkedTextBox = this.txtORGds_ambiente;
-            this.cboAMB1.Location = new System.Drawing.Point(75, 102);
-            this.cboAMB1.Name = "cboAMB1";
-            this.cboAMB1.Size = new System.Drawing.Size(54, 21);
-            this.cboAMB1.TabIndex = 260;
-            // 
-            // cboZONA1
-            // 
-            this.cboZONA1.AutoComplete = false;
-            this.cboZONA1.AutoDropdown = false;
-            this.cboZONA1.BackColorEven = System.Drawing.Color.White;
-            this.cboZONA1.BackColorOdd = System.Drawing.Color.White;
-            this.cboZONA1.ColumnNames = "";
-            this.cboZONA1.ColumnWidthDefault = 75;
-            this.cboZONA1.ColumnWidths = "";
-            this.cboZONA1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboZONA1.FormattingEnabled = true;
-            this.cboZONA1.LinkedColumnIndex = 1;
-            this.cboZONA1.LinkedTextBox = this.txtORGds_zona;
-            this.cboZONA1.Location = new System.Drawing.Point(52, 36);
-            this.cboZONA1.Name = "cboZONA1";
-            this.cboZONA1.Size = new System.Drawing.Size(63, 21);
-            this.cboZONA1.TabIndex = 259;
-            // 
-            // cboPERNR1
-            // 
-            this.cboPERNR1.AutoComplete = false;
-            this.cboPERNR1.AutoDropdown = false;
-            this.cboPERNR1.BackColorEven = System.Drawing.Color.White;
-            this.cboPERNR1.BackColorOdd = System.Drawing.Color.White;
-            this.cboPERNR1.ColumnNames = "";
-            this.cboPERNR1.ColumnWidthDefault = 75;
-            this.cboPERNR1.ColumnWidths = "";
-            this.cboPERNR1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboPERNR1.FormattingEnabled = true;
-            this.cboPERNR1.LinkedColumnIndex = 1;
-            this.cboPERNR1.LinkedTextBox = this.txtORGds_persona;
-            this.cboPERNR1.Location = new System.Drawing.Point(102, 14);
-            this.cboPERNR1.Name = "cboPERNR1";
-            this.cboPERNR1.Size = new System.Drawing.Size(83, 21);
-            this.cboPERNR1.TabIndex = 253;
+            this.button9.Location = new System.Drawing.Point(8, 37);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(137, 19);
+            this.button9.TabIndex = 265;
+            this.button9.Text = "Eliminar";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // cboMVPtipo1
             // 
@@ -1034,20 +967,12 @@
             this.cboMVPtipo1.Size = new System.Drawing.Size(97, 21);
             this.cboMVPtipo1.TabIndex = 262;
             // 
-            // cboMVPtipo
-            // 
-            this.cboMVPtipo.Location = new System.Drawing.Point(205, 76);
-            this.cboMVPtipo.Name = "cboMVPtipo";
-            this.cboMVPtipo.ReadOnly = true;
-            this.cboMVPtipo.Size = new System.Drawing.Size(145, 20);
-            this.cboMVPtipo.TabIndex = 263;
-            this.cboMVPtipo.TabStop = false;
-            // 
             // FrmMovimiento_Transferencia_Activo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 587);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.cboMVPtipo);
             this.Controls.Add(this.cboMVPtipo1);
             this.Controls.Add(this.groupBox3);
@@ -1083,13 +1008,11 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1123,19 +1046,10 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataListado;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.CheckBox chkEliminar;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label labelX1;
-        private System.Windows.Forms.Label labelX3;
-        private System.Windows.Forms.Label labelX2;
-        private System.Windows.Forms.TextBox txtAMBambiente;
-        private System.Windows.Forms.TextBox txtLOCid;
-        private System.Windows.Forms.TextBox txtAMBid;
         private System.Windows.Forms.DateTimePicker dtpMVPfecha_movimiento;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
@@ -1177,5 +1091,8 @@
         private MultiColumnComboBoxDemo.MultiColumnComboBox cboPERNR3;
         private System.Windows.Forms.TextBox cboMVPtipo;
         private MultiColumnComboBoxDemo.MultiColumnComboBox cboMVPtipo1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
     }
 }

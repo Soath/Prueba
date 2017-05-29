@@ -350,6 +350,12 @@ namespace CapaNegocio
         {
             return new DacfACFp_Activo_Fijo().Mostrar4(CMPid);
         }
+
+        // agregar activo fijo en Frm Trasnferencia Activo
+        public static DataTable IngresarACF(string iACFid)
+        {
+            return new DacfACFp_Activo_Fijo().IngresarACF(iACFid);
+        }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos

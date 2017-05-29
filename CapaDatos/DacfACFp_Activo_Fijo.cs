@@ -603,6 +603,39 @@ namespace CapaDatos
             }
             return DtResultado;
         }
+        
+        //Ingresar Activo Fijo en Frm Transferencia Activo
+        public DataTable IngresarACF(string iACFid)
+        {
+            DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S4_acfACFp_Activo_Fijo";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParCMPid = new SqlParameter();
+                ParCMPid.ParameterName = "@iACFid";
+                ParCMPid.SqlDbType = SqlDbType.Int;
+                ParCMPid.Value = iACFid;
+                SqlCmd.Parameters.Add(ParCMPid);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
         //METODO MOSTRAR 4
         public DataTable Mostrar4(string CMPid)
         {
@@ -635,7 +668,7 @@ namespace CapaDatos
             return DtResultado;
         }
         //METODO INSERTAR 
-	public string Insertar(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
+        public string Insertar(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
     {
         string rpta = "";
         SqlConnection SqlCon = new SqlConnection();

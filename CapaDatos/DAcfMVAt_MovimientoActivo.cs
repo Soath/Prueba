@@ -421,7 +421,7 @@ namespace CapaDatos
             return DtResultado;
         }
 
-       
+
         //METODO MOSTRAR
         public DataTable Mostrar2()
         {
@@ -437,9 +437,39 @@ namespace CapaDatos
                 SqlCmd.CommandText = "usp_S2_acfMVAt_MovimientoActivo";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-    
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
 
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
 
+        //METODO MOSTRAR en FrmMovimientoTransferecnaiActivo
+        public DataTable Mostrar3(string iMVAid)
+        {
+            DataTable DtResultado = new DataTable("acfMVAt_MovimientoActivo");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S3_acfMVAt_MovimientoActivo";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                
+                SqlParameter ParMVAid = new SqlParameter();
+                ParMVAid.ParameterName = "@iMVAid";
+                ParMVAid.SqlDbType = SqlDbType.Int;
+                ParMVAid.Size = 50;
+                ParMVAid.Value = iMVAid;
+                SqlCmd.Parameters.Add(ParMVAid);
+                
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
@@ -1104,25 +1134,60 @@ namespace CapaDatos
 
 
         //METODO BUSCAR
-
         public DataTable Buscar(DAcfMVAt_MovimientoActivo acfMVAt_MovimientoActivo)
         {
-
             DataTable DtResultado = new DataTable("acfMVAt_MovimientoActivo");
             SqlConnection SqlCon = new SqlConnection();
 
-
             try
             {
-
                 SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "usp_B_acfMVAt_MovimientoActivo";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
+                SqlParameter PariMVAid = new SqlParameter();
+                PariMVAid.ParameterName = "@iMVAid";
+                PariMVAid.SqlDbType = SqlDbType.Int;
+                PariMVAid.Value = Convert.ToInt32(acfMVAt_MovimientoActivo.MVAid);
+                SqlCmd.Parameters.Add(PariMVAid);
+                //
+                SqlParameter PariACFid = new SqlParameter();
+                PariACFid.ParameterName = "@iACFid";
+                PariACFid.SqlDbType = SqlDbType.Int;
+                PariACFid.Value = Convert.ToInt32(acfMVAt_MovimientoActivo.ACFid);
+                SqlCmd.Parameters.Add(PariACFid);
+                //
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
 
+            }
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
 
+        }
+
+        // Insertar Detalle de Frm Transferencia Activo(movimiento Activo) 
+        public string IngresarACF(DAcfMVAt_MovimientoActivo acfMVAt_MovimientoActivo)
+        {
+
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_D_acfMVAt_MovimientoActivo";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
                 SqlParameter PariMVAid = new SqlParameter();
                 PariMVAid.ParameterName = "@iMVAid";
                 PariMVAid.SqlDbType = SqlDbType.Int;
@@ -1136,19 +1201,25 @@ namespace CapaDatos
                 SqlCmd.Parameters.Add(PariACFid);
                 //
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
-                SqlDat.Fill(DtResultado);
+                //Ejecutamos nuestro comando
+
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+
 
             }
             catch (Exception ex)
             {
-                DtResultado = null;
+                rpta = ex.Message;
             }
-            return DtResultado;
-
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
         }
- 
- 
- 
+
+
+
+
     }
 }
