@@ -60,7 +60,7 @@ namespace CapaNegocio
         //------------------------------------------------------------------
         //M�todo Mostrar que llama al m�todo Mostrar de la clase DPostres
         //de la CapaDatos
-        public static DataTable Mostrar()
+        public static DataTable Mostrar()//(string sRVAcodigo)
         {
             return new DacfRVAt_registrovaluacion().Mostrar();
         }
@@ -76,6 +76,23 @@ namespace CapaNegocio
             Obj.RVAresponsable = sRVAresponsable;
             return Obj.Buscar(Obj);
         }
+        // barra de navegacion
+        public static DataTable Top()
+        {
+            return new DacfPDFt_procesodiferido().Top();
+        }
+        public static DataTable Last()
+        {
+            return new DacfPDFt_procesodiferido().Last();
+        }
+        public static DataTable Next(String PDFcodigo)
+        {
+            return new DacfPDFt_procesodiferido().Next(PDFcodigo);
+        }
 
+        public static DataTable Prev(String PDFcodigo)
+        {
+            return new DacfPDFt_procesodiferido().Prev(PDFcodigo);
+        }
     }
 }

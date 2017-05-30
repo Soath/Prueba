@@ -478,5 +478,11 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void ribbonButton87_Click(object sender, EventArgs e)
+        {
+            Form FrmACF_CalculoValidacion = new FrmACF_CalculoValidacion();
+            FrmACF_CalculoValidacion.ShowDialog();            
+        }
     }
 }
