@@ -1,0 +1,53 @@
+﻿@model SistemaPlanificacion.Models.LogOnViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "Log On";
+    ViewBag.ReturnUrl = Request["ReturnUrl"];
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <link href="~/Content/login-box.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    @using (Html.BeginForm(null, null, new { returnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @name = "frmLogin" }))
+    {
+        <div style="width:100%; margin-top:5%;">
+            <div id="login-box">
+                <H2 style="font-size:36px;">Iniciar sesión</H2>
+                <hr />
+                <span style="font-size: 14px;">Sistema de Planificación</span>
+                <br />
+                <br />
+                <div id="login-box-name" style="margin-top:20px;">
+                    Usuario:
+                </div>
+                <div id="login-box-field" style="margin-top:20px;">
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-login", autofocus = true, title = "Username", value = "", size = "30", maxlength = "2048" })
+                    <br />
+                </div>
+                <div id="login-box-name">
+                    Contraseña:
+                </div>
+                <div id="login-box-field">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-login", title = "Password", value = "", size = "30", maxlength = "2048" })
+                    <br />
+                </div>
+                <br />
+                <span class="login-box-options">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.DisplayNameFor(m => m.RememberMe)
+                </span>
+                <br />
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+                <br />
+                <a href="#" onclick="document.forms['frmLogin'].submit(); return false;"><img src="~/Content/img/login-btn.png" width="103" height="42" style="margin-left:90px;" /></a>
+                <!--<button type="submit" class="btn btn-primary">Acceder</button>-->
+            </div>
+        </div>
+     }
+</body>
+</html>

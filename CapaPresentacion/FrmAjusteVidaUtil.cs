@@ -73,8 +73,10 @@ namespace CapaPresentacion
 
         private void BotonesIE(bool edo)
         {
-            this.toolStripAgregar.Visible = !edo;
+            this.toolStripRefrescar.Visible = !edo;            
             this.toolStripAnterior.Visible = !edo;
+            this.toolStripGuardar.Visible = edo;
+            this.toolStripAgregar.Visible = edo;
             this.toolStripEditar.Visible = edo;
             this.toolStripCancelar.Visible = edo;
             this.toolStripSiguiente.Visible = edo;
@@ -108,39 +110,7 @@ namespace CapaPresentacion
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string iACFid = Microsoft.VisualBasic.Interaction.InputBox(
-                            "Ingrese el Id del Activo Fijo",
-                            "Ajuste del Valor del Bien");
-            if (iACFid != null)
-            {
-                
-                //dataListado.DataSource = NacfACFp_Activo_Fijo.Mostrar2(iACFid);
-                dataListado.DataSource = null;                                 
-                DataTable tabla = NacfACFp_Activo_Fijo.Mostrar2(iACFid);
-                if (tabla.Rows.Count > 0)
-                {
-                    foreach (DataRow Drow in tabla.Rows)
-                     {
-                     int num = dataListado.Rows.Add();
-                     dataListado.Rows[num].Cells[1].Value = Drow["ACFid"].ToString();
-                     dataListado.Rows[num].Cells[2].Value = Drow["ACFdescripcion"].ToString();
-                     dataListado.Rows[num].Cells[3].Value = Drow["ACFvutilniifanio"].ToString();
-                     dataListado.Rows[num].Cells[4].Value = Drow["ACFvutilniifdia"].ToString();
-                     dataListado.Rows[num].Cells[5].Value = Drow["VidaUtilNiffanioMOD"].ToString();
-                     dataListado.Rows[num].Cells[6].Value = Drow["VidaUtilNiffdiaMOD"].ToString();
-                     dataListado.Rows[num].Cells[7].Value = Drow["ACFvutiltribanio"].ToString();
-                     dataListado.Rows[num].Cells[8].Value = Drow["ACFvutiltribdia"].ToString();
-                     dataListado.Rows[num].Cells[9].Value = Drow["VUtilTribAnioMOD"].ToString();
-                     dataListado.Rows[num].Cells[10].Value = Drow["VUtilTribDiaMOD"].ToString();
-                     dataListado.Rows[num].Cells[11].Value = Drow["ACFdepacutrib"].ToString();
-                     dataListado.Rows[num].Cells[12].Value = Drow["ACFdepacuniif"].ToString();
-                     dataListado.Rows[num].Cells[13].Value = Drow["CMPid"].ToString();
-                    }
-                }
-                else
-                    MessageBox.Show("No Existe", "Registro");
-
-            }
+            
 
         }
 
@@ -155,8 +125,7 @@ namespace CapaPresentacion
 
         private void button5_Click(object sender, EventArgs e)
         {
-            int fil = dataListado.CurrentRow.Index;
-            dataListado.Rows.RemoveAt(fil);
+           
         }
 
         private void MensajeOk(string mensaje)
@@ -170,41 +139,100 @@ namespace CapaPresentacion
         }
         private void button1_Click(object sender, EventArgs e)
         {
-           string Rta = string.Empty;
-           MessageBox.Show("Editando Vida Util");
-           try
-           {
-                foreach (DataGridViewRow row in dataListado.Rows)
-                {
-                    Rta = NacfACFp_Activo_Fijo.Editar2(
-                     this.dataListado.CurrentRow.Cells[0].Value.ToString()
-                    , this.dataListado.CurrentRow.Cells[4].Value.ToString()
-                    , this.dataListado.CurrentRow.Cells[5].Value.ToString()
-                    , this.dataListado.CurrentRow.Cells[8].Value.ToString()
-                    , this.dataListado.CurrentRow.Cells[9].Value.ToString()     
-         
-                  );
-               
-               if (Rta.Equals("OK"))
-               {
-                   this.MensajeOk("Regsitro Agregado Correctamente");
-               }
-               else
-               {
-                   this.MensajeError("Error al Insertar Registro :" + Rta);
-               }
-             }
-            }
-           catch (Exception ex)
-           {
-               MessageBox.Show(ex.Message + ex.StackTrace);
-           }
+          
          
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void toolStripAgregar_Click(object sender, EventArgs e)
+        {
+            
+            string iACFid = Microsoft.VisualBasic.Interaction.InputBox(
+                            "Ingrese el Id del Activo Fijo",
+                            "Ajuste del Valor del Bien");
+            if (iACFid != null)
+            {
+
+                //dataListado.DataSource = NacfACFp_Activo_Fijo.Mostrar2(iACFid);
+                dataListado.DataSource = null;
+                DataTable tabla = NacfACFp_Activo_Fijo.Mostrar2(iACFid);
+                if (tabla.Rows.Count > 0)
+                {
+                    foreach (DataRow Drow in tabla.Rows)
+                    {
+                        int num = dataListado.Rows.Add();
+                        dataListado.Rows[num].Cells[1].Value = Drow["ACFid"].ToString();
+                        dataListado.Rows[num].Cells[2].Value = Drow["ACFdescripcion"].ToString();
+                        dataListado.Rows[num].Cells[3].Value = Drow["ACFvutilniifanio"].ToString();
+                        dataListado.Rows[num].Cells[4].Value = Drow["ACFvutilniifdia"].ToString();
+                        dataListado.Rows[num].Cells[5].Value = Drow["VidaUtilNiffanioMOD"].ToString();
+                        dataListado.Rows[num].Cells[6].Value = Drow["VidaUtilNiffdiaMOD"].ToString();
+                        dataListado.Rows[num].Cells[7].Value = Drow["ACFvutiltribanio"].ToString();
+                        dataListado.Rows[num].Cells[8].Value = Drow["ACFvutiltribdia"].ToString();
+                        dataListado.Rows[num].Cells[9].Value = Drow["VUtilTribAnioMOD"].ToString();
+                        dataListado.Rows[num].Cells[10].Value = Drow["VUtilTribDiaMOD"].ToString();
+                        dataListado.Rows[num].Cells[11].Value = Drow["ACFdepacutrib"].ToString();
+                        dataListado.Rows[num].Cells[12].Value = Drow["ACFdepacuniif"].ToString();
+                        dataListado.Rows[num].Cells[13].Value = Drow["CMPid"].ToString();
+                    }
+                }
+                else
+                    MessageBox.Show("No Existe", "Registro");
+
+            }
+        }
+
+        private void toolStripRefrescar_Click(object sender, EventArgs e)
+        {
+            BotonesIE(true);
+        }
+
+        private void toolStripGuardar_Click(object sender, EventArgs e)
+        {
+            string Rta = string.Empty;
+            MessageBox.Show("Editando Vida Util");
+            try
+            {
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    Rta = NacfACFp_Activo_Fijo.Editar2(
+                     this.dataListado.CurrentRow.Cells[1].Value.ToString()
+                    , this.dataListado.CurrentRow.Cells[5].Value.ToString()
+                    , this.dataListado.CurrentRow.Cells[6].Value.ToString()
+                    , this.dataListado.CurrentRow.Cells[9].Value.ToString()
+                    , this.dataListado.CurrentRow.Cells[10].Value.ToString()
+
+                  );
+
+                    if (Rta.Equals("OK"))
+                    {
+                        this.MensajeOk("Regsitro Agregado Correctamente");
+                    }
+                    else
+                    {
+                        this.MensajeError("Error al Insertar Registro :" + Rta);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void toolStripCancelar_Click(object sender, EventArgs e)
+        {
+            int fil = dataListado.CurrentRow.Index;
+            dataListado.Rows.RemoveAt(fil);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

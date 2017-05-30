@@ -1,0 +1,59 @@
+﻿@model SistemaPlanificacion.Models.LogOnViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "Cambio Clave";
+
+    ViewBag.ReturnUrl = Request["ReturnUrl"];
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <META content="IE=edge" http-equiv="X-UA-Compatible">
+    <link href="~/Content/login-box.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    @using (Html.BeginForm(null, null, new { returnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @name = "frmCambioClave" }))
+    {
+        <div style="width:100%; margin-top:5%;">
+            <div id="login-box-changue-pass">
+                <H3>Cambio de contraseña</H3>
+                <hr />
+                <span style="font-size: 14px;">Sistema de Planificación</span>
+                <br />
+                <br />
+                <div id="login-box-name-changue-pass" style="margin-top:20px;">
+                    Usuario:
+                </div>
+                <div id="login-box-field" style="margin-top:20px;">
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-login", required = true, @readonly = "readonly", title = "Username", value = "", size = "30", maxlength = "2048" })
+                    <br />
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger", style = "color:#afabab" })
+                </div>
+                <div id="login-box-name-changue-pass">
+                    Nueva contraseña:
+                </div>
+                <div id="login-box-field">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-login", required = true, title = "Password", value = "", size = "30", maxlength = "2048", autofocus = true })
+                    <br />
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger", style = "color:#afabab" })
+                </div>
+                <div id="login-box-name-changue-pass">
+                    Confirmar contraseña:
+                </div>
+                <div id="login-box-field">
+                    @Html.PasswordFor(m => m.NewPassword, new { @class = "form-login", required = true, title = "Password", value = "", size = "30", maxlength = "2048", autofocus = true })
+                    <br />
+                </div>
+                <br />
+                <br />
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+                <br />
+                <a href="#" onclick="document.forms['frmCambioClave'].submit(); return false;"><img src="~/Content/img/ChanguePass.png" width="203" height="42" style="margin-left:140px; margin-top:10px;" /></a>
+                <!--<button type="submit" class="btn btn-primary">Acceder</button>-->
+            </div>
+        </div>
+     }
+</body>
+</html>

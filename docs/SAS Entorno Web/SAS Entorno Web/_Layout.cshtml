@@ -1,0 +1,251 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sistema de Planificación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div id="navigation" class="navbar-fixed-top">
+        <div class="container container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class='main-nav'>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class='dropdown-toggle'><i class="glyphicon glyphicon-flash"></i> PLANIFICACIÓN ELS</a>
+                        <ul class="dropdown-menu" role="menu">
+                            
+                            @if (Seguridad.pfncPuedeAccederA("SGPLN_PLN_PMV") == "1")
+                            {
+                                <li class="dropdown-header">Normatividad</li>
+                                <li><a href="@Url.Action("Normatividad", "Home")"><i class="glyphicon glyphicon-ok-sign"></i> Misión / Visión</a></li>
+                            }
+                            @if (Seguridad.pfncPuedeAccederA("SGPLN_PLN_FDA") == "1")
+                            {
+                                <li><a href="@Url.Action("Foda", "Home")"><i class="glyphicon glyphicon-picture"></i> FODA</a></li>
+                            }
+                            @if (Seguridad.pfncPuedeAccederA("SGPLN_PLN_MTZ") == "1")
+                            {
+                                <li><a href="@Url.Action("Matriz", "Home")"><i class="glyphicon glyphicon-tasks"></i> Matriz</a></li>
+                            }
+                            @if (Seguridad.pfncPuedeAccederA("SGPLN_PLN_FCE") == "1")
+                            {
+                                <li><a href="@Url.Action("FactoresCriticos", "Home")"><i class="glyphicon glyphicon-copyright-mark"></i> Factores Críticos</a></li>
+                                <li role="separator" class="divider"></li>
+                            }
+                            @if (Seguridad.pfncPuedeAccederA("SGPLN_PLN_PPA") == "1")
+                            {
+                                <li class="dropdown-header">Enlaces Externos</li>
+                                <li><a href="@Url.Action("Enlaces", "Home")"><i class="glyphicon glyphicon-download"></i> Proceso Presupuestal 2017</a></li>
+                            }
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            @using SistemaPlanificacion.Models;
+            <div class="collapse navbar-collapse" style="padding-right:0; padding-right:0">
+                <ul class="main-nav">
+                    @if (Seguridad.pfncPuedeAccederA("SGPLN_INI") == "1")
+                    {
+                        <li class="@ViewBag.ClassActiveInicio">
+                            <a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+                                <i style="font-size:12px;" class="glyphicon glyphicon-home"></i>&nbsp;
+                                <span>Inicio</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="@Url.Action("Index", "PlanEstrategico")">Plan Estratégico</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Perspectivas</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="@Url.Action("Create", "Perspectiva")"><i class="glyphicon glyphicon-plus"></i> Crear Perspectiva</a></li>
+                                        <li><a href="@Url.Action("Index", "Perspectiva")"><i class="glyphicon glyphicon-th-list"></i> Listado de Perspectivas</a></li>
+
+                                    </ul>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Objetivos</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="@Url.Action("Create", "ObjetivoEstrategico")"><i class="glyphicon glyphicon-plus"></i> Crear Objetivo Estratégico</a></li>
+                                        <li><a href="@Url.Action("Index", "ObjetivoEstrategico")"><i class="glyphicon glyphicon-th-list"></i> Lista de Objetivos Estratégicos</a></li>
+                                    </ul>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Estrategias</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="@Url.Action("Create", "Estrategia")"><i class="glyphicon glyphicon-plus"></i> Crear Estrategia</a></li>
+                                        <li><a href="@Url.Action("Index", "Estrategia")"><i class="glyphicon glyphicon-th-list"></i> Listado de Estrategias</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Componentes</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="dropdown-header">Tipo de Componentes</li>
+                                        <li><a href="@Url.Action("Create", "TipoComponente")"><i class="glyphicon glyphicon-plus"></i> Crear Tipo de Componente</a></li>
+                                        <li><a href="@Url.Action("Index", "TipoComponente")"><i class="glyphicon glyphicon-th-list"></i> Lista de Tipos de Componentes</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li class="dropdown-header">Componentes</li>
+                                        <li><a href="@Url.Action("Create", "Componente")"><i class="glyphicon glyphicon-plus"></i> Crear Componente</a></li>
+                                        <li><a href="@Url.Action("Index", "Componente")"><i class="glyphicon glyphicon-th-list"></i> Lista de Componentes</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Tipo Mantenimiento &nbsp;</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="@Url.Action("Create", "TipoMantenimiento")"><i class="glyphicon glyphicon-plus"></i> Crear Tipo de Mantenimiento</a></li>
+                                        <li><a href="@Url.Action("Index", "TipoMantenimiento")"><i class="glyphicon glyphicon-th-list"></i> Lista de Tipos de Mantenimiento</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Áreas</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="dropdown-header">Área</li>
+                                        <li><a href="@Url.Action("Create", "Area")"><i class="glyphicon glyphicon-plus"></i> Crear Área</a></li>
+                                        <li><a href="@Url.Action("Index", "Area")"><i class="glyphicon glyphicon-th-list"></i> Lista de Áreas</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li class="dropdown-header">Subarea</li>
+                                        <li><a href="@Url.Action("Create", "Subarea")"><i class="glyphicon glyphicon-plus"></i> Crear Subarea</a></li>
+                                        <li><a href="@Url.Action("Index", "Subarea")"><i class="glyphicon glyphicon-th-list"></i> Lista de Subareas</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Sistema Eléctrico</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="@Url.Action("Create", "SistemaElectrico")"><i class="glyphicon glyphicon-plus"></i> Crear Sistema Eléctrico</a></li>
+                                        <li><a href="@Url.Action("Index", "SistemaElectrico")"><i class="glyphicon glyphicon-th-list"></i> Lista de Sistemas Eléctricos</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Ejecutor</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="@Url.Action("Create", "Ejecutor")"><i class="glyphicon glyphicon-plus"></i> Crear Ejecutor</a></li>
+                                        <li><a href="@Url.Action("Index", "Ejecutor")"><i class="glyphicon glyphicon-th-list"></i> Lista de Ejecutores</a></li>
+                                    </ul>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="@Url.Action("Index", "UnidadMedida")">Unidades de Medida</a></li>
+                                <li role="separator" class="divider"></li>
+                                <!--
+                                <li><a href="@Url.Action("Index", "Accion")">Acciones</a></li>
+                                <li role="separator" class="divider"></li>
+                                
+                                <li><a href="@Url.Action("Index", "TipoTarea")">Tipo de Tareas</a></li>-->
+                            </ul>
+                        </li>
+                    }
+                    @if (Seguridad.pfncPuedeAccederA("SGPLN_VIE") == "1")
+                    {
+                        <li class="@ViewBag.ClassActiveInicio">
+                            <a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+                                <i style="font-size:12px;" class="glyphicon glyphicon-circle-arrow-up"></i>&nbsp;
+                                <span>Visión Estratégica</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="@Url.Action("Index", "Perspectiva")"><i class="glyphicon glyphicon-tasks"></i> Perspectivas</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="@Url.Action("Index", "ObjetivoEstrategico")"><i class="glyphicon glyphicon-align-justify"></i> Objetivos</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="@Url.Action("Index", "Iniciativa")"><i class="glyphicon glyphicon-info-sign"></i> Iniciativas</a>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                    @if (Seguridad.pfncPuedeAccederA("SGPLN_PLA") == "1")
+                    {
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="glyphicon glyphicon-file"></i> Plan de Acción <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="glyphicon glyphicon-check"></i> Actividad</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="@Url.Action("CrearActividad", "Actividad")"><i class="glyphicon glyphicon-plus"></i> Crear Actividad</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="@Url.Action("CrearSubActividad", "Actividad")"><i class="glyphicon glyphicon-plus"></i> Crear SubActividad</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="@Url.Action("CrearTarea", "Actividad")"><i class="glyphicon glyphicon-plus"></i> Crear Tarea</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="@Url.Action("ListadoActividades", "Actividad", new { PlanID = 0 })"><i class="glyphicon glyphicon-th-list"></i> Lista de Actividades</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="@Url.Action("Create", "Plan")"><i class="glyphicon glyphicon-plus"></i> Crear Plan Operativo</a></li>
+                                <li><a href="@Url.Action("Index", "Plan")"><i class="glyphicon glyphicon-th-list"></i> Lista de Planes Operativos</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#"><i class="glyphicon glyphicon-chevron-right"></i> Reportes</a>
+                                    <ul class="dropdown-menu">
+                                        <li>@Html.ActionLink("Mapeo de Iniciativas", "MapeoIniciativas", "Reporte")</li>
+                                        <li role="separator" class="divider"></li>
+                                        <li>@Html.ActionLink("Plan Operativo", "PlanOperativo", "Reporte")</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                </ul>
+
+                <ul class="main-nav" style="float:right; padding-right:0px; margin-right:0px">
+                    <li class="dropdown" style="float:right; padding-right:0px; margin-right:0px">
+                        <a style="text-align:right;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user" style="font-size:11px;"></i> Usuario: @Session["gstrUsuarioSp"]</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href='@Url.Action("ChangePassword", "Account")'><i style="font-size:11px;" class="glyphicon glyphicon-cog"></i> Cambio de contraseña</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="javascript:$('#logOffForm').submit()"><i style="font-size:11px;" class="glyphicon glyphicon-log-out"></i> Salir</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logOffForm" }))
+            {
+                    @Html.AntiForgeryToken()
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="fecha_container" style="width:30%; float:right; font-size:12px; text-align:right; padding-right:16px; margin-top:-6px;">
+            @DateTime.Now.ToLongDateString()
+        </div>
+        @RenderBody()
+        <hr id="LineFooter"/>
+        <footer id="Footer">
+            <p>&copy; @DateTime.Now.Year - Unidad de Planeamiento y Desarrollo - Electrosur S.A.</p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
