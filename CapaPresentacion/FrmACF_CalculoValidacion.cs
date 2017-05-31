@@ -520,11 +520,11 @@ namespace CapaPresentacion
                 {
                     DataRow row = dat.Rows[0];
 
-                    txtRVAcodigo.Text = Convert.ToString(row["PDFcodigo"]);
-                    txtRVAperiodo.Text = Convert.ToString(row["PDFperiodo"]);
-                    dtpRVAfecha.Text = Convert.ToString(row["PDFfecha"]);
-                    txtRVAresponsable.Text = Convert.ToString(row["PDFreponsable"]);
-                    txtRVRestado.Text = Convert.ToString(row["PDFestado"]);
+                    txtRVAcodigo.Text = Convert.ToString(row["RVAcodigo"]);
+                    txtRVAperiodo.Text = Convert.ToString(row["RVAperiodo"]);
+                    dtpRVAfecha.Text = Convert.ToString(row["RVAfecha"]);
+                    txtRVAresponsable.Text = Convert.ToString(row["RVAresponsable"]);
+                    txtRVRestado.Text = Convert.ToString(row["RVRestado"]);
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
