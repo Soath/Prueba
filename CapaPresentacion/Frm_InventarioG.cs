@@ -248,6 +248,7 @@ namespace CapaPresentacion
        {
            if (this.validaCampos())
            {
+               
                if (Graba == 1) { this.InsertaRegistro(); this.CopiarRegistro(); this.CopiarRegistro2(); }
                if (Graba == 2) this.ActualizaRegistro();
                Graba = 0;
@@ -289,23 +290,47 @@ namespace CapaPresentacion
         private void CopiarRegistro()
         {
             string Rta = string.Empty;
-            try
+            if (radioButton2.Checked)
             {
-                Rta = NacfINBt_Inventariobienes.Copiar();
+                try
+                {
+                    Rta = NacfINBt_Inventariobienes.Copiar2(txtINVtotal.Text);
 
-                if (Rta.Equals("OK"))
-                {
-                    this.MensajeOk("Inventario generado correctamente.");
+                    if (Rta.Equals("OK"))
+                    {
+                        this.MensajeOk("Inventario generado correctamente.");
+                    }
+                    else
+                    {
+                        this.MensajeError(Rta);
+                    }
                 }
-                else
+
+                catch (Exception ex)
                 {
-                    this.MensajeError(Rta);
+                    MessageBox.Show(ex.Message + ex.StackTrace);
                 }
             }
-
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message + ex.StackTrace);
+                try
+                {
+                    Rta = NacfINBt_Inventariobienes.Copiar();
+
+                    if (Rta.Equals("OK"))
+                    {
+                        this.MensajeOk("Inventario generado correctamente.");
+                    }
+                    else
+                    {
+                        this.MensajeError(Rta);
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message + ex.StackTrace);
+                }
             }
         }
         private void CopiarRegistro2()

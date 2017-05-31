@@ -219,6 +219,12 @@ namespace CapaNegocio
             DAcfINBt_Inventariobienes Obj = new DAcfINBt_Inventariobienes();
             return Obj.Copiar();
         }
+        public static string Copiar2(string AMBid)
+        {
+            DAcfINBt_Inventariobienes Obj = new DAcfINBt_Inventariobienes();
+            Obj.AMBid = AMBid;
+            return Obj.Copiar2(Obj);
+        }
         public static DataTable Mostrar2()
         {
             return new DAcfINBt_Inventariobienes().Mostrar2();

@@ -356,6 +356,14 @@ namespace CapaPresentacion
             EstadoText(this.Controls, true, true);
             this.LimpiaCampos();
             this.Botones(false);
+            Last();
+            txtBuscar.Text = "";
+            txtPDFestado.Text = "";
+            txtPDFperiodo.Text = "";
+            txtPDFreponsable.Text = "";
+            txtPDFcodigo.Text=Convert.ToString(Convert.ToInt32(txtPDFcodigo.Text) + 1);
+                        
+
         }
 
         private void BotonEditar()
