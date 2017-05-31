@@ -258,7 +258,7 @@ namespace CapaPresentacion
            else
                this.MensajeOk(MensError);
        }
-
+        //INSERTAR
         private void InsertaRegistro()
        {
            string Rta = string.Empty;
