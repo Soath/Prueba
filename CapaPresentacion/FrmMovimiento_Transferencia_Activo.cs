@@ -150,8 +150,7 @@ namespace CapaPresentacion
         private void Control_Click_Guardar(object sender, EventArgs e)
         {
             this.BotonGuardar();
-
-            // this.InsertarActivos();
+            dataListado.DataSource = null;
         }
         private void Control_Click_Cancelar(object sender, EventArgs e)
         {
@@ -486,7 +485,7 @@ namespace CapaPresentacion
         {
             if (this.validaCampos())
             {
-                if (Graba == 1) this.InsertaRegistro();
+                if (Graba == 1) this.InsertaRegistro(); this.InsertarActivos();
                 if (Graba == 2) this.ActualizaRegistro();
                 Graba = 0;
                 this.BotonCancelar();
@@ -666,7 +665,6 @@ namespace CapaPresentacion
         }
         private void MostrarRegistro()
         {
-
             try
             {
                 DataTable dat = NMovimiento_Transferencia_Activo.Mostrar();
@@ -895,13 +893,7 @@ namespace CapaPresentacion
             dataListado.Columns.Add("Column4", "ACFfechanotaingreso");
             dataListado.Columns.Add("Column5", "ACFordencompra");
             dataListado.Columns.Add("Column6", "ACFtipo_activo");
-                        
-            //     this.dataListado.Columns[0].HeaderText = "ID_Activo";
-            //     this.dataListado.Columns[1].HeaderText = "Descripcion";
-            //     this.dataListado.Columns[2].HeaderText = "Incorporacion";
-            //     this.dataListado.Columns[3].HeaderText = "Ingreso";
-            //     this.dataListado.Columns[4].HeaderText = "Orden_de_Compra";
-            //     this.dataListado.Columns[5].HeaderText = "Tipo";
+
             //     
                  string iACFid = Microsoft.VisualBasic.Interaction.InputBox(
                                  "Ingrese el Id del Activo Fijo",
@@ -938,30 +930,43 @@ namespace CapaPresentacion
             string rta = string.Empty;
             MessageBox.Show("insertar");
             string activo = txtMVPid_proceso.Text;
+            int num = 0;
             try
             {
                 foreach (DataGridViewRow row in dataListado.Rows)
                 {
                     rta = NacfMVAt_MovimientoActivo.IngresarACF(
                      activo
-                     , dataListado.CurrentRow.Cells[18].Value.ToString()
+                     , dataListado.Rows[num].Cells[0].Value.ToString()
                   );
 
                     if (rta.Equals("OK"))
                     {
-                        this.MensajeOk("Regsitro Agregado Correctamente");
+                        this.MensajeOk("Registro Agregado Correctamente");                       
                     }
                     else
                     {
                         this.MensajeError("Error al Insertar Registro :" + rta);
+                        BorrarColumnas();
                     }
+                    if(num < dataListado.Rows.Count) num = num + 1;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+            BorrarColumnas();
+        }
 
+        private void BorrarColumnas()
+        {
+            dataListado.Columns.Remove("Column1");
+            dataListado.Columns.Remove("Column2");
+            dataListado.Columns.Remove("Column3");
+            dataListado.Columns.Remove("Column4");
+            dataListado.Columns.Remove("Column5");
+            dataListado.Columns.Remove("Column6");
         }
     }
 }

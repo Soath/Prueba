@@ -185,7 +185,7 @@
             this.ribbon1.Cursor = System.Windows.Forms.Cursors.Default;
             this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.ribbon1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ribbon1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ribbon1.Minimized = false;
             this.ribbon1.Name = "ribbon1";
             // 
@@ -206,7 +206,7 @@
             this.ribbon1.OrbStyle = System.Windows.Forms.RibbonOrbStyle.Office_2010;
             this.ribbon1.OrbText = "Inicio";
             this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.ribbon1.Size = new System.Drawing.Size(1260, 162);
+            this.ribbon1.Size = new System.Drawing.Size(945, 132);
             this.ribbon1.TabIndex = 0;
             this.ribbon1.Tabs.Add(this.ribbonTab1);
             this.ribbon1.Tabs.Add(this.ribbonTab2);
@@ -568,6 +568,7 @@
             this.ribbonButton87.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton87.Image")));
             this.ribbonButton87.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton87.SmallImage")));
             this.ribbonButton87.Text = "Generar / Cargar  BD Para Valuación";
+            this.ribbonButton87.Click += new System.EventHandler(this.ribbonButton87_Click);
             // 
             // ribbonButton88
             // 
@@ -921,19 +922,19 @@
             this.panelContenedor.BackColor = System.Drawing.Color.Gainsboro;
             this.panelContenedor.Controls.Add(this.kryptonBorderEdge1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(0, 162);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 132);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1260, 567);
+            this.panelContenedor.Size = new System.Drawing.Size(945, 460);
             this.panelContenedor.TabIndex = 1;
             // 
             // kryptonBorderEdge1
             // 
             this.kryptonBorderEdge1.BorderStyle = ComponentFactory.Krypton.Toolkit.PaletteBorderStyle.TabDock;
-            this.kryptonBorderEdge1.Location = new System.Drawing.Point(717, 34);
-            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonBorderEdge1.Location = new System.Drawing.Point(538, 28);
+            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
-            this.kryptonBorderEdge1.Size = new System.Drawing.Size(51, 1);
+            this.kryptonBorderEdge1.Size = new System.Drawing.Size(38, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
             // ribbonButtonList1
@@ -1195,12 +1196,12 @@
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1260, 729);
+            this.ClientSize = new System.Drawing.Size(945, 592);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.ribbon1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".:. Sistema de Gestión v1.0 de Activos Fijos .:.";

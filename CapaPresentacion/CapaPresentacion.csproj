@@ -100,7 +100,6 @@
     </Compile>
     <Compile Include="DataSet2.cs">
       <DependentUpon>DataSet2.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -352,6 +351,12 @@
     </Compile>
     <Compile Include="FrmACF_CalculoDiferido_Procesar.Designer.cs">
       <DependentUpon>FrmACF_CalculoDiferido_Procesar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmACF_CalculoValidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmACF_CalculoValidacion.Designer.cs">
+      <DependentUpon>FrmACF_CalculoValidacion.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmACF_Depreciacion.cs">
       <SubType>Form</SubType>
@@ -717,6 +722,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmACF_CalculoDiferido_Procesar.resx">
       <DependentUpon>FrmACF_CalculoDiferido_Procesar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmACF_CalculoValidacion.resx">
+      <DependentUpon>FrmACF_CalculoValidacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmACF_Depreciacion.resx">
       <DependentUpon>FrmACF_Depreciacion.cs</DependentUpon>

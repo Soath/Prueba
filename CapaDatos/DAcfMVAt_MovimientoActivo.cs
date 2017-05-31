@@ -1185,7 +1185,7 @@ namespace CapaDatos
                 //Establecer el Comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "usp_D_acfMVAt_MovimientoActivo";
+                SqlCmd.CommandText = "usp_I2_acfMVAt_MovimientoActivo";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
                 //
                 SqlParameter PariMVAid = new SqlParameter();
@@ -1203,7 +1203,7 @@ namespace CapaDatos
 
                 //Ejecutamos nuestro comando
 
-                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Ingreso el Detalle";
 
 
             }
