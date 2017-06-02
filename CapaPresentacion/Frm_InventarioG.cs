@@ -41,6 +41,7 @@ namespace CapaPresentacion
             EstadoText(this.Controls, true, false);
             mostrar();
             MostrarRegistro();
+            CargarCombos();
         }
         public static int IdAct;
         private void dtperiodo_ValueChanged(object sender, EventArgs e)
@@ -294,7 +295,7 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    Rta = NacfINBt_Inventariobienes.Copiar2(txtINVtotal.Text);
+                    Rta = NacfINBt_Inventariobienes.Copiar2(cboAMBid.Text);
 
                     if (Rta.Equals("OK"))
                     {
@@ -333,26 +334,57 @@ namespace CapaPresentacion
                 }
             }
         }
+        private void CargarCombos()
+        {
+            this.cboAMBid.DataSource = NacfAMBt_Ambiente.Mostrar(); //BURkS
+            this.cboAMBid.ValueMember = "AMBid";
+            this.cboAMBid.DisplayMember = "AMBid";
+            this.cboAMBid.SelectedIndex = -1;
+        }
         private void CopiarRegistro2()
         {
             string Rta = string.Empty;
-            try
+            if (radioButton2.Checked)
             {
-                Rta = NacfICRt_Inventariocaracteristicas.Copiar();
+                try
+                {
+                    Rta = NacfICRt_Inventariocaracteristicas.Copiar3(cboAMBid.Text);
 
-                if (Rta.Equals("OK"))
-                {
-                    this.MensajeOk("Inventario características generado correctamente.");
+                    if (Rta.Equals("OK"))
+                    {
+                        this.MensajeOk("Inventario características generado correctamente.");
+                    }
+                    else
+                    {
+                        this.MensajeError(Rta);
+                    }
                 }
-                else
+
+                catch (Exception ex)
                 {
-                    this.MensajeError(Rta);
+                    MessageBox.Show(ex.Message + ex.StackTrace);
                 }
             }
-
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message + ex.StackTrace);
+                try
+                {
+                    Rta = NacfICRt_Inventariocaracteristicas.Copiar();
+
+                    if (Rta.Equals("OK"))
+                    {
+                        this.MensajeOk("Inventario características generado correctamente.");
+                    }
+                    else
+                    {
+                        this.MensajeError(Rta);
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message + ex.StackTrace);
+                }
             }
         }
         private void Next(String iINVid)
@@ -398,7 +430,7 @@ namespace CapaPresentacion
             txtINVfechacierre.Text = "";
             txtINVperiodo.Text = "";
             txtINVrespon.Text = "";
-            txtINVtotal.Text = "";
+            cboAMBid.Text = "";
              
 
 

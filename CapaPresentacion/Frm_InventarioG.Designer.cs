@@ -45,7 +45,6 @@
             this.txtINVrespon = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.txtINVtotal = new System.Windows.Forms.TextBox();
             this.dtINVfechainicio = new System.Windows.Forms.DateTimePicker();
             this.rbtotal = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -66,6 +65,8 @@
             this.txtINVfechacierre = new System.Windows.Forms.DateTimePicker();
             this.txtINVperiodo = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.cboAMBid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.txtAMBid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -131,7 +132,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(179, 134);
+            this.label6.Location = new System.Drawing.Point(129, 134);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 131;
@@ -195,13 +196,6 @@
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // txtINVtotal
-            // 
-            this.txtINVtotal.Location = new System.Drawing.Point(343, 129);
-            this.txtINVtotal.Name = "txtINVtotal";
-            this.txtINVtotal.Size = new System.Drawing.Size(177, 20);
-            this.txtINVtotal.TabIndex = 145;
-            // 
             // dtINVfechainicio
             // 
             this.dtINVfechainicio.Checked = false;
@@ -215,7 +209,7 @@
             // rbtotal
             // 
             this.rbtotal.AutoSize = true;
-            this.rbtotal.Location = new System.Drawing.Point(216, 132);
+            this.rbtotal.Location = new System.Drawing.Point(166, 132);
             this.rbtotal.Name = "rbtotal";
             this.rbtotal.Size = new System.Drawing.Size(49, 17);
             this.rbtotal.TabIndex = 149;
@@ -225,7 +219,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(271, 132);
+            this.radioButton2.Location = new System.Drawing.Point(221, 132);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(66, 17);
             this.radioButton2.TabIndex = 150;
@@ -436,12 +430,41 @@
             this.lblTotal.TabIndex = 158;
             this.lblTotal.Text = "lblTotal";
             // 
+            // cboAMBid
+            // 
+            this.cboAMBid.AutoComplete = false;
+            this.cboAMBid.AutoDropdown = false;
+            this.cboAMBid.BackColorEven = System.Drawing.Color.White;
+            this.cboAMBid.BackColorOdd = System.Drawing.Color.White;
+            this.cboAMBid.ColumnNames = "";
+            this.cboAMBid.ColumnWidthDefault = 75;
+            this.cboAMBid.ColumnWidths = "";
+            this.cboAMBid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboAMBid.FormattingEnabled = true;
+            this.cboAMBid.LinkedColumnIndex = 2;
+            this.cboAMBid.LinkedTextBox = this.txtAMBid;
+            this.cboAMBid.Location = new System.Drawing.Point(293, 130);
+            this.cboAMBid.Name = "cboAMBid";
+            this.cboAMBid.Size = new System.Drawing.Size(101, 21);
+            this.cboAMBid.TabIndex = 159;
+            // 
+            // txtAMBid
+            // 
+            this.txtAMBid.Location = new System.Drawing.Point(400, 131);
+            this.txtAMBid.Name = "txtAMBid";
+            this.txtAMBid.ReadOnly = true;
+            this.txtAMBid.Size = new System.Drawing.Size(119, 20);
+            this.txtAMBid.TabIndex = 160;
+            this.txtAMBid.TabStop = false;
+            // 
             // Frm_InventarioG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(850, 434);
+            this.Controls.Add(this.txtAMBid);
+            this.Controls.Add(this.cboAMBid);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.txtINVperiodo);
             this.Controls.Add(this.txtINVfechacierre);
@@ -451,7 +474,6 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.rbtotal);
             this.Controls.Add(this.dtINVfechainicio);
-            this.Controls.Add(this.txtINVtotal);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtINVrespon);
@@ -483,7 +505,6 @@
 
         private System.Windows.Forms.ToolTip ttMensaje;
         private System.Windows.Forms.ErrorProvider errorIcono;
-        private System.Windows.Forms.TextBox txtINVtotal;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtINVrespon;
@@ -517,5 +538,7 @@
         private System.Windows.Forms.DateTimePicker txtINVfechacierre;
         private System.Windows.Forms.TextBox txtINVperiodo;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.TextBox txtAMBid;
+        private MultiColumnComboBoxDemo.MultiColumnComboBox cboAMBid;
     }
 }
