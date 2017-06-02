@@ -536,26 +536,28 @@ namespace CapaPresentacion
                 , this.cboMVPtipo.Text
                 , this.txtMVPds_movimiento.Text
                 , this.dtpMVPfecha_movimiento.Text
-                , this.cboPERNR1.Text
-                , this.txtORGds_persona.Text
                 , this.cboZONA1.Text
                 , this.txtORGds_zona.Text
                 , this.txtORGcrp.Text
                 , this.txtORGds_crp.Text
-                , this.cboPERNR3.Text
-                , this.txtORGds_usuario.Text
                 , this.cboAMB1.Text
                 , this.txtORGds_ambiente.Text
-                , this.cboPERNR2.Text
-                , this.txtDSTds_persona.Text
+                , this.cboPERNR1.Text
+                , this.txtORGds_persona.Text                                
+                , this.cboPERNR3.Text
+                , this.txtORGds_usuario.Text
+
                 , this.cboZONA2.Text
                 , this.txtDSTds_zona.Text
                 , this.txtDSTcrp.Text
                 , this.txtDSTds_crp.Text
-                , this.cboPERNR4.Text
-                , this.txtDSTds_usuario.Text
                 , this.cboAMB2.Text
                 , this.txtDSTds_ambiente.Text
+                , this.cboPERNR2.Text
+                , this.txtDSTds_persona.Text           
+                , this.cboPERNR4.Text
+                , this.txtDSTds_usuario.Text
+                
                    );
                 // Rta = NMovimiento_Transferencia_Activo.Insertar(this.txtMVPid_proceso.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
 
@@ -858,6 +860,11 @@ namespace CapaPresentacion
             this.cboZONA1.DisplayMember = "id_zona";
             this.cboZONA1.SelectedIndex = -1;
 
+            this.cboZONA2.DataSource = NbdiSEGpSegmento.Mostrar();//
+            this.cboZONA2.ValueMember = "id_zona";
+            this.cboZONA2.DisplayMember = "id_zona";
+            this.cboZONA2.SelectedIndex = -1;
+
             this.cboMVPtipo1.DataSource = NacfTMVt_TipoMovimiento.Mostrar();//
             this.cboMVPtipo1.ValueMember = "TMVid";
             this.cboMVPtipo1.DisplayMember = "TMVid";
@@ -894,8 +901,10 @@ namespace CapaPresentacion
             dataListado.Columns.Add("Column5", "ACFordencompra");
             dataListado.Columns.Add("Column6", "ACFtipo_activo");
 
-            //     
-                 string iACFid = Microsoft.VisualBasic.Interaction.InputBox(
+            //
+            try
+            {
+                string iACFid = Microsoft.VisualBasic.Interaction.InputBox(
                                  "Ingrese el Id del Activo Fijo",
                                  "Ajuste del Valor del Bien");
                  if (iACFid != null)
@@ -917,7 +926,13 @@ namespace CapaPresentacion
                      else
                          MessageBox.Show("No Existe", "Registro");
                  }
-        }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+}
 
         private void button9_Click(object sender, EventArgs e)
         {
