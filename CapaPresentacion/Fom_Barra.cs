@@ -16,8 +16,15 @@ namespace CapaPresentacion
         public Fom_Barra()
         {
             InitializeComponent();
+            CargarCombos();
         }
-
+        private void CargarCombos()
+        {
+            this.cboAMBid.DataSource = NacfAMBt_Ambiente.Mostrar();
+            this.cboAMBid.ValueMember = "AMBid";
+            this.cboAMBid.DisplayMember = "AMBid";
+            this.cboAMBid.SelectedIndex = -1;
+        }
         private void button2_Click(object sender, EventArgs e)
         {
            

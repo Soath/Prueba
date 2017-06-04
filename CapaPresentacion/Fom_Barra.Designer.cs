@@ -50,8 +50,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAMBid = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -66,6 +65,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.cboAMBid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -304,19 +304,14 @@
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 20;
             // 
-            // textBox3
+            // txtAMBid
             // 
-            this.textBox3.Location = new System.Drawing.Point(73, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(153, 20);
-            this.textBox3.TabIndex = 21;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(242, 89);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 22;
+            this.txtAMBid.Location = new System.Drawing.Point(200, 89);
+            this.txtAMBid.Name = "txtAMBid";
+            this.txtAMBid.ReadOnly = true;
+            this.txtAMBid.Size = new System.Drawing.Size(142, 20);
+            this.txtAMBid.TabIndex = 22;
+            this.txtAMBid.TabStop = false;
             // 
             // textBox5
             // 
@@ -423,11 +418,30 @@
             this.button3.Text = "Historial de Movimientos";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // cboAMBid
+            // 
+            this.cboAMBid.AutoComplete = false;
+            this.cboAMBid.AutoDropdown = false;
+            this.cboAMBid.BackColorEven = System.Drawing.Color.White;
+            this.cboAMBid.BackColorOdd = System.Drawing.Color.White;
+            this.cboAMBid.ColumnNames = "";
+            this.cboAMBid.ColumnWidthDefault = 75;
+            this.cboAMBid.ColumnWidths = "";
+            this.cboAMBid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboAMBid.FormattingEnabled = true;
+            this.cboAMBid.LinkedColumnIndex = 1;
+            this.cboAMBid.LinkedTextBox = this.txtAMBid;
+            this.cboAMBid.Location = new System.Drawing.Point(76, 89);
+            this.cboAMBid.Name = "cboAMBid";
+            this.cboAMBid.Size = new System.Drawing.Size(121, 21);
+            this.cboAMBid.TabIndex = 37;
+            // 
             // Fom_Barra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 519);
+            this.Controls.Add(this.cboAMBid);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -442,8 +456,7 @@
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtAMBid);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.groupBox1);
@@ -495,8 +508,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAMBid;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
@@ -511,5 +523,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private MultiColumnComboBoxDemo.MultiColumnComboBox cboAMBid;
     }
 }
