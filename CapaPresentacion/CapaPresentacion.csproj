@@ -269,6 +269,84 @@
     <Compile Include="FrmacfPDFt_procesodiferido.Designer.cs">
       <DependentUpon>FrmacfPDFt_procesodiferido.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frmacfrpt_anexo mensual_depreciacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_anexo mensual_depreciacion.Designer.cs">
+      <DependentUpon>Frmacfrpt_anexo mensual_depreciacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_anexo_sunat_activo fijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_anexo_sunat_activo fijo.Designer.cs">
+      <DependentUpon>Frmacfrpt_anexo_sunat_activo fijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_anexo_sunat_depreciacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_anexo_sunat_depreciacion.Designer.cs">
+      <DependentUpon>Frmacfrpt_anexo_sunat_depreciacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_detalle_tipoinventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_detalle_tipoinventario.Designer.cs">
+      <DependentUpon>Frmacfrpt_detalle_tipoinventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_ficha_control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_ficha_control.Designer.cs">
+      <DependentUpon>Frmacfrpt_ficha_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_ficha_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_ficha_Inventario.Designer.cs">
+      <DependentUpon>Frmacfrpt_ficha_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_ficha_movimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_ficha_movimiento.Designer.cs">
+      <DependentUpon>Frmacfrpt_ficha_movimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_RepoteCalculodiferido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_RepoteCalculodiferido.Designer.cs">
+      <DependentUpon>Frmacfrpt_RepoteCalculodiferido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_RepoteDepreciacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_RepoteDepreciacion.Designer.cs">
+      <DependentUpon>Frmacfrpt_RepoteDepreciacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_RepoteEtiquetado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_RepoteEtiquetado.Designer.cs">
+      <DependentUpon>Frmacfrpt_RepoteEtiquetado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_RepoteReparoTributario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_RepoteReparoTributario.Designer.cs">
+      <DependentUpon>Frmacfrpt_RepoteReparoTributario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_resumen_registrodeactivofijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_resumen_registrodeactivofijo.Designer.cs">
+      <DependentUpon>Frmacfrpt_resumen_registrodeactivofijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacfrpt_resumen_sunat_zona_cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmacfrpt_resumen_sunat_zona_cuenta.Designer.cs">
+      <DependentUpon>Frmacfrpt_resumen_sunat_zona_cuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmacfRTRt_Reparotributario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -681,6 +759,45 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfPDFt_procesodiferido.resx">
       <DependentUpon>FrmacfPDFt_procesodiferido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_anexo mensual_depreciacion.resx">
+      <DependentUpon>Frmacfrpt_anexo mensual_depreciacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_anexo_sunat_activo fijo.resx">
+      <DependentUpon>Frmacfrpt_anexo_sunat_activo fijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_anexo_sunat_depreciacion.resx">
+      <DependentUpon>Frmacfrpt_anexo_sunat_depreciacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_detalle_tipoinventario.resx">
+      <DependentUpon>Frmacfrpt_detalle_tipoinventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_ficha_control.resx">
+      <DependentUpon>Frmacfrpt_ficha_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_ficha_Inventario.resx">
+      <DependentUpon>Frmacfrpt_ficha_Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_ficha_movimiento.resx">
+      <DependentUpon>Frmacfrpt_ficha_movimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_RepoteCalculodiferido.resx">
+      <DependentUpon>Frmacfrpt_RepoteCalculodiferido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_RepoteDepreciacion.resx">
+      <DependentUpon>Frmacfrpt_RepoteDepreciacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_RepoteEtiquetado.resx">
+      <DependentUpon>Frmacfrpt_RepoteEtiquetado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_RepoteReparoTributario.resx">
+      <DependentUpon>Frmacfrpt_RepoteReparoTributario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_resumen_registrodeactivofijo.resx">
+      <DependentUpon>Frmacfrpt_resumen_registrodeactivofijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmacfrpt_resumen_sunat_zona_cuenta.resx">
+      <DependentUpon>Frmacfrpt_resumen_sunat_zona_cuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmacfRTRt_Reparotributario.resx">
       <DependentUpon>FrmacfRTRt_Reparotributario.cs</DependentUpon>
