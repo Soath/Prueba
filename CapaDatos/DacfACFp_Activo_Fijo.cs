@@ -575,6 +575,37 @@ namespace CapaDatos
             return DtResultado;
         }
 
+        //METODO MOSTRAR2
+        public DataTable Mostrar5(string AMBid)
+        {
+            DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S5_acfACFp_Activo_Fijo";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParAMBid = new SqlParameter();
+                ParAMBid.ParameterName = "@AMBid";
+                ParAMBid.SqlDbType = SqlDbType.Int;
+                ParAMBid.Value = AMBid;
+                SqlCmd.Parameters.Add(ParAMBid);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
         //METODO MOSTRAR3
         //METODO MOSTRAR 3
         public DataTable Mostrar3()

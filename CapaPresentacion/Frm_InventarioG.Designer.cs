@@ -245,6 +245,7 @@
             this.datalistado.Name = "datalistado";
             this.datalistado.Size = new System.Drawing.Size(823, 199);
             this.datalistado.TabIndex = 154;
+            this.datalistado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellContentClick);
             this.datalistado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellDoubleClick);
             // 
             // toolStrip1

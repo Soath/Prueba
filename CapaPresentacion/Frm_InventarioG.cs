@@ -622,6 +622,11 @@ namespace CapaPresentacion
             //this.datalistado.DataSource = bss;
         }
 
+        private void datalistado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 
 }
