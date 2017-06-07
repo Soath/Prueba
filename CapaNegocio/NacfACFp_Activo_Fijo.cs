@@ -344,7 +344,10 @@ namespace CapaNegocio
         {
             return new DacfACFp_Activo_Fijo().Mostrar2(iACFid);
         }
-
+        public static DataTable Mostrar5(string AMBid)
+        {
+            return new DacfACFp_Activo_Fijo().Mostrar5(AMBid);
+        }
 
         public static DataTable Mostrar4(string CMPid)
         {

@@ -17,6 +17,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             CargarCombos();
+            
         }
         private void CargarCombos()
         {
@@ -24,12 +25,46 @@ namespace CapaPresentacion
             this.cboAMBid.ValueMember = "AMBid";
             this.cboAMBid.DisplayMember = "AMBid";
             this.cboAMBid.SelectedIndex = -1;
+
+            this.cboACFid.DataSource = NacfACFp_Activo_Fijo.MostrarRegistro("");
+            this.cboACFid.ValueMember = "ACFid";
+            this.cboACFid.DisplayMember = "ACFid";
+            this.cboACFid.SelectedIndex = -1;
+
+            this.cboPERNR.DataSource = NbdiXPEpExtraccionSAP_Personal.Mostrar();
+            this.cboPERNR.ValueMember = "PERNR";
+            this.cboPERNR.DisplayMember = "PERNR";
+            this.cboPERNR.SelectedIndex = -1;
         }
         private void button2_Click(object sender, EventArgs e)
         {
-           
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar3(), "ip");
-            rptalu.ShowDialog();
+            CargaData();
+            if (chbAMB.Checked)
+            {
+                FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboAMBid.Text), "ip");
+                rptalu.ShowDialog();
+            }
+            if (chbACF.Checked)
+            {
+                FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboACFid.Text), "ip");
+                rptalu.ShowDialog();
+            }
+            if (chbPERNR.Checked)
+            {
+                FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboPERNR.Text), "ip");
+                rptalu.ShowDialog();
+            }
+
+        }
+        private void CargaData ()
+        {
+            if( chbACF.Checked)
+            this.datalistado1.DataSource = NacfACFp_Activo_Fijo.Mostrar5(cboACFid.Text);
+            if(chbAMB.Checked)
+            this.datalistado1.DataSource = NacfACFp_Activo_Fijo.Mostrar5(cboAMBid.Text);
+            if (chbPERNR.Checked)
+            this.datalistado1.DataSource = NacfACFp_Activo_Fijo.Mostrar5(cboPERNR.Text);
+
         }
     }
 }
