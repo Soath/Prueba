@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmACF_BajaEvaluacionTecnica));
-            this.dataListado = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
             this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
@@ -38,26 +37,12 @@
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.lblTotal = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
+            this.chkEliminar = new System.Windows.Forms.CheckBox();
+            this.dataListado = new System.Windows.Forms.DataGridView();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataListado
-            // 
-            this.dataListado.AllowUserToAddRows = false;
-            this.dataListado.AllowUserToDeleteRows = false;
-            this.dataListado.AllowUserToOrderColumns = true;
-            this.dataListado.BackgroundColor = System.Drawing.Color.White;
-            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListado.Location = new System.Drawing.Point(7, 112);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
-            this.dataListado.MultiSelect = false;
-            this.dataListado.Name = "dataListado";
-            this.dataListado.ReadOnly = true;
-            this.dataListado.RowTemplate.Height = 24;
-            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(682, 317);
-            this.dataListado.TabIndex = 19;
             // 
             // toolStrip1
             // 
@@ -87,6 +72,7 @@
             this.toolStripRefrescar.Text = "Obtener. Registro SAP";
             this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripRefrescar.Click += new System.EventHandler(this.toolStripRefrescar_Click_1);
             // 
             // toolStripAgregar
             // 
@@ -99,6 +85,7 @@
             this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripAgregar.Visible = false;
+            this.toolStripAgregar.Click += new System.EventHandler(this.toolStripAgregar_Click);
             // 
             // toolStripEditar
             // 
@@ -157,27 +144,66 @@
             this.lblTotal.TabIndex = 159;
             this.lblTotal.Text = "Registro:";
             // 
+            // chkEliminar
+            // 
+            this.chkEliminar.AutoSize = true;
+            this.chkEliminar.Location = new System.Drawing.Point(11, 82);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.chkEliminar.Name = "chkEliminar";
+            this.chkEliminar.Size = new System.Drawing.Size(82, 17);
+            this.chkEliminar.TabIndex = 160;
+            this.chkEliminar.Text = "Seleccionar";
+            this.chkEliminar.UseVisualStyleBackColor = true;
+            this.chkEliminar.CheckedChanged += new System.EventHandler(this.chkEliminar_CheckedChanged);
+            // 
+            // dataListado
+            // 
+            this.dataListado.AllowUserToAddRows = false;
+            this.dataListado.AllowUserToDeleteRows = false;
+            this.dataListado.AllowUserToOrderColumns = true;
+            this.dataListado.BackgroundColor = System.Drawing.Color.White;
+            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Seleccionar});
+            this.dataListado.Location = new System.Drawing.Point(11, 103);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
+            this.dataListado.MultiSelect = false;
+            this.dataListado.Name = "dataListado";
+            this.dataListado.ReadOnly = true;
+            this.dataListado.RowTemplate.Height = 24;
+            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListado.Size = new System.Drawing.Size(671, 323);
+            this.dataListado.TabIndex = 161;
+            // 
+            // Seleccionar
+            // 
+            this.Seleccionar.HeaderText = "Seleccionar";
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.ReadOnly = true;
+            this.Seleccionar.Visible = false;
+            this.Seleccionar.Width = 50;
+            // 
             // FrmACF_BajaEvaluacionTecnica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 437);
+            this.Controls.Add(this.dataListado);
+            this.Controls.Add(this.chkEliminar);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.dataListado);
             this.Name = "FrmACF_BajaEvaluacionTecnica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmACF_BajaEvaluacionTecnica";
-            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataListado;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripRefrescar;
         private System.Windows.Forms.ToolStripButton toolStripAgregar;
@@ -186,5 +212,8 @@
         private System.Windows.Forms.ToolStripButton toolStripAnterior;
         private System.Windows.Forms.ToolStripButton toolStripSiguiente;
         private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.CheckBox chkEliminar;
+        private System.Windows.Forms.DataGridView dataListado;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
     }
 }

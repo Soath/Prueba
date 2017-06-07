@@ -985,45 +985,90 @@ namespace CapaDatos
             return rpta;
 	}
 
-    //METODO INSERTAR 
-    public string Insertar2(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
-    {
-        string rpta = "";
-        SqlConnection SqlCon = new SqlConnection();
-        try
+        //METODO INSERTAR 
+        public string Insertar2(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
         {
-            //Código
-            SqlCon.ConnectionString = DConexion.CnBDActivo;
-            SqlCon.Open();
-            //Establecer el Comando
-            SqlCommand SqlCmd = new SqlCommand();
-            SqlCmd.Connection = SqlCon;
-            SqlCmd.CommandText = "usp_I2_acfACFp_Activo_Fijo";
-            SqlCmd.CommandType = CommandType.StoredProcedure;
-            //
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_I2_acfACFp_Activo_Fijo";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
 
-            SqlParameter ParACFdescripcion = new SqlParameter();
-            ParACFdescripcion.ParameterName = "@sACFdescripcion";
-            ParACFdescripcion.SqlDbType = SqlDbType.Char;
-            ParACFdescripcion.Value = acfACFp_Activo_Fijo.ACFdescripcion;
-            SqlCmd.Parameters.Add(ParACFdescripcion);
-            //
-            //Ejecutamos nuestro comando
+                SqlParameter ParACFdescripcion = new SqlParameter();
+                ParACFdescripcion.ParameterName = "@sACFdescripcion";
+                ParACFdescripcion.SqlDbType = SqlDbType.Char;
+                ParACFdescripcion.Value = acfACFp_Activo_Fijo.ACFdescripcion;
+                SqlCmd.Parameters.Add(ParACFdescripcion);
+                //
+                //Ejecutamos nuestro comando
 
-            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Inserto el Registro";
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Inserto el Registro";
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
         }
-        catch (Exception ex)
+
+
+        //METODO INSERTAR para el formulario de BajaEvaluacionTecnica
+        public string Editar5(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo)
         {
-            rpta = ex.Message;
+            string rpta = "";
+
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_U5_acfACFp_Activo_Fijo";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFid);
+                SqlCmd.Parameters.Add(ParACFid);
+                //
+                //SqlParameter ParACFAnulado = new SqlParameter();
+                //ParACFAnulado.ParameterName = "@cACFAnulado";
+                //ParACFAnulado.SqlDbType = SqlDbType.Char;
+                //ParACFAnulado.Value = cACFAnulado;
+                //SqlCmd.Parameters.Add(ParACFAnulado);
+                //
+                //Ejecutamos nuestro comando
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Modifico el Registro";
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
         }
-        finally
-        {
-            if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
-        }
-        return rpta;
-    }
+
         //METODO EDITAR
-	public string Editar(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo) {
+        public string Editar(DacfACFp_Activo_Fijo acfACFp_Activo_Fijo) {
 		string rpta = "";
    
             SqlConnection SqlCon = new SqlConnection();

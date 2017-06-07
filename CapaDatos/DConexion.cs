@@ -14,7 +14,7 @@ namespace CapaDatos
         //public static String CnBDActivo = "Data Source=.; Initial Catalog=ActivosFijos; User ID = sa;  Password = eg909090;";
         //public static String CnBDActivo = "Data Source=localhost ; Initial Catalog=ActivosFijos; Integrated Security=SSPI;";
         //public static String CnBDActivo = "Data Source=190.117.111.145; Initial Catalog=ActivosFijos; User ID = sa;  Password = eg909090;";
-        public static String CnBDI = "Data Source=www.electrosur.com.pe,1434; Initial Catalog=dbMEGA_BDI; User ID =clarico;  Password = c4+21L8@3;";
+        public static String CnBDI = "Data Source=200.4.227.24,1434; Initial Catalog=dbMEGA_BDI; User ID =clarico;  Password = c4+21L8@3;";
 
 
         public String ChequearConexion()

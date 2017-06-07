@@ -27,7 +27,7 @@ namespace CapaPresentacion
         {
             this.BotonesIE(true);
 
-            this.dataListado.DataSource = NAFNo_Capitalizables.Mostrar();
+            this.dataListado.DataSource = NACF_BajaEvaluacionTecnica.Mostrar();
             Columnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             if (dataListado.Rows.Count == 0)
@@ -47,22 +47,14 @@ namespace CapaPresentacion
         {
 
             this.dataListado.Columns[0].Width = 70;
-            this.dataListado.Columns[1].Width = 200;
-            this.dataListado.Columns[2].Width = 50;
-            this.dataListado.Columns[3].Width = 50;
-            this.dataListado.Columns[4].Width = 100;
-            this.dataListado.Columns[5].Width = 100;
-            this.dataListado.Columns[6].Width = 80;
-            this.dataListado.Columns[7].Width = 200;
+            this.dataListado.Columns[1].Width = 100;
+            this.dataListado.Columns[2].Width = 220;
+            this.dataListado.Columns[3].Width = 120;
 
-            this.dataListado.Columns[0].HeaderText = "Clase";
-            this.dataListado.Columns[1].HeaderText = "Descripcion";
-            this.dataListado.Columns[2].HeaderText = "Cantidad";
-            this.dataListado.Columns[3].HeaderText = "Unidad";
-            this.dataListado.Columns[4].HeaderText = "Precio";
-            this.dataListado.Columns[5].HeaderText = "Total";
-            this.dataListado.Columns[6].HeaderText = "RUC";
-            this.dataListado.Columns[7].HeaderText = "Proveedor";
+            this.dataListado.Columns[0].HeaderText = "Seleccionar";
+            this.dataListado.Columns[1].HeaderText = "Activo Fijo";
+            this.dataListado.Columns[2].HeaderText = "Descripcion";
+            this.dataListado.Columns[3].HeaderText = "ESTADO";
         }
 
         private void BotonesIE(bool edo)
@@ -91,8 +83,7 @@ namespace CapaPresentacion
 
         private void toolStripRefrescar_Click(object sender, EventArgs e)
         {
-            BotonesIE(true);
-            mostrar();
+            
         }
 
         private void toolStripAnterior_Click(object sender, EventArgs e)
@@ -123,6 +114,98 @@ namespace CapaPresentacion
         {
 
             new Importar().ExportarDataGridViewExcel(dataListado);
+        }
+
+        private void toolStripRefrescar_Click_1(object sender, EventArgs e)
+        {
+            BotonesIE(true);
+            mostrar();
+        }
+
+        private void chkEliminar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkEliminar.Checked)
+            {
+                this.dataListado.Columns[0].Visible = true;
+            }
+            else
+            {
+                this.dataListado.Columns[0].Visible = false;
+            }
+        }
+
+        private void toolStripAgregar_Click(object sender, EventArgs e)
+        {
+            if (this.chkEliminar.Checked)
+                this.grabarlote();
+            else
+                this.grabarsele();
+        }
+
+        private void grabarlote()
+        {
+            try
+            {
+                //falta mostrar el ACFid
+                Int32 total = 0;
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    string Rta = string.Empty;
+
+
+                    Rta = NacfACFp_Activo_Fijo.Editar5(
+                    Convert.ToString(row.Cells[1].Value) //ACFdescripcion
+                    );
+                    if (Rta.Equals("OK"))
+                    {
+                    }
+                    else
+                    {
+                        break;
+
+                    }
+
+                }
+                MessageBox.Show("Datos agregados");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+
+        private void grabarsele()
+        {
+            try
+            {
+                //falta mostrar el ACFid
+                Int32 total = 0;
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    string Rta = string.Empty;
+
+                    if (Convert.ToBoolean(row.Cells[0].Value))
+                    {
+                        Rta = NacfACFp_Activo_Fijo.Editar5(
+                        Convert.ToString(row.Cells[1].Value) //ACFdescripcion
+                        );
+                        if (Rta.Equals("OK"))
+                        {
+                        }
+                        else
+                        {
+                            break;
+
+                        }
+                    }
+                }
+                MessageBox.Show("Datos agregados");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
     }

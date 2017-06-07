@@ -280,9 +280,23 @@ namespace CapaNegocio
             Obj.ACFvutilniifanio = ACFvutilniifanio;
             Obj.ACFvutilniifdia = ACFvutilniifdia;
             Obj.CMPid = CMPid;
-      
+
             return Obj.Editar4(Obj);
         }
+
+        // Editar para el formulario de BajaEvaluacionTecnica
+        public static string Editar5(
+         string ACFid
+         //,string ACFAnulado
+         )
+        {
+            DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
+            Obj.ACFid = ACFid;
+            //Obj.ACFAnulado = ACFAnulado;
+
+            return Obj.Editar5(Obj);
+        }
+
         //Metodo Editar que llama al metodo Editar del formulario de depreciacion 
         //de la CapaDatos
         public static string depreciacion(
