@@ -28,7 +28,7 @@ namespace CapaDatos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCon.Open();
-                SqlCmd.CommandText = "SELECT INVZU, TXT50, ESTADO FROM bdiMAFpActivoFijo WHERE TXT50 IS NOT NULL AND ESTADO like '%CREADO%' ";
+                SqlCmd.CommandText = "SELECT INVZU, TXT50, ESTADO FROM bdiMAFpActivoFijo WHERE TXT50 IS NOT NULL AND ESTADO like '%BAJA%' ";
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
