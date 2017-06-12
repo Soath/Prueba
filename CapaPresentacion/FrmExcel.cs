@@ -33,8 +33,8 @@ namespace CapaPresentacion
             {
                 string hoja;
                 hoja = txtHoja.Text;
-            
-                new Importar().importarExcel(dataGridView1, hoja);
+
+                new Importar().importarExcelca(dataGridView1, hoja,true);
             }
             catch (Exception ex)
             {
@@ -102,8 +102,8 @@ namespace CapaPresentacion
        Convert.ToString(row.Cells[6].Value)  ,//UBEID
        Convert.ToString(row.Cells[34].Value)  ,//ACFfechacomprobante
        Convert.ToString(row.Cells[135].Value) ,  //Se trajo del excel de la tabla de SAP V_T087U_ANLUE
-       Convert.ToString(row.Cells[2].Value),  //Tipo Activo  
-       Convert.ToString(row.Cells[1].Value),
+       Convert.ToString(row.Cells[2].Value),
+       Convert.ToString(row.Cells[1].Value),  //Tipo Activo  
        " "
 
          );

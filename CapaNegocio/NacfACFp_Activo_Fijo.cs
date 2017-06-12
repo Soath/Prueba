@@ -285,10 +285,7 @@ namespace CapaNegocio
         }
 
         // Editar para el formulario de BajaEvaluacionTecnica
-        public static string Editar5(
-         string ACFid
-         //,string ACFAnulado
-         )
+        public static string Editar5(string ACFid)
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
             Obj.ACFid = ACFid;
