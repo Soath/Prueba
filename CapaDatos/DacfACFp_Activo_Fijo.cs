@@ -606,7 +606,44 @@ namespace CapaDatos
             }
             return DtResultado;
         }
-        //METODO MOSTRAR3
+        //METODO MOSTRAR6
+        //METODO MOSTRAR2
+        public DataTable Mostrar6(string ACFidn, string ACFidm)
+        {
+            DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S6_acfACFp_Activo_Fijo";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParACFidn = new SqlParameter();
+                ParACFidn.ParameterName = "@ACFidn";
+                ParACFidn.SqlDbType = SqlDbType.Int;
+                ParACFidn.Value = ACFidn;
+                SqlCmd.Parameters.Add(ParACFidn);
+
+                SqlParameter ParACFidm = new SqlParameter();
+                ParACFidm.ParameterName = "@ACFidm";
+                ParACFidm.SqlDbType = SqlDbType.Int;
+                ParACFidm.Value = ACFidm;
+                SqlCmd.Parameters.Add(ParACFidm);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
         //METODO MOSTRAR 3
         public DataTable Mostrar3()
         {

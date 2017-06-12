@@ -958,6 +958,7 @@
     <EmbeddedResource Include="Reportes\Rpt_ACTActividad.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_AMBAmbiente.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_CAFClaseDeActivoFijo.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Cbarra1.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_CDDClasesDeDocumento.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_CMPComponente.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_CSTCosto.rdlc" />

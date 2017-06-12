@@ -39,20 +39,72 @@ namespace CapaPresentacion
         private void button2_Click(object sender, EventArgs e)
         {
             CargaData();
+            if (chbAMB.Checked == false && chbACF.Checked == false && chbPERNR.Checked== false && chbRACF.Checked == false)
+            {
+                MessageBox.Show("No ha seleccionado ningún filtro.");
+            }
+            
+            if(rb1.Checked==false && rb2.Checked==false)
+            {
+                MessageBox.Show("No ha seleccionado el número de columnas");
+            }
             if (chbAMB.Checked)
             {
-                FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboAMBid.Text), "ip");
-                rptalu.ShowDialog();
+                if (rb2.Checked)
+                {
+                    FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboAMBid.Text), "ip");
+                    rptalu.ShowDialog();
+                }
+                if(rb1.Checked)
+                {
+                    FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra1.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboAMBid.Text), "ip");
+                    rptalu.ShowDialog();
+                }
             }
             if (chbACF.Checked)
             {
+                if (rb2.Checked) { 
+                            
                 FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboACFid.Text), "ip");
                 rptalu.ShowDialog();
+                }
+                if (rb1.Checked)
+                {
+
+                    FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra1.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboACFid.Text), "ip");
+                    rptalu.ShowDialog();
+                }
+
+
             }
             if (chbPERNR.Checked)
             {
-                FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboPERNR.Text), "ip");
-                rptalu.ShowDialog();
+                if (rb2.Checked)
+                {
+                    FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboPERNR.Text), "ip");
+                    rptalu.ShowDialog();
+                }
+                if (rb1.Checked)
+                {
+                    FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra1.rdlc", NacfACFp_Activo_Fijo.Mostrar5(cboPERNR.Text), "ip");
+                    rptalu.ShowDialog();
+                }
+
+            }
+            if(chbRACF.Checked)
+            {
+                if (rb2.Checked)
+                {
+                    FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra.rdlc", NacfACFp_Activo_Fijo.Mostrar6(txtRACF.Text,txtRACF1.Text), "ip");
+                    rptalu.ShowDialog();
+                }
+                if (rb1.Checked)
+                {
+                    FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Cbarra1.rdlc", NacfACFp_Activo_Fijo.Mostrar6(txtRACF.Text, txtRACF1.Text), "ip");
+                    rptalu.ShowDialog();
+                }
+
+
             }
 
         }
@@ -64,7 +116,8 @@ namespace CapaPresentacion
             this.datalistado1.DataSource = NacfACFp_Activo_Fijo.Mostrar5(cboAMBid.Text);
             if (chbPERNR.Checked)
             this.datalistado1.DataSource = NacfACFp_Activo_Fijo.Mostrar5(cboPERNR.Text);
-
+            if(chbRACF.Checked)
+            this.datalistado1.DataSource = NacfACFp_Activo_Fijo.Mostrar6(txtRACF.Text, txtRACF1.Text);
         }
     }
 }

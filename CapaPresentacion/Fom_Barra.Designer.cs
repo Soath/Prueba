@@ -33,7 +33,7 @@
             this.chbAMB = new System.Windows.Forms.CheckBox();
             this.chbPERNR = new System.Windows.Forms.CheckBox();
             this.chbACF = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.chbRACF = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
@@ -41,14 +41,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rb1 = new System.Windows.Forms.RadioButton();
+            this.rb2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtAMBid = new System.Windows.Forms.TextBox();
             this.txtPERNR = new System.Windows.Forms.TextBox();
             this.txtACF = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtRACF = new System.Windows.Forms.TextBox();
+            this.txtRACF1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
@@ -111,15 +111,15 @@
             this.chbACF.Text = "Activo";
             this.chbACF.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // chbRACF
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(16, 147);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(108, 17);
-            this.checkBox6.TabIndex = 9;
-            this.checkBox6.Text = "Rango de código";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.chbRACF.AutoSize = true;
+            this.chbRACF.Location = new System.Drawing.Point(16, 147);
+            this.chbRACF.Name = "chbRACF";
+            this.chbRACF.Size = new System.Drawing.Size(108, 17);
+            this.chbRACF.TabIndex = 9;
+            this.chbRACF.Text = "Rango de código";
+            this.chbRACF.UseVisualStyleBackColor = true;
             // 
             // checkBox7
             // 
@@ -192,35 +192,35 @@
             this.radioButton2.Text = "Impresora";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rb1
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(417, 36);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(81, 17);
-            this.radioButton3.TabIndex = 17;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "01 Columna";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rb1.AutoSize = true;
+            this.rb1.Location = new System.Drawing.Point(417, 36);
+            this.rb1.Name = "rb1";
+            this.rb1.Size = new System.Drawing.Size(81, 17);
+            this.rb1.TabIndex = 17;
+            this.rb1.TabStop = true;
+            this.rb1.Text = "01 Columna";
+            this.rb1.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rb2
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(504, 35);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(86, 17);
-            this.radioButton4.TabIndex = 18;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "02 Columnas";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rb2.AutoSize = true;
+            this.rb2.Location = new System.Drawing.Point(504, 35);
+            this.rb2.Name = "rb2";
+            this.rb2.Size = new System.Drawing.Size(86, 17);
+            this.rb2.TabIndex = 18;
+            this.rb2.TabStop = true;
+            this.rb2.Text = "02 Columnas";
+            this.rb2.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.radioButton4);
+            this.groupBox1.Controls.Add(this.rb2);
             this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Controls.Add(this.rb1);
             this.groupBox1.Location = new System.Drawing.Point(12, 261);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(596, 81);
@@ -255,19 +255,19 @@
             this.txtACF.TabIndex = 28;
             this.txtACF.TabStop = false;
             // 
-            // textBox12
+            // txtRACF
             // 
-            this.textBox12.Location = new System.Drawing.Point(130, 147);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(121, 20);
-            this.textBox12.TabIndex = 30;
+            this.txtRACF.Location = new System.Drawing.Point(130, 147);
+            this.txtRACF.Name = "txtRACF";
+            this.txtRACF.Size = new System.Drawing.Size(121, 20);
+            this.txtRACF.TabIndex = 30;
             // 
-            // textBox13
+            // txtRACF1
             // 
-            this.textBox13.Location = new System.Drawing.Point(257, 147);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(122, 20);
-            this.textBox13.TabIndex = 31;
+            this.txtRACF1.Location = new System.Drawing.Point(257, 147);
+            this.txtRACF1.Name = "txtRACF1";
+            this.txtRACF1.Size = new System.Drawing.Size(122, 20);
+            this.txtRACF1.TabIndex = 31;
             // 
             // dateTimePicker1
             // 
@@ -413,8 +413,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.txtRACF);
+            this.Controls.Add(this.txtRACF1);
             this.Controls.Add(this.txtACF);
             this.Controls.Add(this.txtPERNR);
             this.Controls.Add(this.txtAMBid);
@@ -423,7 +423,7 @@
             this.Controls.Add(this.checkBox9);
             this.Controls.Add(this.checkBox8);
             this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox6);
+            this.Controls.Add(this.chbRACF);
             this.Controls.Add(this.chbACF);
             this.Controls.Add(this.chbPERNR);
             this.Controls.Add(this.chbAMB);
@@ -451,7 +451,7 @@
         private System.Windows.Forms.CheckBox chbAMB;
         private System.Windows.Forms.CheckBox chbPERNR;
         private System.Windows.Forms.CheckBox chbACF;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox chbRACF;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.CheckBox checkBox9;
@@ -459,14 +459,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton rb1;
+        private System.Windows.Forms.RadioButton rb2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtAMBid;
         private System.Windows.Forms.TextBox txtPERNR;
         private System.Windows.Forms.TextBox txtACF;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtRACF;
+        private System.Windows.Forms.TextBox txtRACF1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Button button2;
