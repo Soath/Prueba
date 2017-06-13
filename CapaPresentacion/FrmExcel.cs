@@ -67,7 +67,7 @@ namespace CapaPresentacion
 
                     if (Convert.ToBoolean(row.Cells[0].Value))
                     {
-                        Rta = NacfACFp_Activo_Fijo.Insertar(
+                        Rta = NacfACFp_Activo_Fijo.SAPIMPORT(
                               Convert.ToString(row.Cells[3].Value), //ACFid
                               Convert.ToString(row.Cells[6].Value),  // BUKRS
                               Convert.ToString(row.Cells[7].Value),  //Se trajo del excel de SAP SEGMENT
@@ -215,7 +215,7 @@ namespace CapaPresentacion
                 foreach (DataGridViewRow row in dataListado.Rows)
                 {
                    string Rta = string.Empty;
-                   Rta = NacfACFp_Activo_Fijo.Insertar(
+                   Rta = NacfACFp_Activo_Fijo.SAPIMPORT(
                          Convert.ToString(row.Cells[3].Value), //ACFid
                          Convert.ToString(row.Cells[6].Value),  // BUKRS
                          Convert.ToString(row.Cells[7].Value),  //Se trajo del excel de SAP SEGMENT
@@ -268,72 +268,72 @@ namespace CapaPresentacion
                          Convert.ToString(row.Cells[7].Value) // CRPid_crp
                          );
                                                              
-                   Rta = NacfCRSt_Caracteristicas.Insertar(
-                         Convert.ToString(row.Cells[3].Value), // ACFid
-                          "", // MARid
-                          "", // ESTid
-                          "", // CRSserie
-                         Convert.ToString(row.Cells[55].Value), // CRSmodelo
-                         Convert.ToString(row.Cells[56].Value), // CRScolor
-                         "", // MATid
-                         "", // CRStipo
-                         Convert.ToString(row.Cells[101].Value), // UNMid
-                         Convert.ToString(row.Cells[54].Value), // CRScantidad
-                         Convert.ToString(row.Cells[58].Value), // CRSvehplaca
-                         Convert.ToString(row.Cells[60].Value), // CRSvehexpediente
-                         Convert.ToString(row.Cells[61].Value), // CRSvehinscripcion
-                         Convert.ToString(row.Cells[62].Value), // CRSvehclase
-                         Convert.ToString(row.Cells[63].Value), // CRSvehcombustible
-                         Convert.ToString(row.Cells[64].Value), // CRSvehejes
-                         Convert.ToString(row.Cells[65].Value), // CRSvehpasajeros
-                         Convert.ToString(row.Cells[66].Value), // CRSvehasientos
-                         Convert.ToString(row.Cells[67].Value), // CRSvehpesoseco
-                         Convert.ToString(row.Cells[68].Value), // CRSvehcargautil
-                         Convert.ToString(row.Cells[69].Value), // CRSaltura
-                         Convert.ToString(row.Cells[70].Value), // CRSancho
-                         Convert.ToString(row.Cells[76].Value), // CRSvelocidad
-                         "", // CRSresolucion
-                         "", // CRScapacidad
-                         Convert.ToString(row.Cells[77].Value), // CRSpotencia
-                         Convert.ToString(row.Cells[79].Value), // CRSvnominal
-                         Convert.ToString(row.Cells[78].Value), // CRSventrada
-                         Convert.ToString(row.Cells[80].Value), // CRSvsalida
-                         Convert.ToString(row.Cells[81].Value), // CRSfrecuencia
-                         Convert.ToString(row.Cells[82].Value), // CRStemperatura
-                         Convert.ToString(row.Cells[83].Value), // CRSprocesador
-                         Convert.ToString(row.Cells[84].Value), // CRSpuertos
-                         Convert.ToString(row.Cells[71].Value), // CRSutmx
-                         Convert.ToString(row.Cells[72].Value), // CRSutmy
-                         Convert.ToString(row.Cells[73].Value), // CRSesfuerzopunta
-                         Convert.ToString(row.Cells[74].Value), // CRScajaderivadora
-                         Convert.ToString(row.Cells[75].Value), // CRSalquilacable
-                         Convert.ToString(row.Cells[86].Value), // CRScentropoblado
-                         Convert.ToString(row.Cells[87].Value), // CRSurbanizacion
-                         Convert.ToString(row.Cells[88].Value), // CRScalle
-                         Convert.ToString(row.Cells[89].Value), // CRSlote
-                         Convert.ToString(row.Cells[90].Value), // CRSnumeropredio
-                         Convert.ToString(row.Cells[91].Value), // CRSdepartamento
-                         Convert.ToString(row.Cells[92].Value), // CRSinterior
-                         Convert.ToString(row.Cells[94].Value), // CRScarretera
-                         Convert.ToString(row.Cells[93].Value), // CRSkilometro
-                         Convert.ToString(row.Cells[95].Value), // CRSnombrepredio
-                         Convert.ToString(row.Cells[96].Value), // CRSpisospredio
-                         "", // CRSpartidapredio
-                         "", // CRStomopredio
-                         "", // CRSfolioinipredio
-                         "", // CRSfoliofinpredio
-                         "", // CRSasientopredio
-                         "", // CRSfinscpredio
-                         Convert.ToString(row.Cells[98].Value), // CRSficharegistral
-                         Convert.ToString(row.Cells[103].Value), // CRSareaconstruida
-                         Convert.ToString(row.Cells[104].Value), // CRSperimetro
-                         "", // CRSusopredio
-                         "", // CRSvalorautovaluo
-                         "", // CRScodigoluz
-                         "", // CRScodigoagua
-                         "", // CRSfadqpredio
-                         Convert.ToString(row.Cells[85].Value) // CRSobservacion
-                       );
+                   // Rta = NacfCRSt_Caracteristicas.Insertar(
+                   //       Convert.ToString(row.Cells[3].Value), // ACFid
+                   //        "", // MARid
+                   //        "", // ESTid
+                   //        "", // CRSserie
+                   //       Convert.ToString(row.Cells[55].Value), // CRSmodelo
+                   //       Convert.ToString(row.Cells[56].Value), // CRScolor
+                   //       "", // MATid
+                   //       "", // CRStipo
+                   //       Convert.ToString(row.Cells[101].Value), // UNMid
+                   //       Convert.ToString(row.Cells[54].Value), // CRScantidad
+                   //       Convert.ToString(row.Cells[58].Value), // CRSvehplaca
+                   //       Convert.ToString(row.Cells[60].Value), // CRSvehexpediente
+                   //       Convert.ToString(row.Cells[61].Value), // CRSvehinscripcion
+                   //       Convert.ToString(row.Cells[62].Value), // CRSvehclase
+                   //       Convert.ToString(row.Cells[63].Value), // CRSvehcombustible
+                   //       Convert.ToString(row.Cells[64].Value), // CRSvehejes
+                   //       Convert.ToString(row.Cells[65].Value), // CRSvehpasajeros
+                   //       Convert.ToString(row.Cells[66].Value), // CRSvehasientos
+                   //       Convert.ToString(row.Cells[67].Value), // CRSvehpesoseco
+                   //       Convert.ToString(row.Cells[68].Value), // CRSvehcargautil
+                   //       Convert.ToString(row.Cells[69].Value), // CRSaltura
+                   //       Convert.ToString(row.Cells[70].Value), // CRSancho
+                   //       Convert.ToString(row.Cells[76].Value), // CRSvelocidad
+                   //       "", // CRSresolucion
+                   //       "", // CRScapacidad
+                   //       Convert.ToString(row.Cells[77].Value), // CRSpotencia
+                   //       Convert.ToString(row.Cells[79].Value), // CRSvnominal
+                   //       Convert.ToString(row.Cells[78].Value), // CRSventrada
+                   //       Convert.ToString(row.Cells[80].Value), // CRSvsalida
+                   //       Convert.ToString(row.Cells[81].Value), // CRSfrecuencia
+                   //       Convert.ToString(row.Cells[82].Value), // CRStemperatura
+                   //       Convert.ToString(row.Cells[83].Value), // CRSprocesador
+                   //       Convert.ToString(row.Cells[84].Value), // CRSpuertos
+                   //       Convert.ToString(row.Cells[71].Value), // CRSutmx
+                   //       Convert.ToString(row.Cells[72].Value), // CRSutmy
+                   //       Convert.ToString(row.Cells[73].Value), // CRSesfuerzopunta
+                   //       Convert.ToString(row.Cells[74].Value), // CRScajaderivadora
+                   //       Convert.ToString(row.Cells[75].Value), // CRSalquilacable
+                   //       Convert.ToString(row.Cells[86].Value), // CRScentropoblado
+                   //       Convert.ToString(row.Cells[87].Value), // CRSurbanizacion
+                   //       Convert.ToString(row.Cells[88].Value), // CRScalle
+                   //       Convert.ToString(row.Cells[89].Value), // CRSlote
+                   //       Convert.ToString(row.Cells[90].Value), // CRSnumeropredio
+                   //       Convert.ToString(row.Cells[91].Value), // CRSdepartamento
+                   //       Convert.ToString(row.Cells[92].Value), // CRSinterior
+                   //       Convert.ToString(row.Cells[94].Value), // CRScarretera
+                   //       Convert.ToString(row.Cells[93].Value), // CRSkilometro
+                   //       Convert.ToString(row.Cells[95].Value), // CRSnombrepredio
+                   //       Convert.ToString(row.Cells[96].Value), // CRSpisospredio
+                   //       "", // CRSpartidapredio
+                   //       "", // CRStomopredio
+                   //       "", // CRSfolioinipredio
+                   //       "", // CRSfoliofinpredio
+                   //       "", // CRSasientopredio
+                   //       "", // CRSfinscpredio
+                   //       Convert.ToString(row.Cells[98].Value), // CRSficharegistral
+                   //       Convert.ToString(row.Cells[103].Value), // CRSareaconstruida
+                   //       Convert.ToString(row.Cells[104].Value), // CRSperimetro
+                   //       "", // CRSusopredio
+                   //       "", // CRSvalorautovaluo
+                   //       "", // CRScodigoluz
+                   //       "", // CRScodigoagua
+                   //       "", // CRSfadqpredio
+                   //       Convert.ToString(row.Cells[85].Value) // CRSobservacion
+                   //     );
 
                    if (Rta.Equals("OK"))
                    {

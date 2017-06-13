@@ -120,6 +120,113 @@ namespace CapaNegocio
             return Obj.Insertar(Obj);
 
         }
+        public static string SAPIMPORT(
+         string iACFid,
+         string sBUKRS,
+         string sSEGMENT,
+         string sANLKL,
+         string sPERNR,
+         string sCSTid,
+         string sMVMid,
+         string dtACFfmovimiento,
+         string sVNRid,
+         string sACFdescripcion,
+         string dtACFfincorporacion,
+         string decACFfcapitalizacion,
+         string iACFvutiltribanio,
+         string iACFvutiltribdia,
+         string decACFvalortrib,
+         string iACFvutilniifanio,
+         string iACFvutilniifdia,
+         string decACFvalorniif,
+         string sACFdepacutrib,
+         string decACFdepacuniif,
+         string sACFobra,
+         //string sACFord41,                
+         //string sACFord42,                
+         //string sACFord43,                
+         //string sACFord44,                
+         string sACFanlue,
+         string decACFfactortrib,
+         string decACFfactorniif,
+         string sACFcuenta,
+         string sACFcuentadep,
+         string sCMPid,
+         string sACFobservacion,
+         string sLIFNR,
+         string sACFnotaingreso,
+         string sACFfechanotaingreso,
+         string sACFordencompra,
+         string dtACFfechaordencompra,
+         string sBLART,
+         string sACFcomprobante,
+         string sKOSTL,
+         string iAMBid,
+         string iUBEid,
+         string dtACFfechacomprobante,
+         string sV_T087U_ANLUE,
+         string sACFtipo_activo,
+         string cACFAnulado,
+         string cACFid_Padre,
+         string cACFtipo_orden,
+         string cOBJid_objeto,
+         string cCRPid_crp
+         )
+        {
+            DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
+            Obj.ACFid = iACFid;
+            Obj.BUKRS = sBUKRS;
+            Obj.SEGMENT = sSEGMENT;
+            Obj.ANLKL = sANLKL;
+            Obj.PERNR = sPERNR;
+            Obj.CSTid = sCSTid;
+            Obj.MVMid = sMVMid;
+            Obj.ACFfmovimiento = dtACFfmovimiento;
+            Obj.VNRid = sVNRid;
+            Obj.ACFdescripcion = sACFdescripcion;
+            Obj.ACFfincorporacion = dtACFfincorporacion;
+            Obj.ACFfcapitalizacion = decACFfcapitalizacion;
+            Obj.ACFvutiltribanio = iACFvutiltribanio;
+            Obj.ACFvutiltribdia = iACFvutiltribdia;
+            Obj.ACFvalortrib = decACFvalortrib;
+            Obj.ACFvutilniifanio = iACFvutilniifanio;
+            Obj.ACFvutilniifdia = iACFvutilniifdia;
+            Obj.ACFvalorniif = decACFvalorniif;
+            Obj.ACFdepacutrib = sACFdepacutrib;
+            Obj.ACFdepacuniif = decACFdepacuniif;
+            Obj.ACFobra = sACFobra;
+            //Obj.ACFord41 = sACFord41;
+            //Obj.ACFord42 = sACFord42;
+            //Obj.ACFord43 = sACFord43;
+            //Obj.ACFord44 = sACFord44;
+            Obj.ACFanlue = sACFanlue;
+            Obj.ACFfactortrib = decACFfactortrib;
+            Obj.ACFfactorniif = decACFfactorniif;
+            Obj.ACFcuenta = sACFcuenta;
+            Obj.ACFcuentadep = sACFcuentadep;
+            Obj.CMPid = sCMPid;
+            Obj.ACFobservacion = sACFobservacion;
+            Obj.LIFNR = sLIFNR;
+            Obj.ACFnotaingreso = sACFnotaingreso;
+            Obj.ACFfechanotaingreso = sACFfechanotaingreso;
+            Obj.ACFordencompra = sACFordencompra;
+            Obj.ACFfechaordencompra = dtACFfechaordencompra;
+            Obj.BLART = sBLART;
+            Obj.ACFcomprobante = sACFcomprobante;
+            Obj.KOSTL = sKOSTL;
+            Obj.AMBid = iAMBid;
+            Obj.UBEid = iUBEid;
+            Obj.ACFfechacomprobante = dtACFfechacomprobante;
+            Obj.V_T087U_ANLUE = sV_T087U_ANLUE;
+            Obj.ACFtipo_activo = sACFtipo_activo;
+            Obj.ACFAnulado = cACFAnulado;
+            Obj.ACFid_Padre = cACFid_Padre;
+            Obj.ACFtipo_orden = cACFtipo_orden;
+            Obj.OBJid_objeto = cOBJid_objeto;
+            Obj.CRPid_crp = cCRPid_crp;
+            return Obj.SAPIMPORT(Obj);
+
+        }
         public static string Insertar2(string sACFdescripcion)
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
