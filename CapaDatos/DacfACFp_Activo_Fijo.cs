@@ -57,6 +57,9 @@ namespace CapaDatos
         private string sACFtipo_activo;
         private string cACFAnulado;
         private string cACFid_Padre;
+        private string cACFtipo_orden;
+        private string cOBJid_objeto;
+        private string cCRPid_crp;
 
         public string ACFid
         {
@@ -293,12 +296,28 @@ namespace CapaDatos
         {
             get { return cACFid_Padre; }
             set { cACFid_Padre = value; }
-        }	
+        }
 
+        public string ACFtipo_orden
+        {
+            get { return cACFtipo_orden; }
+            set { cACFtipo_orden = value; }
+        }
 
+        public string OBJid_objeto
+        {
+            get { return cOBJid_objeto; }
+            set { cOBJid_objeto = value; }
+        }
+
+        public string CRPid_crp
+        {
+            get { return cCRPid_crp; }
+            set { cCRPid_crp = value; }
+        }
 
         //Constructor vacío
-	public DacfACFp_Activo_Fijo(){
+        public DacfACFp_Activo_Fijo(){
 	}
         //Constructor con parámetros
     public DacfACFp_Activo_Fijo(
@@ -347,7 +366,11 @@ namespace CapaDatos
          string ACFfechacomprobante,    
          string V_T087U_ANLUE,
          string ACFtipo_activo,
-         string ACFAnulado
+         string ACFAnulado,
+         string ACFid_Padre,
+         string ACFtipo_orden,
+         string OBJid_objeto,
+         string CRPid_crp
          )         
     {
 
@@ -397,7 +420,12 @@ namespace CapaDatos
         this.V_T087U_ANLUE = sV_T087U_ANLUE;
         this.ACFtipo_activo = sACFtipo_activo;
         this.ACFAnulado = cACFAnulado;
-	}
+        this.ACFid_Padre = cACFid_Padre;
+        this.ACFtipo_orden = cACFtipo_orden;
+        this.OBJid_objeto = cOBJid_objeto;
+        this.CRPid_crp = cCRPid_crp;
+
+    }
 	public object Clone() {
 		return base.MemberwiseClone();
 	}
@@ -1034,12 +1062,29 @@ namespace CapaDatos
             ParACFid_Padre.Value = Convert.ToInt32(cACFid_Padre);
             SqlCmd.Parameters.Add(ParACFid_Padre);
 
+                SqlParameter ParACFtipo_orden = new SqlParameter();
+                ParACFtipo_orden.ParameterName = "@cACFtipo_orden";
+                ParACFtipo_orden.SqlDbType = SqlDbType.VarChar;
+                ParACFtipo_orden.Value = acfACFp_Activo_Fijo.cACFtipo_orden;
+                SqlCmd.Parameters.Add(ParACFtipo_orden);
+
+                SqlParameter ParOBJid_objeto = new SqlParameter();
+                ParOBJid_objeto.ParameterName = "@cOBJid_objeto";
+                ParOBJid_objeto.SqlDbType = SqlDbType.Char;
+                ParOBJid_objeto.Value = acfACFp_Activo_Fijo.cOBJid_objeto;
+                SqlCmd.Parameters.Add(ParOBJid_objeto);
+
+                SqlParameter ParCRPid_crp = new SqlParameter();
+                ParCRPid_crp.ParameterName = "@cCRPid_crp";
+                ParCRPid_crp.SqlDbType = SqlDbType.Char;
+                ParCRPid_crp.Value = acfACFp_Activo_Fijo.cCRPid_crp;
+                SqlCmd.Parameters.Add(ParCRPid_crp);
 
 
-            //
-            //Ejecutamos nuestro comando
+                //
+                //Ejecutamos nuestro comando
 
-            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Inserto el Registro";		
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Inserto el Registro";		
 			
 		}
 	catch (Exception ex)
