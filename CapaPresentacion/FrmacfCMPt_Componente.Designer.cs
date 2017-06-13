@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmacfCMPt_Componente));
-            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataListado = new System.Windows.Forms.DataGridView();
@@ -88,28 +87,15 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(52, 73);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 29);
-            this.label1.TabIndex = 128;
-            this.label1.Text = "Componentes";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(57, 339);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Location = new System.Drawing.Point(35, 361);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(693, 285);
+            this.tabControl1.Size = new System.Drawing.Size(924, 351);
             this.tabControl1.TabIndex = 129;
             // 
             // tabPage1
@@ -120,11 +106,11 @@
             this.tabPage1.Controls.Add(this.lblTotal);
             this.tabPage1.Controls.Add(this.chkEliminar);
             this.tabPage1.Controls.Add(this.txtBuscar);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(685, 259);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(916, 322);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -138,14 +124,14 @@
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            this.dataListado.Location = new System.Drawing.Point(10, 85);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
+            this.dataListado.Location = new System.Drawing.Point(13, 105);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(610, 166);
+            this.dataListado.Size = new System.Drawing.Size(813, 204);
             this.dataListado.TabIndex = 9;
             // 
             // Eliminar
@@ -157,9 +143,10 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(15, 16);
+            this.pictureBox2.Location = new System.Drawing.Point(20, 20);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(53, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -167,51 +154,50 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(375, 64);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotal.Location = new System.Drawing.Point(500, 79);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(41, 13);
+            this.lblTotal.Size = new System.Drawing.Size(54, 17);
             this.lblTotal.TabIndex = 6;
             this.lblTotal.Text = "lblTotal";
             // 
             // chkEliminar
             // 
             this.chkEliminar.AutoSize = true;
-            this.chkEliminar.Location = new System.Drawing.Point(10, 64);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.chkEliminar.Location = new System.Drawing.Point(13, 79);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkEliminar.Name = "chkEliminar";
-            this.chkEliminar.Size = new System.Drawing.Size(62, 17);
+            this.chkEliminar.Size = new System.Drawing.Size(80, 21);
             this.chkEliminar.TabIndex = 5;
             this.chkEliminar.Text = "Eliminar";
             this.chkEliminar.UseVisualStyleBackColor = true;
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(80, 28);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBuscar.Location = new System.Drawing.Point(92, 20);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(246, 20);
+            this.txtBuscar.Size = new System.Drawing.Size(327, 22);
             this.txtBuscar.TabIndex = 2;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(685, 259);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(916, 322);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(10, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(13, 18);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(654, 231);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(872, 284);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Usuarios";
@@ -219,211 +205,191 @@
             // labelX10
             // 
             this.labelX10.AutoSize = true;
-            this.labelX10.Location = new System.Drawing.Point(346, 127);
-            this.labelX10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX10.Location = new System.Drawing.Point(393, 160);
             this.labelX10.Name = "labelX10";
-            this.labelX10.Size = new System.Drawing.Size(79, 13);
+            this.labelX10.Size = new System.Drawing.Size(106, 17);
             this.labelX10.TabIndex = 129;
             this.labelX10.Text = "Vida util por dia";
             // 
             // labelX9
             // 
             this.labelX9.AutoSize = true;
-            this.labelX9.Location = new System.Drawing.Point(346, 92);
-            this.labelX9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX9.Location = new System.Drawing.Point(393, 117);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(83, 13);
+            this.labelX9.Size = new System.Drawing.Size(111, 17);
             this.labelX9.TabIndex = 128;
             this.labelX9.Text = "Vida util por año";
             // 
             // txtCMPvutildia
             // 
             this.txtCMPvutildia.BackColor = System.Drawing.Color.White;
-            this.txtCMPvutildia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPvutildia.Location = new System.Drawing.Point(470, 122);
-            this.txtCMPvutildia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPvutildia.Location = new System.Drawing.Point(548, 166);
+            this.txtCMPvutildia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPvutildia.MaxLength = 30;
             this.txtCMPvutildia.Name = "txtCMPvutildia";
-            this.txtCMPvutildia.Size = new System.Drawing.Size(178, 26);
+            this.txtCMPvutildia.Size = new System.Drawing.Size(236, 22);
             this.txtCMPvutildia.TabIndex = 127;
             // 
             // txtCMPvutilanio
             // 
             this.txtCMPvutilanio.BackColor = System.Drawing.Color.White;
-            this.txtCMPvutilanio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPvutilanio.Location = new System.Drawing.Point(470, 87);
-            this.txtCMPvutilanio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPvutilanio.Location = new System.Drawing.Point(548, 123);
+            this.txtCMPvutilanio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPvutilanio.MaxLength = 30;
             this.txtCMPvutilanio.Name = "txtCMPvutilanio";
-            this.txtCMPvutilanio.Size = new System.Drawing.Size(178, 26);
+            this.txtCMPvutilanio.Size = new System.Drawing.Size(236, 22);
             this.txtCMPvutilanio.TabIndex = 126;
             // 
             // labelX8
             // 
             this.labelX8.AutoSize = true;
-            this.labelX8.Location = new System.Drawing.Point(346, 61);
-            this.labelX8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX8.Location = new System.Drawing.Point(393, 79);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(117, 13);
+            this.labelX8.Size = new System.Drawing.Size(156, 17);
             this.labelX8.TabIndex = 125;
             this.labelX8.Text = "Factor de uso estimado";
             // 
             // labelX7
             // 
             this.labelX7.AutoSize = true;
-            this.labelX7.Location = new System.Drawing.Point(346, 30);
-            this.labelX7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX7.Location = new System.Drawing.Point(393, 41);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(75, 13);
+            this.labelX7.Size = new System.Drawing.Size(99, 17);
             this.labelX7.TabIndex = 124;
             this.labelX7.Text = "Total Factores";
             // 
             // labelX6
             // 
             this.labelX6.AutoSize = true;
-            this.labelX6.Location = new System.Drawing.Point(17, 125);
-            this.labelX6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX6.Location = new System.Drawing.Point(23, 154);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(63, 13);
+            this.labelX6.Size = new System.Drawing.Size(84, 17);
             this.labelX6.TabIndex = 123;
             this.labelX6.Text = "Limite Legal";
             // 
             // labelX5
             // 
             this.labelX5.AutoSize = true;
-            this.labelX5.Location = new System.Drawing.Point(17, 95);
-            this.labelX5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX5.Location = new System.Drawing.Point(23, 117);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(72, 13);
+            this.labelX5.Size = new System.Drawing.Size(94, 17);
             this.labelX5.TabIndex = 122;
             this.labelX5.Text = "Obsolecencia";
             // 
             // labelX4
             // 
             this.labelX4.AutoSize = true;
-            this.labelX4.Location = new System.Drawing.Point(17, 65);
-            this.labelX4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX4.Location = new System.Drawing.Point(23, 80);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(72, 13);
+            this.labelX4.Size = new System.Drawing.Size(94, 17);
             this.labelX4.TabIndex = 121;
             this.labelX4.Text = "Conservacion";
             // 
             // txtCMPfactorusoestimado
             // 
             this.txtCMPfactorusoestimado.BackColor = System.Drawing.Color.White;
-            this.txtCMPfactorusoestimado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPfactorusoestimado.Location = new System.Drawing.Point(470, 53);
-            this.txtCMPfactorusoestimado.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPfactorusoestimado.Location = new System.Drawing.Point(548, 81);
+            this.txtCMPfactorusoestimado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPfactorusoestimado.MaxLength = 30;
             this.txtCMPfactorusoestimado.Name = "txtCMPfactorusoestimado";
-            this.txtCMPfactorusoestimado.Size = new System.Drawing.Size(178, 26);
+            this.txtCMPfactorusoestimado.Size = new System.Drawing.Size(236, 22);
             this.txtCMPfactorusoestimado.TabIndex = 120;
             // 
             // txtCMPtotalfactores
             // 
             this.txtCMPtotalfactores.BackColor = System.Drawing.Color.White;
-            this.txtCMPtotalfactores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPtotalfactores.Location = new System.Drawing.Point(470, 22);
-            this.txtCMPtotalfactores.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPtotalfactores.Location = new System.Drawing.Point(548, 43);
+            this.txtCMPtotalfactores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPtotalfactores.MaxLength = 30;
             this.txtCMPtotalfactores.Name = "txtCMPtotalfactores";
-            this.txtCMPtotalfactores.Size = new System.Drawing.Size(178, 26);
+            this.txtCMPtotalfactores.Size = new System.Drawing.Size(236, 22);
             this.txtCMPtotalfactores.TabIndex = 119;
             // 
             // txtCMPlimitelegal
             // 
             this.txtCMPlimitelegal.BackColor = System.Drawing.Color.White;
-            this.txtCMPlimitelegal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPlimitelegal.Location = new System.Drawing.Point(158, 117);
-            this.txtCMPlimitelegal.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPlimitelegal.Location = new System.Drawing.Point(123, 154);
+            this.txtCMPlimitelegal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPlimitelegal.MaxLength = 30;
             this.txtCMPlimitelegal.Name = "txtCMPlimitelegal";
-            this.txtCMPlimitelegal.Size = new System.Drawing.Size(178, 26);
+            this.txtCMPlimitelegal.Size = new System.Drawing.Size(236, 22);
             this.txtCMPlimitelegal.TabIndex = 118;
             // 
             // txtCMPobsolecencia
             // 
             this.txtCMPobsolecencia.BackColor = System.Drawing.Color.White;
-            this.txtCMPobsolecencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPobsolecencia.Location = new System.Drawing.Point(158, 87);
-            this.txtCMPobsolecencia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPobsolecencia.Location = new System.Drawing.Point(123, 117);
+            this.txtCMPobsolecencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPobsolecencia.MaxLength = 30;
             this.txtCMPobsolecencia.Name = "txtCMPobsolecencia";
-            this.txtCMPobsolecencia.Size = new System.Drawing.Size(178, 26);
+            this.txtCMPobsolecencia.Size = new System.Drawing.Size(236, 22);
             this.txtCMPobsolecencia.TabIndex = 117;
             // 
             // txtCMPconservacion
             // 
             this.txtCMPconservacion.BackColor = System.Drawing.Color.White;
-            this.txtCMPconservacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPconservacion.Location = new System.Drawing.Point(158, 57);
-            this.txtCMPconservacion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPconservacion.Location = new System.Drawing.Point(123, 80);
+            this.txtCMPconservacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPconservacion.MaxLength = 30;
             this.txtCMPconservacion.Name = "txtCMPconservacion";
-            this.txtCMPconservacion.Size = new System.Drawing.Size(178, 26);
+            this.txtCMPconservacion.Size = new System.Drawing.Size(236, 22);
             this.txtCMPconservacion.TabIndex = 116;
             // 
             // labelX1
             // 
             this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(69, 117);
-            this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX1.Location = new System.Drawing.Point(32, 93);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(122, 13);
+            this.labelX1.Size = new System.Drawing.Size(161, 17);
             this.labelX1.TabIndex = 115;
             this.labelX1.Text = "Código de componentes";
             // 
             // labelX3
             // 
             this.labelX3.AutoSize = true;
-            this.labelX3.Location = new System.Drawing.Point(17, 35);
-            this.labelX3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX3.Location = new System.Drawing.Point(23, 43);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(71, 13);
+            this.labelX3.Size = new System.Drawing.Size(94, 17);
             this.labelX3.TabIndex = 113;
             this.labelX3.Text = "Uso estimado";
             // 
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(69, 152);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelX2.Location = new System.Drawing.Point(32, 134);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(140, 13);
+            this.labelX2.Size = new System.Drawing.Size(184, 17);
             this.labelX2.TabIndex = 112;
             this.labelX2.Text = "Descripción de componente";
             // 
             // txtCMPusoestimado
             // 
             this.txtCMPusoestimado.BackColor = System.Drawing.Color.White;
-            this.txtCMPusoestimado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPusoestimado.Location = new System.Drawing.Point(158, 27);
-            this.txtCMPusoestimado.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPusoestimado.Location = new System.Drawing.Point(123, 43);
+            this.txtCMPusoestimado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPusoestimado.MaxLength = 30;
             this.txtCMPusoestimado.Name = "txtCMPusoestimado";
-            this.txtCMPusoestimado.Size = new System.Drawing.Size(178, 26);
+            this.txtCMPusoestimado.Size = new System.Drawing.Size(236, 22);
             this.txtCMPusoestimado.TabIndex = 110;
             // 
             // txtCMPcomponente
             // 
             this.txtCMPcomponente.BackColor = System.Drawing.Color.White;
-            this.txtCMPcomponente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPcomponente.Location = new System.Drawing.Point(210, 144);
-            this.txtCMPcomponente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPcomponente.Location = new System.Drawing.Point(222, 131);
+            this.txtCMPcomponente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPcomponente.MaxLength = 30;
             this.txtCMPcomponente.Name = "txtCMPcomponente";
-            this.txtCMPcomponente.Size = new System.Drawing.Size(178, 26);
+            this.txtCMPcomponente.Size = new System.Drawing.Size(236, 22);
             this.txtCMPcomponente.TabIndex = 108;
             // 
             // txtCMPid
             // 
             this.txtCMPid.BackColor = System.Drawing.Color.White;
-            this.txtCMPid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPid.Location = new System.Drawing.Point(210, 109);
-            this.txtCMPid.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPid.Location = new System.Drawing.Point(222, 90);
+            this.txtCMPid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPid.MaxLength = 50;
             this.txtCMPid.Name = "txtCMPid";
-            this.txtCMPid.Size = new System.Drawing.Size(178, 26);
+            this.txtCMPid.Size = new System.Drawing.Size(236, 22);
             this.txtCMPid.TabIndex = 101;
             // 
             // ttMensaje
@@ -453,7 +419,7 @@
             this.toolStripUltimo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(957, 62);
+            this.toolStrip1.Size = new System.Drawing.Size(1007, 76);
             this.toolStrip1.TabIndex = 207;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -463,7 +429,7 @@
             this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripRefrescar.Name = "toolStripRefrescar";
-            this.toolStripRefrescar.Size = new System.Drawing.Size(63, 59);
+            this.toolStripRefrescar.Size = new System.Drawing.Size(79, 73);
             this.toolStripRefrescar.Text = "Actualizar";
             this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -474,7 +440,7 @@
             this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAgregar.Name = "toolStripAgregar";
-            this.toolStripAgregar.Size = new System.Drawing.Size(53, 59);
+            this.toolStripAgregar.Size = new System.Drawing.Size(67, 73);
             this.toolStripAgregar.Text = "Agregar";
             this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -485,7 +451,7 @@
             this.toolStripEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(41, 59);
+            this.toolStripEditar.Size = new System.Drawing.Size(52, 73);
             this.toolStripEditar.Text = "Editar";
             this.toolStripEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -496,7 +462,7 @@
             this.toolStripEliminar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(46, 59);
+            this.toolStripEliminar.Size = new System.Drawing.Size(56, 73);
             this.toolStripEliminar.Text = "Anular";
             this.toolStripEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -507,7 +473,7 @@
             this.toolStripImprimir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripImprimir.Name = "toolStripImprimir";
-            this.toolStripImprimir.Size = new System.Drawing.Size(57, 59);
+            this.toolStripImprimir.Size = new System.Drawing.Size(70, 73);
             this.toolStripImprimir.Text = "Imprimir";
             this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -518,7 +484,7 @@
             this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripGuardar.Name = "toolStripGuardar";
-            this.toolStripGuardar.Size = new System.Drawing.Size(53, 59);
+            this.toolStripGuardar.Size = new System.Drawing.Size(66, 73);
             this.toolStripGuardar.Text = "Guardar";
             this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -530,7 +496,7 @@
             this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripCancelar.Name = "toolStripCancelar";
-            this.toolStripCancelar.Size = new System.Drawing.Size(57, 59);
+            this.toolStripCancelar.Size = new System.Drawing.Size(70, 73);
             this.toolStripCancelar.Text = "Cancelar";
             this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -556,7 +522,7 @@
             this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAnterior.Name = "toolStripAnterior";
-            this.toolStripAnterior.Size = new System.Drawing.Size(54, 59);
+            this.toolStripAnterior.Size = new System.Drawing.Size(67, 73);
             this.toolStripAnterior.Text = "Anterior";
             this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -568,7 +534,7 @@
             this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSiguiente.Name = "toolStripSiguiente";
-            this.toolStripSiguiente.Size = new System.Drawing.Size(60, 59);
+            this.toolStripSiguiente.Size = new System.Drawing.Size(75, 73);
             this.toolStripSiguiente.Text = "Siguiente";
             this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripSiguiente.Click += new System.EventHandler(this.toolStripSiguiente_Click);
@@ -580,7 +546,7 @@
             this.toolStripUltimo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripUltimo.Name = "toolStripUltimo";
-            this.toolStripUltimo.Size = new System.Drawing.Size(47, 59);
+            this.toolStripUltimo.Size = new System.Drawing.Size(58, 73);
             this.toolStripUltimo.Text = "Ultimo";
             this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -602,9 +568,11 @@
             this.groupBox1.Controls.Add(this.labelX8);
             this.groupBox1.Controls.Add(this.txtCMPusoestimado);
             this.groupBox1.Controls.Add(this.labelX7);
-            this.groupBox1.Location = new System.Drawing.Point(57, 175);
+            this.groupBox1.Location = new System.Drawing.Point(35, 159);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(733, 159);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(817, 196);
             this.groupBox1.TabIndex = 208;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Características";
@@ -612,39 +580,37 @@
             // txtCMPnivel
             // 
             this.txtCMPnivel.BackColor = System.Drawing.Color.White;
-            this.txtCMPnivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMPnivel.Location = new System.Drawing.Point(493, 109);
-            this.txtCMPnivel.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCMPnivel.Location = new System.Drawing.Point(529, 93);
+            this.txtCMPnivel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMPnivel.MaxLength = 30;
             this.txtCMPnivel.Name = "txtCMPnivel";
-            this.txtCMPnivel.Size = new System.Drawing.Size(71, 26);
+            this.txtCMPnivel.Size = new System.Drawing.Size(93, 22);
             this.txtCMPnivel.TabIndex = 209;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(421, 117);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(484, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.Size = new System.Drawing.Size(39, 17);
             this.label2.TabIndex = 210;
             this.label2.Text = "Nivel";
             // 
             // FrmacfCMPt_Componente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 711);
+            this.ClientSize = new System.Drawing.Size(1007, 730);
             this.Controls.Add(this.txtCMPnivel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.txtCMPid);
             this.Controls.Add(this.txtCMPcomponente);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.labelX1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmacfCMPt_Componente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfCMPt_Componente";
@@ -666,7 +632,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataListado;

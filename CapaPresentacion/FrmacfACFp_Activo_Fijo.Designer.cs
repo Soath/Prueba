@@ -306,6 +306,9 @@
             this.cboKOSTL = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboCSTid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboBUKRS = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.cmbcrp = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.textCRP = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -538,7 +541,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(19, 608);
+            this.label38.Location = new System.Drawing.Point(15, 485);
             this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(192, 17);
@@ -595,11 +598,11 @@
             // 
             // txtACFdescripcion
             // 
-            this.txtACFdescripcion.Location = new System.Drawing.Point(12, 161);
+            this.txtACFdescripcion.Location = new System.Drawing.Point(12, 176);
             this.txtACFdescripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtACFdescripcion.Multiline = true;
             this.txtACFdescripcion.Name = "txtACFdescripcion";
-            this.txtACFdescripcion.Size = new System.Drawing.Size(388, 40);
+            this.txtACFdescripcion.Size = new System.Drawing.Size(388, 25);
             this.txtACFdescripcion.TabIndex = 2;
             // 
             // txtACFid
@@ -903,7 +906,7 @@
             // textCCf
             // 
             this.textCCf.BackColor = System.Drawing.Color.Lavender;
-            this.textCCf.Location = new System.Drawing.Point(19, 638);
+            this.textCCf.Location = new System.Drawing.Point(22, 510);
             this.textCCf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textCCf.Name = "textCCf";
             this.textCCf.ReadOnly = true;
@@ -2406,7 +2409,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(995, 514);
+            this.tabPage1.Size = new System.Drawing.Size(995, 536);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Características Generales";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -2705,19 +2708,22 @@
             // 
             // tabPage0
             // 
+            this.tabPage0.Controls.Add(this.cboKOSTL);
             this.tabPage0.Controls.Add(this.cmbACFid_Padre);
+            this.tabPage0.Controls.Add(this.textCCf);
             this.tabPage0.Controls.Add(this.label23);
             this.tabPage0.Controls.Add(this.txtACFid_Padre);
             this.tabPage0.Controls.Add(this.label1);
             this.tabPage0.Controls.Add(this.panelResultado);
             this.tabPage0.Controls.Add(this.groupBox5);
             this.tabPage0.Controls.Add(this.groupBox1);
+            this.tabPage0.Controls.Add(this.label38);
             this.tabPage0.Controls.Add(this.groupBox4);
             this.tabPage0.Location = new System.Drawing.Point(4, 25);
             this.tabPage0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage0.Name = "tabPage0";
             this.tabPage0.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage0.Size = new System.Drawing.Size(995, 514);
+            this.tabPage0.Size = new System.Drawing.Size(995, 536);
             this.tabPage0.TabIndex = 6;
             this.tabPage0.Text = "Ubicacion Actual";
             this.tabPage0.UseVisualStyleBackColor = true;
@@ -2740,7 +2746,6 @@
             this.cmbACFid_Padre.Name = "cmbACFid_Padre";
             this.cmbACFid_Padre.Size = new System.Drawing.Size(121, 23);
             this.cmbACFid_Padre.TabIndex = 169;
-            this.cmbACFid_Padre.Visible = false;
             // 
             // txtACFid_Padre
             // 
@@ -2751,7 +2756,6 @@
             this.txtACFid_Padre.Size = new System.Drawing.Size(399, 22);
             this.txtACFid_Padre.TabIndex = 167;
             this.txtACFid_Padre.TabStop = false;
-            this.txtACFid_Padre.Visible = false;
             // 
             // label23
             // 
@@ -2911,7 +2915,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(433, 255);
+            this.groupBox1.Size = new System.Drawing.Size(433, 243);
             this.groupBox1.TabIndex = 163;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ubicación";
@@ -2929,7 +2933,7 @@
             this.cboPERNR.FormattingEnabled = true;
             this.cboPERNR.LinkedColumnIndex = 1;
             this.cboPERNR.LinkedTextBox = this.textPersonal;
-            this.cboPERNR.Location = new System.Drawing.Point(211, 175);
+            this.cboPERNR.Location = new System.Drawing.Point(211, 171);
             this.cboPERNR.Margin = new System.Windows.Forms.Padding(4);
             this.cboPERNR.Name = "cboPERNR";
             this.cboPERNR.Size = new System.Drawing.Size(185, 23);
@@ -2938,7 +2942,7 @@
             // textPersonal
             // 
             this.textPersonal.BackColor = System.Drawing.Color.Lavender;
-            this.textPersonal.Location = new System.Drawing.Point(17, 208);
+            this.textPersonal.Location = new System.Drawing.Point(17, 200);
             this.textPersonal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textPersonal.Name = "textPersonal";
             this.textPersonal.ReadOnly = true;
@@ -2949,7 +2953,7 @@
             // textMotivoM
             // 
             this.textMotivoM.BackColor = System.Drawing.Color.Lavender;
-            this.textMotivoM.Location = new System.Drawing.Point(15, 146);
+            this.textMotivoM.Location = new System.Drawing.Point(15, 144);
             this.textMotivoM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textMotivoM.Name = "textMotivoM";
             this.textMotivoM.ReadOnly = true;
@@ -3010,7 +3014,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(8, 178);
+            this.label35.Location = new System.Drawing.Point(8, 172);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(117, 17);
@@ -3296,7 +3300,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1003, 543);
+            this.tabControl1.Size = new System.Drawing.Size(1003, 565);
             this.tabControl1.TabIndex = 123;
             this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
@@ -3329,7 +3333,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(841, 300);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.Visible = false;
             // 
             // Id
             // 
@@ -3384,7 +3387,7 @@
             this.cboKOSTL.FormattingEnabled = true;
             this.cboKOSTL.LinkedColumnIndex = 1;
             this.cboKOSTL.LinkedTextBox = this.textCCf;
-            this.cboKOSTL.Location = new System.Drawing.Point(213, 608);
+            this.cboKOSTL.Location = new System.Drawing.Point(221, 482);
             this.cboKOSTL.Margin = new System.Windows.Forms.Padding(4);
             this.cboKOSTL.Name = "cboKOSTL";
             this.cboKOSTL.Size = new System.Drawing.Size(183, 23);
@@ -3428,19 +3431,59 @@
             this.cboBUKRS.Size = new System.Drawing.Size(61, 23);
             this.cboBUKRS.TabIndex = 174;
             // 
+            // cmbcrp
+            // 
+            this.cmbcrp.AutoComplete = true;
+            this.cmbcrp.AutoDropdown = true;
+            this.cmbcrp.BackColorEven = System.Drawing.Color.Lavender;
+            this.cmbcrp.BackColorOdd = System.Drawing.Color.White;
+            this.cmbcrp.ColumnNames = "";
+            this.cmbcrp.ColumnWidthDefault = 75;
+            this.cmbcrp.ColumnWidths = "100;150;200";
+            this.cmbcrp.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbcrp.FormattingEnabled = true;
+            this.cmbcrp.LinkedColumnIndex = 1;
+            this.cmbcrp.LinkedTextBox = this.textCRP;
+            this.cmbcrp.Location = new System.Drawing.Point(213, 610);
+            this.cmbcrp.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbcrp.Name = "cmbcrp";
+            this.cmbcrp.Size = new System.Drawing.Size(183, 23);
+            this.cmbcrp.TabIndex = 177;
+            // 
+            // textCRP
+            // 
+            this.textCRP.BackColor = System.Drawing.Color.Lavender;
+            this.textCRP.Location = new System.Drawing.Point(15, 638);
+            this.textCRP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textCRP.Name = "textCRP";
+            this.textCRP.ReadOnly = true;
+            this.textCRP.Size = new System.Drawing.Size(380, 22);
+            this.textCRP.TabIndex = 176;
+            this.textCRP.TabStop = false;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(19, 614);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(36, 17);
+            this.label24.TabIndex = 175;
+            this.label24.Text = "CRP";
+            // 
             // FrmacfACFp_Activo_Fijo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1356, 671);
-            this.Controls.Add(this.cboKOSTL);
+            this.Controls.Add(this.cmbcrp);
+            this.Controls.Add(this.textCRP);
+            this.Controls.Add(this.label24);
             this.Controls.Add(this.cboCSTid);
             this.Controls.Add(this.cboBUKRS);
-            this.Controls.Add(this.textCCf);
             this.Controls.Add(this.textCCe);
             this.Controls.Add(this.textEmpresa);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label38);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.label41);
             this.Controls.Add(this.label4);
@@ -3768,5 +3811,8 @@
         private MultiColumnComboBoxDemo.MultiColumnComboBox cboESTid;
         private MultiColumnComboBoxDemo.MultiColumnComboBox cboMARid;
         private System.Windows.Forms.TextBox textMarca;
+        private MultiColumnComboBoxDemo.MultiColumnComboBox cmbcrp;
+        private System.Windows.Forms.TextBox textCRP;
+        private System.Windows.Forms.Label label24;
     }
 }
