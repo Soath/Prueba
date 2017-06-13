@@ -1,4 +1,4 @@
-﻿    using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    public class DAFNo_Capitalizables
+    public class DacfCRPt_Centro_Responsabilidad
     {
 
 
@@ -27,7 +27,7 @@ namespace CapaDatos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCon.Open();
-                SqlCmd.CommandText = "SELECT EINDT,TXZ01,MENGE,MEINS,NETPR,NETWR,STCD1,NAME FROM bdiOCOpOrdenCompra WHERE TXZ01 IS NOT NULL ";
+                SqlCmd.CommandText = "SELECT CRPid_crp,CRPcrp,CRPdescripcion,CRPcuenta_destino FROM acfCRPt_Centro_Responsabilidad";
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
@@ -51,3 +51,4 @@ namespace CapaDatos
 
 
 }
+

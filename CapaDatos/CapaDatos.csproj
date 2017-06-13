@@ -43,6 +43,7 @@
     <Compile Include="DAcfACTt_Actividad.cs" />
     <Compile Include="DAcfAMBt_Ambiente.cs" />
     <Compile Include="DAcfCMPt_Componente.cs" />
+    <Compile Include="DacfCRPt_Centro_Responsabilidad.cs" />
     <Compile Include="DacfCRSt_Caracteristicas.cs" />
     <Compile Include="DacfCSTt_Costo.cs" />
     <Compile Include="DacfDDFt_detalledediferido.cs" />
