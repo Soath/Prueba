@@ -643,6 +643,9 @@ namespace CapaPresentacion
                     , this.CtxtACFtipo_activo.Text
                     , ""
                     , "0"
+                    , ""
+                    , ""
+                    , ""
                     );
 
                 // Rta = NacfACFp_Activo_Fijo.Insertar(this.txtACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
