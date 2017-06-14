@@ -60,6 +60,7 @@
     <Compile Include="NacfMEQt_maquinariaequipo.cs" />
     <Compile Include="NacfMVAt_MovimientoActivo.cs" />
     <Compile Include="NacfMVMt_MotivoMovimiento.cs" />
+    <Compile Include="NacfOBJt_Tipo_Objeto.cs" />
     <Compile Include="NacfPDFt_procesodiferido.cs" />
     <Compile Include="NacfRTRt_Reparotributario.cs" />
     <Compile Include="NacfRVAt_registrovaluacion.cs" />

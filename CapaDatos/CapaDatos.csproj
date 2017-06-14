@@ -59,6 +59,7 @@
     <Compile Include="DAcfMEQt_maquinariaequipo.cs" />
     <Compile Include="DAcfMVAt_MovimientoActivo.cs" />
     <Compile Include="DAcfMVMt_MotivoMovimiento.cs" />
+    <Compile Include="DacfOBJt_Tipo_Objeto.cs" />
     <Compile Include="DacfPDFt_procesodiferido.cs" />
     <Compile Include="DAcfRTRt_Reparotributario.cs" />
     <Compile Include="DacfRVAt_registrovaluacion.cs" />
