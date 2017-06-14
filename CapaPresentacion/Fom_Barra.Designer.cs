@@ -38,9 +38,6 @@
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.rb1 = new System.Windows.Forms.RadioButton();
             this.rb2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -54,6 +51,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.datalistado1 = new System.Windows.Forms.DataGridView();
+            this.chbCRP = new System.Windows.Forms.CheckBox();
+            this.txtCRP = new System.Windows.Forms.TextBox();
+            this.cboCRP = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboPERNR = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboACFid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboAMBid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
@@ -84,17 +84,17 @@
             // chbAMB
             // 
             this.chbAMB.AutoSize = true;
-            this.chbAMB.Location = new System.Drawing.Point(16, 48);
+            this.chbAMB.Location = new System.Drawing.Point(12, 76);
             this.chbAMB.Name = "chbAMB";
-            this.chbAMB.Size = new System.Drawing.Size(48, 17);
+            this.chbAMB.Size = new System.Drawing.Size(50, 17);
             this.chbAMB.TabIndex = 5;
-            this.chbAMB.Text = "CRP";
+            this.chbAMB.Text = "Amb.";
             this.chbAMB.UseVisualStyleBackColor = true;
             // 
             // chbPERNR
             // 
             this.chbPERNR.AutoSize = true;
-            this.chbPERNR.Location = new System.Drawing.Point(16, 86);
+            this.chbPERNR.Location = new System.Drawing.Point(12, 112);
             this.chbPERNR.Name = "chbPERNR";
             this.chbPERNR.Size = new System.Drawing.Size(54, 17);
             this.chbPERNR.TabIndex = 6;
@@ -104,7 +104,7 @@
             // chbACF
             // 
             this.chbACF.AutoSize = true;
-            this.chbACF.Location = new System.Drawing.Point(16, 121);
+            this.chbACF.Location = new System.Drawing.Point(12, 149);
             this.chbACF.Name = "chbACF";
             this.chbACF.Size = new System.Drawing.Size(56, 17);
             this.chbACF.TabIndex = 8;
@@ -114,7 +114,7 @@
             // chbRACF
             // 
             this.chbRACF.AutoSize = true;
-            this.chbRACF.Location = new System.Drawing.Point(16, 147);
+            this.chbRACF.Location = new System.Drawing.Point(12, 175);
             this.chbRACF.Name = "chbRACF";
             this.chbRACF.Size = new System.Drawing.Size(108, 17);
             this.chbRACF.TabIndex = 9;
@@ -124,7 +124,7 @@
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(16, 180);
+            this.checkBox7.Location = new System.Drawing.Point(12, 208);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(102, 17);
             this.checkBox7.TabIndex = 10;
@@ -134,7 +134,7 @@
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(16, 206);
+            this.checkBox8.Location = new System.Drawing.Point(12, 234);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(227, 17);
             this.checkBox8.TabIndex = 11;
@@ -144,7 +144,7 @@
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(16, 238);
+            this.checkBox9.Location = new System.Drawing.Point(12, 266);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(119, 17);
             this.checkBox9.TabIndex = 12;
@@ -154,48 +154,17 @@
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(160, 238);
+            this.checkBox10.Location = new System.Drawing.Point(137, 266);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(114, 17);
             this.checkBox10.TabIndex = 13;
             this.checkBox10.Text = "Excluir cuenta 333";
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 37);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Salida";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(60, 37);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(63, 17);
-            this.radioButton1.TabIndex = 15;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Pantalla";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(129, 37);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(71, 17);
-            this.radioButton2.TabIndex = 16;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Impresora";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
             // rb1
             // 
             this.rb1.AutoSize = true;
-            this.rb1.Location = new System.Drawing.Point(417, 36);
+            this.rb1.Location = new System.Drawing.Point(6, 32);
             this.rb1.Name = "rb1";
             this.rb1.Size = new System.Drawing.Size(81, 17);
             this.rb1.TabIndex = 17;
@@ -206,7 +175,7 @@
             // rb2
             // 
             this.rb2.AutoSize = true;
-            this.rb2.Location = new System.Drawing.Point(504, 35);
+            this.rb2.Location = new System.Drawing.Point(93, 31);
             this.rb2.Name = "rb2";
             this.rb2.Size = new System.Drawing.Size(86, 17);
             this.rb2.TabIndex = 18;
@@ -216,12 +185,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.rb2);
-            this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.rb1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 261);
+            this.groupBox1.Location = new System.Drawing.Point(12, 300);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(596, 81);
             this.groupBox1.TabIndex = 19;
@@ -230,7 +196,7 @@
             // 
             // txtAMBid
             // 
-            this.txtAMBid.Location = new System.Drawing.Point(169, 49);
+            this.txtAMBid.Location = new System.Drawing.Point(170, 76);
             this.txtAMBid.Name = "txtAMBid";
             this.txtAMBid.ReadOnly = true;
             this.txtAMBid.Size = new System.Drawing.Size(175, 20);
@@ -239,16 +205,16 @@
             // 
             // txtPERNR
             // 
-            this.txtPERNR.Location = new System.Drawing.Point(169, 84);
+            this.txtPERNR.Location = new System.Drawing.Point(169, 112);
             this.txtPERNR.Name = "txtPERNR";
             this.txtPERNR.ReadOnly = true;
-            this.txtPERNR.Size = new System.Drawing.Size(175, 20);
+            this.txtPERNR.Size = new System.Drawing.Size(176, 20);
             this.txtPERNR.TabIndex = 24;
             this.txtPERNR.TabStop = false;
             // 
             // txtACF
             // 
-            this.txtACF.Location = new System.Drawing.Point(170, 121);
+            this.txtACF.Location = new System.Drawing.Point(170, 149);
             this.txtACF.Name = "txtACF";
             this.txtACF.ReadOnly = true;
             this.txtACF.Size = new System.Drawing.Size(175, 20);
@@ -257,35 +223,35 @@
             // 
             // txtRACF
             // 
-            this.txtRACF.Location = new System.Drawing.Point(130, 147);
+            this.txtRACF.Location = new System.Drawing.Point(130, 175);
             this.txtRACF.Name = "txtRACF";
             this.txtRACF.Size = new System.Drawing.Size(121, 20);
             this.txtRACF.TabIndex = 30;
             // 
             // txtRACF1
             // 
-            this.txtRACF1.Location = new System.Drawing.Point(257, 147);
+            this.txtRACF1.Location = new System.Drawing.Point(257, 175);
             this.txtRACF1.Name = "txtRACF1";
             this.txtRACF1.Size = new System.Drawing.Size(122, 20);
             this.txtRACF1.TabIndex = 31;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(130, 180);
+            this.dateTimePicker1.Location = new System.Drawing.Point(130, 208);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
             this.dateTimePicker1.TabIndex = 32;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(258, 180);
+            this.dateTimePicker2.Location = new System.Drawing.Point(258, 208);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(121, 20);
             this.dateTimePicker2.TabIndex = 33;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(527, 159);
+            this.button2.Location = new System.Drawing.Point(527, 187);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 35;
@@ -295,7 +261,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(446, 130);
+            this.button3.Location = new System.Drawing.Point(446, 158);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(156, 23);
             this.button3.TabIndex = 36;
@@ -310,6 +276,43 @@
             this.datalistado1.Size = new System.Drawing.Size(596, 288);
             this.datalistado1.TabIndex = 38;
             // 
+            // chbCRP
+            // 
+            this.chbCRP.AutoSize = true;
+            this.chbCRP.Location = new System.Drawing.Point(12, 48);
+            this.chbCRP.Name = "chbCRP";
+            this.chbCRP.Size = new System.Drawing.Size(48, 17);
+            this.chbCRP.TabIndex = 42;
+            this.chbCRP.Text = "CRP";
+            this.chbCRP.UseVisualStyleBackColor = true;
+            // 
+            // txtCRP
+            // 
+            this.txtCRP.Location = new System.Drawing.Point(169, 45);
+            this.txtCRP.Name = "txtCRP";
+            this.txtCRP.ReadOnly = true;
+            this.txtCRP.Size = new System.Drawing.Size(176, 20);
+            this.txtCRP.TabIndex = 43;
+            this.txtCRP.TabStop = false;
+            // 
+            // cboCRP
+            // 
+            this.cboCRP.AutoComplete = false;
+            this.cboCRP.AutoDropdown = false;
+            this.cboCRP.BackColorEven = System.Drawing.Color.White;
+            this.cboCRP.BackColorOdd = System.Drawing.Color.White;
+            this.cboCRP.ColumnNames = "";
+            this.cboCRP.ColumnWidthDefault = 75;
+            this.cboCRP.ColumnWidths = "";
+            this.cboCRP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboCRP.FormattingEnabled = true;
+            this.cboCRP.LinkedColumnIndex = 2;
+            this.cboCRP.LinkedTextBox = this.txtCRP;
+            this.cboCRP.Location = new System.Drawing.Point(77, 45);
+            this.cboCRP.Name = "cboCRP";
+            this.cboCRP.Size = new System.Drawing.Size(87, 21);
+            this.cboCRP.TabIndex = 41;
+            // 
             // cboPERNR
             // 
             this.cboPERNR.AutoComplete = false;
@@ -323,7 +326,7 @@
             this.cboPERNR.FormattingEnabled = true;
             this.cboPERNR.LinkedColumnIndex = 1;
             this.cboPERNR.LinkedTextBox = this.txtPERNR;
-            this.cboPERNR.Location = new System.Drawing.Point(77, 84);
+            this.cboPERNR.Location = new System.Drawing.Point(77, 112);
             this.cboPERNR.Name = "cboPERNR";
             this.cboPERNR.Size = new System.Drawing.Size(87, 21);
             this.cboPERNR.TabIndex = 40;
@@ -341,9 +344,9 @@
             this.cboACFid.FormattingEnabled = true;
             this.cboACFid.LinkedColumnIndex = 9;
             this.cboACFid.LinkedTextBox = this.txtACF;
-            this.cboACFid.Location = new System.Drawing.Point(76, 121);
+            this.cboACFid.Location = new System.Drawing.Point(77, 149);
             this.cboACFid.Name = "cboACFid";
-            this.cboACFid.Size = new System.Drawing.Size(88, 21);
+            this.cboACFid.Size = new System.Drawing.Size(87, 21);
             this.cboACFid.TabIndex = 39;
             // 
             // cboAMBid
@@ -359,9 +362,9 @@
             this.cboAMBid.FormattingEnabled = true;
             this.cboAMBid.LinkedColumnIndex = 2;
             this.cboAMBid.LinkedTextBox = this.txtAMBid;
-            this.cboAMBid.Location = new System.Drawing.Point(76, 48);
+            this.cboAMBid.Location = new System.Drawing.Point(77, 72);
             this.cboAMBid.Name = "cboAMBid";
-            this.cboAMBid.Size = new System.Drawing.Size(88, 21);
+            this.cboAMBid.Size = new System.Drawing.Size(87, 21);
             this.cboAMBid.TabIndex = 37;
             // 
             // multiColumnComboBox2
@@ -405,6 +408,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 699);
+            this.Controls.Add(this.txtCRP);
+            this.Controls.Add(this.chbCRP);
+            this.Controls.Add(this.cboCRP);
             this.Controls.Add(this.cboPERNR);
             this.Controls.Add(this.cboACFid);
             this.Controls.Add(this.datalistado1);
@@ -434,6 +440,7 @@
             this.Name = "Fom_Barra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empresa";
+            this.Load += new System.EventHandler(this.Fom_Barra_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado1)).EndInit();
@@ -456,9 +463,6 @@
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton rb1;
         private System.Windows.Forms.RadioButton rb2;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -475,5 +479,8 @@
         private System.Windows.Forms.DataGridView datalistado1;
         private MultiColumnComboBoxDemo.MultiColumnComboBox cboACFid;
         private MultiColumnComboBoxDemo.MultiColumnComboBox cboPERNR;
+        private MultiColumnComboBoxDemo.MultiColumnComboBox cboCRP;
+        private System.Windows.Forms.TextBox txtCRP;
+        private System.Windows.Forms.CheckBox chbCRP;
     }
 }
