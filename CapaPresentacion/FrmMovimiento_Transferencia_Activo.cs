@@ -869,6 +869,16 @@ namespace CapaPresentacion
             this.cboMVPtipo1.ValueMember = "TMVid";
             this.cboMVPtipo1.DisplayMember = "TMVid";
             this.cboMVPtipo1.SelectedIndex = -1;
+
+            this.txtORGcrp.DataSource = NacfCRPt_Centro_Responsabilidad.Mostrar();
+            this.txtORGcrp.ValueMember = "CRPid_crp";
+            this.txtORGcrp.DisplayMember = "CRPid_crp";
+            this.txtORGcrp.SelectedIndex = -1;
+
+            this.txtDSTcrp.DataSource = NacfCRPt_Centro_Responsabilidad.Mostrar();
+            this.txtDSTcrp.ValueMember = "CRPid_crp";
+            this.txtDSTcrp.DisplayMember = "CRPid_crp";
+            this.txtDSTcrp.SelectedIndex = -1;
         }
         private void toolStripAgregar_Click(object sender, EventArgs e) { }
 

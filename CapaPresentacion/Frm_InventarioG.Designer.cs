@@ -65,7 +65,7 @@
             this.txtINVfechacierre = new System.Windows.Forms.DateTimePicker();
             this.txtINVperiodo = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.cboAMBid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.cboCRP = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtAMBid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
@@ -169,6 +169,7 @@
             this.txtINVdescripcion.Name = "txtINVdescripcion";
             this.txtINVdescripcion.Size = new System.Drawing.Size(285, 20);
             this.txtINVdescripcion.TabIndex = 135;
+            this.txtINVdescripcion.TabStop = false;
             // 
             // txtINVrespon
             // 
@@ -431,23 +432,23 @@
             this.lblTotal.TabIndex = 158;
             this.lblTotal.Text = "lblTotal";
             // 
-            // cboAMBid
+            // cboCRP
             // 
-            this.cboAMBid.AutoComplete = false;
-            this.cboAMBid.AutoDropdown = false;
-            this.cboAMBid.BackColorEven = System.Drawing.Color.White;
-            this.cboAMBid.BackColorOdd = System.Drawing.Color.White;
-            this.cboAMBid.ColumnNames = "";
-            this.cboAMBid.ColumnWidthDefault = 75;
-            this.cboAMBid.ColumnWidths = "";
-            this.cboAMBid.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboAMBid.FormattingEnabled = true;
-            this.cboAMBid.LinkedColumnIndex = 2;
-            this.cboAMBid.LinkedTextBox = this.txtAMBid;
-            this.cboAMBid.Location = new System.Drawing.Point(293, 130);
-            this.cboAMBid.Name = "cboAMBid";
-            this.cboAMBid.Size = new System.Drawing.Size(101, 21);
-            this.cboAMBid.TabIndex = 159;
+            this.cboCRP.AutoComplete = false;
+            this.cboCRP.AutoDropdown = false;
+            this.cboCRP.BackColorEven = System.Drawing.Color.White;
+            this.cboCRP.BackColorOdd = System.Drawing.Color.White;
+            this.cboCRP.ColumnNames = "";
+            this.cboCRP.ColumnWidthDefault = 75;
+            this.cboCRP.ColumnWidths = "";
+            this.cboCRP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboCRP.FormattingEnabled = true;
+            this.cboCRP.LinkedColumnIndex = 2;
+            this.cboCRP.LinkedTextBox = this.txtAMBid;
+            this.cboCRP.Location = new System.Drawing.Point(293, 130);
+            this.cboCRP.Name = "cboCRP";
+            this.cboCRP.Size = new System.Drawing.Size(101, 21);
+            this.cboCRP.TabIndex = 159;
             // 
             // txtAMBid
             // 
@@ -465,7 +466,7 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(850, 434);
             this.Controls.Add(this.txtAMBid);
-            this.Controls.Add(this.cboAMBid);
+            this.Controls.Add(this.cboCRP);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.txtINVperiodo);
             this.Controls.Add(this.txtINVfechacierre);
@@ -540,6 +541,6 @@
         private System.Windows.Forms.TextBox txtINVperiodo;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.TextBox txtAMBid;
-        private MultiColumnComboBoxDemo.MultiColumnComboBox cboAMBid;
+        private MultiColumnComboBoxDemo.MultiColumnComboBox cboCRP;
     }
 }

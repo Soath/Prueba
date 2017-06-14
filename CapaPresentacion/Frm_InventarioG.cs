@@ -295,7 +295,7 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    Rta = NacfINBt_Inventariobienes.Copiar2(cboAMBid.Text);
+                    Rta = NacfINBt_Inventariobienes.Copiar2(cboCRP.Text);
 
                     if (Rta.Equals("OK"))
                     {
@@ -336,10 +336,10 @@ namespace CapaPresentacion
         }
         private void CargarCombos()
         {
-            this.cboAMBid.DataSource = NacfAMBt_Ambiente.Mostrar(); //BURkS
-            this.cboAMBid.ValueMember = "AMBid";
-            this.cboAMBid.DisplayMember = "AMBid";
-            this.cboAMBid.SelectedIndex = -1;
+            this.cboCRP.DataSource = NacfCRPt_Centro_Responsabilidad.Mostrar();
+            this.cboCRP.ValueMember = "CRPid_crp";
+            this.cboCRP.DisplayMember = "CRPid_crp";
+            this.cboCRP.SelectedIndex = -1;
         }
         private void CopiarRegistro2()
         {
@@ -348,7 +348,7 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    Rta = NacfICRt_Inventariocaracteristicas.Copiar3(cboAMBid.Text);
+                    Rta = NacfICRt_Inventariocaracteristicas.Copiar3(cboCRP.Text);
 
                     if (Rta.Equals("OK"))
                     {
@@ -430,7 +430,7 @@ namespace CapaPresentacion
             txtINVfechacierre.Text = "";
             txtINVperiodo.Text = "";
             txtINVrespon.Text = "";
-            cboAMBid.Text = "";
+            cboCRP.Text = "";
              
 
 
