@@ -385,6 +385,10 @@ namespace CapaPresentacion
             this.cmbACFid_Padre.DisplayMember = "ACFid";
             this.cmbACFid_Padre.SelectedIndex = -1;
 
+            this.cbocrp.DataSource = NacfCRPt_Centro_Responsabilidad.Mostrar();
+            this.cbocrp.ValueMember = "CRPid_crp";
+            this.cbocrp.DisplayMember = "CRPid_crp";
+            this.cbocrp.SelectedIndex = -1;
 
         }
         private void Top()
@@ -645,7 +649,7 @@ namespace CapaPresentacion
                     , "0"
                     , this.txtACFtipo_orden.Text
                     , this.txtOBJid_objeto.Text
-                    , " "
+                    , this.cbocrp.Text
                     );
 
                 // Rta = NacfACFp_Activo_Fijo.Insertar(this.txtACFid.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
