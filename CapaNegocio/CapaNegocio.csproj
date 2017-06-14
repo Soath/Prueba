@@ -42,6 +42,7 @@
     <Compile Include="NacfACFp_Activo_Fijo.cs" />
     <Compile Include="NacfACTt_Actividad.cs" />
     <Compile Include="NacfCMPt_Componente.cs" />
+    <Compile Include="NacfCRPt_Centro_Responsabilidad.cs" />
     <Compile Include="NacfCRSt_Caracteristicas.cs" />
     <Compile Include="NacfCSTt_Costo.cs" />
     <Compile Include="NacfAMBt_Ambiente.cs" />
