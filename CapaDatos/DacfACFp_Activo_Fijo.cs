@@ -1158,11 +1158,11 @@ namespace CapaDatos
                 ParMVMid.Value = acfACFp_Activo_Fijo.MVMid;
                 SqlCmd.Parameters.Add(ParMVMid);
                 //
-                SqlParameter ParACFfmovimiento = new SqlParameter();
-                ParACFfmovimiento.ParameterName = "@dtACFfmovimiento";
-                ParACFfmovimiento.SqlDbType = SqlDbType.DateTime;
-                ParACFfmovimiento.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfmovimiento);
-                SqlCmd.Parameters.Add(ParACFfmovimiento);
+                //SqlParameter ParACFfmovimiento = new SqlParameter();
+                //ParACFfmovimiento.ParameterName = "@dtACFfmovimiento";
+                //ParACFfmovimiento.SqlDbType = SqlDbType.DateTime;
+                //ParACFfmovimiento.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfmovimiento);
+                //SqlCmd.Parameters.Add(ParACFfmovimiento);
 
                 //
                 SqlParameter ParVNRid = new SqlParameter();
@@ -1183,11 +1183,11 @@ namespace CapaDatos
                 ParACFfincorporacion.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfincorporacion);
                 SqlCmd.Parameters.Add(ParACFfincorporacion);
                 //
-                SqlParameter ParACFfcapitalizacion = new SqlParameter();
-                ParACFfcapitalizacion.ParameterName = "@decACFfcapitalizacion";
-                ParACFfcapitalizacion.SqlDbType = SqlDbType.Decimal;
-                ParACFfcapitalizacion.Value = Convert.ToDecimal(acfACFp_Activo_Fijo.ACFfcapitalizacion);
-                SqlCmd.Parameters.Add(ParACFfcapitalizacion);
+                // SqlParameter ParACFfcapitalizacion = new SqlParameter();
+                // ParACFfcapitalizacion.ParameterName = "@decACFfcapitalizacion";
+                // ParACFfcapitalizacion.SqlDbType = SqlDbType.Decimal;
+                // ParACFfcapitalizacion.Value = Convert.ToDecimal(acfACFp_Activo_Fijo.ACFfcapitalizacion);
+                // SqlCmd.Parameters.Add(ParACFfcapitalizacion);
                 //
                 SqlParameter ParACFvutiltribanio = new SqlParameter();
                 ParACFvutiltribanio.ParameterName = "@iACFvutiltribanio";
@@ -1273,17 +1273,17 @@ namespace CapaDatos
                 ParACFanlue.Value = acfACFp_Activo_Fijo.ACFanlue;
                 SqlCmd.Parameters.Add(ParACFanlue);
                 //
-                SqlParameter ParACFfactortrib = new SqlParameter();
-                ParACFfactortrib.ParameterName = "@decACFfactortrib";
-                ParACFfactortrib.SqlDbType = SqlDbType.Decimal;
-                ParACFfactortrib.Value = Convert.ToDecimal(acfACFp_Activo_Fijo.ACFfactortrib);
-                SqlCmd.Parameters.Add(ParACFfactortrib);
-                //
-                SqlParameter ParACFfactorniif = new SqlParameter();
-                ParACFfactorniif.ParameterName = "@decACFfactorniif";
-                ParACFfactorniif.SqlDbType = SqlDbType.Decimal;
-                ParACFfactorniif.Value = Convert.ToDecimal(acfACFp_Activo_Fijo.ACFfactorniif);
-                SqlCmd.Parameters.Add(ParACFfactorniif);
+                // SqlParameter ParACFfactortrib = new SqlParameter();
+                // ParACFfactortrib.ParameterName = "@decACFfactortrib";
+                // ParACFfactortrib.SqlDbType = SqlDbType.Decimal;
+                // ParACFfactortrib.Value = Convert.ToDecimal(acfACFp_Activo_Fijo.ACFfactortrib);
+                // SqlCmd.Parameters.Add(ParACFfactortrib);
+                // //
+                // SqlParameter ParACFfactorniif = new SqlParameter();
+                // ParACFfactorniif.ParameterName = "@decACFfactorniif";
+                // ParACFfactorniif.SqlDbType = SqlDbType.Decimal;
+                // ParACFfactorniif.Value = Convert.ToDecimal(acfACFp_Activo_Fijo.ACFfactorniif);
+                // SqlCmd.Parameters.Add(ParACFfactorniif);
                 //
                 SqlParameter ParACFcuenta = new SqlParameter();
                 ParACFcuenta.ParameterName = "@sACFcuenta";
@@ -1321,11 +1321,11 @@ namespace CapaDatos
                 ParACFnotaingreso.Value = acfACFp_Activo_Fijo.ACFnotaingreso;
                 SqlCmd.Parameters.Add(ParACFnotaingreso);
                 //
-                SqlParameter ParACFfechanotaingreso = new SqlParameter();
-                ParACFfechanotaingreso.ParameterName = "@sACFfechanotaingreso";
-                ParACFfechanotaingreso.SqlDbType = SqlDbType.DateTime;
-                ParACFfechanotaingreso.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfechanotaingreso);
-                SqlCmd.Parameters.Add(ParACFfechanotaingreso);
+                //SqlParameter ParACFfechanotaingreso = new SqlParameter();
+                //ParACFfechanotaingreso.ParameterName = "@sACFfechanotaingreso";
+                //ParACFfechanotaingreso.SqlDbType = SqlDbType.DateTime;
+                //ParACFfechanotaingreso.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfechanotaingreso);
+                //SqlCmd.Parameters.Add(ParACFfechanotaingreso);
                 //
                 SqlParameter ParACFordencompra = new SqlParameter();
                 ParACFordencompra.ParameterName = "@sACFordencompra";
@@ -1369,11 +1369,11 @@ namespace CapaDatos
                 ParUBEid.Value = Convert.ToInt32(acfACFp_Activo_Fijo.UBEid);
                 SqlCmd.Parameters.Add(ParUBEid);
                 //
-                SqlParameter ParACFfechacomprobante = new SqlParameter();
-                ParACFfechacomprobante.ParameterName = "@dtACFfechacomprobante";
-                ParACFfechacomprobante.SqlDbType = SqlDbType.DateTime;
-                ParACFfechacomprobante.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfechacomprobante);
-                SqlCmd.Parameters.Add(ParACFfechacomprobante);
+                // SqlParameter ParACFfechacomprobante = new SqlParameter();
+                // ParACFfechacomprobante.ParameterName = "@dtACFfechacomprobante";
+                // ParACFfechacomprobante.SqlDbType = SqlDbType.DateTime;
+                // ParACFfechacomprobante.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfechacomprobante);
+                // SqlCmd.Parameters.Add(ParACFfechacomprobante);
                 //
                 SqlParameter ParV_T087U_ANLUE = new SqlParameter();
                 ParV_T087U_ANLUE.ParameterName = "@sV_T087U_ANLUE";

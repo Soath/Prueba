@@ -67,6 +67,7 @@ namespace CapaPresentacion
 
                     if (Convert.ToBoolean(row.Cells[0].Value))
                     {
+                        
                         Rta = NacfACFp_Activo_Fijo.SAPIMPORT(
                               Convert.ToString(row.Cells[3].Value), //ACFid
                               Convert.ToString(row.Cells[6].Value),  // BUKRS
@@ -75,11 +76,11 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[9].Value),  //PERNR
                               Convert.ToString(row.Cells[13].Value), //CSTid
                               Convert.ToString(row.Cells[14].Value), //MVMid
-                              "", // ACFfmovimiento en la tabla en blanco
+                              //"", // ACFfmovimiento en la tabla en blanco
                               Convert.ToString(row.Cells[16].Value),//VNRid
                               Convert.ToString(row.Cells[4].Value), //ACFdescripcion
                               Convert.ToString(row.Cells[15].Value),//ACFfincorporacion
-                              "", //ACFfcapitalizacion
+                              // "", //ACFfcapitalizacion
                               Convert.ToString(row.Cells[43].Value), //ACFvutiltribanio
                               "0", //FORMULA ACFvutiltribdia
                               "0", // ACFvalortrib
@@ -94,23 +95,23 @@ namespace CapaPresentacion
                             //Convert.ToString(row.Cells[132].Value)  ,//Se trajo del excel de SAP ACFord43
                             //Convert.ToString(row.Cells[133].Value)  ,//Se trajo del excel de SAP ACFord44
                               "",//encontro ACFanlue
-                              "", //No se encontro ACFfactortrib
-                              "", //No se encontro ACFfactorniif
+                              //"", //No se encontro ACFfactortrib
+                              //"", //No se encontro ACFfactorniif
                               Convert.ToString(row.Cells[11].Value), //ACFcuenta
                               "",//No se encontro ACFcuentadep
                               "",//No se encontro CMPid
                               "",//No se encontro ACFobservacion
                               Convert.ToString(row.Cells[30].Value), //LIFNR
                               Convert.ToString(row.Cells[35].Value),//ACFnotaingreso
-                              Convert.ToString(row.Cells[36].Value),//ACFfechanotaingreso
+                              //Convert.ToString(row.Cells[36].Value),//ACFfechanotaingreso
                               Convert.ToString(row.Cells[38].Value),//ACFordencompra
                               Convert.ToString(row.Cells[39].Value),//ACFfechaordencompra
-                              Convert.ToString(row.Cells[31].Value),//No se encontro BLART
+                              Convert.ToString(row.Cells[40].Value),//No se encontro BLART
                               Convert.ToString(row.Cells[33].Value),//ACFcomprobante
                               Convert.ToString(row.Cells[29].Value),//KOSTL
                               "",//AMBid
                               "0",//UBEID
-                              Convert.ToString(row.Cells[34].Value),//ACFfechacomprobante
+                              //Convert.ToString(row.Cells[34].Value),//ACFfechacomprobante
                               "0",  //V_T087U_ANLUE
                               "", //ACFtipo_activo
                               "",  //ACFAnulado 
@@ -223,11 +224,11 @@ namespace CapaPresentacion
                          Convert.ToString(row.Cells[9].Value) ,  //PERNR
                          Convert.ToString(row.Cells[13].Value)  , //CSTid
                          Convert.ToString(row.Cells[14].Value)  , //MVMid
-                         ""  , // ACFfmovimiento en la tabla en blanco
+                         //""  , // ACFfmovimiento en la tabla en blanco
                          Convert.ToString(row.Cells[15].Value)  ,//VNRid
                          Convert.ToString(row.Cells[4].Value)  , //ACFdescripcion
                          Convert.ToString(row.Cells[15].Value)  ,//ACFfincorporacion
-                         "", //ACFfcapitalizacion
+                         // "", //ACFfcapitalizacion
                          Convert.ToString(row.Cells[43].Value)  , //ACFvutiltribanio
                          "0", //FORMULA ACFvutiltribdia
                          "0", // ACFvalortrib
@@ -242,15 +243,15 @@ namespace CapaPresentacion
                        //Convert.ToString(row.Cells[132].Value)  ,//Se trajo del excel de SAP ACFord43
                        //Convert.ToString(row.Cells[133].Value)  ,//Se trajo del excel de SAP ACFord44
                          "" ,//encontro ACFanlue
-                         "" , //No se encontro ACFfactortrib
-                         "" , //No se encontro ACFfactorniif
+                         // "0" , //No se encontro ACFfactortrib
+                         // "0" , //No se encontro ACFfactorniif
                          Convert.ToString(row.Cells[11].Value)  , //ACFcuenta
                          "" ,//No se encontro ACFcuentadep
                          "" ,//No se encontro CMPid
                          "" ,//No se encontro ACFobservacion
                          Convert.ToString(row.Cells[30].Value)  , //LIFNR
                          Convert.ToString(row.Cells[35].Value)  ,//ACFnotaingreso
-                         Convert.ToString(row.Cells[36].Value)  ,//ACFfechanotaingreso
+                         //Convert.ToString(row.Cells[36].Value)  ,//ACFfechanotaingreso
                          Convert.ToString(row.Cells[38].Value)  ,//ACFordencompra
                          Convert.ToString(row.Cells[39].Value)  ,//ACFfechaordencompra
                          Convert.ToString(row.Cells[40].Value)  ,//No se encontro BLART
@@ -258,7 +259,7 @@ namespace CapaPresentacion
                          Convert.ToString(row.Cells[29].Value)  ,//KOSTL
                          ""  ,//AMBid
                          "0" ,//UBEID
-                         Convert.ToString(row.Cells[34].Value)  ,//ACFfechacomprobante
+                         //Convert.ToString(row.Cells[34].Value)  ,//ACFfechacomprobante
                          "0" ,  //V_T087U_ANLUE
                          "", //ACFtipo_activo
                          "",  //ACFAnulado 
