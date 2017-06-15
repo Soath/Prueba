@@ -32,7 +32,8 @@ namespace CapaNegocio
             string iUBEpuntof,
             string sUBEpuntofetq,
             string iUBEid,
-            string iACFid)
+            string iACFid
+            )
         {
             DacfUBEt_UbicacionElectrica Obj = new DacfUBEt_UbicacionElectrica();
             Obj.UBEcodigogis = iUBEcodigogis;
@@ -55,6 +56,58 @@ namespace CapaNegocio
             Obj.UBEid = iUBEid;
             Obj.ACFid = iACFid;
             return Obj.Insertar(Obj);
+        }
+
+        //Metodo importar Excel a DB Ubicacion Electrica
+        public static string SAPIMPORT(
+            string iUBEcodigogis,
+            string sUBEobra,
+            string sKOSTL,
+            string sVNRid,
+            string sSELid,
+            string iUBEset,
+            string sUBEsetetq,
+            string iUBEalimentador,
+            string sUBEalimentadoretq,
+            string iUBEsed,
+            string sUBEsedetq,
+            string iUBEcircuito,
+            string sUBEcircuitoetq,
+            string iUBEpuntoi,
+            string sUBEpuntoietq,
+            string iUBEpuntof,
+            string sUBEpuntofetq,
+            //string iUBEid,
+            string iACFid,
+            string cUBIGEO,
+            string cUBEpostei,
+            string cUBEpostef
+            )
+        {
+            DacfUBEt_UbicacionElectrica Obj = new DacfUBEt_UbicacionElectrica();
+            Obj.UBEcodigogis = iUBEcodigogis;
+            Obj.UBEobra = sUBEobra;
+            Obj.KOSTL = sKOSTL;
+            Obj.VNRid = sVNRid;
+            Obj.SELid = sSELid;
+            Obj.UBEset = iUBEset;
+            Obj.UBEsetetq = sUBEsetetq;
+            Obj.UBEalimentador = iUBEalimentador;
+            Obj.UBEalimentadoretq = sUBEalimentadoretq;
+            Obj.UBEsed = iUBEsed;
+            Obj.UBEsedetq = sUBEsedetq;
+            Obj.UBEcircuito = iUBEcircuito;
+            Obj.UBEcircuitoetq = sUBEcircuitoetq;
+            Obj.UBEpuntoi = iUBEpuntoi;
+            Obj.UBEpuntoietq = sUBEpuntoietq;
+            Obj.UBEpuntof = iUBEpuntof;
+            Obj.UBEpuntofetq = sUBEpuntofetq;
+            //Obj.UBEid = iUBEid;
+            Obj.ACFid = iACFid;    
+            Obj.UBIGEO = cUBIGEO;
+            Obj.UBEpostei = cUBEpostei;
+            Obj.UBEpostef = cUBEpostef;
+            return Obj.SAPIMPORT(Obj);
         }
 
         //------------------------------------------------------------------

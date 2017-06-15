@@ -29,7 +29,10 @@ namespace CapaDatos
         private string iUBEpuntof;
         private string sUBEpuntofetq;
         private string iUBEid;
-        private string iACFid;
+        private string iACFid; 
+        private string cUBIGEO;
+        private string cUBEpostei;
+        private string cUBEpostef;
 
         public string UBEcodigogis
         {
@@ -125,7 +128,23 @@ namespace CapaDatos
         {
             get { return iACFid; }
             set { iACFid = value; }
-        } 
+        }
+
+        public string UBIGEO
+        {
+            get { return cUBIGEO; }
+            set { cUBIGEO = value; }
+        }
+        public string UBEpostei
+        {
+            get { return cUBEpostei; }
+            set { cUBEpostei = value; }
+        }
+        public string UBEpostef
+        {
+            get { return cUBEpostef; }
+            set { cUBEpostef = value; }
+        }
        
         //Constructor vacío
 	public DacfUBEt_UbicacionElectrica(){
@@ -352,6 +371,173 @@ namespace CapaDatos
             }
             return rpta;
 	}
+
+        //Metodo importar Excel a DB Ubicacion Electrica
+    public string SAPIMPORT(DacfUBEt_UbicacionElectrica acfUBEt_UbicacionElectrica)
+    {
+        string rpta = "";
+        SqlConnection SqlCon = new SqlConnection();
+        try
+        {
+            //Código
+            SqlCon.ConnectionString = DConexion.CnBDActivo;
+            SqlCon.Open();
+            //Establecer el Comando
+            SqlCommand SqlCmd = new SqlCommand();
+            SqlCmd.Connection = SqlCon;
+            SqlCmd.CommandText = "usp_I_SAPIMPORT_UBICELEC";
+            SqlCmd.CommandType = CommandType.StoredProcedure;
+            //
+            SqlParameter ParUBEcodigogis = new SqlParameter();
+            ParUBEcodigogis.ParameterName = "@iUBEcodigogis";
+            ParUBEcodigogis.SqlDbType = SqlDbType.BigInt;
+            ParUBEcodigogis.Value = acfUBEt_UbicacionElectrica.UBEcodigogis;
+            SqlCmd.Parameters.Add(ParUBEcodigogis);
+            //
+            SqlParameter ParUBEobra = new SqlParameter();
+            ParUBEobra.ParameterName = "@sUBEobra";
+            ParUBEobra.SqlDbType = SqlDbType.Char;
+            ParUBEobra.Value = acfUBEt_UbicacionElectrica.UBEobra;
+            SqlCmd.Parameters.Add(ParUBEobra);
+            //
+            SqlParameter ParKOSTL = new SqlParameter();
+            ParKOSTL.ParameterName = "@sKOSTL";
+            ParKOSTL.SqlDbType = SqlDbType.Char;
+            ParKOSTL.Value = acfUBEt_UbicacionElectrica.KOSTL;
+            SqlCmd.Parameters.Add(ParKOSTL);
+            //
+            SqlParameter ParVNRid = new SqlParameter();
+            ParVNRid.ParameterName = "@sVNRid";
+            ParVNRid.SqlDbType = SqlDbType.Char;
+            ParVNRid.Value = acfUBEt_UbicacionElectrica.VNRid;
+            SqlCmd.Parameters.Add(ParVNRid);
+            //
+            SqlParameter ParSELid = new SqlParameter();
+            ParSELid.ParameterName = "@sSELid";
+            ParSELid.SqlDbType = SqlDbType.Char;
+            ParSELid.Value = acfUBEt_UbicacionElectrica.SELid;
+            SqlCmd.Parameters.Add(ParSELid);
+            //
+            SqlParameter ParUBEset = new SqlParameter();
+            ParUBEset.ParameterName = "@iUBEset";
+            ParUBEset.SqlDbType = SqlDbType.BigInt;
+            ParUBEset.Value = acfUBEt_UbicacionElectrica.UBEset;
+            SqlCmd.Parameters.Add(ParUBEset);
+            //
+            SqlParameter UBEsetetq = new SqlParameter();
+            UBEsetetq.ParameterName = "@sUBEsetetq";
+            UBEsetetq.SqlDbType = SqlDbType.VarChar;
+            UBEsetetq.Value = acfUBEt_UbicacionElectrica.UBEsetetq;
+            SqlCmd.Parameters.Add(UBEsetetq);
+            //
+            SqlParameter ParUBEalimentador = new SqlParameter();
+            ParUBEalimentador.ParameterName = "@iUBEalimentador";
+            ParUBEalimentador.SqlDbType = SqlDbType.BigInt;
+            ParUBEalimentador.Value = acfUBEt_UbicacionElectrica.UBEalimentador;
+            SqlCmd.Parameters.Add(ParUBEalimentador);
+            //
+            SqlParameter ParUBEalimentadoretq = new SqlParameter();
+            ParUBEalimentadoretq.ParameterName = "@sUBEalimentadoretq";
+            ParUBEalimentadoretq.SqlDbType = SqlDbType.VarChar;
+            ParUBEalimentadoretq.Value = acfUBEt_UbicacionElectrica.UBEalimentadoretq;
+            SqlCmd.Parameters.Add(ParUBEalimentadoretq);
+            //
+            SqlParameter ParUBEsed = new SqlParameter();
+            ParUBEsed.ParameterName = "@iUBEsed";
+            ParUBEsed.SqlDbType = SqlDbType.BigInt;
+            ParUBEsed.Value = acfUBEt_UbicacionElectrica.UBEsed;
+            SqlCmd.Parameters.Add(ParUBEsed);
+            //
+            SqlParameter ParUBEsedetq = new SqlParameter();
+            ParUBEsedetq.ParameterName = "@sUBEsedetq";
+            ParUBEsedetq.SqlDbType = SqlDbType.VarChar;
+            ParUBEsedetq.Value = acfUBEt_UbicacionElectrica.UBEsedetq;
+            SqlCmd.Parameters.Add(ParUBEsedetq);
+            //
+            SqlParameter ParUBEcircuito = new SqlParameter();
+            ParUBEcircuito.ParameterName = "@iUBEcircuito";
+            ParUBEcircuito.SqlDbType = SqlDbType.BigInt;
+            ParUBEcircuito.Value = acfUBEt_UbicacionElectrica.UBEcircuito;
+            SqlCmd.Parameters.Add(ParUBEcircuito);
+            //
+            SqlParameter ParUBEcircuitoetq = new SqlParameter();
+            ParUBEcircuitoetq.ParameterName = "@sUBEcircuitoetq";
+            ParUBEcircuitoetq.SqlDbType = SqlDbType.VarChar;
+            ParUBEcircuitoetq.Value = acfUBEt_UbicacionElectrica.UBEcircuitoetq;
+            SqlCmd.Parameters.Add(ParUBEcircuitoetq);
+            //
+            SqlParameter ParUBEpuntoi = new SqlParameter();
+            ParUBEpuntoi.ParameterName = "@iUBEpuntoi";
+            ParUBEpuntoi.SqlDbType = SqlDbType.BigInt;
+            ParUBEpuntoi.Value = acfUBEt_UbicacionElectrica.UBEpuntoi;
+            SqlCmd.Parameters.Add(ParUBEpuntoi);
+            //
+            SqlParameter ParUBEpuntoietq = new SqlParameter();
+            ParUBEpuntoietq.ParameterName = "@sUBEpuntoietq";
+            ParUBEpuntoietq.SqlDbType = SqlDbType.VarChar;
+            ParUBEpuntoietq.Value = acfUBEt_UbicacionElectrica.UBEpuntoietq;
+            SqlCmd.Parameters.Add(ParUBEpuntoietq);
+            //
+            SqlParameter ParUBEpuntof = new SqlParameter();
+            ParUBEpuntof.ParameterName = "@iUBEpuntof";
+            ParUBEpuntof.SqlDbType = SqlDbType.BigInt;
+            ParUBEpuntof.Value = acfUBEt_UbicacionElectrica.UBEpuntof;
+            SqlCmd.Parameters.Add(ParUBEpuntof);
+            //
+            SqlParameter ParUBEpuntofetq = new SqlParameter();
+            ParUBEpuntofetq.ParameterName = "@sUBEpuntofetq";
+            ParUBEpuntofetq.SqlDbType = SqlDbType.VarChar;
+            ParUBEpuntofetq.Value = acfUBEt_UbicacionElectrica.UBEpuntofetq;
+            SqlCmd.Parameters.Add(ParUBEpuntofetq);
+            //
+            // SqlParameter ParUBEid = new SqlParameter();
+            // ParUBEid.ParameterName = "@iUBEid";
+            // ParUBEid.SqlDbType = SqlDbType.Int;
+            // ParUBEid.Value = acfUBEt_UbicacionElectrica.UBEid;
+            // SqlCmd.Parameters.Add(ParUBEid);
+            //
+            SqlParameter ParACFid = new SqlParameter();
+            ParACFid.ParameterName = "@iACFid";
+            ParACFid.SqlDbType = SqlDbType.Int;
+            ParACFid.Value = acfUBEt_UbicacionElectrica.ACFid;
+            SqlCmd.Parameters.Add(ParACFid);
+            //
+            SqlParameter ParUBIGEO = new SqlParameter();
+            ParUBIGEO.ParameterName = "@cUBIGEO";
+            ParUBIGEO.SqlDbType = SqlDbType.VarChar;
+            ParUBIGEO.Value = acfUBEt_UbicacionElectrica.UBIGEO;
+            SqlCmd.Parameters.Add(ParUBIGEO);
+            //
+            SqlParameter ParUBEpostei = new SqlParameter();
+            ParUBEpostei.ParameterName = "@cUBEpostei";
+            ParUBEpostei.SqlDbType = SqlDbType.VarChar;
+            ParUBEpostei.Value = acfUBEt_UbicacionElectrica.UBEpostei;
+            SqlCmd.Parameters.Add(ParUBEpostei);
+            //
+            SqlParameter ParUBEpostef = new SqlParameter();
+            ParUBEpostef.ParameterName = "@cUBEpostef";
+            ParUBEpostef.SqlDbType = SqlDbType.VarChar;
+            ParUBEpostef.Value = acfUBEt_UbicacionElectrica.UBEpostef;
+            SqlCmd.Parameters.Add(ParUBEpostef);
+            //
+
+            //Ejecutamos nuestro comando
+
+            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+
+
+
+        }
+        catch (Exception ex)
+        {
+            rpta = ex.Message;
+        }
+        finally
+        {
+            if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+        }
+        return rpta;
+    }
 
 
         //METODO EDITAR

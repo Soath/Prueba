@@ -33,9 +33,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataListado = new System.Windows.Forms.DataGridView();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.chkEliminar = new System.Windows.Forms.CheckBox();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,6 +47,7 @@
             this.txtHoja.Name = "txtHoja";
             this.txtHoja.Size = new System.Drawing.Size(356, 24);
             this.txtHoja.TabIndex = 1;
+            this.txtHoja.Text = "sap";
             // 
             // label1
             // 
@@ -98,6 +99,13 @@
             this.dataListado.Size = new System.Drawing.Size(1295, 398);
             this.dataListado.TabIndex = 163;
             // 
+            // Seleccionar
+            // 
+            this.Seleccionar.HeaderText = "Seleccionar";
+            this.Seleccionar.Name = "Seleccionar";
+            this.Seleccionar.Visible = false;
+            this.Seleccionar.Width = 50;
+            // 
             // chkEliminar
             // 
             this.chkEliminar.AutoSize = true;
@@ -119,13 +127,6 @@
             this.lblTotal.Size = new System.Drawing.Size(65, 17);
             this.lblTotal.TabIndex = 164;
             this.lblTotal.Text = "Registro:";
-            // 
-            // Seleccionar
-            // 
-            this.Seleccionar.HeaderText = "Seleccionar";
-            this.Seleccionar.Name = "Seleccionar";
-            this.Seleccionar.Visible = false;
-            this.Seleccionar.Width = 50;
             // 
             // FrmExcel
             // 
