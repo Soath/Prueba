@@ -1815,6 +1815,23 @@ namespace CapaDatos
                 ParACFid_Padre.SqlDbType = SqlDbType.Int;
                 ParACFid_Padre.Value = Convert.ToInt32(cACFid_Padre);
                 SqlCmd.Parameters.Add(ParACFid_Padre);
+                SqlParameter ParACFtipo_orden = new SqlParameter();
+                ParACFtipo_orden.ParameterName = "@cACFtipo_orden";
+                ParACFtipo_orden.SqlDbType = SqlDbType.VarChar;
+                ParACFtipo_orden.Value = acfACFp_Activo_Fijo.cACFtipo_orden;
+                SqlCmd.Parameters.Add(ParACFtipo_orden);
+
+                SqlParameter ParOBJid_objeto = new SqlParameter();
+                ParOBJid_objeto.ParameterName = "@cOBJid_objeto";
+                ParOBJid_objeto.SqlDbType = SqlDbType.Char;
+                ParOBJid_objeto.Value = acfACFp_Activo_Fijo.cOBJid_objeto;
+                SqlCmd.Parameters.Add(ParOBJid_objeto);
+
+                SqlParameter ParCRPid_crp = new SqlParameter();
+                ParCRPid_crp.ParameterName = "@cCRPid_crp";
+                ParCRPid_crp.SqlDbType = SqlDbType.Char;
+                ParCRPid_crp.Value = acfACFp_Activo_Fijo.cCRPid_crp;
+                SqlCmd.Parameters.Add(ParCRPid_crp);
 
 
                 //Ejecutamos nuestro comando

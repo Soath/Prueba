@@ -117,7 +117,7 @@ namespace CapaPresentacion
                               "0", // ACFid_Padre
                                Convert.ToString(row.Cells[36].Value), // ACFtipo_orden
                                Convert.ToString(row.Cells[47].Value), // OBJid_objeto
-                               Convert.ToString(row.Cells[7].Value) // CRPid_crp
+                               Convert.ToString(row.Cells[8].Value) // CRPid_crp
                               );
                                                                                                                                                      
                         if (Rta.Equals("OK"))

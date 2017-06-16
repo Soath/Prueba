@@ -821,6 +821,9 @@ namespace CapaPresentacion
                     , this.CtxtACFtipo_activo.Text
                     , ""
                     , "0"
+                    , this.txtACFtipo_orden.Text
+                    , this.txtOBJid_objeto.Text
+                    , this.cbocrp.Text//cbocrp.SelectedValue.ToString()
                     );
 
                 //Rta = NacfACFp_Activo_Fijo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
@@ -1018,17 +1021,27 @@ namespace CapaPresentacion
                 CtxtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
                 Canul = Convert.ToString(row["ACFAnulado"]);
                 cmbACFid_Padre.Text = Convert.ToString(row["ACFid_Padre"]);
-
+                txtACFtipo_orden.Text = Convert.ToString(row["ACFtipo_orden"]);
+                cbocrp.Text = Convert.ToString(row["CRPid_crp"]);
                 CodigodeBarra();
+
+                
 
                 if (String.IsNullOrEmpty(Canul))
                      {
                        anulado.Visible=false;
                        baja.Visible = false;
+                      
                      }
                 else
+                    
                     if (Canul == "1") anulado.Visible = true;
-                    if (Canul == "2") baja.Visible = true; 
+                    if (Canul == "2") baja.Visible = true;
+                    if (Canul == "0") anulado.Visible = false;
+                    if (Canul == "0") baja.Visible = false;
+                    if (Canul == " ") anulado.Visible = false;
+                    if (Canul == " ") baja.Visible = false;
+
             }
 
             else

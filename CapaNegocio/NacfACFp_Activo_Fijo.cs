@@ -283,7 +283,11 @@ namespace CapaNegocio
          string sV_T087U_ANLUE,
          string sACFtipo_activo,
          string cACFAnulado,
-         string cACFid_Padre
+         string cACFid_Padre,
+         string cACFtipo_orden,
+         string cOBJid_objeto,
+         string cCRPid_crp
+
          )  
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
@@ -334,6 +338,11 @@ namespace CapaNegocio
             Obj.ACFtipo_activo = sACFtipo_activo;
             Obj.ACFAnulado = cACFAnulado;
             Obj.ACFid_Padre = cACFid_Padre;
+            Obj.ACFtipo_orden= cACFtipo_orden;
+            Obj.OBJid_objeto= cOBJid_objeto;
+            Obj.CRPid_crp = cCRPid_crp;
+
+
             return Obj.Editar(Obj);
         }
 
