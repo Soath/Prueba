@@ -160,7 +160,7 @@ namespace CapaNegocio
          string decCRScantidad,
          string sCRSvehplaca,
          string sCRSvehexpediente,
-         //string dtCRSvehinscripcion,
+         string dtCRSvehinscripcion,
          string sCRSvehclase,
          string sCRSvehcombustible,
          string iCRSvehejes,
@@ -202,7 +202,7 @@ namespace CapaNegocio
          string sCRSfolioinipredio,
          string sCRSfoliofinpredio,
          string sCRSasientopredio,
-         //string dtCRSfinscpredio,
+         string dtCRSfinscpredio,
          string sCRSficharegistral,
          string decCRSareaconstruida,
          string decCRSperimetro,
@@ -210,7 +210,7 @@ namespace CapaNegocio
          string decCRSvalorautovaluo,
          string sCRScodigoluz,
          string sCRScodigoagua,
-         //string dtCRSfadqpredio,
+         string dtCRSfadqpredio,
          string sCRSobservacion)
         {
             DacfCRSt_Caracteristicas Obj = new DacfCRSt_Caracteristicas();
@@ -226,7 +226,7 @@ namespace CapaNegocio
             Obj.CRScantidad = decCRScantidad;
             Obj.CRSvehplaca = sCRSvehplaca;
             Obj.CRSvehexpediente = sCRSvehexpediente;
-            //Obj.CRSvehinscripcion = dtCRSvehinscripcion;
+            Obj.CRSvehinscripcion = dtCRSvehinscripcion;
             Obj.CRSvehclase = sCRSvehclase;
             Obj.CRSvehcombustible = sCRSvehcombustible;
             Obj.CRSvehejes = iCRSvehejes;
@@ -268,7 +268,7 @@ namespace CapaNegocio
             Obj.CRSfolioinipredio = sCRSfolioinipredio;
             Obj.CRSfoliofinpredio = sCRSfoliofinpredio;
             Obj.CRSasientopredio = sCRSasientopredio;
-            //Obj.CRSfinscpredio = dtCRSfinscpredio;
+            Obj.CRSfinscpredio = dtCRSfinscpredio;
             Obj.CRSficharegistral = sCRSficharegistral;
             Obj.CRSareaconstruida = decCRSareaconstruida;
             Obj.CRSperimetro = decCRSperimetro;
@@ -276,7 +276,7 @@ namespace CapaNegocio
             Obj.CRSvalorautovaluo = decCRSvalorautovaluo;
             Obj.CRScodigoluz = sCRScodigoluz;
             Obj.CRScodigoagua = sCRScodigoagua;
-            //Obj.CRSfadqpredio = dtCRSfadqpredio;
+            Obj.CRSfadqpredio = dtCRSfadqpredio;
             Obj.CRSobservacion = sCRSobservacion;
             return Obj.SAPIMPORT(Obj);
         }

@@ -1107,11 +1107,11 @@ namespace CapaDatos
                 ParCRSvehexpediente.Value = acfCRSt_Caracteristicas.CRSvehexpediente;
                 SqlCmd.Parameters.Add(ParCRSvehexpediente);
                 //
-               // SqlParameter ParCRSvehinscripcion = new SqlParameter();
-               // ParCRSvehinscripcion.ParameterName = "@dtCRSvehinscripcion";
-               // ParCRSvehinscripcion.SqlDbType = SqlDbType.DateTime;
-               // ParCRSvehinscripcion.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSvehinscripcion);
-               // SqlCmd.Parameters.Add(ParCRSvehinscripcion);
+                SqlParameter ParCRSvehinscripcion = new SqlParameter();
+                ParCRSvehinscripcion.ParameterName = "@dtCRSvehinscripcion";
+                ParCRSvehinscripcion.SqlDbType = SqlDbType.DateTime;
+                ParCRSvehinscripcion.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSvehinscripcion);
+                SqlCmd.Parameters.Add(ParCRSvehinscripcion);
                 //
                 SqlParameter ParCRSvehclase = new SqlParameter();
                 ParCRSvehclase.ParameterName = "@sCRSvehclase";
@@ -1359,11 +1359,11 @@ namespace CapaDatos
                 ParCRSasientopredio.Value = acfCRSt_Caracteristicas.CRSasientopredio;
                 SqlCmd.Parameters.Add(ParCRSasientopredio);
                 //
-                //SqlParameter ParCRSfinscpredio = new SqlParameter();
-                //ParCRSfinscpredio.ParameterName = "@dtCRSfinscpredio";
-                //ParCRSfinscpredio.SqlDbType = SqlDbType.DateTime;
-                //ParCRSfinscpredio.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfinscpredio);
-                //SqlCmd.Parameters.Add(ParCRSfinscpredio);
+                SqlParameter ParCRSfinscpredio = new SqlParameter();
+                ParCRSfinscpredio.ParameterName = "@dtCRSfinscpredio";
+                ParCRSfinscpredio.SqlDbType = SqlDbType.DateTime;
+                ParCRSfinscpredio.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfinscpredio);
+                SqlCmd.Parameters.Add(ParCRSfinscpredio);
                 //
                 SqlParameter ParCRSficharegistral = new SqlParameter();
                 ParCRSficharegistral.ParameterName = "@sCRSficharegistral";
@@ -1407,11 +1407,11 @@ namespace CapaDatos
                 ParCRScodigoagua.Value = acfCRSt_Caracteristicas.CRScodigoagua;
                 SqlCmd.Parameters.Add(ParCRScodigoagua);
                 //
-               // SqlParameter ParCRSfadqpredio = new SqlParameter();
-               // ParCRSfadqpredio.ParameterName = "@dtCRSfadqpredio";
-               // ParCRSfadqpredio.SqlDbType = SqlDbType.DateTime;
-               // ParCRSfadqpredio.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfadqpredio);
-               // SqlCmd.Parameters.Add(ParCRSfadqpredio);
+                SqlParameter ParCRSfadqpredio = new SqlParameter();
+                ParCRSfadqpredio.ParameterName = "@dtCRSfadqpredio";
+                ParCRSfadqpredio.SqlDbType = SqlDbType.DateTime;
+                ParCRSfadqpredio.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfadqpredio);
+                SqlCmd.Parameters.Add(ParCRSfadqpredio);
                 //
                 SqlParameter ParCRSobservacion = new SqlParameter();
                 ParCRSobservacion.ParameterName = "@sCRSobservacion";

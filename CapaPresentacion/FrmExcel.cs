@@ -162,7 +162,7 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[54].Value), // CRScantidad
                               Convert.ToString(row.Cells[58].Value), // CRSvehplaca
                               Convert.ToString(row.Cells[60].Value), // CRSvehexpediente
-                              //Convert.ToString(row.Cells[61].Value), // CRSvehinscripcion
+                              Convert.ToString(System.DateTime.Today),//Convert.ToString(row.Cells[61].Value), // CRSvehinscripcion
                               Convert.ToString(row.Cells[62].Value), // CRSvehclase
                               Convert.ToString(row.Cells[63].Value), // CRSvehcombustible
                               "0",// Convert.ToString(row.Cells[64].Value), // CRSvehejes
@@ -204,7 +204,7 @@ namespace CapaPresentacion
                               "", // CRSfolioinipredio
                               "", // CRSfoliofinpredio
                               "", // CRSasientopredio
-                              //"", // CRSfinscpredio
+                              Convert.ToString(System.DateTime.Today),//"", // CRSfinscpredio
                               Convert.ToString(row.Cells[98].Value), // CRSficharegistral
                               "0", // Convert.ToString(row.Cells[103].Value), // CRSareaconstruida
                               "0", // Convert.ToString(row.Cells[104].Value), // CRSperimetro
@@ -212,7 +212,7 @@ namespace CapaPresentacion
                               "0", // CRSvalorautovaluo
                               "", // CRScodigoluz
                               "", // CRScodigoagua
-                              //"", // CRSfadqpredio
+                              Convert.ToString(System.DateTime.Today),//"", // CRSfadqpredio
                               Convert.ToString(row.Cells[85].Value) // CRSobservacion
                             );
                         
