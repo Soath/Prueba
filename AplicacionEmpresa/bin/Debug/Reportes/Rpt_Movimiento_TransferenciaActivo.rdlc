@@ -843,7 +843,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Trim(First(Fields!DSTid_persona.Value, "DataSet1"))</Value>
+                    <Value>=First(Fields!DSTid_persona.Value, "DataSet1")</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>

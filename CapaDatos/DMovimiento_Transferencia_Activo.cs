@@ -1352,7 +1352,36 @@ namespace CapaDatos
             }
             return rpta;
         }
+        public DataTable FichaMovimiento1(string iMVPid_proceso)
+        {
+            DataTable DtResultado = new DataTable("acfCMVp_Cabecera_Movimiento");
+            SqlConnection SqlCon = new SqlConnection();
 
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "FICHA_DE_MOVIMIENTO";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParMVPid_proceso = new SqlParameter();
+                ParMVPid_proceso.ParameterName = "@iMVPid_proceso";
+                ParMVPid_proceso.SqlDbType = SqlDbType.Int;
+                ParMVPid_proceso.Value = iMVPid_proceso;
+                SqlCmd.Parameters.Add(ParMVPid_proceso);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
         // Capa de Datos para el reporte de Ficha de Movimiento
         public string FichaMovimiento(DMovimiento_Transferencia_Activo acfCMVp_Cabecera_Movimiento)
         {

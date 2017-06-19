@@ -1036,6 +1036,12 @@ namespace CapaPresentacion
             dataListado.Columns.Remove("Column5");
             dataListado.Columns.Remove("Column6");
         }
+
+        private void toolStripImprimir_Click(object sender, EventArgs e)
+        {
+            FrmReportes rptalu = new FrmReportes("\\Users\\DARIEL\\Documents\\GitHub\\Prueba\\CapaPresentacion\\Reportes\\Rpt_Movimiento_TransferenciaActivo.rdlc", NMovimiento_Transferencia_Activo.FichaMovimiento1(txtMVPid_proceso.Text), "ip");
+            rptalu.ShowDialog();
+        }
     }
 }
 //-------------------------------------------------------------------
