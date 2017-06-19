@@ -1,3 +1,0 @@
-Error de digitación (al parecer) en la tabla acfRVAt_registrovaluacion 
-
-RVRestado no sería RVAestado? 
