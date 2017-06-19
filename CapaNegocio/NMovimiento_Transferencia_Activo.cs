@@ -418,6 +418,12 @@ namespace CapaNegocio
             Obj.MVPid_proceso = iMVPid_proceso;
             return Obj.RecargarACF(Obj);
         }
+        public static string FichaMovimiento(String iMVPid_proceso)
+        {
+            DMovimiento_Transferencia_Activo Obj = new DMovimiento_Transferencia_Activo();
+            Obj.MVPid_proceso = iMVPid_proceso;
+            return Obj.FichaMovimiento(Obj);
+        }
 
 
 
