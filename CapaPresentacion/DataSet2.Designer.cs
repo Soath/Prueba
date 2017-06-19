@@ -78,6 +78,8 @@ namespace CapaPresentacion {
         
         private DBarraDataTable tableDBarra;
         
+        private DFichaMovimientoDataTable tableDFichaMovimiento;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -186,6 +188,9 @@ namespace CapaPresentacion {
                 }
                 if ((ds.Tables["DBarra"] != null)) {
                     base.Tables.Add(new DBarraDataTable(ds.Tables["DBarra"]));
+                }
+                if ((ds.Tables["DFichaMovimiento"] != null)) {
+                    base.Tables.Add(new DFichaMovimientoDataTable(ds.Tables["DFichaMovimiento"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -477,6 +482,16 @@ namespace CapaPresentacion {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public DFichaMovimientoDataTable DFichaMovimiento {
+            get {
+                return this.tableDFichaMovimiento;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -622,6 +637,9 @@ namespace CapaPresentacion {
                 }
                 if ((ds.Tables["DBarra"] != null)) {
                     base.Tables.Add(new DBarraDataTable(ds.Tables["DBarra"]));
+                }
+                if ((ds.Tables["DFichaMovimiento"] != null)) {
+                    base.Tables.Add(new DFichaMovimientoDataTable(ds.Tables["DFichaMovimiento"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -818,6 +836,12 @@ namespace CapaPresentacion {
                     this.tableDBarra.InitVars();
                 }
             }
+            this.tableDFichaMovimiento = ((DFichaMovimientoDataTable)(base.Tables["DFichaMovimiento"]));
+            if ((initTable == true)) {
+                if ((this.tableDFichaMovimiento != null)) {
+                    this.tableDFichaMovimiento.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -882,6 +906,8 @@ namespace CapaPresentacion {
             base.Tables.Add(this.tableDActivosFijos);
             this.tableDBarra = new DBarraDataTable();
             base.Tables.Add(this.tableDBarra);
+            this.tableDFichaMovimiento = new DFichaMovimientoDataTable();
+            base.Tables.Add(this.tableDFichaMovimiento);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1048,6 +1074,12 @@ namespace CapaPresentacion {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeDFichaMovimiento() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -1181,6 +1213,9 @@ namespace CapaPresentacion {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void DBarraRowChangeEventHandler(object sender, DBarraRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void DFichaMovimientoRowChangeEventHandler(object sender, DFichaMovimientoRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -9158,6 +9193,719 @@ namespace CapaPresentacion {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class DFichaMovimientoDataTable : global::System.Data.TypedTableBase<DFichaMovimientoRow> {
+            
+            private global::System.Data.DataColumn columnMVPid_proceso;
+            
+            private global::System.Data.DataColumn columnMVPtipo;
+            
+            private global::System.Data.DataColumn columnTMVtipomovimiento;
+            
+            private global::System.Data.DataColumn columnMVPds_movimiento;
+            
+            private global::System.Data.DataColumn columnMVMmotivomovimiento;
+            
+            private global::System.Data.DataColumn columnMVPfecha_movimiento;
+            
+            private global::System.Data.DataColumn columnORGid_zona;
+            
+            private global::System.Data.DataColumn columnORGds_zona;
+            
+            private global::System.Data.DataColumn columnORGcrp;
+            
+            private global::System.Data.DataColumn columnORGds_crp;
+            
+            private global::System.Data.DataColumn columnORGid_ambiente;
+            
+            private global::System.Data.DataColumn columnORGds_ambiente;
+            
+            private global::System.Data.DataColumn columnORGid_persona;
+            
+            private global::System.Data.DataColumn columnORGds_persona;
+            
+            private global::System.Data.DataColumn columnORGid_usuario;
+            
+            private global::System.Data.DataColumn columnORGds_usuario;
+            
+            private global::System.Data.DataColumn columnDSTid_zona;
+            
+            private global::System.Data.DataColumn columnDSTds_zona;
+            
+            private global::System.Data.DataColumn columnDSTcrp;
+            
+            private global::System.Data.DataColumn columnDSTds_crp;
+            
+            private global::System.Data.DataColumn columnDSTid_ambiente;
+            
+            private global::System.Data.DataColumn columnDSTds_ambiente;
+            
+            private global::System.Data.DataColumn columnDSTid_persona;
+            
+            private global::System.Data.DataColumn columnDSTds_persona;
+            
+            private global::System.Data.DataColumn columnDSTid_usuario;
+            
+            private global::System.Data.DataColumn columnDSTds_usuario;
+            
+            private global::System.Data.DataColumn columnACFid;
+            
+            private global::System.Data.DataColumn columnACFdescripcion;
+            
+            private global::System.Data.DataColumn columnMARmarca;
+            
+            private global::System.Data.DataColumn columnCRSserie;
+            
+            private global::System.Data.DataColumn columnCRSmodelo;
+            
+            private global::System.Data.DataColumn columnACFid_Padre;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DFichaMovimientoDataTable() {
+                this.TableName = "DFichaMovimiento";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal DFichaMovimientoDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected DFichaMovimientoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MVPid_procesoColumn {
+                get {
+                    return this.columnMVPid_proceso;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MVPtipoColumn {
+                get {
+                    return this.columnMVPtipo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TMVtipomovimientoColumn {
+                get {
+                    return this.columnTMVtipomovimiento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MVPds_movimientoColumn {
+                get {
+                    return this.columnMVPds_movimiento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MVMmotivomovimientoColumn {
+                get {
+                    return this.columnMVMmotivomovimiento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MVPfecha_movimientoColumn {
+                get {
+                    return this.columnMVPfecha_movimiento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ORGid_zonaColumn {
+                get {
+                    return this.columnORGid_zona;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ORGds_zonaColumn {
+                get {
+                    return this.columnORGds_zona;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ORGcrpColumn {
+                get {
+                    return this.columnORGcrp;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ORGds_crpColumn {
+                get {
+                    return this.columnORGds_crp;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ORGid_ambienteColumn {
+                get {
+                    return this.columnORGid_ambiente;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ORGds_ambienteColumn {
+                get {
+                    return this.columnORGds_ambiente;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ORGid_personaColumn {
+                get {
+                    return this.columnORGid_persona;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ORGds_personaColumn {
+                get {
+                    return this.columnORGds_persona;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ORGid_usuarioColumn {
+                get {
+                    return this.columnORGid_usuario;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ORGds_usuarioColumn {
+                get {
+                    return this.columnORGds_usuario;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DSTid_zonaColumn {
+                get {
+                    return this.columnDSTid_zona;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DSTds_zonaColumn {
+                get {
+                    return this.columnDSTds_zona;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DSTcrpColumn {
+                get {
+                    return this.columnDSTcrp;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DSTds_crpColumn {
+                get {
+                    return this.columnDSTds_crp;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DSTid_ambienteColumn {
+                get {
+                    return this.columnDSTid_ambiente;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DSTds_ambienteColumn {
+                get {
+                    return this.columnDSTds_ambiente;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DSTid_personaColumn {
+                get {
+                    return this.columnDSTid_persona;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DSTds_personaColumn {
+                get {
+                    return this.columnDSTds_persona;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DSTid_usuarioColumn {
+                get {
+                    return this.columnDSTid_usuario;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DSTds_usuarioColumn {
+                get {
+                    return this.columnDSTds_usuario;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACFidColumn {
+                get {
+                    return this.columnACFid;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACFdescripcionColumn {
+                get {
+                    return this.columnACFdescripcion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MARmarcaColumn {
+                get {
+                    return this.columnMARmarca;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CRSserieColumn {
+                get {
+                    return this.columnCRSserie;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CRSmodeloColumn {
+                get {
+                    return this.columnCRSmodelo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACFid_PadreColumn {
+                get {
+                    return this.columnACFid_Padre;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DFichaMovimientoRow this[int index] {
+                get {
+                    return ((DFichaMovimientoRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DFichaMovimientoRowChangeEventHandler DFichaMovimientoRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DFichaMovimientoRowChangeEventHandler DFichaMovimientoRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DFichaMovimientoRowChangeEventHandler DFichaMovimientoRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DFichaMovimientoRowChangeEventHandler DFichaMovimientoRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddDFichaMovimientoRow(DFichaMovimientoRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DFichaMovimientoRow AddDFichaMovimientoRow(
+                        string MVPid_proceso, 
+                        string MVPtipo, 
+                        string TMVtipomovimiento, 
+                        string MVPds_movimiento, 
+                        string MVMmotivomovimiento, 
+                        string MVPfecha_movimiento, 
+                        string ORGid_zona, 
+                        string ORGds_zona, 
+                        string ORGcrp, 
+                        string ORGds_crp, 
+                        string ORGid_ambiente, 
+                        string ORGds_ambiente, 
+                        string ORGid_persona, 
+                        string ORGds_persona, 
+                        string ORGid_usuario, 
+                        string ORGds_usuario, 
+                        string DSTid_zona, 
+                        string DSTds_zona, 
+                        string DSTcrp, 
+                        string DSTds_crp, 
+                        string DSTid_ambiente, 
+                        string DSTds_ambiente, 
+                        string DSTid_persona, 
+                        string DSTds_persona, 
+                        string DSTid_usuario, 
+                        string DSTds_usuario, 
+                        string ACFid, 
+                        string ACFdescripcion, 
+                        string MARmarca, 
+                        string CRSserie, 
+                        string CRSmodelo, 
+                        string ACFid_Padre) {
+                DFichaMovimientoRow rowDFichaMovimientoRow = ((DFichaMovimientoRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        MVPid_proceso,
+                        MVPtipo,
+                        TMVtipomovimiento,
+                        MVPds_movimiento,
+                        MVMmotivomovimiento,
+                        MVPfecha_movimiento,
+                        ORGid_zona,
+                        ORGds_zona,
+                        ORGcrp,
+                        ORGds_crp,
+                        ORGid_ambiente,
+                        ORGds_ambiente,
+                        ORGid_persona,
+                        ORGds_persona,
+                        ORGid_usuario,
+                        ORGds_usuario,
+                        DSTid_zona,
+                        DSTds_zona,
+                        DSTcrp,
+                        DSTds_crp,
+                        DSTid_ambiente,
+                        DSTds_ambiente,
+                        DSTid_persona,
+                        DSTds_persona,
+                        DSTid_usuario,
+                        DSTds_usuario,
+                        ACFid,
+                        ACFdescripcion,
+                        MARmarca,
+                        CRSserie,
+                        CRSmodelo,
+                        ACFid_Padre};
+                rowDFichaMovimientoRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDFichaMovimientoRow);
+                return rowDFichaMovimientoRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                DFichaMovimientoDataTable cln = ((DFichaMovimientoDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new DFichaMovimientoDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnMVPid_proceso = base.Columns["MVPid_proceso"];
+                this.columnMVPtipo = base.Columns["MVPtipo"];
+                this.columnTMVtipomovimiento = base.Columns["TMVtipomovimiento"];
+                this.columnMVPds_movimiento = base.Columns["MVPds_movimiento"];
+                this.columnMVMmotivomovimiento = base.Columns["MVMmotivomovimiento"];
+                this.columnMVPfecha_movimiento = base.Columns["MVPfecha_movimiento"];
+                this.columnORGid_zona = base.Columns["ORGid_zona"];
+                this.columnORGds_zona = base.Columns["ORGds_zona"];
+                this.columnORGcrp = base.Columns["ORGcrp"];
+                this.columnORGds_crp = base.Columns["ORGds_crp"];
+                this.columnORGid_ambiente = base.Columns["ORGid_ambiente"];
+                this.columnORGds_ambiente = base.Columns["ORGds_ambiente"];
+                this.columnORGid_persona = base.Columns["ORGid_persona"];
+                this.columnORGds_persona = base.Columns["ORGds_persona"];
+                this.columnORGid_usuario = base.Columns["ORGid_usuario"];
+                this.columnORGds_usuario = base.Columns["ORGds_usuario"];
+                this.columnDSTid_zona = base.Columns["DSTid_zona"];
+                this.columnDSTds_zona = base.Columns["DSTds_zona"];
+                this.columnDSTcrp = base.Columns["DSTcrp"];
+                this.columnDSTds_crp = base.Columns["DSTds_crp"];
+                this.columnDSTid_ambiente = base.Columns["DSTid_ambiente"];
+                this.columnDSTds_ambiente = base.Columns["DSTds_ambiente"];
+                this.columnDSTid_persona = base.Columns["DSTid_persona"];
+                this.columnDSTds_persona = base.Columns["DSTds_persona"];
+                this.columnDSTid_usuario = base.Columns["DSTid_usuario"];
+                this.columnDSTds_usuario = base.Columns["DSTds_usuario"];
+                this.columnACFid = base.Columns["ACFid"];
+                this.columnACFdescripcion = base.Columns["ACFdescripcion"];
+                this.columnMARmarca = base.Columns["MARmarca"];
+                this.columnCRSserie = base.Columns["CRSserie"];
+                this.columnCRSmodelo = base.Columns["CRSmodelo"];
+                this.columnACFid_Padre = base.Columns["ACFid_Padre"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnMVPid_proceso = new global::System.Data.DataColumn("MVPid_proceso", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMVPid_proceso);
+                this.columnMVPtipo = new global::System.Data.DataColumn("MVPtipo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMVPtipo);
+                this.columnTMVtipomovimiento = new global::System.Data.DataColumn("TMVtipomovimiento", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTMVtipomovimiento);
+                this.columnMVPds_movimiento = new global::System.Data.DataColumn("MVPds_movimiento", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMVPds_movimiento);
+                this.columnMVMmotivomovimiento = new global::System.Data.DataColumn("MVMmotivomovimiento", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMVMmotivomovimiento);
+                this.columnMVPfecha_movimiento = new global::System.Data.DataColumn("MVPfecha_movimiento", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMVPfecha_movimiento);
+                this.columnORGid_zona = new global::System.Data.DataColumn("ORGid_zona", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORGid_zona);
+                this.columnORGds_zona = new global::System.Data.DataColumn("ORGds_zona", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORGds_zona);
+                this.columnORGcrp = new global::System.Data.DataColumn("ORGcrp", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORGcrp);
+                this.columnORGds_crp = new global::System.Data.DataColumn("ORGds_crp", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORGds_crp);
+                this.columnORGid_ambiente = new global::System.Data.DataColumn("ORGid_ambiente", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORGid_ambiente);
+                this.columnORGds_ambiente = new global::System.Data.DataColumn("ORGds_ambiente", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORGds_ambiente);
+                this.columnORGid_persona = new global::System.Data.DataColumn("ORGid_persona", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORGid_persona);
+                this.columnORGds_persona = new global::System.Data.DataColumn("ORGds_persona", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORGds_persona);
+                this.columnORGid_usuario = new global::System.Data.DataColumn("ORGid_usuario", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORGid_usuario);
+                this.columnORGds_usuario = new global::System.Data.DataColumn("ORGds_usuario", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORGds_usuario);
+                this.columnDSTid_zona = new global::System.Data.DataColumn("DSTid_zona", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDSTid_zona);
+                this.columnDSTds_zona = new global::System.Data.DataColumn("DSTds_zona", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDSTds_zona);
+                this.columnDSTcrp = new global::System.Data.DataColumn("DSTcrp", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDSTcrp);
+                this.columnDSTds_crp = new global::System.Data.DataColumn("DSTds_crp", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDSTds_crp);
+                this.columnDSTid_ambiente = new global::System.Data.DataColumn("DSTid_ambiente", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDSTid_ambiente);
+                this.columnDSTds_ambiente = new global::System.Data.DataColumn("DSTds_ambiente", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDSTds_ambiente);
+                this.columnDSTid_persona = new global::System.Data.DataColumn("DSTid_persona", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDSTid_persona);
+                this.columnDSTds_persona = new global::System.Data.DataColumn("DSTds_persona", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDSTds_persona);
+                this.columnDSTid_usuario = new global::System.Data.DataColumn("DSTid_usuario", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDSTid_usuario);
+                this.columnDSTds_usuario = new global::System.Data.DataColumn("DSTds_usuario", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDSTds_usuario);
+                this.columnACFid = new global::System.Data.DataColumn("ACFid", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACFid);
+                this.columnACFdescripcion = new global::System.Data.DataColumn("ACFdescripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACFdescripcion);
+                this.columnMARmarca = new global::System.Data.DataColumn("MARmarca", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMARmarca);
+                this.columnCRSserie = new global::System.Data.DataColumn("CRSserie", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCRSserie);
+                this.columnCRSmodelo = new global::System.Data.DataColumn("CRSmodelo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCRSmodelo);
+                this.columnACFid_Padre = new global::System.Data.DataColumn("ACFid_Padre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACFid_Padre);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DFichaMovimientoRow NewDFichaMovimientoRow() {
+                return ((DFichaMovimientoRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new DFichaMovimientoRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(DFichaMovimientoRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.DFichaMovimientoRowChanged != null)) {
+                    this.DFichaMovimientoRowChanged(this, new DFichaMovimientoRowChangeEvent(((DFichaMovimientoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.DFichaMovimientoRowChanging != null)) {
+                    this.DFichaMovimientoRowChanging(this, new DFichaMovimientoRowChangeEvent(((DFichaMovimientoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.DFichaMovimientoRowDeleted != null)) {
+                    this.DFichaMovimientoRowDeleted(this, new DFichaMovimientoRowChangeEvent(((DFichaMovimientoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.DFichaMovimientoRowDeleting != null)) {
+                    this.DFichaMovimientoRowDeleting(this, new DFichaMovimientoRowChangeEvent(((DFichaMovimientoRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveDFichaMovimientoRow(DFichaMovimientoRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "DFichaMovimientoDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class DMotivoMovimientoRow : global::System.Data.DataRow {
@@ -12904,6 +13652,926 @@ namespace CapaPresentacion {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class DFichaMovimientoRow : global::System.Data.DataRow {
+            
+            private DFichaMovimientoDataTable tableDFichaMovimiento;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal DFichaMovimientoRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableDFichaMovimiento = ((DFichaMovimientoDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MVPid_proceso {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.MVPid_procesoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MVPid_proceso\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.MVPid_procesoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MVPtipo {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.MVPtipoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MVPtipo\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.MVPtipoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string TMVtipomovimiento {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.TMVtipomovimientoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TMVtipomovimiento\' de la tabla \'DFichaMovimiento\' es DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.TMVtipomovimientoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MVPds_movimiento {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.MVPds_movimientoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MVPds_movimiento\' de la tabla \'DFichaMovimiento\' es DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.MVPds_movimientoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MVMmotivomovimiento {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.MVMmotivomovimientoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MVMmotivomovimiento\' de la tabla \'DFichaMovimiento\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.MVMmotivomovimientoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MVPfecha_movimiento {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.MVPfecha_movimientoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MVPfecha_movimiento\' de la tabla \'DFichaMovimiento\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.MVPfecha_movimientoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ORGid_zona {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ORGid_zonaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ORGid_zona\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ORGid_zonaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ORGds_zona {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ORGds_zonaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ORGds_zona\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ORGds_zonaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ORGcrp {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ORGcrpColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ORGcrp\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ORGcrpColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ORGds_crp {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ORGds_crpColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ORGds_crp\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ORGds_crpColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ORGid_ambiente {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ORGid_ambienteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ORGid_ambiente\' de la tabla \'DFichaMovimiento\' es DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ORGid_ambienteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ORGds_ambiente {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ORGds_ambienteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ORGds_ambiente\' de la tabla \'DFichaMovimiento\' es DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ORGds_ambienteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ORGid_persona {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ORGid_personaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ORGid_persona\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ORGid_personaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ORGds_persona {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ORGds_personaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ORGds_persona\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ORGds_personaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ORGid_usuario {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ORGid_usuarioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ORGid_usuario\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ORGid_usuarioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ORGds_usuario {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ORGds_usuarioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ORGds_usuario\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ORGds_usuarioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DSTid_zona {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.DSTid_zonaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DSTid_zona\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.DSTid_zonaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DSTds_zona {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.DSTds_zonaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DSTds_zona\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.DSTds_zonaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DSTcrp {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.DSTcrpColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DSTcrp\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.DSTcrpColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DSTds_crp {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.DSTds_crpColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DSTds_crp\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.DSTds_crpColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DSTid_ambiente {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.DSTid_ambienteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DSTid_ambiente\' de la tabla \'DFichaMovimiento\' es DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.DSTid_ambienteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DSTds_ambiente {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.DSTds_ambienteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DSTds_ambiente\' de la tabla \'DFichaMovimiento\' es DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.DSTds_ambienteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DSTid_persona {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.DSTid_personaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DSTid_persona\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.DSTid_personaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DSTds_persona {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.DSTds_personaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DSTds_persona\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.DSTds_personaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DSTid_usuario {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.DSTid_usuarioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DSTid_usuario\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.DSTid_usuarioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DSTds_usuario {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.DSTds_usuarioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DSTds_usuario\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.DSTds_usuarioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACFid {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ACFidColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACFid\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ACFidColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACFdescripcion {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ACFdescripcionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACFdescripcion\' de la tabla \'DFichaMovimiento\' es DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ACFdescripcionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MARmarca {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.MARmarcaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MARmarca\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.MARmarcaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CRSserie {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.CRSserieColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CRSserie\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.CRSserieColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CRSmodelo {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.CRSmodeloColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CRSmodelo\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.CRSmodeloColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACFid_Padre {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.ACFid_PadreColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACFid_Padre\' de la tabla \'DFichaMovimiento\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.ACFid_PadreColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMVPid_procesoNull() {
+                return this.IsNull(this.tableDFichaMovimiento.MVPid_procesoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMVPid_procesoNull() {
+                this[this.tableDFichaMovimiento.MVPid_procesoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMVPtipoNull() {
+                return this.IsNull(this.tableDFichaMovimiento.MVPtipoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMVPtipoNull() {
+                this[this.tableDFichaMovimiento.MVPtipoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTMVtipomovimientoNull() {
+                return this.IsNull(this.tableDFichaMovimiento.TMVtipomovimientoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTMVtipomovimientoNull() {
+                this[this.tableDFichaMovimiento.TMVtipomovimientoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMVPds_movimientoNull() {
+                return this.IsNull(this.tableDFichaMovimiento.MVPds_movimientoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMVPds_movimientoNull() {
+                this[this.tableDFichaMovimiento.MVPds_movimientoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMVMmotivomovimientoNull() {
+                return this.IsNull(this.tableDFichaMovimiento.MVMmotivomovimientoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMVMmotivomovimientoNull() {
+                this[this.tableDFichaMovimiento.MVMmotivomovimientoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMVPfecha_movimientoNull() {
+                return this.IsNull(this.tableDFichaMovimiento.MVPfecha_movimientoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMVPfecha_movimientoNull() {
+                this[this.tableDFichaMovimiento.MVPfecha_movimientoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsORGid_zonaNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ORGid_zonaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetORGid_zonaNull() {
+                this[this.tableDFichaMovimiento.ORGid_zonaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsORGds_zonaNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ORGds_zonaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetORGds_zonaNull() {
+                this[this.tableDFichaMovimiento.ORGds_zonaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsORGcrpNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ORGcrpColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetORGcrpNull() {
+                this[this.tableDFichaMovimiento.ORGcrpColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsORGds_crpNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ORGds_crpColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetORGds_crpNull() {
+                this[this.tableDFichaMovimiento.ORGds_crpColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsORGid_ambienteNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ORGid_ambienteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetORGid_ambienteNull() {
+                this[this.tableDFichaMovimiento.ORGid_ambienteColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsORGds_ambienteNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ORGds_ambienteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetORGds_ambienteNull() {
+                this[this.tableDFichaMovimiento.ORGds_ambienteColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsORGid_personaNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ORGid_personaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetORGid_personaNull() {
+                this[this.tableDFichaMovimiento.ORGid_personaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsORGds_personaNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ORGds_personaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetORGds_personaNull() {
+                this[this.tableDFichaMovimiento.ORGds_personaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsORGid_usuarioNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ORGid_usuarioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetORGid_usuarioNull() {
+                this[this.tableDFichaMovimiento.ORGid_usuarioColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsORGds_usuarioNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ORGds_usuarioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetORGds_usuarioNull() {
+                this[this.tableDFichaMovimiento.ORGds_usuarioColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDSTid_zonaNull() {
+                return this.IsNull(this.tableDFichaMovimiento.DSTid_zonaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDSTid_zonaNull() {
+                this[this.tableDFichaMovimiento.DSTid_zonaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDSTds_zonaNull() {
+                return this.IsNull(this.tableDFichaMovimiento.DSTds_zonaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDSTds_zonaNull() {
+                this[this.tableDFichaMovimiento.DSTds_zonaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDSTcrpNull() {
+                return this.IsNull(this.tableDFichaMovimiento.DSTcrpColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDSTcrpNull() {
+                this[this.tableDFichaMovimiento.DSTcrpColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDSTds_crpNull() {
+                return this.IsNull(this.tableDFichaMovimiento.DSTds_crpColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDSTds_crpNull() {
+                this[this.tableDFichaMovimiento.DSTds_crpColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDSTid_ambienteNull() {
+                return this.IsNull(this.tableDFichaMovimiento.DSTid_ambienteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDSTid_ambienteNull() {
+                this[this.tableDFichaMovimiento.DSTid_ambienteColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDSTds_ambienteNull() {
+                return this.IsNull(this.tableDFichaMovimiento.DSTds_ambienteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDSTds_ambienteNull() {
+                this[this.tableDFichaMovimiento.DSTds_ambienteColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDSTid_personaNull() {
+                return this.IsNull(this.tableDFichaMovimiento.DSTid_personaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDSTid_personaNull() {
+                this[this.tableDFichaMovimiento.DSTid_personaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDSTds_personaNull() {
+                return this.IsNull(this.tableDFichaMovimiento.DSTds_personaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDSTds_personaNull() {
+                this[this.tableDFichaMovimiento.DSTds_personaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDSTid_usuarioNull() {
+                return this.IsNull(this.tableDFichaMovimiento.DSTid_usuarioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDSTid_usuarioNull() {
+                this[this.tableDFichaMovimiento.DSTid_usuarioColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDSTds_usuarioNull() {
+                return this.IsNull(this.tableDFichaMovimiento.DSTds_usuarioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDSTds_usuarioNull() {
+                this[this.tableDFichaMovimiento.DSTds_usuarioColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACFidNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ACFidColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACFidNull() {
+                this[this.tableDFichaMovimiento.ACFidColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACFdescripcionNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ACFdescripcionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACFdescripcionNull() {
+                this[this.tableDFichaMovimiento.ACFdescripcionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMARmarcaNull() {
+                return this.IsNull(this.tableDFichaMovimiento.MARmarcaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMARmarcaNull() {
+                this[this.tableDFichaMovimiento.MARmarcaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCRSserieNull() {
+                return this.IsNull(this.tableDFichaMovimiento.CRSserieColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCRSserieNull() {
+                this[this.tableDFichaMovimiento.CRSserieColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCRSmodeloNull() {
+                return this.IsNull(this.tableDFichaMovimiento.CRSmodeloColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCRSmodeloNull() {
+                this[this.tableDFichaMovimiento.CRSmodeloColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACFid_PadreNull() {
+                return this.IsNull(this.tableDFichaMovimiento.ACFid_PadreColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACFid_PadreNull() {
+                this[this.tableDFichaMovimiento.ACFid_PadreColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -13807,6 +15475,40 @@ namespace CapaPresentacion {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DBarraRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class DFichaMovimientoRowChangeEvent : global::System.EventArgs {
+            
+            private DFichaMovimientoRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DFichaMovimientoRowChangeEvent(DFichaMovimientoRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DFichaMovimientoRow Row {
                 get {
                     return this.eventRow;
                 }
