@@ -136,8 +136,7 @@ namespace CapaPresentacion
             dataListado.DataSource = null;
         }
         private void Control_Click_Editar(object sender, EventArgs e)
-        {
-            //this.ControlEditar(false);
+        {                        
             this.BotonEditar();
         }
         private void Control_Click_Eliminar(object sender, EventArgs e)
@@ -496,7 +495,7 @@ namespace CapaPresentacion
             
             //tabControl1.SelectedTab = tabPage2;
         }
-        public void ControlEditar(Boolean activar)
+        private void ControlEditar(bool activar)
         {
             button8.Enabled = activar;
             button9.Enabled = activar;
@@ -508,8 +507,10 @@ namespace CapaPresentacion
             Graba = 2;
             this.Botones(false);
             EstadoText(this.Controls, false, true);
+            
             // tabControl1.SelectedTab = tabPage2;            
-            this.CargaDatos();            
+            this.CargaDatos();
+            ControlEditar(false);
         }
         private void BotonEliminar()
         {
@@ -522,8 +523,8 @@ namespace CapaPresentacion
         {
             if (this.validaCampos())
             {
-                if (Graba == 1) this.InsertaRegistro(); this.InsertarActivos();
-                if (Graba == 2) this.ActualizaRegistro();
+                if (Graba == 1) { this.InsertaRegistro(); this.InsertarActivos();}
+                if (Graba == 2) { this.ActualizaRegistro(); }
                 Graba = 0;
                 this.BotonCancelar();
                 this.BotonRefrescar();
