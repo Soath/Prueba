@@ -265,8 +265,8 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     //guardo datos en variables
                     txtMVPid_proceso.Text = Convert.ToString(row["MVPid_proceso"]);
-                    cboMVPtipo1.Text = Convert.ToString(row["MVPtipo"]);
-                    txtMVPds_movimiento1.Text = Convert.ToString(row["MVPds_movimiento"]);
+                    cboMVPtipo.Text = Convert.ToString(row["MVPtipo"]);
+                    txtMVPds_movimiento.Text = Convert.ToString(row["MVPds_movimiento"]);
                     dtpMVPfecha_movimiento.Text = Convert.ToString(row["MVPfecha_movimiento"]);
                     //txtORGid_persona.Text = Convert.ToString(row["ORGid_persona"]);
                     txtORGds_persona.Text = Convert.ToString(row["ORGds_persona"]);
@@ -311,8 +311,8 @@ namespace CapaPresentacion
                 {
                     DataRow row = dat.Rows[0];
                     txtMVPid_proceso.Text = Convert.ToString(row["MVPid_proceso"]);
-                    cboMVPtipo1.Text = Convert.ToString(row["MVPtipo"]);
-                    txtMVPds_movimiento1.Text = Convert.ToString(row["MVPds_movimiento"]);
+                    cboMVPtipo.Text = Convert.ToString(row["MVPtipo"]);
+                    txtMVPds_movimiento.Text = Convert.ToString(row["MVPds_movimiento"]);
                     dtpMVPfecha_movimiento.Text = Convert.ToString(row["MVPfecha_movimiento"]);
                     cboPERNR1.Text = Convert.ToString(row["ORGid_persona"]);
                     txtORGds_persona.Text = Convert.ToString(row["ORGds_persona"]);
@@ -357,8 +357,8 @@ namespace CapaPresentacion
                 {
                     DataRow row = dat.Rows[0];
                     txtMVPid_proceso.Text = Convert.ToString(row["MVPid_proceso"]);
-                    cboMVPtipo1.Text = Convert.ToString(row["MVPtipo"]);
-                    txtMVPds_movimiento1.Text = Convert.ToString(row["MVPds_movimiento"]);
+                    cboMVPtipo.Text = Convert.ToString(row["MVPtipo"]);
+                    txtMVPds_movimiento.Text = Convert.ToString(row["MVPds_movimiento"]);
                     dtpMVPfecha_movimiento.Text = Convert.ToString(row["MVPfecha_movimiento"]);
                //     txtORGid_persona.Text = Convert.ToString(row["ORGid_persona"]);
                     txtORGds_persona.Text = Convert.ToString(row["ORGds_persona"]);
@@ -405,8 +405,8 @@ namespace CapaPresentacion
 
                   
                     txtMVPid_proceso.Text = Convert.ToString(row["MVPid_proceso"]);
-                    cboMVPtipo1.Text = Convert.ToString(row["MVPtipo"]);
-                    txtMVPds_movimiento1.Text = Convert.ToString(row["MVPds_movimiento"]);
+                    cboMVPtipo.Text = Convert.ToString(row["MVPtipo"]);
+                    txtMVPds_movimiento.Text = Convert.ToString(row["MVPds_movimiento"]);
                     dtpMVPfecha_movimiento.Text = Convert.ToString(row["MVPfecha_movimiento"]);
                     cboPERNR1.Text = Convert.ToString(row["ORGid_persona"]);
                     txtORGds_persona.Text = Convert.ToString(row["ORGds_persona"]);
@@ -472,7 +472,7 @@ namespace CapaPresentacion
             txtDSTds_usuario.Text = "";
             txtDSTds_zona.Text = "";
             txtMVPds_movimiento.Text = "";
-            txtMVPds_movimiento1.Text = "";
+            txtMVPds_movimiento.Text = "";
            // txtMVPid_proceso.Text = "";
             txtORGcrp.Text = "";
             txtORGds_ambiente.Text = "";
@@ -482,7 +482,7 @@ namespace CapaPresentacion
             txtORGds_zona.Text = "";
             cboAMB1.Text = "";
             cboAMB2.Text = "";
-            cboMVPtipo1.Text = "";
+            cboMVPtipo.Text = "";
             cboMVPtipo.Text = "";
             cboPERNR1.Text = "";
             cboPERNR2.Text = "";
@@ -564,8 +564,8 @@ namespace CapaPresentacion
             {
                 Rta = NMovimiento_Transferencia_Activo.Insertar(
                 this.txtMVPid_proceso.Text
-                , this.cboMVPtipo1.Text
-                , this.txtMVPds_movimiento1.Text
+                , this.cboMVPtipo.Text
+                , this.txtMVPds_movimiento.Text
                 , this.dtpMVPfecha_movimiento.Text
                 , this.cboZONA1.Text
                 , this.txtORGds_zona.Text
@@ -619,8 +619,8 @@ namespace CapaPresentacion
             {
                 Rta = NMovimiento_Transferencia_Activo.Editar(
                       this.txtMVPid_proceso.Text
-                    , this.cboMVPtipo1.Text
-                    , this.txtMVPds_movimiento1.Text
+                    , this.cboMVPtipo.Text
+                    , this.txtMVPds_movimiento.Text
                     , this.dtpMVPfecha_movimiento.Text
                     , this.cboPERNR1.Text
                     , this.txtORGds_persona.Text
@@ -708,8 +708,8 @@ namespace CapaPresentacion
                 {
                     DataRow row = dat.Rows[0];
                     txtMVPid_proceso.Text = Convert.ToString(row["MVPid_proceso"]);
-                    cboMVPtipo1.Text = Convert.ToString(row["MVPtipo"]);
-                    txtMVPds_movimiento1.Text = Convert.ToString(row["MVPds_movimiento"]);
+                    cboMVPtipo.Text = Convert.ToString(row["MVPtipo"]);
+                    txtMVPds_movimiento.Text = Convert.ToString(row["MVPds_movimiento"]);
                     dtpMVPfecha_movimiento.Text = Convert.ToString(row["MVPfecha_movimiento"]);
                     cboPERNR1.Text = Convert.ToString(row["ORGid_persona"]);
                     txtORGds_persona.Text = Convert.ToString(row["ORGds_persona"]);
