@@ -65,7 +65,7 @@ namespace CapaNegocio
              string mDSTid_persona,
              string mDSTds_persona,
              string mDSTid_usuario,
-             string mDSTds_usuario
+             string mDSTds_usuario,
             // string mDSTid_sistelec,
             // string mDSTds_sistelec,
             // string mDSTid_set,
@@ -85,7 +85,7 @@ namespace CapaNegocio
             // string mDSTpunto_fin,
             // string mDSTid_activopadre,
             // string mDSTds_activopadre,
-            // string mMVPobservaciones,
+            string mMVPobservaciones
             // string mMVPdefinitivo,
             // string mMVPfecha_fin,
             // string mMVPusuario_sistemas,
@@ -173,7 +173,7 @@ namespace CapaNegocio
             // Obj.DSTpunto_fin = mDSTpunto_fin;
             // Obj.DSTid_activopadre = mDSTid_activopadre;
             // Obj.DSTds_activopadre = mDSTds_activopadre;
-            // Obj.MVPobservaciones = mMVPobservaciones;
+            Obj.MVPobservaciones = mMVPobservaciones;
             // Obj.MVPdefinitivo = mMVPdefinitivo;
             // Obj.MVPfecha_fin = mMVPfecha_fin;
             // Obj.MVPusuario_sistemas = mMVPusuario_sistemas;
@@ -245,7 +245,7 @@ namespace CapaNegocio
              string mDSTid_persona,
              string mDSTds_persona,
              string mDSTid_usuario,
-             string mDSTds_usuario
+             string mDSTds_usuario,
             // string mDSTid_sistelec,
             // string mDSTds_sistelec,
             // string mDSTid_set,
@@ -265,7 +265,7 @@ namespace CapaNegocio
             // string mDSTpunto_fin,
             // string mDSTid_activopadre,
             // string mDSTds_activopadre,
-            // string mMVPobservaciones,
+            string mMVPobservaciones
             // string mMVPdefinitivo,
             // string mMVPfecha_fin,
             // string mMVPusuario_sistemas,
@@ -353,7 +353,7 @@ namespace CapaNegocio
             // Obj.DSTpunto_fin = mDSTpunto_fin;
             // Obj.DSTid_activopadre = mDSTid_activopadre;
             // Obj.DSTds_activopadre = mDSTds_activopadre;
-            // Obj.MVPobservaciones = mMVPobservaciones;
+            Obj.MVPobservaciones = mMVPobservaciones;
             // Obj.MVPdefinitivo = mMVPdefinitivo;
             // Obj.MVPfecha_fin = mMVPfecha_fin;
             // Obj.MVPusuario_sistemas = mMVPusuario_sistemas;

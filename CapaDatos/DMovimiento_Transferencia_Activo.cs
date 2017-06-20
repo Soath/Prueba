@@ -924,6 +924,12 @@ namespace CapaDatos
                 ParmDSTds_ambiente.Value = acfCMVp_Cabecera_Movimiento.DSTds_ambiente;
                 SqlCmd.Parameters.Add(ParmDSTds_ambiente);
 
+                SqlParameter ParmMVPobservaciones = new SqlParameter();
+                ParmMVPobservaciones.ParameterName = "@mMVPobservaciones";
+                ParmMVPobservaciones.SqlDbType = SqlDbType.VarChar;
+                ParmMVPobservaciones.Value = acfCMVp_Cabecera_Movimiento.MVPobservaciones;
+                SqlCmd.Parameters.Add(ParmMVPobservaciones);
+
                 //Ejecutamos nuestro comando
 
                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
@@ -1101,6 +1107,12 @@ namespace CapaDatos
                 ParmDSTds_ambiente.SqlDbType = SqlDbType.VarChar;
                 ParmDSTds_ambiente.Value = acfCMVp_Cabecera_Movimiento.DSTds_ambiente;
                 SqlCmd.Parameters.Add(ParmDSTds_ambiente);
+
+                SqlParameter ParmMVPobservaciones = new SqlParameter();
+                ParmMVPobservaciones.ParameterName = "@mMVPobservaciones";
+                ParmMVPobservaciones.SqlDbType = SqlDbType.VarChar;
+                ParmMVPobservaciones.Value = acfCMVp_Cabecera_Movimiento.MVPobservaciones;
+                SqlCmd.Parameters.Add(ParmMVPobservaciones);
 
                 //Ejecutamos nuestro comando
 
