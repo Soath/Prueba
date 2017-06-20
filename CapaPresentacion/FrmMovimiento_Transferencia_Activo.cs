@@ -133,11 +133,17 @@ namespace CapaPresentacion
         private void Control_Click_Agregar(object sender, EventArgs e)
         {
             this.BotonAgregar();
-            dataListado.DataSource = null;
+            //dataListado.DataSource = null;
+            //dataListado.ColumnAdded
+            //dataListado.Columns.Add("Column1", "ACFid");
+            //dataListado.Columns.Add("Column2", "ACFdescripcion");
+            //dataListado.Columns.Add("Column3", "ACFfincorporacion");
+            //dataListado.Columns.Add("Column4", "ACFfechanotaingreso");
+            //dataListado.Columns.Add("Column5", "ACFordencompra");
+            //dataListado.Columns.Add("Column6", "ACFtipo_activo");
         }
         private void Control_Click_Editar(object sender, EventArgs e)
-        {
-            //this.ControlEditar(false);
+        {                        
             this.BotonEditar();
         }
         private void Control_Click_Eliminar(object sender, EventArgs e)
@@ -151,7 +157,7 @@ namespace CapaPresentacion
         private void Control_Click_Guardar(object sender, EventArgs e)
         {
             this.BotonGuardar();
-            dataListado.DataSource = null;
+            //dataListado.DataSource = null;
         }
         private void Control_Click_Cancelar(object sender, EventArgs e)
         {
@@ -197,9 +203,6 @@ namespace CapaPresentacion
             this.toolStripAnterior.Visible = edo;
             this.toolStripSiguiente.Visible = edo;
             this.toolStripUltimo.Visible = edo;
-            //this.toolStripBuscar.Visible = edo;
-            //this.toolStripComboBox1.Visible = edo;
-            //this.toolStripTextBox1.Visible = edo;
         }
 
         private void BotonesSinReg(bool edo)
@@ -213,21 +216,14 @@ namespace CapaPresentacion
             this.toolStripAnterior.Enabled = edo;
             this.toolStripSiguiente.Enabled = edo;
             this.toolStripUltimo.Enabled = edo;
-            //this.toolStripBuscar.Enabled = edo;
-            //this.toolStripComboBox1.Enabled = edo;
-            //this.toolStripTextBox1.Enabled = edo;
         }
 
         private void OcultarColumnas() { }
-
-
-
+        
         private void DataGRid(String iMVAid)
         {
             this.dataListado.DataSource = NacfMVAt_MovimientoActivo.Mostrar(iMVAid);
         }
-
-
         private void mostrar()
         {
             this.Configura();
@@ -235,23 +231,6 @@ namespace CapaPresentacion
             this.tomaTab();
             this.Botones(true);
             this.MostrarRegistro();
-
-            //lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
-            //if (dataListado.Rows.Count == 0)
-            //{
-            //    BotonesSinReg(false);
-            //}
-            //else
-            //{
-            //    BotonesSinReg(true);
-            //    this.toolStripAgregar.Enabled = true;
-            //
-            //}
-            //this.dataListado.Select();
-            //this.dataListado.Focus();
-
-
-
         }
         private void Top()
         {
@@ -289,6 +268,7 @@ namespace CapaPresentacion
                     txtDSTds_usuario.Text = Convert.ToString(row["DSTds_usuario"]);
                    // txtDSTid_ambiente.Text = Convert.ToString(row["DSTid_ambiente"]);
                     txtDSTds_ambiente.Text = Convert.ToString(row["DSTds_ambiente"]);
+                    txtMVPobservaciones.Text = Convert.ToString(row["MVPobservaciones"]);
 
                 }
                 else
@@ -335,6 +315,7 @@ namespace CapaPresentacion
                     txtDSTds_usuario.Text = Convert.ToString(row["DSTds_usuario"]);
                     cboAMB2.Text = Convert.ToString(row["DSTid_ambiente"]);
                     txtDSTds_ambiente.Text = Convert.ToString(row["DSTds_ambiente"]);
+                    txtMVPobservaciones.Text = Convert.ToString(row["MVPobservaciones"]);
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
@@ -381,6 +362,7 @@ namespace CapaPresentacion
                     txtDSTds_usuario.Text = Convert.ToString(row["DSTds_usuario"]);
                   //  txtDSTid_ambiente.Text = Convert.ToString(row["DSTid_ambiente"]);
                     txtDSTds_ambiente.Text = Convert.ToString(row["DSTds_ambiente"]);
+                    txtMVPobservaciones.Text = Convert.ToString(row["MVPobservaciones"]);
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
@@ -397,14 +379,10 @@ namespace CapaPresentacion
             try
             {
                 DataTable dat = NMovimiento_Transferencia_Activo.Last();
-
                 //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
-
                 if (dat.Rows.Count > 0)
                 {
-                    DataRow row = dat.Rows[0];
-
-                  
+                    DataRow row = dat.Rows[0];                  
                     txtMVPid_proceso.Text = Convert.ToString(row["MVPid_proceso"]);
                     cboMVPtipo.Text = Convert.ToString(row["MVPtipo"]);
                     txtMVPds_movimiento.Text = Convert.ToString(row["MVPds_movimiento"]);
@@ -429,6 +407,7 @@ namespace CapaPresentacion
                     txtDSTds_usuario.Text = Convert.ToString(row["DSTds_usuario"]);
                     cboAMB2.Text = Convert.ToString(row["DSTid_ambiente"]);
                     txtDSTds_ambiente.Text = Convert.ToString(row["DSTds_ambiente"]);
+                    txtMVPobservaciones.Text = Convert.ToString(row["MVPobservaciones"]);
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
@@ -452,7 +431,6 @@ namespace CapaPresentacion
         private void BotonRefrescar()
         {
             EstadoText(this.Controls, false, false);
-            dataListado.DataSource = null;
             this.mostrar();
             this.MostrarRegistro();
         }
@@ -493,10 +471,9 @@ namespace CapaPresentacion
             cboZONA2.Text = "";
             txtDSTds_zona.Text = "";
             txtORGds_zona.Text = "";
-            
-            //tabControl1.SelectedTab = tabPage2;
+            txtMVPobservaciones.Text = "";
         }
-        public void ControlEditar(Boolean activar)
+        private void ControlEditar(bool activar)
         {
             button8.Enabled = activar;
             button9.Enabled = activar;
@@ -508,8 +485,10 @@ namespace CapaPresentacion
             Graba = 2;
             this.Botones(false);
             EstadoText(this.Controls, false, true);
+            
             // tabControl1.SelectedTab = tabPage2;            
-            this.CargaDatos();            
+            this.CargaDatos();
+            ControlEditar(false);
         }
         private void BotonEliminar()
         {
@@ -522,8 +501,8 @@ namespace CapaPresentacion
         {
             if (this.validaCampos())
             {
-                if (Graba == 1) this.InsertaRegistro(); this.InsertarActivos();
-                if (Graba == 2) this.ActualizaRegistro();
+                if (Graba == 1) {this.InsertaRegistro(); this.InsertarActivos();}
+                if (Graba == 2) { this.ActualizaRegistro(); }
                 Graba = 0;
                 this.BotonCancelar();
                 this.BotonRefrescar();
@@ -594,7 +573,8 @@ namespace CapaPresentacion
                 , this.txtDSTds_persona.Text           
                 , this.cboPERNR4.Text
                 , this.txtDSTds_usuario.Text
-                
+                , this.txtMVPobservaciones.Text
+
                    );
                 // Rta = NMovimiento_Transferencia_Activo.Insertar(this.txtMVPid_proceso.Text, "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
 
@@ -648,6 +628,7 @@ namespace CapaPresentacion
                     , this.txtDSTds_usuario.Text
                     , this.cboAMB2.Text
                     , this.txtDSTds_ambiente.Text
+                    , this.txtMVPobservaciones.Text
                     );
 
                 //Rta = NMovimiento_Transferencia_Activo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
@@ -737,6 +718,7 @@ namespace CapaPresentacion
                     txtDSTds_usuario.Text = Convert.ToString(row["DSTds_usuario"]);
                     cboAMB2.Text = Convert.ToString(row["DSTid_ambiente"]);
                     txtDSTds_ambiente.Text = Convert.ToString(row["DSTds_ambiente"]);
+                    txtMVPobservaciones.Text = Convert.ToString(row["MVPobservaciones"]);
 
 
 
@@ -945,15 +927,7 @@ namespace CapaPresentacion
         }
 
         private void button8_Click(object sender, EventArgs e)
-        {
-            //dataListado.ColumnAdded
-            dataListado.Columns.Add("Column1", "ACFid");
-            dataListado.Columns.Add("Column2", "ACFdescripcion");
-            dataListado.Columns.Add("Column3", "ACFfincorporacion");
-            dataListado.Columns.Add("Column4", "ACFfechanotaingreso");
-            dataListado.Columns.Add("Column5", "ACFordencompra");
-            dataListado.Columns.Add("Column6", "ACFtipo_activo");
-
+        {       
             //
             try
             {
@@ -969,11 +943,9 @@ namespace CapaPresentacion
                          {
                              int num = dataListado.Rows.Add();
                              dataListado.Rows[num].Cells[0].Value = Drow["ACFid"].ToString();
-                             dataListado.Rows[num].Cells[1].Value = Drow["ACFdescripcion"].ToString();
+                             dataListado.Rows[num].Cells[1].Value = Drow["PERNR"].ToString();
                              dataListado.Rows[num].Cells[2].Value = Drow["ACFfincorporacion"].ToString();
-                             dataListado.Rows[num].Cells[3].Value = Drow["ACFfechanotaingreso"].ToString();
-                             dataListado.Rows[num].Cells[4].Value = Drow["ACFordencompra"].ToString();
-                             dataListado.Rows[num].Cells[5].Value = Drow["ACFtipo_activo"].ToString();
+                             dataListado.Rows[num].Cells[3].Value = Drow["ACFdescripcion"].ToString();
                          }
                      }
                      else
@@ -1015,7 +987,6 @@ namespace CapaPresentacion
                     else
                     {
                         this.MensajeError("Error al Insertar Registro :" + rta);
-                        BorrarColumnas();
                     }
                     if(num < dataListado.Rows.Count) num = num + 1;
                 }
@@ -1024,18 +995,8 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
-            BorrarColumnas();
         }
 
-        private void BorrarColumnas()
-        {
-            dataListado.Columns.Remove("Column1");
-            dataListado.Columns.Remove("Column2");
-            dataListado.Columns.Remove("Column3");
-            dataListado.Columns.Remove("Column4");
-            dataListado.Columns.Remove("Column5");
-            dataListado.Columns.Remove("Column6");
-        }
 
         private void toolStripImprimir_Click(object sender, EventArgs e)
         {
