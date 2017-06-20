@@ -56,13 +56,14 @@ namespace CapaPresentacion
             this.toolStripImportar.Click += new System.EventHandler(this.Control_Click_Importar);
 
             EstadoText(this.Controls, true, false);
+            
             mostrar();
             CargarCombos();
             Anulado();
             Baja();
 
             MostrarRegistro();
-               
+            MostrarRegistro1();               
           
             CheckAll(this,true);
         }
@@ -179,11 +180,11 @@ namespace CapaPresentacion
         }
         private void MensajeOk(string mensaje)
         {
-            MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensaje, "Control del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void MensajeError(string mensaje)
         {
-            MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(mensaje, "Control del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         private void Botones(bool edo)
         {
@@ -226,8 +227,6 @@ namespace CapaPresentacion
 
         private void CodigodeBarra()        {
             
-            Codigo.IncludeLabel = true;
-            panelResultado.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128, txtACFid.Text, Color.Black, Color.White, 400, 100);
         }
         private void Anulado()
             {
@@ -281,6 +280,10 @@ namespace CapaPresentacion
 
         private void CargarCombos()
         {
+
+            this.CtxtACFtipo_activo.Items.Add("AF");
+            this.CtxtACFtipo_activo.Items.Add("NC");
+
             this.cboBUKRS.DataSource = NbdiSOCpSociedades.Mostrar(); //BURkS
             this.cboBUKRS.ValueMember = "BUKRS";
             this.cboBUKRS.DisplayMember = "BUKRS";
@@ -403,6 +406,7 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+            MostrarRegistro1();
         }
 
         private void Next(String iACFid)
@@ -417,6 +421,7 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+            MostrarRegistro1();
         }
 
         private void Prev(String iACFid)
@@ -431,6 +436,7 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+            MostrarRegistro1();
         }
 
         private void Actual(string AFCid)
@@ -445,6 +451,7 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+            MostrarRegistro1();
         }
 
 
@@ -460,6 +467,7 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+            MostrarRegistro1();
         }
 
 
@@ -586,9 +594,267 @@ namespace CapaPresentacion
         }
         private bool validaCampos()
         {
+            //ValidarDatos(this.Controls);
+
+
+            if (this.cboBLART.Text == string.Empty)
+            {
+                errorIcono.SetError(cboBLART, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboBLART.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboBUKRS.Text == string.Empty)
+            {
+                errorIcono.SetError(cboBUKRS, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboBUKRS.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+
+            if (this.cboSEGMENT.Text == string.Empty)
+            {
+                errorIcono.SetError(cboSEGMENT, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboSEGMENT.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+
+            if (this.cboANLKL.Text == string.Empty)
+            {
+                errorIcono.SetError(cboANLKL, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboANLKL.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+
+            if (this.cboPERNR.Text == string.Empty)
+            {
+                errorIcono.SetError(cboPERNR, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboPERNR.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+
+
+            if (this.cboCSTid.Text == string.Empty)
+            {
+                errorIcono.SetError(cboCSTid, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboCSTid.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboMVMid.Text == string.Empty)
+            {
+                errorIcono.SetError(cboMVMid, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboMVMid.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboVNRid.Text == string.Empty)
+            {
+                errorIcono.SetError(cboVNRid, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboVNRid.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboCMPid.Text == string.Empty)
+            {
+                errorIcono.SetError(cboCMPid, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboCMPid.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboLIFNR.Text == string.Empty)
+            {
+                errorIcono.SetError(cboLIFNR, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboLIFNR.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboBLART.Text == string.Empty)
+            {
+                errorIcono.SetError(cboBLART, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboBLART.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboKOSTL.Text == string.Empty)
+            {
+                errorIcono.SetError(cboKOSTL, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboKOSTL.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+
+            if (this.cboAMBid.Text == string.Empty)
+            {
+                errorIcono.SetError(cboAMBid, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboAMBid.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboUBEid.Text == string.Empty)
+            {
+                errorIcono.SetError(cboUBEid, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboUBEid.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboV_T087U_ANLUE.Text == string.Empty)
+            {
+                errorIcono.SetError(cboV_T087U_ANLUE, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboV_T087U_ANLUE.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboMARid.Text == string.Empty)
+            {
+                errorIcono.SetError(cboMARid, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboMARid.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+
+            // combos de Detalle
+            if (this.cboESTid.Text == string.Empty)
+            {
+                errorIcono.SetError(cboESTid, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboESTid.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboMATid.Text == string.Empty)
+            {
+                errorIcono.SetError(cboMATid, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboMATid.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cboUNMid.Text == string.Empty)
+            {
+                errorIcono.SetError(cboUNMid, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cboUNMid.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.cbocrp.Text == string.Empty)
+            {
+                errorIcono.SetError(cbocrp, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.cbocrp.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
+            if (this.CtxtACFtipo_activo.Text == string.Empty)
+            {
+                errorIcono.SetError(CtxtACFtipo_activo, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.CtxtACFtipo_activo.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
+
             return true;
         }
 
+
+        public static bool ValidarDatos(Control.ControlCollection Controles)
+        {
+            bool Valido = true;
+            for (int I = 0; I <= Controles.Count - 1; I++)
+            {
+                Control c = Controles[I];
+                if (c.Parent.Enabled == true)
+                {
+          
+                    if (c is TextBox || c is ComboBox)
+                    {
+                        if (c.Text == string.Empty)
+                        {
+                            c.Tag = (c.Tag == null ? "" : c.Tag);
+                            if (c.Tag.ToString().IndexOf("O") == -1 )
+                            {
+                                MessageBox.Show("Ingrese Datos Correctamente ![" + c.Name + " " + c.GetType().ToString() + "]", "SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                c.Focus();
+                                Valido = false;
+                                return Valido;
+                            }
+                        }
+                    }
+                    //else
+                    //{
+                    //    if (c.Controls.Count > 0)
+                    //        Valido = Valido && ValidarDatos(c.Controls);
+                    //}
+
+                    if (c.Controls.Count > 0)
+                        Valido = Valido && ValidarDatos(c.Controls);
+                }
+            }
+            return Valido;
+
+        }
 
         //-----------------------------------------------------------------------------------	
         // Inserta Registros	
@@ -941,7 +1207,7 @@ namespace CapaPresentacion
         {
             string Rta = string.Empty;
             DialogResult Opcion;
-            Opcion = MessageBox.Show("Realmente Desea Anular los Registros", "Sistema de escolar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            Opcion = MessageBox.Show("Realmente Desea Anular los Registros", "Sistema de Activos", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (Opcion == DialogResult.OK)
             {
                 if (Canul=="1")
@@ -949,7 +1215,7 @@ namespace CapaPresentacion
                 else
                     Rta = NacfACFp_Activo_Fijo.Eliminar(txtACFid.Text, "1");
 
-                MostrarRegistro(); 
+                Actual(txtACFid.Text); 
                 if (Rta.Equals("OK"))
                 {
                     this.MensajeOk("Se Anulo Correctamente el registro");
@@ -973,6 +1239,7 @@ namespace CapaPresentacion
             {
                 DataRow row = dat.Rows[0];
                 //guardo datos en variables
+                cbarra.Text = Convert.ToString(row["ACFid"]);
                 mACFid = Convert.ToString(row["ACFid"]);
                 txtACFid.Text = Convert.ToString(row["ACFid"]);
                 cboBUKRS.Text = Convert.ToString(row["BUKRS"]);
@@ -1018,7 +1285,7 @@ namespace CapaPresentacion
                 cboUBEid.Text = Convert.ToString(row["UBEid"]);
                 dtpACFfechacomprobante.Text = Convert.ToString(row["ACFfechacomprobante"]);
                 cboV_T087U_ANLUE.Text = Convert.ToString(row["V_T087U_ANLUE"]);
-                CtxtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]);
+                CtxtACFtipo_activo.Text = Convert.ToString(row["ACFtipo_activo"]).Trim();
                 Canul = Convert.ToString(row["ACFAnulado"]);
                 cmbACFid_Padre.Text = Convert.ToString(row["ACFid_Padre"]);
                 txtACFtipo_orden.Text = Convert.ToString(row["ACFtipo_orden"]);
@@ -1045,7 +1312,7 @@ namespace CapaPresentacion
             }
 
             else
-                MessageBox.Show("No Existe", "Registro");
+                 MessageBox.Show("No Existe", "Registro");
 
             btnTerreno_Edificaciones.Enabled = true;
             btnUbicacion_electrica.Enabled = true; 
@@ -1063,6 +1330,8 @@ namespace CapaPresentacion
                 //guardo datos en variables
                 //txtCRSserie.Text = Convert.ToString(row["CRSserie"]);
                 //txtCRSvelocidad.Text = Convert.ToString(row["CRSvelocidad"]);
+
+                textACFidC.Text = Convert.ToString(row["ACFid"]);
                 cboMARid.Text = Convert.ToString(row["MARid"]);
                 cboESTid.Text = Convert.ToString(row["ESTid"]);
                 txtCRSserie.Text = Convert.ToString(row["CRSserie"]);
@@ -1128,7 +1397,7 @@ namespace CapaPresentacion
                 txtCRSobservacion.Text = Convert.ToString(row["CRSobservacion"]);
             }
             else
-                { MessageBox.Show("No Existe", "Registro");
+                {// MessageBox.Show("No Existe", "Registro");
 
                 cboMARid.Text = "";
                 cboESTid.Text = "";
@@ -1266,6 +1535,8 @@ namespace CapaPresentacion
                             {
                                 cmb.Focus();
                                 //cmb.SelectedItem = cmb.Items[0];
+                                cmb.Text = "";
+
                             }
                         }                                           
 
@@ -1453,13 +1724,7 @@ namespace CapaPresentacion
         private void tabControl1_Click(object sender, EventArgs e)
         {
 
-            if (Data1==0)  
-            {
-                textACFidC.Text = txtACFid.Text;
-            MostrarRegistro1();
-            Data1 = 1;
-
-             }
+            
         }
 
         private void txtCRScodigoagua_TextChanged(object sender, EventArgs e)
@@ -1558,6 +1823,58 @@ namespace CapaPresentacion
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cboBLART_Validated(object sender, EventArgs e)
+        {
+        }
+
+        private void cboANLKL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String tipoa = cboANLKL.Text;
+            if (tipoa.Length >3)        {
+            String tipoacf = tipoa.Substring(0, 3);
+            //MessageBox.Show(tipoacf);
+            //int caseSwitch = 1;             
+            switch (tipoacf)
+            {
+                case "333":
+                    tabControl1.TabPages["tabPage2"].Enabled = false;
+                    tabControl1.TabPages["tabPage3"].Enabled = true;
+                    tabControl1.TabPages["tabPage4"].Enabled = false;
+                    tabControl1.TabPages["tabPage5"].Enabled = false;
+                    break;
+                case "332":
+                    tabControl1.TabPages["tabPage2"].Enabled = true;
+                    tabControl1.TabPages["tabPage3"].Enabled = false;
+                    tabControl1.TabPages["tabPage4"].Enabled = false;
+                    tabControl1.TabPages["tabPage5"].Enabled = false;
+                    break;
+                case "331":
+                    tabControl1.TabPages["tabPage2"].Enabled = true;
+                    tabControl1.TabPages["tabPage3"].Enabled = false;
+                    tabControl1.TabPages["tabPage4"].Enabled = false;
+                    tabControl1.TabPages["tabPage5"].Enabled = false;
+                    break;
+                case "334":
+                    tabControl1.TabPages["tabPage2"].Enabled = false;
+                    tabControl1.TabPages["tabPage3"].Enabled = false;
+                    tabControl1.TabPages["tabPage4"].Enabled = true;
+                    tabControl1.TabPages["tabPage5"].Enabled = false;
+                    break;
+                case "336":
+                    tabControl1.TabPages["tabPage2"].Enabled = false;
+                    tabControl1.TabPages["tabPage3"].Enabled = false;
+                    tabControl1.TabPages["tabPage4"].Enabled = false;
+                    tabControl1.TabPages["tabPage5"].Enabled = true;
+                    break;
+
+                default:
+                    Console.WriteLine("Default case");
+                    break;
+            }
+            //tabControl1.SelectedTab = tabPage2;
+            }
         }
     }
 }
