@@ -2257,5 +2257,31 @@ namespace CapaDatos
 
     }
 
-}
+   //Reporte de Depreciacion
+   public DataTable Depreciacion()
+        {
+            DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "Depreciación_Anual";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+    }
 }

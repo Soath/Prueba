@@ -21,8 +21,8 @@ namespace CapaPresentacion
 
         private void FrmMovimientoTransferecnaiActivo_Load(object sender, EventArgs e)
         {
-            DataGRid1();
-            DataGRid2();
+            this.DataGRid1();
+            this.DataGRid2();
             this.dataListado1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(Control_Click_dataListado);
 
         }
@@ -92,7 +92,8 @@ namespace CapaPresentacion
 
                 }
             }
-            DataGRid2();
+            this.DataGRid1();
+            this.DataGRid2();
         }
     }
 }

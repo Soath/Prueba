@@ -468,6 +468,13 @@ namespace CapaNegocio
             return new DacfACFp_Activo_Fijo().Mostrar();
         }
 
+        //reporte de depreciación
+        public static DataTable Depreciacion()
+        {
+            return new DacfACFp_Activo_Fijo().Depreciacion();
+        }
+
+
         public static DataTable MostrarRegistro(string ACFdescripcion)
         {
             return new DacfACFp_Activo_Fijo().MostrarRegistro(ACFdescripcion);
