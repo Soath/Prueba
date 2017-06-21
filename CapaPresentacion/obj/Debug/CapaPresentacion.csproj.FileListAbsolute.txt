@@ -245,7 +245,6 @@ C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaDatos.dll
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaNegocio.pdb
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaDatos.pdb
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojFakesResolveAssemblyReference.cache
-C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\View1.g.cs
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\ViewModel1.g.cs
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache

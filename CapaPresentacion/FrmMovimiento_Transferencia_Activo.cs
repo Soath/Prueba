@@ -1000,7 +1000,7 @@ namespace CapaPresentacion
 
         private void toolStripImprimir_Click(object sender, EventArgs e)
         {
-            FrmReportes rptalu = new FrmReportes("\\Reportes\\Rpt_Movimiento_Activo.rdlc", NMovimiento_Transferencia_Activo.FichaMovimiento1(txtMVPid_proceso.Text), "ip");
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Movimiento_Activo.rdlc", NMovimiento_Transferencia_Activo.FichaMovimiento1(txtMVPid_proceso.Text), "ip");
             rptalu.ShowDialog();
         }
     }

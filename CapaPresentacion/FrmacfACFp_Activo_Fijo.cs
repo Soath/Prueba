@@ -393,6 +393,16 @@ namespace CapaPresentacion
             this.cbocrp.DisplayMember = "CRPid_crp";
             this.cbocrp.SelectedIndex = -1;
 
+            this.txtOBJid_objeto.DataSource = NacfOBJt_Tipo_Objeto.Mostrar();
+            this.txtOBJid_objeto.ValueMember = "OBJid_objeto";
+            this.txtOBJid_objeto.DisplayMember = "OBJid_objeto";
+            this.txtOBJid_objeto.SelectedIndex = -1;
+
+            this.txtACFtipo_orden.DataSource = NbdiCDDpClasesDeDocumento.Mostrar();
+            this.txtACFtipo_orden.ValueMember = "BLART";
+            this.txtACFtipo_orden.DisplayMember = "BLART";
+            this.txtACFtipo_orden.SelectedIndex = -1;
+
         }
         private void Top()
         {
@@ -804,7 +814,7 @@ namespace CapaPresentacion
             }
             else
                 errorIcono.Clear();
-
+                           
             if (this.CtxtACFtipo_activo.Text == string.Empty)
             {
                 errorIcono.SetError(CtxtACFtipo_activo, "Ingrese el dato por Favor..");
@@ -815,6 +825,15 @@ namespace CapaPresentacion
             else
                 errorIcono.Clear();
 
+            if (this.txtACFtipo_orden.Text == string.Empty)
+            {
+                errorIcono.SetError(txtACFtipo_orden, "Ingrese el dato por Favor..");
+                this.MensError = "Falta ingresar el valor";
+                this.txtACFtipo_orden.Focus();
+                return false;
+            }
+            else
+                errorIcono.Clear();
             return true;
         }
 
@@ -912,7 +931,7 @@ namespace CapaPresentacion
                     , cboV_T087U_ANLUE.SelectedValue.ToString()
                     , this.CtxtACFtipo_activo.Text
                     , ""
-                    , "0"
+                    , this.cmbACFid_Padre.Text
                     , this.txtACFtipo_orden.Text
                     , this.txtOBJid_objeto.Text
                     , this.cbocrp.Text
@@ -1086,7 +1105,7 @@ namespace CapaPresentacion
                     , cboV_T087U_ANLUE.SelectedValue.ToString()
                     , this.CtxtACFtipo_activo.Text
                     , ""
-                    , "0"
+                    , this.cmbACFid_Padre.Text
                     , this.txtACFtipo_orden.Text
                     , this.txtOBJid_objeto.Text
                     , this.cbocrp.Text//cbocrp.SelectedValue.ToString()
@@ -1115,7 +1134,8 @@ namespace CapaPresentacion
         private void ActualizarRegistros1()
         {
             string Rta = string.Empty;
-
+            //dtpCRSvehinscripcion.Checked ? dtpCRSvehinscripcion.Value : DBNull.Value;
+            
             try
             {
                 Rta = NacfCRSt_Caracteristicas.Editar(
@@ -1289,9 +1309,8 @@ namespace CapaPresentacion
                 Canul = Convert.ToString(row["ACFAnulado"]);
                 cmbACFid_Padre.Text = Convert.ToString(row["ACFid_Padre"]);
                 txtACFtipo_orden.Text = Convert.ToString(row["ACFtipo_orden"]);
+                txtOBJid_objeto.Text = Convert.ToString(row["OBJid_objeto"]);
                 cbocrp.Text = Convert.ToString(row["CRPid_crp"]);
-                CodigodeBarra();
-
                 
 
                 if (String.IsNullOrEmpty(Canul))
@@ -1314,8 +1333,6 @@ namespace CapaPresentacion
             else
                  MessageBox.Show("No Existe", "Registro");
 
-            btnTerreno_Edificaciones.Enabled = true;
-            btnUbicacion_electrica.Enabled = true; 
 
         }
 
@@ -1343,6 +1360,7 @@ namespace CapaPresentacion
                 txtCRScantidad.Text = Convert.ToString(row["CRScantidad"]);
                 cboCRSvehplaca.Text = Convert.ToString(row["CRSvehplaca"]);
                 txtCRSvehexpediente.Text = Convert.ToString(row["CRSvehexpediente"]);
+                //dtpCRSvehinscripcion.Checked ? dtpCRSvehinscripcion.Value : DBNull.Value;
                 dtpCRSvehinscripcion.Text = Convert.ToString(row["CRSvehinscripcion"]);
                 txtCRSvehclase.Text = Convert.ToString(row["CRSvehclase"]);
                 txtCRSvehcombustible.Text = Convert.ToString(row["CRSvehcombustible"]);
@@ -1460,7 +1478,7 @@ namespace CapaPresentacion
                 txtCRSvalorautovaluo.Text = "0";
                 txtCRScodigoluz.Text = "";
                 txtCRScodigoagua.Text = "";
-                dtpCRSfadqpredio.Text = "";
+                //dtpCRSfadqpredio.Text = "";
                 txtCRSobservacion.Text = "";
                 }
         }
@@ -1498,8 +1516,8 @@ namespace CapaPresentacion
             //if (Activo == 2) tabControl1.SelectedTab = tabPage1;
             //if (Activo == 1) tabControl1.SelectedTab = tabPage2;
 
-            tabControl1.SelectedTab = tabPage0;
-            Data1 = 0;
+            //tabControl1.SelectedTab = tabPage0;
+            //Data1 = 0;
         }
         private void Configura()
         {

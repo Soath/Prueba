@@ -604,18 +604,19 @@ namespace CapaDatos
 
         //METODO INSERTAR 
         public string Insertar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)
-    {
-        string rpta = "";
-        SqlConnection SqlCon = new SqlConnection();
-		try {
-             //Código
+        {
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
                 SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCon.Open();
                 //Establecer el Comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "usp_I_acfCRSt_Caracteristicas";
-                SqlCmd.CommandType = CommandType.StoredProcedure;                            
+                SqlCmd.CommandType = CommandType.StoredProcedure;
                 //
                 SqlParameter ParACFid = new SqlParameter();
                 ParACFid.ParameterName = "@iACFid";
@@ -1005,10 +1006,10 @@ namespace CapaDatos
 
                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
 
-			
-			
-		}
-	catch (Exception ex)
+
+
+            }
+            catch (Exception ex)
             {
                 rpta = ex.Message;
             }
@@ -1017,7 +1018,8 @@ namespace CapaDatos
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
             return rpta;
-	}
+        }
+
 
         //Metodo Insertar Excel a DB_Caracter{isticas
         public string SAPIMPORT(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)
@@ -1435,8 +1437,9 @@ namespace CapaDatos
 
 
         //METODO EDITAR
-	public string Editar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas) {
-		string rpta = "";
+        public string Editar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)
+        {
+            string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
             try
             {
@@ -1838,8 +1841,8 @@ namespace CapaDatos
                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Actualizo el Registro";
 
 
-                }
-		catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 rpta = ex.Message;
             }
@@ -1847,8 +1850,9 @@ namespace CapaDatos
             {
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
-            return rpta; 
-	}
+            return rpta;
+        }
+
 
         //METODO Editar Sustitucion Mejora
         public string EditarSustitucionMejora(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)

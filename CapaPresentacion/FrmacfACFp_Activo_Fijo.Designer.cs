@@ -139,6 +139,8 @@
             this.label52 = new System.Windows.Forms.Label();
             this.textVNRdes = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtOBJid_objeto = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.textObj = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.cboCSTid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textCCe = new System.Windows.Forms.TextBox();
@@ -149,11 +151,9 @@
             this.cboCMPid = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.textComponente = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.txtOBJid_objeto = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnUbicacion_electrica = new System.Windows.Forms.Button();
             this.txtCRScalle = new System.Windows.Forms.TextBox();
             this.txtCRSurbanizacion = new System.Windows.Forms.TextBox();
             this.txtCRScentropoblado = new System.Windows.Forms.TextBox();
@@ -174,7 +174,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dtpCRSfadqpredio = new System.Windows.Forms.DateTimePicker();
             this.dtpCRSfinscpredio = new System.Windows.Forms.DateTimePicker();
-            this.btnTerreno_Edificaciones = new System.Windows.Forms.Button();
             this.txtCRSobservacion = new System.Windows.Forms.TextBox();
             this.txtCRScodigoagua = new System.Windows.Forms.TextBox();
             this.txtCRScodigoluz = new System.Windows.Forms.TextBox();
@@ -638,7 +637,7 @@
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.Size = new System.Drawing.Size(965, 536);
             this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Ajuste Contable";
+            this.tabPage6.Text = "Datos Contable";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -1416,7 +1415,6 @@
             this.tabPage3.Controls.Add(this.label52);
             this.tabPage3.Controls.Add(this.textVNRdes);
             this.tabPage3.Controls.Add(this.groupBox4);
-            this.tabPage3.Controls.Add(this.btnUbicacion_electrica);
             this.tabPage3.Controls.Add(this.txtCRScalle);
             this.tabPage3.Controls.Add(this.txtCRSurbanizacion);
             this.tabPage3.Controls.Add(this.txtCRScentropoblado);
@@ -1445,7 +1443,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(535, 376);
+            this.label5.Location = new System.Drawing.Point(498, 292);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(196, 17);
@@ -1454,7 +1452,7 @@
             // 
             // txtACFanlue
             // 
-            this.txtACFanlue.Location = new System.Drawing.Point(740, 373);
+            this.txtACFanlue.Location = new System.Drawing.Point(703, 289);
             this.txtACFanlue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtACFanlue.Name = "txtACFanlue";
             this.txtACFanlue.Size = new System.Drawing.Size(185, 22);
@@ -1463,7 +1461,7 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(535, 303);
+            this.label52.Location = new System.Drawing.Point(498, 219);
             this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(85, 17);
@@ -1473,7 +1471,7 @@
             // textVNRdes
             // 
             this.textVNRdes.BackColor = System.Drawing.Color.Lavender;
-            this.textVNRdes.Location = new System.Drawing.Point(539, 331);
+            this.textVNRdes.Location = new System.Drawing.Point(502, 247);
             this.textVNRdes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textVNRdes.Name = "textVNRdes";
             this.textVNRdes.ReadOnly = true;
@@ -1483,6 +1481,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.txtOBJid_objeto);
+            this.groupBox4.Controls.Add(this.textObj);
             this.groupBox4.Controls.Add(this.label39);
             this.groupBox4.Controls.Add(this.cboCSTid);
             this.groupBox4.Controls.Add(this.textCCe);
@@ -1492,7 +1492,6 @@
             this.groupBox4.Controls.Add(this.cboCMPid);
             this.groupBox4.Controls.Add(this.label33);
             this.groupBox4.Controls.Add(this.textSupranumero);
-            this.groupBox4.Controls.Add(this.txtOBJid_objeto);
             this.groupBox4.Controls.Add(this.textComponente);
             this.groupBox4.Controls.Add(this.label43);
             this.groupBox4.Controls.Add(this.label40);
@@ -1505,6 +1504,36 @@
             this.groupBox4.TabIndex = 192;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ubicación Electrica";
+            // 
+            // txtOBJid_objeto
+            // 
+            this.txtOBJid_objeto.AutoComplete = true;
+            this.txtOBJid_objeto.AutoDropdown = true;
+            this.txtOBJid_objeto.BackColorEven = System.Drawing.Color.Lavender;
+            this.txtOBJid_objeto.BackColorOdd = System.Drawing.Color.White;
+            this.txtOBJid_objeto.ColumnNames = "";
+            this.txtOBJid_objeto.ColumnWidthDefault = 75;
+            this.txtOBJid_objeto.ColumnWidths = "100;150;200";
+            this.txtOBJid_objeto.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.txtOBJid_objeto.FormattingEnabled = true;
+            this.txtOBJid_objeto.LinkedColumnIndex = 1;
+            this.txtOBJid_objeto.LinkedTextBox = this.textObj;
+            this.txtOBJid_objeto.Location = new System.Drawing.Point(266, 73);
+            this.txtOBJid_objeto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOBJid_objeto.Name = "txtOBJid_objeto";
+            this.txtOBJid_objeto.Size = new System.Drawing.Size(171, 23);
+            this.txtOBJid_objeto.TabIndex = 196;
+            // 
+            // textObj
+            // 
+            this.textObj.BackColor = System.Drawing.Color.Lavender;
+            this.textObj.Location = new System.Drawing.Point(20, 106);
+            this.textObj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textObj.Name = "textObj";
+            this.textObj.ReadOnly = true;
+            this.textObj.Size = new System.Drawing.Size(420, 22);
+            this.textObj.TabIndex = 195;
+            this.textObj.TabStop = false;
             // 
             // label39
             // 
@@ -1549,7 +1578,7 @@
             // textUbiElec
             // 
             this.textUbiElec.BackColor = System.Drawing.Color.Lavender;
-            this.textUbiElec.Location = new System.Drawing.Point(17, 62);
+            this.textUbiElec.Location = new System.Drawing.Point(17, 45);
             this.textUbiElec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textUbiElec.Name = "textUbiElec";
             this.textUbiElec.ReadOnly = true;
@@ -1570,7 +1599,7 @@
             this.cboV_T087U_ANLUE.FormattingEnabled = true;
             this.cboV_T087U_ANLUE.LinkedColumnIndex = 1;
             this.cboV_T087U_ANLUE.LinkedTextBox = this.textSupranumero;
-            this.cboV_T087U_ANLUE.Location = new System.Drawing.Point(266, 177);
+            this.cboV_T087U_ANLUE.Location = new System.Drawing.Point(266, 189);
             this.cboV_T087U_ANLUE.Margin = new System.Windows.Forms.Padding(4);
             this.cboV_T087U_ANLUE.Name = "cboV_T087U_ANLUE";
             this.cboV_T087U_ANLUE.Size = new System.Drawing.Size(171, 23);
@@ -1579,7 +1608,7 @@
             // textSupranumero
             // 
             this.textSupranumero.BackColor = System.Drawing.Color.Lavender;
-            this.textSupranumero.Location = new System.Drawing.Point(20, 215);
+            this.textSupranumero.Location = new System.Drawing.Point(20, 224);
             this.textSupranumero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textSupranumero.Name = "textSupranumero";
             this.textSupranumero.ReadOnly = true;
@@ -1600,7 +1629,7 @@
             this.cboUBEid.FormattingEnabled = true;
             this.cboUBEid.LinkedColumnIndex = 1;
             this.cboUBEid.LinkedTextBox = this.textUbiElec;
-            this.cboUBEid.Location = new System.Drawing.Point(266, 26);
+            this.cboUBEid.Location = new System.Drawing.Point(266, 17);
             this.cboUBEid.Margin = new System.Windows.Forms.Padding(4);
             this.cboUBEid.Name = "cboUBEid";
             this.cboUBEid.Size = new System.Drawing.Size(171, 23);
@@ -1619,7 +1648,7 @@
             this.cboCMPid.FormattingEnabled = true;
             this.cboCMPid.LinkedColumnIndex = 1;
             this.cboCMPid.LinkedTextBox = this.textComponente;
-            this.cboCMPid.Location = new System.Drawing.Point(266, 120);
+            this.cboCMPid.Location = new System.Drawing.Point(266, 137);
             this.cboCMPid.Margin = new System.Windows.Forms.Padding(4);
             this.cboCMPid.Name = "cboCMPid";
             this.cboCMPid.Size = new System.Drawing.Size(171, 23);
@@ -1628,7 +1657,7 @@
             // textComponente
             // 
             this.textComponente.BackColor = System.Drawing.Color.Lavender;
-            this.textComponente.Location = new System.Drawing.Point(20, 148);
+            this.textComponente.Location = new System.Drawing.Point(20, 162);
             this.textComponente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textComponente.Name = "textComponente";
             this.textComponente.ReadOnly = true;
@@ -1639,25 +1668,17 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(14, 32);
+            this.label33.Location = new System.Drawing.Point(14, 23);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(178, 17);
             this.label33.TabIndex = 183;
             this.label33.Text = "Cód. de ubicacion electrica";
             // 
-            // txtOBJid_objeto
-            // 
-            this.txtOBJid_objeto.Location = new System.Drawing.Point(266, 90);
-            this.txtOBJid_objeto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtOBJid_objeto.Name = "txtOBJid_objeto";
-            this.txtOBJid_objeto.Size = new System.Drawing.Size(96, 22);
-            this.txtOBJid_objeto.TabIndex = 184;
-            // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(13, 90);
+            this.label43.Location = new System.Drawing.Point(22, 78);
             this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(102, 17);
@@ -1667,7 +1688,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(17, 118);
+            this.label40.Location = new System.Drawing.Point(17, 135);
             this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(148, 17);
@@ -1676,23 +1697,12 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(17, 175);
+            this.label3.Location = new System.Drawing.Point(17, 187);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(196, 38);
             this.label3.TabIndex = 186;
             this.label3.Text = "Codigo de supranumero o Num. de componentizacion";
-            // 
-            // btnUbicacion_electrica
-            // 
-            this.btnUbicacion_electrica.Location = new System.Drawing.Point(671, 220);
-            this.btnUbicacion_electrica.Margin = new System.Windows.Forms.Padding(4);
-            this.btnUbicacion_electrica.Name = "btnUbicacion_electrica";
-            this.btnUbicacion_electrica.Size = new System.Drawing.Size(155, 46);
-            this.btnUbicacion_electrica.TabIndex = 72;
-            this.btnUbicacion_electrica.Text = "Ubicacion Eléctrica";
-            this.btnUbicacion_electrica.UseVisualStyleBackColor = true;
-            this.btnUbicacion_electrica.Click += new System.EventHandler(this.btnUbicacion_electrica_Click);
             // 
             // txtCRScalle
             // 
@@ -1853,7 +1863,7 @@
             this.cboVNRid.FormattingEnabled = true;
             this.cboVNRid.LinkedColumnIndex = 1;
             this.cboVNRid.LinkedTextBox = this.textVNRdes;
-            this.cboVNRid.Location = new System.Drawing.Point(721, 305);
+            this.cboVNRid.Location = new System.Drawing.Point(695, 219);
             this.cboVNRid.Margin = new System.Windows.Forms.Padding(4);
             this.cboVNRid.Name = "cboVNRid";
             this.cboVNRid.Size = new System.Drawing.Size(201, 23);
@@ -1863,7 +1873,6 @@
             // 
             this.tabPage2.Controls.Add(this.dtpCRSfadqpredio);
             this.tabPage2.Controls.Add(this.dtpCRSfinscpredio);
-            this.tabPage2.Controls.Add(this.btnTerreno_Edificaciones);
             this.tabPage2.Controls.Add(this.txtCRSobservacion);
             this.tabPage2.Controls.Add(this.txtCRScodigoagua);
             this.tabPage2.Controls.Add(this.txtCRScodigoluz);
@@ -1935,17 +1944,6 @@
             this.dtpCRSfinscpredio.Name = "dtpCRSfinscpredio";
             this.dtpCRSfinscpredio.Size = new System.Drawing.Size(111, 22);
             this.dtpCRSfinscpredio.TabIndex = 177;
-            // 
-            // btnTerreno_Edificaciones
-            // 
-            this.btnTerreno_Edificaciones.Location = new System.Drawing.Point(611, 272);
-            this.btnTerreno_Edificaciones.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTerreno_Edificaciones.Name = "btnTerreno_Edificaciones";
-            this.btnTerreno_Edificaciones.Size = new System.Drawing.Size(155, 58);
-            this.btnTerreno_Edificaciones.TabIndex = 71;
-            this.btnTerreno_Edificaciones.Text = "Detalles de Edificaciones";
-            this.btnTerreno_Edificaciones.UseVisualStyleBackColor = true;
-            this.btnTerreno_Edificaciones.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtCRSobservacion
             // 
@@ -2382,7 +2380,7 @@
             this.tabPage0.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage0.Size = new System.Drawing.Size(965, 536);
             this.tabPage0.TabIndex = 6;
-            this.tabPage0.Text = "Ubicacion Actual";
+            this.tabPage0.Text = "Caracteristicas Generales";
             this.tabPage0.UseVisualStyleBackColor = true;
             // 
             // groupBox7
@@ -2711,9 +2709,9 @@
             this.label20.Location = new System.Drawing.Point(5, 282);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(108, 17);
+            this.label20.Size = new System.Drawing.Size(100, 17);
             this.label20.TabIndex = 12;
-            this.label20.Text = "Codigo de Obra";
+            this.label20.Text = "Proyecto/Obra";
             // 
             // groupBox6
             // 
@@ -3437,7 +3435,7 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Location = new System.Drawing.Point(419, 95);
+            this.tabControl1.Location = new System.Drawing.Point(423, 95);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -3454,7 +3452,7 @@
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage7.Size = new System.Drawing.Size(965, 536);
             this.tabPage7.TabIndex = 7;
-            this.tabPage7.Text = "Componentes";
+            this.tabPage7.Text = "Acivos Hijos";
             this.tabPage7.UseVisualStyleBackColor = true;
             this.tabPage7.Click += new System.EventHandler(this.tabPage7_Click);
             // 
@@ -3616,7 +3614,6 @@
         private System.Windows.Forms.TextBox textSegmento;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button btnTerreno_Edificaciones;
         private System.Windows.Forms.TextBox txtCRSobservacion;
         private System.Windows.Forms.TextBox txtCRScodigoagua;
         private System.Windows.Forms.TextBox txtCRScodigoluz;
@@ -3662,7 +3659,6 @@
         private System.Windows.Forms.Label lblCRSnumeropredio;
         private System.Windows.Forms.Label lblCRSlote;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button btnUbicacion_electrica;
         private System.Windows.Forms.TextBox txtCRScalle;
         private System.Windows.Forms.TextBox txtCRSurbanizacion;
         private System.Windows.Forms.TextBox txtCRScentropoblado;
@@ -3827,7 +3823,6 @@
         private System.Windows.Forms.TextBox textSupranumero;
         private MultiColumnComboBoxDemo.MultiColumnComboBox cboCMPid;
         private System.Windows.Forms.TextBox textComponente;
-        private System.Windows.Forms.TextBox txtOBJid_objeto;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label3;
@@ -3853,5 +3848,7 @@
         private System.Windows.Forms.TextBox textCCe;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtACFanlue;
+        private System.Windows.Forms.TextBox textObj;
+        private MultiColumnComboBoxDemo.MultiColumnComboBox txtOBJid_objeto;
     }
 }
