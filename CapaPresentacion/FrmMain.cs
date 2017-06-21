@@ -562,5 +562,11 @@ namespace CapaPresentacion
             Form Frmacfrpt_ficha_Inventario = new Frmacfrpt_ficha_Inventario();
             Frmacfrpt_ficha_Inventario.ShowDialog();
         }
+
+        private void ribbonButton75_Click(object sender, EventArgs e)
+        {
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Depreciacion1.rdlc", NacfACFp_Activo_Fijo.Depreciacion(), "ip");
+            rptalu.ShowDialog();
+        }
     }
 }

@@ -962,7 +962,7 @@
     <EmbeddedResource Include="Reportes\Rpt_CDDClasesDeDocumento.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_CMPComponente.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_CSTCosto.rdlc" />
-    <EmbeddedResource Include="Reportes\Rpt_Depreciacion.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Depreciacion1.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_ESTestado.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_INVInventario.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_LOCLocal.rdlc" />

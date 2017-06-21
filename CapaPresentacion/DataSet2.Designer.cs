@@ -80,6 +80,8 @@ namespace CapaPresentacion {
         
         private DFichaMovimientoDataTable tableDFichaMovimiento;
         
+        private DDepreciacionDataTable tableDDepreciacion;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -191,6 +193,9 @@ namespace CapaPresentacion {
                 }
                 if ((ds.Tables["DFichaMovimiento"] != null)) {
                     base.Tables.Add(new DFichaMovimientoDataTable(ds.Tables["DFichaMovimiento"]));
+                }
+                if ((ds.Tables["DDepreciacion"] != null)) {
+                    base.Tables.Add(new DDepreciacionDataTable(ds.Tables["DDepreciacion"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -492,6 +497,16 @@ namespace CapaPresentacion {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public DDepreciacionDataTable DDepreciacion {
+            get {
+                return this.tableDDepreciacion;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -640,6 +655,9 @@ namespace CapaPresentacion {
                 }
                 if ((ds.Tables["DFichaMovimiento"] != null)) {
                     base.Tables.Add(new DFichaMovimientoDataTable(ds.Tables["DFichaMovimiento"]));
+                }
+                if ((ds.Tables["DDepreciacion"] != null)) {
+                    base.Tables.Add(new DDepreciacionDataTable(ds.Tables["DDepreciacion"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -842,6 +860,12 @@ namespace CapaPresentacion {
                     this.tableDFichaMovimiento.InitVars();
                 }
             }
+            this.tableDDepreciacion = ((DDepreciacionDataTable)(base.Tables["DDepreciacion"]));
+            if ((initTable == true)) {
+                if ((this.tableDDepreciacion != null)) {
+                    this.tableDDepreciacion.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -908,6 +932,8 @@ namespace CapaPresentacion {
             base.Tables.Add(this.tableDBarra);
             this.tableDFichaMovimiento = new DFichaMovimientoDataTable();
             base.Tables.Add(this.tableDFichaMovimiento);
+            this.tableDDepreciacion = new DDepreciacionDataTable();
+            base.Tables.Add(this.tableDDepreciacion);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1080,6 +1106,12 @@ namespace CapaPresentacion {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeDDepreciacion() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -1216,6 +1248,9 @@ namespace CapaPresentacion {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void DFichaMovimientoRowChangeEventHandler(object sender, DFichaMovimientoRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void DDepreciacionRowChangeEventHandler(object sender, DDepreciacionRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -9921,6 +9956,584 @@ namespace CapaPresentacion {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class DDepreciacionDataTable : global::System.Data.TypedTableBase<DDepreciacionRow> {
+            
+            private global::System.Data.DataColumn columnZona;
+            
+            private global::System.Data.DataColumn columnCuentaContable;
+            
+            private global::System.Data.DataColumn columnEnero;
+            
+            private global::System.Data.DataColumn columnFebrero;
+            
+            private global::System.Data.DataColumn columnMarzo;
+            
+            private global::System.Data.DataColumn columnAbril;
+            
+            private global::System.Data.DataColumn columnMayo;
+            
+            private global::System.Data.DataColumn columnJunio;
+            
+            private global::System.Data.DataColumn columnJulio;
+            
+            private global::System.Data.DataColumn columnAgosto;
+            
+            private global::System.Data.DataColumn columnSetiembre;
+            
+            private global::System.Data.DataColumn columnOctubre;
+            
+            private global::System.Data.DataColumn columnNoviembre;
+            
+            private global::System.Data.DataColumn columnDiciembre;
+            
+            private global::System.Data.DataColumn columnDescripcióndeCuenta;
+            
+            private global::System.Data.DataColumn columnSaldoInicial;
+            
+            private global::System.Data.DataColumn columnAjustesi;
+            
+            private global::System.Data.DataColumn columnTransferenciai;
+            
+            private global::System.Data.DataColumn columnRetiros;
+            
+            private global::System.Data.DataColumn columnAjustesf;
+            
+            private global::System.Data.DataColumn columnTransferenciaf;
+            
+            private global::System.Data.DataColumn columnTotal;
+            
+            private global::System.Data.DataColumn columnSaldoFinal;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DDepreciacionDataTable() {
+                this.TableName = "DDepreciacion";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal DDepreciacionDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected DDepreciacionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ZonaColumn {
+                get {
+                    return this.columnZona;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CuentaContableColumn {
+                get {
+                    return this.columnCuentaContable;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EneroColumn {
+                get {
+                    return this.columnEnero;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FebreroColumn {
+                get {
+                    return this.columnFebrero;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MarzoColumn {
+                get {
+                    return this.columnMarzo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AbrilColumn {
+                get {
+                    return this.columnAbril;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MayoColumn {
+                get {
+                    return this.columnMayo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JunioColumn {
+                get {
+                    return this.columnJunio;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn JulioColumn {
+                get {
+                    return this.columnJulio;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AgostoColumn {
+                get {
+                    return this.columnAgosto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SetiembreColumn {
+                get {
+                    return this.columnSetiembre;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn OctubreColumn {
+                get {
+                    return this.columnOctubre;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NoviembreColumn {
+                get {
+                    return this.columnNoviembre;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DiciembreColumn {
+                get {
+                    return this.columnDiciembre;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DescripcióndeCuentaColumn {
+                get {
+                    return this.columnDescripcióndeCuenta;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SaldoInicialColumn {
+                get {
+                    return this.columnSaldoInicial;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AjustesiColumn {
+                get {
+                    return this.columnAjustesi;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TransferenciaiColumn {
+                get {
+                    return this.columnTransferenciai;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RetirosColumn {
+                get {
+                    return this.columnRetiros;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AjustesfColumn {
+                get {
+                    return this.columnAjustesf;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TransferenciafColumn {
+                get {
+                    return this.columnTransferenciaf;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TotalColumn {
+                get {
+                    return this.columnTotal;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SaldoFinalColumn {
+                get {
+                    return this.columnSaldoFinal;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DDepreciacionRow this[int index] {
+                get {
+                    return ((DDepreciacionRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DDepreciacionRowChangeEventHandler DDepreciacionRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DDepreciacionRowChangeEventHandler DDepreciacionRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DDepreciacionRowChangeEventHandler DDepreciacionRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event DDepreciacionRowChangeEventHandler DDepreciacionRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddDDepreciacionRow(DDepreciacionRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DDepreciacionRow AddDDepreciacionRow(
+                        string Zona, 
+                        string CuentaContable, 
+                        string Enero, 
+                        string Febrero, 
+                        string Marzo, 
+                        string Abril, 
+                        string Mayo, 
+                        string Junio, 
+                        string Julio, 
+                        string Agosto, 
+                        string Setiembre, 
+                        string Octubre, 
+                        string Noviembre, 
+                        string Diciembre, 
+                        string DescripcióndeCuenta, 
+                        string SaldoInicial, 
+                        string Ajustesi, 
+                        string Transferenciai, 
+                        string Retiros, 
+                        string Ajustesf, 
+                        string Transferenciaf, 
+                        string Total, 
+                        string SaldoFinal) {
+                DDepreciacionRow rowDDepreciacionRow = ((DDepreciacionRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Zona,
+                        CuentaContable,
+                        Enero,
+                        Febrero,
+                        Marzo,
+                        Abril,
+                        Mayo,
+                        Junio,
+                        Julio,
+                        Agosto,
+                        Setiembre,
+                        Octubre,
+                        Noviembre,
+                        Diciembre,
+                        DescripcióndeCuenta,
+                        SaldoInicial,
+                        Ajustesi,
+                        Transferenciai,
+                        Retiros,
+                        Ajustesf,
+                        Transferenciaf,
+                        Total,
+                        SaldoFinal};
+                rowDDepreciacionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDDepreciacionRow);
+                return rowDDepreciacionRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                DDepreciacionDataTable cln = ((DDepreciacionDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new DDepreciacionDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnZona = base.Columns["Zona"];
+                this.columnCuentaContable = base.Columns["CuentaContable"];
+                this.columnEnero = base.Columns["Enero"];
+                this.columnFebrero = base.Columns["Febrero"];
+                this.columnMarzo = base.Columns["Marzo"];
+                this.columnAbril = base.Columns["Abril"];
+                this.columnMayo = base.Columns["Mayo"];
+                this.columnJunio = base.Columns["Junio"];
+                this.columnJulio = base.Columns["Julio"];
+                this.columnAgosto = base.Columns["Agosto"];
+                this.columnSetiembre = base.Columns["Setiembre"];
+                this.columnOctubre = base.Columns["Octubre"];
+                this.columnNoviembre = base.Columns["Noviembre"];
+                this.columnDiciembre = base.Columns["Diciembre"];
+                this.columnDescripcióndeCuenta = base.Columns["DescripcióndeCuenta"];
+                this.columnSaldoInicial = base.Columns["SaldoInicial"];
+                this.columnAjustesi = base.Columns["Ajustesi"];
+                this.columnTransferenciai = base.Columns["Transferenciai"];
+                this.columnRetiros = base.Columns["Retiros"];
+                this.columnAjustesf = base.Columns["Ajustesf"];
+                this.columnTransferenciaf = base.Columns["Transferenciaf"];
+                this.columnTotal = base.Columns["Total"];
+                this.columnSaldoFinal = base.Columns["SaldoFinal"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnZona = new global::System.Data.DataColumn("Zona", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnZona);
+                this.columnCuentaContable = new global::System.Data.DataColumn("CuentaContable", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCuentaContable);
+                this.columnEnero = new global::System.Data.DataColumn("Enero", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEnero);
+                this.columnFebrero = new global::System.Data.DataColumn("Febrero", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFebrero);
+                this.columnMarzo = new global::System.Data.DataColumn("Marzo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMarzo);
+                this.columnAbril = new global::System.Data.DataColumn("Abril", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAbril);
+                this.columnMayo = new global::System.Data.DataColumn("Mayo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMayo);
+                this.columnJunio = new global::System.Data.DataColumn("Junio", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJunio);
+                this.columnJulio = new global::System.Data.DataColumn("Julio", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJulio);
+                this.columnAgosto = new global::System.Data.DataColumn("Agosto", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAgosto);
+                this.columnSetiembre = new global::System.Data.DataColumn("Setiembre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSetiembre);
+                this.columnOctubre = new global::System.Data.DataColumn("Octubre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOctubre);
+                this.columnNoviembre = new global::System.Data.DataColumn("Noviembre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNoviembre);
+                this.columnDiciembre = new global::System.Data.DataColumn("Diciembre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDiciembre);
+                this.columnDescripcióndeCuenta = new global::System.Data.DataColumn("DescripcióndeCuenta", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescripcióndeCuenta);
+                this.columnSaldoInicial = new global::System.Data.DataColumn("SaldoInicial", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSaldoInicial);
+                this.columnAjustesi = new global::System.Data.DataColumn("Ajustesi", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAjustesi);
+                this.columnTransferenciai = new global::System.Data.DataColumn("Transferenciai", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransferenciai);
+                this.columnRetiros = new global::System.Data.DataColumn("Retiros", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRetiros);
+                this.columnAjustesf = new global::System.Data.DataColumn("Ajustesf", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAjustesf);
+                this.columnTransferenciaf = new global::System.Data.DataColumn("Transferenciaf", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransferenciaf);
+                this.columnTotal = new global::System.Data.DataColumn("Total", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotal);
+                this.columnSaldoFinal = new global::System.Data.DataColumn("SaldoFinal", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSaldoFinal);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DDepreciacionRow NewDDepreciacionRow() {
+                return ((DDepreciacionRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new DDepreciacionRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(DDepreciacionRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.DDepreciacionRowChanged != null)) {
+                    this.DDepreciacionRowChanged(this, new DDepreciacionRowChangeEvent(((DDepreciacionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.DDepreciacionRowChanging != null)) {
+                    this.DDepreciacionRowChanging(this, new DDepreciacionRowChangeEvent(((DDepreciacionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.DDepreciacionRowDeleted != null)) {
+                    this.DDepreciacionRowDeleted(this, new DDepreciacionRowChangeEvent(((DDepreciacionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.DDepreciacionRowDeleting != null)) {
+                    this.DDepreciacionRowDeleting(this, new DDepreciacionRowChangeEvent(((DDepreciacionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveDDepreciacionRow(DDepreciacionRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "DDepreciacionDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class DMotivoMovimientoRow : global::System.Data.DataRow {
@@ -14616,6 +15229,666 @@ namespace CapaPresentacion {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class DDepreciacionRow : global::System.Data.DataRow {
+            
+            private DDepreciacionDataTable tableDDepreciacion;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal DDepreciacionRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableDDepreciacion = ((DDepreciacionDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Zona {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.ZonaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Zona\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.ZonaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CuentaContable {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.CuentaContableColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CuentaContable\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.CuentaContableColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Enero {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.EneroColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Enero\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.EneroColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Febrero {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.FebreroColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Febrero\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.FebreroColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Marzo {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.MarzoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Marzo\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.MarzoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Abril {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.AbrilColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Abril\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.AbrilColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Mayo {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.MayoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Mayo\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.MayoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Junio {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.JunioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Junio\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.JunioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Julio {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.JulioColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Julio\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.JulioColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Agosto {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.AgostoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Agosto\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.AgostoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Setiembre {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.SetiembreColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Setiembre\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.SetiembreColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Octubre {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.OctubreColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Octubre\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.OctubreColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Noviembre {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.NoviembreColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Noviembre\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.NoviembreColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Diciembre {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.DiciembreColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Diciembre\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.DiciembreColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DescripcióndeCuenta {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.DescripcióndeCuentaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DescripcióndeCuenta\' de la tabla \'DDepreciacion\' es DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.DescripcióndeCuentaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string SaldoInicial {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.SaldoInicialColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'SaldoInicial\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.SaldoInicialColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Ajustesi {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.AjustesiColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Ajustesi\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.AjustesiColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Transferenciai {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.TransferenciaiColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Transferenciai\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.TransferenciaiColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Retiros {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.RetirosColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Retiros\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.RetirosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Ajustesf {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.AjustesfColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Ajustesf\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.AjustesfColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Transferenciaf {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.TransferenciafColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Transferenciaf\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.TransferenciafColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Total {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.TotalColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Total\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.TotalColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string SaldoFinal {
+                get {
+                    try {
+                        return ((string)(this[this.tableDDepreciacion.SaldoFinalColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'SaldoFinal\' de la tabla \'DDepreciacion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDDepreciacion.SaldoFinalColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsZonaNull() {
+                return this.IsNull(this.tableDDepreciacion.ZonaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetZonaNull() {
+                this[this.tableDDepreciacion.ZonaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCuentaContableNull() {
+                return this.IsNull(this.tableDDepreciacion.CuentaContableColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCuentaContableNull() {
+                this[this.tableDDepreciacion.CuentaContableColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEneroNull() {
+                return this.IsNull(this.tableDDepreciacion.EneroColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEneroNull() {
+                this[this.tableDDepreciacion.EneroColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFebreroNull() {
+                return this.IsNull(this.tableDDepreciacion.FebreroColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFebreroNull() {
+                this[this.tableDDepreciacion.FebreroColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMarzoNull() {
+                return this.IsNull(this.tableDDepreciacion.MarzoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMarzoNull() {
+                this[this.tableDDepreciacion.MarzoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAbrilNull() {
+                return this.IsNull(this.tableDDepreciacion.AbrilColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAbrilNull() {
+                this[this.tableDDepreciacion.AbrilColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMayoNull() {
+                return this.IsNull(this.tableDDepreciacion.MayoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMayoNull() {
+                this[this.tableDDepreciacion.MayoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJunioNull() {
+                return this.IsNull(this.tableDDepreciacion.JunioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJunioNull() {
+                this[this.tableDDepreciacion.JunioColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsJulioNull() {
+                return this.IsNull(this.tableDDepreciacion.JulioColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetJulioNull() {
+                this[this.tableDDepreciacion.JulioColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAgostoNull() {
+                return this.IsNull(this.tableDDepreciacion.AgostoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAgostoNull() {
+                this[this.tableDDepreciacion.AgostoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSetiembreNull() {
+                return this.IsNull(this.tableDDepreciacion.SetiembreColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSetiembreNull() {
+                this[this.tableDDepreciacion.SetiembreColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsOctubreNull() {
+                return this.IsNull(this.tableDDepreciacion.OctubreColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetOctubreNull() {
+                this[this.tableDDepreciacion.OctubreColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsNoviembreNull() {
+                return this.IsNull(this.tableDDepreciacion.NoviembreColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetNoviembreNull() {
+                this[this.tableDDepreciacion.NoviembreColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDiciembreNull() {
+                return this.IsNull(this.tableDDepreciacion.DiciembreColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDiciembreNull() {
+                this[this.tableDDepreciacion.DiciembreColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDescripcióndeCuentaNull() {
+                return this.IsNull(this.tableDDepreciacion.DescripcióndeCuentaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDescripcióndeCuentaNull() {
+                this[this.tableDDepreciacion.DescripcióndeCuentaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSaldoInicialNull() {
+                return this.IsNull(this.tableDDepreciacion.SaldoInicialColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSaldoInicialNull() {
+                this[this.tableDDepreciacion.SaldoInicialColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAjustesiNull() {
+                return this.IsNull(this.tableDDepreciacion.AjustesiColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAjustesiNull() {
+                this[this.tableDDepreciacion.AjustesiColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTransferenciaiNull() {
+                return this.IsNull(this.tableDDepreciacion.TransferenciaiColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTransferenciaiNull() {
+                this[this.tableDDepreciacion.TransferenciaiColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRetirosNull() {
+                return this.IsNull(this.tableDDepreciacion.RetirosColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRetirosNull() {
+                this[this.tableDDepreciacion.RetirosColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAjustesfNull() {
+                return this.IsNull(this.tableDDepreciacion.AjustesfColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAjustesfNull() {
+                this[this.tableDDepreciacion.AjustesfColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTransferenciafNull() {
+                return this.IsNull(this.tableDDepreciacion.TransferenciafColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTransferenciafNull() {
+                this[this.tableDDepreciacion.TransferenciafColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTotalNull() {
+                return this.IsNull(this.tableDDepreciacion.TotalColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTotalNull() {
+                this[this.tableDDepreciacion.TotalColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSaldoFinalNull() {
+                return this.IsNull(this.tableDDepreciacion.SaldoFinalColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSaldoFinalNull() {
+                this[this.tableDDepreciacion.SaldoFinalColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -15553,6 +16826,40 @@ namespace CapaPresentacion {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DFichaMovimientoRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class DDepreciacionRowChangeEvent : global::System.EventArgs {
+            
+            private DDepreciacionRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DDepreciacionRowChangeEvent(DDepreciacionRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public DDepreciacionRow Row {
                 get {
                     return this.eventRow;
                 }
