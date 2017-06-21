@@ -132,15 +132,21 @@ namespace CapaPresentacion
         }
         private void Control_Click_Agregar(object sender, EventArgs e)
         {
+            // dataListado.Rows.Clear();
+            if (dataListado.Rows.Count > 1)
+            {
+                for (int i = dataListado.Rows.Count - 1; i >= 0; i--)
+                {
+                    dataListado.Rows.RemoveAt(i);
+                }
+            }
+
+
+
             this.BotonAgregar();
             //dataListado.DataSource = null;
             //dataListado.ColumnAdded
             //dataListado.Columns.Add("Column1", "ACFid");
-            //dataListado.Columns.Add("Column2", "ACFdescripcion");
-            //dataListado.Columns.Add("Column3", "ACFfincorporacion");
-            //dataListado.Columns.Add("Column4", "ACFfechanotaingreso");
-            //dataListado.Columns.Add("Column5", "ACFordencompra");
-            //dataListado.Columns.Add("Column6", "ACFtipo_activo");
         }
         private void Control_Click_Editar(object sender, EventArgs e)
         {                        
