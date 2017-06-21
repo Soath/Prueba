@@ -15,36 +15,31 @@ namespace CapaPresentacion
     
     public partial class FrmExcel : Form
     {
+
         public FrmExcel()
         {
             InitializeComponent();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
         }
         private void button1_Click(object sender, EventArgs e)
-        {
+        {            
             if (txtHoja.Text == string.Empty)
             {
                 MessageBox.Show("Inserte el nombre de la HOJA");
             }
             else { 
- 
+                try
+                    {                   
 
+                    string hoja;
+                        hoja = txtHoja.Text;
+                        new Importar().importarExcelca(dataListado, hoja, true);
 
-            try
-            {
-                string hoja;
-                hoja = txtHoja.Text;
-
-                new Importar().importarExcelca(dataListado, hoja, true);
-            }
-            catch (Exception ex)
-            {
-                
-            }
-            
-                
-
-        }
+                     }
+                catch (Exception ex)
+                    {
+                    }
+           }
         }
   
         private void FrmExcel_Load(object sender, EventArgs e)
@@ -540,7 +535,13 @@ namespace CapaPresentacion
                    this.grabarloteBUIELEC();
                    }
            }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
+
+    }
 
 
 
