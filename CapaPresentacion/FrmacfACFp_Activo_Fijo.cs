@@ -1894,6 +1894,16 @@ namespace CapaPresentacion
             //tabControl1.SelectedTab = tabPage2;
             }
         }
+
+        private void dtpACFfincorporacion1_ValueChanged(object sender, EventArgs e)
+        {
+            this.dtpACFfincorporacion.Text = this.dtpACFfincorporacion1.Text;
+        }
+
+        private void dtpACFfmovimiento1_ValueChanged(object sender, EventArgs e)
+        {
+            this.dtpACFfmovimiento.Text = this.dtpACFfmovimiento1.Text;
+        }
     }
 }
 //-------------------------------------------------------------------
