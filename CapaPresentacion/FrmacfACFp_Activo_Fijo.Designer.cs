@@ -55,7 +55,6 @@
             this.txtACFdescripcion = new System.Windows.Forms.TextBox();
             this.txtACFid = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.dtpACFfincorporacion = new System.Windows.Forms.DateTimePicker();
             this.textEmpresa = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -219,8 +218,8 @@
             this.txtACFid_Padre = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textDoc0 = new System.Windows.Forms.TextBox();
             this.textDocO = new System.Windows.Forms.TextBox();
+            this.textDoc0 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.textProveedor = new System.Windows.Forms.TextBox();
             this.dtpACFfechaordencompra = new System.Windows.Forms.DateTimePicker();
@@ -242,7 +241,6 @@
             this.textMotivoM = new System.Windows.Forms.TextBox();
             this.textCCf = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.dtpACFfmovimiento = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.textUnidad = new System.Windows.Forms.TextBox();
@@ -290,6 +288,8 @@
             this.Anula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Padre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.epError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.dtpACFfincorporacion = new System.Windows.Forms.TextBox();
+            this.dtpACFfincorporacion1 = new System.Windows.Forms.DateTimePicker();
             this.cboSEGMENT = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboBUKRS = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cmbACFid_Padre = new MultiColumnComboBoxDemo.MultiColumnComboBox();
@@ -312,6 +312,8 @@
             this.cboANLKL = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cbocrp = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboPERNR = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.dtpACFfmovimiento = new System.Windows.Forms.TextBox();
+            this.dtpACFfmovimiento1 = new System.Windows.Forms.DateTimePicker();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.tabPage6.SuspendLayout();
@@ -606,16 +608,6 @@
             this.label18.Size = new System.Drawing.Size(157, 17);
             this.label18.TabIndex = 10;
             this.label18.Text = "Fecha de Incorporacion";
-            // 
-            // dtpACFfincorporacion
-            // 
-            this.dtpACFfincorporacion.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpACFfincorporacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpACFfincorporacion.Location = new System.Drawing.Point(204, 188);
-            this.dtpACFfincorporacion.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpACFfincorporacion.Name = "dtpACFfincorporacion";
-            this.dtpACFfincorporacion.Size = new System.Drawing.Size(185, 22);
-            this.dtpACFfincorporacion.TabIndex = 152;
             // 
             // textEmpresa
             // 
@@ -2336,17 +2328,6 @@
             this.label25.TabIndex = 179;
             this.label25.Text = "Cód. de documento";
             // 
-            // textDoc0
-            // 
-            this.textDoc0.BackColor = System.Drawing.Color.Lavender;
-            this.textDoc0.Location = new System.Drawing.Point(223, 105);
-            this.textDoc0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textDoc0.Name = "textDoc0";
-            this.textDoc0.ReadOnly = true;
-            this.textDoc0.Size = new System.Drawing.Size(163, 22);
-            this.textDoc0.TabIndex = 172;
-            this.textDoc0.TabStop = false;
-            // 
             // textDocO
             // 
             this.textDocO.BackColor = System.Drawing.Color.Lavender;
@@ -2357,6 +2338,17 @@
             this.textDocO.Size = new System.Drawing.Size(163, 22);
             this.textDocO.TabIndex = 177;
             this.textDocO.TabStop = false;
+            // 
+            // textDoc0
+            // 
+            this.textDoc0.BackColor = System.Drawing.Color.Lavender;
+            this.textDoc0.Location = new System.Drawing.Point(223, 105);
+            this.textDoc0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textDoc0.Name = "textDoc0";
+            this.textDoc0.ReadOnly = true;
+            this.textDoc0.Size = new System.Drawing.Size(163, 22);
+            this.textDoc0.TabIndex = 172;
+            this.textDoc0.TabStop = false;
             // 
             // label42
             // 
@@ -2526,11 +2518,12 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.groupBox6.Controls.Add(this.dtpACFfmovimiento1);
+            this.groupBox6.Controls.Add(this.dtpACFfmovimiento);
             this.groupBox6.Controls.Add(this.textMotivoM);
             this.groupBox6.Controls.Add(this.cboMVMid);
             this.groupBox6.Controls.Add(this.cboKOSTL);
             this.groupBox6.Controls.Add(this.label36);
-            this.groupBox6.Controls.Add(this.dtpACFfmovimiento);
             this.groupBox6.Controls.Add(this.label14);
             this.groupBox6.Controls.Add(this.textCCf);
             this.groupBox6.Controls.Add(this.label38);
@@ -2598,16 +2591,6 @@
             this.label36.Size = new System.Drawing.Size(197, 17);
             this.label36.TabIndex = 185;
             this.label36.Text = "Cód. de Motivo de Movimiento";
-            // 
-            // dtpACFfmovimiento
-            // 
-            this.dtpACFfmovimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpACFfmovimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpACFfmovimiento.Location = new System.Drawing.Point(210, 340);
-            this.dtpACFfmovimiento.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpACFfmovimiento.Name = "dtpACFfmovimiento";
-            this.dtpACFfmovimiento.Size = new System.Drawing.Size(185, 22);
-            this.dtpACFfmovimiento.TabIndex = 186;
             // 
             // label14
             // 
@@ -2899,11 +2882,12 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.groupBox1.Controls.Add(this.dtpACFfincorporacion1);
+            this.groupBox1.Controls.Add(this.dtpACFfincorporacion);
             this.groupBox1.Controls.Add(this.txtACFobservacion);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.textCRP);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.dtpACFfincorporacion);
             this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label32);
             this.groupBox1.Controls.Add(this.label24);
@@ -3096,6 +3080,25 @@
             // epError
             // 
             this.epError.ContainerControl = this;
+            // 
+            // dtpACFfincorporacion
+            // 
+            this.dtpACFfincorporacion.Location = new System.Drawing.Point(204, 188);
+            this.dtpACFfincorporacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpACFfincorporacion.Name = "dtpACFfincorporacion";
+            this.dtpACFfincorporacion.Size = new System.Drawing.Size(141, 22);
+            this.dtpACFfincorporacion.TabIndex = 191;
+            // 
+            // dtpACFfincorporacion1
+            // 
+            this.dtpACFfincorporacion1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfincorporacion1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfincorporacion1.Location = new System.Drawing.Point(369, 186);
+            this.dtpACFfincorporacion1.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpACFfincorporacion1.Name = "dtpACFfincorporacion1";
+            this.dtpACFfincorporacion1.Size = new System.Drawing.Size(20, 22);
+            this.dtpACFfincorporacion1.TabIndex = 192;
+            this.dtpACFfincorporacion1.ValueChanged += new System.EventHandler(this.dtpACFfincorporacion1_ValueChanged);
             // 
             // cboSEGMENT
             // 
@@ -3517,6 +3520,25 @@
             this.cboPERNR.Size = new System.Drawing.Size(185, 23);
             this.cboPERNR.TabIndex = 181;
             // 
+            // dtpACFfmovimiento
+            // 
+            this.dtpACFfmovimiento.Location = new System.Drawing.Point(205, 340);
+            this.dtpACFfmovimiento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpACFfmovimiento.Name = "dtpACFfmovimiento";
+            this.dtpACFfmovimiento.Size = new System.Drawing.Size(155, 22);
+            this.dtpACFfmovimiento.TabIndex = 191;
+            // 
+            // dtpACFfmovimiento1
+            // 
+            this.dtpACFfmovimiento1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpACFfmovimiento1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpACFfmovimiento1.Location = new System.Drawing.Point(367, 340);
+            this.dtpACFfmovimiento1.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpACFfmovimiento1.Name = "dtpACFfmovimiento1";
+            this.dtpACFfmovimiento1.Size = new System.Drawing.Size(28, 22);
+            this.dtpACFfmovimiento1.TabIndex = 192;
+            this.dtpACFfmovimiento1.ValueChanged += new System.EventHandler(this.dtpACFfmovimiento1_ValueChanged);
+            // 
             // FrmacfACFp_Activo_Fijo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -3592,7 +3614,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripButton toolStripImportar;
         private System.Windows.Forms.ToolStripButton toolStripImagen;
-        private System.Windows.Forms.DateTimePicker dtpACFfincorporacion;
         private System.Windows.Forms.Label label18;
         private MultiColumnComboBoxDemo.MultiColumnComboBox cboBUKRS;
         private System.Windows.Forms.TextBox textEmpresa;
@@ -3837,7 +3858,6 @@
         private MultiColumnComboBoxDemo.MultiColumnComboBox cboKOSTL;
         private System.Windows.Forms.TextBox textCCf;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.DateTimePicker dtpACFfmovimiento;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TextBox txtACFobservacion;
@@ -3850,5 +3870,9 @@
         private System.Windows.Forms.TextBox txtACFanlue;
         private System.Windows.Forms.TextBox textObj;
         private MultiColumnComboBoxDemo.MultiColumnComboBox txtOBJid_objeto;
+        private System.Windows.Forms.TextBox dtpACFfincorporacion;
+        private System.Windows.Forms.DateTimePicker dtpACFfincorporacion1;
+        private System.Windows.Forms.DateTimePicker dtpACFfmovimiento1;
+        private System.Windows.Forms.TextBox dtpACFfmovimiento;
     }
 }

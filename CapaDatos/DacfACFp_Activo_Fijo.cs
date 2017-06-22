@@ -843,7 +843,14 @@ namespace CapaDatos
             SqlParameter ParACFfincorporacion = new SqlParameter();
             ParACFfincorporacion.ParameterName = "@dtACFfincorporacion";
             ParACFfincorporacion.SqlDbType = SqlDbType.DateTime;
-            ParACFfincorporacion.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfincorporacion);
+            if (string.IsNullOrWhiteSpace(acfACFp_Activo_Fijo.ACFfincorporacion))
+            {
+                ParACFfincorporacion.Value = DBNull.Value;
+            }
+            else
+            {
+                ParACFfincorporacion.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfincorporacion);
+            }
             SqlCmd.Parameters.Add(ParACFfincorporacion);
             //
             SqlParameter ParACFfcapitalizacion = new SqlParameter();
@@ -1578,7 +1585,15 @@ namespace CapaDatos
                 SqlParameter ParACFfmovimiento = new SqlParameter();
                 ParACFfmovimiento.ParameterName = "@dtACFfmovimiento";
                 ParACFfmovimiento.SqlDbType = SqlDbType.DateTime;
-                ParACFfmovimiento.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfmovimiento);
+                if (string.IsNullOrWhiteSpace(acfACFp_Activo_Fijo.ACFfmovimiento))
+                {
+                    ParACFfmovimiento.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParACFfmovimiento.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfmovimiento);
+                }
+
                 SqlCmd.Parameters.Add(ParACFfmovimiento);
 
                 //
@@ -1597,9 +1612,15 @@ namespace CapaDatos
                 SqlParameter ParACFfincorporacion = new SqlParameter();
                 ParACFfincorporacion.ParameterName = "@dtACFfincorporacion";
                 ParACFfincorporacion.SqlDbType = SqlDbType.DateTime;
-                ParACFfincorporacion.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfincorporacion);
-                SqlCmd.Parameters.Add(ParACFfincorporacion);
-                //
+                if (string.IsNullOrWhiteSpace(acfACFp_Activo_Fijo.ACFfincorporacion))
+                {
+                    ParACFfincorporacion.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParACFfincorporacion.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfincorporacion);
+                }
+                SqlCmd.Parameters.Add(ParACFfincorporacion);                //
                 SqlParameter ParACFfcapitalizacion = new SqlParameter();
                 ParACFfcapitalizacion.ParameterName = "@decACFfcapitalizacion";
                 ParACFfcapitalizacion.SqlDbType = SqlDbType.Decimal;
