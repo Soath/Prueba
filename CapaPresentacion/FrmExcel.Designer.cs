@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtHoja = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -36,35 +37,33 @@
             this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.chkEliminar = new System.Windows.Forms.CheckBox();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
             // 
             // txtHoja
             // 
-            this.txtHoja.Location = new System.Drawing.Point(185, 531);
-            this.txtHoja.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHoja.Location = new System.Drawing.Point(139, 431);
             this.txtHoja.Multiline = true;
             this.txtHoja.Name = "txtHoja";
-            this.txtHoja.Size = new System.Drawing.Size(356, 24);
+            this.txtHoja.Size = new System.Drawing.Size(268, 20);
             this.txtHoja.TabIndex = 1;
             this.txtHoja.Text = "sap";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 540);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(29, 439);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 17);
+            this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre de la hoja";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(579, 531);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(434, 431);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "Importar";
             this.button1.UseVisualStyleBackColor = true;
@@ -72,10 +71,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(707, 531);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(530, 431);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
             this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = true;
@@ -90,13 +88,13 @@
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Seleccionar});
-            this.dataListado.Location = new System.Drawing.Point(12, 62);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataListado.Location = new System.Drawing.Point(9, 50);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataListado.Size = new System.Drawing.Size(1295, 398);
+            this.dataListado.Size = new System.Drawing.Size(971, 323);
             this.dataListado.TabIndex = 163;
             // 
             // Seleccionar
@@ -109,10 +107,10 @@
             // chkEliminar
             // 
             this.chkEliminar.AutoSize = true;
-            this.chkEliminar.Location = new System.Drawing.Point(12, 23);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkEliminar.Location = new System.Drawing.Point(9, 19);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkEliminar.Name = "chkEliminar";
-            this.chkEliminar.Size = new System.Drawing.Size(104, 21);
+            this.chkEliminar.Size = new System.Drawing.Size(82, 17);
             this.chkEliminar.TabIndex = 162;
             this.chkEliminar.Text = "Seleccionar";
             this.chkEliminar.UseVisualStyleBackColor = true;
@@ -121,18 +119,21 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(795, 27);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotal.Location = new System.Drawing.Point(596, 22);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(65, 17);
+            this.lblTotal.Size = new System.Drawing.Size(49, 13);
             this.lblTotal.TabIndex = 164;
             this.lblTotal.Text = "Registro:";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FrmExcel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1319, 594);
+            this.ClientSize = new System.Drawing.Size(963, 483);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.dataListado);
             this.Controls.Add(this.chkEliminar);
@@ -140,7 +141,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtHoja);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmExcel";
             this.Text = "FrmExcel";
             this.Load += new System.EventHandler(this.FrmExcel_Load);
@@ -160,5 +160,6 @@
         private System.Windows.Forms.CheckBox chkEliminar;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
+        private System.Windows.Forms.Timer timer1;
     }
 }

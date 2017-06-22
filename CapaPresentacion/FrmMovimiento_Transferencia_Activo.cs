@@ -132,7 +132,22 @@ namespace CapaPresentacion
         }
         private void Control_Click_Agregar(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Top();             this.BotonAgregar();
+=======
+            // dataListado.Rows.Clear();
+            if (dataListado.Rows.Count > 1)
+            {
+                for (int i = dataListado.Rows.Count - 1; i >= 0; i--)
+                {
+                    dataListado.Rows.RemoveAt(i);
+                }
+            }
+
+
+
+            this.BotonAgregar();
+>>>>>>> origin/master
             //dataListado.DataSource = null;
             //dataListado.ColumnAdded
             //dataListado.Columns.Add("Column1", "ACFid");
