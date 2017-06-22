@@ -2074,22 +2074,24 @@ namespace CapaDatos
                 SqlCmd.CommandText = "usp_U_acfACFp_Activo_Fijo_Depreciacion";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
                 //
-                SqlParameter ParACFfincorporacion = new SqlParameter();
-                ParACFfincorporacion.ParameterName = "@dtACFfincorporacion";
-                ParACFfincorporacion.SqlDbType = SqlDbType.DateTime;
-                ParACFfincorporacion.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfincorporacion);
-                //ParACFfincorporacion.Value = acfACFp_Activo_Fijo.ACFfincorporacion;
-                SqlCmd.Parameters.Add(ParACFfincorporacion);
-                // sACFfechanotaingreso - se usa porque no podemos tomar 2veces la fecha de incorporacion
-                SqlParameter ParACFfechanotaingreso = new SqlParameter();
-                ParACFfechanotaingreso.ParameterName = "@sACFfechanotaingreso";
-                ParACFfechanotaingreso.SqlDbType = SqlDbType.DateTime;
-                ParACFfechanotaingreso.Value = Convert.ToDateTime(acfACFp_Activo_Fijo.ACFfechanotaingreso);
-                //ParACFfechanotaingreso.Value = acfACFp_Activo_Fijo.ACFfechanotaingreso;
-                SqlCmd.Parameters.Add(ParACFfechanotaingreso);
+                // iACFid - se solo para procesar un dato de mes
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                //ParACFid.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFid);
+                ParACFid.Value = acfACFp_Activo_Fijo.ACFid;
+                SqlCmd.Parameters.Add(ParACFid);
+                //
+                // iACFvutiltribanio - se solo para procesar un dato de año
+                SqlParameter ParACFvutiltribanio = new SqlParameter();
+                ParACFvutiltribanio.ParameterName = "@iACFvutiltribanio";
+                ParACFvutiltribanio.SqlDbType = SqlDbType.Int;
+                //ParACFvutiltribanio.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACFvutiltribanio);
+                ParACFvutiltribanio.Value = acfACFp_Activo_Fijo.ACFvutiltribanio;
+                SqlCmd.Parameters.Add(ParACFvutiltribanio);
                 //
                 //Ejecutamos nuestro comando
-                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Modifico el Registro";
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO existen Registros";
             }
             catch (Exception ex)
             {

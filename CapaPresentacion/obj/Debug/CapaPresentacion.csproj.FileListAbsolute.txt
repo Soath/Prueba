@@ -351,3 +351,4 @@ C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\RdlCompile.com
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\jacho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache

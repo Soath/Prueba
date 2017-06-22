@@ -420,13 +420,13 @@ namespace CapaNegocio
         //Metodo Editar que llama al metodo Editar del formulario de depreciacion 
         //de la CapaDatos
         public static string depreciacion(
-         string dtACFfincorporacion,  // Depreciacion contable NIFF
-         string sACFfechanotaingreso // Depreciacion tributaria LIR -- Se esta usando porque solo habia una fecha de incorporacion
+         string ACFid, // iACFid - se solo para procesar un dato de mes
+         string ACFvutiltribanio // iACFvutiltribanio - se solo para procesar un dato de año
          )
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
-            Obj.ACFfincorporacion = dtACFfincorporacion;
-            Obj.ACFfechanotaingreso = sACFfechanotaingreso;
+            Obj.ACFid = ACFid;
+            Obj.ACFvutiltribanio = ACFvutiltribanio;
             return Obj.depreciacion(Obj);
         }
 

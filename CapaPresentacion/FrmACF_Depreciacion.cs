@@ -28,60 +28,41 @@ namespace CapaPresentacion
             MessageBox.Show(mensaje, "Control  del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string fecha1, fecha2;
-            int proceso = 0;
-            if (checkBox1.Checked == true)   { proceso = 1; };
-            if (checkBox2.Checked == true)   { proceso = 2; };
-            if ((checkBox1.Checked == true) && (checkBox2.Checked == true) )
-                                             { proceso = 3; };
-            switch (proceso)
-            {                
-                case 1:
-                    MessageBox.Show("Proceso de Depreciaciación - Contable NIIF");
-                    fecha1 = dateTimePicker1.Text;
-                    fecha2 = "1900/01/01";
-                    break;
-                case 2:
-                    MessageBox.Show("Proceso de Depreciaciación - Tributaria LIR");
-                    fecha1 = "1900/01/01";
-                    fecha2 = dateTimePicker1.Text;
-                    break;
-                case 3:
-                    MessageBox.Show("Proceso de Depreciaciación - Contable y Tributaria");
-                    fecha1 = dateTimePicker1.Text;
-                    fecha2 = dateTimePicker1.Text;
-                    break;
-                default:
-                    MessageBox.Show("Debe Elegir el Tipo Proceso de Depreciaciación");
-                    fecha1 = "1900/01/01";
-                    fecha2 = "1900/01/01";
-                    break;
-            };
-            //ejecutamos el procedimiento almacenado
-            string Rta = string.Empty;
-            try
+       private void button1_Click(object sender, EventArgs e)
+       {
+            var cadena = textBox1.Text;
+            if (cadena.Length < 4)
             {
-                Rta = NacfACFp_Activo_Fijo.depreciacion(
-                      fecha1
-                    , fecha2
-                    );
-
-                if (Rta.Equals("OK"))
-                {
-                    this.timer1.Start();
-                    this.MensajeOk("Regsitro Actualizado Correctamente");
-                    button1.Enabled = false;
-                }
-                else
-                {
-                    this.MensajeError("Error al Actualizar Registro " + Rta);
-                }
+                MessageBox.Show("La fecha debe contener 4 caracteres", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message + ex.StackTrace);
+                //ejecutamos el procedimiento almacenado
+                string Rta = string.Empty;
+                try
+                {
+                    int x = comboBox1.SelectedIndex +1;
+                    MessageBox.Show(Convert.ToString(x));
+                    Rta = NacfACFp_Activo_Fijo.depreciacion(
+                          Convert.ToString(x)
+                        , textBox1.Text
+                        );
+            
+                    if (Rta.Equals("OK"))
+                    {
+                        this.timer1.Start();
+                        this.MensajeOk("Regsitro Actualizado Correctamente");
+                        button1.Enabled = false;
+                    }
+                    else
+                    {
+                        this.MensajeError("Error: " + Rta);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message + ex.StackTrace);
+                }
             }
         }
 
@@ -93,6 +74,21 @@ namespace CapaPresentacion
         private void timer1_Tick(object sender, EventArgs e)
         {            
             this.progressBar1.Increment(1);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {            
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            textBox1.MaxLength = 4;
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
         }
     }
 }
