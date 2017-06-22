@@ -207,70 +207,70 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>2.10841cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.01875cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.36271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.84383cm</Width>
+              <Width>1.33625cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -289,7 +289,7 @@
                               <Value>Zona : </Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -297,7 +297,7 @@
                               <Value>=Fields!Zona.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -306,10 +306,7 @@
                       </Paragraphs>
                       <rd:DefaultName>Textbox252</rd:DefaultName>
                       <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
+                        <Border />
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -523,8 +520,7 @@
                       <rd:DefaultName>Textbox273</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
+                          <Style>None</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -532,6 +528,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -551,7 +548,7 @@
                               <Value>CUENTA</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -584,7 +581,7 @@
                               <Value>SALDO INICIAL</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -617,7 +614,7 @@
                               <Value>Ajustes</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -650,7 +647,7 @@
                               <Value>Transf</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -669,7 +666,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -684,7 +680,7 @@
                               <Value>Enero</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -717,7 +713,7 @@
                               <Value>Febrero</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -750,7 +746,7 @@
                               <Value>Marzo</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -783,7 +779,7 @@
                               <Value>Abril</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -816,7 +812,7 @@
                               <Value>Mayo</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -849,7 +845,7 @@
                               <Value>Junio</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -882,7 +878,7 @@
                               <Value>Julio</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -915,7 +911,7 @@
                               <Value>Agosto</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -948,7 +944,7 @@
                               <Value>Setiembre</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -981,7 +977,7 @@
                               <Value>Octubre</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -994,7 +990,7 @@
                               <Value />
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -1027,7 +1023,7 @@
                               <Value>Noviembre</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -1060,7 +1056,7 @@
                               <Value>Diciembre</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -1093,7 +1089,7 @@
                               <Value>Total</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -1126,7 +1122,7 @@
                               <Value>Retiros</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -1159,7 +1155,7 @@
                               <Value>Ajustes</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -1192,7 +1188,7 @@
                               <Value>Transf</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -1225,7 +1221,7 @@
                               <Value>Total</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -1258,7 +1254,7 @@
                               <Value>SALDO FINAL</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -2225,21 +2221,21 @@
                               <Value>=Fields!CuentaContable.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                             <TextRun>
                               <Value xml:space="preserve"> </Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                             <TextRun>
                               <Value>=Fields!DescripcióndeCuenta.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2272,7 +2268,7 @@
                               <Value>=Fields!SaldoInicial.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2305,7 +2301,7 @@
                               <Value>=Fields!Ajustesi.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2338,7 +2334,7 @@
                               <Value>=Fields!Transferenciai.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2371,7 +2367,7 @@
                               <Value>=Fields!Enero.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2404,7 +2400,7 @@
                               <Value>=Fields!Febrero.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2437,7 +2433,7 @@
                               <Value>=Fields!Marzo.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2470,7 +2466,7 @@
                               <Value>=Fields!Abril.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2503,7 +2499,7 @@
                               <Value>=Fields!Mayo.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2536,7 +2532,7 @@
                               <Value>=Fields!Junio.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2569,7 +2565,7 @@
                               <Value>=Fields!Julio.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2602,7 +2598,7 @@
                               <Value>=Fields!Agosto.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2635,7 +2631,7 @@
                               <Value>=Fields!Setiembre.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2668,7 +2664,7 @@
                               <Value>=Fields!Octubre.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2701,7 +2697,7 @@
                               <Value>=Fields!Noviembre.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2734,7 +2730,7 @@
                               <Value>=Fields!Diciembre.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2767,7 +2763,7 @@
                               <Value>=Fields!Total.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2800,7 +2796,7 @@
                               <Value>=Fields!Retiros.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2833,7 +2829,7 @@
                               <Value>=Fields!Ajustesf.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2863,10 +2859,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Transferenciaf.Value</Value>
+                              <Value>=Trim(Fields!Transferenciaf.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2896,10 +2892,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Total.Value</Value>
+                              <Value>=Trim(Fields!Total.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2932,7 +2928,7 @@
                               <Value>=Fields!SaldoFinal.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3092,7 +3088,7 @@
                               <Value>=Sum(Fields!Enero.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3125,7 +3121,7 @@
                               <Value>=Sum(Fields!Febrero.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3158,7 +3154,7 @@
                               <Value>=Sum(Fields!Marzo.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3191,7 +3187,7 @@
                               <Value>=Sum(Fields!Abril.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3224,7 +3220,7 @@
                               <Value>=Sum(Fields!Mayo.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3257,7 +3253,7 @@
                               <Value>=Sum(Fields!Junio.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3290,7 +3286,7 @@
                               <Value>=Sum(Fields!Julio.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3323,7 +3319,7 @@
                               <Value>=Sum(Fields!Agosto.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3356,7 +3352,7 @@
                               <Value>=Sum(Fields!Setiembre.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3389,7 +3385,7 @@
                               <Value>=Sum(Fields!Octubre.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3422,7 +3418,7 @@
                               <Value>=Sum(Fields!Noviembre.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3455,7 +3451,7 @@
                               <Value>=Sum(Fields!Diciembre.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>6pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -5059,7 +5055,7 @@
         <Top>4.53707cm</Top>
         <Left>0.33867cm</Left>
         <Height>4.53867cm</Height>
-        <Width>40.56426cm</Width>
+        <Width>30.3549cm</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -5068,7 +5064,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>3.57312in</Height>
+    <Height>3.57313in</Height>
     <Style />
   </Body>
   <Width>23.81488in</Width>
