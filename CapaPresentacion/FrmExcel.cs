@@ -109,7 +109,7 @@ namespace CapaPresentacion
                               "0",//UBEID
                               //Convert.ToString(row.Cells[34].Value),//ACFfechacomprobante
                               "0",  //V_T087U_ANLUE
-                              "", //ACFtipo_activo
+                              Convert.ToString(row.Cells[2].Value), //ACFtipo_activo
                               "",  //ACFAnulado 
                               "0", // ACFid_Padre
                                Convert.ToString(row.Cells[36].Value), // ACFtipo_orden
@@ -340,7 +340,7 @@ namespace CapaPresentacion
                                 "0",//UBEID
                                     //Convert.ToString(row.Cells[34].Value),//ACFfechacomprobante
                                 "0",  //V_T087U_ANLUE
-                                "", //ACFtipo_activo
+                                 Convert.ToString(row.Cells[2].Value), //ACFtipo_activo
                                 "",  //ACFAnulado 
                                 "0", // ACFid_Padre
                                  Convert.ToString(row.Cells[36].Value), // ACFtipo_orden

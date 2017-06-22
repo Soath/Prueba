@@ -132,15 +132,10 @@ namespace CapaPresentacion
         }
         private void Control_Click_Agregar(object sender, EventArgs e)
         {
-            this.BotonAgregar();
+            Top();             this.BotonAgregar();
             //dataListado.DataSource = null;
             //dataListado.ColumnAdded
             //dataListado.Columns.Add("Column1", "ACFid");
-            //dataListado.Columns.Add("Column2", "ACFdescripcion");
-            //dataListado.Columns.Add("Column3", "ACFfincorporacion");
-            //dataListado.Columns.Add("Column4", "ACFfechanotaingreso");
-            //dataListado.Columns.Add("Column5", "ACFordencompra");
-            //dataListado.Columns.Add("Column6", "ACFtipo_activo");
         }
         private void Control_Click_Editar(object sender, EventArgs e)
         {                        
@@ -484,9 +479,7 @@ namespace CapaPresentacion
             Activo = 2;
             Graba = 2;
             this.Botones(false);
-            EstadoText(this.Controls, false, true);
-            
-            // tabControl1.SelectedTab = tabPage2;            
+            EstadoText(this.Controls, false, true);                           
             this.CargaDatos();
             ControlEditar(false);
         }
@@ -505,8 +498,7 @@ namespace CapaPresentacion
                 if (Graba == 2) { this.ActualizaRegistro(); }
                 Graba = 0;
                 this.BotonCancelar();
-                this.BotonRefrescar();
-
+                this.BotonRefrescar();   
             }
             else
                 this.MensajeOk(MensError);
@@ -525,10 +517,8 @@ namespace CapaPresentacion
             //           {	
             //              DataGridViewCheckBoxCell ChkEliminar = (DataGridViewCheckBoxCell)dataListado.Rows[e.RowIndex].Cells["Eliminar"];	
             //             ChkEliminar.Value = !Convert.ToBoolean(ChkEliminar.Value);	
-            //          }	
-
-        }
-
+            //          }	                        
+        }                                                  
         public void LimpiaCampos() { }
         private void CargaDatos()
         {
