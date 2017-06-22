@@ -1904,6 +1904,47 @@ namespace CapaPresentacion
         {
             this.dtpACFfmovimiento.Text = this.dtpACFfmovimiento1.Text;
         }
+
+        private void tabPage0_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpACFfechaordencompra1_ValueChanged(object sender, EventArgs e)
+        {
+            this.dtpACFfechaordencompra.Text = this.dtpACFfechaordencompra1.Text;
+
+        }
+
+        private void dtpACFfechacomprobante1_ValueChanged(object sender, EventArgs e)
+        {
+            this.dtpACFfechacomprobante.Text = this.dtpACFfechacomprobante1.Text;
+
+        }
+
+        private void dtpACFfechanotaingreso1_ValueChanged(object sender, EventArgs e)
+        {
+            this.dtpACFfechanotaingreso.Text = this.dtpACFfechanotaingreso1.Text;
+
+        }
+
+        private void dtpCRSvehinscripcion1_ValueChanged(object sender, EventArgs e)
+        {
+            this.dtpCRSvehinscripcion.Text = this.dtpCRSvehinscripcion1.Text;
+
+        }
+
+        private void dtpCRSfinscpredio1_ValueChanged(object sender, EventArgs e)
+        {
+            this.dtpCRSfinscpredio.Text = this.dtpCRSfinscpredio1.Text;
+
+        }
+
+        private void dtpCRSfadqpredio1_ValueChanged(object sender, EventArgs e)
+        {
+            this.dtpCRSfadqpredio.Text = this.dtpCRSfadqpredio1.Text;
+
+        }
     }
 }
 //-------------------------------------------------------------------

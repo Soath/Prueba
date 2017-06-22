@@ -604,18 +604,19 @@ namespace CapaDatos
 
         //METODO INSERTAR 
         public string Insertar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)
-    {
-        string rpta = "";
-        SqlConnection SqlCon = new SqlConnection();
-		try {
-             //Código
+        {
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
                 SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCon.Open();
                 //Establecer el Comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "usp_I_acfCRSt_Caracteristicas";
-                SqlCmd.CommandType = CommandType.StoredProcedure;                            
+                SqlCmd.CommandType = CommandType.StoredProcedure;
                 //
                 SqlParameter ParACFid = new SqlParameter();
                 ParACFid.ParameterName = "@iACFid";
@@ -690,7 +691,7 @@ namespace CapaDatos
                 SqlCmd.Parameters.Add(ParCRSvehexpediente);
                 //
 
-              
+
                 SqlParameter ParCRSvehinscripcion = new SqlParameter();
                 ParCRSvehinscripcion.ParameterName = "@dtCRSvehinscripcion";
                 ParCRSvehinscripcion.SqlDbType = SqlDbType.DateTime;
@@ -1028,10 +1029,10 @@ namespace CapaDatos
 
                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
 
-			
-			
-		}
-	catch (Exception ex)
+
+
+            }
+            catch (Exception ex)
             {
                 rpta = ex.Message;
             }
@@ -1040,7 +1041,8 @@ namespace CapaDatos
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
             return rpta;
-	}
+        }
+
 
         //Metodo Insertar Excel a DB_Caracter{isticas
         public string SAPIMPORT(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)
@@ -1458,12 +1460,12 @@ namespace CapaDatos
 
 
         //METODO EDITAR
-	public string Editar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas) {
-		string rpta = "";
+        public string Editar(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)
+        {
+            string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
             try
             {
-                
                 //Código
                 SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCon.Open();
@@ -1545,10 +1547,19 @@ namespace CapaDatos
                 ParCRSvehexpediente.Value = acfCRSt_Caracteristicas.CRSvehexpediente;
                 SqlCmd.Parameters.Add(ParCRSvehexpediente);
                 //
+
+
                 SqlParameter ParCRSvehinscripcion = new SqlParameter();
                 ParCRSvehinscripcion.ParameterName = "@dtCRSvehinscripcion";
                 ParCRSvehinscripcion.SqlDbType = SqlDbType.DateTime;
-                ParCRSvehinscripcion.Value = DBNull.Value; //Convert.ToDateTime(acfCRSt_Caracteristicas.CRSvehinscripcion);
+                if (string.IsNullOrWhiteSpace(acfCRSt_Caracteristicas.CRSvehinscripcion))
+                {
+                    ParCRSvehinscripcion.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehinscripcion.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSvehinscripcion);
+                }
                 SqlCmd.Parameters.Add(ParCRSvehinscripcion);
                 //
                 SqlParameter ParCRSvehclase = new SqlParameter();
@@ -1800,7 +1811,14 @@ namespace CapaDatos
                 SqlParameter ParCRSfinscpredio = new SqlParameter();
                 ParCRSfinscpredio.ParameterName = "@dtCRSfinscpredio";
                 ParCRSfinscpredio.SqlDbType = SqlDbType.DateTime;
-                ParCRSfinscpredio.Value = DBNull.Value; //Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfinscpredio);
+                if (string.IsNullOrWhiteSpace(acfCRSt_Caracteristicas.CRSfinscpredio))
+                {
+                    ParCRSfinscpredio.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSfinscpredio.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfinscpredio);
+                }
                 SqlCmd.Parameters.Add(ParCRSfinscpredio);
                 //
                 SqlParameter ParCRSficharegistral = new SqlParameter();
@@ -1848,7 +1866,14 @@ namespace CapaDatos
                 SqlParameter ParCRSfadqpredio = new SqlParameter();
                 ParCRSfadqpredio.ParameterName = "@dtCRSfadqpredio";
                 ParCRSfadqpredio.SqlDbType = SqlDbType.DateTime;
-                ParCRSfadqpredio.Value = DBNull.Value; // Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfadqpredio);
+                if (string.IsNullOrWhiteSpace(acfCRSt_Caracteristicas.CRSfadqpredio))
+                {
+                    ParCRSfadqpredio.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSfadqpredio.Value = Convert.ToDateTime(acfCRSt_Caracteristicas.CRSfadqpredio);
+                }
                 SqlCmd.Parameters.Add(ParCRSfadqpredio);
                 //
                 SqlParameter ParCRSobservacion = new SqlParameter();
@@ -1856,14 +1881,15 @@ namespace CapaDatos
                 ParCRSobservacion.SqlDbType = SqlDbType.VarChar;
                 ParCRSobservacion.Value = acfCRSt_Caracteristicas.CRSobservacion;
                 SqlCmd.Parameters.Add(ParCRSobservacion);
-
+                //
                 //Ejecutamos nuestro comando
 
-                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Actualizo el Registro";
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
 
 
-                }
-		catch (Exception ex)
+
+            }
+            catch (Exception ex)
             {
                 rpta = ex.Message;
             }
@@ -1871,8 +1897,8 @@ namespace CapaDatos
             {
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
-            return rpta; 
-	}
+            return rpta;
+        }
 
         //METODO Editar Sustitucion Mejora
         public string EditarSustitucionMejora(DacfCRSt_Caracteristicas acfCRSt_Caracteristicas)
