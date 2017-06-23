@@ -139,27 +139,16 @@ namespace CapaPresentacion
             }
         }
 
-        public void importarExcelca(DataGridView dgv, String nombreHoja, bool hasHeaders)
+        public void importarExcelca(String ruta,DataGridView dgv, String nombreHoja, bool hasHeaders)
         {
-            String ruta = "";
+            //String ruta = "";
             string conn;
             string HDR = hasHeaders ? "Yes" : "No";
+            
             try
             {
-                OpenFileDialog openfile1 = new OpenFileDialog();
-                openfile1.Filter = "Excel Files |*.*";
-                openfile1.Title = "Seleccione el archivo de Excel";
-                if (openfile1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    if (openfile1.FileName.Equals("") == false)
-                    {
-                        ruta = openfile1.FileName;
-                        // MessageBox.Show("Espere Mientras esta Cargando el Documento en Excel", "Atencion");
-                        MessageBoxTemporal.Show("Espere Mientras esta Cargando el Documento en Excel", "Atencion", 3, true);
-                    }
-                }
 
-                if (ruta.Substring(ruta.LastIndexOf('.')).ToLower() == ".xlsx")
+               if (ruta.Substring(ruta.LastIndexOf('.')).ToLower() == ".xlsx")
                     conn = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + ruta + ";Extended Properties=\"Excel 12.0;HDR=" + HDR + ";IMEX=0\"";
                 else
                     conn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + ruta + ";Extended Properties=\"Excel 8.0;HDR=" + HDR + ";IMEX=0\"";
@@ -174,7 +163,7 @@ namespace CapaPresentacion
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hoja no existente.");
+                MessageBox.Show(ex + "Hoja no existente.");
             }
         }
 

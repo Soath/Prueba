@@ -21,7 +21,101 @@ namespace CapaPresentacion
             InitializeComponent();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        public enum CurrentStatus
+        {
+            None,
+            Reset,
+            Loading,
+            Cancelled,
+            Success,
+            Busy
+        }
+
+        //used throughout the form to track application status
+        CurrentStatus processingStatus = CurrentStatus.None;
+
+        /// <summary>
+        /// changes the interface based on current status (processingStatus)
+        /// </summary>
+        void setFormControlsBasedOnStatus()
+        {
+            switch (processingStatus)
+            {
+                case CurrentStatus.None:
+                    break;
+                case CurrentStatus.Reset:
+                    toolStripAnterior.Enabled = true;
+                    lblLoadingStatus.Visible = false;
+                    lblLoadingStatus.Text = "Procesando...";
+                    pbLoadingGraphic.Visible = false;
+                    prgLoadingProgress.Value = 0;
+                    break;
+
+                case CurrentStatus.Loading:
+                    toolStripAnterior.Enabled = false;
+                    lblLoadingStatus.Visible = true;
+                    lblLoadingStatus.Text = "Procesnado...";
+                    pbLoadingGraphic.Visible = true;
+                    prgLoadingProgress.Value = 0;
+                    break;
+
+                case CurrentStatus.Cancelled:
+                    toolStripAnterior.Enabled = true;
+                    lblLoadingStatus.Visible = true;
+                    lblLoadingStatus.Text = "Cancelled";
+                    pbLoadingGraphic.Visible = false;
+                    prgLoadingProgress.Value = 0;
+                    break;
+
+                case CurrentStatus.Success:
+                    toolStripAnterior.Enabled = true;
+                    lblLoadingStatus.Visible = true;
+                    lblLoadingStatus.Text = "Finalizado!";
+                    pbLoadingGraphic.Visible = false;
+                    prgLoadingProgress.Value = 0;
+                    break;
+
+                case CurrentStatus.Busy:
+                    toolStripAnterior.Enabled = true;
+                    lblLoadingStatus.Visible = true;
+                    lblLoadingStatus.Text = "En proceso";
+                    pbLoadingGraphic.Visible = false;
+                    prgLoadingProgress.Value = 0;
+                    break;
+
+                default:
+                    break;
+            }
+
+        }
+
+        /// <summary>
+        /// see if the user wants to cancel the background worker
+        /// </summary>
+        /// <param name="worker">the worker</param>
+        /// <param name="e">worker status</param>
+        /// <returns>used to tell the caller to exit or not</returns>
+        bool isWorkerBeingCancelled(BackgroundWorker worker, DoWorkEventArgs e)
+        {
+            bool returnValue = false;
+
+            if (worker.CancellationPending == true)
+            {
+                e.Cancel = true;
+                returnValue = true;
+                processingStatus = CurrentStatus.Cancelled;
+            }
+
+            return returnValue;
+        }
+
+        /// <summary>
+        /// background worker processing step
+        /// </summary>
+        /// <param name="sender">worker instance</param>
+        /// <param name="e">current status</param>
+        private void Importar( )
         {            
             if (txtHoja.Text == string.Empty)
             {
@@ -33,8 +127,8 @@ namespace CapaPresentacion
 
                     string hoja;
                         hoja = txtHoja.Text;
-                        new Importar().importarExcelca(dataListado, hoja, true);
-
+                        new Importar().importarExcelca(this.textRuta.Text.Trim(), dataListado, hoja, true);
+                        lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
                      }
                 catch (Exception ex)
                     {
@@ -46,7 +140,18 @@ namespace CapaPresentacion
         {
             dataListado.AllowUserToAddRows = false;
         }
-        
+
+
+        private void BotonesIE(bool edo)
+        {
+            this.toolStripRefrescar.Visible = !edo;
+            this.toolStripAnterior.Visible = !edo;
+            this.toolStripAgregar.Visible = edo;
+            this.toolStripEditar.Visible = edo;
+            this.toolStripCancelar.Visible = edo;
+            this.toolStripSiguiente.Visible = edo;
+        }
+
         private void grabarseleACF()
         {
             try
@@ -71,7 +176,7 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[16].Value),//VNRid
                               Convert.ToString(row.Cells[4].Value), //ACFdescripcion
                               Convert.ToString(row.Cells[15].Value),//ACFfincorporacion
-                              // "", //ACFfcapitalizacion
+                              //"0", //ACFfcapitalizacion
                               Convert.ToString(row.Cells[43].Value), //ACFvutiltribanio
                               "0", //FORMULA ACFvutiltribdia
                               "0", // ACFvalortrib
@@ -87,10 +192,10 @@ namespace CapaPresentacion
                             //Convert.ToString(row.Cells[133].Value)  ,//Se trajo del excel de SAP ACFord44
                               "",//encontro ACFanlue
                               //"", //No se encontro ACFfactortrib
-                              //"", //No se encontro ACFfactorniif
+                               //No se encontro ACFfactorniif
                               Convert.ToString(row.Cells[11].Value), //ACFcuenta
                               "",//No se encontro ACFcuentadep
-                              "0",//No se encontro CMPid
+                              "00000",//No se encontro CMPid
                               "",//No se encontro ACFobservacion
                               Convert.ToString(row.Cells[30].Value), //LIFNR
                               Convert.ToString(row.Cells[35].Value),//ACFnotaingreso
@@ -114,11 +219,11 @@ namespace CapaPresentacion
                                                                                                                                                      
                         if (Rta.Equals("OK"))
                         {
-                            MessageBox.Show("Datos agregados");
+                            //MessageBox.Show("Datos agregados");
                         }
                         else
                         {
-                            MessageBox.Show("Datos No Agregados");
+                            //MessageBox.Show("Datos No Agregados");
                             break;
                         }
                     }
@@ -211,11 +316,11 @@ namespace CapaPresentacion
 
                         if (Rta.Equals("OK"))
                         {
-                            MessageBox.Show("Datos agregados");
+                            //MessageBox.Show("Datos agregados");
                         }
                         else
                         {
-                            MessageBox.Show("Datos No Agregados");
+                            //MessageBox.Show("Datos No Agregados");
                             break;
                         }
                     }
@@ -321,7 +426,7 @@ namespace CapaPresentacion
                                    //"", //No se encontro ACFfactorniif
                                 Convert.ToString(row.Cells[11].Value), //ACFcuenta
                                 "",//No se encontro ACFcuentadep
-                                "0",//No se encontro CMPid
+                                "00000",//No se encontro CMPid
                                 "",//No se encontro ACFobservacion
                                 Convert.ToString(row.Cells[30].Value), //LIFNR
                                 Convert.ToString(row.Cells[35].Value),//ACFnotaingreso
@@ -345,14 +450,16 @@ namespace CapaPresentacion
 
                     if (Rta.Equals("OK"))
                    {
-                       MessageBox.Show("Datos agregados");
+                       //MessageBox.Show("Datos agregados");
                    }
                    else
                    {
-                       MessageBox.Show("Datos No Agregados");
+                       //MessageBox.Show("Datos No Agregados");
                        break;
                    }
                 }
+                MessageBox.Show("Datos agregados");
+                
             }
             catch (Exception ex)
             {
@@ -439,14 +546,16 @@ namespace CapaPresentacion
 
                         if (Rta.Equals("OK"))
                         {
-                            MessageBox.Show("Datos agregados");
+                            //MessageBox.Show("Datos agregados");
                         }
                         else
                         {
-                            MessageBox.Show("Datos No Agregados");
+                            //MessageBox.Show("Datos No Agregados");
                             break;
                         }
-                    }                
+                    }
+                MessageBox.Show("Datos agregados");
+
             }
             catch (Exception ex)
             {
@@ -492,11 +601,11 @@ namespace CapaPresentacion
 
                         if (Rta.Equals("OK"))
                         {
-                            MessageBox.Show("Datos agregados");
+                            //MessageBox.Show("Datos agregados");
                         }
                         else
                         {
-                            MessageBox.Show("Datos No Agregados");
+                            //MessageBox.Show("Datos No Agregados");
                             break;
                         }
                     
@@ -506,6 +615,9 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.ToString());
             }
+            MessageBox.Show("Datos agregados");
+            this.Dispose();
+
         }
 
         private void chkEliminar_CheckedChanged_1(object sender, EventArgs e)
@@ -520,25 +632,139 @@ namespace CapaPresentacion
                }
            }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void Grabar()
            {
+
+
+
                if (this.chkEliminar.Checked)
                    {
+                        MessageBox.Show("Procesando grabado por detalle");
                    this.grabarseleACF();
                    this.grabarseleCARAC();
                    this.grabarseleBUIELEC();
                    }
                else
                    {
+                       MessageBox.Show("Procesando grabado por lotes");
                    this.grabarlote();
                    this.grabarloteCARAC();
                    this.grabarloteBUIELEC();
                    }
+
+               if (bwInstance.IsBusy == false)
+               {
+                   processingStatus = CurrentStatus.Loading;
+                   setFormControlsBasedOnStatus();
+                   Importar();
+                   bwInstance.RunWorkerAsync();
+
+               }
+               else
+               {
+                   processingStatus = CurrentStatus.Busy;
+                   setFormControlsBasedOnStatus();
+               }
            }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripAnterior_Click(object sender, EventArgs e)
+        {
+            BotonesIE(true);
+            
+            if (bwInstance.IsBusy == false)
+            {
+                processingStatus = CurrentStatus.Loading;
+                setFormControlsBasedOnStatus();
+                Importar();   
+                bwInstance.RunWorkerAsync();
+                
+            }
+            else
+            {
+                processingStatus = CurrentStatus.Busy;
+                setFormControlsBasedOnStatus();
+            }
+
+            
+        }
+
+        private void toolStripAgregar_Click(object sender, EventArgs e)
+        {
+            Grabar();
+        }
+
+        private void toolStripCancelar_Click(object sender, EventArgs e)
+        {
+            BotonesIE(false);
+            this.dataListado.DataSource = null;
+        }
+
+        private void bwInstance_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+         
+          
+            BackgroundWorker worker = sender as BackgroundWorker;
+
+           
+            //mimic work and update or cancel the worker as we go
+            if (isWorkerBeingCancelled(worker, e)) return; //check for user cancel
+            worker.ReportProgress(20);
+            System.Threading.Thread.Sleep(250);
+
+            //mimic work and update or cancel the worker as we go
+            if (isWorkerBeingCancelled(worker, e)) return; //check for user cancel
+            worker.ReportProgress(40);
+            System.Threading.Thread.Sleep(250);
+
+            //mimic work and update or cancel the worker as we go
+            if (isWorkerBeingCancelled(worker, e)) return; //check for user cancel
+            worker.ReportProgress(60);
+            System.Threading.Thread.Sleep(250);
+
+                     
+            //mimic work and update or cancel the worker as we go
+            if (isWorkerBeingCancelled(worker, e)) return; //check for user cancel
+            worker.ReportProgress(80);
+            System.Threading.Thread.Sleep(250);
+
+            //mimic work and update or cancel the worker as we go
+            if (isWorkerBeingCancelled(worker, e)) return; //check for user cancel
+            worker.ReportProgress(100);
+            System.Threading.Thread.Sleep(250);
+
+            processingStatus = CurrentStatus.Success;
+        }
+
+        private void bwInstance_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            prgLoadingProgress.Value = e.ProgressPercentage;
+        }
+
+        private void bwInstance_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            setFormControlsBasedOnStatus();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openfile1 = new OpenFileDialog();
+            openfile1.Filter = "Excel Files |*.*";
+            openfile1.Title = "Seleccione el archivo de Excel";
+            if (openfile1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                if (openfile1.FileName.Equals("") == false)
+                {
+                    textRuta.Text = openfile1.FileName;
+                    // MessageBox.Show("Espere Mientras esta Cargando el Documento en Excel", "Atencion");
+                    //  MessageBoxTemporal.Show("Espere Mientras esta Cargando el Documento en Excel", "Atencion", 3, true);
+                }
+            }
         }
 
     }

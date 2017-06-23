@@ -447,7 +447,13 @@ namespace CapaPresentacion
             this.Botones(false);
             Last();
             this.LimpiaCampos();
+            if(txtMVPid_proceso.Text == "")
+            {
+                txtMVPid_proceso.Text = "1";
+            }
+            else{
             txtMVPid_proceso.Text=Convert.ToString(Convert.ToInt32(txtMVPid_proceso.Text) + 1);
+                }
             txtDSTcrp.Text = "";
             txtDSTds_ambiente.Text = "";
             txtDSTds_crp.Text = "";

@@ -128,7 +128,7 @@ namespace CapaPresentacion
         private void toolStripAnterior_Click(object sender, EventArgs e)
         {
                 BotonesIE(true);
-                new Importar().importarExcelca(dataListado, "Hoja1", true);
+                new Importar().importarExcelca("",dataListado, "Hoja1", true);
                 Columnas();
         }
 

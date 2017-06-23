@@ -53,16 +53,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataListado = new System.Windows.Forms.DataGridView();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.chkEliminar = new System.Windows.Forms.CheckBox();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtORGcrp = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.cboPERNR3 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtORGds_usuario = new System.Windows.Forms.TextBox();
+            this.cboAMB1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtORGds_ambiente = new System.Windows.Forms.TextBox();
+            this.cboZONA1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.cboPERNR1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtMVPds_movimiento1 = new System.Windows.Forms.TextBox();
@@ -71,10 +74,15 @@
             this.label15 = new System.Windows.Forms.Label();
             this.txtMVPid_proceso = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtDSTcrp = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtDSTds_crp = new System.Windows.Forms.TextBox();
+            this.cboPERNR4 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtDSTds_usuario = new System.Windows.Forms.TextBox();
+            this.cboAMB2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtDSTds_ambiente = new System.Windows.Forms.TextBox();
+            this.cboZONA2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtDSTds_zona = new System.Windows.Forms.TextBox();
+            this.cboPERNR2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtDSTds_persona = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -85,29 +93,12 @@
             this.button8 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button9 = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtMVPds_movimiento = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.cboMVPtipo = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.txtDSTcrp = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboPERNR4 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboAMB2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboZONA2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboPERNR2 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.txtORGcrp = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboPERNR3 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboAMB1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboZONA1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
-            this.cboPERNR1 = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -133,7 +124,7 @@
             this.toolStripUltimo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(825, 62);
+            this.toolStrip1.Size = new System.Drawing.Size(1066, 76);
             this.toolStrip1.TabIndex = 206;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -143,7 +134,7 @@
             this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripRefrescar.Name = "toolStripRefrescar";
-            this.toolStripRefrescar.Size = new System.Drawing.Size(63, 59);
+            this.toolStripRefrescar.Size = new System.Drawing.Size(79, 73);
             this.toolStripRefrescar.Text = "Actualizar";
             this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -154,7 +145,7 @@
             this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAgregar.Name = "toolStripAgregar";
-            this.toolStripAgregar.Size = new System.Drawing.Size(53, 59);
+            this.toolStripAgregar.Size = new System.Drawing.Size(67, 73);
             this.toolStripAgregar.Text = "Agregar";
             this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -165,7 +156,7 @@
             this.toolStripEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(41, 59);
+            this.toolStripEditar.Size = new System.Drawing.Size(52, 73);
             this.toolStripEditar.Text = "Editar";
             this.toolStripEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -176,7 +167,7 @@
             this.toolStripEliminar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(46, 59);
+            this.toolStripEliminar.Size = new System.Drawing.Size(56, 73);
             this.toolStripEliminar.Text = "Anular";
             this.toolStripEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -187,7 +178,7 @@
             this.toolStripImprimir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripImprimir.Name = "toolStripImprimir";
-            this.toolStripImprimir.Size = new System.Drawing.Size(57, 59);
+            this.toolStripImprimir.Size = new System.Drawing.Size(70, 73);
             this.toolStripImprimir.Text = "Imprimir";
             this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -199,7 +190,7 @@
             this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripGuardar.Name = "toolStripGuardar";
-            this.toolStripGuardar.Size = new System.Drawing.Size(53, 59);
+            this.toolStripGuardar.Size = new System.Drawing.Size(66, 73);
             this.toolStripGuardar.Text = "Guardar";
             this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -211,7 +202,7 @@
             this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripCancelar.Name = "toolStripCancelar";
-            this.toolStripCancelar.Size = new System.Drawing.Size(57, 59);
+            this.toolStripCancelar.Size = new System.Drawing.Size(70, 73);
             this.toolStripCancelar.Text = "Cancelar";
             this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -237,7 +228,7 @@
             this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAnterior.Name = "toolStripAnterior";
-            this.toolStripAnterior.Size = new System.Drawing.Size(54, 59);
+            this.toolStripAnterior.Size = new System.Drawing.Size(67, 73);
             this.toolStripAnterior.Text = "Anterior";
             this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -249,7 +240,7 @@
             this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSiguiente.Name = "toolStripSiguiente";
-            this.toolStripSiguiente.Size = new System.Drawing.Size(60, 59);
+            this.toolStripSiguiente.Size = new System.Drawing.Size(75, 73);
             this.toolStripSiguiente.Text = "Siguiente";
             this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -260,7 +251,7 @@
             this.toolStripUltimo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripUltimo.Name = "toolStripUltimo";
-            this.toolStripUltimo.Size = new System.Drawing.Size(47, 59);
+            this.toolStripUltimo.Size = new System.Drawing.Size(58, 73);
             this.toolStripUltimo.Text = "Ultimo";
             this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -274,114 +265,93 @@
             // 
             // txtORGds_crp
             // 
-            this.txtORGds_crp.Location = new System.Drawing.Point(120, 58);
-            this.txtORGds_crp.Margin = new System.Windows.Forms.Padding(2);
+            this.txtORGds_crp.Location = new System.Drawing.Point(160, 71);
+            this.txtORGds_crp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtORGds_crp.Name = "txtORGds_crp";
             this.txtORGds_crp.ReadOnly = true;
-            this.txtORGds_crp.Size = new System.Drawing.Size(200, 20);
+            this.txtORGds_crp.Size = new System.Drawing.Size(337, 22);
             this.txtORGds_crp.TabIndex = 229;
             this.txtORGds_crp.TabStop = false;
             // 
             // txtORGds_zona
             // 
-            this.txtORGds_zona.Location = new System.Drawing.Point(120, 37);
-            this.txtORGds_zona.Margin = new System.Windows.Forms.Padding(2);
+            this.txtORGds_zona.Location = new System.Drawing.Point(160, 46);
+            this.txtORGds_zona.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtORGds_zona.Name = "txtORGds_zona";
             this.txtORGds_zona.ReadOnly = true;
-            this.txtORGds_zona.Size = new System.Drawing.Size(200, 20);
+            this.txtORGds_zona.Size = new System.Drawing.Size(337, 22);
             this.txtORGds_zona.TabIndex = 228;
             this.txtORGds_zona.TabStop = false;
             // 
             // txtORGds_persona
             // 
-            this.txtORGds_persona.Location = new System.Drawing.Point(190, 16);
-            this.txtORGds_persona.Margin = new System.Windows.Forms.Padding(2);
+            this.txtORGds_persona.Location = new System.Drawing.Point(253, 20);
+            this.txtORGds_persona.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtORGds_persona.Name = "txtORGds_persona";
             this.txtORGds_persona.ReadOnly = true;
-            this.txtORGds_persona.Size = new System.Drawing.Size(130, 20);
+            this.txtORGds_persona.Size = new System.Drawing.Size(244, 22);
             this.txtORGds_persona.TabIndex = 227;
             this.txtORGds_persona.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 83);
+            this.label2.Location = new System.Drawing.Point(19, 102);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(106, 17);
             this.label2.TabIndex = 226;
             this.label2.Text = "Usuario en Uso";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 62);
+            this.label3.Location = new System.Drawing.Point(19, 76);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.Size = new System.Drawing.Size(36, 17);
             this.label3.TabIndex = 225;
             this.label3.Text = "CRP";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 37);
+            this.label4.Location = new System.Drawing.Point(19, 46);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(41, 17);
             this.label4.TabIndex = 224;
             this.label4.Text = "Zona";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 20);
+            this.label5.Location = new System.Drawing.Point(17, 22);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 13);
+            this.label5.Size = new System.Drawing.Size(111, 17);
             this.label5.TabIndex = 223;
             this.label5.Text = "Usuario o Cargo";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 105);
+            this.label6.Location = new System.Drawing.Point(204, 127);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 13);
+            this.label6.Size = new System.Drawing.Size(122, 17);
             this.label6.TabIndex = 222;
             this.label6.Text = "Fecha Movimiento";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 80);
+            this.label7.Location = new System.Drawing.Point(529, 95);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 13);
+            this.label7.Size = new System.Drawing.Size(111, 17);
             this.label7.TabIndex = 221;
             this.label7.Text = "Tipo Movimiento";
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(56, 346);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(690, 248);
-            this.tabControl1.TabIndex = 230;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tabPage1.Controls.Add(this.dataListado);
-            this.tabPage1.Controls.Add(this.pictureBox2);
-            this.tabPage1.Controls.Add(this.lblTotal);
-            this.tabPage1.Controls.Add(this.chkEliminar);
-            this.tabPage1.Controls.Add(this.txtBuscar);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(682, 222);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Listado";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // dataListado
             // 
@@ -395,329 +365,15 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataListado.Location = new System.Drawing.Point(23, 60);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
+            this.dataListado.Location = new System.Drawing.Point(12, 412);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(622, 148);
+            this.dataListado.Size = new System.Drawing.Size(910, 241);
             this.dataListado.TabIndex = 9;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(20, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(380, 39);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(41, 13);
-            this.lblTotal.TabIndex = 6;
-            this.lblTotal.Text = "lblTotal";
-            this.lblTotal.Visible = false;
-            // 
-            // chkEliminar
-            // 
-            this.chkEliminar.AutoSize = true;
-            this.chkEliminar.Location = new System.Drawing.Point(15, 39);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.chkEliminar.Name = "chkEliminar";
-            this.chkEliminar.Size = new System.Drawing.Size(62, 17);
-            this.chkEliminar.TabIndex = 5;
-            this.chkEliminar.Text = "Eliminar";
-            this.chkEliminar.UseVisualStyleBackColor = true;
-            this.chkEliminar.Visible = false;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(65, 13);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(246, 20);
-            this.txtBuscar.TabIndex = 2;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtORGcrp);
-            this.groupBox1.Controls.Add(this.cboPERNR3);
-            this.groupBox1.Controls.Add(this.cboAMB1);
-            this.groupBox1.Controls.Add(this.cboZONA1);
-            this.groupBox1.Controls.Add(this.cboPERNR1);
-            this.groupBox1.Controls.Add(this.txtORGds_usuario);
-            this.groupBox1.Controls.Add(this.txtORGds_persona);
-            this.groupBox1.Controls.Add(this.txtORGds_ambiente);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtORGds_crp);
-            this.groupBox1.Controls.Add(this.txtORGds_zona);
-            this.groupBox1.Location = new System.Drawing.Point(14, 134);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(336, 128);
-            this.groupBox1.TabIndex = 231;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "DATOS DE ORIGEN";
-            // 
-            // txtORGds_usuario
-            // 
-            this.txtORGds_usuario.Location = new System.Drawing.Point(190, 80);
-            this.txtORGds_usuario.Margin = new System.Windows.Forms.Padding(2);
-            this.txtORGds_usuario.Name = "txtORGds_usuario";
-            this.txtORGds_usuario.ReadOnly = true;
-            this.txtORGds_usuario.Size = new System.Drawing.Size(130, 20);
-            this.txtORGds_usuario.TabIndex = 234;
-            this.txtORGds_usuario.TabStop = false;
-            // 
-            // txtORGds_ambiente
-            // 
-            this.txtORGds_ambiente.Location = new System.Drawing.Point(134, 102);
-            this.txtORGds_ambiente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtORGds_ambiente.Name = "txtORGds_ambiente";
-            this.txtORGds_ambiente.ReadOnly = true;
-            this.txtORGds_ambiente.Size = new System.Drawing.Size(186, 20);
-            this.txtORGds_ambiente.TabIndex = 233;
-            this.txtORGds_ambiente.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 106);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 232;
-            this.label1.Text = "Ubicación";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(397, 103);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(96, 13);
-            this.label13.TabIndex = 237;
-            this.label13.Text = "Motivo Movimiento";
-            // 
-            // txtMVPds_movimiento1
-            // 
-            this.txtMVPds_movimiento1.Location = new System.Drawing.Point(634, 100);
-            this.txtMVPds_movimiento1.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMVPds_movimiento1.Name = "txtMVPds_movimiento1";
-            this.txtMVPds_movimiento1.ReadOnly = true;
-            this.txtMVPds_movimiento1.Size = new System.Drawing.Size(176, 20);
-            this.txtMVPds_movimiento1.TabIndex = 236;
-            this.txtMVPds_movimiento1.TabStop = false;
-            // 
-            // txtMVPobservaciones
-            // 
-            this.txtMVPobservaciones.Location = new System.Drawing.Point(26, 19);
-            this.txtMVPobservaciones.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMVPobservaciones.Multiline = true;
-            this.txtMVPobservaciones.Name = "txtMVPobservaciones";
-            this.txtMVPobservaciones.Size = new System.Drawing.Size(294, 29);
-            this.txtMVPobservaciones.TabIndex = 242;
-            // 
-            // dtpMVPfecha_movimiento
-            // 
-            this.dtpMVPfecha_movimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpMVPfecha_movimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpMVPfecha_movimiento.Location = new System.Drawing.Point(164, 101);
-            this.dtpMVPfecha_movimiento.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpMVPfecha_movimiento.Name = "dtpMVPfecha_movimiento";
-            this.dtpMVPfecha_movimiento.Size = new System.Drawing.Size(187, 20);
-            this.dtpMVPfecha_movimiento.TabIndex = 248;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(398, 75);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 13);
-            this.label15.TabIndex = 251;
-            this.label15.Text = "Proceso ID";
-            // 
-            // txtMVPid_proceso
-            // 
-            this.txtMVPid_proceso.Location = new System.Drawing.Point(545, 72);
-            this.txtMVPid_proceso.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMVPid_proceso.Name = "txtMVPid_proceso";
-            this.txtMVPid_proceso.Size = new System.Drawing.Size(176, 20);
-            this.txtMVPid_proceso.TabIndex = 250;
-            this.txtMVPid_proceso.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.txtDSTcrp);
-            this.groupBox3.Controls.Add(this.cboPERNR4);
-            this.groupBox3.Controls.Add(this.cboAMB2);
-            this.groupBox3.Controls.Add(this.cboZONA2);
-            this.groupBox3.Controls.Add(this.cboPERNR2);
-            this.groupBox3.Controls.Add(this.txtDSTds_usuario);
-            this.groupBox3.Controls.Add(this.txtDSTds_persona);
-            this.groupBox3.Controls.Add(this.txtDSTds_ambiente);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.txtDSTds_crp);
-            this.groupBox3.Controls.Add(this.txtDSTds_zona);
-            this.groupBox3.Location = new System.Drawing.Point(401, 134);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(336, 128);
-            this.groupBox3.TabIndex = 252;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "DATOS DE DESTINO (MOVIMIENTO)";
-            // 
-            // txtDSTds_crp
-            // 
-            this.txtDSTds_crp.Location = new System.Drawing.Point(120, 58);
-            this.txtDSTds_crp.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDSTds_crp.Name = "txtDSTds_crp";
-            this.txtDSTds_crp.ReadOnly = true;
-            this.txtDSTds_crp.Size = new System.Drawing.Size(200, 20);
-            this.txtDSTds_crp.TabIndex = 229;
-            this.txtDSTds_crp.TabStop = false;
-            // 
-            // txtDSTds_usuario
-            // 
-            this.txtDSTds_usuario.Location = new System.Drawing.Point(190, 80);
-            this.txtDSTds_usuario.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDSTds_usuario.Name = "txtDSTds_usuario";
-            this.txtDSTds_usuario.ReadOnly = true;
-            this.txtDSTds_usuario.Size = new System.Drawing.Size(130, 20);
-            this.txtDSTds_usuario.TabIndex = 234;
-            this.txtDSTds_usuario.TabStop = false;
-            // 
-            // txtDSTds_ambiente
-            // 
-            this.txtDSTds_ambiente.Location = new System.Drawing.Point(134, 102);
-            this.txtDSTds_ambiente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDSTds_ambiente.Name = "txtDSTds_ambiente";
-            this.txtDSTds_ambiente.ReadOnly = true;
-            this.txtDSTds_ambiente.Size = new System.Drawing.Size(186, 20);
-            this.txtDSTds_ambiente.TabIndex = 233;
-            this.txtDSTds_ambiente.TabStop = false;
-            // 
-            // txtDSTds_zona
-            // 
-            this.txtDSTds_zona.Location = new System.Drawing.Point(120, 37);
-            this.txtDSTds_zona.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDSTds_zona.Name = "txtDSTds_zona";
-            this.txtDSTds_zona.ReadOnly = true;
-            this.txtDSTds_zona.Size = new System.Drawing.Size(200, 20);
-            this.txtDSTds_zona.TabIndex = 228;
-            this.txtDSTds_zona.TabStop = false;
-            // 
-            // txtDSTds_persona
-            // 
-            this.txtDSTds_persona.Location = new System.Drawing.Point(190, 16);
-            this.txtDSTds_persona.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDSTds_persona.Name = "txtDSTds_persona";
-            this.txtDSTds_persona.ReadOnly = true;
-            this.txtDSTds_persona.Size = new System.Drawing.Size(130, 20);
-            this.txtDSTds_persona.TabIndex = 227;
-            this.txtDSTds_persona.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 13);
-            this.label8.TabIndex = 223;
-            this.label8.Text = "Usuario o Cargo";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(14, 106);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 13);
-            this.label9.TabIndex = 232;
-            this.label9.Text = "Ubicación";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 37);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 13);
-            this.label10.TabIndex = 224;
-            this.label10.Text = "Zona";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(14, 62);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(29, 13);
-            this.label11.TabIndex = 225;
-            this.label11.Text = "CRP";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(14, 83);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(80, 13);
-            this.label12.TabIndex = 226;
-            this.label12.Text = "Usuario en Uso";
-            // 
-            // cboMVPtipo1
-            // 
-            this.cboMVPtipo1.Location = new System.Drawing.Point(205, 76);
-            this.cboMVPtipo1.Name = "cboMVPtipo1";
-            this.cboMVPtipo1.ReadOnly = true;
-            this.cboMVPtipo1.Size = new System.Drawing.Size(145, 20);
-            this.cboMVPtipo1.TabIndex = 263;
-            this.cboMVPtipo1.TabStop = false;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(49, 13);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(137, 19);
-            this.button8.TabIndex = 264;
-            this.button8.Text = "Agregar";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.button9);
-            this.groupBox2.Controls.Add(this.button8);
-            this.groupBox2.Location = new System.Drawing.Point(401, 279);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(228, 62);
-            this.groupBox2.TabIndex = 265;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Activos";
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(49, 37);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(137, 19);
-            this.button9.TabIndex = 265;
-            this.button9.Text = "Eliminar";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Column1
             // 
@@ -751,132 +407,32 @@
             this.Column4.ReadOnly = true;
             this.Column4.Width = 300;
             // 
-            // txtMVPds_movimiento
+            // groupBox1
             // 
-            this.txtMVPds_movimiento.AutoComplete = false;
-            this.txtMVPds_movimiento.AutoDropdown = false;
-            this.txtMVPds_movimiento.BackColorEven = System.Drawing.Color.White;
-            this.txtMVPds_movimiento.BackColorOdd = System.Drawing.Color.White;
-            this.txtMVPds_movimiento.ColumnNames = "";
-            this.txtMVPds_movimiento.ColumnWidthDefault = 75;
-            this.txtMVPds_movimiento.ColumnWidths = "";
-            this.txtMVPds_movimiento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.txtMVPds_movimiento.FormattingEnabled = true;
-            this.txtMVPds_movimiento.LinkedColumnIndex = 2;
-            this.txtMVPds_movimiento.LinkedTextBox = this.txtMVPds_movimiento1;
-            this.txtMVPds_movimiento.Location = new System.Drawing.Point(508, 99);
-            this.txtMVPds_movimiento.Name = "txtMVPds_movimiento";
-            this.txtMVPds_movimiento.Size = new System.Drawing.Size(121, 21);
-            this.txtMVPds_movimiento.TabIndex = 266;
-            // 
-            // cboMVPtipo
-            // 
-            this.cboMVPtipo.AutoComplete = false;
-            this.cboMVPtipo.AutoDropdown = false;
-            this.cboMVPtipo.BackColorEven = System.Drawing.Color.White;
-            this.cboMVPtipo.BackColorOdd = System.Drawing.Color.White;
-            this.cboMVPtipo.ColumnNames = "";
-            this.cboMVPtipo.ColumnWidthDefault = 75;
-            this.cboMVPtipo.ColumnWidths = "";
-            this.cboMVPtipo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboMVPtipo.FormattingEnabled = true;
-            this.cboMVPtipo.LinkedColumnIndex = 1;
-            this.cboMVPtipo.LinkedTextBox = this.cboMVPtipo1;
-            this.cboMVPtipo.Location = new System.Drawing.Point(102, 75);
-            this.cboMVPtipo.Name = "cboMVPtipo";
-            this.cboMVPtipo.Size = new System.Drawing.Size(97, 21);
-            this.cboMVPtipo.TabIndex = 262;
-            // 
-            // txtDSTcrp
-            // 
-            this.txtDSTcrp.AutoComplete = false;
-            this.txtDSTcrp.AutoDropdown = false;
-            this.txtDSTcrp.BackColorEven = System.Drawing.Color.White;
-            this.txtDSTcrp.BackColorOdd = System.Drawing.Color.White;
-            this.txtDSTcrp.ColumnNames = "";
-            this.txtDSTcrp.ColumnWidthDefault = 75;
-            this.txtDSTcrp.ColumnWidths = "";
-            this.txtDSTcrp.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.txtDSTcrp.FormattingEnabled = true;
-            this.txtDSTcrp.LinkedColumnIndex = 2;
-            this.txtDSTcrp.LinkedTextBox = this.txtDSTds_crp;
-            this.txtDSTcrp.Location = new System.Drawing.Point(52, 59);
-            this.txtDSTcrp.Name = "txtDSTcrp";
-            this.txtDSTcrp.Size = new System.Drawing.Size(63, 21);
-            this.txtDSTcrp.TabIndex = 263;
-            // 
-            // cboPERNR4
-            // 
-            this.cboPERNR4.AutoComplete = false;
-            this.cboPERNR4.AutoDropdown = false;
-            this.cboPERNR4.BackColorEven = System.Drawing.Color.White;
-            this.cboPERNR4.BackColorOdd = System.Drawing.Color.White;
-            this.cboPERNR4.ColumnNames = "";
-            this.cboPERNR4.ColumnWidthDefault = 75;
-            this.cboPERNR4.ColumnWidths = "";
-            this.cboPERNR4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboPERNR4.FormattingEnabled = true;
-            this.cboPERNR4.LinkedColumnIndex = 1;
-            this.cboPERNR4.LinkedTextBox = this.txtDSTds_usuario;
-            this.cboPERNR4.Location = new System.Drawing.Point(100, 79);
-            this.cboPERNR4.Name = "cboPERNR4";
-            this.cboPERNR4.Size = new System.Drawing.Size(74, 21);
-            this.cboPERNR4.TabIndex = 262;
-            // 
-            // cboAMB2
-            // 
-            this.cboAMB2.AutoComplete = false;
-            this.cboAMB2.AutoDropdown = false;
-            this.cboAMB2.BackColorEven = System.Drawing.Color.White;
-            this.cboAMB2.BackColorOdd = System.Drawing.Color.White;
-            this.cboAMB2.ColumnNames = "";
-            this.cboAMB2.ColumnWidthDefault = 75;
-            this.cboAMB2.ColumnWidths = "";
-            this.cboAMB2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboAMB2.FormattingEnabled = true;
-            this.cboAMB2.LinkedColumnIndex = 2;
-            this.cboAMB2.LinkedTextBox = this.txtDSTds_ambiente;
-            this.cboAMB2.Location = new System.Drawing.Point(75, 101);
-            this.cboAMB2.Name = "cboAMB2";
-            this.cboAMB2.Size = new System.Drawing.Size(54, 21);
-            this.cboAMB2.TabIndex = 261;
-            this.cboAMB2.SelectedIndexChanged += new System.EventHandler(this.multiColumnComboBox5_SelectedIndexChanged);
-            // 
-            // cboZONA2
-            // 
-            this.cboZONA2.AutoComplete = false;
-            this.cboZONA2.AutoDropdown = false;
-            this.cboZONA2.BackColorEven = System.Drawing.Color.White;
-            this.cboZONA2.BackColorOdd = System.Drawing.Color.White;
-            this.cboZONA2.ColumnNames = "";
-            this.cboZONA2.ColumnWidthDefault = 75;
-            this.cboZONA2.ColumnWidths = "";
-            this.cboZONA2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboZONA2.FormattingEnabled = true;
-            this.cboZONA2.LinkedColumnIndex = 1;
-            this.cboZONA2.LinkedTextBox = this.txtDSTds_zona;
-            this.cboZONA2.Location = new System.Drawing.Point(52, 37);
-            this.cboZONA2.Name = "cboZONA2";
-            this.cboZONA2.Size = new System.Drawing.Size(63, 21);
-            this.cboZONA2.TabIndex = 260;
-            // 
-            // cboPERNR2
-            // 
-            this.cboPERNR2.AutoComplete = false;
-            this.cboPERNR2.AutoDropdown = false;
-            this.cboPERNR2.BackColorEven = System.Drawing.Color.White;
-            this.cboPERNR2.BackColorOdd = System.Drawing.Color.White;
-            this.cboPERNR2.ColumnNames = "";
-            this.cboPERNR2.ColumnWidthDefault = 75;
-            this.cboPERNR2.ColumnWidths = "";
-            this.cboPERNR2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboPERNR2.FormattingEnabled = true;
-            this.cboPERNR2.LinkedColumnIndex = 1;
-            this.cboPERNR2.LinkedTextBox = this.txtDSTds_persona;
-            this.cboPERNR2.Location = new System.Drawing.Point(101, 14);
-            this.cboPERNR2.Name = "cboPERNR2";
-            this.cboPERNR2.Size = new System.Drawing.Size(84, 21);
-            this.cboPERNR2.TabIndex = 259;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.groupBox1.Controls.Add(this.txtORGcrp);
+            this.groupBox1.Controls.Add(this.cboPERNR3);
+            this.groupBox1.Controls.Add(this.cboAMB1);
+            this.groupBox1.Controls.Add(this.cboZONA1);
+            this.groupBox1.Controls.Add(this.cboPERNR1);
+            this.groupBox1.Controls.Add(this.txtORGds_usuario);
+            this.groupBox1.Controls.Add(this.txtORGds_persona);
+            this.groupBox1.Controls.Add(this.txtORGds_ambiente);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtORGds_crp);
+            this.groupBox1.Controls.Add(this.txtORGds_zona);
+            this.groupBox1.Location = new System.Drawing.Point(12, 155);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(514, 168);
+            this.groupBox1.TabIndex = 231;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "DATOS DE ORIGEN";
             // 
             // txtORGcrp
             // 
@@ -891,9 +447,10 @@
             this.txtORGcrp.FormattingEnabled = true;
             this.txtORGcrp.LinkedColumnIndex = 2;
             this.txtORGcrp.LinkedTextBox = this.txtORGds_crp;
-            this.txtORGcrp.Location = new System.Drawing.Point(52, 59);
+            this.txtORGcrp.Location = new System.Drawing.Point(69, 73);
+            this.txtORGcrp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtORGcrp.Name = "txtORGcrp";
-            this.txtORGcrp.Size = new System.Drawing.Size(63, 21);
+            this.txtORGcrp.Size = new System.Drawing.Size(83, 23);
             this.txtORGcrp.TabIndex = 262;
             // 
             // cboPERNR3
@@ -909,10 +466,21 @@
             this.cboPERNR3.FormattingEnabled = true;
             this.cboPERNR3.LinkedColumnIndex = 1;
             this.cboPERNR3.LinkedTextBox = this.txtORGds_usuario;
-            this.cboPERNR3.Location = new System.Drawing.Point(100, 80);
+            this.cboPERNR3.Location = new System.Drawing.Point(133, 98);
+            this.cboPERNR3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboPERNR3.Name = "cboPERNR3";
-            this.cboPERNR3.Size = new System.Drawing.Size(85, 21);
+            this.cboPERNR3.Size = new System.Drawing.Size(112, 23);
             this.cboPERNR3.TabIndex = 261;
+            // 
+            // txtORGds_usuario
+            // 
+            this.txtORGds_usuario.Location = new System.Drawing.Point(253, 98);
+            this.txtORGds_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtORGds_usuario.Name = "txtORGds_usuario";
+            this.txtORGds_usuario.ReadOnly = true;
+            this.txtORGds_usuario.Size = new System.Drawing.Size(244, 22);
+            this.txtORGds_usuario.TabIndex = 234;
+            this.txtORGds_usuario.TabStop = false;
             // 
             // cboAMB1
             // 
@@ -927,10 +495,21 @@
             this.cboAMB1.FormattingEnabled = true;
             this.cboAMB1.LinkedColumnIndex = 2;
             this.cboAMB1.LinkedTextBox = this.txtORGds_ambiente;
-            this.cboAMB1.Location = new System.Drawing.Point(75, 102);
+            this.cboAMB1.Location = new System.Drawing.Point(100, 126);
+            this.cboAMB1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboAMB1.Name = "cboAMB1";
-            this.cboAMB1.Size = new System.Drawing.Size(54, 21);
+            this.cboAMB1.Size = new System.Drawing.Size(71, 23);
             this.cboAMB1.TabIndex = 260;
+            // 
+            // txtORGds_ambiente
+            // 
+            this.txtORGds_ambiente.Location = new System.Drawing.Point(179, 126);
+            this.txtORGds_ambiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtORGds_ambiente.Name = "txtORGds_ambiente";
+            this.txtORGds_ambiente.ReadOnly = true;
+            this.txtORGds_ambiente.Size = new System.Drawing.Size(319, 22);
+            this.txtORGds_ambiente.TabIndex = 233;
+            this.txtORGds_ambiente.TabStop = false;
             // 
             // cboZONA1
             // 
@@ -945,9 +524,10 @@
             this.cboZONA1.FormattingEnabled = true;
             this.cboZONA1.LinkedColumnIndex = 1;
             this.cboZONA1.LinkedTextBox = this.txtORGds_zona;
-            this.cboZONA1.Location = new System.Drawing.Point(52, 36);
+            this.cboZONA1.Location = new System.Drawing.Point(69, 44);
+            this.cboZONA1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboZONA1.Name = "cboZONA1";
-            this.cboZONA1.Size = new System.Drawing.Size(63, 21);
+            this.cboZONA1.Size = new System.Drawing.Size(83, 23);
             this.cboZONA1.TabIndex = 259;
             // 
             // cboPERNR1
@@ -963,26 +543,404 @@
             this.cboPERNR1.FormattingEnabled = true;
             this.cboPERNR1.LinkedColumnIndex = 1;
             this.cboPERNR1.LinkedTextBox = this.txtORGds_persona;
-            this.cboPERNR1.Location = new System.Drawing.Point(102, 14);
+            this.cboPERNR1.Location = new System.Drawing.Point(136, 17);
+            this.cboPERNR1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboPERNR1.Name = "cboPERNR1";
-            this.cboPERNR1.Size = new System.Drawing.Size(83, 21);
+            this.cboPERNR1.Size = new System.Drawing.Size(109, 23);
             this.cboPERNR1.TabIndex = 253;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 130);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 17);
+            this.label1.TabIndex = 232;
+            this.label1.Text = "Ubicación";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(529, 127);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(124, 17);
+            this.label13.TabIndex = 237;
+            this.label13.Text = "Motivo Movimiento";
+            // 
+            // txtMVPds_movimiento1
+            // 
+            this.txtMVPds_movimiento1.Location = new System.Drawing.Point(745, 122);
+            this.txtMVPds_movimiento1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMVPds_movimiento1.Name = "txtMVPds_movimiento1";
+            this.txtMVPds_movimiento1.ReadOnly = true;
+            this.txtMVPds_movimiento1.Size = new System.Drawing.Size(233, 22);
+            this.txtMVPds_movimiento1.TabIndex = 236;
+            this.txtMVPds_movimiento1.TabStop = false;
+            // 
+            // txtMVPobservaciones
+            // 
+            this.txtMVPobservaciones.Location = new System.Drawing.Point(7, 23);
+            this.txtMVPobservaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMVPobservaciones.Multiline = true;
+            this.txtMVPobservaciones.Name = "txtMVPobservaciones";
+            this.txtMVPobservaciones.Size = new System.Drawing.Size(899, 35);
+            this.txtMVPobservaciones.TabIndex = 242;
+            // 
+            // dtpMVPfecha_movimiento
+            // 
+            this.dtpMVPfecha_movimiento.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpMVPfecha_movimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpMVPfecha_movimiento.Location = new System.Drawing.Point(333, 127);
+            this.dtpMVPfecha_movimiento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpMVPfecha_movimiento.Name = "dtpMVPfecha_movimiento";
+            this.dtpMVPfecha_movimiento.Size = new System.Drawing.Size(134, 22);
+            this.dtpMVPfecha_movimiento.TabIndex = 248;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(249, 94);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(77, 17);
+            this.label15.TabIndex = 251;
+            this.label15.Text = "Proceso ID";
+            // 
+            // txtMVPid_proceso
+            // 
+            this.txtMVPid_proceso.Location = new System.Drawing.Point(333, 95);
+            this.txtMVPid_proceso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMVPid_proceso.Name = "txtMVPid_proceso";
+            this.txtMVPid_proceso.Size = new System.Drawing.Size(134, 22);
+            this.txtMVPid_proceso.TabIndex = 250;
+            this.txtMVPid_proceso.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.groupBox3.Controls.Add(this.txtDSTcrp);
+            this.groupBox3.Controls.Add(this.cboPERNR4);
+            this.groupBox3.Controls.Add(this.cboAMB2);
+            this.groupBox3.Controls.Add(this.cboZONA2);
+            this.groupBox3.Controls.Add(this.cboPERNR2);
+            this.groupBox3.Controls.Add(this.txtDSTds_usuario);
+            this.groupBox3.Controls.Add(this.txtDSTds_persona);
+            this.groupBox3.Controls.Add(this.txtDSTds_ambiente);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.txtDSTds_crp);
+            this.groupBox3.Controls.Add(this.txtDSTds_zona);
+            this.groupBox3.Location = new System.Drawing.Point(532, 155);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(522, 168);
+            this.groupBox3.TabIndex = 252;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "DATOS DE DESTINO (MOVIMIENTO)";
+            // 
+            // txtDSTcrp
+            // 
+            this.txtDSTcrp.AutoComplete = false;
+            this.txtDSTcrp.AutoDropdown = false;
+            this.txtDSTcrp.BackColorEven = System.Drawing.Color.White;
+            this.txtDSTcrp.BackColorOdd = System.Drawing.Color.White;
+            this.txtDSTcrp.ColumnNames = "";
+            this.txtDSTcrp.ColumnWidthDefault = 75;
+            this.txtDSTcrp.ColumnWidths = "";
+            this.txtDSTcrp.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.txtDSTcrp.FormattingEnabled = true;
+            this.txtDSTcrp.LinkedColumnIndex = 2;
+            this.txtDSTcrp.LinkedTextBox = this.txtDSTds_crp;
+            this.txtDSTcrp.Location = new System.Drawing.Point(69, 73);
+            this.txtDSTcrp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDSTcrp.Name = "txtDSTcrp";
+            this.txtDSTcrp.Size = new System.Drawing.Size(83, 23);
+            this.txtDSTcrp.TabIndex = 263;
+            // 
+            // txtDSTds_crp
+            // 
+            this.txtDSTds_crp.Location = new System.Drawing.Point(160, 71);
+            this.txtDSTds_crp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDSTds_crp.Name = "txtDSTds_crp";
+            this.txtDSTds_crp.ReadOnly = true;
+            this.txtDSTds_crp.Size = new System.Drawing.Size(356, 22);
+            this.txtDSTds_crp.TabIndex = 229;
+            this.txtDSTds_crp.TabStop = false;
+            // 
+            // cboPERNR4
+            // 
+            this.cboPERNR4.AutoComplete = false;
+            this.cboPERNR4.AutoDropdown = false;
+            this.cboPERNR4.BackColorEven = System.Drawing.Color.White;
+            this.cboPERNR4.BackColorOdd = System.Drawing.Color.White;
+            this.cboPERNR4.ColumnNames = "";
+            this.cboPERNR4.ColumnWidthDefault = 75;
+            this.cboPERNR4.ColumnWidths = "";
+            this.cboPERNR4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboPERNR4.FormattingEnabled = true;
+            this.cboPERNR4.LinkedColumnIndex = 1;
+            this.cboPERNR4.LinkedTextBox = this.txtDSTds_usuario;
+            this.cboPERNR4.Location = new System.Drawing.Point(133, 97);
+            this.cboPERNR4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboPERNR4.Name = "cboPERNR4";
+            this.cboPERNR4.Size = new System.Drawing.Size(97, 23);
+            this.cboPERNR4.TabIndex = 262;
+            // 
+            // txtDSTds_usuario
+            // 
+            this.txtDSTds_usuario.Location = new System.Drawing.Point(253, 98);
+            this.txtDSTds_usuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDSTds_usuario.Name = "txtDSTds_usuario";
+            this.txtDSTds_usuario.ReadOnly = true;
+            this.txtDSTds_usuario.Size = new System.Drawing.Size(263, 22);
+            this.txtDSTds_usuario.TabIndex = 234;
+            this.txtDSTds_usuario.TabStop = false;
+            // 
+            // cboAMB2
+            // 
+            this.cboAMB2.AutoComplete = false;
+            this.cboAMB2.AutoDropdown = false;
+            this.cboAMB2.BackColorEven = System.Drawing.Color.White;
+            this.cboAMB2.BackColorOdd = System.Drawing.Color.White;
+            this.cboAMB2.ColumnNames = "";
+            this.cboAMB2.ColumnWidthDefault = 75;
+            this.cboAMB2.ColumnWidths = "";
+            this.cboAMB2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboAMB2.FormattingEnabled = true;
+            this.cboAMB2.LinkedColumnIndex = 2;
+            this.cboAMB2.LinkedTextBox = this.txtDSTds_ambiente;
+            this.cboAMB2.Location = new System.Drawing.Point(100, 124);
+            this.cboAMB2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboAMB2.Name = "cboAMB2";
+            this.cboAMB2.Size = new System.Drawing.Size(71, 23);
+            this.cboAMB2.TabIndex = 261;
+            this.cboAMB2.SelectedIndexChanged += new System.EventHandler(this.multiColumnComboBox5_SelectedIndexChanged);
+            // 
+            // txtDSTds_ambiente
+            // 
+            this.txtDSTds_ambiente.Location = new System.Drawing.Point(179, 126);
+            this.txtDSTds_ambiente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDSTds_ambiente.Name = "txtDSTds_ambiente";
+            this.txtDSTds_ambiente.ReadOnly = true;
+            this.txtDSTds_ambiente.Size = new System.Drawing.Size(338, 22);
+            this.txtDSTds_ambiente.TabIndex = 233;
+            this.txtDSTds_ambiente.TabStop = false;
+            // 
+            // cboZONA2
+            // 
+            this.cboZONA2.AutoComplete = false;
+            this.cboZONA2.AutoDropdown = false;
+            this.cboZONA2.BackColorEven = System.Drawing.Color.White;
+            this.cboZONA2.BackColorOdd = System.Drawing.Color.White;
+            this.cboZONA2.ColumnNames = "";
+            this.cboZONA2.ColumnWidthDefault = 75;
+            this.cboZONA2.ColumnWidths = "";
+            this.cboZONA2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboZONA2.FormattingEnabled = true;
+            this.cboZONA2.LinkedColumnIndex = 1;
+            this.cboZONA2.LinkedTextBox = this.txtDSTds_zona;
+            this.cboZONA2.Location = new System.Drawing.Point(69, 46);
+            this.cboZONA2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboZONA2.Name = "cboZONA2";
+            this.cboZONA2.Size = new System.Drawing.Size(83, 23);
+            this.cboZONA2.TabIndex = 260;
+            // 
+            // txtDSTds_zona
+            // 
+            this.txtDSTds_zona.Location = new System.Drawing.Point(160, 46);
+            this.txtDSTds_zona.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDSTds_zona.Name = "txtDSTds_zona";
+            this.txtDSTds_zona.ReadOnly = true;
+            this.txtDSTds_zona.Size = new System.Drawing.Size(356, 22);
+            this.txtDSTds_zona.TabIndex = 228;
+            this.txtDSTds_zona.TabStop = false;
+            // 
+            // cboPERNR2
+            // 
+            this.cboPERNR2.AutoComplete = false;
+            this.cboPERNR2.AutoDropdown = false;
+            this.cboPERNR2.BackColorEven = System.Drawing.Color.White;
+            this.cboPERNR2.BackColorOdd = System.Drawing.Color.White;
+            this.cboPERNR2.ColumnNames = "";
+            this.cboPERNR2.ColumnWidthDefault = 75;
+            this.cboPERNR2.ColumnWidths = "";
+            this.cboPERNR2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboPERNR2.FormattingEnabled = true;
+            this.cboPERNR2.LinkedColumnIndex = 1;
+            this.cboPERNR2.LinkedTextBox = this.txtDSTds_persona;
+            this.cboPERNR2.Location = new System.Drawing.Point(135, 17);
+            this.cboPERNR2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboPERNR2.Name = "cboPERNR2";
+            this.cboPERNR2.Size = new System.Drawing.Size(111, 23);
+            this.cboPERNR2.TabIndex = 259;
+            // 
+            // txtDSTds_persona
+            // 
+            this.txtDSTds_persona.Location = new System.Drawing.Point(253, 20);
+            this.txtDSTds_persona.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDSTds_persona.Name = "txtDSTds_persona";
+            this.txtDSTds_persona.ReadOnly = true;
+            this.txtDSTds_persona.Size = new System.Drawing.Size(263, 22);
+            this.txtDSTds_persona.TabIndex = 227;
+            this.txtDSTds_persona.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(17, 25);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 17);
+            this.label8.TabIndex = 223;
+            this.label8.Text = "Usuario o Cargo";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(19, 130);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 17);
+            this.label9.TabIndex = 232;
+            this.label9.Text = "Ubicación";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(19, 46);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 17);
+            this.label10.TabIndex = 224;
+            this.label10.Text = "Zona";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(19, 76);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 17);
+            this.label11.TabIndex = 225;
+            this.label11.Text = "CRP";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(19, 102);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(106, 17);
+            this.label12.TabIndex = 226;
+            this.label12.Text = "Usuario en Uso";
+            // 
+            // cboMVPtipo1
+            // 
+            this.cboMVPtipo1.Location = new System.Drawing.Point(746, 89);
+            this.cboMVPtipo1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboMVPtipo1.Name = "cboMVPtipo1";
+            this.cboMVPtipo1.ReadOnly = true;
+            this.cboMVPtipo1.Size = new System.Drawing.Size(232, 22);
+            this.cboMVPtipo1.TabIndex = 263;
+            this.cboMVPtipo1.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(7, 19);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(87, 23);
+            this.button8.TabIndex = 264;
+            this.button8.Text = "Agregar";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button9);
+            this.groupBox2.Controls.Add(this.button8);
+            this.groupBox2.Location = new System.Drawing.Point(930, 329);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(118, 76);
+            this.groupBox2.TabIndex = 265;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Activos";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(7, 46);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(87, 23);
+            this.button9.TabIndex = 265;
+            this.button9.Text = "Eliminar";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // txtMVPds_movimiento
+            // 
+            this.txtMVPds_movimiento.AutoComplete = false;
+            this.txtMVPds_movimiento.AutoDropdown = false;
+            this.txtMVPds_movimiento.BackColorEven = System.Drawing.Color.White;
+            this.txtMVPds_movimiento.BackColorOdd = System.Drawing.Color.White;
+            this.txtMVPds_movimiento.ColumnNames = "";
+            this.txtMVPds_movimiento.ColumnWidthDefault = 75;
+            this.txtMVPds_movimiento.ColumnWidths = "";
+            this.txtMVPds_movimiento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.txtMVPds_movimiento.FormattingEnabled = true;
+            this.txtMVPds_movimiento.LinkedColumnIndex = 2;
+            this.txtMVPds_movimiento.LinkedTextBox = this.txtMVPds_movimiento1;
+            this.txtMVPds_movimiento.Location = new System.Drawing.Point(677, 122);
+            this.txtMVPds_movimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMVPds_movimiento.Name = "txtMVPds_movimiento";
+            this.txtMVPds_movimiento.Size = new System.Drawing.Size(61, 23);
+            this.txtMVPds_movimiento.TabIndex = 266;
+            // 
+            // cboMVPtipo
+            // 
+            this.cboMVPtipo.AutoComplete = false;
+            this.cboMVPtipo.AutoDropdown = false;
+            this.cboMVPtipo.BackColorEven = System.Drawing.Color.White;
+            this.cboMVPtipo.BackColorOdd = System.Drawing.Color.White;
+            this.cboMVPtipo.ColumnNames = "";
+            this.cboMVPtipo.ColumnWidthDefault = 75;
+            this.cboMVPtipo.ColumnWidths = "";
+            this.cboMVPtipo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboMVPtipo.FormattingEnabled = true;
+            this.cboMVPtipo.LinkedColumnIndex = 1;
+            this.cboMVPtipo.LinkedTextBox = this.cboMVPtipo1;
+            this.cboMVPtipo.Location = new System.Drawing.Point(677, 89);
+            this.cboMVPtipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboMVPtipo.Name = "cboMVPtipo";
+            this.cboMVPtipo.Size = new System.Drawing.Size(61, 23);
+            this.cboMVPtipo.TabIndex = 262;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.txtMVPobservaciones);
-            this.groupBox4.Location = new System.Drawing.Point(14, 279);
+            this.groupBox4.Location = new System.Drawing.Point(9, 329);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(336, 62);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(913, 69);
             this.groupBox4.TabIndex = 267;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Observaciones";
             // 
             // FrmMovimiento_Transferencia_Activo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 605);
+            this.ClientSize = new System.Drawing.Size(1066, 683);
+            this.Controls.Add(this.dataListado);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.txtMVPds_movimiento);
             this.Controls.Add(this.groupBox2);
@@ -995,11 +953,10 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtMVPds_movimiento1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmMovimiento_Transferencia_Activo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMovimiento_Transferencia_Activo";
@@ -1007,11 +964,7 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -1049,13 +1002,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataListado;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.CheckBox chkEliminar;
-        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.DateTimePicker dtpMVPfecha_movimiento;
         private System.Windows.Forms.TextBox txtMVPobservaciones;
         private System.Windows.Forms.Label label13;

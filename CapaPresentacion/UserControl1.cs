@@ -17,5 +17,17 @@ namespace CapaPresentacion
             InitializeComponent();
             this.Dock = DockStyle.Fill;
         }
+
+        private void kryptonLinkLabel7_LinkClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonLinkLabel8_LinkClicked(object sender, EventArgs e)
+        {
+            Form FrmExcel = new FrmExcel();
+            FrmExcel.ShowDialog();
+
+        }
     }
 }

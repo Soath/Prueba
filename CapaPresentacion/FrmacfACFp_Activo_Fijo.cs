@@ -53,7 +53,6 @@ namespace CapaPresentacion
             this.toolStripPrimero.Click += new System.EventHandler(this.Control_Click_Top);
             this.toolStripUltimo.Click += new System.EventHandler(this.Control_Click_Last);
             this.toolStripBuscar.Click += new System.EventHandler(this.Control_Click_Serch);
-            this.toolStripImportar.Click += new System.EventHandler(this.Control_Click_Importar);
 
             EstadoText(this.Controls, true, false);
             
@@ -193,7 +192,6 @@ namespace CapaPresentacion
             this.toolStripEditar.Visible = edo;
             this.toolStripEliminar.Visible = edo;
             this.toolStripImprimir.Visible = edo;
-            this.toolStripImportar.Visible = edo;
 
             this.toolStripGuardar.Visible = !edo;
             this.toolStripCancelar.Visible = !edo;
@@ -202,8 +200,6 @@ namespace CapaPresentacion
             this.toolStripSiguiente.Visible = edo;
             this.toolStripUltimo.Visible = edo;
             this.toolStripBuscar.Visible = edo;
-            this.toolStripComboBox1.Visible = edo;
-            this.toolStripTextBox1.Visible = edo;
             this.toolStripImagen.Visible = edo;
             
         }
@@ -214,15 +210,12 @@ namespace CapaPresentacion
             this.toolStripAgregar.Enabled = !edo;
             this.toolStripEditar.Enabled = edo;
             this.toolStripEliminar.Enabled = edo;
-            this.toolStripImportar.Visible = edo;
             this.toolStripImprimir.Enabled = edo;
             this.toolStripPrimero.Enabled = edo;
             this.toolStripAnterior.Enabled = edo;
             this.toolStripSiguiente.Enabled = edo;
             this.toolStripUltimo.Enabled = edo;
             this.toolStripBuscar.Enabled = edo;
-            this.toolStripComboBox1.Enabled = edo;
-            this.toolStripTextBox1.Enabled = edo;
         }
 
         private void CodigodeBarra()        {
@@ -484,8 +477,6 @@ namespace CapaPresentacion
 
         private void Serch()
         {
-            this.toolStripComboBox1.Enabled = true;
-            this.toolStripTextBox1.Enabled = true;
             Form FrmBuscar = new FrmacfACFp_Activo_Fijo_Buscar();
             FrmBuscar.ShowDialog();
 
@@ -1341,6 +1332,8 @@ namespace CapaPresentacion
 
         private void MostrarDatos1(DataTable dat)
         {
+            try{
+ 
             if (dat.Rows.Count > 0)
             {
                 DataRow row = dat.Rows[0];
@@ -1481,6 +1474,11 @@ namespace CapaPresentacion
                 //dtpCRSfadqpredio.Text = "";
                 txtCRSobservacion.Text = "";
                 }
+              }
+               catch(Exception ex)
+                    {
+               
+               }
         }
 
         private void MostrarRegistro()
@@ -1943,6 +1941,11 @@ namespace CapaPresentacion
         private void dtpCRSfadqpredio1_ValueChanged(object sender, EventArgs e)
         {
             this.dtpCRSfadqpredio.Text = this.dtpCRSfadqpredio1.Text;
+
+        }
+
+        private void toolStripBuscar_Click(object sender, EventArgs e)
+        {
 
         }
     }

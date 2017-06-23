@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace CapaPresentacion
 {
-    public partial class Fom_Barra : Form
+    public partial class Fom_Barra : KryptonForm
     {
         public Fom_Barra()
         {
