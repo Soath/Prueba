@@ -969,6 +969,7 @@
     <EmbeddedResource Include="Reportes\Rpt_MARMarca.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_MATMaterial.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Movimiento_Activo.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Movimiento_Activo1.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_MVMMotivoMovimiento.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_PDFProcesoDiferido.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_PRVProveedor.rdlc" />

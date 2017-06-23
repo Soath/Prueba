@@ -9300,6 +9300,8 @@ namespace CapaPresentacion {
             
             private global::System.Data.DataColumn columnACFtipo_activo;
             
+            private global::System.Data.DataColumn columnMVPobservaciones;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DFichaMovimientoDataTable() {
@@ -9599,6 +9601,14 @@ namespace CapaPresentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MVPobservacionesColumn {
+                get {
+                    return this.columnMVPobservaciones;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -9667,7 +9677,8 @@ namespace CapaPresentacion {
                         string CRSserie, 
                         string CRSmodelo, 
                         string ACFid_Padre, 
-                        string ACFtipo_activo) {
+                        string ACFtipo_activo, 
+                        string MVPobservaciones) {
                 DFichaMovimientoRow rowDFichaMovimientoRow = ((DFichaMovimientoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         MVPid_proceso,
@@ -9702,7 +9713,8 @@ namespace CapaPresentacion {
                         CRSserie,
                         CRSmodelo,
                         ACFid_Padre,
-                        ACFtipo_activo};
+                        ACFtipo_activo,
+                        MVPobservaciones};
                 rowDFichaMovimientoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDFichaMovimientoRow);
                 return rowDFichaMovimientoRow;
@@ -9758,6 +9770,7 @@ namespace CapaPresentacion {
                 this.columnCRSmodelo = base.Columns["CRSmodelo"];
                 this.columnACFid_Padre = base.Columns["ACFid_Padre"];
                 this.columnACFtipo_activo = base.Columns["ACFtipo_activo"];
+                this.columnMVPobservaciones = base.Columns["MVPobservaciones"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9829,6 +9842,8 @@ namespace CapaPresentacion {
                 base.Columns.Add(this.columnACFid_Padre);
                 this.columnACFtipo_activo = new global::System.Data.DataColumn("ACFtipo_activo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnACFtipo_activo);
+                this.columnMVPobservaciones = new global::System.Data.DataColumn("MVPobservaciones", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMVPobservaciones);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14833,6 +14848,23 @@ namespace CapaPresentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MVPobservaciones {
+                get {
+                    try {
+                        return ((string)(this[this.tableDFichaMovimiento.MVPobservacionesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MVPobservaciones\' de la tabla \'DFichaMovimiento\' es DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableDFichaMovimiento.MVPobservacionesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsMVPid_procesoNull() {
                 return this.IsNull(this.tableDFichaMovimiento.MVPid_procesoColumn);
             }
@@ -15225,6 +15257,18 @@ namespace CapaPresentacion {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetACFtipo_activoNull() {
                 this[this.tableDFichaMovimiento.ACFtipo_activoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMVPobservacionesNull() {
+                return this.IsNull(this.tableDFichaMovimiento.MVPobservacionesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMVPobservacionesNull() {
+                this[this.tableDFichaMovimiento.MVPobservacionesColumn] = global::System.Convert.DBNull;
             }
         }
         
