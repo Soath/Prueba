@@ -6,7 +6,7 @@
         <Source>Embedded</Source>
         <Value>Electrosurlogo</Value>
         <Sizing>FitProportional</Sizing>
-        <Left>0.08942cm</Left>
+        <Left>0.17368cm</Left>
         <Height>0.86141cm</Height>
         <Width>4.01695cm</Width>
         <Style>
@@ -33,7 +33,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Left>6.22403cm</Left>
+        <Left>6.30829cm</Left>
         <Height>0.6cm</Height>
         <Width>5.72792cm</Width>
         <ZIndex>1</ZIndex>
@@ -65,7 +65,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
         <Top>0.03528cm</Top>
-        <Left>14.8472cm</Left>
+        <Left>14.93146cm</Left>
         <Height>0.6cm</Height>
         <Width>1.95319cm</Width>
         <ZIndex>2</ZIndex>
@@ -96,7 +96,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox9</rd:DefaultName>
         <Top>0.63528cm</Top>
-        <Left>13.94885cm</Left>
+        <Left>14.03311cm</Left>
         <Height>0.77914cm</Height>
         <Width>2.85153cm</Width>
         <ZIndex>3</ZIndex>
@@ -128,7 +128,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox10</rd:DefaultName>
         <Top>1.18484cm</Top>
-        <Left>0.02582cm</Left>
+        <Left>0.11008cm</Left>
         <Height>0.6cm</Height>
         <Width>3.98167cm</Width>
         <ZIndex>4</ZIndex>
@@ -636,7 +636,7 @@
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Top>2.43691cm</Top>
-        <Left>0.05414cm</Left>
+        <Left>0.1384cm</Left>
         <Height>4.3943cm</Height>
         <Width>8.47014cm</Width>
         <ZIndex>5</ZIndex>
@@ -665,6 +665,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox23</rd:DefaultName>
         <Top>7.0076cm</Top>
+        <Left>0.08426cm</Left>
         <Height>0.6cm</Height>
         <Width>1.60042cm</Width>
         <ZIndex>6</ZIndex>
@@ -711,6 +712,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox23</rd:DefaultName>
         <Top>7.74871cm</Top>
+        <Left>0.08426cm</Left>
         <Height>0.6cm</Height>
         <Width>4.405cm</Width>
         <ZIndex>7</ZIndex>
@@ -1202,6 +1204,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>8.34871cm</Top>
+        <Left>0.08426cm</Left>
         <Height>1.2cm</Height>
         <Width>16.39471cm</Width>
         <ZIndex>8</ZIndex>
@@ -1246,7 +1249,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox23</rd:DefaultName>
         <Top>9.54871cm</Top>
-        <Left>0.06361cm</Left>
+        <Left>0.14787cm</Left>
         <Height>0.6cm</Height>
         <Width>4.405cm</Width>
         <ZIndex>9</ZIndex>
@@ -1357,7 +1360,7 @@
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Top>12.52698cm</Top>
-        <Left>1.54527cm</Left>
+        <Left>1.62953cm</Left>
         <Height>3.51834cm</Height>
         <Width>4.87528cm</Width>
         <ZIndex>10</ZIndex>
@@ -1386,7 +1389,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox3</rd:DefaultName>
         <Top>1.18484cm</Top>
-        <Left>4.00749cm</Left>
+        <Left>4.09175cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>11</ZIndex>
@@ -1419,7 +1422,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox53</rd:DefaultName>
         <Top>7.0076cm</Top>
-        <Left>1.60042cm</Left>
+        <Left>1.68468cm</Left>
         <Height>0.6cm</Height>
         <Width>2.80458cm</Width>
         <ZIndex>12</ZIndex>
@@ -1923,7 +1926,7 @@
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Top>2.43691cm</Top>
-        <Left>8.52428cm</Left>
+        <Left>8.60854cm</Left>
         <Height>4.3943cm</Height>
         <Width>8.2761cm</Width>
         <ZIndex>13</ZIndex>
@@ -2045,7 +2048,7 @@
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Top>12.52698cm</Top>
-        <Left>6.42054cm</Left>
+        <Left>6.5048cm</Left>
         <Height>3.51834cm</Height>
         <Width>4.86708cm</Width>
         <ZIndex>14</ZIndex>
@@ -2172,7 +2175,7 @@
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Top>12.52698cm</Top>
-        <Left>11.28762cm</Left>
+        <Left>11.37188cm</Left>
         <Height>3.51834cm</Height>
         <Width>4.86708cm</Width>
         <ZIndex>15</ZIndex>
@@ -2203,7 +2206,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox64</rd:DefaultName>
         <Top>1.88983cm</Top>
-        <Left>0.08942cm</Left>
+        <Left>0.17368cm</Left>
         <Height>0.54708cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>16</ZIndex>
@@ -2238,7 +2241,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox64</rd:DefaultName>
         <Top>1.91629cm</Top>
-        <Left>8.52428cm</Left>
+        <Left>8.60854cm</Left>
         <Height>0.54708cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>17</ZIndex>
@@ -2252,11 +2255,42 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
+      <Textbox Name="Textbox139">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!MVPobservaciones.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Arial Narrow</FontFamily>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox139</rd:DefaultName>
+        <Top>10.25454cm</Top>
+        <Left>0.11008cm</Left>
+        <Height>1.5525cm</Height>
+        <Width>16.34901cm</Width>
+        <ZIndex>18</ZIndex>
+        <Style>
+          <Border />
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
     <Height>6.31706in</Height>
     <Style />
   </Body>
-  <Width>7.031in</Width>
+  <Width>6.68067in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
@@ -2274,7 +2308,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>84e947c2-db9c-48dd-ad4e-2a0ec9b59115</rd:DataSourceID>
+      <rd:DataSourceID>e9fe4306-83bd-4c00-9903-2dc15bfbb3da</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -2416,6 +2450,10 @@
           <DataField>ACFtipo_activo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="MVPobservaciones">
+          <DataField>MVPobservaciones</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1</rd:DataSetName>
@@ -2451,5 +2489,5 @@ uM4h6XyVh91PQt91Lr3mRM0nh9vr8fvDnJ/qIzhsHLWZ58nDOUspwCbhb4NmvzHsP7+W3k0O54asMBO8
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>4056c072-0413-40dc-9a8e-3762b2e1c8f5</rd:ReportID>
+  <rd:ReportID>e8a69669-0adb-4bd7-bd1a-e939adee3dba</rd:ReportID>
 </Report>
