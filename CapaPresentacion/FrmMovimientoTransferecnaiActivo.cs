@@ -22,7 +22,7 @@ namespace CapaPresentacion
         private void FrmMovimientoTransferecnaiActivo_Load(object sender, EventArgs e)
         {
             this.DataGRid1();
-            this.DataGRid2();
+            // this.DataGRid2();
             this.dataListado1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(Control_Click_dataListado);
 
         }
@@ -89,11 +89,18 @@ namespace CapaPresentacion
                     {
                         this.MensajeError("Error al Actuliza el Estado ...");
                     }
+                }
+            }
 
+            if (dataListado2.Rows.Count >= 1)
+            {
+                for (int i = dataListado2.Rows.Count - 1; i >= 0; i--)
+                {
+                    dataListado2.Rows.RemoveAt(i);
                 }
             }
             this.DataGRid1();
-            this.DataGRid2();
+            //this.DataGRid2();
         }
     }
 }

@@ -804,18 +804,6 @@ namespace CapaDatos
                 ParmMVPfecha_movimiento.Value = acfCMVp_Cabecera_Movimiento.MVPfecha_movimiento;
                 SqlCmd.Parameters.Add(ParmMVPfecha_movimiento);
 
-                SqlParameter ParmORGid_persona = new SqlParameter();
-                ParmORGid_persona.ParameterName = "@mORGid_persona";
-                ParmORGid_persona.SqlDbType = SqlDbType.Char;
-                ParmORGid_persona.Value = acfCMVp_Cabecera_Movimiento.ORGid_persona;
-                SqlCmd.Parameters.Add(ParmORGid_persona);
-
-                SqlParameter ParmORGds_persona = new SqlParameter();
-                ParmORGds_persona.ParameterName = "@mORGds_persona";
-                ParmORGds_persona.SqlDbType = SqlDbType.VarChar;
-                ParmORGds_persona.Value = acfCMVp_Cabecera_Movimiento.ORGds_persona;
-                SqlCmd.Parameters.Add(ParmORGds_persona);
-
                 SqlParameter mORGid_zona = new SqlParameter();
                 mORGid_zona.ParameterName = "@mORGid_zona";
                 mORGid_zona.SqlDbType = SqlDbType.Char;
@@ -840,6 +828,30 @@ namespace CapaDatos
                 ParmORGds_crp.Value = acfCMVp_Cabecera_Movimiento.ORGds_crp;
                 SqlCmd.Parameters.Add(ParmORGds_crp);
 
+                SqlParameter ParmORGid_ambiente = new SqlParameter();
+                ParmORGid_ambiente.ParameterName = "@mORGid_ambiente";
+                ParmORGid_ambiente.SqlDbType = SqlDbType.Char;
+                ParmORGid_ambiente.Value = acfCMVp_Cabecera_Movimiento.ORGid_ambiente;
+                SqlCmd.Parameters.Add(ParmORGid_ambiente);
+
+                SqlParameter ParmORGds_ambiente = new SqlParameter();
+                ParmORGds_ambiente.ParameterName = "@mORGds_ambiente";
+                ParmORGds_ambiente.SqlDbType = SqlDbType.VarChar;
+                ParmORGds_ambiente.Value = acfCMVp_Cabecera_Movimiento.ORGds_ambiente;
+                SqlCmd.Parameters.Add(ParmORGds_ambiente);
+                                
+                SqlParameter ParmORGid_persona = new SqlParameter();
+                ParmORGid_persona.ParameterName = "@mORGid_persona";
+                ParmORGid_persona.SqlDbType = SqlDbType.Char;
+                ParmORGid_persona.Value = acfCMVp_Cabecera_Movimiento.ORGid_persona;
+                SqlCmd.Parameters.Add(ParmORGid_persona);
+
+                SqlParameter ParmORGds_persona = new SqlParameter();
+                ParmORGds_persona.ParameterName = "@mORGds_persona";
+                ParmORGds_persona.SqlDbType = SqlDbType.VarChar;
+                ParmORGds_persona.Value = acfCMVp_Cabecera_Movimiento.ORGds_persona;
+                SqlCmd.Parameters.Add(ParmORGds_persona);
+
                 SqlParameter ParmORGid_usuario = new SqlParameter();
                 ParmORGid_usuario.ParameterName = "@mORGid_usuario";
                 ParmORGid_usuario.SqlDbType = SqlDbType.VarChar;
@@ -852,29 +864,7 @@ namespace CapaDatos
                 ParmORGds_usuario.Value = acfCMVp_Cabecera_Movimiento.mORGds_usuario;
                 SqlCmd.Parameters.Add(ParmORGds_usuario);
 
-                SqlParameter ParmORGid_ambiente = new SqlParameter();
-                ParmORGid_ambiente.ParameterName = "@mORGid_ambiente";
-                ParmORGid_ambiente.SqlDbType = SqlDbType.Char;
-                ParmORGid_ambiente.Value = acfCMVp_Cabecera_Movimiento.ORGid_ambiente;
-                SqlCmd.Parameters.Add(ParmORGid_ambiente);
 
-                SqlParameter ParmORGds_ambiente = new SqlParameter();
-                ParmORGds_ambiente.ParameterName = "@mORGds_ambiente";
-                ParmORGds_ambiente.SqlDbType = SqlDbType.VarChar;
-                ParmORGds_ambiente.Value = acfCMVp_Cabecera_Movimiento.ORGds_ambiente;
-                SqlCmd.Parameters.Add(ParmORGds_ambiente);
-
-                SqlParameter ParmDSTid_persona = new SqlParameter();
-                ParmDSTid_persona.ParameterName = "@mDSTid_persona";
-                ParmDSTid_persona.SqlDbType = SqlDbType.VarChar;
-                ParmDSTid_persona.Value = acfCMVp_Cabecera_Movimiento.DSTid_persona;
-                SqlCmd.Parameters.Add(ParmDSTid_persona);
-
-                SqlParameter ParmDSTds_persona = new SqlParameter();
-                ParmDSTds_persona.ParameterName = "@mDSTds_persona";
-                ParmDSTds_persona.SqlDbType = SqlDbType.VarChar;
-                ParmDSTds_persona.Value = acfCMVp_Cabecera_Movimiento.DSTds_persona;
-                SqlCmd.Parameters.Add(ParmDSTds_persona);
 
                 SqlParameter ParmDSTid_zona = new SqlParameter();
                 ParmDSTid_zona.ParameterName = "@mDSTid_zona";
@@ -900,18 +890,6 @@ namespace CapaDatos
                 ParmDSTds_crp.Value = acfCMVp_Cabecera_Movimiento.DSTds_crp;
                 SqlCmd.Parameters.Add(ParmDSTds_crp);
 
-                SqlParameter ParmDSTid_usuario = new SqlParameter();
-                ParmDSTid_usuario.ParameterName = "@mDSTid_usuario";
-                ParmDSTid_usuario.SqlDbType = SqlDbType.VarChar;
-                ParmDSTid_usuario.Value = acfCMVp_Cabecera_Movimiento.DSTid_usuario;
-                SqlCmd.Parameters.Add(ParmDSTid_usuario);
-
-                SqlParameter ParmDSTds_usuario = new SqlParameter();
-                ParmDSTds_usuario.ParameterName = "@mDSTds_usuario";
-                ParmDSTds_usuario.SqlDbType = SqlDbType.VarChar;
-                ParmDSTds_usuario.Value = acfCMVp_Cabecera_Movimiento.DSTds_usuario;
-                SqlCmd.Parameters.Add(ParmDSTds_usuario);
-
                 SqlParameter ParmDSTid_ambiente = new SqlParameter();
                 ParmDSTid_ambiente.ParameterName = "@mDSTid_ambiente";
                 ParmDSTid_ambiente.SqlDbType = SqlDbType.Char;
@@ -923,6 +901,30 @@ namespace CapaDatos
                 ParmDSTds_ambiente.SqlDbType = SqlDbType.VarChar;
                 ParmDSTds_ambiente.Value = acfCMVp_Cabecera_Movimiento.DSTds_ambiente;
                 SqlCmd.Parameters.Add(ParmDSTds_ambiente);
+                
+                SqlParameter ParmDSTid_persona = new SqlParameter();
+                ParmDSTid_persona.ParameterName = "@mDSTid_persona";
+                ParmDSTid_persona.SqlDbType = SqlDbType.VarChar;
+                ParmDSTid_persona.Value = acfCMVp_Cabecera_Movimiento.DSTid_persona;
+                SqlCmd.Parameters.Add(ParmDSTid_persona);
+
+                SqlParameter ParmDSTds_persona = new SqlParameter();
+                ParmDSTds_persona.ParameterName = "@mDSTds_persona";
+                ParmDSTds_persona.SqlDbType = SqlDbType.VarChar;
+                ParmDSTds_persona.Value = acfCMVp_Cabecera_Movimiento.DSTds_persona;
+                SqlCmd.Parameters.Add(ParmDSTds_persona);
+
+                SqlParameter ParmDSTid_usuario = new SqlParameter();
+                ParmDSTid_usuario.ParameterName = "@mDSTid_usuario";
+                ParmDSTid_usuario.SqlDbType = SqlDbType.VarChar;
+                ParmDSTid_usuario.Value = acfCMVp_Cabecera_Movimiento.DSTid_usuario;
+                SqlCmd.Parameters.Add(ParmDSTid_usuario);
+
+                SqlParameter ParmDSTds_usuario = new SqlParameter();
+                ParmDSTds_usuario.ParameterName = "@mDSTds_usuario";
+                ParmDSTds_usuario.SqlDbType = SqlDbType.VarChar;
+                ParmDSTds_usuario.Value = acfCMVp_Cabecera_Movimiento.DSTds_usuario;
+                SqlCmd.Parameters.Add(ParmDSTds_usuario);
 
                 SqlParameter ParmMVPobservaciones = new SqlParameter();
                 ParmMVPobservaciones.ParameterName = "@mMVPobservaciones";
@@ -988,18 +990,6 @@ namespace CapaDatos
                 ParmMVPfecha_movimiento.Value = acfCMVp_Cabecera_Movimiento.MVPfecha_movimiento;
                 SqlCmd.Parameters.Add(ParmMVPfecha_movimiento);
 
-                SqlParameter ParmORGid_persona = new SqlParameter();
-                ParmORGid_persona.ParameterName = "@mORGid_persona";
-                ParmORGid_persona.SqlDbType = SqlDbType.Char;
-                ParmORGid_persona.Value = acfCMVp_Cabecera_Movimiento.ORGid_persona;
-                SqlCmd.Parameters.Add(ParmORGid_persona);
-
-                SqlParameter ParmORGds_persona = new SqlParameter();
-                ParmORGds_persona.ParameterName = "@mORGds_persona";
-                ParmORGds_persona.SqlDbType = SqlDbType.VarChar;
-                ParmORGds_persona.Value = acfCMVp_Cabecera_Movimiento.ORGds_persona;
-                SqlCmd.Parameters.Add(ParmORGds_persona);
-
                 SqlParameter mORGid_zona = new SqlParameter();
                 mORGid_zona.ParameterName = "@mORGid_zona";
                 mORGid_zona.SqlDbType = SqlDbType.Char;
@@ -1024,18 +1014,6 @@ namespace CapaDatos
                 ParmORGds_crp.Value = acfCMVp_Cabecera_Movimiento.ORGds_crp;
                 SqlCmd.Parameters.Add(ParmORGds_crp);
 
-                SqlParameter ParmORGid_usuario = new SqlParameter();
-                ParmORGid_usuario.ParameterName = "@mORGid_usuario";
-                ParmORGid_usuario.SqlDbType = SqlDbType.VarChar;
-                ParmORGid_usuario.Value = acfCMVp_Cabecera_Movimiento.ORGid_usuario;
-                SqlCmd.Parameters.Add(ParmORGid_usuario);
-
-                SqlParameter ParmORGds_usuario = new SqlParameter();
-                ParmORGds_usuario.ParameterName = "@mORGds_usuario";
-                ParmORGds_usuario.SqlDbType = SqlDbType.VarChar;
-                ParmORGds_usuario.Value = acfCMVp_Cabecera_Movimiento.mORGds_usuario;
-                SqlCmd.Parameters.Add(ParmORGds_usuario);
-
                 SqlParameter ParmORGid_ambiente = new SqlParameter();
                 ParmORGid_ambiente.ParameterName = "@mORGid_ambiente";
                 ParmORGid_ambiente.SqlDbType = SqlDbType.Char;
@@ -1048,17 +1026,31 @@ namespace CapaDatos
                 ParmORGds_ambiente.Value = acfCMVp_Cabecera_Movimiento.ORGds_ambiente;
                 SqlCmd.Parameters.Add(ParmORGds_ambiente);
 
-                SqlParameter ParmDSTid_persona = new SqlParameter();
-                ParmDSTid_persona.ParameterName = "@mDSTid_persona";
-                ParmDSTid_persona.SqlDbType = SqlDbType.VarChar;
-                ParmDSTid_persona.Value = acfCMVp_Cabecera_Movimiento.DSTid_persona;
-                SqlCmd.Parameters.Add(ParmDSTid_persona);
+                SqlParameter ParmORGid_persona = new SqlParameter();
+                ParmORGid_persona.ParameterName = "@mORGid_persona";
+                ParmORGid_persona.SqlDbType = SqlDbType.Char;
+                ParmORGid_persona.Value = acfCMVp_Cabecera_Movimiento.ORGid_persona;
+                SqlCmd.Parameters.Add(ParmORGid_persona);
 
-                SqlParameter ParmDSTds_persona = new SqlParameter();
-                ParmDSTds_persona.ParameterName = "@mDSTds_persona";
-                ParmDSTds_persona.SqlDbType = SqlDbType.VarChar;
-                ParmDSTds_persona.Value = acfCMVp_Cabecera_Movimiento.DSTds_persona;
-                SqlCmd.Parameters.Add(ParmDSTds_persona);
+                SqlParameter ParmORGds_persona = new SqlParameter();
+                ParmORGds_persona.ParameterName = "@mORGds_persona";
+                ParmORGds_persona.SqlDbType = SqlDbType.VarChar;
+                ParmORGds_persona.Value = acfCMVp_Cabecera_Movimiento.ORGds_persona;
+                SqlCmd.Parameters.Add(ParmORGds_persona);
+
+                SqlParameter ParmORGid_usuario = new SqlParameter();
+                ParmORGid_usuario.ParameterName = "@mORGid_usuario";
+                ParmORGid_usuario.SqlDbType = SqlDbType.VarChar;
+                ParmORGid_usuario.Value = acfCMVp_Cabecera_Movimiento.ORGid_usuario;
+                SqlCmd.Parameters.Add(ParmORGid_usuario);
+
+                SqlParameter ParmORGds_usuario = new SqlParameter();
+                ParmORGds_usuario.ParameterName = "@mORGds_usuario";
+                ParmORGds_usuario.SqlDbType = SqlDbType.VarChar;
+                ParmORGds_usuario.Value = acfCMVp_Cabecera_Movimiento.mORGds_usuario;
+                SqlCmd.Parameters.Add(ParmORGds_usuario);
+
+
 
                 SqlParameter ParmDSTid_zona = new SqlParameter();
                 ParmDSTid_zona.ParameterName = "@mDSTid_zona";
@@ -1084,18 +1076,6 @@ namespace CapaDatos
                 ParmDSTds_crp.Value = acfCMVp_Cabecera_Movimiento.DSTds_crp;
                 SqlCmd.Parameters.Add(ParmDSTds_crp);
 
-                SqlParameter ParmDSTid_usuario = new SqlParameter();
-                ParmDSTid_usuario.ParameterName = "@mDSTid_usuario";
-                ParmDSTid_usuario.SqlDbType = SqlDbType.VarChar;
-                ParmDSTid_usuario.Value = acfCMVp_Cabecera_Movimiento.DSTid_usuario;
-                SqlCmd.Parameters.Add(ParmDSTid_usuario);
-
-                SqlParameter ParmDSTds_usuario = new SqlParameter();
-                ParmDSTds_usuario.ParameterName = "@mDSTds_usuario";
-                ParmDSTds_usuario.SqlDbType = SqlDbType.VarChar;
-                ParmDSTds_usuario.Value = acfCMVp_Cabecera_Movimiento.DSTds_usuario;
-                SqlCmd.Parameters.Add(ParmDSTds_usuario);
-
                 SqlParameter ParmDSTid_ambiente = new SqlParameter();
                 ParmDSTid_ambiente.ParameterName = "@mDSTid_ambiente";
                 ParmDSTid_ambiente.SqlDbType = SqlDbType.Char;
@@ -1107,6 +1087,30 @@ namespace CapaDatos
                 ParmDSTds_ambiente.SqlDbType = SqlDbType.VarChar;
                 ParmDSTds_ambiente.Value = acfCMVp_Cabecera_Movimiento.DSTds_ambiente;
                 SqlCmd.Parameters.Add(ParmDSTds_ambiente);
+
+                SqlParameter ParmDSTid_persona = new SqlParameter();
+                ParmDSTid_persona.ParameterName = "@mDSTid_persona";
+                ParmDSTid_persona.SqlDbType = SqlDbType.VarChar;
+                ParmDSTid_persona.Value = acfCMVp_Cabecera_Movimiento.DSTid_persona;
+                SqlCmd.Parameters.Add(ParmDSTid_persona);
+
+                SqlParameter ParmDSTds_persona = new SqlParameter();
+                ParmDSTds_persona.ParameterName = "@mDSTds_persona";
+                ParmDSTds_persona.SqlDbType = SqlDbType.VarChar;
+                ParmDSTds_persona.Value = acfCMVp_Cabecera_Movimiento.DSTds_persona;
+                SqlCmd.Parameters.Add(ParmDSTds_persona);
+
+                SqlParameter ParmDSTid_usuario = new SqlParameter();
+                ParmDSTid_usuario.ParameterName = "@mDSTid_usuario";
+                ParmDSTid_usuario.SqlDbType = SqlDbType.VarChar;
+                ParmDSTid_usuario.Value = acfCMVp_Cabecera_Movimiento.DSTid_usuario;
+                SqlCmd.Parameters.Add(ParmDSTid_usuario);
+
+                SqlParameter ParmDSTds_usuario = new SqlParameter();
+                ParmDSTds_usuario.ParameterName = "@mDSTds_usuario";
+                ParmDSTds_usuario.SqlDbType = SqlDbType.VarChar;
+                ParmDSTds_usuario.Value = acfCMVp_Cabecera_Movimiento.DSTds_usuario;
+                SqlCmd.Parameters.Add(ParmDSTds_usuario);
 
                 SqlParameter ParmMVPobservaciones = new SqlParameter();
                 ParmMVPobservaciones.ParameterName = "@mMVPobservaciones";
