@@ -233,3 +233,4 @@ C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\RdlCompile.ca
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\RdlCompile.compiled
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_PRMVAR.resources

@@ -240,13 +240,13 @@ namespace CapaDatos
                 SqlParameter PartdINVinicio = new SqlParameter();
                 PartdINVinicio.ParameterName = "@dtINVinicio";
                 PartdINVinicio.SqlDbType = SqlDbType.DateTime;
-                PartdINVinicio.Value = acfINVp_Inventario.INVinicio;
+                PartdINVinicio.Value = Convert.ToDateTime(acfINVp_Inventario.INVinicio);
                 SqlCmd.Parameters.Add(PartdINVinicio);
                 //
                 SqlParameter PartdINVcierre = new SqlParameter();
                 PartdINVcierre.ParameterName = "@dtINVcierre";
                 PartdINVcierre.SqlDbType = SqlDbType.DateTime;
-                PartdINVcierre.Value = acfINVp_Inventario.INVcierre;
+                PartdINVcierre.Value = Convert.ToDateTime(acfINVp_Inventario.INVcierre);
                 SqlCmd.Parameters.Add(PartdINVcierre);
                 //
                 SqlParameter PartbINVactivo = new SqlParameter();

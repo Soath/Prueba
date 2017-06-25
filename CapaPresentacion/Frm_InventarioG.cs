@@ -250,7 +250,10 @@ namespace CapaPresentacion
            if (this.validaCampos())
            {
                
-               if (Graba == 1) { this.InsertaRegistro(); this.CopiarRegistro(); this.CopiarRegistro2(); }
+               if (Graba == 1) { this.InsertaRegistro();
+                                  this.CopiarRegistro();
+                                 // this.CopiarRegistro2();
+                               }
                if (Graba == 2) this.ActualizaRegistro();
                Graba = 0;
                this.BotonCancelar();
@@ -265,7 +268,14 @@ namespace CapaPresentacion
            string Rta = string.Empty;
            try
            {
-               Rta = NacfINVp_Inventario.Insertar(this.txtINVid.Text, this.txtINVdescripcion.Text, this.dtINVfechainicio.Text, this.txtINVfechacierre.Text, false, this.txtINVrespon.Text, this.txtINVperiodo.Text);
+               Rta = NacfINVp_Inventario.Insertar(
+                   this.txtINVid.Text
+                   , this.txtINVdescripcion.Text
+                   , this.dtINVfechainicio.Text
+                   , this.txtINVfechacierre.Text
+                   , this.cbActivo.Checked
+                   , this.txtINVrespon.Text
+                   , this.txtINVperiodo.Text);
 
                if (Rta.Equals("OK"))
                {
@@ -295,7 +305,7 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    Rta = NacfINBt_Inventariobienes.Copiar2(cboCRP.Text);
+                    Rta = NacfINBt_Inventariobienes.Copiar2(cbocentrodecosto.Text);
 
                     if (Rta.Equals("OK"))
                     {
@@ -336,10 +346,10 @@ namespace CapaPresentacion
         }
         private void CargarCombos()
         {
-            this.cboCRP.DataSource = NacfCRPt_Centro_Responsabilidad.Mostrar();
-            this.cboCRP.ValueMember = "CRPid_crp";
-            this.cboCRP.DisplayMember = "CRPid_crp";
-            this.cboCRP.SelectedIndex = -1;
+            this.cbocentrodecosto.DataSource = NbdiXCCpExtraccionSAP_CentroCosto.Mostrar();
+            this.cbocentrodecosto.ValueMember = "KOSTL";
+            this.cbocentrodecosto.DisplayMember = "KOSTL";
+            this.cbocentrodecosto.SelectedIndex = -1;
         }
         private void CopiarRegistro2()
         {
@@ -348,7 +358,7 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    Rta = NacfICRt_Inventariocaracteristicas.Copiar3(cboCRP.Text);
+                    Rta = NacfICRt_Inventariocaracteristicas.Copiar3(cbocentrodecosto.Text);
 
                     if (Rta.Equals("OK"))
                     {
@@ -425,12 +435,18 @@ namespace CapaPresentacion
             EstadoText(this.Controls, true, true);
             this.Botones(false);
             Last();
-            txtINVid.Text=Convert.ToString(Convert.ToInt32(txtINVid.Text) + 1);
+
+            if (string.IsNullOrWhiteSpace(txtINVid.Text))
+            {
+                txtINVid.Text = "1";
+            }
+            else txtINVid.Text = Convert.ToString(Convert.ToInt32(txtINVid.Text) + 1);
+            
             txtINVdescripcion.Text = "";
             txtINVfechacierre.Text = "";
             txtINVperiodo.Text = "";
             txtINVrespon.Text = "";
-            cboCRP.Text = "";
+            cbocentrodecosto.Text = "";
              
 
 

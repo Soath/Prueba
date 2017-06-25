@@ -1539,7 +1539,7 @@ namespace CapaDatos
         return rpta;
     }
    
-    public string Copiar3( string AMBid)
+    public string Copiar3( string KOSTL)
     {
 
         string rpta = "";
@@ -1557,11 +1557,11 @@ namespace CapaDatos
             //
 
             //
-            SqlParameter ParAMBid = new SqlParameter();
-            ParAMBid.ParameterName = "@AMBid";
-            ParAMBid.SqlDbType = SqlDbType.Int;
-            ParAMBid.Value = AMBid;
-            SqlCmd.Parameters.Add(ParAMBid);
+            SqlParameter ParKOSTL = new SqlParameter();
+            ParKOSTL.ParameterName = "@sKOSTL";
+            ParKOSTL.SqlDbType = SqlDbType.Int;
+            ParKOSTL.Value = KOSTL;
+            SqlCmd.Parameters.Add(ParKOSTL);
             //
             //Ejecutamos nuestro comando
 

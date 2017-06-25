@@ -43,8 +43,6 @@
             this.txtINVid = new System.Windows.Forms.TextBox();
             this.txtINVdescripcion = new System.Windows.Forms.TextBox();
             this.txtINVrespon = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.dtINVfechainicio = new System.Windows.Forms.DateTimePicker();
             this.rbtotal = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -65,8 +63,8 @@
             this.txtINVfechacierre = new System.Windows.Forms.DateTimePicker();
             this.txtINVperiodo = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.cboCRP = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.txtAMBid = new System.Windows.Forms.TextBox();
+            this.cbocentrodecosto = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -178,32 +176,14 @@
             this.txtINVrespon.Size = new System.Drawing.Size(432, 20);
             this.txtINVrespon.TabIndex = 139;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(235, 194);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 141;
-            this.button1.Text = "Generar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(494, 194);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 142;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // dtINVfechainicio
             // 
             this.dtINVfechainicio.Checked = false;
             this.dtINVfechainicio.Enabled = false;
+            this.dtINVfechainicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtINVfechainicio.Location = new System.Drawing.Point(597, 103);
             this.dtINVfechainicio.Name = "dtINVfechainicio";
-            this.dtINVfechainicio.Size = new System.Drawing.Size(241, 20);
+            this.dtINVfechainicio.Size = new System.Drawing.Size(99, 20);
             this.dtINVfechainicio.TabIndex = 146;
             this.dtINVfechainicio.Value = new System.DateTime(2017, 4, 28, 8, 50, 2, 0);
             // 
@@ -222,10 +202,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(221, 132);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(66, 17);
+            this.radioButton2.Size = new System.Drawing.Size(73, 17);
             this.radioButton2.TabIndex = 150;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Por Área";
+            this.radioButton2.Text = "Por CCTO";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // cbActivo
@@ -410,9 +390,10 @@
             // 
             this.txtINVfechacierre.Checked = false;
             this.txtINVfechacierre.Enabled = false;
+            this.txtINVfechacierre.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtINVfechacierre.Location = new System.Drawing.Point(597, 129);
             this.txtINVfechacierre.Name = "txtINVfechacierre";
-            this.txtINVfechacierre.Size = new System.Drawing.Size(241, 20);
+            this.txtINVfechacierre.Size = new System.Drawing.Size(99, 20);
             this.txtINVfechacierre.TabIndex = 156;
             this.txtINVfechacierre.Value = new System.DateTime(2017, 4, 28, 8, 50, 2, 0);
             // 
@@ -432,24 +413,6 @@
             this.lblTotal.TabIndex = 158;
             this.lblTotal.Text = "lblTotal";
             // 
-            // cboCRP
-            // 
-            this.cboCRP.AutoComplete = false;
-            this.cboCRP.AutoDropdown = false;
-            this.cboCRP.BackColorEven = System.Drawing.Color.White;
-            this.cboCRP.BackColorOdd = System.Drawing.Color.White;
-            this.cboCRP.ColumnNames = "";
-            this.cboCRP.ColumnWidthDefault = 75;
-            this.cboCRP.ColumnWidths = "";
-            this.cboCRP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboCRP.FormattingEnabled = true;
-            this.cboCRP.LinkedColumnIndex = 2;
-            this.cboCRP.LinkedTextBox = this.txtAMBid;
-            this.cboCRP.Location = new System.Drawing.Point(293, 130);
-            this.cboCRP.Name = "cboCRP";
-            this.cboCRP.Size = new System.Drawing.Size(101, 21);
-            this.cboCRP.TabIndex = 159;
-            // 
             // txtAMBid
             // 
             this.txtAMBid.Location = new System.Drawing.Point(400, 131);
@@ -459,6 +422,24 @@
             this.txtAMBid.TabIndex = 160;
             this.txtAMBid.TabStop = false;
             // 
+            // cbocentrodecosto
+            // 
+            this.cbocentrodecosto.AutoComplete = false;
+            this.cbocentrodecosto.AutoDropdown = false;
+            this.cbocentrodecosto.BackColorEven = System.Drawing.Color.White;
+            this.cbocentrodecosto.BackColorOdd = System.Drawing.Color.White;
+            this.cbocentrodecosto.ColumnNames = "";
+            this.cbocentrodecosto.ColumnWidthDefault = 75;
+            this.cbocentrodecosto.ColumnWidths = "";
+            this.cbocentrodecosto.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbocentrodecosto.FormattingEnabled = true;
+            this.cbocentrodecosto.LinkedColumnIndex = 2;
+            this.cbocentrodecosto.LinkedTextBox = this.txtAMBid;
+            this.cbocentrodecosto.Location = new System.Drawing.Point(293, 130);
+            this.cbocentrodecosto.Name = "cbocentrodecosto";
+            this.cbocentrodecosto.Size = new System.Drawing.Size(101, 21);
+            this.cbocentrodecosto.TabIndex = 159;
+            // 
             // Frm_InventarioG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,7 +447,7 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(850, 434);
             this.Controls.Add(this.txtAMBid);
-            this.Controls.Add(this.cboCRP);
+            this.Controls.Add(this.cbocentrodecosto);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.txtINVperiodo);
             this.Controls.Add(this.txtINVfechacierre);
@@ -476,8 +457,6 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.rbtotal);
             this.Controls.Add(this.dtINVfechainicio);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtINVrespon);
             this.Controls.Add(this.txtINVdescripcion);
             this.Controls.Add(this.txtINVid);
@@ -507,8 +486,6 @@
 
         private System.Windows.Forms.ToolTip ttMensaje;
         private System.Windows.Forms.ErrorProvider errorIcono;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtINVrespon;
         private System.Windows.Forms.TextBox txtINVdescripcion;
         private System.Windows.Forms.TextBox txtINVid;
@@ -541,6 +518,6 @@
         private System.Windows.Forms.TextBox txtINVperiodo;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.TextBox txtAMBid;
-        private MultiColumnComboBoxDemo.MultiColumnComboBox cboCRP;
+        private MultiColumnComboBoxDemo.MultiColumnComboBox cbocentrodecosto;
     }
 }
