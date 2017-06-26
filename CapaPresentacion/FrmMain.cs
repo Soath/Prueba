@@ -574,5 +574,11 @@ namespace CapaPresentacion
             Form Frm_PRMVAR = new Frm_PRMVAR();
             Frm_PRMVAR.ShowDialog();
         }
+
+        private void ribbonButton66_Click_1(object sender, EventArgs e)
+        {
+            Form FrmMovimientoTransferenciaActivo_Aprobadas = new FrmMovimientoTransferenciaActivo_Aprobadas();
+            FrmMovimientoTransferenciaActivo_Aprobadas.ShowDialog();
+        }
     }
 }
