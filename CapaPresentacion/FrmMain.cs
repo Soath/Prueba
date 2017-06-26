@@ -568,5 +568,11 @@ namespace CapaPresentacion
             FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Depreciacion1.rdlc", NacfACFp_Activo_Fijo.Depreciacion(), "ip");
             rptalu.ShowDialog();
         }
+
+        private void ribbonOrbMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form Frm_PRMVAR = new Frm_PRMVAR();
+            Frm_PRMVAR.ShowDialog();
+        }
     }
 }

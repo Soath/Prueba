@@ -623,6 +623,12 @@
     <Compile Include="Frm_InventarioG.Designer.cs">
       <DependentUpon>Frm_InventarioG.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_PRMVAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PRMVAR.Designer.cs">
+      <DependentUpon>Frm_PRMVAR.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_RegistroInventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -934,6 +940,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_InventarioG.resx">
       <DependentUpon>Frm_InventarioG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PRMVAR.resx">
+      <DependentUpon>Frm_PRMVAR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_RegistroInventario.resx">
       <DependentUpon>Frm_RegistroInventario.cs</DependentUpon>
