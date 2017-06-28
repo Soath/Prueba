@@ -100,7 +100,6 @@
     </Compile>
     <Compile Include="DataSet2.cs">
       <DependentUpon>DataSet2.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -587,6 +586,12 @@
     <Compile Include="FrmMovimientoTransferecnaiActivo.Designer.cs">
       <DependentUpon>FrmMovimientoTransferecnaiActivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMovimientoTransferenciaActivo_Aprobadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovimientoTransferenciaActivo_Aprobadas.Designer.cs">
+      <DependentUpon>FrmMovimientoTransferenciaActivo_Aprobadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMovimiento_Transferencia_Activo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -922,6 +927,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMovimientoTransferecnaiActivo.resx">
       <DependentUpon>FrmMovimientoTransferecnaiActivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovimientoTransferenciaActivo_Aprobadas.resx">
+      <DependentUpon>FrmMovimientoTransferenciaActivo_Aprobadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMovimiento_Transferencia_Activo.resx">
       <DependentUpon>FrmMovimiento_Transferencia_Activo.cs</DependentUpon>

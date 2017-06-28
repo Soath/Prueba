@@ -411,6 +411,11 @@ namespace CapaNegocio
         {
             return new DMovimiento_Transferencia_Activo().Mostrar2();
         }
+        //M�todo Mostrar solicitudes aprobadas
+        public static DataTable Mostrar3()
+        {
+            return new DMovimiento_Transferencia_Activo().Mostrar3();
+        }
         // Recargar el Act. Fijo 
         public static string RecargarACF(String iMVPid_proceso)
         {

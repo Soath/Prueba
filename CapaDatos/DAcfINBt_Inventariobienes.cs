@@ -1126,7 +1126,7 @@ namespace CapaDatos
             //
             //Ejecutamos nuestro comando
 
-            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "No hay Registro que coincidan con el Filtro";
 
 
         }

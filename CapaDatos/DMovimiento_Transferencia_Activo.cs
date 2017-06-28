@@ -765,6 +765,34 @@ namespace CapaDatos
             return DtResultado;
         }
 
+        //METODO MOSTRAR solicitudes aprobadas
+        public DataTable Mostrar3()
+        {
+            DataTable DtResultado = new DataTable("acfCMVp_Cabecera_Movimiento");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S_acfCMVp_Cabecera_Movimiento3";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
         //METODO INSERTAR 
         public string Insertar(DMovimiento_Transferencia_Activo acfCMVp_Cabecera_Movimiento)
     {

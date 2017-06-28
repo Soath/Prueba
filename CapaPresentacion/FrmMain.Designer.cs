@@ -194,7 +194,7 @@
             this.ribbon1.Cursor = System.Windows.Forms.Cursors.Default;
             this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.ribbon1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ribbon1.Margin = new System.Windows.Forms.Padding(2);
             this.ribbon1.Minimized = false;
             this.ribbon1.Name = "ribbon1";
             // 
@@ -391,6 +391,7 @@
             this.ribbonButton66.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton66.Image")));
             this.ribbonButton66.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton66.SmallImage")));
             this.ribbonButton66.Text = "Solicitudes Aprobadas";
+            this.ribbonButton66.Click += new System.EventHandler(this.ribbonButton66_Click_1);
             // 
             // ribbonPanel5
             // 
@@ -1023,7 +1024,7 @@
             this.panelContenedor.Controls.Add(this.kryptonBorderEdge1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(0, 132);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(2);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1014, 346);
             this.panelContenedor.TabIndex = 1;
@@ -1032,7 +1033,7 @@
             // 
             this.kryptonBorderEdge1.BorderStyle = ComponentFactory.Krypton.Toolkit.PaletteBorderStyle.TabDock;
             this.kryptonBorderEdge1.Location = new System.Drawing.Point(538, 28);
-            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonBorderEdge1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
             this.kryptonBorderEdge1.Size = new System.Drawing.Size(38, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
@@ -1303,7 +1304,7 @@
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.ribbon1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".:. Sistema de Gestión v1.0 de Activos Fijos .:.";
