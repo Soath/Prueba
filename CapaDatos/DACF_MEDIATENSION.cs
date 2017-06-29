@@ -22,7 +22,7 @@ namespace CapaDatos
             try
             {
                 //Codigo
-                SqlCon.ConnectionString = DConexion.CnBDI;
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCon.Open();

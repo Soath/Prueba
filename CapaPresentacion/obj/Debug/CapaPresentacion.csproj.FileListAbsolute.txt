@@ -235,3 +235,4 @@ C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_PRMVAR.resources
 C:\Users\avatec\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMovimientoTransferenciaActivo_Aprobadas.resources
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMovimientoTransferenciaActivo_Aprobadas.resources

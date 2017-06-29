@@ -320,6 +320,7 @@ namespace CapaPresentacion
             this.txtBuscar.Text = "";
 
             this.mostrar();
+            cboDatos.Visible = false;
         }
         private void BotonAgregar()
         {
@@ -372,6 +373,7 @@ namespace CapaPresentacion
             Activo = 1;
             this.Botones(true);
             tabControl1.SelectedTab = tabPage1;
+            this.cboDatos.Visible = false;
         }
 
         private void BotonListado()
@@ -410,7 +412,86 @@ namespace CapaPresentacion
             this.txtPRM_estado.Text = Convert.ToString(this.ObtenerSeleccion().Cells[5].Value);
             this.txtPRM_frmnombre.Text = Convert.ToString(this.ObtenerSeleccion().Cells[6].Value);
             //this.txtStock.Text = Convert.ToString(this.ObtenerSeleccion().Cells[4].Value);
+            if(txtPRM_descripcion.Text == "Tabla1")
+            {
+                cboDatos.Visible = true;
+                this.cboDatos.DataSource = Nacf_BajaTension.Mostrar();
+                this.cboDatos.ValueMember = "CTA_CONTABLE";
+                this.cboDatos.DisplayMember = "CTA_CONTABLE";
+                this.cboDatos.SelectedIndex = -1;
+               
+            }
+            if (txtPRM_descripcion.Text == "Tabla2")
+            {
+                cboDatos.Visible = true;
+                this.cboDatos.DataSource = NACFCODNIIF_SistELECTRICO.Mostrar();
+                this.cboDatos.ValueMember = "CTA_CONTABLE";
+                this.cboDatos.DisplayMember = "CTA_CONTABLE";
+                this.cboDatos.SelectedIndex = -1;
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla3")
+            {
+                cboDatos.Visible = true;
+                this.cboDatos.DataSource = NACF_FACTTRANSFORMADORES.Mostrar();
+                this.cboDatos.ValueMember = "ESTADO";
+                this.cboDatos.DisplayMember = "ESTADO";
+                this.cboDatos.SelectedIndex = -1;
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla4")
+            {
+                cboDatos.Visible = true;
+                this.cboDatos.DataSource = NACF_MEDIATENSION.Mostrar();
+                this.cboDatos.ValueMember = "CTA_CONTABLE";
+                this.cboDatos.DisplayMember = "CTA_CONTABLE";
+                this.cboDatos.SelectedIndex = -1;
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla5")
+            {
+                cboDatos.Visible = true;
+                this.cboDatos.DataSource = NACF_ValorResidual.Mostrar();
+                this.cboDatos.ValueMember = "VNR";
+                this.cboDatos.DisplayMember = "VNR";
+                this.cboDatos.SelectedIndex = -1;
+            }
+            if (txtPRM_descripcion.Text == "Tabla6")
+            {
+                cboDatos.Visible = true;
+                this.cboDatos.DataSource = NACF_ValorResidualNiff.Mostrar();
+                this.cboDatos.ValueMember = "NIIF";
+                this.cboDatos.DisplayMember = "NIIF";
+                this.cboDatos.SelectedIndex = -1;
+            }
+            if (txtPRM_descripcion.Text == "Tabla7")
+            {
+                cboDatos.Visible = true;
+                this.cboDatos.DataSource = NACF_Valuacion.Mostrar();
+                this.cboDatos.ValueMember = "VNR_ID";
+                this.cboDatos.DisplayMember = "VNR_ID";
+                this.cboDatos.SelectedIndex = -1;
+            }
+            if (txtPRM_descripcion.Text == "Tabla8")
+            {
+                cboDatos.Visible = true;
+                this.cboDatos.DataSource = NACF_VIDAUTILTASADA.Mostrar();
+                this.cboDatos.ValueMember = "Vida_Util";
+                this.cboDatos.DisplayMember = "Vida_Util";
+                this.cboDatos.SelectedIndex = -1;
+            }
+            if (txtPRM_descripcion.Text == "Tabla9")
+            {
+                cboDatos.Visible = true;
+                this.cboDatos.DataSource = NACFVR_IDENT.Mostrar();
+                this.cboDatos.ValueMember = "VRI";
+                this.cboDatos.DisplayMember = "VRI";
+                this.cboDatos.SelectedIndex = -1;
+            }
+            
         }
+     
+
         private bool validaCampos()
         {
             if (this.txtGRP_id.Text == string.Empty)
@@ -628,6 +709,11 @@ namespace CapaPresentacion
         }
 
         private void txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboDatos_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

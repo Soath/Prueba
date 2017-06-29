@@ -47,20 +47,21 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtPRM_frmnombre = new System.Windows.Forms.TextBox();
+            this.txtPRM_estado = new System.Windows.Forms.TextBox();
+            this.txtPRM_valor = new System.Windows.Forms.TextBox();
+            this.txtPRM_descripcion = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtGRPid_variable = new System.Windows.Forms.TextBox();
             this.txtGRP_id = new System.Windows.Forms.TextBox();
             this.labelX1 = new System.Windows.Forms.Label();
             this.labelX2 = new System.Windows.Forms.Label();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtPRM_descripcion = new System.Windows.Forms.TextBox();
-            this.txtPRM_valor = new System.Windows.Forms.TextBox();
-            this.txtPRM_estado = new System.Windows.Forms.TextBox();
-            this.txtPRM_frmnombre = new System.Windows.Forms.TextBox();
+            this.cboDatos = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -85,7 +86,7 @@
             this.toolStripCancelar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(609, 67);
+            this.toolStrip1.Size = new System.Drawing.Size(628, 67);
             this.toolStrip1.TabIndex = 132;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -263,6 +264,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cboDatos);
             this.groupBox2.Controls.Add(this.txtPRM_frmnombre);
             this.groupBox2.Controls.Add(this.txtPRM_estado);
             this.groupBox2.Controls.Add(this.txtPRM_valor);
@@ -284,9 +286,82 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Usuarios";
             // 
+            // txtPRM_frmnombre
+            // 
+            this.txtPRM_frmnombre.Location = new System.Drawing.Point(194, 162);
+            this.txtPRM_frmnombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPRM_frmnombre.Name = "txtPRM_frmnombre";
+            this.txtPRM_frmnombre.Size = new System.Drawing.Size(250, 20);
+            this.txtPRM_frmnombre.TabIndex = 125;
+            this.txtPRM_frmnombre.TextChanged += new System.EventHandler(this.txt_TextChanged);
+            // 
+            // txtPRM_estado
+            // 
+            this.txtPRM_estado.Location = new System.Drawing.Point(194, 135);
+            this.txtPRM_estado.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPRM_estado.Name = "txtPRM_estado";
+            this.txtPRM_estado.Size = new System.Drawing.Size(250, 20);
+            this.txtPRM_estado.TabIndex = 124;
+            // 
+            // txtPRM_valor
+            // 
+            this.txtPRM_valor.Location = new System.Drawing.Point(194, 109);
+            this.txtPRM_valor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPRM_valor.Name = "txtPRM_valor";
+            this.txtPRM_valor.Size = new System.Drawing.Size(250, 20);
+            this.txtPRM_valor.TabIndex = 123;
+            // 
+            // txtPRM_descripcion
+            // 
+            this.txtPRM_descripcion.Location = new System.Drawing.Point(194, 83);
+            this.txtPRM_descripcion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPRM_descripcion.Name = "txtPRM_descripcion";
+            this.txtPRM_descripcion.Size = new System.Drawing.Size(250, 20);
+            this.txtPRM_descripcion.TabIndex = 122;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(34, 165);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 13);
+            this.label5.TabIndex = 121;
+            this.label5.Text = "Nombre del Formulario";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(34, 138);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.TabIndex = 120;
+            this.label4.Text = "Estado";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(34, 112);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.TabIndex = 119;
+            this.label3.Text = "Valor";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(34, 86);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.TabIndex = 118;
+            this.label2.Text = "Descripción";
+            // 
             // txtGRPid_variable
             // 
-            this.txtGRPid_variable.Location = new System.Drawing.Point(200, 89);
+            this.txtGRPid_variable.Location = new System.Drawing.Point(194, 55);
             this.txtGRPid_variable.Margin = new System.Windows.Forms.Padding(2);
             this.txtGRPid_variable.Name = "txtGRPid_variable";
             this.txtGRPid_variable.Size = new System.Drawing.Size(50, 20);
@@ -294,7 +369,7 @@
             // 
             // txtGRP_id
             // 
-            this.txtGRP_id.Location = new System.Drawing.Point(199, 61);
+            this.txtGRP_id.Location = new System.Drawing.Point(193, 27);
             this.txtGRP_id.Margin = new System.Windows.Forms.Padding(2);
             this.txtGRP_id.Name = "txtGRP_id";
             this.txtGRP_id.Size = new System.Drawing.Size(50, 20);
@@ -303,7 +378,7 @@
             // labelX1
             // 
             this.labelX1.AutoSize = true;
-            this.labelX1.Location = new System.Drawing.Point(40, 64);
+            this.labelX1.Location = new System.Drawing.Point(34, 30);
             this.labelX1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(18, 13);
@@ -313,7 +388,7 @@
             // labelX2
             // 
             this.labelX2.AutoSize = true;
-            this.labelX2.Location = new System.Drawing.Point(40, 92);
+            this.labelX2.Location = new System.Drawing.Point(34, 58);
             this.labelX2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(45, 13);
@@ -328,84 +403,31 @@
             // 
             this.errorIcono.ContainerControl = this;
             // 
-            // label2
+            // cboDatos
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 120);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
-            this.label2.TabIndex = 118;
-            this.label2.Text = "Descripción";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 146);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
-            this.label3.TabIndex = 119;
-            this.label3.Text = "Valor";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 172);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 13);
-            this.label4.TabIndex = 120;
-            this.label4.Text = "Estado";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 199);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 13);
-            this.label5.TabIndex = 121;
-            this.label5.Text = "Nombre del Formulario";
-            // 
-            // txtPRM_descripcion
-            // 
-            this.txtPRM_descripcion.Location = new System.Drawing.Point(200, 117);
-            this.txtPRM_descripcion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPRM_descripcion.Name = "txtPRM_descripcion";
-            this.txtPRM_descripcion.Size = new System.Drawing.Size(250, 20);
-            this.txtPRM_descripcion.TabIndex = 122;
-            // 
-            // txtPRM_valor
-            // 
-            this.txtPRM_valor.Location = new System.Drawing.Point(200, 143);
-            this.txtPRM_valor.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPRM_valor.Name = "txtPRM_valor";
-            this.txtPRM_valor.Size = new System.Drawing.Size(250, 20);
-            this.txtPRM_valor.TabIndex = 123;
-            // 
-            // txtPRM_estado
-            // 
-            this.txtPRM_estado.Location = new System.Drawing.Point(200, 169);
-            this.txtPRM_estado.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPRM_estado.Name = "txtPRM_estado";
-            this.txtPRM_estado.Size = new System.Drawing.Size(250, 20);
-            this.txtPRM_estado.TabIndex = 124;
-            // 
-            // txtPRM_frmnombre
-            // 
-            this.txtPRM_frmnombre.Location = new System.Drawing.Point(200, 196);
-            this.txtPRM_frmnombre.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPRM_frmnombre.Name = "txtPRM_frmnombre";
-            this.txtPRM_frmnombre.Size = new System.Drawing.Size(250, 20);
-            this.txtPRM_frmnombre.TabIndex = 125;
-            this.txtPRM_frmnombre.TextChanged += new System.EventHandler(this.txt_TextChanged);
+            this.cboDatos.AutoComplete = false;
+            this.cboDatos.AutoDropdown = false;
+            this.cboDatos.BackColorEven = System.Drawing.Color.White;
+            this.cboDatos.BackColorOdd = System.Drawing.Color.White;
+            this.cboDatos.ColumnNames = "";
+            this.cboDatos.ColumnWidthDefault = 75;
+            this.cboDatos.ColumnWidths = "";
+            this.cboDatos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboDatos.FormattingEnabled = true;
+            this.cboDatos.LinkedColumnIndex = 0;
+            this.cboDatos.LinkedTextBox = null;
+            this.cboDatos.Location = new System.Drawing.Point(194, 187);
+            this.cboDatos.Name = "cboDatos";
+            this.cboDatos.Size = new System.Drawing.Size(121, 21);
+            this.cboDatos.TabIndex = 126;
+            this.cboDatos.Visible = false;
+            this.cboDatos.SelectedIndexChanged += new System.EventHandler(this.cboDatos_SelectedIndexChanged);
             // 
             // Frm_PRMVAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 375);
+            this.ClientSize = new System.Drawing.Size(628, 396);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Frm_PRMVAR";
@@ -457,6 +479,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private MultiColumnComboBoxDemo.MultiColumnComboBox cboDatos;
 
     }
 }
