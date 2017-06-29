@@ -641,6 +641,12 @@
     <Compile Include="Frm_RegistroInventario.Designer.cs">
       <DependentUpon>Frm_RegistroInventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Rptdepreciacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Rptdepreciacion.Designer.cs">
+      <DependentUpon>Frm_Rptdepreciacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Importar.cs" />
     <Compile Include="MDIParent1.cs">
       <SubType>Form</SubType>
@@ -955,6 +961,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_RegistroInventario.resx">
       <DependentUpon>Frm_RegistroInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Rptdepreciacion.resx">
+      <DependentUpon>Frm_Rptdepreciacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>

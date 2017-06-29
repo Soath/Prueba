@@ -2339,7 +2339,7 @@ namespace CapaDatos
     }
 
    //Reporte de Depreciacion
-   public DataTable Depreciacion()
+    public DataTable Depreciacion(String iACFvutiltribanio)
         {
             DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
             SqlConnection SqlCon = new SqlConnection();
@@ -2352,6 +2352,14 @@ namespace CapaDatos
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "Depreciación_Anual";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFvutiltribanio";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = iACFvutiltribanio;
+                SqlCmd.Parameters.Add(ParACFid);
+
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);

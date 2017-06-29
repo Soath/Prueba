@@ -469,9 +469,9 @@ namespace CapaNegocio
         }
 
         //reporte de depreciación
-        public static DataTable Depreciacion()
+        public static DataTable Depreciacion(String iACFvutiltribanio)
         {
-            return new DacfACFp_Activo_Fijo().Depreciacion();
+            return new DacfACFp_Activo_Fijo().Depreciacion(iACFvutiltribanio);
         }
 
 

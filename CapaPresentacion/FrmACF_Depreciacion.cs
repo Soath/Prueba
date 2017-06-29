@@ -90,5 +90,10 @@ namespace CapaPresentacion
                 return;
             }
         }
+
+        private void FrmACF_Depreciacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

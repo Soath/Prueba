@@ -565,8 +565,8 @@ namespace CapaPresentacion
 
         private void ribbonButton75_Click(object sender, EventArgs e)
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Depreciacion1.rdlc", NacfACFp_Activo_Fijo.Depreciacion(), "ip");
-            rptalu.ShowDialog();
+            Form Frm_Rptdepreciacion = new Frm_Rptdepreciacion();
+            Frm_Rptdepreciacion.ShowDialog();
         }
 
         private void ribbonOrbMenuItem1_Click(object sender, EventArgs e)

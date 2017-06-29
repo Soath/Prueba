@@ -134,6 +134,7 @@
             this.Name = "FrmACF_Depreciacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmACF_Depreciacion";
+            this.Load += new System.EventHandler(this.FrmACF_Depreciacion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
