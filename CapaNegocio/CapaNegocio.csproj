@@ -42,6 +42,7 @@
     <Compile Include="NacfACFp_Activo_Fijo.cs" />
     <Compile Include="NacfACTt_Actividad.cs" />
     <Compile Include="NacfCMPt_Componente.cs" />
+    <Compile Include="NACFCODNIIF_SistELECTRICO.cs" />
     <Compile Include="NacfCRPt_Centro_Responsabilidad.cs" />
     <Compile Include="NacfCRSt_Caracteristicas.cs" />
     <Compile Include="NacfCSTt_Costo.cs" />
@@ -71,9 +72,17 @@
     <Compile Include="NacfUBEt_UbicacionElectrica.cs" />
     <Compile Include="NacfUNMt_Unimed.cs" />
     <Compile Include="NacfVNRt_VNR.cs" />
+    <Compile Include="NACFVR_IDENT.cs" />
     <Compile Include="NACF_BajaEvaluacionTecnica.cs" />
     <Compile Include="NACF_BajaLiquidacionObra.cs" />
+    <Compile Include="Nacf_BajaTension.cs" />
+    <Compile Include="NACF_FACTTRANSFORMADORES.cs" />
+    <Compile Include="NACF_MEDIATENSION.cs" />
     <Compile Include="NACF_TransferenciaDonacion.cs" />
+    <Compile Include="NACF_ValorResidual.cs" />
+    <Compile Include="NACF_ValorResidualNiff.cs" />
+    <Compile Include="NACF_Valuacion.cs" />
+    <Compile Include="NACF_VIDAUTILTASADA.cs" />
     <Compile Include="NAFNo_Capitalizables.cs" />
     <Compile Include="NbdiCAFpClaseDeActivoFijo.cs" />
     <Compile Include="NbdiCDDpClasesDeDocumento.cs" />
