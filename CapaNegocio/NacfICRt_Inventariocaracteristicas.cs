@@ -310,6 +310,11 @@ namespace CapaNegocio
             DacfICRt_Inventariocaracteristicas Obj = new DacfICRt_Inventariocaracteristicas();
             return Obj.Copiar();
         }
+        public static string Copiar4()
+        {
+            DacfICRt_Inventariocaracteristicas Obj = new DacfICRt_Inventariocaracteristicas();
+            return Obj.Copiar4();
+        }
         public static string Copiar2()
         {
             DacfICRt_Inventariocaracteristicas Obj = new DacfICRt_Inventariocaracteristicas();

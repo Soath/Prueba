@@ -247,22 +247,52 @@ namespace CapaDatos
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "usp_D_acfVNRt_VNR";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
-
                 //
                 SqlParameter ParsVNRid = new SqlParameter();
                 ParsVNRid.ParameterName = "@sVNRid";
                 ParsVNRid.SqlDbType = SqlDbType.Char;
                 ParsVNRid.Value = acfVNRt_VNR.VNRid;
                 SqlCmd.Parameters.Add(ParsVNRid);
-
-
                 //
-
                 //Ejecutamos nuestro comando
-
                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
+        }
 
+        //METODO importal el exacl del SAP
+        public string SAPIMPORT(DAcfVNRt_VNR acfVNRt_VNR)
+        {
 
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_i_SAPIMPORT_VNR";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+                SqlParameter ParsVNRid = new SqlParameter();
+                ParsVNRid.ParameterName = "@sVNRid";
+                ParsVNRid.SqlDbType = SqlDbType.Char;
+                ParsVNRid.Value = acfVNRt_VNR.VNRid;
+                SqlCmd.Parameters.Add(ParsVNRid);
+                //
+                //Ejecutamos nuestro comando
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
             }
             catch (Exception ex)
             {

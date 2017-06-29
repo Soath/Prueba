@@ -1504,42 +1504,73 @@ namespace CapaDatos
         return DtResultado;
     }
 
-    public string Copiar()
-    {
-
-        string rpta = "";
-        SqlConnection SqlCon = new SqlConnection();
-        try
+        public string Copiar()
         {
-            //Código
-            SqlCon.ConnectionString = DConexion.CnBDActivo;
-            SqlCon.Open();
-            //Establecer el Comando
-            SqlCommand SqlCmd = new SqlCommand();
-            SqlCmd.Connection = SqlCon;
-            SqlCmd.CommandText = "usp_C_acfICRt_Inventariocaracteristicas";
-            SqlCmd.CommandType = CommandType.StoredProcedure;
-            //
+
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_C_acfICRt_Inventariocaracteristicas";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+                //Ejecutamos nuestro comando
+
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
 
 
-            //Ejecutamos nuestro comando
-
-            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
-
-
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
         }
-        catch (Exception ex)
+
+        public string Copiar4()
         {
-            rpta = ex.Message;
+
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_C4_acfICRt_Inventariocaracteristicas";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+                //Ejecutamos nuestro comando
+
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Genero el Registro";
+
+
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
         }
-        finally
-        {
-            if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
-        }
-        return rpta;
-    }
-   
-    public string Copiar3( string KOSTL)
+
+        public string Copiar3( string KOSTL)
     {
 
         string rpta = "";
@@ -1559,13 +1590,13 @@ namespace CapaDatos
             //
             SqlParameter ParKOSTL = new SqlParameter();
             ParKOSTL.ParameterName = "@sKOSTL";
-            ParKOSTL.SqlDbType = SqlDbType.Int;
+            ParKOSTL.SqlDbType = SqlDbType.Char;
             ParKOSTL.Value = KOSTL;
             SqlCmd.Parameters.Add(ParKOSTL);
             //
             //Ejecutamos nuestro comando
 
-            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Genero el Registro";
 
 
         }

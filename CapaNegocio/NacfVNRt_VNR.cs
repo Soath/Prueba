@@ -47,6 +47,15 @@ namespace CapaNegocio
             Obj.VNRid = mVNRid;
             return Obj.Eliminar(Obj);
         }
+
+        // SAPIMPORT para el VRN
+        public static string SAPIMPORT(string mVNRid)
+        {
+            DAcfVNRt_VNR Obj = new DAcfVNRt_VNR();
+            Obj.VNRid = mVNRid;
+            return Obj.SAPIMPORT(Obj);
+        }
+
         //------------------------------------------------------------------
         //M�todo Mostrar que llama al m�todo Mostrar de la clase DPostres
         //de la CapaDatos
