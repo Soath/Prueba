@@ -412,6 +412,7 @@ namespace CapaPresentacion
             this.txtPRM_estado.Text = Convert.ToString(this.ObtenerSeleccion().Cells[5].Value);
             this.txtPRM_frmnombre.Text = Convert.ToString(this.ObtenerSeleccion().Cells[6].Value);
             //this.txtStock.Text = Convert.ToString(this.ObtenerSeleccion().Cells[4].Value);
+            //CARGA COMBOS
             if(txtPRM_descripcion.Text == "Tabla1")
             {
                 cboDatos.Visible = true;
