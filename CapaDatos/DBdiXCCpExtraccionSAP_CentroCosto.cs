@@ -268,6 +268,44 @@ namespace CapaDatos
             }
             return rpta;
         }
+
+        // Metodo importar Excel del SAP
+
+        public string SAPIMPORT(DBdiXCCpExtraccionSAP_CentroCosto bdiXCCpExtraccionSAP_CentroCosto)
+        {
+
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_i_SAPIMPORT_SAP_CentroCosto";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+                SqlParameter ParsKOSTL = new SqlParameter();
+                ParsKOSTL.ParameterName = "@sKOSTL";
+                ParsKOSTL.SqlDbType = SqlDbType.Char;
+                ParsKOSTL.Value = bdiXCCpExtraccionSAP_CentroCosto.KOSTL;
+                SqlCmd.Parameters.Add(ParsKOSTL);
+                //
+                //Ejecutamos nuestro comando
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "Conflictos en el Registro";
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
+        }
         //METODO BUSCAR
         public DataTable Buscar(DBdiXCCpExtraccionSAP_CentroCosto bdiXCCpExtraccionSAP_CentroCosto)
         {

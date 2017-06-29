@@ -46,6 +46,15 @@ namespace CapaNegocio
             Obj.KOSTL = mKOSTL;
             return Obj.Eliminar(Obj);
         }
+
+        //MEtodo importar Excel del SAP
+        public static string SAPIMPORT(string mKOSTL)
+        {
+            DBdiXCCpExtraccionSAP_CentroCosto Obj = new DBdiXCCpExtraccionSAP_CentroCosto();
+            Obj.KOSTL = mKOSTL;
+            return Obj.SAPIMPORT(Obj);
+        }
+
         //------------------------------------------------------------------
         //M�todo Mostrar que llama al m�todo Mostrar de la clase DPostres
         //de la CapaDatos

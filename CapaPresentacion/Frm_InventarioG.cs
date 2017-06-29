@@ -50,12 +50,12 @@ namespace CapaPresentacion
         }
         private void MensajeOk(string mensaje)
         {
-            MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensaje, "Control: ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
         private void MensajeError(string mensaje)
         {
-            MessageBox.Show(mensaje, "Control Escolar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(mensaje, "Control: ", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         public static void EstadoText(Control.ControlCollection Controles, bool Limpiar, bool Enabled)
         {
@@ -73,7 +73,6 @@ namespace CapaPresentacion
                             if (cmb.Items.Count >= 0)
                             {
                                 cmb.Focus();
-                                //cmb.SelectedItem = cmb.Items[0];
                             }
                         }
 
@@ -152,9 +151,6 @@ namespace CapaPresentacion
                 cbActivo.Checked = Convert.ToBoolean(row["INVactivo"]);
                 txtINVrespon.Text = Convert.ToString(row["INVrespon"]);
                 txtINVperiodo.Text = Convert.ToString(row["INVperiodo"]);
-                //guardo datos en variables
-                //txtACFid.Text = Convert.ToString(row["ACFid"]);
-                //txtACFdescripcion.Text = Convert.ToString(row["ACFdescripcion"]);
             }
             else
                 MessageBox.Show("No Existe", "Registro");
@@ -212,8 +208,6 @@ namespace CapaPresentacion
                    , this.txtINVperiodo.Text
                    );
 
-               //Rta = NacfACFp_Activo_Fijo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
-
                if (Rta.Equals("OK"))
                {
                    this.MensajeOk("Regsitro Actualizado Correctamente");
@@ -251,8 +245,7 @@ namespace CapaPresentacion
            {
                
                if (Graba == 1) { this.InsertaRegistro();
-                                  this.CopiarRegistro();
-                                 // this.CopiarRegistro2();
+                                 this.CopiarRegistro();                                 
                                }
                if (Graba == 2) this.ActualizaRegistro();
                Graba = 0;
@@ -295,13 +288,11 @@ namespace CapaPresentacion
        }
         private void button1_Click(object sender, EventArgs e)
         {
-            
-
         }
         private void CopiarRegistro()
         {
             string Rta = string.Empty;
-            if (radioButton2.Checked)
+            if (radioButton2.Checked==true)
             {
                 try
                 {
@@ -310,10 +301,13 @@ namespace CapaPresentacion
                     if (Rta.Equals("OK"))
                     {
                         this.MensajeOk("Inventario generado correctamente.");
+                        this.CopiarRegistro2();
                     }
                     else
                     {
                         this.MensajeError(Rta);
+                        //eliminar el registro dado que no hay resultados con el filtro usado
+                        eliminarRegistro();
                     }
                 }
 
@@ -331,6 +325,7 @@ namespace CapaPresentacion
                     if (Rta.Equals("OK"))
                     {
                         this.MensajeOk("Inventario generado correctamente.");
+                        this.CopiarRegistro2();
                     }
                     else
                     {
@@ -344,6 +339,33 @@ namespace CapaPresentacion
                 }
             }
         }
+
+        // eliminar registro si no hay registro que coincidan con el filtro 
+        private void eliminarRegistro()
+        {
+            string Rta = string.Empty;
+            
+                try
+                {
+                    Rta = NacfINVp_Inventario.Eliminar(txtINVid.Text);
+
+                    if (Rta.Equals("OK"))
+                    {
+                        this.MensajeOk("Inventario No Generado");
+                    }
+                    else
+                    {
+                        this.MensajeError(Rta);
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message + ex.StackTrace);
+                }
+            
+        }
+
         private void CargarCombos()
         {
             this.cbocentrodecosto.DataSource = NbdiXCCpExtraccionSAP_CentroCosto.Mostrar();
@@ -379,7 +401,7 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    Rta = NacfICRt_Inventariocaracteristicas.Copiar();
+                    Rta = NacfICRt_Inventariocaracteristicas.Copiar4();
 
                     if (Rta.Equals("OK"))
                     {
@@ -447,18 +469,12 @@ namespace CapaPresentacion
             txtINVperiodo.Text = "";
             txtINVrespon.Text = "";
             cbocentrodecosto.Text = "";
-             
-
-
-            //tabControl1.SelectedTab = tabPage2;
         }
         private void Prev(String iINVid)
         {
             try
             {
                 DataTable dat = NacfINVp_Inventario.Prev(iINVid);
-
-                //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
 
                 if (dat.Rows.Count > 0)
                 {
@@ -470,12 +486,10 @@ namespace CapaPresentacion
                     txtINVfechacierre.Text = Convert.ToString(row["INVcierre"]);
                     cbActivo.Checked = Convert.ToBoolean(row["INVactivo"]); 
                     txtINVrespon.Text = Convert.ToString(row["INVrespon"]);
-                    txtINVperiodo.Text = Convert.ToString(row["INVperiodo"]);
-                  
+                    txtINVperiodo.Text = Convert.ToString(row["INVperiodo"]);                  
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
-
             }
             catch (Exception ex)
             {
@@ -524,9 +538,6 @@ namespace CapaPresentacion
             this.toolStripAnterior.Enabled = edo;
             this.toolStripSiguiente.Enabled = edo;
             this.toolStripUltimo.Enabled = edo;
-            //this.toolStripBuscar.Enabled = edo;
-            //this.toolStripComboBox1.Enabled = edo;
-            //this.toolStripTextBox1.Enabled = edo;
         }
         private void Botones(bool edo)
         {
@@ -570,7 +581,6 @@ namespace CapaPresentacion
             Graba = 2;
             this.Botones(false);
             EstadoText(this.Controls, false, true);
-            // tabControl1.SelectedTab = tabPage2;
             this.CargaDatos();
         }
         private void toolStripSiguiente_Click_1(object sender, EventArgs e)
@@ -602,6 +612,7 @@ namespace CapaPresentacion
 
         private void toolStripAgregar_Click(object sender, EventArgs e)
         {
+            radioButton2.Checked = true;
             BotonAgregar();
         }
 
@@ -643,6 +654,10 @@ namespace CapaPresentacion
 
         }
 
+        private void Frm_InventarioG_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

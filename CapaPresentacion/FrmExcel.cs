@@ -151,7 +151,72 @@ namespace CapaPresentacion
             this.toolStripCancelar.Visible = edo;
             this.toolStripSiguiente.Visible = edo;
         }
+        private void grabarseleCentroCosto()
+        {
+            try
+            {
+                //falta mostrar el ACFid
+                Int32 total = 0;
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    string Rta = string.Empty;
 
+                    if (Convert.ToBoolean(row.Cells[0].Value))
+                    {
+                        Rta = NbdiXCCpExtraccionSAP_CentroCosto.SAPIMPORT(
+                              Convert.ToString(row.Cells[122].Value)//KOSTL
+                              );
+
+                        if (Rta.Equals("OK"))
+                        {
+                            //MessageBox.Show("Datos agregados");
+                        }
+                        else
+                        {
+                            //MessageBox.Show("Datos No Agregados");
+                            break;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+        private void grabarseleVNR()
+        {
+            try
+            {
+                //falta mostrar el ACFid
+                Int32 total = 0;
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    string Rta = string.Empty;
+
+                    if (Convert.ToBoolean(row.Cells[0].Value))
+                    {
+                        Rta = NacfVNRt_VNR.SAPIMPORT(
+                              Convert.ToString(row.Cells[16].Value)//VNRid
+                              );
+
+                        if (Rta.Equals("OK"))
+                        {
+                            //MessageBox.Show("Datos agregados");
+                        }
+                        else
+                        {
+                            //MessageBox.Show("Datos No Agregados");
+                            break;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void grabarseleACF()
         {
             try
@@ -204,7 +269,7 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[39].Value),//ACFfechaordencompra
                               Convert.ToString(row.Cells[37].Value),//No se encontro BLART
                               Convert.ToString(row.Cells[33].Value),//ACFcomprobante
-                              "0",//Convert.ToString(row.Cells[29].Value),//KOSTL
+                              Convert.ToString(row.Cells[122].Value),// "0", Convert.ToString(row.Cells[29].Value),//KOSTL
                               "0",//AMBid
                               "0",//UBEID
                               //Convert.ToString(row.Cells[34].Value),//ACFfechacomprobante
@@ -331,7 +396,6 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.ToString());
             }            
         }
-
         private void grabarseleBUIELEC()
         {
             try
@@ -347,7 +411,7 @@ namespace CapaPresentacion
                         Rta = NacfUBEt_UbicacionElectrica.SAPIMPORT(
                               Convert.ToString(row.Cells[17].Value), // BEcodigogis
                               Convert.ToString(row.Cells[29].Value), // UBEobra     -- proyecto
-                              "0", // KOSTL
+                              Convert.ToString(row.Cells[122].Value), //"0", // KOSTL
                               Convert.ToString(row.Cells[16].Value), // VNRid 
                               Convert.ToString(row.Cells[19].Value), // SELid 
                               "0", // UBEset
@@ -372,11 +436,11 @@ namespace CapaPresentacion
 
                         if (Rta.Equals("OK"))
                         {
-                            MessageBox.Show("Datos agregados");
+                            //MessageBox.Show("Datos agregados");
                         }
                         else
                         {
-                            MessageBox.Show("Datos No Agregados");
+                            //MessageBox.Show("Datos No Agregados");
                             break;
                         }
                     }
@@ -387,7 +451,6 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.ToString());
             }
         }
-
         private void grabarlote()
         {
             try
@@ -435,7 +498,7 @@ namespace CapaPresentacion
                                 Convert.ToString(row.Cells[39].Value),//ACFfechaordencompra
                                 Convert.ToString(row.Cells[37].Value),//No se encontro BLART
                                 Convert.ToString(row.Cells[33].Value),//ACFcomprobante
-                                "0",//Convert.ToString(row.Cells[29].Value),//KOSTL
+                                Convert.ToString(row.Cells[122].Value),//  "0",Convert.ToString(row.Cells[29].Value),//KOSTL
                                 "0",//AMBid
                                 "0",//UBEID
                                     //Convert.ToString(row.Cells[34].Value),//ACFfechacomprobante
@@ -457,16 +520,13 @@ namespace CapaPresentacion
                        //MessageBox.Show("Datos No Agregados");
                        break;
                    }
-                }
-                MessageBox.Show("Datos agregados");
-                
+                }                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
            }
-
         private void grabarloteCARAC()
         {
             try
@@ -543,7 +603,6 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[85].Value) // CRSobservacion
                             );
 
-
                         if (Rta.Equals("OK"))
                         {
                             //MessageBox.Show("Datos agregados");
@@ -554,16 +613,12 @@ namespace CapaPresentacion
                             break;
                         }
                     }
-                MessageBox.Show("Datos agregados");
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-            this.grabarseleBUIELEC();
         }
-
         private void grabarloteBUIELEC()
         {
             try
@@ -576,7 +631,7 @@ namespace CapaPresentacion
                         Rta = NacfUBEt_UbicacionElectrica.SAPIMPORT(
                               Convert.ToString(row.Cells[17].Value), // BEcodigogis
                               Convert.ToString(row.Cells[29].Value), // UBEobra     -- proyecto
-                              "0", // KOSTL
+                              Convert.ToString(row.Cells[122].Value), // "0", // KOSTL
                               Convert.ToString(row.Cells[16].Value), // VNRid 
                               Convert.ToString(row.Cells[19].Value), // SELid 
                               "0", // UBEset
@@ -598,6 +653,35 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[25].Value)  // UBEpostef  
                             );
 
+                        if (Rta.Equals("OK"))
+                        {
+                            //MessageBox.Show("Datos agregados");
+                        }
+                        else
+                        {
+                            //MessageBox.Show("Datos No Agregados");
+                            break;
+                        }                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+        private void grabarloteVNR()
+        {
+            try
+            {
+                //falta mostrar el ACFid
+                Int32 total = 0;
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    string Rta = string.Empty;
+                    
+                        Rta = NacfVNRt_VNR.SAPIMPORT(
+                              Convert.ToString(row.Cells[16].Value)//VNRid
+                              );
 
                         if (Rta.Equals("OK"))
                         {
@@ -607,19 +691,43 @@ namespace CapaPresentacion
                         {
                             //MessageBox.Show("Datos No Agregados");
                             break;
-                        }
-                    
+                        }                    
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-            MessageBox.Show("Datos agregados");
-            this.Dispose();
-
         }
+        private void grabarloteCentroCosto()
+        {
+            try
+            {
+                //falta mostrar el ACFid
+                Int32 total = 0;
+                foreach (DataGridViewRow row in dataListado.Rows)
+                {
+                    string Rta = string.Empty;
+                        Rta = NbdiXCCpExtraccionSAP_CentroCosto.SAPIMPORT(
+                              Convert.ToString(row.Cells[122].Value)//KOSTL
+                              );
 
+                        if (Rta.Equals("OK"))
+                        {
+                            //MessageBox.Show("Datos agregados");
+                        }
+                        else
+                        {
+                            //MessageBox.Show("Datos No Agregados");
+                            break;
+                        }                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void chkEliminar_CheckedChanged_1(object sender, EventArgs e)
            {    
                if (chkEliminar.Checked)
@@ -634,23 +742,28 @@ namespace CapaPresentacion
 
         private void Grabar()
            {
-
-
-
                if (this.chkEliminar.Checked)
                    {
-                        MessageBox.Show("Procesando grabado por detalle");
+                        MessageBox.Show("Procesando grabado por detalle, Por favor espere al Mensaje de Confirmación");
+                   this.grabarseleVNR();
+                   this.grabarseleCentroCosto();
                    this.grabarseleACF();
                    this.grabarseleCARAC();
                    this.grabarseleBUIELEC();
+                   MessageBox.Show("Proceso terminado");
+                this.Dispose();
                    }
                else
                    {
-                       MessageBox.Show("Procesando grabado por lotes");
+                       MessageBox.Show("Procesando grabado por lotes, Por favor espere al Mensaje de Confirmación");
+                   this.grabarloteVNR();
+                   this.grabarloteCentroCosto();
                    this.grabarlote();
                    this.grabarloteCARAC();
                    this.grabarloteBUIELEC();
-                   }
+                   MessageBox.Show("Proceso terminado");
+                this.Dispose();
+            }
 
                if (bwInstance.IsBusy == false)
                {
