@@ -242,7 +242,7 @@ namespace CapaDatos
                 SqlParameter ParUBEcodigogis = new SqlParameter();
                 ParUBEcodigogis.ParameterName = "@iUBEcodigogis";
                 ParUBEcodigogis.SqlDbType = SqlDbType.BigInt;
-                ParUBEcodigogis.Value = acfUBEt_UbicacionElectrica.UBEcodigogis;
+                ParUBEcodigogis.Value = Convert.ToInt64(acfUBEt_UbicacionElectrica.UBEcodigogis);
                 SqlCmd.Parameters.Add(ParUBEcodigogis);
                 //
                 SqlParameter ParUBEobra = new SqlParameter();
@@ -391,7 +391,7 @@ namespace CapaDatos
             SqlParameter ParUBEcodigogis = new SqlParameter();
             ParUBEcodigogis.ParameterName = "@iUBEcodigogis";
             ParUBEcodigogis.SqlDbType = SqlDbType.BigInt;
-            ParUBEcodigogis.Value = acfUBEt_UbicacionElectrica.UBEcodigogis;
+            ParUBEcodigogis.Value = Convert.ToInt64(acfUBEt_UbicacionElectrica.UBEcodigogis);
             SqlCmd.Parameters.Add(ParUBEcodigogis);
             //
             SqlParameter ParUBEobra = new SqlParameter();
@@ -558,7 +558,7 @@ namespace CapaDatos
                 SqlParameter ParUBEcodigogis = new SqlParameter();
                 ParUBEcodigogis.ParameterName = "@iUBEcodigogis";
                 ParUBEcodigogis.SqlDbType = SqlDbType.BigInt;
-                ParUBEcodigogis.Value = acfUBEt_UbicacionElectrica.UBEcodigogis;
+                ParUBEcodigogis.Value = Convert.ToInt64(acfUBEt_UbicacionElectrica.UBEcodigogis);
                 SqlCmd.Parameters.Add(ParUBEcodigogis);
                 //
                 SqlParameter ParUBEobra = new SqlParameter();
@@ -706,7 +706,7 @@ namespace CapaDatos
                 SqlParameter ParUBEcodigogis = new SqlParameter();
                 ParUBEcodigogis.ParameterName = "@iUBEcodigogis";
                 ParUBEcodigogis.SqlDbType = SqlDbType.BigInt;
-                ParUBEcodigogis.Value = acfUBEt_UbicacionElectrica.UBEcodigogis;
+                ParUBEcodigogis.Value = Convert.ToInt64(acfUBEt_UbicacionElectrica.UBEcodigogis);
                 SqlCmd.Parameters.Add(ParUBEcodigogis);
                 //
 

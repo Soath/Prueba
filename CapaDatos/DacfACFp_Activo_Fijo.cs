@@ -1416,7 +1416,15 @@ namespace CapaDatos
                 SqlParameter ParBLART = new SqlParameter();
                 ParBLART.ParameterName = "@sBLART";
                 ParBLART.SqlDbType = SqlDbType.Char;
-                ParBLART.Value = acfACFp_Activo_Fijo.BLART;
+                //ParBLART.Value = acfACFp_Activo_Fijo.BLART;
+                if (string.IsNullOrWhiteSpace(acfACFp_Activo_Fijo.BLART))
+                {
+                    ParBLART.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParBLART.Value = acfACFp_Activo_Fijo.BLART;
+                }
                 SqlCmd.Parameters.Add(ParBLART);
                 //
                 SqlParameter ParACFcomprobante = new SqlParameter();
@@ -1476,7 +1484,15 @@ namespace CapaDatos
                 SqlParameter ParACFtipo_orden = new SqlParameter();
                 ParACFtipo_orden.ParameterName = "@cACFtipo_orden";
                 ParACFtipo_orden.SqlDbType = SqlDbType.VarChar;
-                ParACFtipo_orden.Value = acfACFp_Activo_Fijo.cACFtipo_orden;
+                //ParACFtipo_orden.Value = acfACFp_Activo_Fijo.cACFtipo_orden;
+                if (string.IsNullOrWhiteSpace(acfACFp_Activo_Fijo.cACFtipo_orden))
+                {
+                    ParACFtipo_orden.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParACFtipo_orden.Value = acfACFp_Activo_Fijo.cACFtipo_orden;
+                }
                 SqlCmd.Parameters.Add(ParACFtipo_orden);
 
                 SqlParameter ParOBJid_objeto = new SqlParameter();
