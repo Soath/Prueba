@@ -233,7 +233,7 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[3].Value), //ACFid
                               "0300",// Convert.ToString(row.Cells[6].Value),  // BUKRS
                               "0000000310", //Convert.ToString(row.Cells[7].Value),  //Se trajo del excel de SAP SEGMENT     
-                              "0", //ANLKL  //Convert.ToString(row.Cells[106].Value), //Se trajo del excel de SAP ANLKL ( Id clase activos) 
+                              Convert.ToString(row.Cells[107].Value), //Se trajo del excel de SAP ANLKL ( Id clase activos) 
                               Convert.ToString(row.Cells[9].Value),  //PERNR
                               Convert.ToString(row.Cells[13].Value), //CSTid
                               Convert.ToString(row.Cells[14].Value), //MVMid
@@ -250,7 +250,7 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[44].Value), // No se encontro ACFvalorniif
                               "0", //ACFdepacutrib
                               "0", // ACFdepacuniif
-                              "", // ACFobra
+                              Convert.ToString(row.Cells[29].Value),//"", // ACFobra
                             //Convert.ToString(row.Cells[130].Value)  , //Se trajo del excel de SAP ACFord41
                             //Convert.ToString(row.Cells[131].Value)  ,//Se trajo del excel de SAP ACFord42
                             //Convert.ToString(row.Cells[132].Value)  ,//Se trajo del excel de SAP ACFord43
@@ -267,7 +267,7 @@ namespace CapaPresentacion
                               //Convert.ToString(row.Cells[36].Value),//ACFfechanotaingreso
                               Convert.ToString(row.Cells[38].Value),//ACFordencompra
                               Convert.ToString(row.Cells[39].Value),//ACFfechaordencompra
-                              Convert.ToString(row.Cells[37].Value),//No se encontro BLART
+                              Convert.ToString(row.Cells[31].Value),//BLART
                               Convert.ToString(row.Cells[33].Value),//ACFcomprobante
                               Convert.ToString(row.Cells[122].Value),// "0", Convert.ToString(row.Cells[29].Value),//KOSTL
                               "0",//AMBid
@@ -277,18 +277,18 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[2].Value), //ACFtipo_activo
                               "",  //ACFAnulado 
                               "0", // ACFid_Padre
-                               Convert.ToString(row.Cells[36].Value), // ACFtipo_orden
+                               Convert.ToString(row.Cells[37].Value), // ACFtipo_orden
                                Convert.ToString(row.Cells[47].Value), // OBJid_objeto
                                Convert.ToString(row.Cells[8].Value) // CRPid_crp
                               );
                                                                                                                                                      
                         if (Rta.Equals("OK"))
                         {
-                            //MessageBox.Show("Datos agregados");
+                           // MessageBox.Show("Datos agregados");
                         }
                         else
                         {
-                            //MessageBox.Show("Datos No Agregados");
+                          //MessageBox.Show("Datos No Agregados");
                             break;
                         }
                     }
@@ -314,7 +314,7 @@ namespace CapaPresentacion
                         Rta = NacfCRSt_Caracteristicas.SAPIMPORT(
                               Convert.ToString(row.Cells[3].Value), // ACFid
                                "0", // MARid
-                               "0", // ESTid
+                               Convert.ToString(row.Cells[52].Value), // ESTid
                                "", // CRSserie
                               Convert.ToString(row.Cells[55].Value), // CRSmodelo
                               Convert.ToString(row.Cells[56].Value), // CRScolor
@@ -462,7 +462,7 @@ namespace CapaPresentacion
                                 Convert.ToString(row.Cells[3].Value), //ACFid
                                 "0300",// Convert.ToString(row.Cells[6].Value),  // BUKRS
                                 "0000000310", //Convert.ToString(row.Cells[7].Value),  //Se trajo del excel de SAP SEGMENT     
-                                "0", //ANLKL  //Convert.ToString(row.Cells[106].Value), //Se trajo del excel de SAP ANLKL ( Id clase activos) 
+                                Convert.ToString(row.Cells[107].Value), //Se trajo del excel de SAP ANLKL ( Id clase activos) 
                                 Convert.ToString(row.Cells[9].Value),  //PERNR
                                 Convert.ToString(row.Cells[13].Value), //CSTid
                                 Convert.ToString(row.Cells[14].Value), //MVMid
@@ -479,24 +479,24 @@ namespace CapaPresentacion
                                 Convert.ToString(row.Cells[44].Value), // No se encontro ACFvalorniif
                                 "0", //ACFdepacutrib
                                 "0", // ACFdepacuniif
-                                "", // ACFobra
-                                    //Convert.ToString(row.Cells[130].Value)  , //Se trajo del excel de SAP ACFord41
-                                    //Convert.ToString(row.Cells[131].Value)  ,//Se trajo del excel de SAP ACFord42
-                                    //Convert.ToString(row.Cells[132].Value)  ,//Se trajo del excel de SAP ACFord43
-                                    //Convert.ToString(row.Cells[133].Value)  ,//Se trajo del excel de SAP ACFord44
+                                Convert.ToString(row.Cells[29].Value),//"", // ACFobra
+                                //Convert.ToString(row.Cells[130].Value)  , //Se trajo del excel de SAP ACFord41
+                                //Convert.ToString(row.Cells[131].Value)  ,//Se trajo del excel de SAP ACFord42
+                                //Convert.ToString(row.Cells[132].Value)  ,//Se trajo del excel de SAP ACFord43
+                                //Convert.ToString(row.Cells[133].Value)  ,//Se trajo del excel de SAP ACFord44
                                 "",//encontro ACFanlue
                                    //"", //No se encontro ACFfactortrib
                                    //"", //No se encontro ACFfactorniif
                                 Convert.ToString(row.Cells[11].Value), //ACFcuenta
                                 "",//No se encontro ACFcuentadep
                                 "00000",//No se encontro CMPid
-                                "",//No se encontro ACFobservacion
+                                Convert.ToString(row.Cells[49].Value), //"",//No se encontro ACFobservacion
                                 Convert.ToString(row.Cells[30].Value), //LIFNR
                                 Convert.ToString(row.Cells[35].Value),//ACFnotaingreso
                                                                       //Convert.ToString(row.Cells[36].Value),//ACFfechanotaingreso
                                 Convert.ToString(row.Cells[38].Value),//ACFordencompra
                                 Convert.ToString(row.Cells[39].Value),//ACFfechaordencompra
-                                Convert.ToString(row.Cells[37].Value),//No se encontro BLART
+                                Convert.ToString(row.Cells[31].Value),// BLART
                                 Convert.ToString(row.Cells[33].Value),//ACFcomprobante
                                 Convert.ToString(row.Cells[122].Value),//  "0",Convert.ToString(row.Cells[29].Value),//KOSTL
                                 "0",//AMBid
@@ -506,7 +506,7 @@ namespace CapaPresentacion
                                  Convert.ToString(row.Cells[2].Value), //ACFtipo_activo
                                 "",  //ACFAnulado 
                                 "0", // ACFid_Padre
-                                 Convert.ToString(row.Cells[36].Value), // ACFtipo_orden
+                                 Convert.ToString(row.Cells[37].Value), // ACFtipo_orden
                                  Convert.ToString(row.Cells[47].Value), // OBJid_objeto
                                  Convert.ToString(row.Cells[8].Value) // CRPid_crp
                                 );
@@ -539,7 +539,7 @@ namespace CapaPresentacion
                         Rta = NacfCRSt_Caracteristicas.SAPIMPORT(
                               Convert.ToString(row.Cells[3].Value), // ACFid
                                "0", // MARid
-                               "0", // ESTid
+                               Convert.ToString(row.Cells[52].Value), // ESTid
                                "", // CRSserie
                               Convert.ToString(row.Cells[55].Value), // CRSmodelo
                               Convert.ToString(row.Cells[56].Value), // CRScolor
@@ -744,26 +744,26 @@ namespace CapaPresentacion
            {
                if (this.chkEliminar.Checked)
                    {
-                        MessageBox.Show("Procesando grabado por detalle, Por favor espere al Mensaje de Confirmación");
-                   this.grabarseleVNR();
-                   this.grabarseleCentroCosto();
+                   MessageBox.Show("Procesando grabado por detalle, Por favor espere al Mensaje de Confirmación");
+                   //this.grabarseleVNR();
+                   //this.grabarseleCentroCosto();
                    this.grabarseleACF();
                    this.grabarseleCARAC();
                    this.grabarseleBUIELEC();
-                   MessageBox.Show("Proceso terminado");
-                this.Dispose();
+                   MessageBox.Show("Proceso Importar Datos seleccionados Terminado");
+                  //this.Dispose();
                    }
                else
                    {
-                       MessageBox.Show("Procesando grabado por lotes, Por favor espere al Mensaje de Confirmación");
-                   this.grabarloteVNR();
-                   this.grabarloteCentroCosto();
+                   MessageBox.Show("Procesando grabado por lotes, Por favor espere al Mensaje de Confirmación");
+                   //this.grabarloteVNR();
+                   //this.grabarloteCentroCosto();
                    this.grabarlote();
                    this.grabarloteCARAC();
                    this.grabarloteBUIELEC();
-                   MessageBox.Show("Proceso terminado");
-                this.Dispose();
-            }
+                   MessageBox.Show("Proceso Importar Datos Terminado");
+                   this.Dispose();
+                   }
 
                if (bwInstance.IsBusy == false)
                {
