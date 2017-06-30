@@ -7,3 +7,4 @@ C:\Users\avatec\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.dll
 C:\Users\avatec\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\avatec\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\avatec\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\avatec\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache

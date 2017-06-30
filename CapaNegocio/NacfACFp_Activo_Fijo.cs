@@ -461,12 +461,17 @@ namespace CapaNegocio
 
 
         //------------------------------------------------------------------
-        //M�todo Mostrar que llama al m�todo Mostrar de la clase DPostres
-        //de la CapaDatos
+        //M�todo Mostrar en coinciliar inventario
         public static DataTable Mostrar()
         {
             return new DacfACFp_Activo_Fijo().Mostrar();
         }
+        //M�todo Mostrar en coinciliar inventario de inventario
+        public static DataTable MostrarINV(string INV)
+        {
+            return new DacfACFp_Activo_Fijo().MostrarINV(INV);
+        }
+
 
         //reporte de depreciación
         public static DataTable Depreciacion(String iACFvutiltribanio)

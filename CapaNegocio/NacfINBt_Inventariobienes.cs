@@ -229,6 +229,12 @@ namespace CapaNegocio
         {
             return new DAcfINBt_Inventariobienes().Mostrar2();
         }
+
+        // conciliar inventario
+        public static DataTable conciliarinvent(string iINVid, string iACFid)
+        {
+            return new DAcfINBt_Inventariobienes().conciliarinvent(iINVid, iACFid);
+        }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos

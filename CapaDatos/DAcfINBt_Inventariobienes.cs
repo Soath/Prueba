@@ -999,7 +999,7 @@ namespace CapaDatos
                 SqlCmd.CommandText = "usp_D_acfINBt_Inventariobienes";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
                 //
-                 SqlParameter PariINVid = new SqlParameter();
+                SqlParameter PariINVid = new SqlParameter();
                 PariINVid.ParameterName = "@iINVid";
                 PariINVid.SqlDbType = SqlDbType.Int;
                 PariINVid.Value = acfINBt_Inventariobienes.INVid;
@@ -1171,5 +1171,43 @@ namespace CapaDatos
         }
         return DtResultado;
     }
+
+        public DataTable conciliarinvent(string iINVid, string iACFid)
+        {
+            DataTable DtResultado = new DataTable("acfINBt_Inventariobienes");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S2_acfINBt_Inventarioconciliar";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter PariINVid = new SqlParameter();
+                PariINVid.ParameterName = "@iINVid";
+                PariINVid.SqlDbType = SqlDbType.Int;
+                PariINVid.Size = 50;
+                PariINVid.Value = iINVid;
+                SqlCmd.Parameters.Add(PariINVid);
+
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Size = 50;
+                ParACFid.Value = iACFid;
+                SqlCmd.Parameters.Add(ParACFid);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
     }
 }

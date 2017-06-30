@@ -18,11 +18,31 @@ namespace CapaPresentacion
         public Frm_ConciliarInventario()
         {
             InitializeComponent();
-            mostrar();
+            CargarCombos();
         }
-        private void mostrar()
+
+        private void CargarCombos()
         {
-            this.datalistado1.DataSource = NacfINBt_Inventariobienes.Mostrar2();
+            this.cboACF1.DataSource = NacfACFp_Activo_Fijo.Mostrar(); //ACFid
+            this.cboACF1.ValueMember = "ACFid";
+            this.cboACF1.DisplayMember = "ACFid";
+            this.cboACF1.SelectedIndex = -1;
+
+            this.cboACF2.DataSource = NacfACFp_Activo_Fijo.MostrarINV(cboINV.Text); //ACFid
+            this.cboACF2.ValueMember = "ACFid";
+            this.cboACF2.DisplayMember = "ACFid";
+            this.cboACF2.SelectedIndex = -1;
+
+            this.cboINV.DataSource = NacfINVp_Inventario.Mostrar(); //INVid
+            this.cboINV.ValueMember = "INVid";
+            this.cboINV.DisplayMember = "INVid";
+            this.cboINV.SelectedIndex = -1;
+
+        }
+
+        private void mostrar(string iINVid, string iACFid)
+        {
+            this.datalistado1.DataSource = NacfINBt_Inventariobienes.conciliarinvent(iINVid, iACFid);
             /* if (datalistado.Rows.Count == 0)
              {
                  BotonesSinReg(false);
@@ -37,6 +57,16 @@ namespace CapaPresentacion
              this.datalistado.Focus();*/
 
 
+        }
+
+        private void Frm_ConciliarInventario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            mostrar(cboINV.Text, cboACF2.Text);
         }
     }
 }

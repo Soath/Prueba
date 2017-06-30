@@ -536,6 +536,7 @@ namespace CapaDatos
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
 
+
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
@@ -547,7 +548,7 @@ namespace CapaDatos
             return DtResultado;
         }
 
-    //METODO MOSTRAR
+        //M�todo Mostrar en coinciliar inventario
         public DataTable Mostrar() {
            DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
             SqlConnection SqlCon = new SqlConnection();
@@ -557,7 +558,7 @@ namespace CapaDatos
              SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "usp_S_acfACFp_Activo_Fijo";
+                SqlCmd.CommandText = "usp_S_acfACFp_Activo_Fijo2";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
@@ -570,6 +571,40 @@ namespace CapaDatos
             }
             return DtResultado;
 	}
+
+        //M�todo Mostrar en coinciliar inventario de activo fijo
+        public DataTable MostrarINV(string INV)
+        {
+            DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S_acfACFp_Activo_Fijo_InventarioBien";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                // se usa iACFid como filtro para buscar en el inventario
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Size = 50;
+                ParACFid.Value = INV;
+                SqlCmd.Parameters.Add(ParACFid);
+                //
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
 
         //METODO MOSTRAR2
         public DataTable Mostrar2(string iACFid)
