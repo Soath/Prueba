@@ -225,6 +225,11 @@ namespace CapaNegocio
             Obj.KOSTL = KOSTL;
             return Obj.Copiar2(Obj);
         }
+        //reporte de depreciación
+        public static DataTable Depreciacion(String iINVid, String sKOSTL)
+        {
+            return new DAcfINBt_Inventariobienes().Depreciacion(iINVid,sKOSTL);
+        }
         public static DataTable Mostrar2()
         {
             return new DAcfINBt_Inventariobienes().Mostrar2();

@@ -65,6 +65,7 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.txtAMBid = new System.Windows.Forms.TextBox();
             this.cbocentrodecosto = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -440,12 +441,23 @@
             this.cbocentrodecosto.Size = new System.Drawing.Size(101, 21);
             this.cbocentrodecosto.TabIndex = 159;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(357, 184);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 23);
+            this.button1.TabIndex = 161;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Frm_InventarioG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(850, 434);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtAMBid);
             this.Controls.Add(this.cbocentrodecosto);
             this.Controls.Add(this.lblTotal);
@@ -520,5 +532,6 @@
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.TextBox txtAMBid;
         private MultiColumnComboBoxDemo.MultiColumnComboBox cbocentrodecosto;
+        private System.Windows.Forms.Button button1;
     }
 }
