@@ -408,6 +408,46 @@ namespace CapaDatos
             }
             return DtResultado;
         }
+        //Reporte de Depreciacion
+    public DataTable Depreciacion(String iINVid, String sKOSTL)
+        {
+            DataTable DtResultado = new DataTable("acfINBt_Inventariobienes");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "acfrpt_nventarioReporte";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+                SqlParameter ParINVid = new SqlParameter();
+                ParINVid.ParameterName = "@iINVid";
+                ParINVid.SqlDbType = SqlDbType.Int;
+                ParINVid.Value = iINVid;
+                SqlCmd.Parameters.Add(ParINVid);
+
+                SqlParameter ParsKOSTL = new SqlParameter();
+                ParsKOSTL.ParameterName = "@sKOSTL";
+                ParsKOSTL.SqlDbType = SqlDbType.Char;
+                ParsKOSTL.Value = sKOSTL;
+                SqlCmd.Parameters.Add(ParsKOSTL);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+    
 
 
          //METODO INSERTAR 
