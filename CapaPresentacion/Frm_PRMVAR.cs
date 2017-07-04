@@ -320,7 +320,7 @@ namespace CapaPresentacion
             this.txtBuscar.Text = "";
 
             this.mostrar();
-            cboDatos.Visible = false;
+            button1.Visible = false;
         }
         private void BotonAgregar()
         {
@@ -373,7 +373,7 @@ namespace CapaPresentacion
             Activo = 1;
             this.Botones(true);
             tabControl1.SelectedTab = tabPage1;
-            this.cboDatos.Visible = false;
+           button1.Visible = false;
         }
 
         private void BotonListado()
@@ -413,81 +413,65 @@ namespace CapaPresentacion
             this.txtPRM_frmnombre.Text = Convert.ToString(this.ObtenerSeleccion().Cells[6].Value);
             //this.txtStock.Text = Convert.ToString(this.ObtenerSeleccion().Cells[4].Value);
             //CARGA COMBOS
-            if(txtPRM_descripcion.Text == "Tabla1")
+            if (txtPRM_descripcion.Text == "Tabla1")
             {
-                cboDatos.Visible = true;
-                this.cboDatos.DataSource = Nacf_BajaTension.Mostrar();
-                this.cboDatos.ValueMember = "CTA_CONTABLE";
-                this.cboDatos.DisplayMember = "CTA_CONTABLE";
-                this.cboDatos.SelectedIndex = -1;
-               
+
+
+                button1.Visible = true;
+
             }
             if (txtPRM_descripcion.Text == "Tabla2")
             {
-                cboDatos.Visible = true;
-                this.cboDatos.DataSource = NACFCODNIIF_SistELECTRICO.Mostrar();
-                this.cboDatos.ValueMember = "CTA_CONTABLE";
-                this.cboDatos.DisplayMember = "CTA_CONTABLE";
-                this.cboDatos.SelectedIndex = -1;
+
+
+                button1.Visible = true;
 
             }
             if (txtPRM_descripcion.Text == "Tabla3")
             {
-                cboDatos.Visible = true;
-                this.cboDatos.DataSource = NACF_FACTTRANSFORMADORES.Mostrar();
-                this.cboDatos.ValueMember = "ESTADO";
-                this.cboDatos.DisplayMember = "ESTADO";
-                this.cboDatos.SelectedIndex = -1;
+
+
+                button1.Visible = true;
 
             }
             if (txtPRM_descripcion.Text == "Tabla4")
             {
-                cboDatos.Visible = true;
-                this.cboDatos.DataSource = NACF_MEDIATENSION.Mostrar();
-                this.cboDatos.ValueMember = "CTA_CONTABLE";
-                this.cboDatos.DisplayMember = "CTA_CONTABLE";
-                this.cboDatos.SelectedIndex = -1;
+                button1.Visible = true;
+
 
             }
             if (txtPRM_descripcion.Text == "Tabla5")
             {
-                cboDatos.Visible = true;
-                this.cboDatos.DataSource = NACF_ValorResidual.Mostrar();
-                this.cboDatos.ValueMember = "VNR";
-                this.cboDatos.DisplayMember = "VNR";
-                this.cboDatos.SelectedIndex = -1;
+
+
+                button1.Visible = true;
+
+
             }
             if (txtPRM_descripcion.Text == "Tabla6")
             {
-                cboDatos.Visible = true;
-                this.cboDatos.DataSource = NACF_ValorResidualNiff.Mostrar();
-                this.cboDatos.ValueMember = "NIIF";
-                this.cboDatos.DisplayMember = "NIIF";
-                this.cboDatos.SelectedIndex = -1;
+
+
+                button1.Visible = true;
+
             }
             if (txtPRM_descripcion.Text == "Tabla7")
             {
-                cboDatos.Visible = true;
-                this.cboDatos.DataSource = NACF_Valuacion.Mostrar();
-                this.cboDatos.ValueMember = "VNR_ID";
-                this.cboDatos.DisplayMember = "VNR_ID";
-                this.cboDatos.SelectedIndex = -1;
+
+                button1.Visible = true;
+
             }
             if (txtPRM_descripcion.Text == "Tabla8")
             {
-                cboDatos.Visible = true;
-                this.cboDatos.DataSource = NACF_VIDAUTILTASADA.Mostrar();
-                this.cboDatos.ValueMember = "Vida_Util";
-                this.cboDatos.DisplayMember = "Vida_Util";
-                this.cboDatos.SelectedIndex = -1;
+
+                button1.Visible = true;
+
             }
             if (txtPRM_descripcion.Text == "Tabla9")
             {
-                cboDatos.Visible = true;
-                this.cboDatos.DataSource = NACFVR_IDENT.Mostrar();
-                this.cboDatos.ValueMember = "VRI";
-                this.cboDatos.DisplayMember = "VRI";
-                this.cboDatos.SelectedIndex = -1;
+
+                button1.Visible = true;
+
             }
             
         }
@@ -675,6 +659,7 @@ namespace CapaPresentacion
         }
         private void tomaTab()
         {
+            if (Activo == 3) tabControl1.SelectedTab = tabPage3;
             if (Activo == 2) tabControl1.SelectedTab = tabPage2;
             if (Activo == 1) tabControl1.SelectedTab = tabPage1;
         }
@@ -717,6 +702,141 @@ namespace CapaPresentacion
         private void cboDatos_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Activo = 3;
+            tabControl1.SelectedTab = tabPage3;
+            if (txtPRM_descripcion.Text == "Tabla1")
+            {
+               
+
+                this.datalistado1.DataSource = Nacf_BajaTension.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla2")
+            {
+             
+
+                this.datalistado1.DataSource = NACFCODNIIF_SistELECTRICO.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla3")
+            {
+             
+
+                this.datalistado1.DataSource = NACF_FACTTRANSFORMADORES.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla4")
+            {
+                 this.datalistado1.DataSource = NACF_MEDIATENSION.Mostrar();
+
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla5")
+            {
+        
+
+                this.datalistado1.DataSource = NACF_ValorResidual.Mostrar();
+
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla6")
+            {
+             
+
+                this.datalistado1.DataSource = NACF_ValorResidualNiff.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla7")
+            {
+                
+                this.datalistado1.DataSource = NACF_Valuacion.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla8")
+            {
+               
+                this.datalistado1.DataSource = NACF_VIDAUTILTASADA.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla9")
+            {
+                
+                this.datalistado1.DataSource = NACFVR_IDENT.Mostrar();
+
+            }
+            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Activo = 3; 
+            tabControl1.SelectedTab = tabPage3;
+            if (txtPRM_descripcion.Text == "Tabla1")
+            {
+
+
+                this.datalistado1.DataSource = Nacf_BajaTension.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla2")
+            {
+
+
+                this.datalistado1.DataSource = NACFCODNIIF_SistELECTRICO.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla3")
+            {
+
+
+                this.datalistado1.DataSource = NACF_FACTTRANSFORMADORES.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla4")
+            {
+                this.datalistado1.DataSource = NACF_MEDIATENSION.Mostrar();
+
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla5")
+            {
+
+
+                this.datalistado1.DataSource = NACF_ValorResidual.Mostrar();
+
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla6")
+            {
+
+
+                this.datalistado1.DataSource = NACF_ValorResidualNiff.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla7")
+            {
+
+                this.datalistado1.DataSource = NACF_Valuacion.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla8")
+            {
+
+                this.datalistado1.DataSource = NACF_VIDAUTILTASADA.Mostrar();
+
+            }
+            if (txtPRM_descripcion.Text == "Tabla9")
+            {
+
+                this.datalistado1.DataSource = NACFVR_IDENT.Mostrar();
+
+            }
+            
         }
     }
 }

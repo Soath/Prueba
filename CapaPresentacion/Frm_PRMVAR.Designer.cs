@@ -47,6 +47,7 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtPRM_frmnombre = new System.Windows.Forms.TextBox();
             this.txtPRM_estado = new System.Windows.Forms.TextBox();
             this.txtPRM_valor = new System.Windows.Forms.TextBox();
@@ -61,7 +62,8 @@
             this.labelX2 = new System.Windows.Forms.Label();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.cboDatos = new MultiColumnComboBoxDemo.MultiColumnComboBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.datalistado1 = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -69,6 +71,8 @@
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado1)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -173,6 +177,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(0, 98);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
@@ -211,6 +216,7 @@
             this.dataListado.AllowUserToAddRows = false;
             this.dataListado.AllowUserToDeleteRows = false;
             this.dataListado.AllowUserToOrderColumns = true;
+            this.dataListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataListado.BackgroundColor = System.Drawing.Color.White;
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -230,7 +236,7 @@
             this.Eliminar.HeaderText = "Seleccionar";
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.ReadOnly = true;
-            this.Eliminar.Width = 50;
+            this.Eliminar.Width = 69;
             // 
             // lblTotal
             // 
@@ -264,7 +270,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.cboDatos);
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.txtPRM_frmnombre);
             this.groupBox2.Controls.Add(this.txtPRM_estado);
             this.groupBox2.Controls.Add(this.txtPRM_valor);
@@ -285,6 +291,17 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Usuarios";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(194, 187);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(250, 23);
+            this.button1.TabIndex = 127;
+            this.button1.Text = "Ver Datos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtPRM_frmnombre
             // 
@@ -403,25 +420,24 @@
             // 
             this.errorIcono.ContainerControl = this;
             // 
-            // cboDatos
+            // tabPage3
             // 
-            this.cboDatos.AutoComplete = false;
-            this.cboDatos.AutoDropdown = false;
-            this.cboDatos.BackColorEven = System.Drawing.Color.White;
-            this.cboDatos.BackColorOdd = System.Drawing.Color.White;
-            this.cboDatos.ColumnNames = "";
-            this.cboDatos.ColumnWidthDefault = 75;
-            this.cboDatos.ColumnWidths = "";
-            this.cboDatos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboDatos.FormattingEnabled = true;
-            this.cboDatos.LinkedColumnIndex = 0;
-            this.cboDatos.LinkedTextBox = null;
-            this.cboDatos.Location = new System.Drawing.Point(194, 187);
-            this.cboDatos.Name = "cboDatos";
-            this.cboDatos.Size = new System.Drawing.Size(121, 21);
-            this.cboDatos.TabIndex = 126;
-            this.cboDatos.Visible = false;
-            this.cboDatos.SelectedIndexChanged += new System.EventHandler(this.cboDatos_SelectedIndexChanged);
+            this.tabPage3.Controls.Add(this.datalistado1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(590, 271);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Datos";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // datalistado1
+            // 
+            this.datalistado1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistado1.Location = new System.Drawing.Point(9, 7);
+            this.datalistado1.Name = "datalistado1";
+            this.datalistado1.Size = new System.Drawing.Size(575, 257);
+            this.datalistado1.TabIndex = 0;
             // 
             // Frm_PRMVAR
             // 
@@ -431,6 +447,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Frm_PRMVAR";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_PRMVAR";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -442,6 +459,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -479,7 +498,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private MultiColumnComboBoxDemo.MultiColumnComboBox cboDatos;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.DataGridView datalistado1;
 
     }
 }
