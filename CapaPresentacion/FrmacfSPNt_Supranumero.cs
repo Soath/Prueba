@@ -431,7 +431,7 @@ namespace CapaPresentacion
             else
             {
                 this.dataListado.DataSource = NacfSPNt_Supranumero.Buscar(this.txtBuscar.Text);
-                this.OcultarColumnas();
+               // this.OcultarColumnas();
                 lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             }
         }

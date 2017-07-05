@@ -348,10 +348,10 @@ namespace CapaDatos
 
 
             SqlParameter ParAMBambiente = new SqlParameter();
-            ParAMBambiente.ParameterName = "@sNachn";
-            ParAMBambiente.SqlDbType = SqlDbType.VarChar;
+            ParAMBambiente.ParameterName = "@sPERNR";
+            ParAMBambiente.SqlDbType = SqlDbType.Char;
             ParAMBambiente.Size = 50;
-            ParAMBambiente.Value = bdiXPEpExtraccionSAP_Personal.Nachn;
+            ParAMBambiente.Value = bdiXPEpExtraccionSAP_Personal.PERNR;
             SqlCmd.Parameters.Add(ParAMBambiente);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);

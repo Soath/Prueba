@@ -412,7 +412,7 @@ namespace CapaPresentacion
             else
             {
                 this.dataListado.DataSource = NacfAMBt_Ambiente.Buscar(this.txtBuscar.Text);
-                this.OcultarColumnas();
+                //this.OcultarColumnas();
                 lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             }
         }

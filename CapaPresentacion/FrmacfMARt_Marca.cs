@@ -456,7 +456,7 @@ namespace CapaPresentacion
             else
             {
                 this.dataListado.DataSource = NacfMARt_Marca.Buscar(this.txtBuscar.Text);
-                this.OcultarColumnas();
+               // this.OcultarColumnas();
                 lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             }
         }

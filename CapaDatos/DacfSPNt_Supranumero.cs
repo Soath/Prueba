@@ -228,10 +228,10 @@ namespace CapaDatos
 
 
             SqlParameter ParV_T087U_ANLUE_TXT = new SqlParameter();
-            ParV_T087U_ANLUE_TXT.ParameterName = "@sV_T087U_ANLUE_TXT";
+            ParV_T087U_ANLUE_TXT.ParameterName = "@sV_T087U_ANLUE";
             ParV_T087U_ANLUE_TXT.SqlDbType = SqlDbType.VarChar;
-            ParV_T087U_ANLUE_TXT.Size = 50;
-            ParV_T087U_ANLUE_TXT.Value = acfSPNt_Supranumero.V_T087U_ANLUE_TXT;
+            ParV_T087U_ANLUE_TXT.Size = 12;
+            ParV_T087U_ANLUE_TXT.Value = acfSPNt_Supranumero.V_T087U_ANLUE;
             SqlCmd.Parameters.Add(ParV_T087U_ANLUE_TXT);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);

@@ -82,10 +82,10 @@ namespace CapaNegocio
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
 
-        public static DataTable Buscar(string sNachn)
+        public static DataTable Buscar(string sPERNR)
         {
             DbdiXPEpExtraccionSAP_Personal Obj = new DbdiXPEpExtraccionSAP_Personal();
-            Obj.Nachn = sNachn;
+            Obj.PERNR = sPERNR;
             return Obj.Buscar(Obj);
         }
 

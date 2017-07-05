@@ -270,10 +270,10 @@ namespace CapaDatos
 
 
             SqlParameter ParAMBambiente = new SqlParameter();
-            ParAMBambiente.ParameterName = "@sLOClocaln";
-            ParAMBambiente.SqlDbType = SqlDbType.Int;
+            ParAMBambiente.ParameterName = "@iLOCid";
+            ParAMBambiente.SqlDbType = SqlDbType.Char;
             ParAMBambiente.Size = 50;
-            ParAMBambiente.Value = acfLOCt_Local.LOClocal;
+            ParAMBambiente.Value = acfLOCt_Local.LOCid;
             SqlCmd.Parameters.Add(ParAMBambiente);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);

@@ -435,5 +435,10 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void txtBuscar_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

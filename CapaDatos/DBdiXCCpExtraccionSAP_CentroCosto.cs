@@ -326,7 +326,7 @@ namespace CapaDatos
 
 
                 SqlParameter ParXCCExtraccion = new SqlParameter();
-                ParXCCExtraccion.ParameterName = "@KOSTL";
+                ParXCCExtraccion.ParameterName = "@sKOSTL";
                 ParXCCExtraccion.SqlDbType = SqlDbType.Char;
                 ParXCCExtraccion.Size = 50;
                 ParXCCExtraccion.Value = bdiXCCpExtraccionSAP_CentroCosto.KOSTL;

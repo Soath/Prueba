@@ -62,10 +62,10 @@ namespace CapaNegocio
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
 
-        public static DataTable Buscar(string sUNMunidad)
+        public static DataTable Buscar(string iUNMid)
         {
             DacfUNMt_Unimed Obj = new DacfUNMt_Unimed();
-            Obj.UNMunidad = sUNMunidad;
+            Obj.UNMid = iUNMid;
             return Obj.Buscar(Obj);
         }
 

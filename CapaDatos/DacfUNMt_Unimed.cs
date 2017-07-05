@@ -242,10 +242,10 @@ namespace CapaDatos
 
 
             SqlParameter ParUNMdetalle = new SqlParameter();
-            ParUNMdetalle.ParameterName = "@iUNMunidad";
+            ParUNMdetalle.ParameterName = "@iUNMid";
             ParUNMdetalle.SqlDbType = SqlDbType.Char;
             ParUNMdetalle.Size = 50;
-            ParUNMdetalle.Value = acfUNMt_Unimed.UNMdetalle;
+            ParUNMdetalle.Value = acfUNMt_Unimed.UNMid;
             SqlCmd.Parameters.Add(ParUNMdetalle);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);

@@ -58,10 +58,10 @@ namespace CapaNegocio
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
 
-        public static DataTable Buscar(string sV_T087U_ANLUE_TXT)
+        public static DataTable Buscar(string sV_T087U_ANLUE)
         {
             DacfSPNt_Supranumero Obj = new DacfSPNt_Supranumero();
-            Obj.V_T087U_ANLUE_TXT = sV_T087U_ANLUE_TXT;
+            Obj.V_T087U_ANLUE = sV_T087U_ANLUE;
             return Obj.Buscar(Obj);
         }
 

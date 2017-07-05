@@ -67,10 +67,10 @@ namespace CapaNegocio
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
 
-        public static DataTable Buscar(string iKOSTL)
+        public static DataTable Buscar(string sKOSTL)
         {
             DBdiXCCpExtraccionSAP_CentroCosto Obj = new DBdiXCCpExtraccionSAP_CentroCosto();
-            Obj.KOSTL = iKOSTL;
+            Obj.KOSTL = sKOSTL;
             return Obj.Buscar(Obj);
         }
     }

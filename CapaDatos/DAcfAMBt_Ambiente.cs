@@ -244,9 +244,9 @@ namespace CapaDatos
 
             SqlParameter ParAMBambiente = new SqlParameter();
             ParAMBambiente.ParameterName = "@iAMBid";
-            ParAMBambiente.SqlDbType = SqlDbType.Int;
+            ParAMBambiente.SqlDbType = SqlDbType.Char;
             ParAMBambiente.Size = 50;
-            ParAMBambiente.Value = acfAMBt_Ambiente.AMBambiente;
+            ParAMBambiente.Value = acfAMBt_Ambiente.AMBid;
             SqlCmd.Parameters.Add(ParAMBambiente);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);

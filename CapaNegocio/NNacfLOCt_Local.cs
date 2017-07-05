@@ -66,10 +66,10 @@ namespace CapaNegocio
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
 
-        public static DataTable Buscar(string sLOClocal)
+        public static DataTable Buscar(string iLOCid)
         {
             DDacfLOCt_Local Obj = new DDacfLOCt_Local();
-            Obj.LOClocal = sLOClocal;
+            Obj.LOCid = iLOCid;
             return Obj.Buscar(Obj);
         }
 

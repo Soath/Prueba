@@ -150,7 +150,7 @@ namespace CapaPresentacion
         private void OcultarColumnas()
         {
             this.dataListado.Columns[0].Visible = false;
-            this.dataListado.Columns[1].Visible = true;
+            //this.dataListado.Columns[1].Visible = true;
             this.dataListado.Columns[1].Width = 100;
             this.dataListado.Columns[1].DefaultCellStyle.Format = "#,0";
             this.dataListado.Columns[2].Width = 100;
@@ -419,7 +419,7 @@ namespace CapaPresentacion
             else
             {
                 this.dataListado.DataSource = NacfUNMt_Unimed.Buscar(this.txtBuscar.Text);
-                this.OcultarColumnas();
+                //this.OcultarColumnas();
                 lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             }
         }

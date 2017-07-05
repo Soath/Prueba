@@ -58,10 +58,10 @@ namespace CapaNegocio
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
 
-        public static DataTable Buscar(string sTXK50)
+        public static DataTable Buscar(string sANLKL)
         {
             DbdiCAFpClaseDeActivoFijo Obj = new DbdiCAFpClaseDeActivoFijo();
-            Obj.TXK50 = sTXK50;
+            Obj.ANLKL = sANLKL;
             return Obj.Buscar(Obj);
         }
 

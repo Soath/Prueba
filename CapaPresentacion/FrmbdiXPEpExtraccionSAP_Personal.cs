@@ -481,7 +481,7 @@ namespace CapaPresentacion
             else
             {
                 this.dataListado.DataSource = NbdiXPEpExtraccionSAP_Personal.Buscar(this.txtBuscar.Text);
-                this.OcultarColumnas();
+              //  this.OcultarColumnas();
                 lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
             }
         }

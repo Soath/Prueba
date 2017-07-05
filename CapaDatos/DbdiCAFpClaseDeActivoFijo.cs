@@ -228,10 +228,10 @@ namespace CapaDatos
 
 
             SqlParameter ParTXK50 = new SqlParameter();
-            ParTXK50.ParameterName = "@sTXK50";
+            ParTXK50.ParameterName = "@sANLKL";
             ParTXK50.SqlDbType = SqlDbType.Char;
             ParTXK50.Size = 50;
-            ParTXK50.Value = bdiCAFpClaseDeActivoFijo.TXK50;
+            ParTXK50.Value = bdiCAFpClaseDeActivoFijo.ANLKL;
             SqlCmd.Parameters.Add(ParTXK50);
 
             SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);

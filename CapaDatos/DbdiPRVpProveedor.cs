@@ -258,10 +258,10 @@ namespace CapaDatos
 
 
                 SqlParameter ParName1 = new SqlParameter();
-                ParName1.ParameterName = "@sName1";
+                ParName1.ParameterName = "@sLIFNR";
                 ParName1.SqlDbType = SqlDbType.Char;
                 ParName1.Size = 50;
-                ParName1.Value = bdiPRVpProveedor.Name1;
+                ParName1.Value = bdiPRVpProveedor.LIFNR;
                 SqlCmd.Parameters.Add(ParName1);
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);

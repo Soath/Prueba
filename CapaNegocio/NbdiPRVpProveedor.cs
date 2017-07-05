@@ -70,10 +70,10 @@ namespace CapaNegocio
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
 
-        public static DataTable Buscar(string iName1)
+        public static DataTable Buscar(string sLIFNR)
         {
             DbdiPRVpProveedor Obj = new DbdiPRVpProveedor();
-            Obj.Name1 = iName1;
+            Obj.LIFNR = sLIFNR;
             return Obj.Buscar(Obj);
         }
     }
