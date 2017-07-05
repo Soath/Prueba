@@ -17,13 +17,14 @@ namespace CapaPresentacion
         public FrmMovimientoTransferenciaActivo_Aprobadas()
         {
             InitializeComponent();
+            this.DataGRid1();
+            this.dataListado1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(Control_Click_dataListado);
+
         }
 
         private void FrmMovimientoTransferenciaActivo_Aprobadas_Load(object sender, EventArgs e)
         {
-            this.DataGRid1();
-            this.dataListado1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(Control_Click_dataListado);
-
+           
         }
         private void Control_Click_dataListado(object sender, DataGridViewCellEventArgs e)
         {
@@ -94,6 +95,11 @@ namespace CapaPresentacion
                 }
             }
             this.DataGRid1();
+        }
+
+        private void FrmMovimientoTransferenciaActivo_Aprobadas_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

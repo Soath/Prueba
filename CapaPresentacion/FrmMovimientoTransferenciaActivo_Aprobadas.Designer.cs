@@ -174,6 +174,7 @@
             this.dataListado1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataListado1.Size = new System.Drawing.Size(860, 189);
             this.dataListado1.TabIndex = 23;
+            this.dataListado1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListado1_CellClick);
             // 
             // Seleccionar
             // 
@@ -258,6 +259,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmMovimientoTransferenciaActivo_Aprobadas";
             this.Text = "FrmMovimientoTransferenciaActivo_Aprobadas";
+            this.Load += new System.EventHandler(this.FrmMovimientoTransferenciaActivo_Aprobadas_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataListado2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado1)).EndInit();
             this.ResumeLayout(false);
