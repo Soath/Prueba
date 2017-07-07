@@ -43,6 +43,7 @@
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.tsProcesar = new System.Windows.Forms.ToolStripButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -75,7 +76,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.dtpRVAfecha = new System.Windows.Forms.DateTimePicker();
             this.txtRVAresponsable = new System.Windows.Forms.TextBox();
-            this.txtRVAperiodo = new System.Windows.Forms.TextBox();
             this.txtRVAcodigo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -85,7 +85,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.txtRVAperiodo = new System.Windows.Forms.DateTimePicker();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -277,6 +277,19 @@
             this.toolStripUltimo.Text = "Ultimo";
             this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripButton1.Size = new System.Drawing.Size(57, 59);
+            this.toolStripButton1.Text = "Importar";
+            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // tsProcesar
             // 
             this.tsProcesar.Image = ((System.Drawing.Image)(resources.GetObject("tsProcesar.Image")));
@@ -285,7 +298,7 @@
             this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsProcesar.Name = "tsProcesar";
             this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsProcesar.Size = new System.Drawing.Size(56, 35);
+            this.tsProcesar.Size = new System.Drawing.Size(56, 59);
             this.tsProcesar.Text = "Procesar";
             this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -632,13 +645,6 @@
             this.txtRVAresponsable.Size = new System.Drawing.Size(274, 20);
             this.txtRVAresponsable.TabIndex = 223;
             // 
-            // txtRVAperiodo
-            // 
-            this.txtRVAperiodo.Location = new System.Drawing.Point(282, 185);
-            this.txtRVAperiodo.Name = "txtRVAperiodo";
-            this.txtRVAperiodo.Size = new System.Drawing.Size(180, 20);
-            this.txtRVAperiodo.TabIndex = 222;
-            // 
             // txtRVAcodigo
             // 
             this.txtRVAcodigo.Location = new System.Drawing.Point(282, 153);
@@ -718,31 +724,28 @@
             this.checkBox1.Text = "Importar desde Excel";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // toolStripButton1
+            // txtRVAperiodo
             // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripButton1.Size = new System.Drawing.Size(57, 59);
-            this.toolStripButton1.Text = "Importar";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.txtRVAperiodo.CustomFormat = "MM/yyyy";
+            this.txtRVAperiodo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtRVAperiodo.Location = new System.Drawing.Point(282, 182);
+            this.txtRVAperiodo.Name = "txtRVAperiodo";
+            this.txtRVAperiodo.ShowUpDown = true;
+            this.txtRVAperiodo.Size = new System.Drawing.Size(97, 20);
+            this.txtRVAperiodo.TabIndex = 229;
             // 
             // FrmACF_CalculoValidacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(753, 636);
+            this.Controls.Add(this.txtRVAperiodo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtRVRestado);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.dtpRVAfecha);
             this.Controls.Add(this.txtRVAresponsable);
-            this.Controls.Add(this.txtRVAperiodo);
             this.Controls.Add(this.txtRVAcodigo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -805,7 +808,6 @@
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.DateTimePicker dtpRVAfecha;
         private System.Windows.Forms.TextBox txtRVAresponsable;
-        private System.Windows.Forms.TextBox txtRVAperiodo;
         private System.Windows.Forms.TextBox txtRVAcodigo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -837,5 +839,6 @@
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.DateTimePicker txtRVAperiodo;
     }
 }

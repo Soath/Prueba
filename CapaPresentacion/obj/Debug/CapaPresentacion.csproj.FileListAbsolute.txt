@@ -362,3 +362,6 @@ C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacio
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_Excel_Reparo.resources
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_Excel_Diferido.resources
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_Excel_Valuacion.resources
+C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_Excel_Diferido.resources
+C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_Excel_Reparo.resources
+C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.Frm_Excel_Valuacion.resources
