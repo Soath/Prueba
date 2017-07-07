@@ -981,6 +981,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Reportes\Ficha_Control_Inventario.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Anexo_ActivoFijo.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Anexo_ActivoFijo_Sunat.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Anexo_Depreciacion.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Anexo_DepreciacionAcumulada.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Cbarra.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_ACF_ActivoFijo.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_ACTActividad.rdlc" />
