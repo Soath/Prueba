@@ -38,9 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
             this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
@@ -51,12 +49,14 @@
             this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
+            this.tsProcesar = new System.Windows.Forms.ToolStripButton();
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.datalistado1 = new System.Windows.Forms.DataGridView();
             this.txtRTRresponsable = new System.Windows.Forms.TextBox();
             this.txtRTRestado = new System.Windows.Forms.CheckBox();
-            this.tsProcesar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado1)).BeginInit();
@@ -129,13 +129,6 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "ID Calculo";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(203, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 20);
-            this.textBox1.TabIndex = 18;
-            // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
@@ -145,16 +138,6 @@
             this.checkBox2.TabIndex = 17;
             this.checkBox2.Text = "Generar desde Base de Datos";
             this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(29, 80);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(125, 17);
-            this.checkBox1.TabIndex = 16;
-            this.checkBox1.Text = "Importar desde Excel";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // toolStrip1
             // 
@@ -171,6 +154,7 @@
             this.toolStripUltimo,
             this.toolStripAnterior,
             this.toolStripSiguiente,
+            this.toolStripButton1,
             this.tsProcesar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -290,6 +274,19 @@
             this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripSiguiente.Click += new System.EventHandler(this.toolStripSiguiente_Click);
             // 
+            // tsProcesar
+            // 
+            this.tsProcesar.Image = ((System.Drawing.Image)(resources.GetObject("tsProcesar.Image")));
+            this.tsProcesar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tsProcesar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsProcesar.Name = "tsProcesar";
+            this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsProcesar.Size = new System.Drawing.Size(56, 35);
+            this.tsProcesar.Text = "Procesar";
+            this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsProcesar.Click += new System.EventHandler(this.tsProcesar_Click);
+            // 
             // errorIcono
             // 
             this.errorIcono.ContainerControl = this;
@@ -324,18 +321,28 @@
             this.txtRTRestado.Text = "Estado";
             this.txtRTRestado.UseVisualStyleBackColor = true;
             // 
-            // tsProcesar
+            // toolStripButton1
             // 
-            this.tsProcesar.Image = ((System.Drawing.Image)(resources.GetObject("tsProcesar.Image")));
-            this.tsProcesar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsProcesar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsProcesar.Name = "tsProcesar";
-            this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsProcesar.Size = new System.Drawing.Size(56, 64);
-            this.tsProcesar.Text = "Procesar";
-            this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tsProcesar.Click += new System.EventHandler(this.tsProcesar_Click);
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripButton1.Size = new System.Drawing.Size(57, 64);
+            this.toolStripButton1.Text = "Importar";
+            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(29, 80);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(125, 17);
+            this.checkBox1.TabIndex = 16;
+            this.checkBox1.Text = "Importar desde Excel";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // FrmACF_ReparoTributario
             // 
@@ -354,7 +361,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Name = "FrmACF_ReparoTributario";
@@ -379,9 +385,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripRefrescar;
         private System.Windows.Forms.ToolStripButton toolStripAgregar;
@@ -398,5 +402,7 @@
         private System.Windows.Forms.TextBox txtRTRresponsable;
         private System.Windows.Forms.CheckBox txtRTRestado;
         private System.Windows.Forms.ToolStripButton tsProcesar;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

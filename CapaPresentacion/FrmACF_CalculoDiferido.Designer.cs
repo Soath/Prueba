@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmACF_CalculoDiferido));
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,9 +63,10 @@
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
+            this.tsProcesar = new System.Windows.Forms.ToolStripButton();
             this.txtPDFestado = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.tsProcesar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -94,13 +94,6 @@
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Generar desde Base de Datos";
             this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(360, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 20);
-            this.textBox1.TabIndex = 2;
             // 
             // label1
             // 
@@ -292,6 +285,7 @@
             this.toolStripAnterior,
             this.toolStripSiguiente,
             this.toolStripUltimo,
+            this.toolStripButton1,
             this.tsProcesar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -425,6 +419,19 @@
             this.toolStripUltimo.Text = "Ultimo";
             this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // tsProcesar
+            // 
+            this.tsProcesar.Image = ((System.Drawing.Image)(resources.GetObject("tsProcesar.Image")));
+            this.tsProcesar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tsProcesar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsProcesar.Name = "tsProcesar";
+            this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsProcesar.Size = new System.Drawing.Size(56, 35);
+            this.tsProcesar.Text = "Procesar";
+            this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsProcesar.Click += new System.EventHandler(this.tsProcesar_Click);
+            // 
             // txtPDFestado
             // 
             this.txtPDFestado.AutoCompleteCustomSource.AddRange(new string[] {
@@ -449,18 +456,18 @@
             this.label6.TabIndex = 212;
             this.label6.Text = "1 = Baja         2 = Anulado";
             // 
-            // tsProcesar
+            // toolStripButton1
             // 
-            this.tsProcesar.Image = ((System.Drawing.Image)(resources.GetObject("tsProcesar.Image")));
-            this.tsProcesar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsProcesar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsProcesar.Name = "tsProcesar";
-            this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsProcesar.Size = new System.Drawing.Size(56, 35);
-            this.tsProcesar.Text = "Procesar";
-            this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tsProcesar.Click += new System.EventHandler(this.tsProcesar_Click);
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripButton1.Size = new System.Drawing.Size(57, 35);
+            this.toolStripButton1.Text = "Importar";
+            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // FrmACF_CalculoDiferido
             // 
@@ -480,7 +487,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Name = "FrmACF_CalculoDiferido";
@@ -503,7 +509,6 @@
 
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -538,5 +543,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox txtPDFestado;
         private System.Windows.Forms.ToolStripButton tsProcesar;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

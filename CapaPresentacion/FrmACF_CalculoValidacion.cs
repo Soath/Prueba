@@ -687,6 +687,12 @@ namespace CapaPresentacion
             mostrar();
         }
 
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Form Frm_Excel_Valuacion = new Frm_Excel_Valuacion();
+            Frm_Excel_Valuacion.ShowDialog();
+        }
+
 
 
 

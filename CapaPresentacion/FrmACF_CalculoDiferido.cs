@@ -691,8 +691,15 @@ namespace CapaPresentacion
 
         private void tsProcesar_Click(object sender, EventArgs e)
         {
+           
             NacfDDFt_detalledediferido.Copiar(txtPDFcodigo.Text);
             mostrar();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Form Frm_excel3 = new Frm_Excel_Diferido();
+            Frm_excel3.ShowDialog();
         }
 
 

@@ -455,5 +455,11 @@ namespace CapaPresentacion
             NacfDRTt_detallereparotributario.Copiar(txtRTRcodigo.Text);
             mostrar();
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Form Frm_Excel_Reparo = new Frm_Excel_Reparo();
+            Frm_Excel_Reparo.ShowDialog();
+        }
     }
 }

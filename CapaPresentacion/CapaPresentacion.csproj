@@ -611,6 +611,24 @@
     <Compile Include="FrmReportes.Designer.cs">
       <DependentUpon>FrmReportes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Excel_Diferido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Excel_Diferido.Designer.cs">
+      <DependentUpon>Frm_Excel_Diferido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Excel_Reparo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Excel_Reparo.Designer.cs">
+      <DependentUpon>Frm_Excel_Reparo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Excel_Valuacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Excel_Valuacion.Designer.cs">
+      <DependentUpon>Frm_Excel_Valuacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_LiquidacionObra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -946,6 +964,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Excel_Diferido.resx">
+      <DependentUpon>Frm_Excel_Diferido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Excel_Reparo.resx">
+      <DependentUpon>Frm_Excel_Reparo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Excel_Valuacion.resx">
+      <DependentUpon>Frm_Excel_Valuacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_LiquidacionObra.resx">
       <DependentUpon>Frm_LiquidacionObra.cs</DependentUpon>
