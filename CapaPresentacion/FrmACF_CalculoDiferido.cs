@@ -342,7 +342,7 @@ namespace CapaPresentacion
         private void BotonImportar()
         {
             //Form FrmExcel = new FrmExcel();
-            //FrmExcel.Show();
+            //FrmExcel.Show(;)
         }
         private void BotonRefrescar()
         {
@@ -361,6 +361,10 @@ namespace CapaPresentacion
             txtPDFestado.Text = "";
             txtPDFperiodo.Text = "";
             txtPDFreponsable.Text = "";
+            if (string.IsNullOrWhiteSpace(txtPDFcodigo.Text))
+            {
+                txtPDFcodigo.Text = "0";
+            }
             txtPDFcodigo.Text=Convert.ToString(Convert.ToInt32(txtPDFcodigo.Text) + 1);
                         
 
@@ -385,7 +389,7 @@ namespace CapaPresentacion
         {
             if (this.validaCampos())
             {
-                if (Graba == 1) this.InsertaRegistro();
+                if (Graba == 1) this.InsertaRegistro(); NacfDDFt_detalledediferido.Copiar(txtPDFcodigo.Text);mostrar();
                 if (Graba == 2) this.ActualizaRegistro();
                 Graba = 0;
                 this.BotonCancelar();
@@ -692,8 +696,8 @@ namespace CapaPresentacion
         private void tsProcesar_Click(object sender, EventArgs e)
         {
            
-            NacfDDFt_detalledediferido.Copiar(txtPDFcodigo.Text);
-            mostrar();
+            //NacfDDFt_detalledediferido.Copiar(txtPDFcodigo.Text);
+            //mostrar();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -702,9 +706,10 @@ namespace CapaPresentacion
             Frm_excel3.ShowDialog();
         }
 
+        private void FrmACF_CalculoDiferido_Load_2(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }
 //-------------------------------------------------------------------

@@ -436,6 +436,7 @@
             this.tsProcesar.Size = new System.Drawing.Size(56, 59);
             this.tsProcesar.Text = "Procesar";
             this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsProcesar.Visible = false;
             this.tsProcesar.Click += new System.EventHandler(this.tsProcesar_Click);
             // 
             // txtPDFestado
@@ -495,6 +496,7 @@
             this.Name = "FrmACF_CalculoDiferido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmACF_CalculoDiferido";
+            this.Load += new System.EventHandler(this.FrmACF_CalculoDiferido_Load_2);
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
