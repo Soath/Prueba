@@ -396,7 +396,7 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfRTRt_Reparotributario.Insertar(this.txtRTRperiodo.Text, this.txtRTRfecha.Text, this.txtRTRresponsable.Text, this.txtRTRestado.Text, this.txtRTRcodigo.Text);
+                Rta = NacfRTRt_Reparotributario.Insertar(this.txtRTRperiodo.Text, this.txtRTRfecha.Text, this.txtRTRresponsable.Text, this.cb1.Checked, this.txtRTRcodigo.Text);
 
                 if (Rta.Equals("OK"))
                 {
@@ -421,7 +421,7 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfRTRt_Reparotributario.Editar(this.txtRTRperiodo.Text, this.txtRTRfecha.Text, this.txtRTRresponsable.Text, this.txtRTRestado.Text, this.txtRTRcodigo.Text);
+                Rta = NacfRTRt_Reparotributario.Editar(this.txtRTRperiodo.Text, this.txtRTRfecha.Text, this.txtRTRresponsable.Text, this.cb1.Checked, this.txtRTRcodigo.Text);
                 if (Rta.Equals("OK"))
                 {
                     this.MensajeOk("Regsitro Actualizado Correctamente");

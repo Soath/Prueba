@@ -287,7 +287,7 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfRTRt_Reparotributario.Editar(this.txtRTRperiodo.Text, this.dtRTRfecha.Text, this.txtRTRresponsable.Text, this.txtRTRestado.Text, this.txtRTRcodigo.Text);
+                Rta = NacfRTRt_Reparotributario.Editar(this.txtRTRperiodo.Text, this.dtRTRfecha.Text, this.txtRTRresponsable.Text, this.txtRTRestado.Checked, this.txtRTRcodigo.Text);
 
                 //Rta = NacfACFp_Activo_Fijo.Editar("1", "1", "1", "1", "1", "1", "2", DateTime.Today.ToString(), "1", this.txtACFdescripcion.Text, DateTime.Today.ToString(), DateTime.Today.ToString(), "0", "0", "0.00", "0", "0", "0", "", "0", "", "", "", "", "", "", "0.00", "0.00", "", "", "1", "", "1", "", "", "", DateTime.Today.ToString(), "1", "", "1", "1", "1", DateTime.Today.ToString(), "1");
 
@@ -338,7 +338,7 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfRTRt_Reparotributario.Insertar(this.txtRTRperiodo.Text, this.dtRTRfecha.Text, this.txtRTRresponsable.Text, this.txtRTRestado.Text, this.txtRTRcodigo.Text);
+                Rta = NacfRTRt_Reparotributario.Insertar(this.txtRTRperiodo.Text, this.dtRTRfecha.Text, this.txtRTRresponsable.Text, this.txtRTRestado.Checked, this.txtRTRcodigo.Text);
 
                 if (Rta.Equals("OK"))
                 {
