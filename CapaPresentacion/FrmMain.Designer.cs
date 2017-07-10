@@ -512,6 +512,7 @@
             this.ribbonButton80.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton80.Image")));
             this.ribbonButton80.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton80.SmallImage")));
             this.ribbonButton80.Text = "Procesar Diferido";
+            this.ribbonButton80.Visible = false;
             this.ribbonButton80.Click += new System.EventHandler(this.ribbonButton80_Click);
             // 
             // ribbonButton81
