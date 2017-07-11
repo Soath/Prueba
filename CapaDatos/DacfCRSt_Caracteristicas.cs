@@ -1063,7 +1063,15 @@ namespace CapaDatos
                 SqlParameter ParACFid = new SqlParameter();
                 ParACFid.ParameterName = "@iACFid";
                 ParACFid.SqlDbType = SqlDbType.Int;
-                ParACFid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.ACFid);
+                //ParACFid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.ACFid);
+                if (string.IsNullOrWhiteSpace(acfCRSt_Caracteristicas.ACFid))
+                {
+                    ParACFid.Value = 0;
+                }
+                else
+                {
+                    ParACFid.Value = Convert.ToInt32(acfCRSt_Caracteristicas.ACFid);
+                }
                 SqlCmd.Parameters.Add(ParACFid);
                 //
                 SqlParameter ParMARid = new SqlParameter();

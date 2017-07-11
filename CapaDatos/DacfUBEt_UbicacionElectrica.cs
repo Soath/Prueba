@@ -499,8 +499,16 @@ namespace CapaDatos
             SqlParameter ParACFid = new SqlParameter();
             ParACFid.ParameterName = "@iACFid";
             ParACFid.SqlDbType = SqlDbType.Int;
-            ParACFid.Value = acfUBEt_UbicacionElectrica.ACFid;
-            SqlCmd.Parameters.Add(ParACFid);
+            //ParACFid.Value = acfUBEt_UbicacionElectrica.ACFid;
+                if (string.IsNullOrWhiteSpace(acfUBEt_UbicacionElectrica.ACFid))
+                {
+                    ParACFid.Value = 0;
+                }
+                else
+                {
+                    ParACFid.Value = Convert.ToInt32(acfUBEt_UbicacionElectrica.ACFid);
+                }
+                SqlCmd.Parameters.Add(ParACFid);
             //
             SqlParameter ParUBIGEO = new SqlParameter();
             ParUBIGEO.ParameterName = "@cUBIGEO";
