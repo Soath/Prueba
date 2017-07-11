@@ -14,7 +14,7 @@ namespace CapaDatos
         private string mRTRperiodo;
         private string mRTRfecha;
         private string mRTRresponsable;
-        private string mRTRestado;
+        private bool mRTRestado;
         private string mRTRcodigo;
 
 
@@ -52,7 +52,7 @@ namespace CapaDatos
             }
         }
 
-        public string RTRestado
+        public bool RTRestado
         {
             get
             {
@@ -86,7 +86,7 @@ namespace CapaDatos
 
         //Constructor con parámetros
 
-        public DAcfRTRt_Reparotributario(string RTRperiodo, string RTRfecha, string RTRresponsable, string RTRestado, string RTRcodigo)
+        public DAcfRTRt_Reparotributario(string RTRperiodo, string RTRfecha, string RTRresponsable, bool RTRestado, string RTRcodigo)
         {
 
         this.mRTRperiodo = RTRperiodo;

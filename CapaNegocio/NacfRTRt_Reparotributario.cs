@@ -15,7 +15,7 @@ namespace CapaNegocio
 
         //M�todo Insertar que llama al m�todo Insertar de la clase DPostres
         //de la CapaDatos
-        public static string Insertar(string mRTRperiodo,string mRTRfecha, string mRTRresponsable, string mRTRestado, string mRTRcodigo)
+        public static string Insertar(string mRTRperiodo,string mRTRfecha, string mRTRresponsable, bool mRTRestado, string mRTRcodigo)
         {
             DAcfRTRt_Reparotributario Obj = new DAcfRTRt_Reparotributario();
             Obj.RTRperiodo = mRTRperiodo;
@@ -29,7 +29,7 @@ namespace CapaNegocio
         //------------------------------------------------------------------
         //Metodo Editar que llama al metodo Editar de la clase DPostres
         //de la CapaDatos
-        public static string Editar(string mRTRperiodo, string mRTRfecha, string mRTRresponsable, string mRTRestado, string mRTRcodigo)
+        public static string Editar(string mRTRperiodo, string mRTRfecha, string mRTRresponsable, bool mRTRestado, string mRTRcodigo)
         {
             DAcfRTRt_Reparotributario Obj = new DAcfRTRt_Reparotributario();
             Obj.RTRperiodo = mRTRperiodo;

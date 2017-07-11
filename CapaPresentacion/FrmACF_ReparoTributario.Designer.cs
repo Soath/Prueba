@@ -344,7 +344,7 @@
             this.txtRTRperiodo.Location = new System.Drawing.Point(153, 191);
             this.txtRTRperiodo.Name = "txtRTRperiodo";
             this.txtRTRperiodo.ShowUpDown = true;
-            this.txtRTRperiodo.Size = new System.Drawing.Size(97, 20);
+            this.txtRTRperiodo.Size = new System.Drawing.Size(126, 20);
             this.txtRTRperiodo.TabIndex = 214;
             // 
             // FrmACF_ReparoTributario

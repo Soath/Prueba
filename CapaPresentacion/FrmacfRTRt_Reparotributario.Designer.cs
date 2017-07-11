@@ -61,6 +61,7 @@
             this.txtRTRperiodo = new System.Windows.Forms.TextBox();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cb1 = new System.Windows.Forms.CheckBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -288,6 +289,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cb1);
             this.groupBox2.Controls.Add(this.labelX5);
             this.groupBox2.Controls.Add(this.labelX4);
             this.groupBox2.Controls.Add(this.labelX3);
@@ -421,6 +423,16 @@
             // 
             this.errorIcono.ContainerControl = this;
             // 
+            // cb1
+            // 
+            this.cb1.AutoSize = true;
+            this.cb1.Location = new System.Drawing.Point(522, 122);
+            this.cb1.Name = "cb1";
+            this.cb1.Size = new System.Drawing.Size(80, 17);
+            this.cb1.TabIndex = 122;
+            this.cb1.Text = "checkBox1";
+            this.cb1.UseVisualStyleBackColor = true;
+            // 
             // FrmacfRTRt_Reparotributario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,5 +494,6 @@
         private System.Windows.Forms.TextBox txtRTRperiodo;
         private System.Windows.Forms.ToolTip ttMensaje;
         private System.Windows.Forms.ErrorProvider errorIcono;
+        private System.Windows.Forms.CheckBox cb1;
     }
 }
