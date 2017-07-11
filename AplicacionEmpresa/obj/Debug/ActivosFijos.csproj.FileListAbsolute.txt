@@ -45,8 +45,6 @@ C:\Users\avatec\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\ActivosFijos
 C:\Users\avatec\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
 C:\Users\avatec\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
 C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
-C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
-C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
 C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe
 C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.pdb
 C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\CapaPresentacion.dll
@@ -68,3 +66,5 @@ C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\CapaDatos.pdb
 C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\ActivosFijos.csprojResolveAssemblyReference.cache
 C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.Properties.Resources.resources
 C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
+C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
+C:\Users\jcho\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
