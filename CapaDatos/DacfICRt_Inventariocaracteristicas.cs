@@ -1662,7 +1662,58 @@ namespace CapaDatos
         }
         return rpta;
     }
-    public string Copiar2()
+
+        // cerrar inventario
+    public string CerrarInventario(DacfICRt_Inventariocaracteristicas acfICRt_Inventariocaracteristicas)
+        {
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_U3_acfICRt_InventarioCerrar";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //
+                //SqlParameter ParINVid = new SqlParameter();
+                //ParINVid.ParameterName = "@iINVid";
+                //ParINVid.SqlDbType = SqlDbType.Int;
+                //ParINVid.Value = acfICRt_Inventariocaracteristicas.INVid;
+                //SqlCmd.Parameters.Add(ParINVid);
+                //
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFid";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = acfICRt_Inventariocaracteristicas.ACFid;
+                SqlCmd.Parameters.Add(ParACFid);
+                //
+                SqlParameter ParCRSserie = new SqlParameter();
+                ParCRSserie.ParameterName = "@sCRSserie";
+                ParCRSserie.SqlDbType = SqlDbType.VarChar;
+                ParCRSserie.Value = acfICRt_Inventariocaracteristicas.CRSserie;
+                SqlCmd.Parameters.Add(ParCRSserie);
+
+                //Ejecutamos nuestro comando
+
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO Procesado";
+
+
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
+        }
+        public string Copiar2()
     {
 
         string rpta = "";

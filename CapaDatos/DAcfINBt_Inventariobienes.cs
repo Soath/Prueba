@@ -1212,7 +1212,7 @@ namespace CapaDatos
         return DtResultado;
     }
 
-        public DataTable conciliarinvent(string iINVid, string iACFid)
+        public DataTable conciliarinvent(string iINVid)
         {
             DataTable DtResultado = new DataTable("acfINBt_Inventariobienes");
             SqlConnection SqlCon = new SqlConnection();
@@ -1233,12 +1233,12 @@ namespace CapaDatos
                 PariINVid.Value = iINVid;
                 SqlCmd.Parameters.Add(PariINVid);
 
-                SqlParameter ParACFid = new SqlParameter();
-                ParACFid.ParameterName = "@iACFid";
-                ParACFid.SqlDbType = SqlDbType.Int;
-                ParACFid.Size = 50;
-                ParACFid.Value = iACFid;
-                SqlCmd.Parameters.Add(ParACFid);
+                //SqlParameter ParACFid = new SqlParameter();
+                //ParACFid.ParameterName = "@iACFid";
+                //ParACFid.SqlDbType = SqlDbType.Int;
+                //ParACFid.Size = 50;
+                //ParACFid.Value = iACFid;
+                //SqlCmd.Parameters.Add(ParACFid);
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);

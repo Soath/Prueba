@@ -332,8 +332,8 @@ namespace CapaNegocio
         {
             return new DacfICRt_Inventariocaracteristicas().Buscar(iACFid);
         }
-       
-        
+
+
         public static string Editar2(
         string iACFid,
         string iMARid,
@@ -343,8 +343,21 @@ namespace CapaNegocio
             Obj.ACFid = iACFid;
             Obj.MARid = iMARid;
             Obj.CRSserie = sCRSserie;
-       
+
             return Obj.Editar2(Obj);
+        }
+
+        public static string CerrarInventario(
+        //string iINVid,
+        string iACFid,        
+        string sCRSserie)
+        {
+            DacfICRt_Inventariocaracteristicas Obj = new DacfICRt_Inventariocaracteristicas();
+            //Obj.ACFid = iINVid;
+            Obj.ACFid = iACFid;
+            Obj.CRSserie = sCRSserie;
+
+            return Obj.CerrarInventario(Obj);
         }
     }
 }

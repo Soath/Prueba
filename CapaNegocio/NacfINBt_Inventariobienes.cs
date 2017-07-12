@@ -236,9 +236,9 @@ namespace CapaNegocio
         }
 
         // conciliar inventario
-        public static DataTable conciliarinvent(string iINVid, string iACFid)
+        public static DataTable conciliarinvent(string iINVid)
         {
-            return new DAcfINBt_Inventariobienes().conciliarinvent(iINVid, iACFid);
+            return new DAcfINBt_Inventariobienes().conciliarinvent(iINVid);
         }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre

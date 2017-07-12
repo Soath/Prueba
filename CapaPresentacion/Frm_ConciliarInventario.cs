@@ -23,15 +23,7 @@ namespace CapaPresentacion
 
         private void CargarCombos()
         {
-            this.cboACF1.DataSource = NacfACFp_Activo_Fijo.Mostrar(); //ACFid
-            this.cboACF1.ValueMember = "ACFid";
-            this.cboACF1.DisplayMember = "ACFid";
-            this.cboACF1.SelectedIndex = -1;
-
-            this.cboACF2.DataSource = NacfACFp_Activo_Fijo.MostrarINV(cboINV.Text); //ACFid
-            this.cboACF2.ValueMember = "ACFid";
-            this.cboACF2.DisplayMember = "ACFid";
-            this.cboACF2.SelectedIndex = -1;
+           
 
             this.cboINV.DataSource = NacfINVp_Inventario.Mostrar(); //INVid
             this.cboINV.ValueMember = "INVid";
@@ -40,9 +32,9 @@ namespace CapaPresentacion
 
         }
 
-        private void mostrar(string iINVid, string iACFid)
+        private void mostrar(string iINVid)
         {
-            this.datalistado1.DataSource = NacfINBt_Inventariobienes.conciliarinvent(iINVid, iACFid);
+            this.datalistado1.DataSource = NacfINBt_Inventariobienes.conciliarinvent(iINVid);
             /* if (datalistado.Rows.Count == 0)
              {
                  BotonesSinReg(false);
@@ -66,7 +58,7 @@ namespace CapaPresentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            mostrar(cboINV.Text, cboACF2.Text);
+            mostrar(cboINV.Text);
         }
     }
 }

@@ -100,7 +100,6 @@
     </Compile>
     <Compile Include="DataSet2.cs">
       <DependentUpon>DataSet2.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -629,6 +628,12 @@
     <Compile Include="Frm_Excel_Valuacion.Designer.cs">
       <DependentUpon>Frm_Excel_Valuacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_InventarioCerrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_InventarioCerrar.Designer.cs">
+      <DependentUpon>Frm_InventarioCerrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_LiquidacionObra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -973,6 +978,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Excel_Valuacion.resx">
       <DependentUpon>Frm_Excel_Valuacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_InventarioCerrar.resx">
+      <DependentUpon>Frm_InventarioCerrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_LiquidacionObra.resx">
       <DependentUpon>Frm_LiquidacionObra.cs</DependentUpon>

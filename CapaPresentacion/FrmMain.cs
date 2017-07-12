@@ -580,5 +580,11 @@ namespace CapaPresentacion
             Form FrmMovimientoTransferenciaActivo_Aprobadas = new FrmMovimientoTransferenciaActivo_Aprobadas();
             FrmMovimientoTransferenciaActivo_Aprobadas.ShowDialog();
         }
+
+        private void ribbonButton94_Click(object sender, EventArgs e)
+        {
+            Form Frm_InventarioCerrar = new Frm_InventarioCerrar();
+            Frm_InventarioCerrar.ShowDialog();
+        }
     }
 }

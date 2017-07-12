@@ -644,6 +644,7 @@
             this.ribbonButton94.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton94.Image")));
             this.ribbonButton94.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton94.SmallImage")));
             this.ribbonButton94.Text = "Cerrar Inventario";
+            this.ribbonButton94.Click += new System.EventHandler(this.ribbonButton94_Click);
             // 
             // ribbonButton95
             // 

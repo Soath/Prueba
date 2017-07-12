@@ -130,12 +130,12 @@ namespace CapaPresentacion
 
         private void MensajeOk(string mensaje)
         {
-            MessageBox.Show(mensaje, "Control", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensaje, "Control:", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
         private void MensajeError(string mensaje)
         {
-            MessageBox.Show(mensaje, "Control", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(mensaje, "Control_", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         private void button1_Click(object sender, EventArgs e)
         {
