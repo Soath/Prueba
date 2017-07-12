@@ -129,7 +129,10 @@ namespace CapaNegocio
          {
              return new DAcfDRTt_detallereparotributario().Mostrar();
          }
-
+         public static DataTable Reporte(String RTRcodigo)
+         {
+             return new DAcfDRTt_detallereparotributario().Reporte(RTRcodigo);
+         }
          //------------------------------------------------------------------
          //M�todo Buscar que llama al m�todo BuscarNombre
          //de la clase DPostresa de la CapaDatos

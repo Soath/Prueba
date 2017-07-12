@@ -205,6 +205,36 @@ namespace CapaDatos
              }
              return DtResultado;
          }
+         public DataTable Reporte(String RTRcodigo)
+         {
+             DataTable DtResultado = new DataTable("acfDRTt_detallereparotributario");
+             SqlConnection SqlCon = new SqlConnection();
+
+             try
+             {
+                 //Codigo
+                 SqlCon.ConnectionString = DConexion.CnBDActivo;
+                 SqlCommand SqlCmd = new SqlCommand();
+                 SqlCmd.Connection = SqlCon;
+                 SqlCmd.CommandText = "acfrpt_Reparo_Tributario";
+                 SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                 SqlParameter ParRTRcodigo = new SqlParameter();
+                 ParRTRcodigo.ParameterName = "@RTRcodigo";
+                 ParRTRcodigo.SqlDbType = SqlDbType.Int;
+                 ParRTRcodigo.Value = RTRcodigo;
+                 SqlCmd.Parameters.Add(ParRTRcodigo);
+
+                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                 SqlDat.Fill(DtResultado);
+             }
+
+             catch (Exception ex)
+             {
+                 DtResultado = null;
+             }
+             return DtResultado;
+         }
         //METODO COPIAR 
          public string Copiar(DAcfDRTt_detallereparotributario acfDRTt_detallereparotributario)
          {

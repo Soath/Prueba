@@ -461,5 +461,11 @@ namespace CapaPresentacion
             Form Frm_Excel_Reparo = new Frm_Excel_Reparo();
             Frm_Excel_Reparo.ShowDialog();
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Reparo_Tributario.rdlc",NacfDRTt_detallereparotributario.Reporte(txtRTRcodigo.Text), "ip");
+            rptalu.ShowDialog();
+        }
     }
 }

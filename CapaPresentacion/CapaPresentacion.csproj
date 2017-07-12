@@ -1041,6 +1041,7 @@
     <EmbeddedResource Include="Reportes\Rpt_MVMMotivoMovimiento.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_PDFProcesoDiferido.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_PRVProveedor.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Reparo_Tributario.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_RTRReparoTributario.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_RVARegistroValuacion.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_SEGSegmento.rdlc" />
