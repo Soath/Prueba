@@ -11,4 +11,3 @@ C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.dll
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.pdb
-C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
