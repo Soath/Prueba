@@ -279,7 +279,8 @@ namespace CapaPresentacion
                               "0", // ACFid_Padre
                                Convert.ToString(row.Cells[37].Value), // ACFtipo_orden
                                Convert.ToString(row.Cells[47].Value), // OBJid_objeto
-                               Convert.ToString(row.Cells[8].Value) // CRPid_crp
+                               Convert.ToString(row.Cells[8].Value), // CRPid_crp
+                               Convert.ToString(row.Cells[12].Value) // ACTid
                               );
                                                                                                                                                      
                         if (Rta.Equals("OK"))
@@ -508,7 +509,8 @@ namespace CapaPresentacion
                                 "0", // ACFid_Padre
                                  Convert.ToString(row.Cells[37].Value), // ACFtipo_orden
                                  Convert.ToString(row.Cells[47].Value), // OBJid_objeto
-                                 Convert.ToString(row.Cells[8].Value) // CRPid_crp
+                                 Convert.ToString(row.Cells[8].Value), // CRPid_crp
+                                 Convert.ToString(row.Cells[12].Value) // ACTid
                                 );
 
                     if (Rta.Equals("OK"))

@@ -1696,7 +1696,12 @@ namespace CapaDatos
                 ParCRSserie.SqlDbType = SqlDbType.VarChar;
                 ParCRSserie.Value = acfICRt_Inventariocaracteristicas.CRSserie;
                 SqlCmd.Parameters.Add(ParCRSserie);
-
+                //
+                SqlParameter ParMARid = new SqlParameter();
+                ParMARid.ParameterName = "@iMARid";
+                ParMARid.SqlDbType = SqlDbType.Int;
+                ParMARid.Value = acfICRt_Inventariocaracteristicas.MARid;
+                SqlCmd.Parameters.Add(ParMARid);
                 //Ejecutamos nuestro comando
 
                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO Procesado";

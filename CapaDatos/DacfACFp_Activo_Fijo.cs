@@ -60,6 +60,7 @@ namespace CapaDatos
         private string cACFtipo_orden;
         private string cOBJid_objeto;
         private string cCRPid_crp;
+        private string iACTid;
 
         public string ACFid
         {
@@ -316,6 +317,12 @@ namespace CapaDatos
             set { cCRPid_crp = value; }
         }
 
+        public string ACTid
+        {
+            get { return iACTid; }
+            set { iACTid = value; }
+        }
+
         //Constructor vacío
         public DacfACFp_Activo_Fijo(){
 	}
@@ -370,7 +377,8 @@ namespace CapaDatos
          string ACFid_Padre,
          string ACFtipo_orden,
          string OBJid_objeto,
-         string CRPid_crp
+         string CRPid_crp,
+         string ACTid
          )         
     {
 
@@ -424,6 +432,7 @@ namespace CapaDatos
         this.ACFtipo_orden = cACFtipo_orden;
         this.OBJid_objeto = cOBJid_objeto;
         this.CRPid_crp = cCRPid_crp;
+        this.ACTid = iACTid;
 
     }
 	public object Clone() {
@@ -1515,8 +1524,13 @@ namespace CapaDatos
                 ParCRPid_crp.SqlDbType = SqlDbType.Char;
                 ParCRPid_crp.Value = acfACFp_Activo_Fijo.cCRPid_crp;
                 SqlCmd.Parameters.Add(ParCRPid_crp);
-
-
+                //
+                SqlParameter ParACTid = new SqlParameter();
+                ParACTid.ParameterName = "@iACTid";
+                ParACTid.SqlDbType = SqlDbType.Int;
+                ParACTid.Value = Convert.ToInt32(acfACFp_Activo_Fijo.ACTid);
+                SqlCmd.Parameters.Add(ParACTid);
+                //
                 //
                 //Ejecutamos nuestro comando
 

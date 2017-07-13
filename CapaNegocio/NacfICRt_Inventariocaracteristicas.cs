@@ -350,12 +350,14 @@ namespace CapaNegocio
         public static string CerrarInventario(
         //string iINVid,
         string iACFid,        
-        string sCRSserie)
+        string sCRSserie,
+        string iMARid)
         {
             DacfICRt_Inventariocaracteristicas Obj = new DacfICRt_Inventariocaracteristicas();
             //Obj.ACFid = iINVid;
             Obj.ACFid = iACFid;
             Obj.CRSserie = sCRSserie;
+            Obj.MARid = iMARid;
 
             return Obj.CerrarInventario(Obj);
         }

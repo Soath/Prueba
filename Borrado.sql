@@ -23,10 +23,12 @@ insert into [dbo].[acfACFp_Activo_Fijo] (ACFid, AMBID, UBEID,V_T087U_ANLUE) valu
 
 insert into [dbo].[acfUBEt_UbicacionElectrica] ([KOSTL],[VNRid], [UBEid], [ACFid]) values ('0','0','0','0')
  
- delete from [dbo].[acfPDFt_procesodiferido];
+delete from [dbo].[acfPDFt_procesodiferido];
 
- delete from [dbo].[acfDDFt_detalledediferido];
+delete from [dbo].[acfDDFt_detalledediferido];
 
- delete from [dbo].[acfRTRt_Reparotributario];
+delete from [dbo].[acfRTRt_Reparotributario];
 
- delete from [dbo].[acfDRTt_detallereparotributario];
+delete from [dbo].[acfDRTt_detallereparotributario];
+
+delete from [dbo].[acfEDIt_edificaciondetalle]

@@ -73,18 +73,21 @@ namespace CapaPresentacion
                       //this.datalistado1.CurrentRow.Cells[0].Value.ToString()
                      this.datalistado1.CurrentRow.Cells[5].Value.ToString()
                     , this.datalistado1.CurrentRow.Cells[6].Value.ToString()
+                    , this.datalistado1.CurrentRow.Cells[8].Value.ToString()
 
                   );
 
                     if (Rta.Equals("OK"))
                     {
                         this.MensajeOk("Proceso Terminado Correctamente");
+                        mostrar(cboINV.Text);
                     }
                     else
                     {
                         this.MensajeError("Error al Cerrar Inventario:" + Rta);
                     }
                 }
+
             }
             catch (Exception ex)
             {

@@ -170,7 +170,8 @@ namespace CapaNegocio
          string cACFid_Padre,
          string cACFtipo_orden,
          string cOBJid_objeto,
-         string cCRPid_crp
+         string cCRPid_crp,
+         string iACTid
          )
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
@@ -224,6 +225,7 @@ namespace CapaNegocio
             Obj.ACFtipo_orden = cACFtipo_orden;
             Obj.OBJid_objeto = cOBJid_objeto;
             Obj.CRPid_crp = cCRPid_crp;
+            Obj.ACTid = iACTid;
             return Obj.SAPIMPORT(Obj);
 
         }
