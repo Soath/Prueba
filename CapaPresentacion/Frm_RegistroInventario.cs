@@ -15,6 +15,10 @@ namespace CapaPresentacion
 {       
     public partial class Frm_RegistroInventario : KryptonForm
     {
+        int Activo = 1;
+        int Graba = 0;
+        public int idEditar = 0;
+        public string MensError;
         private static Frm_InventarioG _Instancia;
 
         public static Frm_InventarioG GetInstancia()
@@ -31,12 +35,13 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             CargarCombos();
+            EstadoText(this.Controls, true, false);
           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MostrarRegistro(this.txtACFid.Text);
+            MostrarRegistro(this.txtACFid.Text, this.cboINVid.Text);
             
         }
         private void CargarCombos()
@@ -80,13 +85,19 @@ namespace CapaPresentacion
            this.cboUNMid.ValueMember = "UNMid";
            this.cboUNMid.DisplayMember = "UNMid";
            this.cboUNMid.SelectedIndex = -1;
+
+           this.cboINVid.DataSource = NacfINVp_Inventario.Mostrar();
+           this.cboINVid.ValueMember = "INVid";
+           this.cboINVid.DisplayMember = "INVid";
+           this.cboINVid.SelectedIndex = -1;
+
         }
-        private void MostrarRegistro(String ACFid)
+        private void MostrarRegistro(String ACFid, String INVid)
         {
 
             try
             {
-                DataTable dat = NacfINBt_Inventariobienes.Buscar(ACFid);
+                DataTable dat = NacfINBt_Inventariobienes.Buscar(ACFid,INVid);
                    
               
                 //ACFdescripcion.Text= dat.Rows[0]["ACFdescripcion"].ToString();
@@ -96,7 +107,7 @@ namespace CapaPresentacion
                     DataRow row = dat.Rows[0];
                     cboACTid.Text = Convert.ToString(row["ACTid"]);
                     txtACFdescripcion.Text = Convert.ToString(row["ACFactivo"]);
-                    txtACFobservacion.Text = Convert.ToString(row["ACFobservacion"]);
+                    //txtACFobservacion.Text = Convert.ToString(row["ACFobservacion"]);
                     cboVNRid.Text = Convert.ToString(row["VNRid"]);
                     txtUBEid1.Text = Convert.ToString(row["UBEid"]);
                     cboCSTid.Text = Convert.ToString(row["CSTid"]);
@@ -109,7 +120,7 @@ namespace CapaPresentacion
                 else
                     MessageBox.Show("No Existe", "Registro");
 
-                DataTable datt = NacfICRt_Inventariocaracteristicas.Buscar(ACFid);
+                DataTable datt = NacfICRt_Inventariocaracteristicas.Buscar(ACFid, INVid);
                     if(datt.Rows.Count > 0)
                     {
                         DataRow row = datt.Rows[0];
@@ -118,7 +129,7 @@ namespace CapaPresentacion
                         txtCRSserie.Text = Convert.ToString(row["CRSserie"]);
                         txtCRSmodelo.Text = Convert.ToString(row["CRSmodelo"]);
                         txtESTid.Text = Convert.ToString(row["ESTid"]);
-                        txtCRSobservacion.Text = Convert.ToString(row["CRSobservacion"]);
+                       // txtCRSobservacion.Text = Convert.ToString(row["CRSobservacion"]);
                         txtCRScantidad.Text = Convert.ToString(row["CRScantidad"]);
                         cboUNMid.Text = Convert.ToString(row["UNMid"]);
                     }
@@ -184,6 +195,152 @@ namespace CapaPresentacion
             }
 
         }
+        private void Botones(bool edo)
+        {
+            this.toolStripRefrescar.Visible = edo;
+           // this.toolStripAgregar.Visible = edo;
+            this.toolStripEditar.Visible = edo;
+            this.toolStripEliminar.Visible = edo;
+
+
+            this.toolStripGuardar.Visible = !edo;
+            this.toolStripCancelar.Visible = !edo;
+           // this.toolStripPrimero.Visible = edo;
+           // this.toolStripAnterior.Visible = edo;
+          //  this.toolStripSiguiente.Visible = edo;
+           // this.toolStripUltimo.Visible = edo;
+            this.toolStripBuscar.Visible = edo;
+
+        }
+        public static void EstadoText(Control.ControlCollection Controles, bool Limpiar, bool Enabled)
+        {
+            foreach (Control c in Controles)
+            {
+                if (c.Parent.Enabled == true)
+                {
+                    c.Tag = (c.Tag == null ? "" : c.Tag);
+                    if (c is TextBox || c is ComboBox)
+                    {
+                        if (c is ComboBox && Limpiar)
+                        {
+                            //INICIALIZA COMBOS
+                            ComboBox cmb = (ComboBox)c;
+                            if (cmb.Items.Count >= 0)
+                            {
+                                cmb.Focus();
+                            }
+                        }
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
+                            c.Text = string.Empty;
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("Z") != -1)
+                            c.Text = "0";
+
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+                    }
+                    else
+                    {
+                        EstadoText(c.Controls, Limpiar, Enabled);
+                    }
+
+                    if (c is CheckBox)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
+                            ((CheckBox)c).Checked = false;
+                    }
+
+                    if (c is RadioButton)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+                    }
+
+                    if (c is DateTimePicker)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+
+                        if (Limpiar && c.Tag.ToString().IndexOf("NoLimpiar") == -1)
+                            ((DateTimePicker)c).Value = DateTime.Now.Date;
+                    }
+
+                    if (c is Button)
+                    {
+                        if (c.Tag.ToString().IndexOf("A") == -1)
+                            c.Enabled = Enabled;
+
+                        if (c.Tag.ToString().IndexOf("D") != -1)
+                            c.Enabled = false;
+                    }
+                }
+            }
+
+        }
+        private bool validaCampos()
+        {
+            return true;
+        }
+        private void BotonCancelar()
+        {
+            Activo = 1;
+            this.Botones(true);
+            EstadoText(this.Controls, false, false);
+            //tabControl1.SelectedTab = tabPage1;
+        }
+        private void BotonRefrescar()
+        {
+            EstadoText(this.Controls, false, false);
+
+            this.Botones(true);
+            this.MostrarRegistro(txtACFid.Text,cboINVid.Text);
+        }
+        private void BotonGuardar()
+        {
+            if (this.validaCampos())
+            {
+
+                if (Graba == 1)
+                {
+                   // this.InsertaRegistro();
+                   // this.CopiarRegistro();
+                }
+                if (Graba == 2) this.ActualizaRegistro();
+                Graba = 0;
+                this.BotonCancelar();
+                this.BotonRefrescar();
+            }
+            else
+                this.MensajeOk(MensError);
+        }
+        private void CargaDatos()
+        {
+            idEditar = 0;
+        }
+        private void BotonEditar()
+        {
+            Activo = 2;
+            Graba = 2;
+            this.Botones(false);
+            EstadoText(this.Controls, false, true);
+            this.CargaDatos();
+        }
 
         private void textBox32_TextChanged(object sender, EventArgs e)
         {
@@ -202,7 +359,35 @@ namespace CapaPresentacion
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+            
+        }
+
+        private void Frm_RegistroInventario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripGuardar_Click(object sender, EventArgs e)
+        {
             ActualizaRegistro();
+            BotonGuardar();
+        }
+
+        private void toolStripEditar_Click(object sender, EventArgs e)
+        {
+            BotonEditar();
+        }
+
+        private void toolStripCancelar_Click(object sender, EventArgs e)
+        {
+            BotonRefrescar();
+        }
+
+        private void toolStripBuscar_Click(object sender, EventArgs e)
+        {
+            txtACFid.Enabled = true;
+            button1.Enabled = true;
+            cboINVid.Enabled = true;
         }
     }
 

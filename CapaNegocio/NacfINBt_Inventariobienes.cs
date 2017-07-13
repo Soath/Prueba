@@ -243,9 +243,9 @@ namespace CapaNegocio
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos
-        public static DataTable Buscar(String iACFid)
+        public static DataTable Buscar(String iACFid,String INVid)
         {
-            return new DAcfINBt_Inventariobienes().Buscar(iACFid);
+            return new DAcfINBt_Inventariobienes().Buscar(iACFid,INVid);
         }
 
     }

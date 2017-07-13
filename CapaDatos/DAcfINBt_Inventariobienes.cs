@@ -1069,7 +1069,7 @@ namespace CapaDatos
 	}
          //METODO BUSCAR
 
-    public DataTable Buscar(string iACFid)
+    public DataTable Buscar(String iACFid, String INVid)
     {
         DataTable DtResultado = new DataTable("acfINBt_Inventariobienes");
         SqlConnection SqlCon = new SqlConnection();
@@ -1089,6 +1089,12 @@ namespace CapaDatos
             ParACFid.Size = 50;
             ParACFid.Value = iACFid;
             SqlCmd.Parameters.Add(ParACFid);
+
+            SqlParameter ParINVid = new SqlParameter();
+            ParINVid.ParameterName = "@INVid";
+            ParINVid.SqlDbType = SqlDbType.Int;
+            ParINVid.Value = INVid;
+            SqlCmd.Parameters.Add(ParINVid);
 
             //SqlParameter PariMVAid = new SqlParameter();
             //PariMVAid.ParameterName = "@iMVAid";
