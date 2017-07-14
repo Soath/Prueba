@@ -950,13 +950,19 @@ namespace CapaPresentacion
             //
             try
             {
-                string iACFid = Microsoft.VisualBasic.Interaction.InputBox(
-                                 "Ingrese el Id del Activo Fijo",
-                                 "Ajuste del Valor del Bien");
-                 if (iACFid != null)
-                 {               
-                     DataTable tabla = NacfACFp_Activo_Fijo.IngresarACF(iACFid);                    
-                     if (tabla.Rows.Count > 0)
+                Form FrmBuscar = new FrmacfACFp_Activo_Fijo_Buscar();
+                FrmBuscar.ShowDialog();
+
+                string IdActi = FrmacfACFp_Activo_Fijo_Buscar.IdAct;
+                //string iACFid = Microsoft.VisualBasic.Interaction.InputBox(
+                //                 "Ingrese el Id del Activo Fijo",
+                //                 "Ajuste del Valor del Bien");
+
+
+                 if (IdActi != null) //iACFid
+                {               
+                     DataTable tabla = NacfACFp_Activo_Fijo.IngresarACF(IdActi);  //iACFid                   
+                    if (tabla.Rows.Count > 0)
                      {
                          foreach (DataRow Drow in tabla.Rows)
                          {
@@ -980,8 +986,8 @@ namespace CapaPresentacion
 
         private void button9_Click(object sender, EventArgs e)
         {
-            int fil = dataListado.CurrentRow.Index;
-            dataListado.Rows.RemoveAt(fil);
+            int fil = datalistado1.CurrentRow.Index;
+            datalistado1.Rows.RemoveAt(fil);
         }
 
         private void InsertarActivos()
