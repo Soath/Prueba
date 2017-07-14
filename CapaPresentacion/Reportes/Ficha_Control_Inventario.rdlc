@@ -199,10 +199,10 @@
               <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.08208cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.5155cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.5cm</Width>
@@ -541,6 +541,7 @@
                               <Value>=Fields!ACFid.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -573,6 +574,7 @@
                               <Value>=Fields!ACFcuenta.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -605,6 +607,7 @@
                               <Value>=Fields!ACFactivo.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -637,6 +640,7 @@
                               <Value>=Fields!UNMid.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -669,6 +673,7 @@
                               <Value>=Fields!CRScantidad.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -701,6 +706,7 @@
                               <Value>=Fields!MARid.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -733,6 +739,7 @@
                               <Value>=Fields!CRSserie.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -765,6 +772,7 @@
                               <Value>=Fields!CRSmodelo.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -797,6 +805,7 @@
                               <Value>=Fields!ACFfincorporacion.Value</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -848,7 +857,7 @@
         <Top>2.77495cm</Top>
         <Left>0.00192cm</Left>
         <Height>1.2cm</Height>
-        <Width>22.5cm</Width>
+        <Width>24.09758cm</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
