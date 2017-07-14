@@ -64,6 +64,11 @@ namespace CapaNegocio
         {
             return new D_PRMVAR().Mostrar();
         }
+        //comrobar la Depreciacion
+       public static DataTable variabledepre()
+       {
+           return new D_PRMVAR().variabledepre();
+       }
         //------------------------------------------------------------------
         //M�todo Buscar que llama al m�todo BuscarNombre
         //de la clase DPostresa de la CapaDatos

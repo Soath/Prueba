@@ -130,8 +130,32 @@ namespace CapaDatos
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "usp_S_PRMVAR";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
+                                
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
 
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
 
+        // comprobar depreciacion
+        public DataTable variabledepre()
+        {
+            DataTable DtResultado = new DataTable("PRMVAR");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S2_PRMVAR";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);

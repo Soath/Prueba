@@ -2243,6 +2243,12 @@ namespace CapaDatos
                 ParACFvutiltribanio.Value = acfACFp_Activo_Fijo.ACFvutiltribanio;
                 SqlCmd.Parameters.Add(ParACFvutiltribanio);
                 //
+                SqlParameter ParACFanlue = new SqlParameter();
+                ParACFanlue.ParameterName = "@sACFanlue"; // se utiliza para ingresar el nuevo valor para la variable de fecha en el tabla PRMVAR
+                ParACFanlue.SqlDbType = SqlDbType.Char;
+                ParACFanlue.Value = acfACFp_Activo_Fijo.ACFanlue;
+                SqlCmd.Parameters.Add(ParACFanlue);
+                //
                 //Ejecutamos nuestro comando
                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO existen Registros";
             }

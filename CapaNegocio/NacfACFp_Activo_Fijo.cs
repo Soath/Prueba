@@ -423,12 +423,14 @@ namespace CapaNegocio
         //de la CapaDatos
         public static string depreciacion(
          string ACFid, // iACFid - se solo para procesar un dato de mes
-         string ACFvutiltribanio // iACFvutiltribanio - se solo para procesar un dato de año
+         string ACFvutiltribanio, // iACFvutiltribanio - se solo para procesar un dato de año
+         string sACFanlue // variable de fecha para la tabla PRMVAR
          )
         {
             DacfACFp_Activo_Fijo Obj = new DacfACFp_Activo_Fijo();
             Obj.ACFid = ACFid;
             Obj.ACFvutiltribanio = ACFvutiltribanio;
+            Obj.ACFanlue = sACFanlue;
             return Obj.depreciacion(Obj);
         }
 

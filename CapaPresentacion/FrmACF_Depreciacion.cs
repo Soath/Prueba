@@ -12,9 +12,10 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
+
     public partial class FrmACF_Depreciacion : Form
     {
-        
+        string variabledepre; // variable para obtener el parametro de la fecha de depreciacion
         public FrmACF_Depreciacion()
         {
             InitializeComponent();
@@ -37,32 +38,73 @@ namespace CapaPresentacion
             }
             else
             {
-                //ejecutamos el procedimiento almacenado
-                string Rta = string.Empty;
+                int mes, anio;
+                string mes1;
+                mes = comboBox1.SelectedIndex + 1;
+                if (mes < 10)
+                {
+                    mes1 = 0 + Convert.ToString(mes);                     
+                }
+                else
+                {
+                    mes1 = Convert.ToString(mes);
+                }
+
+                anio = Convert.ToInt32(textBox1.Text);
+                string variable = Convert.ToString(anio) + mes1;
+                MessageBox.Show(Convert.ToString(variable));
+
+                
                 try
                 {
-                    int x = comboBox1.SelectedIndex +1;
-                    MessageBox.Show(Convert.ToString(x));
-                    Rta = NacfACFp_Activo_Fijo.depreciacion(
-                          Convert.ToString(x)
-                        , textBox1.Text
-                        );
-            
-                    if (Rta.Equals("OK"))
-                    {
-                        this.timer1.Start();
-                        this.MensajeOk("Regsitro Actualizado Correctamente");
-                        button1.Enabled = false;
-                    }
-                    else
-                    {
-                        this.MensajeError("Error: " + Rta);
-                    }
+                    DataTable dat = N_PRMVAR.variabledepre();
+                    //if (dat.Rows.Count > 0)
+                    //{
+                        DataRow row = dat.Rows[0];
+                        variabledepre = Convert.ToString(row["PRM_valor"]);
+                    //}
+                    //else
+                        //MessageBox.Show("No Existe", "Registro");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message + ex.StackTrace);
+                    //MessageBox.Show(ex.Message + ex.StackTrace);
                 }
+
+                MessageBox.Show(Convert.ToString(variabledepre));
+
+                if(Convert.ToInt32(variable) > Convert.ToInt32(variabledepre))
+                {
+                    MessageBox.Show("Procesando Actualización", "Proceso");
+                    //ejecutamos el procedimiento almacenado
+                    string Rta = string.Empty;
+                    try
+                    {                   
+                        int x = comboBox1.SelectedIndex +1;
+                        //MessageBox.Show(Convert.ToString(x));
+                        Rta = NacfACFp_Activo_Fijo.depreciacion(
+                              Convert.ToString(x)
+                            , textBox1.Text
+                            , variable
+                            );
+            
+                        if (Rta.Equals("OK"))
+                        {
+                            this.timer1.Start();
+                            this.MensajeOk("Regsitro Actualizado Correctamente");
+                            button1.Enabled = false;
+                        }
+                        else
+                        {
+                            this.MensajeError("Error: " + Rta);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message + ex.StackTrace);
+                    }
+                }
+                else MessageBox.Show("El registro ya fue Actualizado Anteriormente, Imposible Procesar", "Proceso");
             }
         }
 
