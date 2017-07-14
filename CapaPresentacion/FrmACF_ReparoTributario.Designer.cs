@@ -48,6 +48,7 @@
             this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.tsProcesar = new System.Windows.Forms.ToolStripButton();
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
@@ -57,7 +58,6 @@
             this.txtRTRestado = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtRTRperiodo = new System.Windows.Forms.DateTimePicker();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado1)).BeginInit();
@@ -269,28 +269,41 @@
             this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripSiguiente.Click += new System.EventHandler(this.toolStripSiguiente_Click);
             // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Image = global::CapaPresentacion.Properties.Resources.AppMenuPrint;
+            this.toolStripButton2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripButton2.Size = new System.Drawing.Size(52, 64);
+            this.toolStripButton2.Text = "Reporte";
+            this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
             // toolStripButton1
             // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.Image = global::CapaPresentacion.Properties.Resources._01_Excel;
             this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripButton1.Size = new System.Drawing.Size(57, 35);
+            this.toolStripButton1.Size = new System.Drawing.Size(57, 64);
             this.toolStripButton1.Text = "Importar";
             this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // tsProcesar
             // 
-            this.tsProcesar.Image = ((System.Drawing.Image)(resources.GetObject("tsProcesar.Image")));
+            this.tsProcesar.Image = global::CapaPresentacion.Properties.Resources.edit;
             this.tsProcesar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tsProcesar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsProcesar.Name = "tsProcesar";
             this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsProcesar.Size = new System.Drawing.Size(56, 35);
+            this.tsProcesar.Size = new System.Drawing.Size(56, 64);
             this.tsProcesar.Text = "Procesar";
             this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsProcesar.Click += new System.EventHandler(this.tsProcesar_Click);
@@ -348,19 +361,6 @@
             this.txtRTRperiodo.ShowUpDown = true;
             this.txtRTRperiodo.Size = new System.Drawing.Size(126, 20);
             this.txtRTRperiodo.TabIndex = 214;
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripButton2.Size = new System.Drawing.Size(52, 64);
-            this.toolStripButton2.Text = "Reporte";
-            this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // FrmACF_ReparoTributario
             // 
