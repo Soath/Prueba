@@ -66,6 +66,7 @@
             this.txtAMBid = new System.Windows.Forms.TextBox();
             this.cbocentrodecosto = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -246,7 +247,8 @@
             this.toolStripUltimo,
             this.toolStripAnterior,
             this.toolStripSiguiente,
-            this.toolStripBuscar});
+            this.toolStripBuscar,
+            this.toolStripImprimir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(850, 67);
@@ -449,7 +451,20 @@
             this.button1.TabIndex = 161;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // toolStripImprimir
+            // 
+            this.toolStripImprimir.Image = ((System.Drawing.Image)(resources.GetObject("toolStripImprimir.Image")));
+            this.toolStripImprimir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripImprimir.Name = "toolStripImprimir";
+            this.toolStripImprimir.Size = new System.Drawing.Size(57, 64);
+            this.toolStripImprimir.Text = "Imprimir";
+            this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripImprimir.Click += new System.EventHandler(this.toolStripImprimir_Click);
             // 
             // Frm_InventarioG
             // 
@@ -533,5 +548,6 @@
         private System.Windows.Forms.TextBox txtAMBid;
         private MultiColumnComboBoxDemo.MultiColumnComboBox cbocentrodecosto;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripButton toolStripImprimir;
     }
 }

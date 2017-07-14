@@ -664,6 +664,12 @@ namespace CapaPresentacion
             FrmReportes rptalu = new FrmReportes("Reportes\\Ficha_Control_inventario.rdlc", NacfINBt_Inventariobienes.Depreciacion(txtINVid.Text,cbocentrodecosto.Text), "ip");
             rptalu.ShowDialog();
         }
+
+        private void toolStripImprimir_Click(object sender, EventArgs e)
+        {
+            FrmReportes rptalu = new FrmReportes("Reportes\\Ficha_Control_inventario.rdlc", NacfINBt_Inventariobienes.Depreciacion(txtINVid.Text, cbocentrodecosto.Text), "ip");
+            rptalu.ShowDialog();
+        }
     }
 
 }
