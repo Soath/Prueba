@@ -409,7 +409,7 @@ namespace CapaDatos
             return DtResultado;
         }
         //Reporte de Depreciacion
-    public DataTable Depreciacion(String iINVid, String sKOSTL)
+    public DataTable Depreciacion(String iINVid)
         {
             DataTable DtResultado = new DataTable("acfINBt_Inventariobienes");
             SqlConnection SqlCon = new SqlConnection();
@@ -430,11 +430,7 @@ namespace CapaDatos
                 ParINVid.Value = iINVid;
                 SqlCmd.Parameters.Add(ParINVid);
 
-                SqlParameter ParsKOSTL = new SqlParameter();
-                ParsKOSTL.ParameterName = "@sKOSTL";
-                ParsKOSTL.SqlDbType = SqlDbType.Char;
-                ParsKOSTL.Value = sKOSTL;
-                SqlCmd.Parameters.Add(ParsKOSTL);
+               
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);

@@ -226,9 +226,9 @@ namespace CapaNegocio
             return Obj.Copiar2(Obj);
         }
         //reporte de depreciación
-        public static DataTable Depreciacion(String iINVid, String sKOSTL)
+        public static DataTable Depreciacion(String iINVid)
         {
-            return new DAcfINBt_Inventariobienes().Depreciacion(iINVid,sKOSTL);
+            return new DAcfINBt_Inventariobienes().Depreciacion(iINVid);
         }
         public static DataTable Mostrar2()
         {
