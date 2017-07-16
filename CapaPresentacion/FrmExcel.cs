@@ -285,11 +285,11 @@ namespace CapaPresentacion
                                                                                                                                                      
                         if (Rta.Equals("OK"))
                         {
-                           // MessageBox.Show("Datos agregados");
+                            MessageBox.Show("Datos agregados");
                         }
                         else
                         {
-                          //MessageBox.Show("Datos No Agregados");
+                            MessageBox.Show("Datos No Agregados");
                             break;
                         }
                     }
