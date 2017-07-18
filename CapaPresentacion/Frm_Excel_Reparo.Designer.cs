@@ -229,6 +229,7 @@
             this.chkEliminar.TabIndex = 185;
             this.chkEliminar.Text = "Seleccionar";
             this.chkEliminar.UseVisualStyleBackColor = true;
+            this.chkEliminar.CheckedChanged += new System.EventHandler(this.chkEliminar_CheckedChanged_1);
             // 
             // label1
             // 

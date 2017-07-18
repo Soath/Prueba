@@ -59,7 +59,49 @@ namespace CapaNegocio
             return Obj.Insertar(Obj);
         
         }
+         public static string Insertar2(
+           string mACFcuenta,
+           string mINVZU,
+           string mTXT50,
+           string mACFfactorniif,
+           string mACFvutilniif,
+           string mACFfactorTrib,
+           string mACFvutiltrib,
+           string mACFvalorniif,
+           string mACFdepAcuniif,
+           string mACFNiifNeto,
+           string mACFDepNiifPer,
+           string mACFvalortrib,
+           string mACFdepacutrib,
+           string mACFlirneto,
+           string mACFdeptlirper,
+           string mACFadiciones,
+           string mACFdeducciones,
+           string mACFneto)
+         {
 
+             DAcfDRTt_detallereparotributario Obj = new DAcfDRTt_detallereparotributario();
+             Obj.ACFcuenta = mACFcuenta;
+             Obj.INVZU = mINVZU;
+             Obj.TXT50 = mTXT50;
+             Obj.ACFfactorniif = mACFfactorniif;
+             Obj.ACFvutilniif = mACFvutilniif;
+             Obj.ACFfactorTrib = mACFfactorTrib;
+             Obj.ACFvutiltrib = mACFvutiltrib;
+             Obj.ACFvalorniif = mACFvalorniif;
+             Obj.ACFdepAcuniif = mACFdepAcuniif;
+             Obj.ACFNiifNeto = mACFNiifNeto;
+             Obj.ACFDepNiifPer = mACFDepNiifPer;
+             Obj.ACFvalortrib = mACFvalortrib;
+             Obj.ACFdepacutrib = mACFdepacutrib;
+             Obj.ACFlirneto = mACFlirneto;
+             Obj.ACFdeptlirper = mACFdeptlirper;
+             Obj.ACFadiciones = mACFadiciones;
+             Obj.ACFdeducciones = mACFdeducciones;
+             Obj.ACFneto = mACFneto;
+             return Obj.Insertar2(Obj);
+
+         }
          //------------------------------------------------------------------
          //Metodo Editar que llama al metodo Editar de la clase DPostres
          //de la CapaDatos

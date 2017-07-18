@@ -355,6 +355,19 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+
+
+
+            if (checkBox1.Checked == true && checkBox2.Checked == false)
+            {
+                Form Frm_Excel_Reparo = new Frm_Excel_Reparo();
+                Frm_Excel_Reparo.ShowDialog();
+            }
+            if(checkBox2.Checked == true && checkBox1.Checked == false )
+            {
+            NacfDRTt_detallereparotributario.Copiar(txtRTRcodigo.Text);
+            mostrar();
+            }
         }
         private void CargaDatos()
         {
@@ -452,8 +465,7 @@ namespace CapaPresentacion
 
         private void tsProcesar_Click(object sender, EventArgs e)
         {
-            NacfDRTt_detallereparotributario.Copiar(txtRTRcodigo.Text);
-            mostrar();
+            
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -466,6 +478,43 @@ namespace CapaPresentacion
         {
             FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Reparo_Tributario.rdlc",NacfDRTt_detallereparotributario.Reporte(txtRTRcodigo.Text), "ip");
             rptalu.ShowDialog();
+        }
+
+        private void checkBox1_Click(object sender, EventArgs e)
+        {
+          if(checkBox1.Checked== true && checkBox2.Checked==false)
+          {
+              checkBox1.Checked = true;
+              checkBox2.Checked = false; 
+
+          }
+          if (checkBox1.Checked == false && checkBox2.Checked == true)
+          {
+              checkBox2.Checked = true;
+              checkBox1.Checked = false; 
+          }
+
+         
+        }
+
+        private void checkBox2_Click(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true && checkBox2.Checked == false)
+            {
+                checkBox1.Checked = true;
+                checkBox2.Checked = false;
+
+            }
+            if (checkBox1.Checked == false && checkBox2.Checked == true)
+            {
+                checkBox2.Checked = true;
+                checkBox1.Checked = false;
+            }
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

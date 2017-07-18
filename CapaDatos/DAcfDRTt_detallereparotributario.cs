@@ -423,6 +423,148 @@ namespace CapaDatos
              }
              return rpta;
          }
+        //INSERTAR EXCEL
+         public string Insertar2(DAcfDRTt_detallereparotributario acfDRTt_detallereparotributario)
+         {
+             string rpta = "";
+             SqlConnection SqlCon = new SqlConnection();
+             try
+             {
+                 //Código
+                 SqlCon.ConnectionString = DConexion.CnBDActivo;
+                 SqlCon.Open();
+                 //Establecer el Comando
+                 SqlCommand SqlCmd = new SqlCommand();
+                 SqlCmd.Connection = SqlCon;
+                 SqlCmd.CommandText = "usp_I2_acfDRTt_detallereparotributario";
+                 SqlCmd.CommandType = CommandType.StoredProcedure;
+                 //
+                 SqlParameter ParACFcuenta = new SqlParameter();
+                 ParACFcuenta.ParameterName = "@sACFcuenta";
+                 ParACFcuenta.SqlDbType = SqlDbType.Char;
+                 ParACFcuenta.Value = acfDRTt_detallereparotributario.ACFcuenta;
+                 SqlCmd.Parameters.Add(ParACFcuenta);
+                 //
+                 SqlParameter ParINVZU = new SqlParameter();
+                 ParINVZU.ParameterName = "@sINVZU";
+                 ParINVZU.SqlDbType = SqlDbType.Char;
+                 ParINVZU.Value = acfDRTt_detallereparotributario.INVZU;
+                 SqlCmd.Parameters.Add(ParINVZU);
+                 //
+                 SqlParameter ParTXT50 = new SqlParameter();
+                 ParTXT50.ParameterName = "@sTXT50";
+                 ParTXT50.SqlDbType = SqlDbType.Char;
+                 ParTXT50.Value = acfDRTt_detallereparotributario.TXT50;
+                 SqlCmd.Parameters.Add(ParTXT50);
+                 //
+                 SqlParameter ParACFfactorniif = new SqlParameter();
+                 ParACFfactorniif.ParameterName = "@decACFfactorniif";
+                 ParACFfactorniif.SqlDbType = SqlDbType.Decimal;
+                 ParACFfactorniif.Value = acfDRTt_detallereparotributario.ACFfactorniif;
+                 SqlCmd.Parameters.Add(ParACFfactorniif);
+                 //
+                 SqlParameter ParACFvutilniif = new SqlParameter();
+                 ParACFvutilniif.ParameterName = "@decACFvutilniif";
+                 ParACFvutilniif.SqlDbType = SqlDbType.Decimal;
+                 ParACFvutilniif.Value = acfDRTt_detallereparotributario.ACFvutilniif;
+                 SqlCmd.Parameters.Add(ParACFvutilniif);
+                 //
+                 SqlParameter ParACFfactorTrib = new SqlParameter();
+                 ParACFfactorTrib.ParameterName = "@decACFfactorTrib";
+                 ParACFfactorTrib.SqlDbType = SqlDbType.Decimal;
+                 ParACFfactorTrib.Value = acfDRTt_detallereparotributario.ACFfactorTrib;
+                 SqlCmd.Parameters.Add(ParACFfactorTrib);
+                 //
+                 SqlParameter ParACFvutiltrib = new SqlParameter();
+                 ParACFvutiltrib.ParameterName = "@decACFvutiltrib";
+                 ParACFvutiltrib.SqlDbType = SqlDbType.Decimal;
+                 ParACFvutiltrib.Value = acfDRTt_detallereparotributario.ACFvutiltrib;
+                 SqlCmd.Parameters.Add(ParACFvutiltrib);
+                 //
+                 SqlParameter ParACFvalorniif = new SqlParameter();
+                 ParACFvalorniif.ParameterName = "@decACFvalorniif";
+                 ParACFvalorniif.SqlDbType = SqlDbType.Decimal;
+                 ParACFvalorniif.Value = acfDRTt_detallereparotributario.ACFvalorniif;
+                 SqlCmd.Parameters.Add(ParACFvalorniif);
+                 //
+                 SqlParameter ParACFdepAcuniif = new SqlParameter();
+                 ParACFdepAcuniif.ParameterName = "@decACFdepAcuniif";
+                 ParACFdepAcuniif.SqlDbType = SqlDbType.Decimal;
+                 ParACFdepAcuniif.Value = acfDRTt_detallereparotributario.ACFdepAcuniif;
+                 SqlCmd.Parameters.Add(ParACFdepAcuniif);
+                 //
+                 SqlParameter ParACFNiifNeto = new SqlParameter();
+                 ParACFNiifNeto.ParameterName = "@decACFNiifNeto";
+                 ParACFNiifNeto.SqlDbType = SqlDbType.Decimal;
+                 ParACFNiifNeto.Value = acfDRTt_detallereparotributario.ACFNiifNeto;
+                 SqlCmd.Parameters.Add(ParACFNiifNeto);
+                 //
+                 SqlParameter ParACFDepNiifPer = new SqlParameter();
+                 ParACFDepNiifPer.ParameterName = "@decACFDepNiifPer";
+                 ParACFDepNiifPer.SqlDbType = SqlDbType.Decimal;
+                 ParACFDepNiifPer.Value = acfDRTt_detallereparotributario.ACFDepNiifPer;
+                 SqlCmd.Parameters.Add(ParACFDepNiifPer);
+                 //
+                 SqlParameter ParACFvalortrib = new SqlParameter();
+                 ParACFvalortrib.ParameterName = "@decACFvalortrib";
+                 ParACFvalortrib.SqlDbType = SqlDbType.Decimal;
+                 ParACFvalortrib.Value = acfDRTt_detallereparotributario.ACFvalortrib;
+                 SqlCmd.Parameters.Add(ParACFvalortrib);
+                 //
+                 SqlParameter ParACFdepacutrib = new SqlParameter();
+                 ParACFdepacutrib.ParameterName = "@decACFdepacutrib";
+                 ParACFdepacutrib.SqlDbType = SqlDbType.Decimal;
+                 ParACFdepacutrib.Value = acfDRTt_detallereparotributario.ACFdepacutrib;
+                 SqlCmd.Parameters.Add(ParACFdepacutrib);
+                 //
+                 SqlParameter ParACFlirneto = new SqlParameter();
+                 ParACFlirneto.ParameterName = "@decACFlirneto";
+                 ParACFlirneto.SqlDbType = SqlDbType.Decimal;
+                 ParACFlirneto.Value = acfDRTt_detallereparotributario.ACFlirneto;
+                 SqlCmd.Parameters.Add(ParACFlirneto);
+                 //
+                 SqlParameter ParACFdeptlirper = new SqlParameter();
+                 ParACFdeptlirper.ParameterName = "@decACFdeptlirper";
+                 ParACFdeptlirper.SqlDbType = SqlDbType.Decimal;
+                 ParACFdeptlirper.Value = acfDRTt_detallereparotributario.ACFdeptlirper;
+                 SqlCmd.Parameters.Add(ParACFdeptlirper);
+                 //
+                 SqlParameter ParACFadiciones = new SqlParameter();
+                 ParACFadiciones.ParameterName = "@decACFadiciones";
+                 ParACFadiciones.SqlDbType = SqlDbType.Decimal;
+                 ParACFadiciones.Value = acfDRTt_detallereparotributario.ACFadiciones;
+                 SqlCmd.Parameters.Add(ParACFadiciones);
+                 //
+                 SqlParameter ParACFdeducciones = new SqlParameter();
+                 ParACFdeducciones.ParameterName = "@decACFdeducciones";
+                 ParACFdeducciones.SqlDbType = SqlDbType.Decimal;
+                 ParACFdeducciones.Value = acfDRTt_detallereparotributario.ACFdeducciones;
+                 SqlCmd.Parameters.Add(ParACFdeducciones);
+                 //
+                 SqlParameter ParACFneto = new SqlParameter();
+                 ParACFneto.ParameterName = "@decACFneto";
+                 ParACFneto.SqlDbType = SqlDbType.Decimal;
+                 ParACFneto.Value = acfDRTt_detallereparotributario.ACFneto;
+                 SqlCmd.Parameters.Add(ParACFneto);
+                 //
+
+                 //Ejecutamos nuestro comando
+
+                 rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
+
+
+
+             }
+             catch (Exception ex)
+             {
+                 rpta = ex.Message;
+             }
+             finally
+             {
+                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+             }
+             return rpta;
+         }
          //METODO EDITAR
          public string Editar(DAcfDRTt_detallereparotributario acfDRTt_detallereparotributario)
          {

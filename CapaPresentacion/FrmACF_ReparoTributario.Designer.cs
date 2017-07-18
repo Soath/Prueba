@@ -37,7 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
             this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
@@ -49,15 +48,14 @@
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.tsProcesar = new System.Windows.Forms.ToolStripButton();
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.datalistado1 = new System.Windows.Forms.DataGridView();
             this.txtRTRresponsable = new System.Windows.Forms.TextBox();
             this.txtRTRestado = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtRTRperiodo = new System.Windows.Forms.DateTimePicker();
+            this.checkBox1 = new System.Windows.Forms.RadioButton();
+            this.checkBox2 = new System.Windows.Forms.RadioButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado1)).BeginInit();
@@ -123,16 +121,6 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "ID Calculo";
             // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(29, 115);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(169, 17);
-            this.checkBox2.TabIndex = 17;
-            this.checkBox2.Text = "Generar desde Base de Datos";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
@@ -148,14 +136,13 @@
             this.toolStripUltimo,
             this.toolStripAnterior,
             this.toolStripSiguiente,
-            this.toolStripButton2,
-            this.toolStripButton1,
-            this.tsProcesar});
+            this.toolStripButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(669, 67);
             this.toolStrip1.TabIndex = 156;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // toolStripRefrescar
             // 
@@ -282,32 +269,6 @@
             this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Image = global::CapaPresentacion.Properties.Resources._01_Excel;
-            this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripButton1.Size = new System.Drawing.Size(57, 64);
-            this.toolStripButton1.Text = "Importar";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // tsProcesar
-            // 
-            this.tsProcesar.Image = global::CapaPresentacion.Properties.Resources.edit;
-            this.tsProcesar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsProcesar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsProcesar.Name = "tsProcesar";
-            this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsProcesar.Size = new System.Drawing.Size(56, 64);
-            this.tsProcesar.Text = "Procesar";
-            this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tsProcesar.Click += new System.EventHandler(this.tsProcesar_Click);
-            // 
             // errorIcono
             // 
             this.errorIcono.ContainerControl = this;
@@ -342,16 +303,6 @@
             this.txtRTRestado.Text = "Estado";
             this.txtRTRestado.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(29, 80);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(125, 17);
-            this.checkBox1.TabIndex = 16;
-            this.checkBox1.Text = "Importar desde Excel";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // txtRTRperiodo
             // 
             this.txtRTRperiodo.CustomFormat = "MM/yyyy";
@@ -362,11 +313,36 @@
             this.txtRTRperiodo.Size = new System.Drawing.Size(126, 20);
             this.txtRTRperiodo.TabIndex = 214;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(64, 93);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(124, 17);
+            this.checkBox1.TabIndex = 215;
+            this.checkBox1.TabStop = true;
+            this.checkBox1.Text = "Importar desde Excel";
+            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(64, 117);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(168, 17);
+            this.checkBox2.TabIndex = 216;
+            this.checkBox2.TabStop = true;
+            this.checkBox2.Text = "Generar desde Base de Datos";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // FrmACF_ReparoTributario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 644);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.txtRTRperiodo);
             this.Controls.Add(this.txtRTRestado);
             this.Controls.Add(this.txtRTRresponsable);
@@ -379,8 +355,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
             this.Name = "FrmACF_ReparoTributario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmACF_ReparoTributario";
@@ -402,7 +376,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripRefrescar;
         private System.Windows.Forms.ToolStripButton toolStripAgregar;
@@ -418,10 +391,9 @@
         private System.Windows.Forms.DataGridView datalistado1;
         private System.Windows.Forms.TextBox txtRTRresponsable;
         private System.Windows.Forms.CheckBox txtRTRestado;
-        private System.Windows.Forms.ToolStripButton tsProcesar;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.DateTimePicker txtRTRperiodo;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.RadioButton checkBox2;
+        private System.Windows.Forms.RadioButton checkBox1;
     }
 }
