@@ -310,5 +310,122 @@ namespace CapaDatos
 
 	}
 
-}
+
+        // barra de navegacion
+        public DataTable Top()
+        {
+
+            DataTable DtResultado = new DataTable("acfCMPt_registrovaluacion");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_T_acfCMPt_registrovaluacion";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+        public DataTable Prev(String RVAcodigo)
+        {
+            DataTable DtResultado = new DataTable("acfCMPt_registrovaluacion");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_P_acfRVAt_registrovaluacion";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParRVAcodigo = new SqlParameter();
+                ParRVAcodigo.ParameterName = "@sRVAcodigo";
+                ParRVAcodigo.SqlDbType = SqlDbType.Char;
+                ParRVAcodigo.Size = 50;
+                ParRVAcodigo.Value = RVAcodigo;
+                SqlCmd.Parameters.Add(ParRVAcodigo);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+        public DataTable Last()
+        {
+            DataTable DtResultado = new DataTable("acfCMPt_registrovaluacion");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_L_acfRVAt_registrovaluacion";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+        public DataTable Next(String RVAcodigo)
+        {
+            DataTable DtResultado = new DataTable("acfCMPt_registrovaluacion");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_N_acfRVAt_registrovaluacion";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParRVAcodigo = new SqlParameter();
+                ParRVAcodigo.ParameterName = "@sRVAcodigo";
+                ParRVAcodigo.SqlDbType = SqlDbType.Char;
+                ParRVAcodigo.Size = 50;
+                ParRVAcodigo.Value = RVAcodigo;
+                SqlCmd.Parameters.Add(ParRVAcodigo);
+                               
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+    }
 }

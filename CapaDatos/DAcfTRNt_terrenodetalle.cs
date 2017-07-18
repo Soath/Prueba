@@ -20,22 +20,21 @@ namespace CapaDatos
         private string mACFArea;
         private string mACFvalor;
         private string mACFtc;
-        private string mACFvalorSoles            ;
-        private string mACFValorDolar            ;
-        private string mACFValorAnt0             ;
-        private string mACFVutilniff             ;
-        private string mACFNetopcga              ;
-        private string mACFvalorATri             ;
-        private string mACFid                    ;
-        private string mACFdiferencia            ;
-        private string mACFDifTemDedu            ;
-        private string mACFDifTemGrav            ;
-        private string mACFTasaIR                ;
-        private string mACFSaldoDeducible        ;
-        private string mACFSaldoGravable         ;
+        private string mACFvalorSoles;
+        private string mACFValorDolar;
+        private string mACFValorAnt0;
+        private string mACFVutilniff;
+        private string mACFNetopcga;
+        private string mACFvalorATri;
+        private string mACFid;
+        private string mACFdiferencia;
+        private string mACFDifTemDedu;
+        private string mACFDifTemGrav;
+        private string mACFTasaIR;
+        private string mACFSaldoDeducible;
+        private string mACFSaldoGravable;
         private string mRVAcodigo;
-       
-    
+        private string sACFUbicacion;
 
     public string CRSnombrepredio
         {
@@ -152,9 +151,14 @@ namespace CapaDatos
             get { return mRVAcodigo; }
             set { mRVAcodigo = value; }
         }
+    public string ACFUbicacion
+        {
+            get { return sACFUbicacion; }
+            set { sACFUbicacion = value; }
+        }
 
-          //Constructor vacío
-	public DAcfTRNt_terrenodetalle(){
+        //Constructor vacío
+        public DAcfTRNt_terrenodetalle(){
 	}
         //Constructor con parámetros
     public DAcfTRNt_terrenodetalle(
@@ -167,20 +171,21 @@ namespace CapaDatos
          string ACFArea,
          string ACFvalor,
          string ACFtc,
-         string ACFvalorSoles            ,
-         string ACFValorDolar            ,
-         string ACFValorAnt0             ,
-         string ACFVutilniff             ,
-         string ACFNetopcga              ,
-         string ACFvalorATri             ,
-         string ACFid                    ,
-         string ACFdiferencia            ,
-         string ACFDifTemDedu            ,
-         string ACFDifTemGrav            ,
-         string ACFTasaIR                ,
-         string ACFSaldoDeducible        ,
-         string ACFSaldoGravable         ,
-         string RVAcodigo
+         string ACFvalorSoles,
+         string ACFValorDolar,
+         string ACFValorAnt0,
+         string ACFVutilniff,
+         string ACFNetopcga,
+         string ACFvalorATri,
+         string ACFid,
+         string ACFdiferencia,
+         string ACFDifTemDedu,
+         string ACFDifTemGrav,
+         string ACFTasaIR,
+         string ACFSaldoDeducible,
+         string ACFSaldoGravable,
+         string RVAcodigo,
+         string ACFUbicacion
         )
     {
         this.CRSnombrepredio = mCRSnombrepredio;
@@ -206,7 +211,7 @@ namespace CapaDatos
         this.ACFSaldoDeducible = mACFSaldoDeducible;
         this.ACFSaldoGravable = mACFSaldoGravable;
         this.RVAcodigo = mRVAcodigo;
-        
+            this.ACFUbicacion = sACFUbicacion;
     }
 
     //METODO MOSTRAR
@@ -389,14 +394,15 @@ namespace CapaDatos
             ParRVAcodigo.SqlDbType = SqlDbType.Char;
             ParRVAcodigo.Value = acfTRNt_terrenodetalle.RVAcodigo;
             SqlCmd.Parameters.Add(ParRVAcodigo);
+            //            
+            SqlParameter ParACFUbicacion = new SqlParameter();
+            ParACFUbicacion.ParameterName = "@sACFUbicacion";
+            ParACFUbicacion.SqlDbType = SqlDbType.Char;
+            ParACFUbicacion.Value = acfTRNt_terrenodetalle.ACFUbicacion;
+            SqlCmd.Parameters.Add(ParACFUbicacion);
             //
-            
             //Ejecutamos nuestro comando
-
-            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Elimino el Registro";
-
-
-
+            rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Ingreso el Registro";
         }
         catch (Exception ex)
         {
@@ -564,7 +570,12 @@ namespace CapaDatos
             ParRVAcodigo.Value = acfTRNt_terrenodetalle.RVAcodigo;
             SqlCmd.Parameters.Add(ParRVAcodigo);
             //
-
+            SqlParameter ParACFUbicacion = new SqlParameter();
+            ParACFUbicacion.ParameterName = "@sACFUbicacion";
+            ParACFUbicacion.SqlDbType = SqlDbType.Char;
+            ParACFUbicacion.Value = acfTRNt_terrenodetalle.ACFUbicacion;
+            SqlCmd.Parameters.Add(ParACFUbicacion);
+            //
             //Ejecutamos nuestro comando
 
             rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "NO se Actualizo el Registro";

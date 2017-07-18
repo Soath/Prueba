@@ -101,22 +101,22 @@ namespace CapaPresentacion
         private void Control_Click_Prev(object sender, EventArgs e)
         {
             Prev(txtRVAcodigo.Text);
-            PrevDataGRid(txtRVAcodigo.Text);
+            //PrevDataGRid(txtRVAcodigo.Text);
         }
         private void Control_Click_Next(object sender, EventArgs e)
         {
             Next(txtRVAcodigo.Text);
-            NextDataGRid(txtRVAcodigo.Text);
+            //NextDataGRid(txtRVAcodigo.Text);
         }
         private void Control_Click_Top(object sender, EventArgs e)
         {
             Top();
-            PrevDataGRid(txtRVAcodigo.Text);
+            //PrevDataGRid(txtRVAcodigo.Text);
         }
         private void Control_Click_Last(object sender, EventArgs e)
         {
             Last();
-            NextDataGRid(txtRVAcodigo.Text);
+            //NextDataGRid(txtRVAcodigo.Text);
         }
 
         private void Control_Click_Serch(object sender, EventArgs e)
@@ -215,21 +215,21 @@ namespace CapaPresentacion
             this.tomaTab();
             this.Botones(true);
 
-            this.dataListado.DataSource = NacfRVAt_registrovaluacion.Mostrar(); //(txtRVAcodigo.Text);
-
-            lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
-            if (dataListado.Rows.Count == 0)
-            {
-                //  BotonesSinReg(false);
-            }
-            else
-            {
-                //  BotonesSinReg(true);
-                //  this.toolStripAgregar.Enabled = true;
-
-            }
-            this.dataListado.Select();
-            this.dataListado.Focus();
+            //this.dataListado.DataSource = NacfRVAt_registrovaluacion.Mostrar(); //(txtRVAcodigo.Text);
+            //
+            //lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
+            //if (dataListado.Rows.Count == 0)
+            //{
+            //    //  BotonesSinReg(false);
+            //}
+            //else
+            //{
+            //    //  BotonesSinReg(true);
+            //    //  this.toolStripAgregar.Enabled = true;
+            //
+            //}
+            //this.dataListado.Select();
+            //this.dataListado.Focus();
 
         }
         private void Top()
@@ -241,12 +241,11 @@ namespace CapaPresentacion
                 if (dat.Rows.Count > 0)
                 {
                     DataRow row = dat.Rows[0];
-                    //guardo datos en variables
-                    txtRVAcodigo.Text = Convert.ToString(row["PDFcodigo"]);
-                    txtRVAperiodo.Text = Convert.ToString(row["PDFperiodo"]);
-                    dtpRVAfecha.Text = Convert.ToString(row["PDFfecha"]);
-                    txtRVAresponsable.Text = Convert.ToString(row["PDFreponsable"]);
-                    txtRVRestado.Text = Convert.ToString(row["PDFestado"]);
+                    txtRVAcodigo.Text = Convert.ToString(row["RVAcodigo"]);
+                    txtRVAperiodo.Text = Convert.ToString(row["RVAperiodo"]);
+                    dtpRVAfecha.Text = Convert.ToString(row["RVAfecha"]);
+                    txtRVAresponsable.Text = Convert.ToString(row["RVAresponsable"]);
+                    txtRVRestado.Text = Convert.ToString(row["RVRestado"]);
 
                 }
                 else
@@ -258,24 +257,23 @@ namespace CapaPresentacion
             }
         }
 
-        private void Next(String PDFcodigo)
+        private void Next(String RVAcodigo)
         {
             try
             {
-                DataTable dat = NacfRVAt_registrovaluacion.Next(PDFcodigo);
+                DataTable dat = NacfRVAt_registrovaluacion.Next(RVAcodigo);
                 if (dat.Rows.Count > 0)
                 {
                     DataRow row = dat.Rows[0];
-                    //guardo datos en variables
-                    txtRVAcodigo.Text = Convert.ToString(row["PDFcodigo"]);
-                    txtRVAperiodo.Text = Convert.ToString(row["PDFperiodo"]);
-                    dtpRVAfecha.Text = Convert.ToString(row["PDFfecha"]);
-                    txtRVAresponsable.Text = Convert.ToString(row["PDFreponsable"]);
-                    txtRVRestado.Text = Convert.ToString(row["PDFestado"]);
+                    txtRVAcodigo.Text = Convert.ToString(row["RVAcodigo"]);
+                    txtRVAperiodo.Text = Convert.ToString(row["RVAperiodo"]);
+                    dtpRVAfecha.Text = Convert.ToString(row["RVAfecha"]);
+                    txtRVAresponsable.Text = Convert.ToString(row["RVAresponsable"]);
+                    txtRVRestado.Text = Convert.ToString(row["RVRestado"]);
 
                 }
-                // else
-                //    MessageBox.Show("No Existe", "Registro");
+                else
+                   MessageBox.Show("No Existe", "Registro");
 
             }
             catch (Exception ex)
@@ -284,23 +282,23 @@ namespace CapaPresentacion
             }
         }
 
-        private void Prev(String PDFcodigo)
+        private void Prev(String RVAcodigo)
         {
             try
             {
-                DataTable dat = NacfRVAt_registrovaluacion.Prev(PDFcodigo);
+                DataTable dat = NacfRVAt_registrovaluacion.Prev(RVAcodigo);
 
                 if (dat.Rows.Count > 0)
                 {
                     DataRow row = dat.Rows[0];
-                    txtRVAcodigo.Text = Convert.ToString(row["PDFcodigo"]);
-                    txtRVAperiodo.Text = Convert.ToString(row["PDFperiodo"]);
-                    dtpRVAfecha.Text = Convert.ToString(row["PDFfecha"]);
-                    txtRVAresponsable.Text = Convert.ToString(row["PDFreponsable"]);
-                    txtRVRestado.Text = Convert.ToString(row["PDFestado"]);
+                    txtRVAcodigo.Text = Convert.ToString(row["RVAcodigo"]);
+                    txtRVAperiodo.Text = Convert.ToString(row["RVAperiodo"]);
+                    dtpRVAfecha.Text = Convert.ToString(row["RVAfecha"]);
+                    txtRVAresponsable.Text = Convert.ToString(row["RVAresponsable"]);
+                    txtRVRestado.Text = Convert.ToString(row["RVRestado"]);
                 }
-                //  else
-                // MessageBox.Show("No Existe", "Registro");
+                else
+                MessageBox.Show("No Existe", "Registro");
 
             }
             catch (Exception ex)
@@ -318,12 +316,11 @@ namespace CapaPresentacion
                 if (dat.Rows.Count > 0)
                 {
                     DataRow row = dat.Rows[0];
-
-                    txtRVAcodigo.Text = Convert.ToString(row["PDFcodigo"]);
-                    txtRVAperiodo.Text = Convert.ToString(row["PDFperiodo"]);
-                    dtpRVAfecha.Text = Convert.ToString(row["PDFfecha"]);
-                    txtRVAresponsable.Text = Convert.ToString(row["PDFreponsable"]);
-                    txtRVRestado.Text = Convert.ToString(row["PDFestado"]);
+                    txtRVAcodigo.Text = Convert.ToString(row["RVAcodigo"]);
+                    txtRVAperiodo.Text = Convert.ToString(row["RVAperiodo"]);
+                    dtpRVAfecha.Text = Convert.ToString(row["RVAfecha"]);
+                    txtRVAresponsable.Text = Convert.ToString(row["RVAresponsable"]);
+                    txtRVRestado.Text = Convert.ToString(row["RVRestado"]);
                 }
                 else
                     MessageBox.Show("No Existe", "Registro");
@@ -356,6 +353,20 @@ namespace CapaPresentacion
             EstadoText(this.Controls, true, true);
             this.LimpiaCampos();
             this.Botones(false);
+            Last();
+
+            if (string.IsNullOrWhiteSpace(txtRVAcodigo.Text))
+            {
+                txtRVAcodigo.Text = "1";
+            }
+            else txtRVAcodigo.Text = Convert.ToString(Convert.ToInt32(txtRVAcodigo.Text) + 1);
+            txtRVAperiodo.Text = "";
+            dtpRVAfecha.Text = "";
+            txtRVAresponsable.Text = "";
+            txtRVRestado.Text = "";
+            cboclase.Text = "";
+            txtruta.Text = "";
+            txtHoja.Text = "";
         }
 
         private void BotonEditar()
@@ -377,7 +388,7 @@ namespace CapaPresentacion
         {
             if (this.validaCampos())
             {
-                if (Graba == 1) this.InsertaRegistro();
+                if (Graba == 1) this.InsertaRegistro(); this.GrabarDGV();
                 if (Graba == 2) this.ActualizaRegistro();
                 Graba = 0;
                 this.BotonCancelar();
@@ -671,14 +682,14 @@ namespace CapaPresentacion
         {
 
         }
-        private void NextDataGRid(String PDFcodigo)
+        private void NextDataGRid(String RVAcodigo)
         {
-            this.dataListado.DataSource = NacfRVAt_registrovaluacion.Mostrar(); // (PDFcodigo);
+            //this.dataListado.DataSource = NacfRVAt_registrovaluacion.Mostrar(); // (RVAcodigo);
         }
 
-        private void PrevDataGRid(String PDFcodigo)
+        private void PrevDataGRid(String RVAcodigo)
         {
-            this.dataListado.DataSource = NacfRVAt_registrovaluacion.Mostrar(); //(PDFcodigo);
+            //this.dataListado.DataSource = NacfRVAt_registrovaluacion.Mostrar(); //(RVAcodigo);
         }
 
         private void tsProcesar_Click(object sender, EventArgs e)
@@ -689,12 +700,147 @@ namespace CapaPresentacion
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            Form Frm_Excel_Valuacion = new Frm_Excel_Valuacion();
-            Frm_Excel_Valuacion.ShowDialog();
+            //Form Frm_Excel_Valuacion = new Frm_Excel_Valuacion();
+            //Frm_Excel_Valuacion.ShowDialog();
+
+            
         }
 
+        private void btn331_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openfile1 = new OpenFileDialog();
+            openfile1.Filter = "Excel Files |*.*";
+            openfile1.Title = "Seleccione el archivo de Excel";
+            if (openfile1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                if (openfile1.FileName.Equals("") == false)
+                {
+                    txtruta.Text = openfile1.FileName;
+                    // MessageBox.Show("Espere Mientras esta Cargando el Documento en Excel", "Atencion");
+                    //  MessageBoxTemporal.Show("Espere Mientras esta Cargando el Documento en Excel", "Atencion", 3, true);
+                }
+            }
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (txtHoja.Text == string.Empty)
+            {
+                MessageBox.Show("Inserte el nombre de la HOJA");
+            }
+            else
+            {
+                int x = cboclase.SelectedIndex;
+                MessageBox.Show(Convert.ToString(x));
+                switch(x)
+                {
+                    case 0:
+                        try
+                        {
+                            tabControl1.SelectedIndex = 0;
+                            string hoja;
+                            hoja = txtHoja.Text;
+                            new Importar().importarExcelca(this.txtruta.Text.Trim(), dgv331, hoja, true);
+                            lbl331.Text = "Total de Registros: " + Convert.ToString(dgv331.Rows.Count);
+                        }
+                        catch (Exception ex)
+                        {
+                        }
+                        break;
+                    case 1:
+                        try
+                        {
+                            tabControl1.SelectedIndex = 1;
+                            string hoja;
+                            hoja = txtHoja.Text;
+                            new Importar().importarExcelca(this.txtruta.Text.Trim(), dgv332, hoja, true);
+                            lbl332.Text = "Total de Registros: " + Convert.ToString(dgv332.Rows.Count);
+                        }
+                        catch (Exception ex)
+                        {
+                        }
+                        break;
+                    case 2:
+                        try
+                        {
+                            tabControl1.SelectedIndex = 2;
+                            string hoja;
+                            hoja = txtHoja.Text;
+                            new Importar().importarExcelca(this.txtruta.Text.Trim(), dgv333, hoja, true);
+                            lbl333.Text = "Total de Registros: " + Convert.ToString(dgv333.Rows.Count);
+                        }
+                        catch (Exception ex)
+                        {
+                        }
+                        break;
+                }
+            }
+        }
 
+        private void GrabarDGV()
+        {
+            int x331, x332, x333;
+            if((x331 = dgv331.Rows.Count) > 0)
+            {
+                try
+                {
+                    foreach (DataGridViewRow row in dgv331.Rows)
+                    {
+                        string Rta = string.Empty;
+
+                        Rta = NacfTRNt_terrenodetalle.Insertar(
+                              Convert.ToString(row.Cells[18].Value)     //CRSnombrepredio 
+                              , Convert.ToString(row.Cells[3].Value)   //CRScentropoblado  
+                              ,""//, Convert.ToString(row.Cells[xxx].Value)   //CRSdepartamento 
+                              , ""//, Convert.ToString(row.Cells[xxx].Value)   //CRSinterior 
+                              , ""//, Convert.ToString(row.Cells[xxx].Value)   //CRScarretera
+                              , ""//, Convert.ToString(row.Cells[xxx].Value)   //CRSkilometro 
+                              , Convert.ToString(row.Cells[6].Value)   //ACFArea 
+                              , Convert.ToString(row.Cells[7].Value)   //ACFvalor
+                              , ""//, Convert.ToString(row.Cells[xxx].Value)   //ACFtc       
+                              , Convert.ToString(row.Cells[8].Value)   //ACFvalorSoles
+                              , Convert.ToString(row.Cells[9].Value)   //ACFValorDolar
+                              , Convert.ToString(row.Cells[10].Value)   //ACFValorAnt0 
+                              ,"80"//, Convert.ToString(row.Cells[xxx].Value)   //ACFVutilniff --- valor por defecto 80
+                              , Convert.ToString(row.Cells[12].Value)   //ACFNetopcga 
+                              , Convert.ToString(row.Cells[13].Value)   //ACFvalorATri    
+                              , Convert.ToString(row.Cells[19].Value)   //ACFid 
+                              , Convert.ToString(row.Cells[20].Value)   //ACFdiferencia 
+                              , Convert.ToString(row.Cells[21].Value)   //ACFDifTemDedu 
+                              , Convert.ToString(row.Cells[22].Value)   //ACFDifTemGrav 
+                              , ""//, Convert.ToString(row.Cells[xxx].Value)   //ACFTasaIR            
+                              , Convert.ToString(row.Cells[24].Value)   //ACFSaldoDeducible 
+                              , Convert.ToString(row.Cells[25].Value)   //ACFSaldoGravable  
+                              , txtRVAcodigo.Text//, Convert.ToString(row.Cells[xxx].Value)   //RVAcodigo 
+                              , Convert.ToString(row.Cells[5].Value)   //ACFUbicacion
+                              );
+
+                        if (Rta.Equals("OK"))
+                        {
+                            //MessageBox.Show("Datos agregados");
+                        }
+                        else
+                        {
+                            //MessageBox.Show("Datos No Agregados");
+                            break;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Terranos Ingresados");
+                }
+            }
+
+            if ((x332 = dgv332.Rows.Count) > 0)
+            {
+            }
+
+            if ((x333 = dgv333.Rows.Count) > 0)
+            {
+            }
+
+        }
 
     }
 }

@@ -79,20 +79,20 @@ namespace CapaNegocio
         // barra de navegacion
         public static DataTable Top()
         {
-            return new DacfPDFt_procesodiferido().Top();
+            return new DacfRVAt_registrovaluacion().Top();
         }
         public static DataTable Last()
         {
-            return new DacfPDFt_procesodiferido().Last();
+            return new DacfRVAt_registrovaluacion().Last();
         }
-        public static DataTable Next(String PDFcodigo)
+        public static DataTable Next(String RVAcodigo)
         {
-            return new DacfPDFt_procesodiferido().Next(PDFcodigo);
+            return new DacfRVAt_registrovaluacion().Next(RVAcodigo);
         }
 
-        public static DataTable Prev(String PDFcodigo)
+        public static DataTable Prev(String RVAcodigo)
         {
-            return new DacfPDFt_procesodiferido().Prev(PDFcodigo);
+            return new DacfRVAt_registrovaluacion().Prev(RVAcodigo);
         }
     }
 }

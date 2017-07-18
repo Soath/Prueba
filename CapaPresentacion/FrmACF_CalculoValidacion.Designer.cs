@@ -43,37 +43,6 @@
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.toolStripUltimo = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.tsProcesar = new System.Windows.Forms.ToolStripButton();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataListado = new System.Windows.Forms.DataGridView();
-            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.chkEliminar = new System.Windows.Forms.CheckBox();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.dtpRVAfecha = new System.Windows.Forms.DateTimePicker();
             this.txtRVAresponsable = new System.Windows.Forms.TextBox();
             this.txtRVAcodigo = new System.Windows.Forms.TextBox();
@@ -82,34 +51,63 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtRVAperiodo = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btn331 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dgv333 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCheckBoxColumn3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lbl333 = new System.Windows.Forms.Label();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dgv332 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lbl332 = new System.Windows.Forms.Label();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dgv331 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl331 = new System.Windows.Forms.Label();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtHoja = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtruta = new System.Windows.Forms.TextBox();
+            this.cboclase = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv333)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv332)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv331)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(339, 288);
+            this.label6.Location = new System.Drawing.Point(195, 207);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 29);
+            this.label6.Size = new System.Drawing.Size(104, 29);
             this.label6.TabIndex = 228;
-            this.label6.Text = "1 = Baja         2 = Anulado";
+            this.label6.Text = "1 = En Proceso        2 = Cerrado";
             // 
             // txtRVRestado
             // 
@@ -120,7 +118,7 @@
             this.txtRVRestado.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.txtRVRestado.Location = new System.Drawing.Point(282, 291);
+            this.txtRVRestado.Location = new System.Drawing.Point(138, 210);
             this.txtRVRestado.Name = "txtRVRestado";
             this.txtRVRestado.Size = new System.Drawing.Size(39, 21);
             this.txtRVRestado.TabIndex = 227;
@@ -142,12 +140,10 @@
             this.toolStripPrimero,
             this.toolStripAnterior,
             this.toolStripSiguiente,
-            this.toolStripUltimo,
-            this.toolStripButton1,
-            this.tsProcesar});
+            this.toolStripUltimo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(753, 62);
+            this.toolStrip1.Size = new System.Drawing.Size(933, 62);
             this.toolStrip1.TabIndex = 226;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -277,319 +273,142 @@
             this.toolStripUltimo.Text = "Ultimo";
             this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // toolStripButton1
+            // dtpRVAfecha
             // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripButton1.Size = new System.Drawing.Size(57, 59);
-            this.toolStripButton1.Text = "Importar";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.dtpRVAfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpRVAfecha.Location = new System.Drawing.Point(138, 134);
+            this.dtpRVAfecha.Name = "dtpRVAfecha";
+            this.dtpRVAfecha.Size = new System.Drawing.Size(97, 20);
+            this.dtpRVAfecha.TabIndex = 224;
             // 
-            // tsProcesar
+            // txtRVAresponsable
             // 
-            this.tsProcesar.Image = ((System.Drawing.Image)(resources.GetObject("tsProcesar.Image")));
-            this.tsProcesar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tsProcesar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsProcesar.Name = "tsProcesar";
-            this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsProcesar.Size = new System.Drawing.Size(56, 59);
-            this.tsProcesar.Text = "Procesar";
-            this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.txtRVAresponsable.Location = new System.Drawing.Point(138, 173);
+            this.txtRVAresponsable.Name = "txtRVAresponsable";
+            this.txtRVAresponsable.Size = new System.Drawing.Size(274, 20);
+            this.txtRVAresponsable.TabIndex = 223;
             // 
-            // tabControl1
+            // txtRVAcodigo
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(14, 328);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(693, 301);
-            this.tabControl1.TabIndex = 225;
+            this.txtRVAcodigo.Location = new System.Drawing.Point(138, 72);
+            this.txtRVAcodigo.Name = "txtRVAcodigo";
+            this.txtRVAcodigo.ReadOnly = true;
+            this.txtRVAcodigo.Size = new System.Drawing.Size(109, 20);
+            this.txtRVAcodigo.TabIndex = 221;
             // 
-            // tabPage1
+            // label5
             // 
-            this.tabPage1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tabPage1.Controls.Add(this.dataListado);
-            this.tabPage1.Controls.Add(this.pictureBox2);
-            this.tabPage1.Controls.Add(this.lblTotal);
-            this.tabPage1.Controls.Add(this.chkEliminar);
-            this.tabPage1.Controls.Add(this.txtBuscar);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(685, 275);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Registro Valuacion";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(46, 213);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 220;
+            this.label5.Text = "Estado";
             // 
-            // dataListado
+            // label4
             // 
-            this.dataListado.AllowUserToAddRows = false;
-            this.dataListado.AllowUserToDeleteRows = false;
-            this.dataListado.AllowUserToOrderColumns = true;
-            this.dataListado.BackgroundColor = System.Drawing.Color.White;
-            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Eliminar});
-            this.dataListado.Location = new System.Drawing.Point(10, 85);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
-            this.dataListado.MultiSelect = false;
-            this.dataListado.Name = "dataListado";
-            this.dataListado.ReadOnly = true;
-            this.dataListado.RowTemplate.Height = 24;
-            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(610, 166);
-            this.dataListado.TabIndex = 9;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(46, 176);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.TabIndex = 219;
+            this.label4.Text = "Responsable";
             // 
-            // Eliminar
+            // label3
             // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            this.Eliminar.Width = 50;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(46, 140);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 13);
+            this.label3.TabIndex = 218;
+            this.label3.Text = "Fecha Calculo";
             // 
-            // pictureBox2
+            // label2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(15, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(46, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 217;
+            this.label2.Text = "Periodo";
             // 
-            // lblTotal
+            // label1
             // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(375, 64);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(41, 13);
-            this.lblTotal.TabIndex = 6;
-            this.lblTotal.Text = "lblTotal";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(46, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.TabIndex = 216;
+            this.label1.Text = "ID Calculo";
             // 
-            // chkEliminar
+            // txtRVAperiodo
             // 
-            this.chkEliminar.AutoSize = true;
-            this.chkEliminar.Location = new System.Drawing.Point(10, 64);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.chkEliminar.Name = "chkEliminar";
-            this.chkEliminar.Size = new System.Drawing.Size(62, 17);
-            this.chkEliminar.TabIndex = 5;
-            this.chkEliminar.Text = "Eliminar";
-            this.chkEliminar.UseVisualStyleBackColor = true;
+            this.txtRVAperiodo.CustomFormat = "MM/yyyy";
+            this.txtRVAperiodo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtRVAperiodo.Location = new System.Drawing.Point(138, 101);
+            this.txtRVAperiodo.Name = "txtRVAperiodo";
+            this.txtRVAperiodo.ShowUpDown = true;
+            this.txtRVAperiodo.Size = new System.Drawing.Size(97, 20);
+            this.txtRVAperiodo.TabIndex = 229;
             // 
-            // txtBuscar
+            // label10
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(80, 28);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(246, 20);
-            this.txtBuscar.TabIndex = 2;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(67, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(80, 13);
+            this.label10.TabIndex = 230;
+            this.label10.Text = "Importar Clase :";
             // 
-            // tabPage2
+            // btn331
             // 
-            this.tabPage2.Controls.Add(this.dataGridView1);
-            this.tabPage2.Controls.Add(this.pictureBox1);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.checkBox3);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(685, 275);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Maquinaria Equipo";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewCheckBoxColumn1});
-            this.dataGridView1.Location = new System.Drawing.Point(37, 89);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(610, 166);
-            this.dataGridView1.TabIndex = 14;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Eliminar";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn1.Width = 50;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(42, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(402, 68);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "label7";
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(37, 68);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(62, 17);
-            this.checkBox3.TabIndex = 11;
-            this.checkBox3.Text = "Eliminar";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(107, 32);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(246, 20);
-            this.textBox2.TabIndex = 10;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Controls.Add(this.checkBox4);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(685, 275);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Terreno Detalle";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewCheckBoxColumn2});
-            this.dataGridView2.Location = new System.Drawing.Point(37, 89);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView2.MultiSelect = false;
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(610, 166);
-            this.dataGridView2.TabIndex = 14;
-            // 
-            // dataGridViewCheckBoxColumn2
-            // 
-            this.dataGridViewCheckBoxColumn2.HeaderText = "Eliminar";
-            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
-            this.dataGridViewCheckBoxColumn2.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn2.Width = 50;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(42, 20);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(402, 68);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "label8";
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(37, 68);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(62, 17);
-            this.checkBox4.TabIndex = 11;
-            this.checkBox4.Text = "Eliminar";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(107, 32);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(246, 20);
-            this.textBox3.TabIndex = 10;
+            this.btn331.Location = new System.Drawing.Point(83, 48);
+            this.btn331.Name = "btn331";
+            this.btn331.Size = new System.Drawing.Size(75, 23);
+            this.btn331.TabIndex = 236;
+            this.btn331.Text = "Examinar";
+            this.btn331.UseVisualStyleBackColor = true;
+            this.btn331.Click += new System.EventHandler(this.btn331_Click);
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.dataGridView3);
+            this.tabPage4.Controls.Add(this.dgv333);
             this.tabPage4.Controls.Add(this.pictureBox4);
-            this.tabPage4.Controls.Add(this.label9);
+            this.tabPage4.Controls.Add(this.lbl333);
             this.tabPage4.Controls.Add(this.checkBox5);
             this.tabPage4.Controls.Add(this.textBox4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(685, 275);
+            this.tabPage4.Size = new System.Drawing.Size(903, 345);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Edificacion Detalle";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // dgv333
             // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AllowUserToOrderColumns = true;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv333.AllowUserToAddRows = false;
+            this.dgv333.AllowUserToDeleteRows = false;
+            this.dgv333.AllowUserToOrderColumns = true;
+            this.dgv333.BackgroundColor = System.Drawing.Color.White;
+            this.dgv333.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv333.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewCheckBoxColumn3});
-            this.dataGridView3.Location = new System.Drawing.Point(37, 89);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView3.MultiSelect = false;
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView3.Size = new System.Drawing.Size(610, 166);
-            this.dataGridView3.TabIndex = 14;
+            this.dgv333.Location = new System.Drawing.Point(37, 89);
+            this.dgv333.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv333.MultiSelect = false;
+            this.dgv333.Name = "dgv333";
+            this.dgv333.ReadOnly = true;
+            this.dgv333.RowTemplate.Height = 24;
+            this.dgv333.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv333.Size = new System.Drawing.Size(824, 237);
+            this.dgv333.TabIndex = 14;
             // 
             // dataGridViewCheckBoxColumn3
             // 
             this.dataGridViewCheckBoxColumn3.HeaderText = "Eliminar";
             this.dataGridViewCheckBoxColumn3.Name = "dataGridViewCheckBoxColumn3";
             this.dataGridViewCheckBoxColumn3.ReadOnly = true;
+            this.dataGridViewCheckBoxColumn3.Visible = false;
             this.dataGridViewCheckBoxColumn3.Width = 50;
             // 
             // pictureBox4
@@ -601,15 +420,15 @@
             this.pictureBox4.TabIndex = 13;
             this.pictureBox4.TabStop = false;
             // 
-            // label9
+            // lbl333
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(402, 68);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "label9";
+            this.lbl333.AutoSize = true;
+            this.lbl333.Location = new System.Drawing.Point(732, 68);
+            this.lbl333.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl333.Name = "lbl333";
+            this.lbl333.Size = new System.Drawing.Size(37, 13);
+            this.lbl333.TabIndex = 12;
+            this.lbl333.Text = "Total :";
             // 
             // checkBox5
             // 
@@ -617,9 +436,9 @@
             this.checkBox5.Location = new System.Drawing.Point(37, 68);
             this.checkBox5.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(62, 17);
+            this.checkBox5.Size = new System.Drawing.Size(82, 17);
             this.checkBox5.TabIndex = 11;
-            this.checkBox5.Text = "Eliminar";
+            this.checkBox5.Text = "Seleccionar";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // textBox4
@@ -630,115 +449,273 @@
             this.textBox4.Size = new System.Drawing.Size(246, 20);
             this.textBox4.TabIndex = 10;
             // 
-            // dtpRVAfecha
+            // tabPage3
             // 
-            this.dtpRVAfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpRVAfecha.Location = new System.Drawing.Point(282, 215);
-            this.dtpRVAfecha.Name = "dtpRVAfecha";
-            this.dtpRVAfecha.Size = new System.Drawing.Size(97, 20);
-            this.dtpRVAfecha.TabIndex = 224;
+            this.tabPage3.Controls.Add(this.dgv332);
+            this.tabPage3.Controls.Add(this.pictureBox3);
+            this.tabPage3.Controls.Add(this.lbl332);
+            this.tabPage3.Controls.Add(this.checkBox4);
+            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(903, 345);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Terreno Detalle";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // txtRVAresponsable
+            // dgv332
             // 
-            this.txtRVAresponsable.Location = new System.Drawing.Point(282, 254);
-            this.txtRVAresponsable.Name = "txtRVAresponsable";
-            this.txtRVAresponsable.Size = new System.Drawing.Size(274, 20);
-            this.txtRVAresponsable.TabIndex = 223;
+            this.dgv332.AllowUserToAddRows = false;
+            this.dgv332.AllowUserToDeleteRows = false;
+            this.dgv332.AllowUserToOrderColumns = true;
+            this.dgv332.BackgroundColor = System.Drawing.Color.White;
+            this.dgv332.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv332.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewCheckBoxColumn2});
+            this.dgv332.Location = new System.Drawing.Point(37, 89);
+            this.dgv332.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv332.MultiSelect = false;
+            this.dgv332.Name = "dgv332";
+            this.dgv332.ReadOnly = true;
+            this.dgv332.RowTemplate.Height = 24;
+            this.dgv332.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv332.Size = new System.Drawing.Size(824, 237);
+            this.dgv332.TabIndex = 14;
             // 
-            // txtRVAcodigo
+            // dataGridViewCheckBoxColumn2
             // 
-            this.txtRVAcodigo.Location = new System.Drawing.Point(282, 153);
-            this.txtRVAcodigo.Name = "txtRVAcodigo";
-            this.txtRVAcodigo.Size = new System.Drawing.Size(109, 20);
-            this.txtRVAcodigo.TabIndex = 221;
+            this.dataGridViewCheckBoxColumn2.HeaderText = "Eliminar";
+            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
+            this.dataGridViewCheckBoxColumn2.ReadOnly = true;
+            this.dataGridViewCheckBoxColumn2.Visible = false;
+            this.dataGridViewCheckBoxColumn2.Width = 50;
             // 
-            // label5
+            // pictureBox3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(190, 294);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
-            this.label5.TabIndex = 220;
-            this.label5.Text = "Estado";
+            this.pictureBox3.Location = new System.Drawing.Point(42, 20);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
             // 
-            // label4
+            // lbl332
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(190, 257);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
-            this.label4.TabIndex = 219;
-            this.label4.Text = "Responsable";
+            this.lbl332.AutoSize = true;
+            this.lbl332.Location = new System.Drawing.Point(732, 68);
+            this.lbl332.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl332.Name = "lbl332";
+            this.lbl332.Size = new System.Drawing.Size(37, 13);
+            this.lbl332.TabIndex = 12;
+            this.lbl332.Text = "Total :";
             // 
-            // label3
+            // checkBox4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(190, 221);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 13);
-            this.label3.TabIndex = 218;
-            this.label3.Text = "Fecha Calculo";
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(37, 68);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(88, 17);
+            this.checkBox4.TabIndex = 11;
+            this.checkBox4.Text = "Seleccionar :";
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // textBox3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(190, 188);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 217;
-            this.label2.Text = "Periodo";
+            this.textBox3.Location = new System.Drawing.Point(107, 32);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(246, 20);
+            this.textBox3.TabIndex = 10;
             // 
-            // label1
+            // tabPage2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(190, 156);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
-            this.label1.TabIndex = 216;
-            this.label1.Text = "ID Calculo";
+            this.tabPage2.Controls.Add(this.dgv331);
+            this.tabPage2.Controls.Add(this.pictureBox1);
+            this.tabPage2.Controls.Add(this.lbl331);
+            this.tabPage2.Controls.Add(this.checkBox3);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(903, 345);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Maquinaria Equipo";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // dgv331
             // 
-            this.textBox1.Location = new System.Drawing.Point(360, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 20);
-            this.textBox1.TabIndex = 215;
+            this.dgv331.AllowUserToAddRows = false;
+            this.dgv331.AllowUserToDeleteRows = false;
+            this.dgv331.AllowUserToOrderColumns = true;
+            this.dgv331.BackgroundColor = System.Drawing.Color.White;
+            this.dgv331.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv331.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewCheckBoxColumn1});
+            this.dgv331.Location = new System.Drawing.Point(37, 89);
+            this.dgv331.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv331.MultiSelect = false;
+            this.dgv331.Name = "dgv331";
+            this.dgv331.ReadOnly = true;
+            this.dgv331.RowTemplate.Height = 24;
+            this.dgv331.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv331.Size = new System.Drawing.Size(824, 237);
+            this.dgv331.TabIndex = 14;
             // 
-            // checkBox2
+            // dataGridViewCheckBoxColumn1
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(158, 106);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(169, 17);
-            this.checkBox2.TabIndex = 214;
-            this.checkBox2.Text = "Generar desde Base de Datos";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Eliminar";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
+            this.dataGridViewCheckBoxColumn1.Visible = false;
+            this.dataGridViewCheckBoxColumn1.Width = 50;
             // 
-            // checkBox1
+            // pictureBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(158, 71);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(125, 17);
-            this.checkBox1.TabIndex = 213;
-            this.checkBox1.Text = "Importar desde Excel";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.pictureBox1.Location = new System.Drawing.Point(42, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
-            // txtRVAperiodo
+            // lbl331
             // 
-            this.txtRVAperiodo.CustomFormat = "MM/yyyy";
-            this.txtRVAperiodo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtRVAperiodo.Location = new System.Drawing.Point(282, 182);
-            this.txtRVAperiodo.Name = "txtRVAperiodo";
-            this.txtRVAperiodo.ShowUpDown = true;
-            this.txtRVAperiodo.Size = new System.Drawing.Size(97, 20);
-            this.txtRVAperiodo.TabIndex = 229;
+            this.lbl331.AutoSize = true;
+            this.lbl331.Location = new System.Drawing.Point(757, 68);
+            this.lbl331.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl331.Name = "lbl331";
+            this.lbl331.Size = new System.Drawing.Size(37, 13);
+            this.lbl331.TabIndex = 12;
+            this.lbl331.Text = "Total :";
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(37, 68);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(82, 17);
+            this.checkBox3.TabIndex = 11;
+            this.checkBox3.Text = "Seleccionar";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(107, 32);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(246, 20);
+            this.textBox2.TabIndex = 10;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Location = new System.Drawing.Point(11, 357);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(911, 371);
+            this.tabControl1.TabIndex = 225;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(10, 114);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(148, 13);
+            this.label13.TabIndex = 239;
+            this.label13.Text = "Nombre de la Hoja a Importar:";
+            // 
+            // txtHoja
+            // 
+            this.txtHoja.Location = new System.Drawing.Point(164, 114);
+            this.txtHoja.Name = "txtHoja";
+            this.txtHoja.Size = new System.Drawing.Size(127, 20);
+            this.txtHoja.TabIndex = 242;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtruta);
+            this.groupBox1.Controls.Add(this.cboclase);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.txtHoja);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.btn331);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Location = new System.Drawing.Point(491, 173);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(395, 190);
+            this.groupBox1.TabIndex = 243;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Importar Datos desde ExcelExcel";
+            // 
+            // txtruta
+            // 
+            this.txtruta.Location = new System.Drawing.Point(164, 50);
+            this.txtruta.Name = "txtruta";
+            this.txtruta.Size = new System.Drawing.Size(221, 20);
+            this.txtruta.TabIndex = 245;
+            // 
+            // cboclase
+            // 
+            this.cboclase.FormattingEnabled = true;
+            this.cboclase.Items.AddRange(new object[] {
+            "331 - Terrenos",
+            "332 - Edificaciones",
+            "333 - Maquinaria y Equipos"});
+            this.cboclase.Location = new System.Drawing.Point(164, 15);
+            this.cboclase.Name = "cboclase";
+            this.cboclase.Size = new System.Drawing.Size(194, 21);
+            this.cboclase.TabIndex = 245;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(101, 150);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(190, 23);
+            this.button2.TabIndex = 243;
+            this.button2.Text = "Obtener Datos ";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Location = new System.Drawing.Point(491, 84);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(395, 72);
+            this.groupBox2.TabIndex = 244;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Obtener Datos desde el Sistema";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(101, 27);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(190, 23);
+            this.button1.TabIndex = 237;
+            this.button1.Text = "Obtener Datos desde el Sistema";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(423, 323);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 245;
+            this.label7.Text = "label7";
             // 
             // FrmACF_CalculoValidacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 636);
+            this.ClientSize = new System.Drawing.Size(933, 739);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtRVAperiodo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtRVRestado);
@@ -752,30 +729,27 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
             this.Name = "FrmACF_CalculoValidacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmACF_CalculoValidacion";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv333)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv332)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv331)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -797,15 +771,6 @@
         private System.Windows.Forms.ToolStripButton toolStripAnterior;
         private System.Windows.Forms.ToolStripButton toolStripSiguiente;
         private System.Windows.Forms.ToolStripButton toolStripUltimo;
-        private System.Windows.Forms.ToolStripButton tsProcesar;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.DataGridView dataListado;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.CheckBox chkEliminar;
-        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.DateTimePicker dtpRVAfecha;
         private System.Windows.Forms.TextBox txtRVAresponsable;
         private System.Windows.Forms.TextBox txtRVAcodigo;
@@ -814,31 +779,39 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.DateTimePicker txtRVAperiodo;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btn331;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn3;
+        private System.Windows.Forms.DataGridView dgv333;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbl333;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.DateTimePicker txtRVAperiodo;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.DataGridView dgv332;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lbl332;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView dgv331;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl331;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtHoja;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cboclase;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtruta;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn3;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.Label label7;
     }
 }

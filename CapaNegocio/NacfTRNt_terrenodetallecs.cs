@@ -13,7 +13,7 @@ namespace CapaNegocio
     public class NacfTRNt_terrenodetalle
     {
 
-         public static string Insertar(
+    public static string Insertar(
           string mCRSnombrepredio,
           string mCRScentropoblado,
           string mCRSdepartamento,
@@ -23,20 +23,21 @@ namespace CapaNegocio
           string mACFArea,
           string mACFvalor,
           string mACFtc,
-          string mACFvalorSoles            ,
-          string mACFValorDolar            ,
-          string mACFValorAnt0             ,
-          string mACFVutilniff             ,
-          string mACFNetopcga              ,
-          string mACFvalorATri             ,
-          string mACFid                    ,
-          string mACFdiferencia            ,
-          string mACFDifTemDedu            ,
-          string mACFDifTemGrav            ,
-          string mACFTasaIR                ,
-          string mACFSaldoDeducible        ,
-          string mACFSaldoGravable         ,
-          string mRVAcodigo)
+          string mACFvalorSoles,
+          string mACFValorDolar,
+          string mACFValorAnt0,
+          string mACFVutilniff,
+          string mACFNetopcga,
+          string mACFvalorATri,
+          string mACFid,
+          string mACFdiferencia ,
+          string mACFDifTemDedu,
+          string mACFDifTemGrav,
+          string mACFTasaIR,
+          string mACFSaldoDeducible,
+          string mACFSaldoGravable,
+          string mRVAcodigo,
+          string sACFUbicacion)
         {
             DAcfTRNt_terrenodetalle Obj = new DAcfTRNt_terrenodetalle();
             Obj.CRSnombrepredio = mCRSnombrepredio;
@@ -62,6 +63,7 @@ namespace CapaNegocio
             Obj.ACFSaldoDeducible = mACFSaldoDeducible;
             Obj.ACFSaldoGravable = mACFSaldoGravable;
             Obj.RVAcodigo = mRVAcodigo;
+            Obj.ACFUbicacion = sACFUbicacion;
             return Obj.Insertar(Obj);
         }
 
@@ -91,7 +93,8 @@ namespace CapaNegocio
           string mACFTasaIR,
           string mACFSaldoDeducible,
           string mACFSaldoGravable,
-          string mRVAcodigo)
+          string mRVAcodigo,
+          string sACFUbicacion)
          {
              DAcfTRNt_terrenodetalle Obj = new DAcfTRNt_terrenodetalle();
              Obj.CRSnombrepredio = mCRSnombrepredio;
@@ -117,6 +120,7 @@ namespace CapaNegocio
              Obj.ACFSaldoDeducible = mACFSaldoDeducible;
              Obj.ACFSaldoGravable = mACFSaldoGravable;
              Obj.RVAcodigo = mRVAcodigo;
+            Obj.ACFUbicacion = sACFUbicacion;
              return Obj.Editar(Obj);
          }
          //------------------------------------------------------------------
