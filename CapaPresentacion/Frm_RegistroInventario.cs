@@ -387,6 +387,7 @@ namespace CapaPresentacion
                    // this.InsertaRegistro();
                    // this.CopiarRegistro();
                 }
+                //
                 if (Graba == 2) this.ActualizaRegistro();
                 Graba = 0;
                 this.BotonCancelar();
