@@ -2,4 +2,16 @@ C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.dll
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.pdb
+<<<<<<< HEAD
 C:\Users\jcho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+=======
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\jacho\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\jacho\Documents\GitHub\Prueba\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\jacho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\jacho\Documents\GitHub\Prueba\CapaDatos\obj\Debug\CapaDatos.pdb
+>>>>>>> 1d9ed4b8f982ba5e704f846824cf19d87562b419

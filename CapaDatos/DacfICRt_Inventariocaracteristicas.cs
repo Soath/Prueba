@@ -1019,31 +1019,67 @@ namespace CapaDatos
                 SqlParameter ParACFid = new SqlParameter();
                 ParACFid.ParameterName = "@iACFid";
                 ParACFid.SqlDbType = SqlDbType.Int;
-                ParACFid.Value = acfICRt_Inventariocaracteristicas.ACFid;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.ACFid))
+                {
+                    ParACFid.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParACFid.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.ACFid);
+                }
                 SqlCmd.Parameters.Add(ParACFid);
                 //
                 SqlParameter ParMARid = new SqlParameter();
                 ParMARid.ParameterName = "@iMARid";
                 ParMARid.SqlDbType = SqlDbType.Int;
-                ParMARid.Value = acfICRt_Inventariocaracteristicas.MARid;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.MARid   ))
+                {
+                    ParMARid.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParMARid.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.MARid);
+                }
                 SqlCmd.Parameters.Add(ParMARid);
                 //
                 SqlParameter ParESTid = new SqlParameter();
-                ParESTid.ParameterName = "@sESTid";
+                ParESTid.ParameterName = "@iESTid";
                 ParESTid.SqlDbType = SqlDbType.Int;
-                ParESTid.Value = acfICRt_Inventariocaracteristicas.ESTid;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.ESTid))
+                {
+                    ParESTid.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParESTid.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.ESTid);
+                }
+
                 SqlCmd.Parameters.Add(ParESTid);
                 //
                 SqlParameter ParINVid = new SqlParameter();
                 ParINVid.ParameterName = "@iINVid";
                 ParINVid.SqlDbType = SqlDbType.Int;
-                ParINVid.Value = acfICRt_Inventariocaracteristicas.INVid;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.INVid))
+                {
+                    ParINVid.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParINVid.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.INVid);
+                }
                 SqlCmd.Parameters.Add(ParINVid);
                 //
                 SqlParameter ParCRSserie = new SqlParameter();
                 ParCRSserie.ParameterName = "@sCRSserie";
                 ParCRSserie.SqlDbType = SqlDbType.VarChar;
-                ParCRSserie.Value = acfICRt_Inventariocaracteristicas.CRSserie;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSserie))
+                {
+                    ParCRSserie.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSserie.Value = acfICRt_Inventariocaracteristicas.CRSserie;
+                }
                 SqlCmd.Parameters.Add(ParCRSserie);
                 //
                 SqlParameter ParCRSmodelo = new SqlParameter();
@@ -1052,360 +1088,576 @@ namespace CapaDatos
                 ParCRSmodelo.Value = acfICRt_Inventariocaracteristicas.CRSmodelo;
                 SqlCmd.Parameters.Add(ParCRSmodelo);
                 //
-                SqlParameter ParCRScolor = new SqlParameter();
-                ParCRScolor.ParameterName = "@sCRScolor";
-                ParCRScolor.SqlDbType = SqlDbType.VarChar;
-                ParCRScolor.Value = acfICRt_Inventariocaracteristicas.CRScolor;
-                SqlCmd.Parameters.Add(ParCRScolor);
-                //
-                SqlParameter ParMATid = new SqlParameter();
-                ParMATid.ParameterName = "@sMATid";
-                ParMATid.SqlDbType = SqlDbType.Char;
-                ParMATid.Value = acfICRt_Inventariocaracteristicas.MATid;
-                SqlCmd.Parameters.Add(ParMATid);
-                //
-                SqlParameter ParCRStipo = new SqlParameter();
-                ParCRStipo.ParameterName = "@sCRStipo";
-                ParCRStipo.SqlDbType = SqlDbType.Char;
-                ParCRStipo.Value = acfICRt_Inventariocaracteristicas.CRStipo;
-                SqlCmd.Parameters.Add(ParCRStipo);
-                //
+               // SqlParameter ParCRScolor = new SqlParameter();
+               // ParCRScolor.ParameterName = "@sCRScolor";
+               // ParCRScolor.SqlDbType = SqlDbType.VarChar;
+               // ParCRScolor.Value = acfICRt_Inventariocaracteristicas.CRScolor;
+               // SqlCmd.Parameters.Add(ParCRScolor);
+               // //
+               // SqlParameter ParMATid = new SqlParameter();
+               // ParMATid.ParameterName = "@sMATid";
+               // ParMATid.SqlDbType = SqlDbType.Char;
+               // ParMATid.Value = acfICRt_Inventariocaracteristicas.MATid;
+               // SqlCmd.Parameters.Add(ParMATid);
+               // //
+               // SqlParameter ParCRStipo = new SqlParameter();
+               // ParCRStipo.ParameterName = "@sCRStipo";
+               // ParCRStipo.SqlDbType = SqlDbType.Char;
+               // ParCRStipo.Value = acfICRt_Inventariocaracteristicas.CRStipo;
+               // SqlCmd.Parameters.Add(ParCRStipo);
+               // //
                 SqlParameter ParUNMid = new SqlParameter();
                 ParUNMid.ParameterName = "@iUNMid";
                 ParUNMid.SqlDbType = SqlDbType.Int;
-                ParUNMid.Value = acfICRt_Inventariocaracteristicas.UNMid;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.UNMid))
+                {
+                    ParUNMid.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParUNMid.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.UNMid);
+                }
+
                 SqlCmd.Parameters.Add(ParUNMid);
                 //
                 SqlParameter ParCRScantidad = new SqlParameter();
                 ParCRScantidad.ParameterName = "@decCRScantidad";
                 ParCRScantidad.SqlDbType = SqlDbType.Decimal;
-                ParCRScantidad.Value = acfICRt_Inventariocaracteristicas.CRScantidad;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRScantidad))
+                {
+                    ParCRScantidad.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRScantidad.Value = acfICRt_Inventariocaracteristicas.CRScantidad;
+                }
                 SqlCmd.Parameters.Add(ParCRScantidad);
                 //
                 SqlParameter ParCRSvehplaca = new SqlParameter();
                 ParCRSvehplaca.ParameterName = "@sCRSvehplaca";
                 ParCRSvehplaca.SqlDbType = SqlDbType.VarChar;
-                ParCRSvehplaca.Value = acfICRt_Inventariocaracteristicas.CRSvehplaca;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvehplaca))
+                {
+                    ParCRSvehplaca.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehplaca.Value = acfICRt_Inventariocaracteristicas.CRSvehplaca;
+                }
                 SqlCmd.Parameters.Add(ParCRSvehplaca);
+
                 //
                 SqlParameter ParCRSvehexpediente = new SqlParameter();
                 ParCRSvehexpediente.ParameterName = "@sCRSvehexpediente";
                 ParCRSvehexpediente.SqlDbType = SqlDbType.VarChar;
-                ParCRSvehexpediente.Value = acfICRt_Inventariocaracteristicas.CRSvehexpediente;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvehexpediente))
+                {
+                    ParCRSvehexpediente.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehexpediente.Value = acfICRt_Inventariocaracteristicas.CRSvehexpediente;
+                }
                 SqlCmd.Parameters.Add(ParCRSvehexpediente);
                 //
                 SqlParameter ParCRSvehinscripcion = new SqlParameter();
                 ParCRSvehinscripcion.ParameterName = "@dtCRSvehinscripcion";
                 ParCRSvehinscripcion.SqlDbType = SqlDbType.DateTime;
-                ParCRSvehinscripcion.Value = acfICRt_Inventariocaracteristicas.CRSvehinscripcion;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvehinscripcion))
+                {
+                    ParCRSvehinscripcion.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehinscripcion.Value = Convert.ToDateTime(acfICRt_Inventariocaracteristicas.CRSvehinscripcion);
+                }
                 SqlCmd.Parameters.Add(ParCRSvehinscripcion);
+
                 //
                 SqlParameter ParCRSvehclase = new SqlParameter();
                 ParCRSvehclase.ParameterName = "@sCRSvehclase";
                 ParCRSvehclase.SqlDbType = SqlDbType.VarChar;
-                ParCRSvehclase.Value = acfICRt_Inventariocaracteristicas.CRSvehclase;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvehclase))
+                {
+                    ParCRSvehclase.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehclase.Value = acfICRt_Inventariocaracteristicas.CRSvehclase;
+                }
                 SqlCmd.Parameters.Add(ParCRSvehclase);
                 //
                 SqlParameter ParCRSvehcombustible = new SqlParameter();
                 ParCRSvehcombustible.ParameterName = "@sCRSvehcombustible";
                 ParCRSvehcombustible.SqlDbType = SqlDbType.VarChar;
-                ParCRSvehcombustible.Value = acfICRt_Inventariocaracteristicas.CRSvehcombustible;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvehcombustible))
+                {
+                    ParCRSvehcombustible.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehcombustible.Value = acfICRt_Inventariocaracteristicas.CRSvehcombustible;
+                }
                 SqlCmd.Parameters.Add(ParCRSvehcombustible);
                 //
                 SqlParameter ParCRSvehejes = new SqlParameter();
                 ParCRSvehejes.ParameterName = "@iCRSvehejes";
                 ParCRSvehejes.SqlDbType = SqlDbType.Int;
-                ParCRSvehejes.Value = acfICRt_Inventariocaracteristicas.CRSvehejes;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvehejes))
+                {
+                    ParCRSvehejes.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehejes.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.CRSvehejes);
+                }
                 SqlCmd.Parameters.Add(ParCRSvehejes);
                 //
                 SqlParameter ParCRSvehpasajeros = new SqlParameter();
                 ParCRSvehpasajeros.ParameterName = "@iCRSvehpasajeros";
                 ParCRSvehpasajeros.SqlDbType = SqlDbType.Int;
-                ParCRSvehpasajeros.Value = acfICRt_Inventariocaracteristicas.CRSvehpasajeros;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvehpasajeros))
+                {
+                    ParCRSvehpasajeros.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehpasajeros.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.CRSvehpasajeros);
+                }
                 SqlCmd.Parameters.Add(ParCRSvehpasajeros);
                 //
                 SqlParameter ParCRSvehasientos = new SqlParameter();
                 ParCRSvehasientos.ParameterName = "@iCRSvehasientos";
                 ParCRSvehasientos.SqlDbType = SqlDbType.Int;
-                ParCRSvehasientos.Value = acfICRt_Inventariocaracteristicas.CRSvehasientos;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvehasientos))
+                {
+                    ParCRSvehasientos.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehasientos.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.CRSvehasientos);
+                }
                 SqlCmd.Parameters.Add(ParCRSvehasientos);
                 //
                 SqlParameter ParCRSvehpesoseco = new SqlParameter();
                 ParCRSvehpesoseco.ParameterName = "@decCRSvehpesoseco";
                 ParCRSvehpesoseco.SqlDbType = SqlDbType.Decimal;
-                ParCRSvehpesoseco.Value = acfICRt_Inventariocaracteristicas.CRSvehpesoseco;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvehpesoseco))
+                {
+                    ParCRSvehpesoseco.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehpesoseco.Value = acfICRt_Inventariocaracteristicas.CRSvehpesoseco;
+                }
                 SqlCmd.Parameters.Add(ParCRSvehpesoseco);
                 //
                 SqlParameter ParCRSvehcargautil = new SqlParameter();
                 ParCRSvehcargautil.ParameterName = "@decCRSvehcargautil";
                 ParCRSvehcargautil.SqlDbType = SqlDbType.Decimal;
-                ParCRSvehcargautil.Value = acfICRt_Inventariocaracteristicas.CRSvehcargautil;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvehcargautil))
+                {
+                    ParCRSvehcargautil.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSvehcargautil.Value = acfICRt_Inventariocaracteristicas.CRSvehcargautil;
+                }
                 SqlCmd.Parameters.Add(ParCRSvehcargautil);
                 //
                 SqlParameter ParCRSaltura = new SqlParameter();
                 ParCRSaltura.ParameterName = "@decCRSaltura";
                 ParCRSaltura.SqlDbType = SqlDbType.Decimal;
-                ParCRSaltura.Value = acfICRt_Inventariocaracteristicas.CRSaltura;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSaltura))
+                {
+                    ParCRSaltura.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSaltura.Value = acfICRt_Inventariocaracteristicas.CRSaltura;
+                }
                 SqlCmd.Parameters.Add(ParCRSaltura);
+
                 //
                 SqlParameter ParCRSancho = new SqlParameter();
                 ParCRSancho.ParameterName = "@decCRSancho";
                 ParCRSancho.SqlDbType = SqlDbType.Decimal;
-                ParCRSancho.Value = acfICRt_Inventariocaracteristicas.CRSancho;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSancho))
+                {
+                    ParCRSancho.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSancho.Value = acfICRt_Inventariocaracteristicas.CRSancho;
+                }
                 SqlCmd.Parameters.Add(ParCRSancho);
-                //
-                SqlParameter ParCRSvelocidad = new SqlParameter();
-                ParCRSvelocidad.ParameterName = "@sCRSvelocidad";
-                ParCRSvelocidad.SqlDbType = SqlDbType.VarChar;
+
+             //
+            SqlParameter ParCRSvelocidad = new SqlParameter();
+            ParCRSvelocidad.ParameterName = "@sCRSvelocidad";
+            ParCRSvelocidad.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvelocidad))
+            {
+                ParCRSvelocidad.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRSvelocidad.Value = acfICRt_Inventariocaracteristicas.CRSvelocidad;
-                SqlCmd.Parameters.Add(ParCRSvelocidad);
-                //
-                SqlParameter ParCRSresolucion = new SqlParameter();
-                ParCRSresolucion.ParameterName = "@sCRSresolucion";
-                ParCRSresolucion.SqlDbType = SqlDbType.VarChar;
+            }
+            SqlCmd.Parameters.Add(ParCRSvelocidad);
+            //
+            SqlParameter ParCRSresolucion = new SqlParameter();
+            ParCRSresolucion.ParameterName = "@sCRSresolucion";
+            ParCRSresolucion.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSresolucion))
+            {
+                ParCRSresolucion.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRSresolucion.Value = acfICRt_Inventariocaracteristicas.CRSresolucion;
-                SqlCmd.Parameters.Add(ParCRSresolucion);
-                //
-                SqlParameter ParCRScapacidad = new SqlParameter();
-                ParCRScapacidad.ParameterName = "@sCRScapacidad";
-                ParCRScapacidad.SqlDbType = SqlDbType.VarChar;
+            }
+            SqlCmd.Parameters.Add(ParCRSresolucion);
+            //
+            SqlParameter ParCRScapacidad = new SqlParameter();
+            ParCRScapacidad.ParameterName = "@sCRScapacidad";
+            ParCRScapacidad.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRScapacidad))
+            {
+                ParCRScapacidad.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRScapacidad.Value = acfICRt_Inventariocaracteristicas.CRScapacidad;
-                SqlCmd.Parameters.Add(ParCRScapacidad);
-                //
-                SqlParameter ParCRSpotencia = new SqlParameter();
-                ParCRSpotencia.ParameterName = "@sCRSpotencia";
-                ParCRSpotencia.SqlDbType = SqlDbType.VarChar;
+            }
+            SqlCmd.Parameters.Add(ParCRScapacidad);
+            //
+            SqlParameter ParCRSpotencia = new SqlParameter();
+            ParCRSpotencia.ParameterName = "@sCRSpotencia";
+            ParCRSpotencia.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSpotencia))
+            {
+                ParCRSpotencia.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRSpotencia.Value = acfICRt_Inventariocaracteristicas.CRSpotencia;
-                SqlCmd.Parameters.Add(ParCRSpotencia);
-                //
-                SqlParameter ParCRSvnominal = new SqlParameter();
-                ParCRSvnominal.ParameterName = "@sCRSvnominal";
-                ParCRSvnominal.SqlDbType = SqlDbType.VarChar;
+            }
+            SqlCmd.Parameters.Add(ParCRSpotencia);
+            //
+            SqlParameter ParCRSvnominal = new SqlParameter();
+            ParCRSvnominal.ParameterName = "@sCRSvnominal";
+            ParCRSvnominal.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvnominal))
+            {
+                ParCRSvnominal.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRSvnominal.Value = acfICRt_Inventariocaracteristicas.CRSvnominal;
-                SqlCmd.Parameters.Add(ParCRSvnominal);
-                //
-                SqlParameter ParCRSventrada = new SqlParameter();
-                ParCRSventrada.ParameterName = "@sCRSventrada";
-                ParCRSventrada.SqlDbType = SqlDbType.VarChar;
+            }
+            SqlCmd.Parameters.Add(ParCRSvnominal);
+            //
+            SqlParameter ParCRSventrada = new SqlParameter();
+            ParCRSventrada.ParameterName = "@sCRSventrada";
+            ParCRSventrada.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSventrada))
+            {
+                ParCRSventrada.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRSventrada.Value = acfICRt_Inventariocaracteristicas.CRSventrada;
-                SqlCmd.Parameters.Add(ParCRSventrada);
-                //
-                SqlParameter ParCRSvsalida = new SqlParameter();
-                ParCRSvsalida.ParameterName = "@sCRSvsalida";
-                ParCRSvsalida.SqlDbType = SqlDbType.VarChar;
+            }
+            SqlCmd.Parameters.Add(ParCRSventrada);
+            //
+            SqlParameter ParCRSvsalida = new SqlParameter();
+            ParCRSvsalida.ParameterName = "@sCRSvsalida";
+            ParCRSvsalida.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSvsalida))
+            {
+                ParCRSvsalida.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRSvsalida.Value = acfICRt_Inventariocaracteristicas.CRSvsalida;
-                SqlCmd.Parameters.Add(ParCRSvsalida);
-                //
-                SqlParameter ParCRSfrecuencia = new SqlParameter();
-                ParCRSfrecuencia.ParameterName = "@sCRSfrecuencia";
-                ParCRSfrecuencia.SqlDbType = SqlDbType.VarChar;
+            }
+            SqlCmd.Parameters.Add(ParCRSvsalida);
+            //
+            SqlParameter ParCRSfrecuencia = new SqlParameter();
+            ParCRSfrecuencia.ParameterName = "@sCRSfrecuencia";
+            ParCRSfrecuencia.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSfrecuencia))
+            {
+                ParCRSfrecuencia.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRSfrecuencia.Value = acfICRt_Inventariocaracteristicas.CRSfrecuencia;
-                SqlCmd.Parameters.Add(ParCRSfrecuencia);
-                //
-                SqlParameter ParCRStemperatura = new SqlParameter();
-                ParCRStemperatura.ParameterName = "@sCRStemperatura";
-                ParCRStemperatura.SqlDbType = SqlDbType.VarChar;
+            }
+            SqlCmd.Parameters.Add(ParCRSfrecuencia);
+            //
+            SqlParameter ParCRStemperatura = new SqlParameter();
+            ParCRStemperatura.ParameterName = "@sCRStemperatura";
+            ParCRStemperatura.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRStemperatura))
+            {
+                ParCRStemperatura.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRStemperatura.Value = acfICRt_Inventariocaracteristicas.CRStemperatura;
-                SqlCmd.Parameters.Add(ParCRStemperatura);
-                //
-                SqlParameter ParCRSprocesador = new SqlParameter();
-                ParCRSprocesador.ParameterName = "@sCRSprocesador";
-                ParCRSprocesador.SqlDbType = SqlDbType.VarChar;
+            }
+            SqlCmd.Parameters.Add(ParCRStemperatura);
+            //
+            SqlParameter ParCRSprocesador = new SqlParameter();
+            ParCRSprocesador.ParameterName = "@sCRSprocesador";
+            ParCRSprocesador.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSprocesador))
+            {
+                ParCRSprocesador.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRSprocesador.Value = acfICRt_Inventariocaracteristicas.CRSprocesador;
-                SqlCmd.Parameters.Add(ParCRSprocesador);
-                //
-                SqlParameter ParCRSpuertos = new SqlParameter();
-                ParCRSpuertos.ParameterName = "@sCRSpuertos";
-                ParCRSpuertos.SqlDbType = SqlDbType.VarChar;
+            }
+            SqlCmd.Parameters.Add(ParCRSprocesador);
+            //
+            SqlParameter ParCRSpuertos = new SqlParameter();
+            ParCRSpuertos.ParameterName = "@sCRSpuertos";
+            ParCRSpuertos.SqlDbType = SqlDbType.VarChar;
+            if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSpuertos))
+            {
+                ParCRSpuertos.Value = DBNull.Value;
+            }
+            else
+            {
                 ParCRSpuertos.Value = acfICRt_Inventariocaracteristicas.CRSpuertos;
-                SqlCmd.Parameters.Add(ParCRSpuertos);
-                //
-                SqlParameter ParCRSutmx = new SqlParameter();
-                ParCRSutmx.ParameterName = "@decCRSutmx";
-                ParCRSutmx.SqlDbType = SqlDbType.Decimal;
-                ParCRSutmx.Value = acfICRt_Inventariocaracteristicas.CRSutmx;
-                SqlCmd.Parameters.Add(ParCRSutmx);
-                //
-                SqlParameter ParCRSutmy = new SqlParameter();
-                ParCRSutmy.ParameterName = "@decCRSutmy";
-                ParCRSutmy.SqlDbType = SqlDbType.Decimal;
-                ParCRSutmy.Value = acfICRt_Inventariocaracteristicas.CRSutmy;
-                SqlCmd.Parameters.Add(ParCRSutmy);
-                //
-                SqlParameter ParCRSesfuerzopunta = new SqlParameter();
-                ParCRSesfuerzopunta.ParameterName = "@sCRSesfuerzopunta";
-                ParCRSesfuerzopunta.SqlDbType = SqlDbType.VarChar;
-                ParCRSesfuerzopunta.Value = acfICRt_Inventariocaracteristicas.CRSesfuerzopunta;
-                SqlCmd.Parameters.Add(ParCRSesfuerzopunta);
-                //
-                SqlParameter ParCRScajaderivadora = new SqlParameter();
-                ParCRScajaderivadora.ParameterName = "@sCRScajaderivadora";
-                ParCRScajaderivadora.SqlDbType = SqlDbType.VarChar;
-                ParCRScajaderivadora.Value = acfICRt_Inventariocaracteristicas.CRScajaderivadora;
-                SqlCmd.Parameters.Add(ParCRScajaderivadora);
-                //
-                SqlParameter ParCRSalquilacable = new SqlParameter();
-                ParCRSalquilacable.ParameterName = "@sCRSalquilacable";
-                ParCRSalquilacable.SqlDbType = SqlDbType.Char;
-                ParCRSalquilacable.Value = acfICRt_Inventariocaracteristicas.CRSalquilacable;
-                SqlCmd.Parameters.Add(ParCRSalquilacable);
-                //
-                SqlParameter ParCRScentropoblado = new SqlParameter();
-                ParCRScentropoblado.ParameterName = "@sCRScentropoblado";
-                ParCRScentropoblado.SqlDbType = SqlDbType.VarChar;
-                ParCRScentropoblado.Value = acfICRt_Inventariocaracteristicas.CRScentropoblado;
-                SqlCmd.Parameters.Add(ParCRScentropoblado);
-                //
-                SqlParameter ParCRSurbanizacion = new SqlParameter();
-                ParCRSurbanizacion.ParameterName = "@sCRSurbanizacion";
-                ParCRSurbanizacion.SqlDbType = SqlDbType.VarChar;
-                ParCRSurbanizacion.Value = acfICRt_Inventariocaracteristicas.CRSurbanizacion;
-                SqlCmd.Parameters.Add(ParCRSurbanizacion);
-                //
-                SqlParameter ParCRScalle = new SqlParameter();
-                ParCRScalle.ParameterName = "@sCRScalle";
-                ParCRScalle.SqlDbType = SqlDbType.VarChar;
-                ParCRScalle.Value = acfICRt_Inventariocaracteristicas.CRScalle;
-                SqlCmd.Parameters.Add(ParCRScalle);
-                //
-                SqlParameter ParCRSlote = new SqlParameter();
-                ParCRSlote.ParameterName = "@sCRSlote";
-                ParCRSlote.SqlDbType = SqlDbType.VarChar;
-                ParCRSlote.Value = acfICRt_Inventariocaracteristicas.CRSlote;
-                SqlCmd.Parameters.Add(ParCRSlote);
-                //
-                SqlParameter ParCRSnumeropredio = new SqlParameter();
-                ParCRSnumeropredio.ParameterName = "@sCRSnumeropredio";
-                ParCRSnumeropredio.SqlDbType = SqlDbType.VarChar;
-                ParCRSnumeropredio.Value = acfICRt_Inventariocaracteristicas.CRSnumeropredio;
-                SqlCmd.Parameters.Add(ParCRSnumeropredio);
-                //
-                SqlParameter ParCRSdepartamento = new SqlParameter();
-                ParCRSdepartamento.ParameterName = "@sCRSdepartamento";
-                ParCRSdepartamento.SqlDbType = SqlDbType.VarChar;
-                ParCRSdepartamento.Value = acfICRt_Inventariocaracteristicas.CRSdepartamento;
-                SqlCmd.Parameters.Add(ParCRSdepartamento);
-                //
-                SqlParameter ParCRSinterior = new SqlParameter();
-                ParCRSinterior.ParameterName = "@sCRSinterior";
-                ParCRSinterior.SqlDbType = SqlDbType.VarChar;
-                ParCRSinterior.Value = acfICRt_Inventariocaracteristicas.CRSinterior;
-                SqlCmd.Parameters.Add(ParCRSinterior);
-                //
-                SqlParameter ParCRScarretera = new SqlParameter();
-                ParCRScarretera.ParameterName = "@sCRScarretera";
-                ParCRScarretera.SqlDbType = SqlDbType.VarChar;
-                ParCRScarretera.Value = acfICRt_Inventariocaracteristicas.CRScarretera;
-                SqlCmd.Parameters.Add(ParCRScarretera);
-                //
-                SqlParameter ParCRSkilometro = new SqlParameter();
-                ParCRSkilometro.ParameterName = "@decCRSkilometro";
-                ParCRSkilometro.SqlDbType = SqlDbType.Decimal;
-                ParCRSkilometro.Value = acfICRt_Inventariocaracteristicas.CRSkilometro;
-                SqlCmd.Parameters.Add(ParCRSkilometro);
-                //
-                SqlParameter ParCRSnombrepredio = new SqlParameter();
-                ParCRSnombrepredio.ParameterName = "@sCRSnombrepredio";
-                ParCRSnombrepredio.SqlDbType = SqlDbType.VarChar;
-                ParCRSnombrepredio.Value = acfICRt_Inventariocaracteristicas.CRSnombrepredio;
-                SqlCmd.Parameters.Add(ParCRSnombrepredio);
-                //
-                SqlParameter ParCRSpisospredio = new SqlParameter();
-                ParCRSpisospredio.ParameterName = "@iCRSpisospredio";
-                ParCRSpisospredio.SqlDbType = SqlDbType.Int;
-                ParCRSpisospredio.Value = acfICRt_Inventariocaracteristicas.CRSpisospredio;
-                SqlCmd.Parameters.Add(ParCRSpisospredio);
-                //
-                SqlParameter ParCRSpartidapredio = new SqlParameter();
-                ParCRSpartidapredio.ParameterName = "@sCRSpartidapredio";
-                ParCRSpartidapredio.SqlDbType = SqlDbType.VarChar;
-                ParCRSpartidapredio.Value = acfICRt_Inventariocaracteristicas.CRSpartidapredio;
-                SqlCmd.Parameters.Add(ParCRSpartidapredio);
-                //
-                SqlParameter ParCRStomopredio = new SqlParameter();
-                ParCRStomopredio.ParameterName = "@sCRStomopredio";
-                ParCRStomopredio.SqlDbType = SqlDbType.VarChar;
-                ParCRStomopredio.Value = acfICRt_Inventariocaracteristicas.CRStomopredio;
-                SqlCmd.Parameters.Add(ParCRStomopredio);
-                //
-                SqlParameter ParCRSfolioinipredio = new SqlParameter();
-                ParCRSfolioinipredio.ParameterName = "@sCRSfolioinipredio";
-                ParCRSfolioinipredio.SqlDbType = SqlDbType.VarChar;
-                ParCRSfolioinipredio.Value = acfICRt_Inventariocaracteristicas.CRSfolioinipredio;
-                SqlCmd.Parameters.Add(ParCRSfolioinipredio);
-                //
-                SqlParameter ParCRSfoliofinpredio = new SqlParameter();
-                ParCRSfoliofinpredio.ParameterName = "@sCRSfoliofinpredio";
-                ParCRSfoliofinpredio.SqlDbType = SqlDbType.VarChar;
-                ParCRSfoliofinpredio.Value = acfICRt_Inventariocaracteristicas.CRSfoliofinpredio;
-                SqlCmd.Parameters.Add(ParCRSfoliofinpredio);
-                //
-                SqlParameter ParCRSasientopredio = new SqlParameter();
-                ParCRSasientopredio.ParameterName = "@sCRSasientopredio";
-                ParCRSasientopredio.SqlDbType = SqlDbType.VarChar;
-                ParCRSasientopredio.Value = acfICRt_Inventariocaracteristicas.CRSasientopredio;
-                SqlCmd.Parameters.Add(ParCRSasientopredio);
+            }
+            SqlCmd.Parameters.Add(ParCRSpuertos);
+           //  //
+           //  SqlParameter ParCRSutmx = new SqlParameter();
+           //  ParCRSutmx.ParameterName = "@decCRSutmx";
+           //  ParCRSutmx.SqlDbType = SqlDbType.Decimal;
+           //  ParCRSutmx.Value = acfICRt_Inventariocaracteristicas.CRSutmx;
+           //  SqlCmd.Parameters.Add(ParCRSutmx);
+           //  //
+           //  SqlParameter ParCRSutmy = new SqlParameter();
+           //  ParCRSutmy.ParameterName = "@decCRSutmy";
+           //  ParCRSutmy.SqlDbType = SqlDbType.Decimal;
+           //  ParCRSutmy.Value = acfICRt_Inventariocaracteristicas.CRSutmy;
+           //  SqlCmd.Parameters.Add(ParCRSutmy);
+           //  //
+           //  SqlParameter ParCRSesfuerzopunta = new SqlParameter();
+           //  ParCRSesfuerzopunta.ParameterName = "@sCRSesfuerzopunta";
+           //  ParCRSesfuerzopunta.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSesfuerzopunta.Value = acfICRt_Inventariocaracteristicas.CRSesfuerzopunta;
+           //  SqlCmd.Parameters.Add(ParCRSesfuerzopunta);
+           //  //
+           //  SqlParameter ParCRScajaderivadora = new SqlParameter();
+           //  ParCRScajaderivadora.ParameterName = "@sCRScajaderivadora";
+           //  ParCRScajaderivadora.SqlDbType = SqlDbType.VarChar;
+           //  ParCRScajaderivadora.Value = acfICRt_Inventariocaracteristicas.CRScajaderivadora;
+           //  SqlCmd.Parameters.Add(ParCRScajaderivadora);
+           //  //
+           //  SqlParameter ParCRSalquilacable = new SqlParameter();
+           //  ParCRSalquilacable.ParameterName = "@sCRSalquilacable";
+           //  ParCRSalquilacable.SqlDbType = SqlDbType.Char;
+           //  ParCRSalquilacable.Value = acfICRt_Inventariocaracteristicas.CRSalquilacable;
+           //  SqlCmd.Parameters.Add(ParCRSalquilacable);
+           //  //
+           //  SqlParameter ParCRScentropoblado = new SqlParameter();
+           //  ParCRScentropoblado.ParameterName = "@sCRScentropoblado";
+           //  ParCRScentropoblado.SqlDbType = SqlDbType.VarChar;
+           //  ParCRScentropoblado.Value = acfICRt_Inventariocaracteristicas.CRScentropoblado;
+           //  SqlCmd.Parameters.Add(ParCRScentropoblado);
+           //  //
+           //  SqlParameter ParCRSurbanizacion = new SqlParameter();
+           //  ParCRSurbanizacion.ParameterName = "@sCRSurbanizacion";
+           //  ParCRSurbanizacion.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSurbanizacion.Value = acfICRt_Inventariocaracteristicas.CRSurbanizacion;
+           //  SqlCmd.Parameters.Add(ParCRSurbanizacion);
+           //  //
+           //  SqlParameter ParCRScalle = new SqlParameter();
+           //  ParCRScalle.ParameterName = "@sCRScalle";
+           //  ParCRScalle.SqlDbType = SqlDbType.VarChar;
+           //  ParCRScalle.Value = acfICRt_Inventariocaracteristicas.CRScalle;
+           //  SqlCmd.Parameters.Add(ParCRScalle);
+           //  //
+           //  SqlParameter ParCRSlote = new SqlParameter();
+           //  ParCRSlote.ParameterName = "@sCRSlote";
+           //  ParCRSlote.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSlote.Value = acfICRt_Inventariocaracteristicas.CRSlote;
+           //  SqlCmd.Parameters.Add(ParCRSlote);
+           //  //
+           //  SqlParameter ParCRSnumeropredio = new SqlParameter();
+           //  ParCRSnumeropredio.ParameterName = "@sCRSnumeropredio";
+           //  ParCRSnumeropredio.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSnumeropredio.Value = acfICRt_Inventariocaracteristicas.CRSnumeropredio;
+           //  SqlCmd.Parameters.Add(ParCRSnumeropredio);
+           //  //
+           //  SqlParameter ParCRSdepartamento = new SqlParameter();
+           //  ParCRSdepartamento.ParameterName = "@sCRSdepartamento";
+           //  ParCRSdepartamento.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSdepartamento.Value = acfICRt_Inventariocaracteristicas.CRSdepartamento;
+           //  SqlCmd.Parameters.Add(ParCRSdepartamento);
+           //  //
+           //  SqlParameter ParCRSinterior = new SqlParameter();
+           //  ParCRSinterior.ParameterName = "@sCRSinterior";
+           //  ParCRSinterior.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSinterior.Value = acfICRt_Inventariocaracteristicas.CRSinterior;
+           //  SqlCmd.Parameters.Add(ParCRSinterior);
+           //  //
+           //  SqlParameter ParCRScarretera = new SqlParameter();
+           //  ParCRScarretera.ParameterName = "@sCRScarretera";
+           //  ParCRScarretera.SqlDbType = SqlDbType.VarChar;
+           //  ParCRScarretera.Value = acfICRt_Inventariocaracteristicas.CRScarretera;
+           //  SqlCmd.Parameters.Add(ParCRScarretera);
+           //  //
+           //  SqlParameter ParCRSkilometro = new SqlParameter();
+           //  ParCRSkilometro.ParameterName = "@decCRSkilometro";
+           //  ParCRSkilometro.SqlDbType = SqlDbType.Decimal;
+           //  ParCRSkilometro.Value = acfICRt_Inventariocaracteristicas.CRSkilometro;
+           //  SqlCmd.Parameters.Add(ParCRSkilometro);
+           //  //
+           //  SqlParameter ParCRSnombrepredio = new SqlParameter();
+           //  ParCRSnombrepredio.ParameterName = "@sCRSnombrepredio";
+           //  ParCRSnombrepredio.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSnombrepredio.Value = acfICRt_Inventariocaracteristicas.CRSnombrepredio;
+           //  SqlCmd.Parameters.Add(ParCRSnombrepredio);
+           //  //
+           //  SqlParameter ParCRSpisospredio = new SqlParameter();
+           //  ParCRSpisospredio.ParameterName = "@iCRSpisospredio";
+           //  ParCRSpisospredio.SqlDbType = SqlDbType.Int;
+           //  ParCRSpisospredio.Value = acfICRt_Inventariocaracteristicas.CRSpisospredio;
+           //  SqlCmd.Parameters.Add(ParCRSpisospredio);
+           //  //
+           //  SqlParameter ParCRSpartidapredio = new SqlParameter();
+           //  ParCRSpartidapredio.ParameterName = "@sCRSpartidapredio";
+           //  ParCRSpartidapredio.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSpartidapredio.Value = acfICRt_Inventariocaracteristicas.CRSpartidapredio;
+           //  SqlCmd.Parameters.Add(ParCRSpartidapredio);
+           //  //
+           //  SqlParameter ParCRStomopredio = new SqlParameter();
+           //  ParCRStomopredio.ParameterName = "@sCRStomopredio";
+           //  ParCRStomopredio.SqlDbType = SqlDbType.VarChar;
+           //  ParCRStomopredio.Value = acfICRt_Inventariocaracteristicas.CRStomopredio;
+           //  SqlCmd.Parameters.Add(ParCRStomopredio);
+           //  //
+           //  SqlParameter ParCRSfolioinipredio = new SqlParameter();
+           //  ParCRSfolioinipredio.ParameterName = "@sCRSfolioinipredio";
+           //  ParCRSfolioinipredio.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSfolioinipredio.Value = acfICRt_Inventariocaracteristicas.CRSfolioinipredio;
+           //  SqlCmd.Parameters.Add(ParCRSfolioinipredio);
+           //  //
+           //  SqlParameter ParCRSfoliofinpredio = new SqlParameter();
+           //  ParCRSfoliofinpredio.ParameterName = "@sCRSfoliofinpredio";
+           //  ParCRSfoliofinpredio.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSfoliofinpredio.Value = acfICRt_Inventariocaracteristicas.CRSfoliofinpredio;
+           //  SqlCmd.Parameters.Add(ParCRSfoliofinpredio);
+           //  //
+           //  SqlParameter ParCRSasientopredio = new SqlParameter();
+           //  ParCRSasientopredio.ParameterName = "@sCRSasientopredio";
+           //  ParCRSasientopredio.SqlDbType = SqlDbType.VarChar;
+           //  ParCRSasientopredio.Value = acfICRt_Inventariocaracteristicas.CRSasientopredio;
+           //  SqlCmd.Parameters.Add(ParCRSasientopredio);
                 //
                 SqlParameter ParCRSfinscpredio = new SqlParameter();
                 ParCRSfinscpredio.ParameterName = "@dtCRSfinscpredio";
                 ParCRSfinscpredio.SqlDbType = SqlDbType.DateTime;
-                ParCRSfinscpredio.Value = acfICRt_Inventariocaracteristicas.CRSfinscpredio;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSfinscpredio))
+                {
+                    ParCRSfinscpredio.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSfinscpredio.Value = Convert.ToDateTime(acfICRt_Inventariocaracteristicas.CRSfinscpredio);
+                }
                 SqlCmd.Parameters.Add(ParCRSfinscpredio);
                 //
                 SqlParameter ParCRSficharegistral = new SqlParameter();
                 ParCRSficharegistral.ParameterName = "@sCRSficharegistral";
                 ParCRSficharegistral.SqlDbType = SqlDbType.VarChar;
-                ParCRSficharegistral.Value = acfICRt_Inventariocaracteristicas.CRSficharegistral;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSficharegistral))
+                {
+                    ParCRSficharegistral.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSficharegistral.Value = acfICRt_Inventariocaracteristicas.CRSficharegistral;
+                }
                 SqlCmd.Parameters.Add(ParCRSficharegistral);
                 //
                 SqlParameter ParCRSareaconstruida = new SqlParameter();
                 ParCRSareaconstruida.ParameterName = "@decCRSareaconstruida";
                 ParCRSareaconstruida.SqlDbType = SqlDbType.Decimal;
-                ParCRSareaconstruida.Value = acfICRt_Inventariocaracteristicas.CRSareaconstruida;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSareaconstruida))
+                {
+                    ParCRSareaconstruida.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSareaconstruida.Value = acfICRt_Inventariocaracteristicas.CRSareaconstruida;
+                }
                 SqlCmd.Parameters.Add(ParCRSareaconstruida);
                 //
                 SqlParameter ParCRSperimetro = new SqlParameter();
                 ParCRSperimetro.ParameterName = "@decCRSperimetro";
                 ParCRSperimetro.SqlDbType = SqlDbType.Decimal;
-                ParCRSperimetro.Value = acfICRt_Inventariocaracteristicas.CRSperimetro;
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSperimetro))
+                {
+                    ParCRSperimetro.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSperimetro.Value = acfICRt_Inventariocaracteristicas.CRSperimetro;
+                }
                 SqlCmd.Parameters.Add(ParCRSperimetro);
                 //
                 SqlParameter ParCRSusopredio = new SqlParameter();
                 ParCRSusopredio.ParameterName = "@sCRSusopredio";
                 ParCRSusopredio.SqlDbType = SqlDbType.VarChar;
-                ParCRSusopredio.Value = acfICRt_Inventariocaracteristicas.CRSusopredio;
+
+                if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.CRSusopredio))
+                {
+                    ParCRSusopredio.Value = DBNull.Value;
+                }
+                else
+                {
+                    ParCRSusopredio.Value = acfICRt_Inventariocaracteristicas.CRSusopredio;
+                }
                 SqlCmd.Parameters.Add(ParCRSusopredio);
                 //
-                SqlParameter ParCRSvalorautovaluo = new SqlParameter();
-                ParCRSvalorautovaluo.ParameterName = "@decCRSvalorautovaluo";
-                ParCRSvalorautovaluo.SqlDbType = SqlDbType.Decimal;
-                ParCRSvalorautovaluo.Value = acfICRt_Inventariocaracteristicas.CRSvalorautovaluo;
-                SqlCmd.Parameters.Add(ParCRSvalorautovaluo);
-                //
-                SqlParameter ParCRScodigoluz = new SqlParameter();
-                ParCRScodigoluz.ParameterName = "@sCRScodigoluz";
-                ParCRScodigoluz.SqlDbType = SqlDbType.VarChar;
-                ParCRScodigoluz.Value = acfICRt_Inventariocaracteristicas.CRScodigoluz;
-                SqlCmd.Parameters.Add(ParCRScodigoluz);
-                //
-                SqlParameter ParCRScodigoagua = new SqlParameter();
-                ParCRScodigoagua.ParameterName = "@sCRScodigoagua";
-                ParCRScodigoagua.SqlDbType = SqlDbType.VarChar;
-                ParCRScodigoagua.Value = acfICRt_Inventariocaracteristicas.CRScodigoagua;
-                SqlCmd.Parameters.Add(ParCRScodigoagua);
-                //
-                SqlParameter ParCRSfadqpredio = new SqlParameter();
-                ParCRSfadqpredio.ParameterName = "@dtCRSfadqpredio";
-                ParCRSfadqpredio.SqlDbType = SqlDbType.DateTime;
-                ParCRSfadqpredio.Value = acfICRt_Inventariocaracteristicas.CRSfadqpredio;
-                SqlCmd.Parameters.Add(ParCRSfadqpredio);
-                //
-                SqlParameter ParCRSobservacion = new SqlParameter();
-                ParCRSobservacion.ParameterName = "@sCRSobservacion";
-                ParCRSobservacion.SqlDbType = SqlDbType.VarChar;
-                ParCRSobservacion.Value = acfICRt_Inventariocaracteristicas.CRSobservacion;
-                SqlCmd.Parameters.Add(ParCRSobservacion);
-                //
+            //  SqlParameter ParCRSvalorautovaluo = new SqlParameter();
+            //  ParCRSvalorautovaluo.ParameterName = "@decCRSvalorautovaluo";
+            //  ParCRSvalorautovaluo.SqlDbType = SqlDbType.Decimal;
+            //  ParCRSvalorautovaluo.Value = acfICRt_Inventariocaracteristicas.CRSvalorautovaluo;
+            //  SqlCmd.Parameters.Add(ParCRSvalorautovaluo);
+            //  //
+            //  SqlParameter ParCRScodigoluz = new SqlParameter();
+            //  ParCRScodigoluz.ParameterName = "@sCRScodigoluz";
+            //  ParCRScodigoluz.SqlDbType = SqlDbType.VarChar;
+            //  ParCRScodigoluz.Value = acfICRt_Inventariocaracteristicas.CRScodigoluz;
+            //  SqlCmd.Parameters.Add(ParCRScodigoluz);
+            //  //
+            //  SqlParameter ParCRScodigoagua = new SqlParameter();
+            //  ParCRScodigoagua.ParameterName = "@sCRScodigoagua";
+            //  ParCRScodigoagua.SqlDbType = SqlDbType.VarChar;
+            //  ParCRScodigoagua.Value = acfICRt_Inventariocaracteristicas.CRScodigoagua;
+            //  SqlCmd.Parameters.Add(ParCRScodigoagua);
+            //  //
+            //  SqlParameter ParCRSfadqpredio = new SqlParameter();
+            //  ParCRSfadqpredio.ParameterName = "@dtCRSfadqpredio";
+            //  ParCRSfadqpredio.SqlDbType = SqlDbType.DateTime;
+            //  ParCRSfadqpredio.Value = acfICRt_Inventariocaracteristicas.CRSfadqpredio;
+            //  SqlCmd.Parameters.Add(ParCRSfadqpredio);
+            //  //
+            //  SqlParameter ParCRSobservacion = new SqlParameter();
+            //  ParCRSobservacion.ParameterName = "@sCRSobservacion";
+            //  ParCRSobservacion.SqlDbType = SqlDbType.VarChar;
+            //  ParCRSobservacion.Value = acfICRt_Inventariocaracteristicas.CRSobservacion;
+            //  SqlCmd.Parameters.Add(ParCRSobservacion);
+            //  //
 
                 //Ejecutamos nuestro comando
 

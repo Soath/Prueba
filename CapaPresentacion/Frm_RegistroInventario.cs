@@ -132,6 +132,36 @@ namespace CapaPresentacion
                        // txtCRSobservacion.Text = Convert.ToString(row["CRSobservacion"]);
                         txtCRScantidad.Text = Convert.ToString(row["CRScantidad"]);
                         cboUNMid.Text = Convert.ToString(row["UNMid"]);
+                        dtpCRSfinscpredio.Text = Convert.ToString(row["CRSfinscpredio"]);
+                        txtCRSficharegistral.Text = Convert.ToString(row["CRSficharegistral"]);
+                        txtCRSareaconstruida.Text = Convert.ToString(row["CRSareaconstruida"]);
+                        txtCRSperimetro.Text = Convert.ToString(row["CRSperimetro"]);
+                        txtCRSusopredio.Text = Convert.ToString(row["CRSusopredio"]);
+                        cboCRSvehplaca.Text = Convert.ToString(row["CRSvehplaca"]);
+                        txtCRSvehexpediente.Text = Convert.ToString(row["CRSvehexpediente"]);
+                        dtpCRSvehinscripcion.Text = Convert.ToString(row["CRSvehinscripcion"]);
+                        txtCRSvehclase.Text = Convert.ToString(row["CRSvehclase"]);
+                        txtCRSvehcombustible.Text = Convert.ToString(row["CRSvehcombustible"]);
+                        txtCRSvehejes.Text = Convert.ToString(row["CRSvehejes"]);
+                        txtCRSvehpasajeros.Text = Convert.ToString(row["CRSvehpasajeros"]);
+                        txtCRSvehasientos.Text = Convert.ToString(row["CRSvehasientos"]);
+                        txtCRSvehpesoseco.Text = Convert.ToString(row["CRSvehpesoseco"]);
+                        txtCRSvehcargautil.Text = Convert.ToString(row["CRSvehcargautil"]);
+                        txtCRSaltura.Text = Convert.ToString(row["CRSaltura"]);
+                        txtCRSancho.Text = Convert.ToString(row["CRSancho"]);
+                        txtCRSvelocidad.Text = Convert.ToString(row["CRSvelocidad"]);
+                        txtCRSresolucion.Text = Convert.ToString(row["CRSresolucion"]);
+                        txtCRScapacidad.Text = Convert.ToString(row["CRScapacidad"]);
+                        txtCRSpotencia.Text = Convert.ToString(row["CRSpotencia"]);
+                        txtCRSvnominal.Text = Convert.ToString(row["CRSvnominal"]);
+                        txtCRSventrada.Text = Convert.ToString(row["CRSventrada"]);
+                        txtCRSvsalida.Text = Convert.ToString(row["CRSvsalida"]);
+                        txtCRSfrecuencia.Text = Convert.ToString(row["CRSfrecuencia"]);
+                        txtCRStemperatura.Text = Convert.ToString(row["CRStemperatura"]);
+                        txtCRSprocesador.Text = Convert.ToString(row["CRSprocesador"]);
+                        txtCRSpuertos.Text = Convert.ToString(row["CRSpuertos"]);
+
+
                     }
                 else
                     MessageBox.Show("No Existe", "Registro");
@@ -174,10 +204,46 @@ namespace CapaPresentacion
             string Rta = string.Empty;
             try
             {
-                Rta = NacfICRt_Inventariocaracteristicas.Editar2(
-                    this.txtACFid.Text,
-                    this.cboMARid.Text,
-                    this.txtCRSserie.Text);
+                Rta = NacfICRt_Inventariocaracteristicas.Editar(
+                this.txtACFid.Text,
+                this.cboMARid.Text,
+                this.txtESTid.Text,
+                this.cboINVid.Text,
+                this.txtCRSserie.Text            ,
+                this.txtCRSmodelo.Text           ,
+                this.cboUNMid.Text,
+                this.txtCRScantidad.Text         ,
+                this.cboCRSvehplaca.Text,
+                this.txtCRSvehexpediente.Text,
+                this.dtpCRSvehinscripcion.Text,
+                this.txtCRSvehclase.Text,
+                this.txtCRSvehcombustible.Text,
+                this.txtCRSvehejes.Text,
+                this.txtCRSvehpasajeros.Text,
+                this.txtCRSvehasientos.Text,
+                this.txtCRSvehpesoseco.Text,
+                this.txtCRSvehcargautil.Text,
+                this.txtCRSaltura.Text,
+                this.txtCRSancho.Text,
+                this.dtpCRSfinscpredio.Text      ,
+                this.txtCRSficharegistral.Text   ,
+                this.txtCRSareaconstruida.Text,
+                this.txtCRSperimetro.Text        ,
+                this.txtCRSusopredio.Text        ,
+              
+                this.txtCRSvelocidad.Text        ,
+                this.txtCRSresolucion.Text       ,
+                this.txtCRScapacidad.Text        ,
+                this.txtCRSpotencia.Text         ,
+                this.txtCRSvnominal.Text         ,
+                this.txtCRSventrada.Text         ,
+                this.txtCRSvsalida.Text          ,
+                this.txtCRSfrecuencia.Text       ,
+                this.txtCRStemperatura.Text      ,
+                this.txtCRSprocesador.Text       ,
+                this.txtCRSpuertos.Text 
+                    
+                    );
 
                 if (Rta.Equals("OK"))
                 {
@@ -321,6 +387,7 @@ namespace CapaPresentacion
                    // this.InsertaRegistro();
                    // this.CopiarRegistro();
                 }
+                //
                 if (Graba == 2) this.ActualizaRegistro();
                 Graba = 0;
                 this.BotonCancelar();
@@ -388,6 +455,26 @@ namespace CapaPresentacion
             txtACFid.Enabled = true;
             button1.Enabled = true;
             cboINVid.Enabled = true;
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCRSperimetro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCRSareaconstruida_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

@@ -159,9 +159,9 @@ namespace CapaNegocio
          string iINVid,
          string sCRSserie,
          string sCRSmodelo,
-         string sCRScolor,
-         string iMATid,
-         string sCRStipo,
+        // string sCRScolor,
+        // string iMATid,
+        // string sCRStipo,
          string iUNMid,
          string decCRScantidad,
          string sCRSvehplaca,
@@ -176,6 +176,33 @@ namespace CapaNegocio
          string decCRSvehcargautil,
          string decCRSaltura,
          string decCRSancho,
+        
+        // string decCRSutmx,
+        // string decCRSutmy,
+        // string sCRSesfuerzopunta,
+        // string sCRScajaderivadora,
+        // string sCRSalquilacable,
+        // string sCRScentropoblado,
+        // string sCRSurbanizacion,
+        // string sCRScalle,
+        // string sCRSlote,
+        // string sCRSnumeropredio,
+        // string sCRSdepartamento,
+        // string sCRSinterior,
+        // string sCRScarretera,
+        // string decCRSkilometro,
+        // string sCRSnombrepredio,
+        // string iCRSpisospredio,
+        // string sCRSpartidapredio,
+        // string sCRStomopredio,
+        // string sCRSfolioinipredio,
+        // string sCRSfoliofinpredio,
+        // string sCRSasientopredio,
+         string dtCRSfinscpredio,
+         string sCRSficharegistral,
+         string decCRSareaconstruida,
+         string decCRSperimetro,
+         string sCRSusopredio,
          string sCRSvelocidad,
          string sCRSresolucion,
          string sCRScapacidad,
@@ -186,38 +213,13 @@ namespace CapaNegocio
          string sCRSfrecuencia,
          string sCRStemperatura,
          string sCRSprocesador,
-         string sCRSpuertos,
-         string decCRSutmx,
-         string decCRSutmy,
-         string sCRSesfuerzopunta,
-         string sCRScajaderivadora,
-         string sCRSalquilacable,
-         string sCRScentropoblado,
-         string sCRSurbanizacion,
-         string sCRScalle,
-         string sCRSlote,
-         string sCRSnumeropredio,
-         string sCRSdepartamento,
-         string sCRSinterior,
-         string sCRScarretera,
-         string decCRSkilometro,
-         string sCRSnombrepredio,
-         string iCRSpisospredio,
-         string sCRSpartidapredio,
-         string sCRStomopredio,
-         string sCRSfolioinipredio,
-         string sCRSfoliofinpredio,
-         string sCRSasientopredio,
-         string dtCRSfinscpredio,
-         string sCRSficharegistral,
-         string decCRSareaconstruida,
-         string decCRSperimetro,
-         string sCRSusopredio,
-         string decCRSvalorautovaluo,
-         string sCRScodigoluz,
-         string sCRScodigoagua,
-         string dtCRSfadqpredio,
-         string sCRSobservacion)
+         string sCRSpuertos
+     //  string decCRSvalorautovaluo,
+     //  string sCRScodigoluz,
+     //  string sCRScodigoagua,
+     //  string dtCRSfadqpredio,
+     //  string sCRSobservacion
+            )
         {
             DacfICRt_Inventariocaracteristicas Obj = new DacfICRt_Inventariocaracteristicas();
             Obj.ACFid = iACFid;
@@ -226,9 +228,9 @@ namespace CapaNegocio
             Obj.INVid = iINVid;
             Obj.CRSserie = sCRSserie;
             Obj.CRSmodelo = sCRSmodelo;
-            Obj.CRScolor = sCRScolor;
-            Obj.MATid = iMATid;
-            Obj.CRStipo = sCRStipo;
+          //  Obj.CRScolor = sCRScolor;
+          //  Obj.MATid = iMATid;
+          //  Obj.CRStipo = sCRStipo;
             Obj.UNMid = iUNMid;
             Obj.CRScantidad = decCRScantidad;
             Obj.CRSvehplaca = sCRSvehplaca;
@@ -243,48 +245,48 @@ namespace CapaNegocio
             Obj.CRSvehcargautil = decCRSvehcargautil;
             Obj.CRSaltura = decCRSaltura;
             Obj.CRSancho = decCRSancho;
-            Obj.CRSvelocidad = sCRSvelocidad;
-            Obj.CRSresolucion = sCRSresolucion;
-            Obj.CRScapacidad = sCRScapacidad;
-            Obj.CRSpotencia = sCRSpotencia;
-            Obj.CRSvnominal = sCRSvnominal;
-            Obj.CRSventrada = sCRSventrada;
-            Obj.CRSvsalida = sCRSvsalida;
-            Obj.CRSfrecuencia = sCRSfrecuencia;
-            Obj.CRStemperatura = sCRStemperatura;
-            Obj.CRSprocesador = sCRSprocesador;
-            Obj.CRSpuertos = sCRSpuertos;
-            Obj.CRSutmx = decCRSutmx;
-            Obj.CRSutmy = decCRSutmy;
-            Obj.CRSesfuerzopunta = sCRSesfuerzopunta;
-            Obj.CRScajaderivadora = sCRScajaderivadora;
-            Obj.CRSalquilacable = sCRSalquilacable;
-            Obj.CRScentropoblado = sCRScentropoblado;
-            Obj.CRSurbanizacion = sCRSurbanizacion;
-            Obj.CRScalle = sCRScalle;
-            Obj.CRSlote = sCRSlote;
-            Obj.CRSnumeropredio = sCRSnumeropredio;
-            Obj.CRSdepartamento = sCRSdepartamento;
-            Obj.CRSinterior = sCRSinterior;
-            Obj.CRScarretera = sCRScarretera;
-            Obj.CRSkilometro = decCRSkilometro;
-            Obj.CRSnombrepredio = sCRSnombrepredio;
-            Obj.CRSpisospredio = iCRSpisospredio;
-            Obj.CRSpartidapredio = sCRSpartidapredio;
-            Obj.CRStomopredio = sCRStomopredio;
-            Obj.CRSfolioinipredio = sCRSfolioinipredio;
-            Obj.CRSfoliofinpredio = sCRSfoliofinpredio;
-            Obj.CRSasientopredio = sCRSasientopredio;
+      Obj.CRSvelocidad = sCRSvelocidad;
+      Obj.CRSresolucion = sCRSresolucion;
+      Obj.CRScapacidad = sCRScapacidad;
+      Obj.CRSpotencia = sCRSpotencia;
+      Obj.CRSvnominal = sCRSvnominal;
+      Obj.CRSventrada = sCRSventrada;
+      Obj.CRSvsalida = sCRSvsalida;
+      Obj.CRSfrecuencia = sCRSfrecuencia;
+      Obj.CRStemperatura = sCRStemperatura;
+      Obj.CRSprocesador = sCRSprocesador;
+      Obj.CRSpuertos = sCRSpuertos;
+        // Obj.CRSutmx = decCRSutmx;
+        // Obj.CRSutmy = decCRSutmy;
+        // Obj.CRSesfuerzopunta = sCRSesfuerzopunta;
+        // Obj.CRScajaderivadora = sCRScajaderivadora;
+        // Obj.CRSalquilacable = sCRSalquilacable;
+        // Obj.CRScentropoblado = sCRScentropoblado;
+        // Obj.CRSurbanizacion = sCRSurbanizacion;
+        // Obj.CRScalle = sCRScalle;
+        // Obj.CRSlote = sCRSlote;
+        // Obj.CRSnumeropredio = sCRSnumeropredio;
+        // Obj.CRSdepartamento = sCRSdepartamento;
+        // Obj.CRSinterior = sCRSinterior;
+        // Obj.CRScarretera = sCRScarretera;
+        // Obj.CRSkilometro = decCRSkilometro;
+        // Obj.CRSnombrepredio = sCRSnombrepredio;
+        // Obj.CRSpisospredio = iCRSpisospredio;
+        // Obj.CRSpartidapredio = sCRSpartidapredio;
+        // Obj.CRStomopredio = sCRStomopredio;
+        // Obj.CRSfolioinipredio = sCRSfolioinipredio;
+        // Obj.CRSfoliofinpredio = sCRSfoliofinpredio;
+        // Obj.CRSasientopredio = sCRSasientopredio;
             Obj.CRSfinscpredio = dtCRSfinscpredio;
             Obj.CRSficharegistral = sCRSficharegistral;
             Obj.CRSareaconstruida = decCRSareaconstruida;
             Obj.CRSperimetro = decCRSperimetro;
-            Obj.CRSusopredio = sCRSusopredio;
-            Obj.CRSvalorautovaluo = decCRSvalorautovaluo;
-            Obj.CRScodigoluz = sCRScodigoluz;
-            Obj.CRScodigoagua = sCRScodigoagua;
-            Obj.CRSfadqpredio = dtCRSfadqpredio;
-            Obj.CRSobservacion = sCRSobservacion;
+           // Obj.CRSusopredio = sCRSusopredio;
+           // Obj.CRSvalorautovaluo = decCRSvalorautovaluo;
+           // Obj.CRScodigoluz = sCRScodigoluz;
+           // Obj.CRScodigoagua = sCRScodigoagua;
+           // Obj.CRSfadqpredio = dtCRSfadqpredio;
+           // Obj.CRSobservacion = sCRSobservacion;
             return Obj.Editar(Obj);
         }
         //------------------------------------------------------------------
