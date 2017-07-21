@@ -1025,7 +1025,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    ParACFid.Value = acfICRt_Inventariocaracteristicas.ACFid;
+                    ParACFid.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.ACFid);
                 }
                 SqlCmd.Parameters.Add(ParACFid);
                 //
@@ -1038,12 +1038,12 @@ namespace CapaDatos
                 }
                 else
                 {
-                    ParMARid.Value = acfICRt_Inventariocaracteristicas.MARid;
+                    ParMARid.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.MARid);
                 }
                 SqlCmd.Parameters.Add(ParMARid);
                 //
                 SqlParameter ParESTid = new SqlParameter();
-                ParESTid.ParameterName = "@sESTid";
+                ParESTid.ParameterName = "@iESTid";
                 ParESTid.SqlDbType = SqlDbType.Int;
                 if (string.IsNullOrWhiteSpace(acfICRt_Inventariocaracteristicas.ESTid))
                 {
@@ -1051,7 +1051,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    ParESTid.Value = acfICRt_Inventariocaracteristicas.ESTid;
+                    ParESTid.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.ESTid);
                 }
 
                 SqlCmd.Parameters.Add(ParESTid);
@@ -1065,7 +1065,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    ParINVid.Value = acfICRt_Inventariocaracteristicas.INVid;
+                    ParINVid.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.INVid);
                 }
                 SqlCmd.Parameters.Add(ParINVid);
                 //
@@ -1115,7 +1115,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    ParUNMid.Value = acfICRt_Inventariocaracteristicas.UNMid;
+                    ParUNMid.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.UNMid);
                 }
 
                 SqlCmd.Parameters.Add(ParUNMid);
@@ -1209,7 +1209,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    ParCRSvehejes.Value = acfICRt_Inventariocaracteristicas.CRSvehejes;
+                    ParCRSvehejes.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.CRSvehejes);
                 }
                 SqlCmd.Parameters.Add(ParCRSvehejes);
                 //
@@ -1222,7 +1222,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    ParCRSvehpasajeros.Value = acfICRt_Inventariocaracteristicas.CRSvehpasajeros;
+                    ParCRSvehpasajeros.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.CRSvehpasajeros);
                 }
                 SqlCmd.Parameters.Add(ParCRSvehpasajeros);
                 //
@@ -1235,7 +1235,7 @@ namespace CapaDatos
                 }
                 else
                 {
-                    ParCRSvehasientos.Value = acfICRt_Inventariocaracteristicas.CRSvehasientos;
+                    ParCRSvehasientos.Value = Convert.ToInt32(acfICRt_Inventariocaracteristicas.CRSvehasientos);
                 }
                 SqlCmd.Parameters.Add(ParCRSvehasientos);
                 //

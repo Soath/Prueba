@@ -208,7 +208,7 @@ namespace CapaPresentacion
                 this.txtACFid.Text,
                 this.cboMARid.Text,
                 this.txtESTid.Text,
-                this.txtINVid.Text,
+                this.cboINVid.Text,
                 this.txtCRSserie.Text            ,
                 this.txtCRSmodelo.Text           ,
                 this.cboUNMid.Text,
