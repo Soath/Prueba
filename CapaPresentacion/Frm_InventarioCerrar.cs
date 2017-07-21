@@ -227,9 +227,41 @@ namespace CapaPresentacion
                 {
                     Rta = NacfICRt_Inventariocaracteristicas.CerrarInventario(
                      //this.datalistado1.CurrentRow.Cells[0].Value.ToString()
-                     this.datalistado1.CurrentRow.Cells[5].Value.ToString()
-                    , this.datalistado1.CurrentRow.Cells[6].Value.ToString()
-                    , this.datalistado1.CurrentRow.Cells[8].Value.ToString()
+                     this.datalistado1.CurrentRow.Cells[1].Value.ToString()// ACFid
+                    , this.txtinvserie.Text //CRSserie
+                    , this.txtinvmarca.Text // MARid
+                    //, this.txtinvelectrico.Text //ESTid
+                    , this.txtinvmodelo.Text //CRSmodelo
+                    , this.txtinvunidad.Text //UNMid 
+                    , this.txtinvcantidad.Text //CRScantidad
+                    , this.txtinvplaca.Text //CRSvehplaca
+                    , this.txtinvexpediente.Text //CRSvehexpediente
+                    , this.txtinvinscripcion.Text //CRSvehinscripcion
+                    , this.txtinvclase.Text //CRSvehclase
+                    , this.txtinvcombustible.Text //CRSvehcombustible
+                    , this.txtinvclase.Text //CRSvehejes
+                    , this.txtinvpasajeros.Text //CRSvehpasajeros
+                    , this.txtinvasientos.Text //CRSvehasientos
+                    , this.txtinvpeso.Text //CRSvehpesoseco
+                    , this.txtinvcarga.Text //CRSvehcargautil
+                    , this.txtinvaltura.Text //CRSaltura 
+                    , this.txtinvancho.Text //CRSancho
+                    , this.txtinvvelocidad.Text //CRSvelocidad
+                    , this.txtinvresolucion.Text //CRSresolucion
+                    , this.txtinvcapacidad.Text //CRScapacidad
+                    , this.txtinvpotencia.Text //CRSpotencia
+                    , this.txtinvnominal.Text //CRSvnominal 
+                    , this.txtinventrada.Text //RSventrada
+                    , this.txtinvsalida.Text //CRSvsalida
+                    , this.txtinvfrecuencia.Text //CRSfrecuencia
+                    , this.txtinvtemperatura.Text //CRStemperatura
+                    , this.txtinvprocesador.Text //CRSprocesador
+                    , this.txtinvpuertos.Text //CRSpuertos
+                    , this.txtinvfichapredio.Text //CRSfinscpredio
+                    , this.txtinvficharegistral.Text //CRSficharegistral
+                    , this.txtinvareaconstruida.Text //CRSareaconstruida
+                    , this.txtinvperimetro.Text //CRSperimetro
+                    , this.txtinvusopredio.Text //CRSusopredio
 
                   );
 
