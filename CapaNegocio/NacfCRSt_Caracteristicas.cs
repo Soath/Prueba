@@ -493,5 +493,9 @@ namespace CapaNegocio
             return new DacfCRSt_Caracteristicas().Buscar(sCRSserie);
         }
 
+        public static DataTable mostrarconciliar(String variableid)
+        {
+            return new DacfCRSt_Caracteristicas().mostrarconciliar(variableid);
+        }
     }
 }

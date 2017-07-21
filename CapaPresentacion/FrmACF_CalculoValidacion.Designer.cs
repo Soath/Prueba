@@ -85,6 +85,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv333)).BeginInit();
@@ -103,7 +105,7 @@
             // label6
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(195, 207);
+            this.label6.Location = new System.Drawing.Point(204, 241);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 29);
             this.label6.TabIndex = 228;
@@ -118,7 +120,7 @@
             this.txtRVRestado.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.txtRVRestado.Location = new System.Drawing.Point(138, 210);
+            this.txtRVRestado.Location = new System.Drawing.Point(147, 244);
             this.txtRVRestado.Name = "txtRVRestado";
             this.txtRVRestado.Size = new System.Drawing.Size(39, 21);
             this.txtRVRestado.TabIndex = 227;
@@ -276,21 +278,21 @@
             // dtpRVAfecha
             // 
             this.dtpRVAfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpRVAfecha.Location = new System.Drawing.Point(138, 134);
+            this.dtpRVAfecha.Location = new System.Drawing.Point(147, 168);
             this.dtpRVAfecha.Name = "dtpRVAfecha";
             this.dtpRVAfecha.Size = new System.Drawing.Size(97, 20);
             this.dtpRVAfecha.TabIndex = 224;
             // 
             // txtRVAresponsable
             // 
-            this.txtRVAresponsable.Location = new System.Drawing.Point(138, 173);
+            this.txtRVAresponsable.Location = new System.Drawing.Point(147, 207);
             this.txtRVAresponsable.Name = "txtRVAresponsable";
             this.txtRVAresponsable.Size = new System.Drawing.Size(274, 20);
             this.txtRVAresponsable.TabIndex = 223;
             // 
             // txtRVAcodigo
             // 
-            this.txtRVAcodigo.Location = new System.Drawing.Point(138, 72);
+            this.txtRVAcodigo.Location = new System.Drawing.Point(147, 106);
             this.txtRVAcodigo.Name = "txtRVAcodigo";
             this.txtRVAcodigo.ReadOnly = true;
             this.txtRVAcodigo.Size = new System.Drawing.Size(109, 20);
@@ -299,7 +301,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 213);
+            this.label5.Location = new System.Drawing.Point(55, 247);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 220;
@@ -308,7 +310,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 176);
+            this.label4.Location = new System.Drawing.Point(55, 210);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 219;
@@ -317,7 +319,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 140);
+            this.label3.Location = new System.Drawing.Point(55, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 13);
             this.label3.TabIndex = 218;
@@ -326,7 +328,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 107);
+            this.label2.Location = new System.Drawing.Point(55, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 217;
@@ -335,7 +337,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 75);
+            this.label1.Location = new System.Drawing.Point(55, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 216;
@@ -345,7 +347,7 @@
             // 
             this.txtRVAperiodo.CustomFormat = "MM/yyyy";
             this.txtRVAperiodo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtRVAperiodo.Location = new System.Drawing.Point(138, 101);
+            this.txtRVAperiodo.Location = new System.Drawing.Point(147, 135);
             this.txtRVAperiodo.Name = "txtRVAperiodo";
             this.txtRVAperiodo.ShowUpDown = true;
             this.txtRVAperiodo.Size = new System.Drawing.Size(97, 20);
@@ -354,7 +356,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(67, 18);
+            this.label10.Location = new System.Drawing.Point(78, 24);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(80, 13);
             this.label10.TabIndex = 230;
@@ -362,7 +364,7 @@
             // 
             // btn331
             // 
-            this.btn331.Location = new System.Drawing.Point(83, 48);
+            this.btn331.Location = new System.Drawing.Point(83, 54);
             this.btn331.Name = "btn331";
             this.btn331.Size = new System.Drawing.Size(75, 23);
             this.btn331.TabIndex = 236;
@@ -622,7 +624,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(10, 114);
+            this.label13.Location = new System.Drawing.Point(11, 101);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(148, 13);
             this.label13.TabIndex = 239;
@@ -630,7 +632,7 @@
             // 
             // txtHoja
             // 
-            this.txtHoja.Location = new System.Drawing.Point(164, 114);
+            this.txtHoja.Location = new System.Drawing.Point(165, 101);
             this.txtHoja.Name = "txtHoja";
             this.txtHoja.Size = new System.Drawing.Size(127, 20);
             this.txtHoja.TabIndex = 242;
@@ -644,16 +646,16 @@
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.btn331);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Location = new System.Drawing.Point(491, 173);
+            this.groupBox1.Location = new System.Drawing.Point(491, 207);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(395, 190);
+            this.groupBox1.Size = new System.Drawing.Size(395, 166);
             this.groupBox1.TabIndex = 243;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Importar Datos desde ExcelExcel";
             // 
             // txtruta
             // 
-            this.txtruta.Location = new System.Drawing.Point(164, 50);
+            this.txtruta.Location = new System.Drawing.Point(164, 56);
             this.txtruta.Name = "txtruta";
             this.txtruta.Size = new System.Drawing.Size(221, 20);
             this.txtruta.TabIndex = 245;
@@ -665,14 +667,14 @@
             "331 - Terrenos",
             "332 - Edificaciones",
             "333 - Maquinaria y Equipos"});
-            this.cboclase.Location = new System.Drawing.Point(164, 15);
+            this.cboclase.Location = new System.Drawing.Point(164, 21);
             this.cboclase.Name = "cboclase";
             this.cboclase.Size = new System.Drawing.Size(194, 21);
             this.cboclase.TabIndex = 245;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(101, 150);
+            this.button2.Location = new System.Drawing.Point(101, 127);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(190, 23);
             this.button2.TabIndex = 243;
@@ -682,17 +684,19 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Location = new System.Drawing.Point(491, 84);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(395, 72);
+            this.groupBox2.Size = new System.Drawing.Size(395, 109);
             this.groupBox2.TabIndex = 244;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Obtener Datos desde el Sistema";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(101, 27);
+            this.button1.Location = new System.Drawing.Point(101, 71);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(190, 23);
             this.button1.TabIndex = 237;
@@ -707,6 +711,27 @@
             this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 245;
             this.label7.Text = "label7";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "331 - Terrenos",
+            "332 - Edificaciones",
+            "333 - Maquinaria y Equipos"});
+            this.comboBox1.Location = new System.Drawing.Point(165, 29);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(194, 21);
+            this.comboBox1.TabIndex = 247;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(74, 29);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 13);
+            this.label8.TabIndex = 246;
+            this.label8.Text = "Procesar Clase :";
             // 
             // FrmACF_CalculoValidacion
             // 
@@ -750,6 +775,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -813,5 +839,7 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label8;
     }
 }

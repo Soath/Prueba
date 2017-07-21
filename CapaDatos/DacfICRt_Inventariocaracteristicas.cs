@@ -1685,12 +1685,6 @@ namespace CapaDatos
                 SqlCmd.CommandText = "usp_U3_acfICRt_InventarioCerrar";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
                 //
-                //SqlParameter ParINVid = new SqlParameter();
-                //ParINVid.ParameterName = "@iINVid";
-                //ParINVid.SqlDbType = SqlDbType.Int;
-                //ParINVid.Value = acfICRt_Inventariocaracteristicas.INVid;
-                //SqlCmd.Parameters.Add(ParINVid);
-                //
                 SqlParameter ParACFid = new SqlParameter();
                 ParACFid.ParameterName = "@iACFid";
                 ParACFid.SqlDbType = SqlDbType.Int;
@@ -1758,5 +1752,37 @@ namespace CapaDatos
         }
         return rpta;
     }
-}
+    public DataTable mostrarconciliar(String variableid)
+        {
+            DataTable DtResultado = new DataTable("acfICRt_Inventariocaracteristicas");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S_acfCRSt_Conciliar_InventarioCaracteristica";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                // se usa para llegar la variable de mostrar al SQL
+
+                SqlParameter ParCRSserie = new SqlParameter();
+                ParCRSserie.ParameterName = "@iACFid";
+                ParCRSserie.SqlDbType = SqlDbType.Int;
+                ParCRSserie.Size = 50;
+                ParCRSserie.Value = Convert.ToInt32(variableid);
+                SqlCmd.Parameters.Add(ParCRSserie);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+    }
 }

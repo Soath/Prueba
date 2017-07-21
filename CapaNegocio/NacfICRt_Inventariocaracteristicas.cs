@@ -361,5 +361,10 @@ namespace CapaNegocio
 
             return Obj.CerrarInventario(Obj);
         }
+
+        public static DataTable mostrarconciliar(String variableid)
+        {
+            return new DacfICRt_Inventariocaracteristicas().mostrarconciliar(variableid);
+        }
     }
 }

@@ -2113,5 +2113,38 @@ namespace CapaDatos
 
 	}
 
-}
+    public DataTable mostrarconciliar(String variableid)
+        {
+            DataTable DtResultado = new DataTable("acfCRSt_Caracteristicas");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "usp_S_acfCRSt_Conciliar_Caracteristicas";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                // se usa para llegar la variable de mostrar al SQL
+                
+                SqlParameter ParCRSserie = new SqlParameter();
+                ParCRSserie.ParameterName = "@iACFid";
+                ParCRSserie.SqlDbType = SqlDbType.Int;
+                ParCRSserie.Size = 50;
+                ParCRSserie.Value = Convert.ToInt32(variableid);
+                SqlCmd.Parameters.Add(ParCRSserie);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+    }
 }
