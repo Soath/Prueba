@@ -60,9 +60,16 @@ namespace CapaPresentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Depreciacion1.rdlc", NacfACFp_Activo_Fijo.Depreciacion(textBox1.Text), "ip");
-            rptalu.ShowDialog();
+            if (radioButton2.Checked)
+            {
 
+                FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Depreciacion1.rdlc", NacfACFp_Activo_Fijo.Depreciacion(textBox1.Text), "ip");
+                rptalu.ShowDialog();
+            }
+            if (radioButton1.Checked)
+            {
+           //     rptalu.ShowDialog();
+            }
         }
 
         private void radioButton1_Click(object sender, EventArgs e)

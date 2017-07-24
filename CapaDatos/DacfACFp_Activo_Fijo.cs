@@ -2452,7 +2452,7 @@ namespace CapaDatos
             return DtResultado;
         }
 
-    public DataTable DepreciacionMensual(String iACFvutiltribanio, string iACFvutiltribdia)
+    public DataTable DepreciacionMensual(String iACFvutiltribanio, String iACFvutiltribdia)
         {
             DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
             SqlConnection SqlCon = new SqlConnection();
