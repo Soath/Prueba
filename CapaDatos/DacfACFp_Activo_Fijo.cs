@@ -2452,5 +2452,42 @@ namespace CapaDatos
             return DtResultado;
         }
 
+    public DataTable DepreciacionMensual(String iACFvutiltribanio, string iACFvutiltribdia)
+        {
+            DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
+            SqlConnection SqlCon = new SqlConnection();
+
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = DConexion.CnBDActivo;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "Depreciación_Anual";
+                SqlCmd.CommandType = CommandType.StoredProcedure;                
+                //variable usado para mandar el mes
+                SqlParameter ParACFid = new SqlParameter();
+                ParACFid.ParameterName = "@iACFvutiltribanio";
+                ParACFid.SqlDbType = SqlDbType.Int;
+                ParACFid.Value = iACFvutiltribanio;
+                SqlCmd.Parameters.Add(ParACFid);                
+                // variable usado para mandar el mes
+                SqlParameter ParACFvutiltribdia = new SqlParameter();
+                ParACFvutiltribdia.ParameterName = "@iACFvutiltribdia";
+                ParACFvutiltribdia.SqlDbType = SqlDbType.Int;
+                ParACFvutiltribdia.Value = iACFvutiltribdia;
+                SqlCmd.Parameters.Add(ParACFvutiltribdia);
+                //
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
     }
 }
