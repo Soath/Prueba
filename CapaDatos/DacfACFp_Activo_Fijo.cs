@@ -2452,7 +2452,11 @@ namespace CapaDatos
             return DtResultado;
         }
 
+<<<<<<< HEAD
     public DataTable DepreciacionMensual(String iACFvutiltribanio, String iACFvutiltribdia)
+=======
+    public DataTable DepreciacionMensual(String iACFvutiltribanio, string sACFobservacion)
+>>>>>>> origin/master
         {
             DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
             SqlConnection SqlCon = new SqlConnection();
@@ -2465,18 +2469,18 @@ namespace CapaDatos
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "Depreciación_Anual";
                 SqlCmd.CommandType = CommandType.StoredProcedure;                
-                //variable usado para mandar el mes
+                //variable usado para mandar el anio
                 SqlParameter ParACFid = new SqlParameter();
                 ParACFid.ParameterName = "@iACFvutiltribanio";
                 ParACFid.SqlDbType = SqlDbType.Int;
                 ParACFid.Value = iACFvutiltribanio;
-                SqlCmd.Parameters.Add(ParACFid);                
-                // variable usado para mandar el mes
-                SqlParameter ParACFvutiltribdia = new SqlParameter();
-                ParACFvutiltribdia.ParameterName = "@iACFvutiltribdia";
-                ParACFvutiltribdia.SqlDbType = SqlDbType.Int;
-                ParACFvutiltribdia.Value = iACFvutiltribdia;
-                SqlCmd.Parameters.Add(ParACFvutiltribdia);
+                SqlCmd.Parameters.Add(ParACFid);
+                //variable usado para mandar el mes
+                SqlParameter ParACFobservacion = new SqlParameter();
+                ParACFobservacion.ParameterName = "@sACFobservacion";
+                ParACFobservacion.SqlDbType = SqlDbType.VarChar;
+                ParACFobservacion.Value = sACFobservacion;
+                SqlCmd.Parameters.Add(ParACFobservacion);
                 //
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);

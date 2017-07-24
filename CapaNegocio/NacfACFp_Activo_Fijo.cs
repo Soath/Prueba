@@ -484,9 +484,9 @@ namespace CapaNegocio
         }
 
         //reporte de depreciación
-        public static DataTable DepreciacionMensual(String iACFvutiltribanio, string iACFvutiltribdia)
-        {
-            return new DacfACFp_Activo_Fijo().DepreciacionMensual(iACFvutiltribanio, iACFvutiltribdia);
+        public static DataTable DepreciacionMensual(String iACFvutiltribanio, string sACFobservacion)
+        {   //                                            mostrar anio               mostrar mes                           
+            return new DacfACFp_Activo_Fijo().DepreciacionMensual(iACFvutiltribanio, sACFobservacion);
         }
 
         public static DataTable MostrarRegistro(string ACFdescripcion)
