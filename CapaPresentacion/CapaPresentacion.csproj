@@ -1019,7 +1019,6 @@
     <EmbeddedResource Include="Reportes\Ficha_Control_Inventario.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Anexo_ActivoFijo.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Anexo_ActivoFijo_Sunat.rdlc" />
-    <EmbeddedResource Include="Reportes\Rpt_Anexo_Depreciacion.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Anexo_DepreciacionAcumulada.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Cbarra.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_ACF_ActivoFijo.rdlc" />
@@ -1031,6 +1030,7 @@
     <EmbeddedResource Include="Reportes\Rpt_CMPComponente.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_CSTCosto.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Depreciacion1.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Depreciacion_Mensual.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_ESTestado.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Ficha_ControlActivos.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_INVInventario.rdlc" />

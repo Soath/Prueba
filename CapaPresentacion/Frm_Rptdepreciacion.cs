@@ -68,7 +68,11 @@ namespace CapaPresentacion
             }
             if (radioButton1.Checked)
             {
-           //     rptalu.ShowDialog();
+                int x;
+                x = Convert.ToInt32(comboBox1.SelectedIndex)+1;
+               // MessageBox.Show(Convert.ToString(x));
+                FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Depreciacion_Mensual.rdlc", NacfACFp_Activo_Fijo.DepreciacionMensual(textBox1.Text, Convert.ToString(x)), "ip");
+                rptalu.ShowDialog();
             }
         }
 

@@ -2452,11 +2452,9 @@ namespace CapaDatos
             return DtResultado;
         }
 
-<<<<<<< HEAD
-    public DataTable DepreciacionMensual(String iACFvutiltribanio, String iACFvutiltribdia)
-=======
+
     public DataTable DepreciacionMensual(String iACFvutiltribanio, string sACFobservacion)
->>>>>>> origin/master
+
         {
             DataTable DtResultado = new DataTable("acfACFp_Activo_Fijo");
             SqlConnection SqlCon = new SqlConnection();
@@ -2467,7 +2465,7 @@ namespace CapaDatos
                 SqlCon.ConnectionString = DConexion.CnBDActivo;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Depreciación_Anual";
+                SqlCmd.CommandText = "Depreciación_Mensual";
                 SqlCmd.CommandType = CommandType.StoredProcedure;                
                 //variable usado para mandar el anio
                 SqlParameter ParACFid = new SqlParameter();

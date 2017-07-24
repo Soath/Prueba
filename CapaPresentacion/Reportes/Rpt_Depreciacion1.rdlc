@@ -528,7 +528,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -5053,7 +5052,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>4.53707cm</Top>
-        <Left>0.33867cm</Left>
+        <Left>0.36513cm</Left>
         <Height>4.53867cm</Height>
         <Width>30.3549cm</Width>
         <ZIndex>6</ZIndex>
