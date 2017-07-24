@@ -22,7 +22,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Ficha de Control de Inventario</Value>
+                <Value>Ficha de CInventario</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -196,31 +196,31 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.025cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.08208cm</Width>
+              <Width>1.60041cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.5155cm</Width>
+              <Width>5.20758cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.15062cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.30938cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.28292cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.52167cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.70625cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.75917cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -538,7 +538,19 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!ACFid.Value</Value>
+                              <Value>=Trim(Fields!ACFtipo_activo.Value)</Value>
+                              <Style>
+                                <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Trim(Fields!ACFid.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
                                 <FontSize>8pt</FontSize>
@@ -604,7 +616,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!ACFactivo.Value</Value>
+                              <Value>=Trim(Fields!ACFactivo.Value)</Value>
                               <Style>
                                 <FontFamily>Arial Narrow</FontFamily>
                                 <FontSize>8pt</FontSize>
@@ -857,7 +869,7 @@
         <Top>2.77495cm</Top>
         <Left>0.00192cm</Left>
         <Height>1.2cm</Height>
-        <Width>24.09758cm</Width>
+        <Width>17.563cm</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
@@ -911,7 +923,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox181</rd:DefaultName>
         <Top>1.61078cm</Top>
-        <Left>7.10978cm</Left>
+        <Left>7.0745cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>9</ZIndex>
@@ -1011,6 +1023,10 @@
         </Field>
         <Field Name="NAME">
           <DataField>NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ACFtipo_activo">
+          <DataField>ACFtipo_activo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>

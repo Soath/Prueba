@@ -64,5 +64,18 @@ namespace CapaPresentacion
             rptalu.ShowDialog();
 
         }
+
+        private void radioButton1_Click(object sender, EventArgs e)
+        {
+            comboBox1.Enabled = true;
+
+        }
+
+        private void radioButton2_Click(object sender, EventArgs e)
+        {
+            textBox1.Enabled = true;
+            comboBox1.Enabled = false;
+            this.comboBox1.Text = "";
+        }
     }
 }
