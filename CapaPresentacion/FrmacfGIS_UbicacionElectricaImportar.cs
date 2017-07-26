@@ -22,7 +22,7 @@ namespace CapaPresentacion
 
         private void FrmacfGIS_UbicacionElectricaImportar_Load(object sender, EventArgs e)
         {
-            dataListado.DataSource = NacfGIS_UbicacionElectrica.Mostrar("0");
+            dataListado.DataSource = NGIS_AFintermedia.Mostrar();
         }
 
         private void dataListado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

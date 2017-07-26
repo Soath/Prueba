@@ -93,6 +93,7 @@
     <Compile Include="DConexion.cs" />
     <Compile Include="DACFLOCT_LOCAL.cs" />
     <Compile Include="DDacfLOCt_Local.cs" />
+    <Compile Include="DGIS_AFintermedia.cs" />
     <Compile Include="DMovimiento_Transferencia_Activo.cs" />
     <Compile Include="DPostres.cs" />
     <Compile Include="D_PRMVAR.cs" />

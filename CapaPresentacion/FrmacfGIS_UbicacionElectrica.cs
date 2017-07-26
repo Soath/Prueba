@@ -32,7 +32,7 @@ namespace CapaPresentacion
              else
              { lbltultimoid.Text = "No Existe Registro"; }            
              
-            dataListado.DataSource = NacfGIS_UbicacionElectrica.Mostrar("1");
+            dataListado.DataSource = NGIS_AFintermedia.Mostrar();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,7 +40,7 @@ namespace CapaPresentacion
             Form FrmacfGIS_UbicacionElectricaImportar = new FrmacfGIS_UbicacionElectricaImportar();
             FrmacfGIS_UbicacionElectricaImportar.ShowDialog();
 
-            dataListado.DataSource = NacfGIS_UbicacionElectrica.Mostrar("1");
+            dataListado.DataSource = NGIS_AFintermedia.Mostrar();
 
             DataTable dat = NacfGIS_UbicacionElectrica.Last();
             if (dat.Rows.Count > 0)
