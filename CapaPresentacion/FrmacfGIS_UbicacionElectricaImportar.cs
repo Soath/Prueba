@@ -59,7 +59,7 @@ namespace CapaPresentacion
             form.textBox26.Text = row.Cells[25].Value.ToString();
             form.textBox27.Text = row.Cells[26].Value.ToString();
             form.textBox28.Text = row.Cells[27].Value.ToString();
-            
+
             //form.NumFila = dataListado.CurrentRow.Index;
 
             NumFila = dataListado.CurrentRow.Index;

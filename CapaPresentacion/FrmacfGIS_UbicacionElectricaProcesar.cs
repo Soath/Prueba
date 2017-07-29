@@ -15,7 +15,7 @@ namespace CapaPresentacion
         public int NumFila;
         public string var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, 
                       var12, var13, var14, var15, var16, var17, var18, var19, var20, var21, 
-                      var22, var23, var24, var25, var26, var27, var28;
+                      var22, var23, var24, var25, var26, var27, var28, var29;
         public FrmacfGIS_UbicacionElectricaProcesar()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace CapaPresentacion
         private void FrmacfGIS_UbicacionElectricaProcesar_Load_1(object sender, EventArgs e)
         {
             // la variable NumFila resive el numero de la fila del datagrid en el formulario procesar
-            textBox29.Text = NumFila.ToString();
+            textBox30.Text = NumFila.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
