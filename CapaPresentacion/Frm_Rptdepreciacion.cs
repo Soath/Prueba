@@ -88,5 +88,10 @@ namespace CapaPresentacion
             comboBox1.Enabled = false;
             this.comboBox1.Text = "";
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -128,7 +128,7 @@
             // txtACFNETOCRC
             // 
             this.txtACFNETOCRC.Location = new System.Drawing.Point(570, 266);
-            this.txtACFNETOCRC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFNETOCRC.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFNETOCRC.Name = "txtACFNETOCRC";
             this.txtACFNETOCRC.Size = new System.Drawing.Size(187, 20);
             this.txtACFNETOCRC.TabIndex = 177;
@@ -136,7 +136,7 @@
             // txtACFDEPCRC
             // 
             this.txtACFDEPCRC.Location = new System.Drawing.Point(570, 239);
-            this.txtACFDEPCRC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFDEPCRC.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFDEPCRC.Name = "txtACFDEPCRC";
             this.txtACFDEPCRC.Size = new System.Drawing.Size(187, 20);
             this.txtACFDEPCRC.TabIndex = 176;
@@ -144,7 +144,7 @@
             // txtACFCRC
             // 
             this.txtACFCRC.Location = new System.Drawing.Point(570, 207);
-            this.txtACFCRC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFCRC.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFCRC.Name = "txtACFCRC";
             this.txtACFCRC.Size = new System.Drawing.Size(187, 20);
             this.txtACFCRC.TabIndex = 175;
@@ -207,7 +207,7 @@
             // 
             this.cboACFvalorniif.FormattingEnabled = true;
             this.cboACFvalorniif.Location = new System.Drawing.Point(570, 292);
-            this.cboACFvalorniif.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboACFvalorniif.Margin = new System.Windows.Forms.Padding(2);
             this.cboACFvalorniif.Name = "cboACFvalorniif";
             this.cboACFvalorniif.Size = new System.Drawing.Size(187, 21);
             this.cboACFvalorniif.TabIndex = 168;
@@ -215,7 +215,7 @@
             // txtACFTC
             // 
             this.txtACFTC.Location = new System.Drawing.Point(570, 180);
-            this.txtACFTC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFTC.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFTC.Name = "txtACFTC";
             this.txtACFTC.Size = new System.Drawing.Size(187, 20);
             this.txtACFTC.TabIndex = 167;
@@ -223,7 +223,7 @@
             // txtACFValorIR
             // 
             this.txtACFValorIR.Location = new System.Drawing.Point(570, 152);
-            this.txtACFValorIR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFValorIR.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFValorIR.Name = "txtACFValorIR";
             this.txtACFValorIR.Size = new System.Drawing.Size(187, 20);
             this.txtACFValorIR.TabIndex = 166;
@@ -231,7 +231,7 @@
             // kryptonGroupBox1
             // 
             this.kryptonGroupBox1.Location = new System.Drawing.Point(9, 124);
-            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
             // kryptonGroupBox1.Panel
@@ -297,7 +297,7 @@
             // txtEDIfactorasignado
             // 
             this.txtEDIfactorasignado.Location = new System.Drawing.Point(161, 133);
-            this.txtEDIfactorasignado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEDIfactorasignado.Margin = new System.Windows.Forms.Padding(2);
             this.txtEDIfactorasignado.Name = "txtEDIfactorasignado";
             this.txtEDIfactorasignado.Size = new System.Drawing.Size(179, 20);
             this.txtEDIfactorasignado.TabIndex = 4;
@@ -305,7 +305,7 @@
             // txtEDIdescripicion
             // 
             this.txtEDIdescripicion.Location = new System.Drawing.Point(161, 107);
-            this.txtEDIdescripicion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEDIdescripicion.Margin = new System.Windows.Forms.Padding(2);
             this.txtEDIdescripicion.Name = "txtEDIdescripicion";
             this.txtEDIdescripicion.Size = new System.Drawing.Size(179, 20);
             this.txtEDIdescripicion.TabIndex = 3;
@@ -313,7 +313,7 @@
             // txtEDIzona
             // 
             this.txtEDIzona.Location = new System.Drawing.Point(161, 76);
-            this.txtEDIzona.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEDIzona.Margin = new System.Windows.Forms.Padding(2);
             this.txtEDIzona.Name = "txtEDIzona";
             this.txtEDIzona.Size = new System.Drawing.Size(179, 20);
             this.txtEDIzona.TabIndex = 2;
@@ -321,7 +321,7 @@
             // txtACFid
             // 
             this.txtACFid.Location = new System.Drawing.Point(161, 42);
-            this.txtACFid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFid.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFid.Name = "txtACFid";
             this.txtACFid.Size = new System.Drawing.Size(179, 20);
             this.txtACFid.TabIndex = 1;
@@ -329,7 +329,7 @@
             // txtRVAcodigo
             // 
             this.txtRVAcodigo.Location = new System.Drawing.Point(161, 13);
-            this.txtRVAcodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRVAcodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtRVAcodigo.Name = "txtRVAcodigo";
             this.txtRVAcodigo.Size = new System.Drawing.Size(103, 20);
             this.txtRVAcodigo.TabIndex = 0;
@@ -533,7 +533,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(9, 324);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(748, 249);
@@ -544,9 +544,9 @@
             this.tabPage1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.tabPage1.Controls.Add(this.kryptonGroupBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(740, 223);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
@@ -555,7 +555,7 @@
             // kryptonGroupBox2
             // 
             this.kryptonGroupBox2.Location = new System.Drawing.Point(25, 23);
-            this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox2.Name = "kryptonGroupBox2";
             // 
             // kryptonGroupBox2.Panel
@@ -586,7 +586,7 @@
             // txtACFSumDifDed
             // 
             this.txtACFSumDifDed.Location = new System.Drawing.Point(514, 133);
-            this.txtACFSumDifDed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFSumDifDed.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFSumDifDed.Name = "txtACFSumDifDed";
             this.txtACFSumDifDed.Size = new System.Drawing.Size(171, 20);
             this.txtACFSumDifDed.TabIndex = 19;
@@ -594,7 +594,7 @@
             // txtACFDIFNeta
             // 
             this.txtACFDIFNeta.Location = new System.Drawing.Point(514, 106);
-            this.txtACFDIFNeta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFDIFNeta.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFDIFNeta.Name = "txtACFDIFNeta";
             this.txtACFDIFNeta.Size = new System.Drawing.Size(171, 20);
             this.txtACFDIFNeta.TabIndex = 18;
@@ -602,7 +602,7 @@
             // txtACFDISDep
             // 
             this.txtACFDISDep.Location = new System.Drawing.Point(514, 76);
-            this.txtACFDISDep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFDISDep.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFDISDep.Name = "txtACFDISDep";
             this.txtACFDISDep.Size = new System.Drawing.Size(171, 20);
             this.txtACFDISDep.TabIndex = 17;
@@ -610,7 +610,7 @@
             // txtACFINCDep
             // 
             this.txtACFINCDep.Location = new System.Drawing.Point(514, 46);
-            this.txtACFINCDep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFINCDep.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFINCDep.Name = "txtACFINCDep";
             this.txtACFINCDep.Size = new System.Drawing.Size(171, 20);
             this.txtACFINCDep.TabIndex = 16;
@@ -618,7 +618,7 @@
             // txtACFDIFDEP
             // 
             this.txtACFDIFDEP.Location = new System.Drawing.Point(514, 13);
-            this.txtACFDIFDEP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFDIFDEP.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFDIFDEP.Name = "txtACFDIFDEP";
             this.txtACFDIFDEP.Size = new System.Drawing.Size(171, 20);
             this.txtACFDIFDEP.TabIndex = 15;
@@ -715,7 +715,7 @@
             // txtACFDISCosto
             // 
             this.txtACFDISCosto.Location = new System.Drawing.Point(180, 132);
-            this.txtACFDISCosto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFDISCosto.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFDISCosto.Name = "txtACFDISCosto";
             this.txtACFDISCosto.Size = new System.Drawing.Size(171, 20);
             this.txtACFDISCosto.TabIndex = 4;
@@ -723,7 +723,7 @@
             // txtACFINCCosto
             // 
             this.txtACFINCCosto.Location = new System.Drawing.Point(180, 105);
-            this.txtACFINCCosto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFINCCosto.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFINCCosto.Name = "txtACFINCCosto";
             this.txtACFINCCosto.Size = new System.Drawing.Size(171, 20);
             this.txtACFINCCosto.TabIndex = 3;
@@ -731,7 +731,7 @@
             // txtACFDIFCosto
             // 
             this.txtACFDIFCosto.Location = new System.Drawing.Point(180, 75);
-            this.txtACFDIFCosto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFDIFCosto.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFDIFCosto.Name = "txtACFDIFCosto";
             this.txtACFDIFCosto.Size = new System.Drawing.Size(171, 20);
             this.txtACFDIFCosto.TabIndex = 2;
@@ -739,7 +739,7 @@
             // txtACFNETOPCGA
             // 
             this.txtACFNETOPCGA.Location = new System.Drawing.Point(180, 45);
-            this.txtACFNETOPCGA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFNETOPCGA.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFNETOPCGA.Name = "txtACFNETOPCGA";
             this.txtACFNETOPCGA.Size = new System.Drawing.Size(171, 20);
             this.txtACFNETOPCGA.TabIndex = 1;
@@ -747,7 +747,7 @@
             // txtACFdepacuniif
             // 
             this.txtACFdepacuniif.Location = new System.Drawing.Point(180, 12);
-            this.txtACFdepacuniif.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFdepacuniif.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFdepacuniif.Name = "txtACFdepacuniif";
             this.txtACFdepacuniif.Size = new System.Drawing.Size(171, 20);
             this.txtACFdepacuniif.TabIndex = 0;
@@ -756,9 +756,9 @@
             // 
             this.tabPage2.Controls.Add(this.kryptonGroupBox3);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(740, 223);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
@@ -767,7 +767,7 @@
             // kryptonGroupBox3
             // 
             this.kryptonGroupBox3.Location = new System.Drawing.Point(24, 20);
-            this.kryptonGroupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonGroupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonGroupBox3.Name = "kryptonGroupBox3";
             // 
             // kryptonGroupBox3.Panel
@@ -789,7 +789,7 @@
             // 
             this.txtLOClocal.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.txtLOClocal.Location = new System.Drawing.Point(170, 133);
-            this.txtLOClocal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLOClocal.Margin = new System.Windows.Forms.Padding(2);
             this.txtLOClocal.Name = "txtLOClocal";
             this.txtLOClocal.Size = new System.Drawing.Size(171, 20);
             this.txtLOClocal.TabIndex = 19;
@@ -797,7 +797,7 @@
             // txtACFcuenta
             // 
             this.txtACFcuenta.Location = new System.Drawing.Point(170, 106);
-            this.txtACFcuenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFcuenta.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFcuenta.Name = "txtACFcuenta";
             this.txtACFcuenta.Size = new System.Drawing.Size(171, 20);
             this.txtACFcuenta.TabIndex = 18;
@@ -805,7 +805,7 @@
             // txtACFSumPasDif
             // 
             this.txtACFSumPasDif.Location = new System.Drawing.Point(170, 76);
-            this.txtACFSumPasDif.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFSumPasDif.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFSumPasDif.Name = "txtACFSumPasDif";
             this.txtACFSumPasDif.Size = new System.Drawing.Size(171, 20);
             this.txtACFSumPasDif.TabIndex = 17;
@@ -813,7 +813,7 @@
             // txtACFSumACTDif
             // 
             this.txtACFSumACTDif.Location = new System.Drawing.Point(170, 46);
-            this.txtACFSumACTDif.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFSumACTDif.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFSumACTDif.Name = "txtACFSumACTDif";
             this.txtACFSumACTDif.Size = new System.Drawing.Size(171, 20);
             this.txtACFSumACTDif.TabIndex = 16;
@@ -821,7 +821,7 @@
             // txtACFSumDifGra
             // 
             this.txtACFSumDifGra.Location = new System.Drawing.Point(170, 13);
-            this.txtACFSumDifGra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtACFSumDifGra.Margin = new System.Windows.Forms.Padding(2);
             this.txtACFSumDifGra.Name = "txtACFSumDifGra";
             this.txtACFSumDifGra.Size = new System.Drawing.Size(171, 20);
             this.txtACFSumDifGra.TabIndex = 15;

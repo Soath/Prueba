@@ -37,35 +37,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtinvmarca = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtinvserie = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtacfmarca = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtacfserie = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.txtacfmodelo = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtacfcantidad = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtacfunidad = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtacfubicacion = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.txtinvubicacion = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtinvunidad = new System.Windows.Forms.TextBox();
@@ -74,22 +45,25 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txtinvmodelo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtacfalimentador = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtacfset = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtacfelectrico = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtacfgis = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txtacfcircuito = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtacfsed = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtacffin = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtacfinicio = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
+            this.txtinvmarca = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtinvserie = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtacfubicacion = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtacfunidad = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtacfcantidad = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtacfmodelo = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtacfmarca = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtacfserie = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtinvfin = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtinvinicio = new System.Windows.Forms.TextBox();
@@ -106,16 +80,25 @@
             this.label29 = new System.Windows.Forms.Label();
             this.txtinvgis = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.txtacfusopredio = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.txtacfperimetro = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.txtacfareaconstruida = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.txtacfficharegistral = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.txtacffichapredio = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtacffin = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtacfinicio = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txtacfcircuito = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtacfsed = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtacfalimentador = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtacfset = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtacfelectrico = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtacfgis = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txtinvusopredio = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.txtinvperimetro = new System.Windows.Forms.TextBox();
@@ -126,30 +109,19 @@
             this.label39 = new System.Windows.Forms.Label();
             this.txtinvfichapredio = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.txtacfasientos = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.txtacfpasajeros = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.txtacfejes = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.txtacfcombustible = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.txtacfclase = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.txtacfinscripcion = new System.Windows.Forms.TextBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.txtacfexpediente = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.txtacfplaca = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.txtacfancho = new System.Windows.Forms.TextBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.txtacfaltura = new System.Windows.Forms.TextBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.txtacfcarga = new System.Windows.Forms.TextBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.txtacfpeso = new System.Windows.Forms.TextBox();
-            this.label52 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.txtacfusopredio = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.txtacfperimetro = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txtacfareaconstruida = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.txtacfficharegistral = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.txtacffichapredio = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.txtinvancho = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.txtinvaltura = new System.Windows.Forms.TextBox();
@@ -174,28 +146,33 @@
             this.label63 = new System.Windows.Forms.Label();
             this.txtinvplaca = new System.Windows.Forms.TextBox();
             this.label64 = new System.Windows.Forms.Label();
-            this.txtacfpuertos = new System.Windows.Forms.TextBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.txtacfprocesador = new System.Windows.Forms.TextBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.txtacftemperatura = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
-            this.txtacffrecuencia = new System.Windows.Forms.TextBox();
-            this.label69 = new System.Windows.Forms.Label();
-            this.txtacfsalida = new System.Windows.Forms.TextBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.txtacfentrada = new System.Windows.Forms.TextBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.txtacfnominal = new System.Windows.Forms.TextBox();
-            this.label72 = new System.Windows.Forms.Label();
-            this.txtacfpotencia = new System.Windows.Forms.TextBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.txtacfcapacidad = new System.Windows.Forms.TextBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.txtacfresolucion = new System.Windows.Forms.TextBox();
-            this.label75 = new System.Windows.Forms.Label();
-            this.txtacfvelocidad = new System.Windows.Forms.TextBox();
-            this.label76 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.txtacfancho = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.txtacfaltura = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.txtacfcarga = new System.Windows.Forms.TextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.txtacfpeso = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.txtacfasientos = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.txtacfpasajeros = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.txtacfejes = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.txtacfcombustible = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.txtacfclase = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.txtacfinscripcion = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.txtacfexpediente = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.txtacfplaca = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.txtinvpuertos = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
             this.txtinvprocesador = new System.Windows.Forms.TextBox();
@@ -218,6 +195,29 @@
             this.label85 = new System.Windows.Forms.Label();
             this.txtinvvelocidad = new System.Windows.Forms.TextBox();
             this.label86 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.txtacfpuertos = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.txtacfprocesador = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.txtacftemperatura = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.txtacffrecuencia = new System.Windows.Forms.TextBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.txtacfsalida = new System.Windows.Forms.TextBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.txtacfentrada = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.txtacfnominal = new System.Windows.Forms.TextBox();
+            this.label72 = new System.Windows.Forms.Label();
+            this.txtacfpotencia = new System.Windows.Forms.TextBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.txtacfcapacidad = new System.Windows.Forms.TextBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.txtacfresolucion = new System.Windows.Forms.TextBox();
+            this.label75 = new System.Windows.Forms.Label();
+            this.txtacfvelocidad = new System.Windows.Forms.TextBox();
+            this.label76 = new System.Windows.Forms.Label();
             this.cboINV = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -277,6 +277,7 @@
             this.button3.TabIndex = 16;
             this.button3.Text = "Salir";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label4
             // 
@@ -342,6 +343,70 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inventario";
             // 
+            // txtinvubicacion
+            // 
+            this.txtinvubicacion.Location = new System.Drawing.Point(125, 224);
+            this.txtinvubicacion.Name = "txtinvubicacion";
+            this.txtinvubicacion.Size = new System.Drawing.Size(100, 20);
+            this.txtinvubicacion.TabIndex = 19;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(27, 227);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(61, 13);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Ubicación :";
+            // 
+            // txtinvunidad
+            // 
+            this.txtinvunidad.Location = new System.Drawing.Point(125, 188);
+            this.txtinvunidad.Name = "txtinvunidad";
+            this.txtinvunidad.Size = new System.Drawing.Size(100, 20);
+            this.txtinvunidad.TabIndex = 17;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(27, 191);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Unidad";
+            // 
+            // txtinvcantidad
+            // 
+            this.txtinvcantidad.Location = new System.Drawing.Point(125, 152);
+            this.txtinvcantidad.Name = "txtinvcantidad";
+            this.txtinvcantidad.Size = new System.Drawing.Size(100, 20);
+            this.txtinvcantidad.TabIndex = 15;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(27, 155);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(55, 13);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "Cantidad :";
+            // 
+            // txtinvmodelo
+            // 
+            this.txtinvmodelo.Location = new System.Drawing.Point(125, 113);
+            this.txtinvmodelo.Name = "txtinvmodelo";
+            this.txtinvmodelo.Size = new System.Drawing.Size(100, 20);
+            this.txtinvmodelo.TabIndex = 13;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(27, 116);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(48, 13);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Modelo :";
+            // 
             // txtinvmarca
             // 
             this.txtinvmarca.Location = new System.Drawing.Point(125, 75);
@@ -394,6 +459,70 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Activos Fijos";
+            // 
+            // txtacfubicacion
+            // 
+            this.txtacfubicacion.Location = new System.Drawing.Point(132, 224);
+            this.txtacfubicacion.Name = "txtacfubicacion";
+            this.txtacfubicacion.Size = new System.Drawing.Size(100, 20);
+            this.txtacfubicacion.TabIndex = 11;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(34, 227);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(61, 13);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Ubicación :";
+            // 
+            // txtacfunidad
+            // 
+            this.txtacfunidad.Location = new System.Drawing.Point(132, 188);
+            this.txtacfunidad.Name = "txtacfunidad";
+            this.txtacfunidad.Size = new System.Drawing.Size(100, 20);
+            this.txtacfunidad.TabIndex = 9;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(34, 191);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(41, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Unidad";
+            // 
+            // txtacfcantidad
+            // 
+            this.txtacfcantidad.Location = new System.Drawing.Point(132, 152);
+            this.txtacfcantidad.Name = "txtacfcantidad";
+            this.txtacfcantidad.Size = new System.Drawing.Size(100, 20);
+            this.txtacfcantidad.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(34, 155);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 13);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Cantidad :";
+            // 
+            // txtacfmodelo
+            // 
+            this.txtacfmodelo.Location = new System.Drawing.Point(132, 113);
+            this.txtacfmodelo.Name = "txtacfmodelo";
+            this.txtacfmodelo.Size = new System.Drawing.Size(100, 20);
+            this.txtacfmodelo.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(34, 116);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(48, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Modelo :";
             // 
             // txtacfmarca
             // 
@@ -463,486 +592,6 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Inventario";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.txtacffin);
-            this.groupBox4.Controls.Add(this.label27);
-            this.groupBox4.Controls.Add(this.txtacfinicio);
-            this.groupBox4.Controls.Add(this.label28);
-            this.groupBox4.Controls.Add(this.txtacfcircuito);
-            this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.txtacfsed);
-            this.groupBox4.Controls.Add(this.label20);
-            this.groupBox4.Controls.Add(this.txtacfalimentador);
-            this.groupBox4.Controls.Add(this.label15);
-            this.groupBox4.Controls.Add(this.txtacfset);
-            this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Controls.Add(this.txtacfelectrico);
-            this.groupBox4.Controls.Add(this.label17);
-            this.groupBox4.Controls.Add(this.txtacfgis);
-            this.groupBox4.Controls.Add(this.label18);
-            this.groupBox4.Location = new System.Drawing.Point(6, 16);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(246, 326);
-            this.groupBox4.TabIndex = 2;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Activos Fijos";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.groupBox5);
-            this.tabPage3.Controls.Add(this.groupBox6);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(516, 359);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Terrenos y Edificaciones";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.txtinvusopredio);
-            this.groupBox5.Controls.Add(this.label31);
-            this.groupBox5.Controls.Add(this.txtinvperimetro);
-            this.groupBox5.Controls.Add(this.label32);
-            this.groupBox5.Controls.Add(this.txtinvareaconstruida);
-            this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.txtinvficharegistral);
-            this.groupBox5.Controls.Add(this.label39);
-            this.groupBox5.Controls.Add(this.txtinvfichapredio);
-            this.groupBox5.Controls.Add(this.label40);
-            this.groupBox5.Location = new System.Drawing.Point(265, 16);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(246, 326);
-            this.groupBox5.TabIndex = 3;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Inventario";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.txtacfusopredio);
-            this.groupBox6.Controls.Add(this.label34);
-            this.groupBox6.Controls.Add(this.txtacfperimetro);
-            this.groupBox6.Controls.Add(this.label35);
-            this.groupBox6.Controls.Add(this.txtacfareaconstruida);
-            this.groupBox6.Controls.Add(this.label36);
-            this.groupBox6.Controls.Add(this.txtacfficharegistral);
-            this.groupBox6.Controls.Add(this.label37);
-            this.groupBox6.Controls.Add(this.txtacffichapredio);
-            this.groupBox6.Controls.Add(this.label38);
-            this.groupBox6.Location = new System.Drawing.Point(6, 16);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(246, 326);
-            this.groupBox6.TabIndex = 2;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Activos Fijos";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.groupBox7);
-            this.tabPage4.Controls.Add(this.groupBox8);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(516, 359);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Vehículos";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.txtinvancho);
-            this.groupBox7.Controls.Add(this.label53);
-            this.groupBox7.Controls.Add(this.txtinvaltura);
-            this.groupBox7.Controls.Add(this.label54);
-            this.groupBox7.Controls.Add(this.txtinvcarga);
-            this.groupBox7.Controls.Add(this.label55);
-            this.groupBox7.Controls.Add(this.txtinvpeso);
-            this.groupBox7.Controls.Add(this.label56);
-            this.groupBox7.Controls.Add(this.txtinvasientos);
-            this.groupBox7.Controls.Add(this.label57);
-            this.groupBox7.Controls.Add(this.txtinvpasajeros);
-            this.groupBox7.Controls.Add(this.label58);
-            this.groupBox7.Controls.Add(this.txtinvejes);
-            this.groupBox7.Controls.Add(this.label59);
-            this.groupBox7.Controls.Add(this.txtinvcombustible);
-            this.groupBox7.Controls.Add(this.label60);
-            this.groupBox7.Controls.Add(this.txtinvclase);
-            this.groupBox7.Controls.Add(this.label61);
-            this.groupBox7.Controls.Add(this.txtinvinscripcion);
-            this.groupBox7.Controls.Add(this.label62);
-            this.groupBox7.Controls.Add(this.txtinvexpediente);
-            this.groupBox7.Controls.Add(this.label63);
-            this.groupBox7.Controls.Add(this.txtinvplaca);
-            this.groupBox7.Controls.Add(this.label64);
-            this.groupBox7.Location = new System.Drawing.Point(265, 16);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(246, 326);
-            this.groupBox7.TabIndex = 3;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Inventario";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.txtacfancho);
-            this.groupBox8.Controls.Add(this.label49);
-            this.groupBox8.Controls.Add(this.txtacfaltura);
-            this.groupBox8.Controls.Add(this.label50);
-            this.groupBox8.Controls.Add(this.txtacfcarga);
-            this.groupBox8.Controls.Add(this.label51);
-            this.groupBox8.Controls.Add(this.txtacfpeso);
-            this.groupBox8.Controls.Add(this.label52);
-            this.groupBox8.Controls.Add(this.txtacfasientos);
-            this.groupBox8.Controls.Add(this.label41);
-            this.groupBox8.Controls.Add(this.txtacfpasajeros);
-            this.groupBox8.Controls.Add(this.label42);
-            this.groupBox8.Controls.Add(this.txtacfejes);
-            this.groupBox8.Controls.Add(this.label43);
-            this.groupBox8.Controls.Add(this.txtacfcombustible);
-            this.groupBox8.Controls.Add(this.label44);
-            this.groupBox8.Controls.Add(this.txtacfclase);
-            this.groupBox8.Controls.Add(this.label45);
-            this.groupBox8.Controls.Add(this.txtacfinscripcion);
-            this.groupBox8.Controls.Add(this.label46);
-            this.groupBox8.Controls.Add(this.txtacfexpediente);
-            this.groupBox8.Controls.Add(this.label47);
-            this.groupBox8.Controls.Add(this.txtacfplaca);
-            this.groupBox8.Controls.Add(this.label48);
-            this.groupBox8.Location = new System.Drawing.Point(6, 16);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(246, 326);
-            this.groupBox8.TabIndex = 2;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Activos Fijos";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.groupBox9);
-            this.tabPage5.Controls.Add(this.groupBox10);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(516, 359);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Equipos";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.txtinvpuertos);
-            this.groupBox9.Controls.Add(this.label65);
-            this.groupBox9.Controls.Add(this.txtinvprocesador);
-            this.groupBox9.Controls.Add(this.label77);
-            this.groupBox9.Controls.Add(this.txtinvtemperatura);
-            this.groupBox9.Controls.Add(this.label78);
-            this.groupBox9.Controls.Add(this.txtinvfrecuencia);
-            this.groupBox9.Controls.Add(this.label79);
-            this.groupBox9.Controls.Add(this.txtinvsalida);
-            this.groupBox9.Controls.Add(this.label80);
-            this.groupBox9.Controls.Add(this.txtinventrada);
-            this.groupBox9.Controls.Add(this.label81);
-            this.groupBox9.Controls.Add(this.txtinvnominal);
-            this.groupBox9.Controls.Add(this.label82);
-            this.groupBox9.Controls.Add(this.txtinvpotencia);
-            this.groupBox9.Controls.Add(this.label83);
-            this.groupBox9.Controls.Add(this.txtinvcapacidad);
-            this.groupBox9.Controls.Add(this.label84);
-            this.groupBox9.Controls.Add(this.txtinvresolucion);
-            this.groupBox9.Controls.Add(this.label85);
-            this.groupBox9.Controls.Add(this.txtinvvelocidad);
-            this.groupBox9.Controls.Add(this.label86);
-            this.groupBox9.Location = new System.Drawing.Point(265, 16);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(246, 326);
-            this.groupBox9.TabIndex = 3;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Inventario";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.txtacfpuertos);
-            this.groupBox10.Controls.Add(this.label66);
-            this.groupBox10.Controls.Add(this.txtacfprocesador);
-            this.groupBox10.Controls.Add(this.label67);
-            this.groupBox10.Controls.Add(this.txtacftemperatura);
-            this.groupBox10.Controls.Add(this.label68);
-            this.groupBox10.Controls.Add(this.txtacffrecuencia);
-            this.groupBox10.Controls.Add(this.label69);
-            this.groupBox10.Controls.Add(this.txtacfsalida);
-            this.groupBox10.Controls.Add(this.label70);
-            this.groupBox10.Controls.Add(this.txtacfentrada);
-            this.groupBox10.Controls.Add(this.label71);
-            this.groupBox10.Controls.Add(this.txtacfnominal);
-            this.groupBox10.Controls.Add(this.label72);
-            this.groupBox10.Controls.Add(this.txtacfpotencia);
-            this.groupBox10.Controls.Add(this.label73);
-            this.groupBox10.Controls.Add(this.txtacfcapacidad);
-            this.groupBox10.Controls.Add(this.label74);
-            this.groupBox10.Controls.Add(this.txtacfresolucion);
-            this.groupBox10.Controls.Add(this.label75);
-            this.groupBox10.Controls.Add(this.txtacfvelocidad);
-            this.groupBox10.Controls.Add(this.label76);
-            this.groupBox10.Location = new System.Drawing.Point(6, 16);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(246, 326);
-            this.groupBox10.TabIndex = 2;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Activos Fijos";
-            // 
-            // txtacfmodelo
-            // 
-            this.txtacfmodelo.Location = new System.Drawing.Point(132, 113);
-            this.txtacfmodelo.Name = "txtacfmodelo";
-            this.txtacfmodelo.Size = new System.Drawing.Size(100, 20);
-            this.txtacfmodelo.TabIndex = 5;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(34, 116);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Modelo :";
-            // 
-            // txtacfcantidad
-            // 
-            this.txtacfcantidad.Location = new System.Drawing.Point(132, 152);
-            this.txtacfcantidad.Name = "txtacfcantidad";
-            this.txtacfcantidad.Size = new System.Drawing.Size(100, 20);
-            this.txtacfcantidad.TabIndex = 7;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(34, 155);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 13);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Cantidad :";
-            // 
-            // txtacfunidad
-            // 
-            this.txtacfunidad.Location = new System.Drawing.Point(132, 188);
-            this.txtacfunidad.Name = "txtacfunidad";
-            this.txtacfunidad.Size = new System.Drawing.Size(100, 20);
-            this.txtacfunidad.TabIndex = 9;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(34, 191);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Unidad";
-            // 
-            // txtacfubicacion
-            // 
-            this.txtacfubicacion.Location = new System.Drawing.Point(132, 224);
-            this.txtacfubicacion.Name = "txtacfubicacion";
-            this.txtacfubicacion.Size = new System.Drawing.Size(100, 20);
-            this.txtacfubicacion.TabIndex = 11;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(34, 227);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 13);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Ubicación :";
-            // 
-            // txtinvubicacion
-            // 
-            this.txtinvubicacion.Location = new System.Drawing.Point(125, 224);
-            this.txtinvubicacion.Name = "txtinvubicacion";
-            this.txtinvubicacion.Size = new System.Drawing.Size(100, 20);
-            this.txtinvubicacion.TabIndex = 19;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(27, 227);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 13);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Ubicación :";
-            // 
-            // txtinvunidad
-            // 
-            this.txtinvunidad.Location = new System.Drawing.Point(125, 188);
-            this.txtinvunidad.Name = "txtinvunidad";
-            this.txtinvunidad.Size = new System.Drawing.Size(100, 20);
-            this.txtinvunidad.TabIndex = 17;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(27, 191);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "Unidad";
-            // 
-            // txtinvcantidad
-            // 
-            this.txtinvcantidad.Location = new System.Drawing.Point(125, 152);
-            this.txtinvcantidad.Name = "txtinvcantidad";
-            this.txtinvcantidad.Size = new System.Drawing.Size(100, 20);
-            this.txtinvcantidad.TabIndex = 15;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(27, 155);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 13);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Cantidad :";
-            // 
-            // txtinvmodelo
-            // 
-            this.txtinvmodelo.Location = new System.Drawing.Point(125, 113);
-            this.txtinvmodelo.Name = "txtinvmodelo";
-            this.txtinvmodelo.Size = new System.Drawing.Size(100, 20);
-            this.txtinvmodelo.TabIndex = 13;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(27, 116);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 13);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "Modelo :";
-            // 
-            // txtacfalimentador
-            // 
-            this.txtacfalimentador.Location = new System.Drawing.Point(117, 140);
-            this.txtacfalimentador.Name = "txtacfalimentador";
-            this.txtacfalimentador.Size = new System.Drawing.Size(100, 20);
-            this.txtacfalimentador.TabIndex = 19;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(19, 143);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(68, 13);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "Alimentador :";
-            // 
-            // txtacfset
-            // 
-            this.txtacfset.Location = new System.Drawing.Point(117, 104);
-            this.txtacfset.Name = "txtacfset";
-            this.txtacfset.Size = new System.Drawing.Size(100, 20);
-            this.txtacfset.TabIndex = 17;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(19, 107);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(34, 13);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "SET :";
-            // 
-            // txtacfelectrico
-            // 
-            this.txtacfelectrico.Location = new System.Drawing.Point(117, 68);
-            this.txtacfelectrico.Name = "txtacfelectrico";
-            this.txtacfelectrico.Size = new System.Drawing.Size(100, 20);
-            this.txtacfelectrico.TabIndex = 15;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(19, 71);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(94, 13);
-            this.label17.TabIndex = 14;
-            this.label17.Text = "Sistema Eléctrico :";
-            // 
-            // txtacfgis
-            // 
-            this.txtacfgis.Location = new System.Drawing.Point(117, 29);
-            this.txtacfgis.Name = "txtacfgis";
-            this.txtacfgis.Size = new System.Drawing.Size(100, 20);
-            this.txtacfgis.TabIndex = 13;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(19, 32);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(67, 13);
-            this.label18.TabIndex = 12;
-            this.label18.Text = "Código GIS :";
-            // 
-            // txtacfcircuito
-            // 
-            this.txtacfcircuito.Location = new System.Drawing.Point(117, 213);
-            this.txtacfcircuito.Name = "txtacfcircuito";
-            this.txtacfcircuito.Size = new System.Drawing.Size(100, 20);
-            this.txtacfcircuito.TabIndex = 23;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(19, 216);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(48, 13);
-            this.label19.TabIndex = 22;
-            this.label19.Text = "Circuito :";
-            // 
-            // txtacfsed
-            // 
-            this.txtacfsed.Location = new System.Drawing.Point(117, 177);
-            this.txtacfsed.Name = "txtacfsed";
-            this.txtacfsed.Size = new System.Drawing.Size(100, 20);
-            this.txtacfsed.TabIndex = 21;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(19, 180);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(35, 13);
-            this.label20.TabIndex = 20;
-            this.label20.Text = "SED :";
-            // 
-            // txtacffin
-            // 
-            this.txtacffin.Location = new System.Drawing.Point(117, 286);
-            this.txtacffin.Name = "txtacffin";
-            this.txtacffin.Size = new System.Drawing.Size(100, 20);
-            this.txtacffin.TabIndex = 39;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(19, 289);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(58, 13);
-            this.label27.TabIndex = 38;
-            this.label27.Text = "Punto Fin :";
-            // 
-            // txtacfinicio
-            // 
-            this.txtacfinicio.Location = new System.Drawing.Point(117, 250);
-            this.txtacfinicio.Name = "txtacfinicio";
-            this.txtacfinicio.Size = new System.Drawing.Size(100, 20);
-            this.txtacfinicio.TabIndex = 37;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(19, 253);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(69, 13);
-            this.label28.TabIndex = 36;
-            this.label28.Text = "Punto Inicio :";
             // 
             // txtinvfin
             // 
@@ -1072,84 +721,188 @@
             this.label30.TabIndex = 40;
             this.label30.Text = "Código GIS :";
             // 
-            // txtacfusopredio
+            // groupBox4
             // 
-            this.txtacfusopredio.Location = new System.Drawing.Point(122, 179);
-            this.txtacfusopredio.Name = "txtacfusopredio";
-            this.txtacfusopredio.Size = new System.Drawing.Size(100, 20);
-            this.txtacfusopredio.TabIndex = 49;
+            this.groupBox4.Controls.Add(this.txtacffin);
+            this.groupBox4.Controls.Add(this.label27);
+            this.groupBox4.Controls.Add(this.txtacfinicio);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Controls.Add(this.txtacfcircuito);
+            this.groupBox4.Controls.Add(this.label19);
+            this.groupBox4.Controls.Add(this.txtacfsed);
+            this.groupBox4.Controls.Add(this.label20);
+            this.groupBox4.Controls.Add(this.txtacfalimentador);
+            this.groupBox4.Controls.Add(this.label15);
+            this.groupBox4.Controls.Add(this.txtacfset);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.txtacfelectrico);
+            this.groupBox4.Controls.Add(this.label17);
+            this.groupBox4.Controls.Add(this.txtacfgis);
+            this.groupBox4.Controls.Add(this.label18);
+            this.groupBox4.Location = new System.Drawing.Point(6, 16);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(246, 326);
+            this.groupBox4.TabIndex = 2;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Activos Fijos";
             // 
-            // label34
+            // txtacffin
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(24, 182);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(82, 13);
-            this.label34.TabIndex = 48;
-            this.label34.Text = "Uso del Predio :";
+            this.txtacffin.Location = new System.Drawing.Point(117, 286);
+            this.txtacffin.Name = "txtacffin";
+            this.txtacffin.Size = new System.Drawing.Size(100, 20);
+            this.txtacffin.TabIndex = 39;
             // 
-            // txtacfperimetro
+            // label27
             // 
-            this.txtacfperimetro.Location = new System.Drawing.Point(122, 142);
-            this.txtacfperimetro.Name = "txtacfperimetro";
-            this.txtacfperimetro.Size = new System.Drawing.Size(100, 20);
-            this.txtacfperimetro.TabIndex = 47;
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(19, 289);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(58, 13);
+            this.label27.TabIndex = 38;
+            this.label27.Text = "Punto Fin :";
             // 
-            // label35
+            // txtacfinicio
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(24, 145);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(59, 13);
-            this.label35.TabIndex = 46;
-            this.label35.Text = "Perímetro :";
+            this.txtacfinicio.Location = new System.Drawing.Point(117, 250);
+            this.txtacfinicio.Name = "txtacfinicio";
+            this.txtacfinicio.Size = new System.Drawing.Size(100, 20);
+            this.txtacfinicio.TabIndex = 37;
             // 
-            // txtacfareaconstruida
+            // label28
             // 
-            this.txtacfareaconstruida.Location = new System.Drawing.Point(122, 106);
-            this.txtacfareaconstruida.Name = "txtacfareaconstruida";
-            this.txtacfareaconstruida.Size = new System.Drawing.Size(100, 20);
-            this.txtacfareaconstruida.TabIndex = 45;
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(19, 253);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(69, 13);
+            this.label28.TabIndex = 36;
+            this.label28.Text = "Punto Inicio :";
             // 
-            // label36
+            // txtacfcircuito
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(24, 109);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(88, 13);
-            this.label36.TabIndex = 44;
-            this.label36.Text = "Área Construida :";
+            this.txtacfcircuito.Location = new System.Drawing.Point(117, 213);
+            this.txtacfcircuito.Name = "txtacfcircuito";
+            this.txtacfcircuito.Size = new System.Drawing.Size(100, 20);
+            this.txtacfcircuito.TabIndex = 23;
             // 
-            // txtacfficharegistral
+            // label19
             // 
-            this.txtacfficharegistral.Location = new System.Drawing.Point(122, 70);
-            this.txtacfficharegistral.Name = "txtacfficharegistral";
-            this.txtacfficharegistral.Size = new System.Drawing.Size(100, 20);
-            this.txtacfficharegistral.TabIndex = 43;
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(19, 216);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(48, 13);
+            this.label19.TabIndex = 22;
+            this.label19.Text = "Circuito :";
             // 
-            // label37
+            // txtacfsed
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(24, 73);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(83, 13);
-            this.label37.TabIndex = 42;
-            this.label37.Text = "Ficha Registral :";
+            this.txtacfsed.Location = new System.Drawing.Point(117, 177);
+            this.txtacfsed.Name = "txtacfsed";
+            this.txtacfsed.Size = new System.Drawing.Size(100, 20);
+            this.txtacfsed.TabIndex = 21;
             // 
-            // txtacffichapredio
+            // label20
             // 
-            this.txtacffichapredio.Location = new System.Drawing.Point(122, 33);
-            this.txtacffichapredio.Name = "txtacffichapredio";
-            this.txtacffichapredio.Size = new System.Drawing.Size(100, 20);
-            this.txtacffichapredio.TabIndex = 41;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(19, 180);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(35, 13);
+            this.label20.TabIndex = 20;
+            this.label20.Text = "SED :";
             // 
-            // label38
+            // txtacfalimentador
             // 
-            this.label38.Location = new System.Drawing.Point(24, 28);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(92, 28);
-            this.label38.TabIndex = 40;
-            this.label38.Text = "Ficha de Insc. de Predio :";
+            this.txtacfalimentador.Location = new System.Drawing.Point(117, 140);
+            this.txtacfalimentador.Name = "txtacfalimentador";
+            this.txtacfalimentador.Size = new System.Drawing.Size(100, 20);
+            this.txtacfalimentador.TabIndex = 19;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(19, 143);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(68, 13);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Alimentador :";
+            // 
+            // txtacfset
+            // 
+            this.txtacfset.Location = new System.Drawing.Point(117, 104);
+            this.txtacfset.Name = "txtacfset";
+            this.txtacfset.Size = new System.Drawing.Size(100, 20);
+            this.txtacfset.TabIndex = 17;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(19, 107);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(34, 13);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "SET :";
+            // 
+            // txtacfelectrico
+            // 
+            this.txtacfelectrico.Location = new System.Drawing.Point(117, 68);
+            this.txtacfelectrico.Name = "txtacfelectrico";
+            this.txtacfelectrico.Size = new System.Drawing.Size(100, 20);
+            this.txtacfelectrico.TabIndex = 15;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(19, 71);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(94, 13);
+            this.label17.TabIndex = 14;
+            this.label17.Text = "Sistema Eléctrico :";
+            // 
+            // txtacfgis
+            // 
+            this.txtacfgis.Location = new System.Drawing.Point(117, 29);
+            this.txtacfgis.Name = "txtacfgis";
+            this.txtacfgis.Size = new System.Drawing.Size(100, 20);
+            this.txtacfgis.TabIndex = 13;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(19, 32);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(67, 13);
+            this.label18.TabIndex = 12;
+            this.label18.Text = "Código GIS :";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.groupBox5);
+            this.tabPage3.Controls.Add(this.groupBox6);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(516, 359);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Terrenos y Edificaciones";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.txtinvusopredio);
+            this.groupBox5.Controls.Add(this.label31);
+            this.groupBox5.Controls.Add(this.txtinvperimetro);
+            this.groupBox5.Controls.Add(this.label32);
+            this.groupBox5.Controls.Add(this.txtinvareaconstruida);
+            this.groupBox5.Controls.Add(this.label33);
+            this.groupBox5.Controls.Add(this.txtinvficharegistral);
+            this.groupBox5.Controls.Add(this.label39);
+            this.groupBox5.Controls.Add(this.txtinvfichapredio);
+            this.groupBox5.Controls.Add(this.label40);
+            this.groupBox5.Location = new System.Drawing.Point(265, 16);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(246, 326);
+            this.groupBox5.TabIndex = 3;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Inventario";
             // 
             // txtinvusopredio
             // 
@@ -1230,197 +983,147 @@
             this.label40.TabIndex = 50;
             this.label40.Text = "Ficha de Insc. de Predio :";
             // 
-            // txtacfasientos
+            // groupBox6
             // 
-            this.txtacfasientos.Location = new System.Drawing.Point(122, 196);
-            this.txtacfasientos.Name = "txtacfasientos";
-            this.txtacfasientos.Size = new System.Drawing.Size(100, 20);
-            this.txtacfasientos.TabIndex = 55;
+            this.groupBox6.Controls.Add(this.txtacfusopredio);
+            this.groupBox6.Controls.Add(this.label34);
+            this.groupBox6.Controls.Add(this.txtacfperimetro);
+            this.groupBox6.Controls.Add(this.label35);
+            this.groupBox6.Controls.Add(this.txtacfareaconstruida);
+            this.groupBox6.Controls.Add(this.label36);
+            this.groupBox6.Controls.Add(this.txtacfficharegistral);
+            this.groupBox6.Controls.Add(this.label37);
+            this.groupBox6.Controls.Add(this.txtacffichapredio);
+            this.groupBox6.Controls.Add(this.label38);
+            this.groupBox6.Location = new System.Drawing.Point(6, 16);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(246, 326);
+            this.groupBox6.TabIndex = 2;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Activos Fijos";
             // 
-            // label41
+            // txtacfusopredio
             // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(24, 199);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(78, 13);
-            this.label41.TabIndex = 54;
-            this.label41.Text = "# de Asientos :";
+            this.txtacfusopredio.Location = new System.Drawing.Point(122, 179);
+            this.txtacfusopredio.Name = "txtacfusopredio";
+            this.txtacfusopredio.Size = new System.Drawing.Size(100, 20);
+            this.txtacfusopredio.TabIndex = 49;
             // 
-            // txtacfpasajeros
+            // label34
             // 
-            this.txtacfpasajeros.Location = new System.Drawing.Point(122, 170);
-            this.txtacfpasajeros.Name = "txtacfpasajeros";
-            this.txtacfpasajeros.Size = new System.Drawing.Size(100, 20);
-            this.txtacfpasajeros.TabIndex = 53;
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(24, 182);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(82, 13);
+            this.label34.TabIndex = 48;
+            this.label34.Text = "Uso del Predio :";
             // 
-            // label42
+            // txtacfperimetro
             // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(24, 173);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(84, 13);
-            this.label42.TabIndex = 52;
-            this.label42.Text = "# de Pasajeros :";
+            this.txtacfperimetro.Location = new System.Drawing.Point(122, 142);
+            this.txtacfperimetro.Name = "txtacfperimetro";
+            this.txtacfperimetro.Size = new System.Drawing.Size(100, 20);
+            this.txtacfperimetro.TabIndex = 47;
             // 
-            // txtacfejes
+            // label35
             // 
-            this.txtacfejes.Location = new System.Drawing.Point(122, 144);
-            this.txtacfejes.Name = "txtacfejes";
-            this.txtacfejes.Size = new System.Drawing.Size(100, 20);
-            this.txtacfejes.TabIndex = 51;
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(24, 145);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(59, 13);
+            this.label35.TabIndex = 46;
+            this.label35.Text = "Perímetro :";
             // 
-            // label43
+            // txtacfareaconstruida
             // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(24, 147);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(88, 13);
-            this.label43.TabIndex = 50;
-            this.label43.Text = "Ejes de Vehículo";
+            this.txtacfareaconstruida.Location = new System.Drawing.Point(122, 106);
+            this.txtacfareaconstruida.Name = "txtacfareaconstruida";
+            this.txtacfareaconstruida.Size = new System.Drawing.Size(100, 20);
+            this.txtacfareaconstruida.TabIndex = 45;
             // 
-            // txtacfcombustible
+            // label36
             // 
-            this.txtacfcombustible.Location = new System.Drawing.Point(122, 118);
-            this.txtacfcombustible.Name = "txtacfcombustible";
-            this.txtacfcombustible.Size = new System.Drawing.Size(100, 20);
-            this.txtacfcombustible.TabIndex = 49;
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(24, 109);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(88, 13);
+            this.label36.TabIndex = 44;
+            this.label36.Text = "Área Construida :";
             // 
-            // label44
+            // txtacfficharegistral
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(24, 121);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(70, 13);
-            this.label44.TabIndex = 48;
-            this.label44.Text = "Combustible :";
+            this.txtacfficharegistral.Location = new System.Drawing.Point(122, 70);
+            this.txtacfficharegistral.Name = "txtacfficharegistral";
+            this.txtacfficharegistral.Size = new System.Drawing.Size(100, 20);
+            this.txtacfficharegistral.TabIndex = 43;
             // 
-            // txtacfclase
+            // label37
             // 
-            this.txtacfclase.Location = new System.Drawing.Point(122, 92);
-            this.txtacfclase.Name = "txtacfclase";
-            this.txtacfclase.Size = new System.Drawing.Size(100, 20);
-            this.txtacfclase.TabIndex = 47;
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(24, 73);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(83, 13);
+            this.label37.TabIndex = 42;
+            this.label37.Text = "Ficha Registral :";
             // 
-            // label45
+            // txtacffichapredio
             // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(24, 95);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(100, 13);
-            this.label45.TabIndex = 46;
-            this.label45.Text = "Clase de Vehículo :";
+            this.txtacffichapredio.Location = new System.Drawing.Point(122, 33);
+            this.txtacffichapredio.Name = "txtacffichapredio";
+            this.txtacffichapredio.Size = new System.Drawing.Size(100, 20);
+            this.txtacffichapredio.TabIndex = 41;
             // 
-            // txtacfinscripcion
+            // label38
             // 
-            this.txtacfinscripcion.Location = new System.Drawing.Point(122, 66);
-            this.txtacfinscripcion.Name = "txtacfinscripcion";
-            this.txtacfinscripcion.Size = new System.Drawing.Size(100, 20);
-            this.txtacfinscripcion.TabIndex = 45;
+            this.label38.Location = new System.Drawing.Point(24, 28);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(92, 28);
+            this.label38.TabIndex = 40;
+            this.label38.Text = "Ficha de Insc. de Predio :";
             // 
-            // label46
+            // tabPage4
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(24, 69);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(97, 13);
-            this.label46.TabIndex = 44;
-            this.label46.Text = "Insc. de Vehículo :";
+            this.tabPage4.Controls.Add(this.groupBox7);
+            this.tabPage4.Controls.Add(this.groupBox8);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(516, 359);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Vehículos";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // txtacfexpediente
+            // groupBox7
             // 
-            this.txtacfexpediente.Location = new System.Drawing.Point(122, 40);
-            this.txtacfexpediente.Name = "txtacfexpediente";
-            this.txtacfexpediente.Size = new System.Drawing.Size(100, 20);
-            this.txtacfexpediente.TabIndex = 43;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(24, 43);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(95, 13);
-            this.label47.TabIndex = 42;
-            this.label47.Text = "Exp. de Vehículo :";
-            // 
-            // txtacfplaca
-            // 
-            this.txtacfplaca.Location = new System.Drawing.Point(122, 14);
-            this.txtacfplaca.Name = "txtacfplaca";
-            this.txtacfplaca.Size = new System.Drawing.Size(100, 20);
-            this.txtacfplaca.TabIndex = 41;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(24, 17);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(101, 13);
-            this.label48.TabIndex = 40;
-            this.label48.Text = "Placa de Vehículo :";
-            // 
-            // txtacfancho
-            // 
-            this.txtacfancho.Location = new System.Drawing.Point(122, 300);
-            this.txtacfancho.Name = "txtacfancho";
-            this.txtacfancho.Size = new System.Drawing.Size(100, 20);
-            this.txtacfancho.TabIndex = 63;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(24, 303);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(44, 13);
-            this.label49.TabIndex = 62;
-            this.label49.Text = "Ancho :";
-            // 
-            // txtacfaltura
-            // 
-            this.txtacfaltura.Location = new System.Drawing.Point(122, 274);
-            this.txtacfaltura.Name = "txtacfaltura";
-            this.txtacfaltura.Size = new System.Drawing.Size(100, 20);
-            this.txtacfaltura.TabIndex = 61;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(24, 277);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(40, 13);
-            this.label50.TabIndex = 60;
-            this.label50.Text = "Altura :";
-            // 
-            // txtacfcarga
-            // 
-            this.txtacfcarga.Location = new System.Drawing.Point(122, 248);
-            this.txtacfcarga.Name = "txtacfcarga";
-            this.txtacfcarga.Size = new System.Drawing.Size(100, 20);
-            this.txtacfcarga.TabIndex = 59;
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(24, 251);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(59, 13);
-            this.label51.TabIndex = 58;
-            this.label51.Text = "Carga Útil :";
-            // 
-            // txtacfpeso
-            // 
-            this.txtacfpeso.Location = new System.Drawing.Point(122, 222);
-            this.txtacfpeso.Name = "txtacfpeso";
-            this.txtacfpeso.Size = new System.Drawing.Size(100, 20);
-            this.txtacfpeso.TabIndex = 57;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(24, 225);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(65, 13);
-            this.label52.TabIndex = 56;
-            this.label52.Text = "Peso Seco :";
+            this.groupBox7.Controls.Add(this.txtinvancho);
+            this.groupBox7.Controls.Add(this.label53);
+            this.groupBox7.Controls.Add(this.txtinvaltura);
+            this.groupBox7.Controls.Add(this.label54);
+            this.groupBox7.Controls.Add(this.txtinvcarga);
+            this.groupBox7.Controls.Add(this.label55);
+            this.groupBox7.Controls.Add(this.txtinvpeso);
+            this.groupBox7.Controls.Add(this.label56);
+            this.groupBox7.Controls.Add(this.txtinvasientos);
+            this.groupBox7.Controls.Add(this.label57);
+            this.groupBox7.Controls.Add(this.txtinvpasajeros);
+            this.groupBox7.Controls.Add(this.label58);
+            this.groupBox7.Controls.Add(this.txtinvejes);
+            this.groupBox7.Controls.Add(this.label59);
+            this.groupBox7.Controls.Add(this.txtinvcombustible);
+            this.groupBox7.Controls.Add(this.label60);
+            this.groupBox7.Controls.Add(this.txtinvclase);
+            this.groupBox7.Controls.Add(this.label61);
+            this.groupBox7.Controls.Add(this.txtinvinscripcion);
+            this.groupBox7.Controls.Add(this.label62);
+            this.groupBox7.Controls.Add(this.txtinvexpediente);
+            this.groupBox7.Controls.Add(this.label63);
+            this.groupBox7.Controls.Add(this.txtinvplaca);
+            this.groupBox7.Controls.Add(this.label64);
+            this.groupBox7.Location = new System.Drawing.Point(265, 16);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(246, 326);
+            this.groupBox7.TabIndex = 3;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Inventario";
             // 
             // txtinvancho
             // 
@@ -1614,181 +1317,272 @@
             this.label64.TabIndex = 64;
             this.label64.Text = "Placa de Vehículo :";
             // 
-            // txtacfpuertos
+            // groupBox8
             // 
-            this.txtacfpuertos.Location = new System.Drawing.Point(123, 286);
-            this.txtacfpuertos.Name = "txtacfpuertos";
-            this.txtacfpuertos.Size = new System.Drawing.Size(100, 20);
-            this.txtacfpuertos.TabIndex = 85;
+            this.groupBox8.Controls.Add(this.txtacfancho);
+            this.groupBox8.Controls.Add(this.label49);
+            this.groupBox8.Controls.Add(this.txtacfaltura);
+            this.groupBox8.Controls.Add(this.label50);
+            this.groupBox8.Controls.Add(this.txtacfcarga);
+            this.groupBox8.Controls.Add(this.label51);
+            this.groupBox8.Controls.Add(this.txtacfpeso);
+            this.groupBox8.Controls.Add(this.label52);
+            this.groupBox8.Controls.Add(this.txtacfasientos);
+            this.groupBox8.Controls.Add(this.label41);
+            this.groupBox8.Controls.Add(this.txtacfpasajeros);
+            this.groupBox8.Controls.Add(this.label42);
+            this.groupBox8.Controls.Add(this.txtacfejes);
+            this.groupBox8.Controls.Add(this.label43);
+            this.groupBox8.Controls.Add(this.txtacfcombustible);
+            this.groupBox8.Controls.Add(this.label44);
+            this.groupBox8.Controls.Add(this.txtacfclase);
+            this.groupBox8.Controls.Add(this.label45);
+            this.groupBox8.Controls.Add(this.txtacfinscripcion);
+            this.groupBox8.Controls.Add(this.label46);
+            this.groupBox8.Controls.Add(this.txtacfexpediente);
+            this.groupBox8.Controls.Add(this.label47);
+            this.groupBox8.Controls.Add(this.txtacfplaca);
+            this.groupBox8.Controls.Add(this.label48);
+            this.groupBox8.Location = new System.Drawing.Point(6, 16);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(246, 326);
+            this.groupBox8.TabIndex = 2;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Activos Fijos";
             // 
-            // label66
+            // txtacfancho
             // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(25, 289);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(49, 13);
-            this.label66.TabIndex = 84;
-            this.label66.Text = "Puertos :";
+            this.txtacfancho.Location = new System.Drawing.Point(122, 300);
+            this.txtacfancho.Name = "txtacfancho";
+            this.txtacfancho.Size = new System.Drawing.Size(100, 20);
+            this.txtacfancho.TabIndex = 63;
             // 
-            // txtacfprocesador
+            // label49
             // 
-            this.txtacfprocesador.Location = new System.Drawing.Point(123, 260);
-            this.txtacfprocesador.Name = "txtacfprocesador";
-            this.txtacfprocesador.Size = new System.Drawing.Size(100, 20);
-            this.txtacfprocesador.TabIndex = 83;
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(24, 303);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(44, 13);
+            this.label49.TabIndex = 62;
+            this.label49.Text = "Ancho :";
             // 
-            // label67
+            // txtacfaltura
             // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(25, 263);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(67, 13);
-            this.label67.TabIndex = 82;
-            this.label67.Text = "Procesador :";
+            this.txtacfaltura.Location = new System.Drawing.Point(122, 274);
+            this.txtacfaltura.Name = "txtacfaltura";
+            this.txtacfaltura.Size = new System.Drawing.Size(100, 20);
+            this.txtacfaltura.TabIndex = 61;
             // 
-            // txtacftemperatura
+            // label50
             // 
-            this.txtacftemperatura.Location = new System.Drawing.Point(123, 234);
-            this.txtacftemperatura.Name = "txtacftemperatura";
-            this.txtacftemperatura.Size = new System.Drawing.Size(100, 20);
-            this.txtacftemperatura.TabIndex = 81;
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(24, 277);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(40, 13);
+            this.label50.TabIndex = 60;
+            this.label50.Text = "Altura :";
             // 
-            // label68
+            // txtacfcarga
             // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(25, 237);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(73, 13);
-            this.label68.TabIndex = 80;
-            this.label68.Text = "Temperatura :";
+            this.txtacfcarga.Location = new System.Drawing.Point(122, 248);
+            this.txtacfcarga.Name = "txtacfcarga";
+            this.txtacfcarga.Size = new System.Drawing.Size(100, 20);
+            this.txtacfcarga.TabIndex = 59;
             // 
-            // txtacffrecuencia
+            // label51
             // 
-            this.txtacffrecuencia.Location = new System.Drawing.Point(123, 208);
-            this.txtacffrecuencia.Name = "txtacffrecuencia";
-            this.txtacffrecuencia.Size = new System.Drawing.Size(100, 20);
-            this.txtacffrecuencia.TabIndex = 79;
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(24, 251);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(59, 13);
+            this.label51.TabIndex = 58;
+            this.label51.Text = "Carga Útil :";
             // 
-            // label69
+            // txtacfpeso
             // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(25, 211);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(66, 13);
-            this.label69.TabIndex = 78;
-            this.label69.Text = "Frecuencia :";
+            this.txtacfpeso.Location = new System.Drawing.Point(122, 222);
+            this.txtacfpeso.Name = "txtacfpeso";
+            this.txtacfpeso.Size = new System.Drawing.Size(100, 20);
+            this.txtacfpeso.TabIndex = 57;
             // 
-            // txtacfsalida
+            // label52
             // 
-            this.txtacfsalida.Location = new System.Drawing.Point(123, 182);
-            this.txtacfsalida.Name = "txtacfsalida";
-            this.txtacfsalida.Size = new System.Drawing.Size(100, 20);
-            this.txtacfsalida.TabIndex = 77;
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(24, 225);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(65, 13);
+            this.label52.TabIndex = 56;
+            this.label52.Text = "Peso Seco :";
             // 
-            // label70
+            // txtacfasientos
             // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(25, 185);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(84, 13);
-            this.label70.TabIndex = 76;
-            this.label70.Text = "Valor de Salida :";
+            this.txtacfasientos.Location = new System.Drawing.Point(122, 196);
+            this.txtacfasientos.Name = "txtacfasientos";
+            this.txtacfasientos.Size = new System.Drawing.Size(100, 20);
+            this.txtacfasientos.TabIndex = 55;
             // 
-            // txtacfentrada
+            // label41
             // 
-            this.txtacfentrada.Location = new System.Drawing.Point(123, 156);
-            this.txtacfentrada.Name = "txtacfentrada";
-            this.txtacfentrada.Size = new System.Drawing.Size(100, 20);
-            this.txtacfentrada.TabIndex = 75;
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(24, 199);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(78, 13);
+            this.label41.TabIndex = 54;
+            this.label41.Text = "# de Asientos :";
             // 
-            // label71
+            // txtacfpasajeros
             // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(25, 159);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(100, 13);
-            this.label71.TabIndex = 74;
-            this.label71.Text = "Voltaje de Entrada :";
+            this.txtacfpasajeros.Location = new System.Drawing.Point(122, 170);
+            this.txtacfpasajeros.Name = "txtacfpasajeros";
+            this.txtacfpasajeros.Size = new System.Drawing.Size(100, 20);
+            this.txtacfpasajeros.TabIndex = 53;
             // 
-            // txtacfnominal
+            // label42
             // 
-            this.txtacfnominal.Location = new System.Drawing.Point(123, 130);
-            this.txtacfnominal.Name = "txtacfnominal";
-            this.txtacfnominal.Size = new System.Drawing.Size(100, 20);
-            this.txtacfnominal.TabIndex = 73;
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(24, 173);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(84, 13);
+            this.label42.TabIndex = 52;
+            this.label42.Text = "# de Pasajeros :";
             // 
-            // label72
+            // txtacfejes
             // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(25, 133);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(86, 13);
-            this.label72.TabIndex = 72;
-            this.label72.Text = "Voltaje Nominal :";
+            this.txtacfejes.Location = new System.Drawing.Point(122, 144);
+            this.txtacfejes.Name = "txtacfejes";
+            this.txtacfejes.Size = new System.Drawing.Size(100, 20);
+            this.txtacfejes.TabIndex = 51;
             // 
-            // txtacfpotencia
+            // label43
             // 
-            this.txtacfpotencia.Location = new System.Drawing.Point(123, 104);
-            this.txtacfpotencia.Name = "txtacfpotencia";
-            this.txtacfpotencia.Size = new System.Drawing.Size(100, 20);
-            this.txtacfpotencia.TabIndex = 71;
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(24, 147);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(88, 13);
+            this.label43.TabIndex = 50;
+            this.label43.Text = "Ejes de Vehículo";
             // 
-            // label73
+            // txtacfcombustible
             // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(25, 107);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(55, 13);
-            this.label73.TabIndex = 70;
-            this.label73.Text = "Potencia :";
+            this.txtacfcombustible.Location = new System.Drawing.Point(122, 118);
+            this.txtacfcombustible.Name = "txtacfcombustible";
+            this.txtacfcombustible.Size = new System.Drawing.Size(100, 20);
+            this.txtacfcombustible.TabIndex = 49;
             // 
-            // txtacfcapacidad
+            // label44
             // 
-            this.txtacfcapacidad.Location = new System.Drawing.Point(123, 78);
-            this.txtacfcapacidad.Name = "txtacfcapacidad";
-            this.txtacfcapacidad.Size = new System.Drawing.Size(100, 20);
-            this.txtacfcapacidad.TabIndex = 69;
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(24, 121);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(70, 13);
+            this.label44.TabIndex = 48;
+            this.label44.Text = "Combustible :";
             // 
-            // label74
+            // txtacfclase
             // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(25, 81);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(64, 13);
-            this.label74.TabIndex = 68;
-            this.label74.Text = "Capacidad :";
+            this.txtacfclase.Location = new System.Drawing.Point(122, 92);
+            this.txtacfclase.Name = "txtacfclase";
+            this.txtacfclase.Size = new System.Drawing.Size(100, 20);
+            this.txtacfclase.TabIndex = 47;
             // 
-            // txtacfresolucion
+            // label45
             // 
-            this.txtacfresolucion.Location = new System.Drawing.Point(123, 52);
-            this.txtacfresolucion.Name = "txtacfresolucion";
-            this.txtacfresolucion.Size = new System.Drawing.Size(100, 20);
-            this.txtacfresolucion.TabIndex = 67;
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(24, 95);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(100, 13);
+            this.label45.TabIndex = 46;
+            this.label45.Text = "Clase de Vehículo :";
             // 
-            // label75
+            // txtacfinscripcion
             // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(25, 55);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(66, 13);
-            this.label75.TabIndex = 66;
-            this.label75.Text = "Resolución :";
+            this.txtacfinscripcion.Location = new System.Drawing.Point(122, 66);
+            this.txtacfinscripcion.Name = "txtacfinscripcion";
+            this.txtacfinscripcion.Size = new System.Drawing.Size(100, 20);
+            this.txtacfinscripcion.TabIndex = 45;
             // 
-            // txtacfvelocidad
+            // label46
             // 
-            this.txtacfvelocidad.Location = new System.Drawing.Point(123, 26);
-            this.txtacfvelocidad.Name = "txtacfvelocidad";
-            this.txtacfvelocidad.Size = new System.Drawing.Size(100, 20);
-            this.txtacfvelocidad.TabIndex = 65;
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(24, 69);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(97, 13);
+            this.label46.TabIndex = 44;
+            this.label46.Text = "Insc. de Vehículo :";
             // 
-            // label76
+            // txtacfexpediente
             // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(25, 29);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(60, 13);
-            this.label76.TabIndex = 64;
-            this.label76.Text = "Velocidad :";
+            this.txtacfexpediente.Location = new System.Drawing.Point(122, 40);
+            this.txtacfexpediente.Name = "txtacfexpediente";
+            this.txtacfexpediente.Size = new System.Drawing.Size(100, 20);
+            this.txtacfexpediente.TabIndex = 43;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(24, 43);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(95, 13);
+            this.label47.TabIndex = 42;
+            this.label47.Text = "Exp. de Vehículo :";
+            // 
+            // txtacfplaca
+            // 
+            this.txtacfplaca.Location = new System.Drawing.Point(122, 14);
+            this.txtacfplaca.Name = "txtacfplaca";
+            this.txtacfplaca.Size = new System.Drawing.Size(100, 20);
+            this.txtacfplaca.TabIndex = 41;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(24, 17);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(101, 13);
+            this.label48.TabIndex = 40;
+            this.label48.Text = "Placa de Vehículo :";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.groupBox9);
+            this.tabPage5.Controls.Add(this.groupBox10);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(516, 359);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Equipos";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.txtinvpuertos);
+            this.groupBox9.Controls.Add(this.label65);
+            this.groupBox9.Controls.Add(this.txtinvprocesador);
+            this.groupBox9.Controls.Add(this.label77);
+            this.groupBox9.Controls.Add(this.txtinvtemperatura);
+            this.groupBox9.Controls.Add(this.label78);
+            this.groupBox9.Controls.Add(this.txtinvfrecuencia);
+            this.groupBox9.Controls.Add(this.label79);
+            this.groupBox9.Controls.Add(this.txtinvsalida);
+            this.groupBox9.Controls.Add(this.label80);
+            this.groupBox9.Controls.Add(this.txtinventrada);
+            this.groupBox9.Controls.Add(this.label81);
+            this.groupBox9.Controls.Add(this.txtinvnominal);
+            this.groupBox9.Controls.Add(this.label82);
+            this.groupBox9.Controls.Add(this.txtinvpotencia);
+            this.groupBox9.Controls.Add(this.label83);
+            this.groupBox9.Controls.Add(this.txtinvcapacidad);
+            this.groupBox9.Controls.Add(this.label84);
+            this.groupBox9.Controls.Add(this.txtinvresolucion);
+            this.groupBox9.Controls.Add(this.label85);
+            this.groupBox9.Controls.Add(this.txtinvvelocidad);
+            this.groupBox9.Controls.Add(this.label86);
+            this.groupBox9.Location = new System.Drawing.Point(265, 16);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(246, 326);
+            this.groupBox9.TabIndex = 3;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Inventario";
             // 
             // txtinvpuertos
             // 
@@ -1966,6 +1760,213 @@
             this.label86.TabIndex = 86;
             this.label86.Text = "Velocidad :";
             // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.txtacfpuertos);
+            this.groupBox10.Controls.Add(this.label66);
+            this.groupBox10.Controls.Add(this.txtacfprocesador);
+            this.groupBox10.Controls.Add(this.label67);
+            this.groupBox10.Controls.Add(this.txtacftemperatura);
+            this.groupBox10.Controls.Add(this.label68);
+            this.groupBox10.Controls.Add(this.txtacffrecuencia);
+            this.groupBox10.Controls.Add(this.label69);
+            this.groupBox10.Controls.Add(this.txtacfsalida);
+            this.groupBox10.Controls.Add(this.label70);
+            this.groupBox10.Controls.Add(this.txtacfentrada);
+            this.groupBox10.Controls.Add(this.label71);
+            this.groupBox10.Controls.Add(this.txtacfnominal);
+            this.groupBox10.Controls.Add(this.label72);
+            this.groupBox10.Controls.Add(this.txtacfpotencia);
+            this.groupBox10.Controls.Add(this.label73);
+            this.groupBox10.Controls.Add(this.txtacfcapacidad);
+            this.groupBox10.Controls.Add(this.label74);
+            this.groupBox10.Controls.Add(this.txtacfresolucion);
+            this.groupBox10.Controls.Add(this.label75);
+            this.groupBox10.Controls.Add(this.txtacfvelocidad);
+            this.groupBox10.Controls.Add(this.label76);
+            this.groupBox10.Location = new System.Drawing.Point(6, 16);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(246, 326);
+            this.groupBox10.TabIndex = 2;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Activos Fijos";
+            // 
+            // txtacfpuertos
+            // 
+            this.txtacfpuertos.Location = new System.Drawing.Point(123, 286);
+            this.txtacfpuertos.Name = "txtacfpuertos";
+            this.txtacfpuertos.Size = new System.Drawing.Size(100, 20);
+            this.txtacfpuertos.TabIndex = 85;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(25, 289);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(49, 13);
+            this.label66.TabIndex = 84;
+            this.label66.Text = "Puertos :";
+            // 
+            // txtacfprocesador
+            // 
+            this.txtacfprocesador.Location = new System.Drawing.Point(123, 260);
+            this.txtacfprocesador.Name = "txtacfprocesador";
+            this.txtacfprocesador.Size = new System.Drawing.Size(100, 20);
+            this.txtacfprocesador.TabIndex = 83;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(25, 263);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(67, 13);
+            this.label67.TabIndex = 82;
+            this.label67.Text = "Procesador :";
+            // 
+            // txtacftemperatura
+            // 
+            this.txtacftemperatura.Location = new System.Drawing.Point(123, 234);
+            this.txtacftemperatura.Name = "txtacftemperatura";
+            this.txtacftemperatura.Size = new System.Drawing.Size(100, 20);
+            this.txtacftemperatura.TabIndex = 81;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(25, 237);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(73, 13);
+            this.label68.TabIndex = 80;
+            this.label68.Text = "Temperatura :";
+            // 
+            // txtacffrecuencia
+            // 
+            this.txtacffrecuencia.Location = new System.Drawing.Point(123, 208);
+            this.txtacffrecuencia.Name = "txtacffrecuencia";
+            this.txtacffrecuencia.Size = new System.Drawing.Size(100, 20);
+            this.txtacffrecuencia.TabIndex = 79;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(25, 211);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(66, 13);
+            this.label69.TabIndex = 78;
+            this.label69.Text = "Frecuencia :";
+            // 
+            // txtacfsalida
+            // 
+            this.txtacfsalida.Location = new System.Drawing.Point(123, 182);
+            this.txtacfsalida.Name = "txtacfsalida";
+            this.txtacfsalida.Size = new System.Drawing.Size(100, 20);
+            this.txtacfsalida.TabIndex = 77;
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(25, 185);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(84, 13);
+            this.label70.TabIndex = 76;
+            this.label70.Text = "Valor de Salida :";
+            // 
+            // txtacfentrada
+            // 
+            this.txtacfentrada.Location = new System.Drawing.Point(123, 156);
+            this.txtacfentrada.Name = "txtacfentrada";
+            this.txtacfentrada.Size = new System.Drawing.Size(100, 20);
+            this.txtacfentrada.TabIndex = 75;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(25, 159);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(100, 13);
+            this.label71.TabIndex = 74;
+            this.label71.Text = "Voltaje de Entrada :";
+            // 
+            // txtacfnominal
+            // 
+            this.txtacfnominal.Location = new System.Drawing.Point(123, 130);
+            this.txtacfnominal.Name = "txtacfnominal";
+            this.txtacfnominal.Size = new System.Drawing.Size(100, 20);
+            this.txtacfnominal.TabIndex = 73;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(25, 133);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(86, 13);
+            this.label72.TabIndex = 72;
+            this.label72.Text = "Voltaje Nominal :";
+            // 
+            // txtacfpotencia
+            // 
+            this.txtacfpotencia.Location = new System.Drawing.Point(123, 104);
+            this.txtacfpotencia.Name = "txtacfpotencia";
+            this.txtacfpotencia.Size = new System.Drawing.Size(100, 20);
+            this.txtacfpotencia.TabIndex = 71;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(25, 107);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(55, 13);
+            this.label73.TabIndex = 70;
+            this.label73.Text = "Potencia :";
+            // 
+            // txtacfcapacidad
+            // 
+            this.txtacfcapacidad.Location = new System.Drawing.Point(123, 78);
+            this.txtacfcapacidad.Name = "txtacfcapacidad";
+            this.txtacfcapacidad.Size = new System.Drawing.Size(100, 20);
+            this.txtacfcapacidad.TabIndex = 69;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(25, 81);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(64, 13);
+            this.label74.TabIndex = 68;
+            this.label74.Text = "Capacidad :";
+            // 
+            // txtacfresolucion
+            // 
+            this.txtacfresolucion.Location = new System.Drawing.Point(123, 52);
+            this.txtacfresolucion.Name = "txtacfresolucion";
+            this.txtacfresolucion.Size = new System.Drawing.Size(100, 20);
+            this.txtacfresolucion.TabIndex = 67;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(25, 55);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(66, 13);
+            this.label75.TabIndex = 66;
+            this.label75.Text = "Resolución :";
+            // 
+            // txtacfvelocidad
+            // 
+            this.txtacfvelocidad.Location = new System.Drawing.Point(123, 26);
+            this.txtacfvelocidad.Name = "txtacfvelocidad";
+            this.txtacfvelocidad.Size = new System.Drawing.Size(100, 20);
+            this.txtacfvelocidad.TabIndex = 65;
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(25, 29);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(60, 13);
+            this.label76.TabIndex = 64;
+            this.label76.Text = "Velocidad :";
+            // 
             // cboINV
             // 
             this.cboINV.AutoComplete = true;
@@ -1989,6 +1990,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 520);
+            this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.txtINV1);
             this.Controls.Add(this.label4);

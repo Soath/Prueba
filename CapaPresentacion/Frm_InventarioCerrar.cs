@@ -288,5 +288,10 @@ namespace CapaPresentacion
             //MessageBox.Show("prueba", "prueba");
             mostrar(cboINV.Text);
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
