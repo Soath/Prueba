@@ -47,14 +47,13 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.92642F));
             this.tableLayoutPanel2.Controls.Add(this.textBoxNombre, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.labelNombre, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(111, 2);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(83, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(669, 47);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(502, 38);
             this.tableLayoutPanel2.TabIndex = 0;
             this.tableLayoutPanel2.UseWaitCursor = true;
             // 
@@ -65,11 +64,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxNombre.BackColor = System.Drawing.Color.Orange;
             this.textBoxNombre.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombre.Location = new System.Drawing.Point(151, 4);
-            this.textBoxNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNombre.Location = new System.Drawing.Point(113, 3);
             this.textBoxNombre.MaxLength = 50;
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(514, 40);
+            this.textBoxNombre.Size = new System.Drawing.Size(386, 33);
             this.textBoxNombre.TabIndex = 0;
             this.textBoxNombre.UseWaitCursor = true;
             // 
@@ -78,10 +76,9 @@
             this.labelNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelNombre.AutoSize = true;
             this.labelNombre.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombre.Location = new System.Drawing.Point(4, 7);
-            this.labelNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNombre.Location = new System.Drawing.Point(3, 6);
             this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(116, 33);
+            this.labelNombre.Size = new System.Drawing.Size(91, 26);
             this.labelNombre.TabIndex = 7;
             this.labelNombre.Text = "Nombre:";
             this.labelNombre.UseWaitCursor = true;
@@ -92,10 +89,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonCancelar.BackColor = System.Drawing.Color.Orange;
             this.buttonCancelar.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancelar.Location = new System.Drawing.Point(111, 246);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.buttonCancelar.Location = new System.Drawing.Point(83, 200);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(287, 40);
+            this.buttonCancelar.Size = new System.Drawing.Size(215, 32);
             this.buttonCancelar.TabIndex = 1;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = false;
@@ -108,10 +105,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonGuardar.BackColor = System.Drawing.Color.Orange;
             this.buttonGuardar.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGuardar.Location = new System.Drawing.Point(482, 246);
-            this.buttonGuardar.Margin = new System.Windows.Forms.Padding(0, 0, 7, 0);
+            this.buttonGuardar.Location = new System.Drawing.Point(362, 200);
+            this.buttonGuardar.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.buttonGuardar.Name = "buttonGuardar";
-            this.buttonGuardar.Size = new System.Drawing.Size(287, 40);
+            this.buttonGuardar.Size = new System.Drawing.Size(215, 32);
             this.buttonGuardar.TabIndex = 0;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = false;
@@ -122,10 +119,10 @@
             // 
             this.panel1.BackgroundImage = global::CapaPresentacion.Properties.Resources.categorias;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(3, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 7, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 108);
+            this.panel1.Size = new System.Drawing.Size(75, 88);
             this.panel1.TabIndex = 1;
             this.panel1.UseWaitCursor = true;
             // 
@@ -134,10 +131,9 @@
             this.labelDescripcion.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelDescripcion.AutoSize = true;
             this.labelDescripcion.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescripcion.Location = new System.Drawing.Point(105, 80);
-            this.labelDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDescripcion.Location = new System.Drawing.Point(79, 65);
             this.labelDescripcion.Name = "labelDescripcion";
-            this.labelDescripcion.Size = new System.Drawing.Size(155, 33);
+            this.labelDescripcion.Size = new System.Drawing.Size(121, 26);
             this.labelDescripcion.TabIndex = 0;
             this.labelDescripcion.Text = "Descripción:";
             this.labelDescripcion.UseWaitCursor = true;
@@ -149,11 +145,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxsegmento.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxsegmento.Location = new System.Drawing.Point(111, 147);
-            this.textBoxsegmento.Margin = new System.Windows.Forms.Padding(8, 4, 4, 4);
+            this.textBoxsegmento.Location = new System.Drawing.Point(83, 119);
+            this.textBoxsegmento.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
             this.textBoxsegmento.MaxLength = 150;
             this.textBoxsegmento.Name = "textBoxsegmento";
-            this.textBoxsegmento.Size = new System.Drawing.Size(657, 40);
+            this.textBoxsegmento.Size = new System.Drawing.Size(494, 33);
             this.textBoxsegmento.TabIndex = 6;
             this.textBoxsegmento.TabStop = false;
             this.textBoxsegmento.UseWaitCursor = true;
@@ -164,20 +160,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxDescripcion.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDescripcion.Location = new System.Drawing.Point(262, 80);
-            this.textBoxDescripcion.Margin = new System.Windows.Forms.Padding(8, 4, 4, 4);
+            this.textBoxDescripcion.Location = new System.Drawing.Point(196, 65);
+            this.textBoxDescripcion.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
             this.textBoxDescripcion.MaxLength = 150;
             this.textBoxDescripcion.Name = "textBoxDescripcion";
-            this.textBoxDescripcion.Size = new System.Drawing.Size(507, 40);
+            this.textBoxDescripcion.Size = new System.Drawing.Size(381, 33);
             this.textBoxDescripcion.TabIndex = 7;
             this.textBoxDescripcion.TabStop = false;
             this.textBoxDescripcion.UseWaitCursor = true;
             // 
             // FrmEditarLocal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 353);
+            this.ClientSize = new System.Drawing.Size(588, 294);
             this.Controls.Add(this.textBoxDescripcion);
             this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.textBoxsegmento);
@@ -185,11 +181,11 @@
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(800, 400);
+            this.MaximumSize = new System.Drawing.Size(604, 332);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(800, 400);
+            this.MinimumSize = new System.Drawing.Size(604, 332);
             this.Name = "FrmEditarLocal";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

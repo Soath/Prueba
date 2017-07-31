@@ -695,6 +695,8 @@
             this.Controls.Add(this.txtSELid);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmacfUBEt_UbicacionElectrica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfUBEt_UbicacionElectrica";

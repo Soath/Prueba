@@ -1336,7 +1336,10 @@
             this.Controls.Add(this.txtLIFNR);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmacfMVAt_MovimientoActivo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfMVAt_MovimientoActivo";
             this.tabControl2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);

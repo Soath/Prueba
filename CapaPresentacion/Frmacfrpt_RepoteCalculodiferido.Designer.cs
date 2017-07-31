@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 618);
             this.Name = "Frmacfrpt_RepoteCalculodiferido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmacfrpt_RepoteCalculodiferido";
             this.ResumeLayout(false);
 

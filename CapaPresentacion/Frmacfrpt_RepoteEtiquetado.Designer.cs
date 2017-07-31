@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 590);
             this.Name = "Frmacfrpt_RepoteEtiquetado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmacfrpt_RepoteEtiquetado";
             this.ResumeLayout(false);
 

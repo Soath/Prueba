@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(795, 611);
             this.Name = "Frmacfrpt_ficha_Inventario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmacfrpt_ficha_Inventario";
             this.ResumeLayout(false);
 

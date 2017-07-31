@@ -94,6 +94,8 @@
             this.Controls.Add(this.dataListado);
             this.Controls.Add(this.btnimportar);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmacfGIS_UbicacionElectrica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfGIS_UbicacionElectrica";

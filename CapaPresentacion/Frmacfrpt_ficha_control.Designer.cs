@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(827, 612);
             this.Name = "Frmacfrpt_ficha_control";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmacfrpt_ficha_control";
             this.ResumeLayout(false);
 

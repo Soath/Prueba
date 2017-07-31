@@ -175,9 +175,9 @@
             // 
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(647, 340);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
@@ -192,9 +192,9 @@
             this.groupBox2.Controls.Add(this.txtSELsistemaelectrico);
             this.groupBox2.Controls.Add(this.txtSELid);
             this.groupBox2.Location = new System.Drawing.Point(10, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(614, 259);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -213,7 +213,7 @@
             // txtSEGMENT
             // 
             this.txtSEGMENT.Location = new System.Drawing.Point(219, 127);
-            this.txtSEGMENT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSEGMENT.Margin = new System.Windows.Forms.Padding(2);
             this.txtSEGMENT.MaxLength = 30;
             this.txtSEGMENT.Name = "txtSEGMENT";
             this.txtSEGMENT.Size = new System.Drawing.Size(177, 20);
@@ -242,7 +242,7 @@
             // txtSELsistemaelectrico
             // 
             this.txtSELsistemaelectrico.Location = new System.Drawing.Point(219, 83);
-            this.txtSELsistemaelectrico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSELsistemaelectrico.Margin = new System.Windows.Forms.Padding(2);
             this.txtSELsistemaelectrico.MaxLength = 30;
             this.txtSELsistemaelectrico.Name = "txtSELsistemaelectrico";
             this.txtSELsistemaelectrico.Size = new System.Drawing.Size(177, 20);
@@ -251,7 +251,7 @@
             // txtSELid
             // 
             this.txtSELid.Location = new System.Drawing.Point(219, 45);
-            this.txtSELid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSELid.Margin = new System.Windows.Forms.Padding(2);
             this.txtSELid.MaxLength = 50;
             this.txtSELid.Name = "txtSELid";
             this.txtSELid.Size = new System.Drawing.Size(58, 20);
@@ -265,9 +265,9 @@
             this.tabPage1.Controls.Add(this.lblTotal);
             this.tabPage1.Controls.Add(this.txtBuscar);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(647, 340);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
@@ -294,7 +294,7 @@
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.dataListado.Location = new System.Drawing.Point(10, 85);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
@@ -323,7 +323,7 @@
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(80, 28);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(525, 20);
             this.txtBuscar.TabIndex = 2;
@@ -334,7 +334,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(0, 72);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(655, 366);
@@ -347,6 +347,8 @@
             this.ClientSize = new System.Drawing.Size(677, 447);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmacfSELt_SistemaElectrico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfSELt_SistemaElectrico";

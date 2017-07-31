@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 588);
             this.Name = "Frmacfrpt_anexo_mensual_depreciacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmacfrpt_anexo_mensual_depreciacion";
             this.ResumeLayout(false);
 

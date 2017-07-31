@@ -81,13 +81,13 @@
             this.Column14,
             this.Column15,
             this.Column16});
-            this.dataListado.Location = new System.Drawing.Point(12, 97);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataListado.Location = new System.Drawing.Point(9, 79);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(999, 383);
+            this.dataListado.Size = new System.Drawing.Size(749, 311);
             this.dataListado.TabIndex = 31;
             // 
             // Column1
@@ -184,7 +184,7 @@
             this.toolStripCancelar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1023, 82);
+            this.toolStrip1.Size = new System.Drawing.Size(767, 67);
             this.toolStrip1.TabIndex = 157;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -194,7 +194,7 @@
             this.toolStripActivos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripActivos.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripActivos.Name = "toolStripActivos";
-            this.toolStripActivos.Size = new System.Drawing.Size(123, 79);
+            this.toolStripActivos.Size = new System.Drawing.Size(99, 64);
             this.toolStripActivos.Text = "Importar Activos";
             this.toolStripActivos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripActivos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -206,7 +206,7 @@
             this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripRefrescar.Name = "toolStripRefrescar";
-            this.toolStripRefrescar.Size = new System.Drawing.Size(118, 79);
+            this.toolStripRefrescar.Size = new System.Drawing.Size(94, 64);
             this.toolStripRefrescar.Text = "Importar AF GIS";
             this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -217,7 +217,7 @@
             this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAgregar.Name = "toolStripAgregar";
-            this.toolStripAgregar.Size = new System.Drawing.Size(67, 79);
+            this.toolStripAgregar.Size = new System.Drawing.Size(53, 64);
             this.toolStripAgregar.Text = "Agregar";
             this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -230,7 +230,7 @@
             this.toolStripEliminar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(67, 79);
+            this.toolStripEliminar.Size = new System.Drawing.Size(54, 64);
             this.toolStripEliminar.Text = "Eliminar";
             this.toolStripEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -243,7 +243,7 @@
             this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripGuardar.Name = "toolStripGuardar";
-            this.toolStripGuardar.Size = new System.Drawing.Size(66, 79);
+            this.toolStripGuardar.Size = new System.Drawing.Size(53, 64);
             this.toolStripGuardar.Text = "Guardar";
             this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -256,7 +256,7 @@
             this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripCancelar.Name = "toolStripCancelar";
-            this.toolStripCancelar.Size = new System.Drawing.Size(70, 79);
+            this.toolStripCancelar.Size = new System.Drawing.Size(57, 64);
             this.toolStripCancelar.Text = "Cancelar";
             this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -265,12 +265,13 @@
             // 
             // FrmACF_SustituacionMejora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 570);
+            this.ClientSize = new System.Drawing.Size(767, 463);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dataListado);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmACF_SustituacionMejora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmACF_SustituacionMejora";

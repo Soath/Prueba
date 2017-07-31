@@ -165,7 +165,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(9, 68);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(613, 317);
@@ -178,9 +178,9 @@
             this.tabPage1.Controls.Add(this.lblTotal);
             this.tabPage1.Controls.Add(this.txtBuscar);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(605, 291);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
@@ -196,7 +196,7 @@
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.dataListado.Location = new System.Drawing.Point(10, 56);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
@@ -225,7 +225,7 @@
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(10, 16);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(516, 20);
             this.txtBuscar.TabIndex = 2;
@@ -235,9 +235,9 @@
             // 
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(605, 291);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
@@ -250,9 +250,9 @@
             this.groupBox2.Controls.Add(this.txtTVMtipomovimiento);
             this.groupBox2.Controls.Add(this.txtTVMid);
             this.groupBox2.Location = new System.Drawing.Point(10, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(574, 259);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -281,7 +281,7 @@
             // txtTVMtipomovimiento
             // 
             this.txtTVMtipomovimiento.Location = new System.Drawing.Point(226, 97);
-            this.txtTVMtipomovimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTVMtipomovimiento.Margin = new System.Windows.Forms.Padding(2);
             this.txtTVMtipomovimiento.MaxLength = 30;
             this.txtTVMtipomovimiento.Name = "txtTVMtipomovimiento";
             this.txtTVMtipomovimiento.Size = new System.Drawing.Size(214, 20);
@@ -290,7 +290,7 @@
             // txtTVMid
             // 
             this.txtTVMid.Location = new System.Drawing.Point(226, 59);
-            this.txtTVMid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTVMid.Margin = new System.Windows.Forms.Padding(2);
             this.txtTVMid.MaxLength = 50;
             this.txtTVMid.Name = "txtTVMid";
             this.txtTVMid.Size = new System.Drawing.Size(36, 20);
@@ -311,6 +311,8 @@
             this.ClientSize = new System.Drawing.Size(626, 402);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmacfTMVt_TipoMovimiento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfTVMt_TipoMovimiento";

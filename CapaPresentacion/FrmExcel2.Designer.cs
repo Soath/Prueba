@@ -70,7 +70,6 @@
             this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            
             // 
             // button1
             // 
@@ -81,7 +80,6 @@
             this.button1.Text = "Importar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-
             // 
             // FrmExcel2
             // 
@@ -93,7 +91,10 @@
             this.Controls.Add(this.txtHoja);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmExcel2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmExcel2";
             this.Load += new System.EventHandler(this.FrmExcel2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

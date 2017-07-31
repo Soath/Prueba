@@ -2011,6 +2011,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.datalistado1);
             this.Controls.Add(this.label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Frm_InventarioCerrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_InventarioCerrar";

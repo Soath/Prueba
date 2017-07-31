@@ -49,6 +49,7 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cb1 = new System.Windows.Forms.CheckBox();
             this.labelX5 = new System.Windows.Forms.Label();
             this.labelX4 = new System.Windows.Forms.Label();
             this.labelX3 = new System.Windows.Forms.Label();
@@ -61,7 +62,6 @@
             this.txtRTRperiodo = new System.Windows.Forms.TextBox();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.cb1 = new System.Windows.Forms.CheckBox();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -310,6 +310,16 @@
             this.groupBox2.Text = "Usuarios";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // cb1
+            // 
+            this.cb1.AutoSize = true;
+            this.cb1.Location = new System.Drawing.Point(522, 122);
+            this.cb1.Name = "cb1";
+            this.cb1.Size = new System.Drawing.Size(80, 17);
+            this.cb1.TabIndex = 122;
+            this.cb1.Text = "checkBox1";
+            this.cb1.UseVisualStyleBackColor = true;
+            // 
             // labelX5
             // 
             this.labelX5.AutoSize = true;
@@ -423,16 +433,6 @@
             // 
             this.errorIcono.ContainerControl = this;
             // 
-            // cb1
-            // 
-            this.cb1.AutoSize = true;
-            this.cb1.Location = new System.Drawing.Point(522, 122);
-            this.cb1.Name = "cb1";
-            this.cb1.Size = new System.Drawing.Size(80, 17);
-            this.cb1.TabIndex = 122;
-            this.cb1.Text = "checkBox1";
-            this.cb1.UseVisualStyleBackColor = true;
-            // 
             // FrmacfRTRt_Reparotributario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -441,6 +441,8 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmacfRTRt_Reparotributario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfRTRt_Reparotributario";

@@ -60,19 +60,19 @@
             this.txtGRP_id = new System.Windows.Forms.TextBox();
             this.labelX1 = new System.Windows.Forms.Label();
             this.labelX2 = new System.Windows.Forms.Label();
-            this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
-            this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.datalistado1 = new System.Windows.Forms.DataGridView();
+            this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
+            this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -412,14 +412,6 @@
             this.labelX2.TabIndex = 112;
             this.labelX2.Text = "Variable";
             // 
-            // ttMensaje
-            // 
-            this.ttMensaje.IsBalloon = true;
-            // 
-            // errorIcono
-            // 
-            this.errorIcono.ContainerControl = this;
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.datalistado1);
@@ -439,6 +431,14 @@
             this.datalistado1.Size = new System.Drawing.Size(575, 257);
             this.datalistado1.TabIndex = 0;
             // 
+            // ttMensaje
+            // 
+            this.ttMensaje.IsBalloon = true;
+            // 
+            // errorIcono
+            // 
+            this.errorIcono.ContainerControl = this;
+            // 
             // Frm_PRMVAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -446,6 +446,8 @@
             this.ClientSize = new System.Drawing.Size(628, 396);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Frm_PRMVAR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_PRMVAR";
@@ -458,9 +460,9 @@
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.datalistado1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             this.ResumeLayout(false);
 
         }

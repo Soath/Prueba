@@ -167,7 +167,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(9, 76);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(649, 362);
@@ -181,9 +181,9 @@
             this.tabPage1.Controls.Add(this.lblTotal);
             this.tabPage1.Controls.Add(this.txtBuscar);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(641, 336);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
@@ -210,7 +210,7 @@
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.dataListado.Location = new System.Drawing.Point(10, 51);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
@@ -239,7 +239,7 @@
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(95, 16);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(525, 20);
             this.txtBuscar.TabIndex = 2;
@@ -249,9 +249,9 @@
             // 
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(641, 336);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
@@ -266,9 +266,9 @@
             this.groupBox2.Controls.Add(this.txtMATmaterial);
             this.groupBox2.Controls.Add(this.txtMATid);
             this.groupBox2.Location = new System.Drawing.Point(10, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(614, 259);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -307,7 +307,7 @@
             // txtMATabreviado
             // 
             this.txtMATabreviado.Location = new System.Drawing.Point(215, 124);
-            this.txtMATabreviado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMATabreviado.Margin = new System.Windows.Forms.Padding(2);
             this.txtMATabreviado.MaxLength = 30;
             this.txtMATabreviado.Name = "txtMATabreviado";
             this.txtMATabreviado.Size = new System.Drawing.Size(250, 20);
@@ -316,7 +316,7 @@
             // txtMATmaterial
             // 
             this.txtMATmaterial.Location = new System.Drawing.Point(215, 86);
-            this.txtMATmaterial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMATmaterial.Margin = new System.Windows.Forms.Padding(2);
             this.txtMATmaterial.MaxLength = 30;
             this.txtMATmaterial.Name = "txtMATmaterial";
             this.txtMATmaterial.Size = new System.Drawing.Size(250, 20);
@@ -325,7 +325,7 @@
             // txtMATid
             // 
             this.txtMATid.Location = new System.Drawing.Point(215, 50);
-            this.txtMATid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMATid.Margin = new System.Windows.Forms.Padding(2);
             this.txtMATid.MaxLength = 50;
             this.txtMATid.Name = "txtMATid";
             this.txtMATid.Size = new System.Drawing.Size(74, 20);
@@ -346,6 +346,8 @@
             this.ClientSize = new System.Drawing.Size(672, 447);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmacfMATt_Material";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfMATt_Material";

@@ -50,14 +50,13 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.40864F));
             this.tableLayoutPanel2.Controls.Add(this.textBoxNombre, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.labelNombre, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(111, 2);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(83, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(668, 48);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(501, 39);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // textBoxNombre
@@ -67,11 +66,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxNombre.BackColor = System.Drawing.Color.Orange;
             this.textBoxNombre.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombre.Location = new System.Drawing.Point(154, 4);
-            this.textBoxNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNombre.Location = new System.Drawing.Point(116, 3);
             this.textBoxNombre.MaxLength = 50;
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(510, 40);
+            this.textBoxNombre.Size = new System.Drawing.Size(382, 33);
             this.textBoxNombre.TabIndex = 0;
             // 
             // labelNombre
@@ -79,10 +77,10 @@
             this.labelNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelNombre.AutoSize = true;
             this.labelNombre.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombre.Location = new System.Drawing.Point(7, 7);
-            this.labelNombre.Margin = new System.Windows.Forms.Padding(7, 0, 4, 0);
+            this.labelNombre.Location = new System.Drawing.Point(5, 6);
+            this.labelNombre.Margin = new System.Windows.Forms.Padding(5, 0, 3, 0);
             this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(116, 33);
+            this.labelNombre.Size = new System.Drawing.Size(91, 26);
             this.labelNombre.TabIndex = 1;
             this.labelNombre.Text = "Nombre:";
             // 
@@ -92,10 +90,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonCancelar.BackColor = System.Drawing.Color.Orange;
             this.buttonCancelar.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancelar.Location = new System.Drawing.Point(341, 0);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.buttonCancelar.Location = new System.Drawing.Point(255, 0);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(287, 48);
+            this.buttonCancelar.Size = new System.Drawing.Size(215, 39);
             this.buttonCancelar.TabIndex = 1;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = false;
@@ -107,10 +105,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonGuardar.BackColor = System.Drawing.Color.Orange;
             this.buttonGuardar.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGuardar.Location = new System.Drawing.Point(40, 0);
-            this.buttonGuardar.Margin = new System.Windows.Forms.Padding(0, 0, 7, 0);
+            this.buttonGuardar.Location = new System.Drawing.Point(30, 0);
+            this.buttonGuardar.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.buttonGuardar.Name = "buttonGuardar";
-            this.buttonGuardar.Size = new System.Drawing.Size(287, 48);
+            this.buttonGuardar.Size = new System.Drawing.Size(215, 39);
             this.buttonGuardar.TabIndex = 0;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = false;
@@ -123,12 +121,11 @@
             this.tableLayoutPanelGuardarCancelar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelGuardarCancelar.Controls.Add(this.buttonCancelar, 1, 0);
             this.tableLayoutPanelGuardarCancelar.Controls.Add(this.buttonGuardar, 0, 0);
-            this.tableLayoutPanelGuardarCancelar.Location = new System.Drawing.Point(111, 251);
-            this.tableLayoutPanelGuardarCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanelGuardarCancelar.Location = new System.Drawing.Point(83, 204);
             this.tableLayoutPanelGuardarCancelar.Name = "tableLayoutPanelGuardarCancelar";
             this.tableLayoutPanelGuardarCancelar.RowCount = 1;
             this.tableLayoutPanelGuardarCancelar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelGuardarCancelar.Size = new System.Drawing.Size(668, 48);
+            this.tableLayoutPanelGuardarCancelar.Size = new System.Drawing.Size(501, 39);
             this.tableLayoutPanelGuardarCancelar.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -137,13 +134,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.labelDescripcion, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBoxDescripcion, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(111, 54);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(83, 44);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.35897F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.64103F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(668, 192);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(501, 156);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // labelDescripcion
@@ -151,10 +147,9 @@
             this.labelDescripcion.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelDescripcion.AutoSize = true;
             this.labelDescripcion.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescripcion.Location = new System.Drawing.Point(4, 6);
-            this.labelDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDescripcion.Location = new System.Drawing.Point(3, 5);
             this.labelDescripcion.Name = "labelDescripcion";
-            this.labelDescripcion.Size = new System.Drawing.Size(155, 33);
+            this.labelDescripcion.Size = new System.Drawing.Size(121, 26);
             this.labelDescripcion.TabIndex = 2;
             this.labelDescripcion.Text = "Descripción:";
             // 
@@ -164,38 +159,38 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxDescripcion.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDescripcion.Location = new System.Drawing.Point(12, 50);
-            this.textBoxDescripcion.Margin = new System.Windows.Forms.Padding(12, 4, 4, 4);
+            this.textBoxDescripcion.Location = new System.Drawing.Point(9, 40);
+            this.textBoxDescripcion.Margin = new System.Windows.Forms.Padding(9, 3, 3, 3);
             this.textBoxDescripcion.MaxLength = 150;
             this.textBoxDescripcion.Multiline = true;
             this.textBoxDescripcion.Name = "textBoxDescripcion";
-            this.textBoxDescripcion.Size = new System.Drawing.Size(652, 138);
+            this.textBoxDescripcion.Size = new System.Drawing.Size(489, 113);
             this.textBoxDescripcion.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = global::CapaPresentacion.Properties.Resources.categorias;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(3, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 7, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 92);
+            this.panel1.Size = new System.Drawing.Size(75, 75);
             this.panel1.TabIndex = 1;
             // 
             // FrmAgregarNuevLocal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(776, 295);
+            this.ClientSize = new System.Drawing.Size(584, 247);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanelGuardarCancelar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(794, 342);
+            this.MaximumSize = new System.Drawing.Size(600, 285);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(794, 342);
+            this.MinimumSize = new System.Drawing.Size(600, 285);
             this.Name = "FrmAgregarNuevLocal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Nueva Categoria";

@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 623);
             this.Name = "Frmacfrpt_RepoteReparoTributario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmacfrpt_RepoteReparoTributario";
             this.ResumeLayout(false);
 

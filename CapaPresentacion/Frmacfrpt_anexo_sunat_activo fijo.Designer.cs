@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 739);
             this.Name = "Frmacfrpt_anexo_sunat_activo_fijo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmacfrpt_anexo_sunat_activo_fijo";
             this.ResumeLayout(false);
 

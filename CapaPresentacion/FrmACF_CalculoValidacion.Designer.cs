@@ -83,10 +83,10 @@
             this.cboclase = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv333)).BeginInit();
@@ -694,24 +694,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Obtener Datos desde el Sistema";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(101, 71);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 23);
-            this.button1.TabIndex = 237;
-            this.button1.Text = "Obtener Datos desde el Sistema";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(423, 323);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 245;
-            this.label7.Text = "label7";
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -732,6 +714,24 @@
             this.label8.Size = new System.Drawing.Size(84, 13);
             this.label8.TabIndex = 246;
             this.label8.Text = "Procesar Clase :";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(101, 71);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(190, 23);
+            this.button1.TabIndex = 237;
+            this.button1.Text = "Obtener Datos desde el Sistema";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(423, 323);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 245;
+            this.label7.Text = "label7";
             // 
             // FrmACF_CalculoValidacion
             // 
@@ -754,6 +754,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmACF_CalculoValidacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmACF_CalculoValidacion";

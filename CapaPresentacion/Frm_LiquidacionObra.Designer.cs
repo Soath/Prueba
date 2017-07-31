@@ -40,8 +40,8 @@
             this.toolStripActivos = new System.Windows.Forms.ToolStripButton();
             this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
             this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
+            this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
             this.lblTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -50,65 +50,58 @@
             // dataListado
             // 
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListado.Location = new System.Drawing.Point(6, 137);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataListado.Location = new System.Drawing.Point(4, 111);
             this.dataListado.Name = "dataListado";
-            this.dataListado.Size = new System.Drawing.Size(1112, 296);
+            this.dataListado.Size = new System.Drawing.Size(834, 240);
             this.dataListado.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 98);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(10, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 17);
+            this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Nombre de la hoja";
             // 
             // txtHoja
             // 
-            this.txtHoja.Location = new System.Drawing.Point(145, 95);
-            this.txtHoja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHoja.Location = new System.Drawing.Point(109, 77);
             this.txtHoja.Multiline = true;
             this.txtHoja.Name = "txtHoja";
-            this.txtHoja.Size = new System.Drawing.Size(440, 24);
+            this.txtHoja.Size = new System.Drawing.Size(331, 20);
             this.txtHoja.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(816, 446);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(612, 362);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 17);
+            this.label2.Size = new System.Drawing.Size(77, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Costo Directo :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(952, 441);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Location = new System.Drawing.Point(714, 358);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 22);
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
             this.textBox1.TabIndex = 10;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(952, 471);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Location = new System.Drawing.Point(714, 383);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(160, 22);
+            this.textBox2.Size = new System.Drawing.Size(121, 20);
             this.textBox2.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(816, 476);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(612, 387);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 17);
+            this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Costo Indirecto :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -126,7 +119,7 @@
             this.toolStripCancelar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1125, 82);
+            this.toolStrip1.Size = new System.Drawing.Size(844, 67);
             this.toolStrip1.TabIndex = 158;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -136,7 +129,7 @@
             this.toolStripActivos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripActivos.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripActivos.Name = "toolStripActivos";
-            this.toolStripActivos.Size = new System.Drawing.Size(234, 79);
+            this.toolStripActivos.Size = new System.Drawing.Size(188, 64);
             this.toolStripActivos.Text = "Importar Archivo Liquidación XLS";
             this.toolStripActivos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripActivos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -148,7 +141,7 @@
             this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripRefrescar.Name = "toolStripRefrescar";
-            this.toolStripRefrescar.Size = new System.Drawing.Size(164, 79);
+            this.toolStripRefrescar.Size = new System.Drawing.Size(131, 64);
             this.toolStripRefrescar.Text = "Procesar Valor Unitario";
             this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -161,24 +154,12 @@
             this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripGuardar.Name = "toolStripGuardar";
-            this.toolStripGuardar.Size = new System.Drawing.Size(66, 79);
+            this.toolStripGuardar.Size = new System.Drawing.Size(53, 64);
             this.toolStripGuardar.Text = "Guardar";
             this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripGuardar.Visible = false;
             this.toolStripGuardar.Click += new System.EventHandler(this.toolStripGuardar_Click);
-            // 
-            // toolStripCancelar
-            // 
-            this.toolStripCancelar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCancelar.Image")));
-            this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripCancelar.Name = "toolStripCancelar";
-            this.toolStripCancelar.Size = new System.Drawing.Size(70, 79);
-            this.toolStripCancelar.Text = "Cancelar";
-            this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripCancelar.Visible = false;
             // 
             // toolStripSiguiente
             // 
@@ -187,27 +168,38 @@
             this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSiguiente.Name = "toolStripSiguiente";
-            this.toolStripSiguiente.Size = new System.Drawing.Size(149, 79);
+            this.toolStripSiguiente.Size = new System.Drawing.Size(120, 64);
             this.toolStripSiguiente.Text = "Generar Archivo SAP";
             this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripSiguiente.Visible = false;
             this.toolStripSiguiente.Click += new System.EventHandler(this.toolStripSiguiente_Click);
             // 
+            // toolStripCancelar
+            // 
+            this.toolStripCancelar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCancelar.Image")));
+            this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripCancelar.Name = "toolStripCancelar";
+            this.toolStripCancelar.Size = new System.Drawing.Size(57, 64);
+            this.toolStripCancelar.Text = "Cancelar";
+            this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripCancelar.Visible = false;
+            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(704, 102);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotal.Location = new System.Drawing.Point(528, 83);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(65, 17);
+            this.lblTotal.Size = new System.Drawing.Size(49, 13);
             this.lblTotal.TabIndex = 159;
             this.lblTotal.Text = "Registro:";
             // 
             // Frm_LiquidacionObra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 530);
+            this.ClientSize = new System.Drawing.Size(844, 431);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.textBox2);
@@ -217,7 +209,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtHoja);
             this.Controls.Add(this.dataListado);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Frm_LiquidacionObra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_LiquidacionObra";

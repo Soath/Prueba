@@ -36,10 +36,10 @@
             this.prgLoadingProgress = new System.Windows.Forms.ProgressBar();
             this.pbLoadingGraphic = new System.Windows.Forms.PictureBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
             this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
             this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.lblTotal = new System.Windows.Forms.Label();
             this.dataListado = new System.Windows.Forms.DataGridView();
@@ -122,6 +122,19 @@
             this.toolStrip1.TabIndex = 177;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripAnterior
+            // 
+            this.toolStripAnterior.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.toolStripAnterior.Image = global::CapaPresentacion.Properties.Resources.down_;
+            this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripAnterior.Name = "toolStripAnterior";
+            this.toolStripAnterior.Size = new System.Drawing.Size(86, 64);
+            this.toolStripAnterior.Text = "Importar Excel";
+            this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripAnterior.Click += new System.EventHandler(this.toolStripAnterior_Click);
+            // 
             // toolStripAgregar
             // 
             this.toolStripAgregar.Image = global::CapaPresentacion.Properties.Resources.add_folder;
@@ -159,19 +172,6 @@
             this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripCancelar.Visible = false;
             this.toolStripCancelar.Click += new System.EventHandler(this.toolStripCancelar_Click);
-            // 
-            // toolStripAnterior
-            // 
-            this.toolStripAnterior.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toolStripAnterior.Image = global::CapaPresentacion.Properties.Resources.down_;
-            this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripAnterior.Name = "toolStripAnterior";
-            this.toolStripAnterior.Size = new System.Drawing.Size(86, 64);
-            this.toolStripAnterior.Text = "Importar Excel";
-            this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripAnterior.Click += new System.EventHandler(this.toolStripAnterior_Click);
             // 
             // toolStripSiguiente
             // 
@@ -253,7 +253,7 @@
             this.bwInstance.WorkerReportsProgress = true;
             this.bwInstance.WorkerSupportsCancellation = true;
             // 
-            // Frm_excel3
+            // Frm_Excel_Diferido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -269,7 +269,10 @@
             this.Controls.Add(this.chkEliminar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtHoja);
-            this.Name = "Frm_excel3";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "Frm_Excel_Diferido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_excel3";
             ((System.ComponentModel.ISupportInitialize)(this.pbLoadingGraphic)).EndInit();
             this.toolStrip1.ResumeLayout(false);

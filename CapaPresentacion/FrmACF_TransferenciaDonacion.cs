@@ -126,9 +126,21 @@ namespace CapaPresentacion
 
         private void toolStripAnterior_Click(object sender, EventArgs e)
         {
-                BotonesIE(true);
-                new Importar().importarExcelca("",dataListado, "Hoja1", true);
+            try
+            {
+                string Hoja1 = Microsoft.VisualBasic.Interaction.InputBox(
+                                 "Ingrese el nombre de la Hoja:",
+                                 "Se requiere nombre de la Hoja");
+                if (Hoja1!="")
+                {
+                    BotonesIE(true);
+                new Importar().importarExcelca("",dataListado, Hoja1, true);
                 Columnas();
+                }
+            }
+            catch (Exception ex)
+            {
+            }
         }
 
         private void toolStripCancelar_Click(object sender, EventArgs e)
@@ -226,5 +238,9 @@ namespace CapaPresentacion
             }
         }
 
+        private void FrmACF_TransferenciaDonacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

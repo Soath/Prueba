@@ -44,9 +44,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(711, 21);
+            this.button1.Location = new System.Drawing.Point(533, 17);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 33);
+            this.button1.Size = new System.Drawing.Size(93, 27);
             this.button1.TabIndex = 1;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@
             // 
             // TextBox1
             // 
-            this.TextBox1.Location = new System.Drawing.Point(12, 30);
+            this.TextBox1.Location = new System.Drawing.Point(9, 24);
+            this.TextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(691, 24);
+            this.TextBox1.Size = new System.Drawing.Size(518, 20);
             this.TextBox1.TabIndex = 4;
             // 
             // dataListado
@@ -70,14 +72,14 @@
             this.Eliminar,
             this.ACFid,
             this.ACFdescripcion});
-            this.dataListado.Location = new System.Drawing.Point(12, 72);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataListado.Location = new System.Drawing.Point(9, 58);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(823, 388);
+            this.dataListado.Size = new System.Drawing.Size(617, 315);
             this.dataListado.TabIndex = 10;
             this.dataListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListado_CellDoubleClick);
             // 
@@ -105,12 +107,15 @@
             // 
             // FrmacfACFp_Activo_Fijo_Buscar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 471);
+            this.ClientSize = new System.Drawing.Size(636, 383);
             this.Controls.Add(this.dataListado);
             this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
             this.Name = "FrmacfACFp_Activo_Fijo_Buscar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfACFp_Activo_Fijo_Buscar";

@@ -38,9 +38,9 @@
             this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
             this.toolStripEliminar = new System.Windows.Forms.ToolStripButton();
             this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
+            this.toolStripImportar = new System.Windows.Forms.ToolStripButton();
             this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
             this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripImportar = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -155,6 +155,18 @@
             this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // toolStripImportar
+            // 
+            this.toolStripImportar.Image = global::CapaPresentacion.Properties.Resources.AppMenuClose;
+            this.toolStripImportar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripImportar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripImportar.Name = "toolStripImportar";
+            this.toolStripImportar.Size = new System.Drawing.Size(57, 64);
+            this.toolStripImportar.Text = "Importar";
+            this.toolStripImportar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripImportar.Click += new System.EventHandler(this.toolStripImportar_Click);
+            // 
             // toolStripGuardar
             // 
             this.toolStripGuardar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripGuardar.Image")));
@@ -179,18 +191,6 @@
             this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripCancelar.Visible = false;
             this.toolStripCancelar.Click += new System.EventHandler(this.toolStripCancelar_Click);
-            // 
-            // toolStripImportar
-            // 
-            this.toolStripImportar.Image = global::CapaPresentacion.Properties.Resources.AppMenuClose;
-            this.toolStripImportar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripImportar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripImportar.Name = "toolStripImportar";
-            this.toolStripImportar.Size = new System.Drawing.Size(57, 64);
-            this.toolStripImportar.Text = "Importar";
-            this.toolStripImportar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripImportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripImportar.Click += new System.EventHandler(this.toolStripImportar_Click);
             // 
             // label1
             // 
@@ -424,6 +424,8 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmacfMVMt_MotivoMovimiento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfMVMt_MotivoMovimiento";

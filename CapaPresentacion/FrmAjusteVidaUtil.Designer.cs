@@ -35,7 +35,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
             this.toolStripAgregar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
             this.toolStripEditar = new System.Windows.Forms.ToolStripButton();
             this.toolStripCancelar = new System.Windows.Forms.ToolStripButton();
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
@@ -57,8 +59,6 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chkEliminar = new System.Windows.Forms.CheckBox();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.toolStripRefrescar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripGuardar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
@@ -66,10 +66,9 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(45, 110);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox1.Location = new System.Drawing.Point(34, 89);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(126, 21);
+            this.checkBox1.Size = new System.Drawing.Size(100, 17);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Activo Eléctrico";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -77,19 +76,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(286, 111);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(214, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 17);
+            this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Informe";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(349, 108);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(262, 88);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 22);
+            this.textBox1.Size = new System.Drawing.Size(256, 20);
             this.textBox1.TabIndex = 2;
             // 
             // ttMensaje
@@ -111,9 +108,21 @@
             this.toolStripSiguiente});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1231, 82);
+            this.toolStrip1.Size = new System.Drawing.Size(923, 67);
             this.toolStrip1.TabIndex = 157;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripRefrescar
+            // 
+            this.toolStripRefrescar.Image = global::CapaPresentacion.Properties.Resources.download;
+            this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripRefrescar.Name = "toolStripRefrescar";
+            this.toolStripRefrescar.Size = new System.Drawing.Size(103, 64);
+            this.toolStripRefrescar.Text = "Procesar Vida Util";
+            this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripRefrescar.Click += new System.EventHandler(this.toolStripRefrescar_Click);
             // 
             // toolStripAgregar
             // 
@@ -121,12 +130,25 @@
             this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAgregar.Name = "toolStripAgregar";
-            this.toolStripAgregar.Size = new System.Drawing.Size(67, 79);
+            this.toolStripAgregar.Size = new System.Drawing.Size(53, 64);
             this.toolStripAgregar.Text = "Agregar";
             this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripAgregar.Visible = false;
             this.toolStripAgregar.Click += new System.EventHandler(this.toolStripAgregar_Click);
+            // 
+            // toolStripGuardar
+            // 
+            this.toolStripGuardar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripGuardar.Image")));
+            this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripGuardar.Name = "toolStripGuardar";
+            this.toolStripGuardar.Size = new System.Drawing.Size(53, 64);
+            this.toolStripGuardar.Text = "Guardar";
+            this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripGuardar.Visible = false;
+            this.toolStripGuardar.Click += new System.EventHandler(this.toolStripGuardar_Click);
             // 
             // toolStripEditar
             // 
@@ -134,7 +156,7 @@
             this.toolStripEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(52, 79);
+            this.toolStripEditar.Size = new System.Drawing.Size(41, 64);
             this.toolStripEditar.Text = "Editar";
             this.toolStripEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -146,7 +168,7 @@
             this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripCancelar.Name = "toolStripCancelar";
-            this.toolStripCancelar.Size = new System.Drawing.Size(71, 79);
+            this.toolStripCancelar.Size = new System.Drawing.Size(57, 64);
             this.toolStripCancelar.Text = "Eliminiar";
             this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -160,7 +182,7 @@
             this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAnterior.Name = "toolStripAnterior";
-            this.toolStripAnterior.Size = new System.Drawing.Size(109, 79);
+            this.toolStripAnterior.Size = new System.Drawing.Size(86, 64);
             this.toolStripAnterior.Text = "Importar Excel";
             this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -172,7 +194,7 @@
             this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSiguiente.Name = "toolStripSiguiente";
-            this.toolStripSiguiente.Size = new System.Drawing.Size(137, 79);
+            this.toolStripSiguiente.Size = new System.Drawing.Size(107, 64);
             this.toolStripSiguiente.Text = "Exportar Excel SAP";
             this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripSiguiente.Visible = false;
@@ -199,13 +221,13 @@
             this.Column9,
             this.Column10,
             this.Column11});
-            this.dataListado.Location = new System.Drawing.Point(43, 193);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataListado.Location = new System.Drawing.Point(32, 157);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(1109, 284);
+            this.dataListado.Size = new System.Drawing.Size(832, 231);
             this.dataListado.TabIndex = 164;
             // 
             // Seleccionar
@@ -283,10 +305,10 @@
             // chkEliminar
             // 
             this.chkEliminar.AutoSize = true;
-            this.chkEliminar.Location = new System.Drawing.Point(43, 155);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkEliminar.Location = new System.Drawing.Point(32, 126);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkEliminar.Name = "chkEliminar";
-            this.chkEliminar.Size = new System.Drawing.Size(104, 21);
+            this.chkEliminar.Size = new System.Drawing.Size(82, 17);
             this.chkEliminar.TabIndex = 163;
             this.chkEliminar.Text = "Seleccionar";
             this.chkEliminar.UseVisualStyleBackColor = true;
@@ -294,43 +316,17 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(582, 160);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotal.Location = new System.Drawing.Point(436, 130);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(65, 17);
+            this.lblTotal.Size = new System.Drawing.Size(49, 13);
             this.lblTotal.TabIndex = 162;
             this.lblTotal.Text = "Registro:";
             // 
-            // toolStripRefrescar
-            // 
-            this.toolStripRefrescar.Image = global::CapaPresentacion.Properties.Resources.download;
-            this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripRefrescar.Name = "toolStripRefrescar";
-            this.toolStripRefrescar.Size = new System.Drawing.Size(130, 79);
-            this.toolStripRefrescar.Text = "Procesar Vida Util";
-            this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripRefrescar.Click += new System.EventHandler(this.toolStripRefrescar_Click);
-            // 
-            // toolStripGuardar
-            // 
-            this.toolStripGuardar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripGuardar.Image")));
-            this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripGuardar.Name = "toolStripGuardar";
-            this.toolStripGuardar.Size = new System.Drawing.Size(66, 79);
-            this.toolStripGuardar.Text = "Guardar";
-            this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripGuardar.Visible = false;
-            this.toolStripGuardar.Click += new System.EventHandler(this.toolStripGuardar_Click);
-            // 
             // FrmAjusteVidaUtil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1231, 551);
+            this.ClientSize = new System.Drawing.Size(923, 448);
             this.Controls.Add(this.dataListado);
             this.Controls.Add(this.chkEliminar);
             this.Controls.Add(this.lblTotal);
@@ -338,7 +334,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmAjusteVidaUtil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAjusteVidaUtil";

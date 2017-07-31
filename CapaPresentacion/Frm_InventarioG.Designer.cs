@@ -60,13 +60,13 @@
             this.toolStripAnterior = new System.Windows.Forms.ToolStripButton();
             this.toolStripSiguiente = new System.Windows.Forms.ToolStripButton();
             this.toolStripBuscar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
             this.txtINVfechacierre = new System.Windows.Forms.DateTimePicker();
             this.txtINVperiodo = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.txtAMBid = new System.Windows.Forms.TextBox();
             this.cbocentrodecosto = new MultiColumnComboBoxDemo.MultiColumnComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.toolStripImprimir = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.toolStrip1.SuspendLayout();
@@ -389,6 +389,18 @@
             this.toolStripBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // toolStripImprimir
+            // 
+            this.toolStripImprimir.Image = ((System.Drawing.Image)(resources.GetObject("toolStripImprimir.Image")));
+            this.toolStripImprimir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripImprimir.Name = "toolStripImprimir";
+            this.toolStripImprimir.Size = new System.Drawing.Size(57, 64);
+            this.toolStripImprimir.Text = "Imprimir";
+            this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripImprimir.Click += new System.EventHandler(this.toolStripImprimir_Click);
+            // 
             // txtINVfechacierre
             // 
             this.txtINVfechacierre.Checked = false;
@@ -454,18 +466,6 @@
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // toolStripImprimir
-            // 
-            this.toolStripImprimir.Image = ((System.Drawing.Image)(resources.GetObject("toolStripImprimir.Image")));
-            this.toolStripImprimir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripImprimir.Name = "toolStripImprimir";
-            this.toolStripImprimir.Size = new System.Drawing.Size(57, 64);
-            this.toolStripImprimir.Text = "Imprimir";
-            this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripImprimir.Click += new System.EventHandler(this.toolStripImprimir_Click);
-            // 
             // Frm_InventarioG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,7 +495,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "Frm_InventarioG";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

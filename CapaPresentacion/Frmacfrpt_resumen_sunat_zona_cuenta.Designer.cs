@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(848, 585);
             this.Name = "Frmacfrpt_resumen_sunat_zona_cuenta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmacfrpt_resumen_sunat_zona_cuenta";
             this.ResumeLayout(false);
 

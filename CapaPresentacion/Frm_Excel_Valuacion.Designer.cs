@@ -269,7 +269,10 @@
             this.Controls.Add(this.chkEliminar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtHoja);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Frm_Excel_Valuacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Excel_Valuacion";
             ((System.ComponentModel.ISupportInitialize)(this.pbLoadingGraphic)).EndInit();
             this.toolStrip1.ResumeLayout(false);

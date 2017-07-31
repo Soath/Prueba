@@ -659,7 +659,10 @@
             this.Controls.Add(this.txtMEQdifneta);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmacfMEQt_maquinariaequipo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmacfMEQt_maquinariaequipo";
             this.tabControl2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);

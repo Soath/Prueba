@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 609);
             this.Name = "Frmacfrpt_resumen_registrodeactivofijo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frmacfrpt_resumen_registrodeactivofijo";
             this.ResumeLayout(false);
 

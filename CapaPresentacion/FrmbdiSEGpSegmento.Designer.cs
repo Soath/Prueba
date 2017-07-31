@@ -167,7 +167,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(9, 77);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(734, 389);
@@ -181,9 +181,9 @@
             this.tabPage1.Controls.Add(this.lblTotal);
             this.tabPage1.Controls.Add(this.txtBuscar);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(726, 363);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
@@ -210,7 +210,7 @@
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.dataListado.Location = new System.Drawing.Point(16, 58);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
@@ -239,7 +239,7 @@
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(72, 15);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(554, 20);
             this.txtBuscar.TabIndex = 2;
@@ -249,9 +249,9 @@
             // 
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(726, 363);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
@@ -266,9 +266,9 @@
             this.groupBox2.Controls.Add(this.txtNAME);
             this.groupBox2.Controls.Add(this.txtSEGMENT);
             this.groupBox2.Location = new System.Drawing.Point(10, 15);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(614, 340);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -307,7 +307,7 @@
             // txtid_zona
             // 
             this.txtid_zona.Location = new System.Drawing.Point(236, 82);
-            this.txtid_zona.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtid_zona.Margin = new System.Windows.Forms.Padding(2);
             this.txtid_zona.MaxLength = 30;
             this.txtid_zona.Name = "txtid_zona";
             this.txtid_zona.Size = new System.Drawing.Size(55, 20);
@@ -316,7 +316,7 @@
             // txtNAME
             // 
             this.txtNAME.Location = new System.Drawing.Point(236, 47);
-            this.txtNAME.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNAME.Margin = new System.Windows.Forms.Padding(2);
             this.txtNAME.MaxLength = 30;
             this.txtNAME.Name = "txtNAME";
             this.txtNAME.Size = new System.Drawing.Size(250, 20);
@@ -325,7 +325,7 @@
             // txtSEGMENT
             // 
             this.txtSEGMENT.Location = new System.Drawing.Point(236, 17);
-            this.txtSEGMENT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSEGMENT.Margin = new System.Windows.Forms.Padding(2);
             this.txtSEGMENT.MaxLength = 50;
             this.txtSEGMENT.Name = "txtSEGMENT";
             this.txtSEGMENT.Size = new System.Drawing.Size(55, 20);
@@ -346,6 +346,8 @@
             this.ClientSize = new System.Drawing.Size(755, 475);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmbdiSEGpSegmento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmbdiSEGpSegmentoScs";

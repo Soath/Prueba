@@ -1816,7 +1816,10 @@
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Pruebas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pruebas";
             this.tabControl2.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
