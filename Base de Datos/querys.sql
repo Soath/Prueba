@@ -1,5 +1,4 @@
 alter table [dbo].[acfINBt_Inventariobienes]
-
 alter column [UBEid] int null
 
 

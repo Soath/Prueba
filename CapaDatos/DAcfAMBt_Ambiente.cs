@@ -78,7 +78,7 @@ namespace CapaDatos
 	}
 
         //METODO INSERTAR 
-	public string Insertar(DAcfAMBt_Ambiente acfAMBt_Ambiente)
+	    public string Insertar(DAcfAMBt_Ambiente acfAMBt_Ambiente)
     {
         string rpta = "";
         SqlConnection SqlCon = new SqlConnection();
@@ -225,7 +225,6 @@ namespace CapaDatos
 
 
     //METODO BUSCAR
-
 	public DataTable Buscar(DAcfAMBt_Ambiente acfAMBt_Ambiente) {
 
         DataTable DtResultado = new DataTable("acfAMBTt_Ambiente");
