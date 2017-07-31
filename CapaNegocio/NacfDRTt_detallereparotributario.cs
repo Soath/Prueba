@@ -69,15 +69,11 @@ namespace CapaNegocio
            string mACFvutiltrib,
            string mACFvalorniif,
            string mACFdepAcuniif,
-           string mACFNiifNeto,
            string mACFDepNiifPer,
            string mACFvalortrib,
            string mACFdepacutrib,
-           string mACFlirneto,
-           string mACFdeptlirper,
-           string mACFadiciones,
-           string mACFdeducciones,
-           string mACFneto)
+           string mACFdeptlirper
+           )
          {
 
              DAcfDRTt_detallereparotributario Obj = new DAcfDRTt_detallereparotributario();
@@ -90,15 +86,10 @@ namespace CapaNegocio
              Obj.ACFvutiltrib = mACFvutiltrib;
              Obj.ACFvalorniif = mACFvalorniif;
              Obj.ACFdepAcuniif = mACFdepAcuniif;
-             Obj.ACFNiifNeto = mACFNiifNeto;
              Obj.ACFDepNiifPer = mACFDepNiifPer;
              Obj.ACFvalortrib = mACFvalortrib;
              Obj.ACFdepacutrib = mACFdepacutrib;
-             Obj.ACFlirneto = mACFlirneto;
              Obj.ACFdeptlirper = mACFdeptlirper;
-             Obj.ACFadiciones = mACFadiciones;
-             Obj.ACFdeducciones = mACFdeducciones;
-             Obj.ACFneto = mACFneto;
              return Obj.Insertar2(Obj);
 
          }

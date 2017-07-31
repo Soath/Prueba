@@ -165,7 +165,7 @@ namespace CapaPresentacion
                     if (Convert.ToBoolean(row.Cells[0].Value))
                     {
                         Rta = NacfDRTt_detallereparotributario.Insertar2(
-                              Convert.ToString(row.Cells[1].Value), //ACFCuenta
+                             Convert.ToString(row.Cells[1].Value), //ACFCuenta
                               Convert.ToString(row.Cells[3].Value), //ACFid
                               Convert.ToString(row.Cells[4].Value), //ACFdescripcion 
                               Convert.ToString(row.Cells[5].Value), //ACFfactorniif
@@ -174,15 +174,13 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[8].Value), //ACFvutiltrib
                               Convert.ToString(row.Cells[9].Value), //ACFvutiltrib
                               Convert.ToString(row.Cells[10].Value),//VNRid
-                              Convert.ToString(row.Cells[11].Value), //ACFdescripcion
+                             
                               Convert.ToString(row.Cells[12].Value),//ACFfincorporacion
                             Convert.ToString(row.Cells[13].Value), //ACFvutiltrib
                               Convert.ToString(row.Cells[14].Value), //ACFvutiltribanio
-                             Convert.ToString(row.Cells[15].Value), //ACFvutiltrib
-                              Convert.ToString(row.Cells[16].Value), //ACFvutiltrib
-                              Convert.ToString(row.Cells[17].Value), //ACFvutilniifanio
-                              Convert.ToString(row.Cells[18].Value), //ACFvutiltrib
-                             Convert.ToString(row.Cells[19].Value) //ACFvutiltrib
+                        
+                              Convert.ToString(row.Cells[16].Value)//ACFvutiltrib
+                      
                              
                               );
 
@@ -221,15 +219,13 @@ namespace CapaPresentacion
                               Convert.ToString(row.Cells[8].Value), //ACFvutiltrib
                               Convert.ToString(row.Cells[9].Value), //ACFvutiltrib
                               Convert.ToString(row.Cells[10].Value),//VNRid
-                              Convert.ToString(row.Cells[11].Value), //ACFdescripcion
+                             
                               Convert.ToString(row.Cells[12].Value),//ACFfincorporacion
                             Convert.ToString(row.Cells[13].Value), //ACFvutiltrib
                               Convert.ToString(row.Cells[14].Value), //ACFvutiltribanio
-                             Convert.ToString(row.Cells[15].Value), //ACFvutiltrib
-                              Convert.ToString(row.Cells[16].Value), //ACFvutiltrib
-                              Convert.ToString(row.Cells[17].Value), //ACFvutilniifanio
-                              Convert.ToString(row.Cells[18].Value), //ACFvutiltrib
-                             Convert.ToString(row.Cells[19].Value) //ACFvutiltrib
+                        
+                              Convert.ToString(row.Cells[16].Value) //ACFvutiltrib
+                             
                                 );
 
                     if (Rta.Equals("OK"))

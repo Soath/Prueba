@@ -493,11 +493,7 @@ namespace CapaDatos
                  ParACFdepAcuniif.Value = acfDRTt_detallereparotributario.ACFdepAcuniif;
                  SqlCmd.Parameters.Add(ParACFdepAcuniif);
                  //
-                 SqlParameter ParACFNiifNeto = new SqlParameter();
-                 ParACFNiifNeto.ParameterName = "@decACFNiifNeto";
-                 ParACFNiifNeto.SqlDbType = SqlDbType.Decimal;
-                 ParACFNiifNeto.Value = acfDRTt_detallereparotributario.ACFNiifNeto;
-                 SqlCmd.Parameters.Add(ParACFNiifNeto);
+              
                  //
                  SqlParameter ParACFDepNiifPer = new SqlParameter();
                  ParACFDepNiifPer.ParameterName = "@decACFDepNiifPer";
@@ -517,11 +513,7 @@ namespace CapaDatos
                  ParACFdepacutrib.Value = acfDRTt_detallereparotributario.ACFdepacutrib;
                  SqlCmd.Parameters.Add(ParACFdepacutrib);
                  //
-                 SqlParameter ParACFlirneto = new SqlParameter();
-                 ParACFlirneto.ParameterName = "@decACFlirneto";
-                 ParACFlirneto.SqlDbType = SqlDbType.Decimal;
-                 ParACFlirneto.Value = acfDRTt_detallereparotributario.ACFlirneto;
-                 SqlCmd.Parameters.Add(ParACFlirneto);
+   
                  //
                  SqlParameter ParACFdeptlirper = new SqlParameter();
                  ParACFdeptlirper.ParameterName = "@decACFdeptlirper";
@@ -529,24 +521,7 @@ namespace CapaDatos
                  ParACFdeptlirper.Value = acfDRTt_detallereparotributario.ACFdeptlirper;
                  SqlCmd.Parameters.Add(ParACFdeptlirper);
                  //
-                 SqlParameter ParACFadiciones = new SqlParameter();
-                 ParACFadiciones.ParameterName = "@decACFadiciones";
-                 ParACFadiciones.SqlDbType = SqlDbType.Decimal;
-                 ParACFadiciones.Value = acfDRTt_detallereparotributario.ACFadiciones;
-                 SqlCmd.Parameters.Add(ParACFadiciones);
-                 //
-                 SqlParameter ParACFdeducciones = new SqlParameter();
-                 ParACFdeducciones.ParameterName = "@decACFdeducciones";
-                 ParACFdeducciones.SqlDbType = SqlDbType.Decimal;
-                 ParACFdeducciones.Value = acfDRTt_detallereparotributario.ACFdeducciones;
-                 SqlCmd.Parameters.Add(ParACFdeducciones);
-                 //
-                 SqlParameter ParACFneto = new SqlParameter();
-                 ParACFneto.ParameterName = "@decACFneto";
-                 ParACFneto.SqlDbType = SqlDbType.Decimal;
-                 ParACFneto.Value = acfDRTt_detallereparotributario.ACFneto;
-                 SqlCmd.Parameters.Add(ParACFneto);
-                 //
+                 
 
                  //Ejecutamos nuestro comando
 
