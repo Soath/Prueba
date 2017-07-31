@@ -100,6 +100,7 @@
     </Compile>
     <Compile Include="DataSet2.cs">
       <DependentUpon>DataSet2.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1016,6 +1017,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Reportes\Ficha_Control_Inventario.rdlc" />
+    <EmbeddedResource Include="Reportes\Report1.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Anexo_ActivoFijo.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Anexo_ActivoFijo_Sunat.rdlc" />
     <EmbeddedResource Include="Reportes\Rpt_Anexo_DepreciacionAcumulada.rdlc" />

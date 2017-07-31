@@ -487,86 +487,86 @@ namespace CapaPresentacion
 
         private void ribbonButton34_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_anexo_sunat_depreciacion = new Frmacfrpt_anexo_sunat_depreciacion();
-            Frmacfrpt_anexo_sunat_depreciacion.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton33_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_anexo_sunat_activo_fijo = new Frmacfrpt_anexo_sunat_activo_fijo();
-            Frmacfrpt_anexo_sunat_activo_fijo.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
-        private void ribbonButton30_Click(object sender, EventArgs e)
+     private void ribbonButton30_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_ficha_movimiento = new Frmacfrpt_ficha_movimiento();
-            Frmacfrpt_ficha_movimiento.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton31_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_ficha_control = new Frmacfrpt_ficha_control();
-            Frmacfrpt_ficha_control.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton102_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_anexo_mensual_depreciacion = new Frmacfrpt_anexo_mensual_depreciacion();
-            Frmacfrpt_anexo_mensual_depreciacion.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton110_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_resumen_sunat_zona_cuenta = new Frmacfrpt_resumen_sunat_zona_cuenta();
-            Frmacfrpt_resumen_sunat_zona_cuenta.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton29_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_resumen_registrodeactivofijo = new Frmacfrpt_resumen_registrodeactivofijo();
-            Frmacfrpt_resumen_registrodeactivofijo.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton105_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_detalle_tipoinventario = new Frmacfrpt_detalle_tipoinventario();
-            Frmacfrpt_detalle_tipoinventario.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton108_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_RepoteCalculodiferido = new Frmacfrpt_RepoteCalculodiferido();
-            Frmacfrpt_RepoteCalculodiferido.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton103_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_RepoteDepreciacion = new Frmacfrpt_RepoteDepreciacion();
-            Frmacfrpt_RepoteDepreciacion.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton109_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_RepoteEtiquetado = new Frmacfrpt_RepoteEtiquetado();
-            Frmacfrpt_RepoteEtiquetado.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton107_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_RepoteReparoTributario = new Frmacfrpt_RepoteReparoTributario();
-            Frmacfrpt_RepoteReparoTributario.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton106_Click(object sender, EventArgs e)
         {
-            Form Frmacfrpt_ficha_Inventario = new Frmacfrpt_ficha_Inventario();
-            Frmacfrpt_ficha_Inventario.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonButton75_Click(object sender, EventArgs e)
         {
-            Form Frm_Rptdepreciacion = new Frm_Rptdepreciacion();
-            Frm_Rptdepreciacion.ShowDialog();
+            FrmReportes rptalu = new FrmReportes("Reportes\\Report1.rdlc", NacfMARt_Marca.Mostrar(), "ip");
+            rptalu.ShowDialog();
         }
 
         private void ribbonOrbMenuItem1_Click(object sender, EventArgs e)
