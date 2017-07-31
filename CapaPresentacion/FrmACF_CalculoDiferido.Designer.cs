@@ -78,9 +78,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(158, 90);
+            this.checkBox1.Location = new System.Drawing.Point(211, 111);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(125, 17);
+            this.checkBox1.Size = new System.Drawing.Size(162, 21);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Importar desde Excel";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -88,9 +89,10 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(158, 125);
+            this.checkBox2.Location = new System.Drawing.Point(211, 154);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(169, 17);
+            this.checkBox2.Size = new System.Drawing.Size(223, 21);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Generar desde Base de Datos";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -98,68 +100,76 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(190, 175);
+            this.label1.Location = new System.Drawing.Point(253, 215);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(71, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "ID Calculo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(190, 207);
+            this.label2.Location = new System.Drawing.Point(253, 255);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(57, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Periodo";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(190, 240);
+            this.label3.Location = new System.Drawing.Point(253, 295);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 13);
+            this.label3.Size = new System.Drawing.Size(97, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Fecha Calculo";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(190, 276);
+            this.label4.Location = new System.Drawing.Point(253, 340);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.Size = new System.Drawing.Size(91, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Responsable";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(190, 313);
+            this.label5.Location = new System.Drawing.Point(253, 385);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.Size = new System.Drawing.Size(52, 17);
             this.label5.TabIndex = 7;
             this.label5.Text = "Estado";
             // 
             // txtPDFcodigo
             // 
-            this.txtPDFcodigo.Location = new System.Drawing.Point(282, 172);
+            this.txtPDFcodigo.Location = new System.Drawing.Point(376, 212);
+            this.txtPDFcodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPDFcodigo.Name = "txtPDFcodigo";
-            this.txtPDFcodigo.Size = new System.Drawing.Size(109, 20);
+            this.txtPDFcodigo.Size = new System.Drawing.Size(144, 22);
             this.txtPDFcodigo.TabIndex = 8;
             // 
             // txtPDFreponsable
             // 
-            this.txtPDFreponsable.Location = new System.Drawing.Point(282, 273);
+            this.txtPDFreponsable.Location = new System.Drawing.Point(376, 336);
+            this.txtPDFreponsable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPDFreponsable.Name = "txtPDFreponsable";
-            this.txtPDFreponsable.Size = new System.Drawing.Size(274, 20);
+            this.txtPDFreponsable.Size = new System.Drawing.Size(364, 22);
             this.txtPDFreponsable.TabIndex = 11;
             // 
             // dtpPDFfecha
             // 
             this.dtpPDFfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPDFfecha.Location = new System.Drawing.Point(282, 234);
+            this.dtpPDFfecha.Location = new System.Drawing.Point(376, 288);
+            this.dtpPDFfecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpPDFfecha.Name = "dtpPDFfecha";
-            this.dtpPDFfecha.Size = new System.Drawing.Size(97, 20);
+            this.dtpPDFfecha.Size = new System.Drawing.Size(128, 22);
             this.dtpPDFfecha.TabIndex = 15;
             // 
             // ttMensaje
@@ -173,11 +183,11 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(11, 330);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Location = new System.Drawing.Point(15, 406);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(693, 301);
+            this.tabControl1.Size = new System.Drawing.Size(924, 370);
             this.tabControl1.TabIndex = 209;
             // 
             // tabPage1
@@ -188,11 +198,11 @@
             this.tabPage1.Controls.Add(this.lblTotal);
             this.tabPage1.Controls.Add(this.chkEliminar);
             this.tabPage1.Controls.Add(this.txtBuscar);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(685, 275);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(916, 341);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -206,14 +216,14 @@
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            this.dataListado.Location = new System.Drawing.Point(10, 85);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
+            this.dataListado.Location = new System.Drawing.Point(13, 105);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(610, 166);
+            this.dataListado.Size = new System.Drawing.Size(813, 204);
             this.dataListado.TabIndex = 9;
             // 
             // Eliminar
@@ -225,9 +235,10 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(15, 16);
+            this.pictureBox2.Location = new System.Drawing.Point(20, 20);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(53, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -235,30 +246,29 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(375, 64);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotal.Location = new System.Drawing.Point(500, 79);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(41, 13);
+            this.lblTotal.Size = new System.Drawing.Size(54, 17);
             this.lblTotal.TabIndex = 6;
             this.lblTotal.Text = "lblTotal";
             // 
             // chkEliminar
             // 
             this.chkEliminar.AutoSize = true;
-            this.chkEliminar.Location = new System.Drawing.Point(10, 64);
-            this.chkEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.chkEliminar.Location = new System.Drawing.Point(13, 79);
+            this.chkEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkEliminar.Name = "chkEliminar";
-            this.chkEliminar.Size = new System.Drawing.Size(62, 17);
+            this.chkEliminar.Size = new System.Drawing.Size(80, 21);
             this.chkEliminar.TabIndex = 5;
             this.chkEliminar.Text = "Eliminar";
             this.chkEliminar.UseVisualStyleBackColor = true;
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(80, 28);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBuscar.Location = new System.Drawing.Point(107, 34);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(246, 20);
+            this.txtBuscar.Size = new System.Drawing.Size(327, 22);
             this.txtBuscar.TabIndex = 2;
             // 
             // toolStrip1
@@ -282,7 +292,7 @@
             this.tsProcesar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(714, 62);
+            this.toolStrip1.Size = new System.Drawing.Size(952, 76);
             this.toolStrip1.TabIndex = 210;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -292,7 +302,7 @@
             this.toolStripRefrescar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripRefrescar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripRefrescar.Name = "toolStripRefrescar";
-            this.toolStripRefrescar.Size = new System.Drawing.Size(63, 59);
+            this.toolStripRefrescar.Size = new System.Drawing.Size(79, 73);
             this.toolStripRefrescar.Text = "Actualizar";
             this.toolStripRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -303,7 +313,7 @@
             this.toolStripAgregar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAgregar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAgregar.Name = "toolStripAgregar";
-            this.toolStripAgregar.Size = new System.Drawing.Size(53, 59);
+            this.toolStripAgregar.Size = new System.Drawing.Size(67, 73);
             this.toolStripAgregar.Text = "Agregar";
             this.toolStripAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -314,18 +324,19 @@
             this.toolStripEditar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripEditar.Name = "toolStripEditar";
-            this.toolStripEditar.Size = new System.Drawing.Size(41, 59);
+            this.toolStripEditar.Size = new System.Drawing.Size(52, 73);
             this.toolStripEditar.Text = "Editar";
             this.toolStripEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripEliminar
             // 
+            this.toolStripEliminar.Enabled = false;
             this.toolStripEliminar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripEliminar.Image")));
             this.toolStripEliminar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripEliminar.Name = "toolStripEliminar";
-            this.toolStripEliminar.Size = new System.Drawing.Size(46, 59);
+            this.toolStripEliminar.Size = new System.Drawing.Size(56, 73);
             this.toolStripEliminar.Text = "Anular";
             this.toolStripEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -336,7 +347,7 @@
             this.toolStripImprimir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripImprimir.Name = "toolStripImprimir";
-            this.toolStripImprimir.Size = new System.Drawing.Size(57, 59);
+            this.toolStripImprimir.Size = new System.Drawing.Size(70, 73);
             this.toolStripImprimir.Text = "Imprimir";
             this.toolStripImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripImprimir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -347,7 +358,7 @@
             this.toolStripGuardar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripGuardar.Name = "toolStripGuardar";
-            this.toolStripGuardar.Size = new System.Drawing.Size(110, 59);
+            this.toolStripGuardar.Size = new System.Drawing.Size(137, 73);
             this.toolStripGuardar.Text = "Guardar y Procesar";
             this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -359,7 +370,7 @@
             this.toolStripCancelar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripCancelar.Name = "toolStripCancelar";
-            this.toolStripCancelar.Size = new System.Drawing.Size(57, 59);
+            this.toolStripCancelar.Size = new System.Drawing.Size(70, 73);
             this.toolStripCancelar.Text = "Cancelar";
             this.toolStripCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -385,7 +396,7 @@
             this.toolStripAnterior.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripAnterior.Name = "toolStripAnterior";
-            this.toolStripAnterior.Size = new System.Drawing.Size(54, 59);
+            this.toolStripAnterior.Size = new System.Drawing.Size(67, 73);
             this.toolStripAnterior.Text = "Anterior";
             this.toolStripAnterior.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -397,7 +408,7 @@
             this.toolStripSiguiente.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripSiguiente.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSiguiente.Name = "toolStripSiguiente";
-            this.toolStripSiguiente.Size = new System.Drawing.Size(60, 59);
+            this.toolStripSiguiente.Size = new System.Drawing.Size(75, 73);
             this.toolStripSiguiente.Text = "Siguiente";
             this.toolStripSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -408,7 +419,7 @@
             this.toolStripUltimo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripUltimo.Name = "toolStripUltimo";
-            this.toolStripUltimo.Size = new System.Drawing.Size(47, 59);
+            this.toolStripUltimo.Size = new System.Drawing.Size(58, 73);
             this.toolStripUltimo.Text = "Ultimo";
             this.toolStripUltimo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -420,7 +431,7 @@
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripButton1.Size = new System.Drawing.Size(57, 59);
+            this.toolStripButton1.Size = new System.Drawing.Size(71, 73);
             this.toolStripButton1.Text = "Importar";
             this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
@@ -433,7 +444,7 @@
             this.tsProcesar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsProcesar.Name = "tsProcesar";
             this.tsProcesar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsProcesar.Size = new System.Drawing.Size(56, 59);
+            this.tsProcesar.Size = new System.Drawing.Size(69, 40);
             this.tsProcesar.Text = "Procesar";
             this.tsProcesar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsProcesar.Visible = false;
@@ -448,18 +459,20 @@
             this.txtPDFestado.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.txtPDFestado.Location = new System.Drawing.Point(282, 310);
+            this.txtPDFestado.Location = new System.Drawing.Point(376, 382);
+            this.txtPDFestado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPDFestado.Name = "txtPDFestado";
-            this.txtPDFestado.Size = new System.Drawing.Size(39, 21);
+            this.txtPDFestado.Size = new System.Drawing.Size(51, 24);
             this.txtPDFestado.TabIndex = 211;
             this.txtPDFestado.Text = "1";
             // 
             // label6
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(339, 307);
+            this.label6.Location = new System.Drawing.Point(452, 378);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 29);
+            this.label6.Size = new System.Drawing.Size(99, 35);
             this.label6.TabIndex = 212;
             this.label6.Text = "1 = Baja         2 = Anulado";
             // 
@@ -467,17 +480,18 @@
             // 
             this.txtPDFperiodo.CustomFormat = "MM/yyyy";
             this.txtPDFperiodo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtPDFperiodo.Location = new System.Drawing.Point(282, 201);
+            this.txtPDFperiodo.Location = new System.Drawing.Point(376, 247);
+            this.txtPDFperiodo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPDFperiodo.Name = "txtPDFperiodo";
             this.txtPDFperiodo.ShowUpDown = true;
-            this.txtPDFperiodo.Size = new System.Drawing.Size(97, 20);
+            this.txtPDFperiodo.Size = new System.Drawing.Size(128, 22);
             this.txtPDFperiodo.TabIndex = 213;
             // 
             // FrmACF_CalculoDiferido
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 641);
+            this.ClientSize = new System.Drawing.Size(952, 789);
             this.Controls.Add(this.txtPDFperiodo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtPDFestado);
@@ -494,6 +508,7 @@
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FrmACF_CalculoDiferido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
