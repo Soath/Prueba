@@ -90,3 +90,5 @@ C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEm
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\Microsoft.ReportViewer.Common.dll
