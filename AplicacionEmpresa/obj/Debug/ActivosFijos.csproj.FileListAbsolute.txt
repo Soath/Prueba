@@ -83,6 +83,7 @@ C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEm
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\ActivosFijos.csproj.GenerateResource.Cache
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+<<<<<<< HEAD
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\SegNetAdapter.dll
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\CapaNegocio.dll
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\ServicioUtilitarios.dll
@@ -90,3 +91,7 @@ C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\CapaDatos.dl
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\CapaPresentacion.pdb
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\CapaNegocio.pdb
 C:\Users\DARIEL\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\CapaDatos.pdb
+=======
+C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\jacho\Documents\GitHub\Prueba\AplicacionEmpresa\bin\Debug\Microsoft.ReportViewer.Common.dll
+>>>>>>> origin/master
