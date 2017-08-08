@@ -1028,6 +1028,11 @@ namespace CapaPresentacion
             FrmReportes rptalu = new FrmReportes("Reportes\\Rpt_Movimiento_Activo1.rdlc", NMovimiento_Transferencia_Activo.FichaMovimiento1(txtMVPid_proceso.Text), "ip");
             rptalu.ShowDialog();
         }
+
+        private void toolStripGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 //-------------------------------------------------------------------

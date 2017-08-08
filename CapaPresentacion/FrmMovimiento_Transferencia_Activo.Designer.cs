@@ -201,6 +201,7 @@
             this.toolStripGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.toolStripGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripGuardar.Visible = false;
+            this.toolStripGuardar.Click += new System.EventHandler(this.toolStripGuardar_Click);
             // 
             // toolStripCancelar
             // 

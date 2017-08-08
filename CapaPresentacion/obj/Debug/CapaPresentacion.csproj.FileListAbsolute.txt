@@ -123,6 +123,13 @@ C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacio
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\jcho\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojFakesResolveAssemblyReference.cache
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\View1.g.cs
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\ViewModel1.g.cs
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.lref
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.dll.config
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\Microsoft.ReportViewer.Common.Fakes.fakesconfig
@@ -132,12 +139,6 @@ C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\ServicioUtili
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaDatos.dll
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaNegocio.pdb
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\bin\Debug\CapaDatos.pdb
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojFakesResolveAssemblyReference.cache
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\View1.g.cs
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\ViewModel1.g.cs
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.cache
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion_MarkupCompile.lref
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\View1.baml
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\ViewModel1.baml
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.g.resources
@@ -245,5 +246,4 @@ C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentac
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\RdlCompile.cache
 C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\RdlCompile.compiled
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.dll
-C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\DARIEL\Documents\GitHub\Prueba\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
